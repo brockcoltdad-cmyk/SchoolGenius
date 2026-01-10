@@ -21,6 +21,8 @@ export default function KidDashboard() {
   const [loading, setLoading] = useState(true);
   const [stats, setStats] = useState({ level: 1, currency: 0, streak: 0 });
 
+  const supabase = createClient();
+
   const config = themeDashboardConfigs[currentTheme.id] || themeDashboardConfigs['wwe'];
 
   useEffect(() => {
@@ -32,7 +34,6 @@ export default function KidDashboard() {
   useEffect(() => {
     const checkPinRequirement = async () => {
       try {
-        const supabase = createClient();
         const { data, error } = await supabase
           .from('children')
           .select('id, name, pin_required, pin_code')
@@ -84,7 +85,6 @@ export default function KidDashboard() {
 
   const handlePinVerify = async (pin: string): Promise<boolean> => {
     try {
-      const supabase = createClient();
       const { data, error } = await supabase
         .from('children')
         .select('pin_code')
