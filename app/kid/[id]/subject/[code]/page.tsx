@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useParams } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import { ArrowLeft, Lock, CheckCircle } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -139,10 +139,16 @@ const subjectData: Record<string, { name: string; emoji: string; skills: { id: s
 export default function SubjectPage() {
   const { currentTheme } = useTheme();
   const params = useParams();
+  const router = useRouter();
   const kidId = params.id as string;
   const subjectCode = params.code as string;
 
   const subject = subjectData[subjectCode] || subjectData.math;
+
+  const handleSkillClick = (skillId: string) => {
+    if (!skillId || skillId === 'locked') return;
+    router.push(`/kid/${kidId}/lesson/${skillId}`);
+  };
 
   return (
     <PageTransition>
@@ -232,6 +238,7 @@ export default function SubjectPage() {
                     <div className="ml-4">
                       <Button
                         disabled={skill.locked}
+                        onClick={() => handleSkillClick(skill.id)}
                         className={currentTheme.buttonClass}
                         style={
                           !skill.locked
