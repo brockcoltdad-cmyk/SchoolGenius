@@ -148,7 +148,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'UNIVERSAL CHAMPION',
         colorGradient: 'from-yellow-500 to-yellow-600',
         glowShadow: 'shadow-[0_0_40px_rgba(234,179,8,0.6)]',
-        href: '/kid/{id}/subject/math'
+        href: '/kid/{id}/math'
       },
       {
         id: 'reading',
@@ -157,7 +157,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'INTERCONTINENTAL',
         colorGradient: 'from-green-500 to-green-600',
         glowShadow: 'shadow-[0_0_40px_rgba(34,197,94,0.6)]',
-        href: '/kid/{id}/subject/reading'
+        href: '/kid/{id}/reading'
       },
       {
         id: 'writing',
@@ -166,7 +166,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'US CHAMPION',
         colorGradient: 'from-red-500 to-red-600',
         glowShadow: 'shadow-[0_0_40px_rgba(239,68,68,0.6)]',
-        href: '/kid/{id}/subject/writing'
+        href: '/kid/{id}/writing'
       },
       {
         id: 'coding',
@@ -175,7 +175,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'TAG TEAM CHAMPION',
         colorGradient: 'from-blue-500 to-blue-600',
         glowShadow: 'shadow-[0_0_40px_rgba(59,130,246,0.6)]',
-        href: '/kid/{id}/subject/coding'
+        href: '/kid/{id}/coding'
       },
     ],
     bottomNav: [
@@ -253,7 +253,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'DIAMOND MINES',
         colorGradient: 'from-cyan-500 to-cyan-600',
         glowShadow: 'shadow-[0_0_40px_rgba(6,182,212,0.6)]',
-        href: '/kid/{id}/subject/math'
+        href: '/kid/{id}/math'
       },
       {
         id: 'reading',
@@ -262,7 +262,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'ENCHANTMENT TABLE',
         colorGradient: 'from-purple-500 to-purple-600',
         glowShadow: 'shadow-[0_0_40px_rgba(168,85,247,0.6)]',
-        href: '/kid/{id}/subject/reading'
+        href: '/kid/{id}/reading'
       },
       {
         id: 'writing',
@@ -271,7 +271,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'CRAFTING BENCH',
         colorGradient: 'from-emerald-500 to-emerald-600',
         glowShadow: 'shadow-[0_0_40px_rgba(16,185,129,0.6)]',
-        href: '/kid/{id}/subject/writing'
+        href: '/kid/{id}/writing'
       },
       {
         id: 'coding',
@@ -280,7 +280,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'BREWING STATION',
         colorGradient: 'from-orange-500 to-orange-600',
         glowShadow: 'shadow-[0_0_40px_rgba(249,115,22,0.6)]',
-        href: '/kid/{id}/subject/coding'
+        href: '/kid/{id}/coding'
       },
     ],
     bottomNav: [
@@ -358,7 +358,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'TILTED TOWERS',
         colorGradient: 'from-purple-500 to-purple-600',
         glowShadow: 'shadow-[0_0_40px_rgba(168,85,247,0.6)]',
-        href: '/kid/{id}/subject/math'
+        href: '/kid/{id}/math'
       },
       {
         id: 'reading',
@@ -367,7 +367,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'PLEASANT PARK',
         colorGradient: 'from-green-500 to-green-600',
         glowShadow: 'shadow-[0_0_40px_rgba(34,197,94,0.6)]',
-        href: '/kid/{id}/subject/reading'
+        href: '/kid/{id}/reading'
       },
       {
         id: 'writing',
@@ -376,7 +376,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'RETAIL ROW',
         colorGradient: 'from-pink-500 to-pink-600',
         glowShadow: 'shadow-[0_0_40px_rgba(236,72,153,0.6)]',
-        href: '/kid/{id}/subject/writing'
+        href: '/kid/{id}/writing'
       },
       {
         id: 'coding',
@@ -385,7 +385,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'LAZY LAKE',
         colorGradient: 'from-blue-500 to-blue-600',
         glowShadow: 'shadow-[0_0_40px_rgba(59,130,246,0.6)]',
-        href: '/kid/{id}/subject/coding'
+        href: '/kid/{id}/coding'
       },
     ],
     bottomNav: [
@@ -463,7 +463,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'WEAPON TRAINING',
         colorGradient: 'from-green-500 to-green-600',
         glowShadow: 'shadow-[0_0_40px_rgba(34,197,94,0.6)]',
-        href: '/kid/{id}/subject/math'
+        href: '/kid/{id}/math'
       },
       {
         id: 'reading',
@@ -472,7 +472,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'SURVIVAL GUIDE',
         colorGradient: 'from-lime-500 to-lime-600',
         glowShadow: 'shadow-[0_0_40px_rgba(132,204,22,0.6)]',
-        href: '/kid/{id}/subject/reading'
+        href: '/kid/{id}/reading'
       },
       {
         id: 'writing',
@@ -481,7 +481,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'LOG BOOK',
         colorGradient: 'from-yellow-500 to-yellow-600',
         glowShadow: 'shadow-[0_0_40px_rgba(234,179,8,0.6)]',
-        href: '/kid/{id}/subject/writing'
+        href: '/kid/{id}/writing'
       },
       {
         id: 'coding',
@@ -490,7 +490,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'ANTIDOTE LAB',
         colorGradient: 'from-blue-500 to-blue-600',
         glowShadow: 'shadow-[0_0_40px_rgba(59,130,246,0.6)]',
-        href: '/kid/{id}/subject/coding'
+        href: '/kid/{id}/coding'
       },
     ],
     bottomNav: [
@@ -568,7 +568,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'NAVIGATION',
         colorGradient: 'from-blue-500 to-blue-600',
         glowShadow: 'shadow-[0_0_40px_rgba(59,130,246,0.6)]',
-        href: '/kid/{id}/subject/math'
+        href: '/kid/{id}/math'
       },
       {
         id: 'reading',
@@ -577,7 +577,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'TREASURE MAP',
         colorGradient: 'from-yellow-500 to-yellow-600',
         glowShadow: 'shadow-[0_0_40px_rgba(234,179,8,0.6)]',
-        href: '/kid/{id}/subject/reading'
+        href: '/kid/{id}/reading'
       },
       {
         id: 'writing',
@@ -586,7 +586,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'SHIP LOG',
         colorGradient: 'from-cyan-500 to-cyan-600',
         glowShadow: 'shadow-[0_0_40px_rgba(6,182,212,0.6)]',
-        href: '/kid/{id}/subject/writing'
+        href: '/kid/{id}/writing'
       },
       {
         id: 'coding',
@@ -595,7 +595,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'STAR NAVIGATION',
         colorGradient: 'from-purple-500 to-purple-600',
         glowShadow: 'shadow-[0_0_40px_rgba(168,85,247,0.6)]',
-        href: '/kid/{id}/subject/coding'
+        href: '/kid/{id}/coding'
       },
     ],
     bottomNav: [
@@ -673,7 +673,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'POWER TRAINING',
         colorGradient: 'from-yellow-500 to-yellow-600',
         glowShadow: 'shadow-[0_0_40px_rgba(234,179,8,0.6)]',
-        href: '/kid/{id}/subject/math'
+        href: '/kid/{id}/math'
       },
       {
         id: 'reading',
@@ -682,7 +682,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'JUTSU SCROLLS',
         colorGradient: 'from-pink-500 to-pink-600',
         glowShadow: 'shadow-[0_0_40px_rgba(236,72,153,0.6)]',
-        href: '/kid/{id}/subject/reading'
+        href: '/kid/{id}/reading'
       },
       {
         id: 'writing',
@@ -691,7 +691,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'HERO JOURNAL',
         colorGradient: 'from-purple-500 to-purple-600',
         glowShadow: 'shadow-[0_0_40px_rgba(168,85,247,0.6)]',
-        href: '/kid/{id}/subject/writing'
+        href: '/kid/{id}/writing'
       },
       {
         id: 'coding',
@@ -700,7 +700,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'QUIRK RESEARCH',
         colorGradient: 'from-blue-500 to-blue-600',
         glowShadow: 'shadow-[0_0_40px_rgba(59,130,246,0.6)]',
-        href: '/kid/{id}/subject/coding'
+        href: '/kid/{id}/coding'
       },
     ],
     bottomNav: [
@@ -778,7 +778,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'SLIME CHEMISTRY',
         colorGradient: 'from-lime-500 to-lime-600',
         glowShadow: 'shadow-[0_0_40px_rgba(163,230,53,0.6)]',
-        href: '/kid/{id}/subject/math'
+        href: '/kid/{id}/math'
       },
       {
         id: 'reading',
@@ -787,7 +787,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'SLIME GUIDE',
         colorGradient: 'from-green-500 to-green-600',
         glowShadow: 'shadow-[0_0_40px_rgba(34,197,94,0.6)]',
-        href: '/kid/{id}/subject/reading'
+        href: '/kid/{id}/reading'
       },
       {
         id: 'writing',
@@ -796,7 +796,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'LAB NOTES',
         colorGradient: 'from-cyan-500 to-cyan-600',
         glowShadow: 'shadow-[0_0_40px_rgba(6,182,212,0.6)]',
-        href: '/kid/{id}/subject/writing'
+        href: '/kid/{id}/writing'
       },
       {
         id: 'coding',
@@ -805,7 +805,7 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         label: 'SLIME LAB',
         colorGradient: 'from-emerald-500 to-emerald-600',
         glowShadow: 'shadow-[0_0_40px_rgba(16,185,129,0.6)]',
-        href: '/kid/{id}/subject/coding'
+        href: '/kid/{id}/coding'
       },
     ],
     bottomNav: [
