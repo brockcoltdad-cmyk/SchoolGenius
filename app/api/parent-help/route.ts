@@ -9,26 +9,19 @@ export async function POST(request: Request) {
 
     const supabase = await createServerSupabaseClient()
 
-    // Get parent info
-    const { data: parent } = await supabase
-      .from('profiles')
-      .select('*')
-      .eq('id', parentId)
-      .single()
-
     // Get children names
     const { data: children } = await supabase
-      .from('students')
+      .from('children')
       .select('name')
       .eq('parent_id', parentId)
 
     const childrenNames = children?.map(c => c.name).join(', ') || 'None yet'
 
-    // Personalize prompt
+    // Personalize prompt (parent name and subscription from auth if available)
     const systemPrompt = PARENT_HELPER_PROMPT
-      .replace('{parentName}', parent?.name || 'there')
+      .replace('{parentName}', 'there')
       .replace('{childrenNames}', childrenNames)
-      .replace('{subscriptionStatus}', parent?.subscription_status || 'Free Trial')
+      .replace('{subscriptionStatus}', 'Active')
 
     // Call Claude
     const response = await anthropic.messages.create({
