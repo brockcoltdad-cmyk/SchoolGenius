@@ -35,6 +35,12 @@ export default function LessonViewer({ studentId, subjectCode, skillId }: Lesson
   const [demoStep, setDemoStep] = useState(0)
   const [coinsEarned, setCoinsEarned] = useState(0)
 
+  // Multi-level help system
+  const [helpLevel, setHelpLevel] = useState(0)
+  const [showHelp, setShowHelp] = useState(false)
+  const [helpExplanation, setHelpExplanation] = useState('')
+  const [helpLoading, setHelpLoading] = useState(false)
+
   const supabase = createClient()
 
   useEffect(() => {
@@ -120,9 +126,100 @@ export default function LessonViewer({ studentId, subjectCode, skillId }: Lesson
       setQuestionIndex(prev => prev + 1)
       setSelectedAnswer(null)
       setShowResult(false)
+      setHelpLevel(0)
+      setShowHelp(false)
     } else {
       advancePhase()
     }
+  }
+
+  // Multi-level help system: Progressive explanations
+  async function requestHelp() {
+    const questions = getCurrentQuestions()
+    const current = questions[questionIndex]
+    const nextLevel = helpLevel + 1
+
+    // Map help levels: 1, 2, 3, 'visual', 'story', 'step_by_step'
+    const levelMap = [1, 2, 3, 'visual', 'story', 'step_by_step']
+    const currentLevelKey = levelMap[nextLevel - 1]
+
+    if (currentLevelKey) {
+      setHelpLoading(true)
+      setShowHelp(true)
+
+      try {
+        console.log(`🆘 Requesting help level: ${currentLevelKey}`)
+
+        const response = await fetch('/api/explanations', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            skillId: skillId,
+            problemText: current.problem,
+            level: currentLevelKey,
+            childId: studentId,
+            subject: subjectCode
+          })
+        })
+
+        const data = await response.json()
+
+        if (data.explanation) {
+          setHelpExplanation(data.explanation)
+          setHelpLevel(nextLevel)
+          console.log(`✅ Got ${data.source} explanation for level ${currentLevelKey}`)
+        } else {
+          setHelpExplanation("I'm having trouble explaining this right now. Let's try again!")
+        }
+      } catch (error) {
+        console.error('Error fetching help:', error)
+        setHelpExplanation("Oops! Something went wrong. Please try again.")
+      } finally {
+        setHelpLoading(false)
+      }
+    } else {
+      // All levels exhausted - fall back to Claude via chat
+      setHelpLoading(true)
+      setShowHelp(true)
+
+      try {
+        const response = await fetch('/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            id: studentId,
+            messages: [
+              {
+                role: 'user',
+                content: `I'm stuck on this problem: "${current.problem}". Can you explain it in the simplest way possible?`
+              }
+            ]
+          })
+        })
+
+        const data = await response.json()
+        setHelpExplanation(data.message || "Let me help you with this!")
+        setHelpLevel(nextLevel)
+      } catch (error) {
+        console.error('Error fetching Claude help:', error)
+        setHelpExplanation("Let's try this together! Think about it step by step.")
+      } finally {
+        setHelpLoading(false)
+      }
+    }
+  }
+
+  function getHelpButtonText() {
+    const labels = [
+      'I need help! 🤔',
+      'Explain it simpler 🧩',
+      'Break it down more 🔍',
+      'Show me visually 🎨',
+      'Tell me a story 📖',
+      'Tiny steps please 👣',
+      'Ask Gigi directly 💬'
+    ]
+    return labels[helpLevel] || 'Get Help'
   }
 
   function advancePhase() {
@@ -332,9 +429,28 @@ export default function LessonViewer({ studentId, subjectCode, skillId }: Lesson
           </div>
           {showResult && (
             <div className={`mt-4 p-4 rounded-xl ${isCorrect ? 'bg-green-100' : 'bg-red-100'}`}>
-              <p className={`font-bold ${isCorrect ? 'text-green-700' : 'text-red-700'}`}>
+              <p className={`font-bold mb-3 ${isCorrect ? 'text-green-700' : 'text-red-700'}`}>
                 {isCorrect ? '🎉 Correct! +5 coins' : `❌ The answer is: ${current.answer}`}
               </p>
+              {!isCorrect && (
+                <button
+                  onClick={requestHelp}
+                  disabled={helpLoading}
+                  className="w-full mt-2 bg-blue-500 text-white py-3 px-4 rounded-xl font-medium hover:bg-blue-600 disabled:bg-gray-300 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                >
+                  {helpLoading ? (
+                    <>
+                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
+                      <span>Getting help...</span>
+                    </>
+                  ) : (
+                    <>
+                      <HelpCircle className="w-5 h-5" />
+                      <span>{getHelpButtonText()}</span>
+                    </>
+                  )}
+                </button>
+              )}
             </div>
           )}
         </div>
@@ -354,6 +470,59 @@ export default function LessonViewer({ studentId, subjectCode, skillId }: Lesson
 
         {coinsEarned > 0 && (
           <div className="fixed bottom-4 right-4 bg-yellow-400 text-yellow-900 px-4 py-2 rounded-full font-bold flex items-center gap-2 shadow-lg">🪙 {coinsEarned}</div>
+        )}
+
+        {/* Multi-level Help Modal */}
+        {showHelp && helpExplanation && (
+          <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50" onClick={() => setShowHelp(false)}>
+            <div className="bg-white rounded-2xl shadow-2xl max-w-lg w-full max-h-[80vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+              <div className="bg-gradient-to-br from-purple-500 to-indigo-600 p-6 text-white rounded-t-2xl">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <Lightbulb className="w-8 h-8" />
+                    <h2 className="text-2xl font-bold">Gigi's Help</h2>
+                  </div>
+                  <button
+                    onClick={() => setShowHelp(false)}
+                    className="text-white/80 hover:text-white text-2xl font-bold"
+                  >
+                    ×
+                  </button>
+                </div>
+                <p className="text-white/90 text-sm mt-2">
+                  {helpLevel === 1 && 'Standard Explanation'}
+                  {helpLevel === 2 && 'Simpler Breakdown'}
+                  {helpLevel === 3 && 'Most Basic Explanation'}
+                  {helpLevel === 4 && 'Visual Explanation'}
+                  {helpLevel === 5 && 'Story-Based Explanation'}
+                  {helpLevel === 6 && 'Step-by-Step Guide'}
+                  {helpLevel >= 7 && 'Direct Help from Gigi'}
+                </p>
+              </div>
+              <div className="p-6">
+                <div className="bg-purple-50 rounded-xl p-4 mb-4">
+                  <p className="text-gray-800 whitespace-pre-wrap leading-relaxed">{helpExplanation}</p>
+                </div>
+                <div className="flex gap-3">
+                  {helpLevel < 7 && (
+                    <button
+                      onClick={requestHelp}
+                      disabled={helpLoading}
+                      className="flex-1 bg-blue-500 text-white py-3 rounded-xl font-medium hover:bg-blue-600 disabled:bg-gray-300"
+                    >
+                      {helpLoading ? 'Loading...' : getHelpButtonText()}
+                    </button>
+                  )}
+                  <button
+                    onClick={() => setShowHelp(false)}
+                    className="flex-1 bg-gray-100 text-gray-700 py-3 rounded-xl font-medium hover:bg-gray-200"
+                  >
+                    Got it!
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         )}
       </div>
     )
