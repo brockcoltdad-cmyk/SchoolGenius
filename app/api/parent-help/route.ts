@@ -42,7 +42,11 @@ export async function POST(request: Request) {
   } catch (error) {
     console.error('Parent Help API error:', error)
     return NextResponse.json(
-      { error: 'Failed to get response' },
+      {
+        error: 'Failed to get response',
+        details: error instanceof Error ? error.message : 'Unknown error',
+        hasAnthropicKey: !!process.env.ANTHROPIC_API_KEY
+      },
       { status: 500 }
     )
   }
