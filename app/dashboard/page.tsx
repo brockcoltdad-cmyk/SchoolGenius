@@ -13,6 +13,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { useAuth } from '@/lib/auth-context';
 import { createClient } from '@/lib/supabase-client';
+import ParentHelpButton from '@/components/ParentHelpButton';
 
 interface Child {
   id: string;
@@ -406,6 +407,8 @@ export default function ParentDashboard() {
           </div>
         </motion.div>
       </main>
+
+      {user && <ParentHelpButton parentId={user.id} />}
     </div>
   );
 }
