@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
-import { ArrowLeft, Play, CheckCircle, Star, ChevronRight, Trophy, HelpCircle, Lightbulb, AlertCircle } from 'lucide-react';
+import { ArrowLeft, Play, CheckCircle, Star, ChevronRight, Trophy, HelpCircle, Lightbulb, AlertCircle, MessageCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface DemoProblem {
@@ -57,6 +57,11 @@ export default function LessonPage() {
   const [coinsEarned, setCoinsEarned] = useState(0);
   const [practiceResult, setPracticeResult] = useState<'correct' | 'wrong' | null>(null);
   const [explanationLevel, setExplanationLevel] = useState(1);
+  // Help button state
+  const [showHelp, setShowHelp] = useState(false);
+  const [helpLoading, setHelpLoading] = useState(false);
+  const [helpAnswer, setHelpAnswer] = useState<string | null>(null);
+  const [helpSource, setHelpSource] = useState<"library" | "claude" | null>(null);
 
   useEffect(() => {
     async function fetchLesson() {
@@ -132,6 +137,32 @@ export default function LessonPage() {
   const handleIDontGetIt = () => {
     if (explanationLevel < 3) {
       setExplanationLevel(prev => prev + 1);
+    }
+  };
+
+  // Ask Gigi for help - checks library first, then Claude
+  const handleAskForHelp = async () => {
+    if (!lesson) return;
+    setHelpLoading(true);
+    setShowHelp(true);
+    try {
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          messages: [{ role: "user", content: `I need help understanding: ${lesson.skill_name}. ${lesson.rules_text}` }],
+          childId: kidId,
+          skillId: skillId,
+          subjectCode: lesson.subject_code
+        })
+      });
+      const data = await response.json();
+      setHelpAnswer(data.message);
+      setHelpSource(data.source || "claude");
+    } catch (err) {
+      setHelpAnswer("Sorry, I could not get help right now. Please try again!");
+    } finally {
+      setHelpLoading(false);
     }
   };
 
@@ -324,6 +355,43 @@ export default function LessonPage() {
                     <CheckCircle className="w-5 h-5" />
                     This is the simplest explanation - You've got this!
                   </div>
+                )}
+
+                {/* Ask Gigi for Help Button */}
+                <button
+                  onClick={handleAskForHelp}
+                  disabled={helpLoading}
+                  className="w-full mb-4 bg-blue-500/20 hover:bg-blue-500/30 border border-blue-500/50 text-blue-400 font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-all disabled:opacity-50"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  {helpLoading ? "Asking Gigi..." : "Ask Gigi for Help"}
+                </button>
+
+                {/* Help Answer Display */}
+                {showHelp && helpAnswer && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="w-full mb-4 bg-blue-500/10 border border-blue-500/30 rounded-xl p-4"
+                  >
+                    <div className="flex items-start gap-3">
+                      <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center flex-shrink-0">
+                        <span className="text-xl">🤖</span>
+                      </div>
+                      <div>
+                        <p className="text-blue-400 font-bold text-sm mb-1">
+                          Gigi {helpSource === "library" ? "(from library)" : "(live help)"}
+                        </p>
+                        <p className="text-white/90 whitespace-pre-wrap">{helpAnswer}</p>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() => { setShowHelp(false); setHelpAnswer(null); }}
+                      className="mt-3 text-blue-400 text-sm hover:underline"
+                    >
+                      Close help
+                    </button>
+                  </motion.div>
                 )}
 
                 <button onClick={() => setCurrentPhase('demo')} className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-bold py-4 px-6 rounded-xl flex items-center justify-center gap-2">
