@@ -30,20 +30,20 @@ async function buildPersonalizedSystemPrompt(childId: string): Promise<string> {
       .replace('{interests}', child.interests?.join(', ') || 'various things')
   }
 
-  const learningStyleMap = {
+  const learningStyleMap: Record<string, string> = {
     visual: 'visual examples, diagrams, and pictures',
     auditory: 'verbal explanations and talking through problems',
     reading: 'written instructions and text-based explanations',
     kinesthetic: 'hands-on examples and real-world applications'
   }
 
-  const paceMap = {
+  const paceMap: Record<string, string> = {
     slow: 'a slower pace with extra examples and patience',
     medium: 'a balanced pace',
     fast: 'a faster pace with more challenging content'
   }
 
-  const confidenceMap = {
+  const confidenceMap: Record<string, string> = {
     low: 'extra encouragement and support',
     medium: 'steady guidance',
     high: 'more challenging problems and independence'
@@ -66,8 +66,8 @@ async function buildPersonalizedSystemPrompt(childId: string): Promise<string> {
     ? `Use examples related to ${exampleTopics.join(', ')} - ${child.name} loves these topics!`
     : ''
 
-  const accuracy = Math.round(profile.overall_accuracy * 100)
-  const stats = `${child.name} has answered ${profile.total_questions_answered} questions with ${accuracy}% accuracy.`
+  const accuracy = Math.round((profile.overall_accuracy || 0) * 100)
+  const stats = `${child.name} has answered ${profile.total_questions_answered || 0} questions with ${accuracy}% accuracy.`
 
   return `You are Gigi, a friendly and encouraging AI tutor helping ${child.name}, a ${child.grade_level} grade student.
 
@@ -78,7 +78,7 @@ LEARNING PROFILE:
 ${strugglingSubjects ? `- ${strugglingSubjects}` : ''}
 ${interestExamples ? `- ${interestExamples}` : ''}
 - Performance: ${stats}
-- Frustration Point: If ${child.name} gets ${profile.frustration_threshold}+ questions wrong in a row, offer a different explanation or take a break
+- Frustration Point: If ${child.name} gets ${profile.frustration_threshold || 3}+ questions wrong in a row, offer a different explanation or take a break
 ${profile.needs_more_examples ? `- Extra Examples: ${child.name} often needs more examples - be generous with them` : ''}
 ${profile.responds_to_encouragement ? `- Motivation: ${child.name} responds well to encouragement and praise` : ''}
 ${profile.responds_to_challenges ? `- Challenges: ${child.name} enjoys being challenged - don't be afraid to push a bit` : ''}
@@ -88,26 +88,44 @@ Adapt your teaching style to match this profile while staying encouraging and su
 
 export async function POST(request: Request) {
   try {
-    const { messages, studentId, childId } = await request.json()
+    // Check API key first
+    if (!process.env.ANTHROPIC_API_KEY) {
+      console.error('ANTHROPIC_API_KEY is not set')
+      return NextResponse.json({ error: 'API key not configured' }, { status: 500 })
+    }
+
+    const body = await request.json()
+    const { messages, studentId, childId } = body
 
     const id = childId || studentId
     if (!id) {
       return NextResponse.json({ error: 'Child ID is required' }, { status: 400 })
     }
 
+    console.log('Chat API called for child:', id)
+
     const supabase = await createServerSupabaseClient()
 
-    const { data: child } = await supabase
+    const { data: child, error: childError } = await supabase
       .from('children')
       .select('*')
       .eq('id', id)
       .maybeSingle()
 
+    if (childError) {
+      console.error('Supabase error:', childError)
+      return NextResponse.json({ error: 'Database error' }, { status: 500 })
+    }
+
     if (!child) {
       return NextResponse.json({ error: 'Child not found' }, { status: 404 })
     }
 
+    console.log('Found child:', child.name)
+
     const systemPrompt = await buildPersonalizedSystemPrompt(id)
+
+    console.log('Calling Anthropic API...')
 
     const response = await anthropic.messages.create({
       model: AI_MODEL,
@@ -118,6 +136,8 @@ export async function POST(request: Request) {
         content: m.content
       }))
     })
+
+    console.log('Anthropic response received')
 
     const textContent = response.content.find(block => block.type === 'text')
     const messageText = textContent && textContent.type === 'text'
@@ -135,12 +155,12 @@ export async function POST(request: Request) {
         .eq('id', id)
     }
 
-    return NextResponse.json({ message: messageText })
+    return NextResponse.json({ message: messageText, source: 'claude' })
 
-  } catch (error) {
-    console.error('Chat API error:', error)
+  } catch (error: any) {
+    console.error('Chat API error:', error?.message || error)
     return NextResponse.json(
-      { error: 'Failed to get response' },
+      { error: error?.message || 'Failed to get response' },
       { status: 500 }
     )
   }
