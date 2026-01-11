@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
-import { ArrowLeft, Play, CheckCircle, Star, ChevronRight, Trophy, HelpCircle, Lightbulb } from 'lucide-react';
+import { ArrowLeft, Play, CheckCircle, Star, ChevronRight, Trophy, HelpCircle, Lightbulb, AlertCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface DemoProblem {
@@ -17,6 +17,8 @@ interface QuizQuestion {
   options: string[];
   correct_answer: string;
   explanation: string;
+  // NEW: Specific feedback for each wrong answer (will be populated by Grok later)
+  wrong_answer_feedback?: Record<string, string>;
 }
 
 interface LessonContent {
@@ -27,7 +29,6 @@ interface LessonContent {
   rules_text: string;
   demo_problems: DemoProblem[];
   quiz_questions: QuizQuestion[];
-  // New fields for multi-level explanations (will be populated by Grok later)
   explanation_level_2?: string;
   explanation_level_3?: string;
 }
@@ -55,8 +56,6 @@ export default function LessonPage() {
   const [showExplanation, setShowExplanation] = useState(false);
   const [coinsEarned, setCoinsEarned] = useState(0);
   const [practiceResult, setPracticeResult] = useState<'correct' | 'wrong' | null>(null);
-  
-  // NEW: Track explanation level for "I Don't Get It" feature
   const [explanationLevel, setExplanationLevel] = useState(1);
 
   useEffect(() => {
@@ -87,18 +86,47 @@ export default function LessonPage() {
     }
     
     if (level === 2) {
-      // Use database value if available, otherwise generate a simpler version
       if (lesson.explanation_level_2) return lesson.explanation_level_2;
       return `Let me break this down more simply:\n\n${lesson.rules_text}\n\n💡 Key point: Focus on one step at a time. Don't worry about getting it perfect right away!`;
     }
     
     if (level === 3) {
-      // Use database value if available, otherwise generate most basic version
       if (lesson.explanation_level_3) return lesson.explanation_level_3;
       return `Let me explain this like we're just starting out:\n\n${lesson.rules_text}\n\n🌟 Think of it this way: Imagine you're teaching this to a friend. What's the ONE most important thing to remember?\n\n✨ You've got this! Take your time and ask for help anytime.`;
     }
     
     return lesson.rules_text || '';
+  };
+
+  // NEW: Get specific feedback for wrong answer
+  const getWrongAnswerFeedback = (question: QuizQuestion, wrongAnswer: string): string => {
+    // Check if we have pre-generated feedback for this specific wrong answer
+    if (question.wrong_answer_feedback && question.wrong_answer_feedback[wrongAnswer]) {
+      return question.wrong_answer_feedback[wrongAnswer];
+    }
+    
+    // Generate helpful feedback based on the answer chosen
+    const correct = question.correct_answer;
+    
+    // Check if it's a number-based question (math)
+    const wrongNum = parseFloat(wrongAnswer);
+    const correctNum = parseFloat(correct);
+    
+    if (!isNaN(wrongNum) && !isNaN(correctNum)) {
+      if (wrongNum < correctNum) {
+        return `You got ${wrongAnswer}, but the answer is a bit bigger. The correct answer is ${correct}. ${question.explanation}`;
+      } else if (wrongNum > correctNum) {
+        return `You got ${wrongAnswer}, but the answer is a bit smaller. The correct answer is ${correct}. ${question.explanation}`;
+      }
+    }
+    
+    // Check if answers are similar (off by one character, common typo)
+    if (wrongAnswer.toLowerCase().includes(correct.toLowerCase().substring(0, 3))) {
+      return `Close! You picked "${wrongAnswer}" but the correct answer is "${correct}". ${question.explanation}`;
+    }
+    
+    // Default feedback with encouragement
+    return `You picked "${wrongAnswer}". The correct answer is "${correct}". ${question.explanation}\n\n💪 Don't worry - mistakes help us learn!`;
   };
 
   const handleIDontGetIt = () => {
@@ -259,7 +287,6 @@ export default function LessonPage() {
                   <h2 className="text-2xl font-bold text-white flex items-center gap-3">
                     <span className="text-3xl">📚</span>Learn the Rules
                   </h2>
-                  {/* Explanation Level Indicator */}
                   {explanationLevel > 1 && (
                     <div className="flex items-center gap-2 bg-purple-500/20 px-3 py-1 rounded-full">
                       <Lightbulb className="w-4 h-4 text-purple-400" />
@@ -282,7 +309,6 @@ export default function LessonPage() {
                   </AnimatePresence>
                 </div>
 
-                {/* I Don't Get It Button */}
                 {explanationLevel < 3 && (
                   <button 
                     onClick={handleIDontGetIt}
@@ -346,9 +372,24 @@ export default function LessonPage() {
                   </div>
                 </div>
                 {practiceResult && (
-                  <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className={`p-4 rounded-xl mb-6 ${practiceResult === 'correct' ? 'bg-green-500/20' : 'bg-red-500/20'}`}>
-                    <p className={`font-bold ${practiceResult === 'correct' ? 'text-green-400' : 'text-red-400'}`}>{practiceResult === 'correct' ? '🎉 Correct! +5 coins' : '❌ Not quite!'}</p>
-                    <p className="text-white/80 mt-2">{practiceProblems[practiceIndex].explanation}</p>
+                  <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className={`p-4 rounded-xl mb-6 ${practiceResult === 'correct' ? 'bg-green-500/20 border border-green-500/30' : 'bg-red-500/20 border border-red-500/30'}`}>
+                    <div className="flex items-start gap-3">
+                      {practiceResult === 'correct' ? (
+                        <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                      ) : (
+                        <AlertCircle className="w-6 h-6 text-red-400 flex-shrink-0 mt-0.5" />
+                      )}
+                      <div>
+                        <p className={`font-bold text-lg ${practiceResult === 'correct' ? 'text-green-400' : 'text-red-400'}`}>
+                          {practiceResult === 'correct' ? '🎉 Correct! +5 coins' : '🤔 Not quite right...'}
+                        </p>
+                        <p className="text-white/80 mt-2 whitespace-pre-wrap">
+                          {practiceResult === 'correct' 
+                            ? practiceProblems[practiceIndex].explanation
+                            : getWrongAnswerFeedback(practiceProblems[practiceIndex], selectedAnswer || '')}
+                        </p>
+                      </div>
+                    </div>
                   </motion.div>
                 )}
                 {!practiceResult ? (
@@ -374,9 +415,24 @@ export default function LessonPage() {
                   </div>
                 </div>
                 {showExplanation && (
-                  <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className={`p-4 rounded-xl mb-6 ${quizResult === 'correct' ? 'bg-green-500/20' : 'bg-red-500/20'}`}>
-                    <p className={`font-bold ${quizResult === 'correct' ? 'text-green-400' : 'text-red-400'}`}>{quizResult === 'correct' ? '🎉 Correct! +10 coins' : '❌ Not quite!'}</p>
-                    <p className="text-white/80 mt-2">{quizQuestions[currentQuizIndex].explanation}</p>
+                  <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className={`p-4 rounded-xl mb-6 ${quizResult === 'correct' ? 'bg-green-500/20 border border-green-500/30' : 'bg-red-500/20 border border-red-500/30'}`}>
+                    <div className="flex items-start gap-3">
+                      {quizResult === 'correct' ? (
+                        <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                      ) : (
+                        <AlertCircle className="w-6 h-6 text-red-400 flex-shrink-0 mt-0.5" />
+                      )}
+                      <div>
+                        <p className={`font-bold text-lg ${quizResult === 'correct' ? 'text-green-400' : 'text-red-400'}`}>
+                          {quizResult === 'correct' ? '🎉 Correct! +10 coins' : '🤔 Not quite right...'}
+                        </p>
+                        <p className="text-white/80 mt-2 whitespace-pre-wrap">
+                          {quizResult === 'correct' 
+                            ? quizQuestions[currentQuizIndex].explanation
+                            : getWrongAnswerFeedback(quizQuestions[currentQuizIndex], selectedAnswer || '')}
+                        </p>
+                      </div>
+                    </div>
                   </motion.div>
                 )}
                 {!quizResult ? (
