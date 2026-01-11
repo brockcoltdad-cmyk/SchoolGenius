@@ -2,8 +2,22 @@
 
 import { useState, useEffect } from 'react'
 import { createClient } from '@/lib/supabase-client'
-import type { CurriculumSkill, LessonProgress } from '@/types/database'
+import type { CurriculumSkill } from '@/types/database'
 import { BookOpen, Star, Lock, CheckCircle, Play, Trophy } from 'lucide-react'
+
+type StudentSkillProgress = {
+  id: string
+  student_id: string | null
+  subject_code: string
+  skill_code: string
+  completed: boolean | null
+  best_score: number | null
+  attempts: number | null
+  last_practiced: string | null
+  questions_correct: number | null
+  questions_answered: number | null
+  created_at: string | null
+}
 
 interface SubjectPageProps {
   studentId: string
@@ -42,22 +56,23 @@ export default function SubjectPage({ studentId, subjectCode, subjectName, grade
     if (!skillDefs) { setLoading(false); return }
 
     const { data: progress } = await supabase
-      .from('lesson_progress')
+      .from('student_skill_progress')
       .select('*')
-      .eq('child_id', studentId)
+      .eq('student_id', studentId)
       .eq('subject_code', subjectCode)
-      .returns<LessonProgress[]>()
+      .returns<StudentSkillProgress[]>()
 
-    const progressMap = new Map(progress?.map(p => [p.skill_id, p]) || [])
+    const progressMap = new Map(progress?.map(p => [p.skill_code, p]) || [])
     let completedCount = 0
 
     const skillList: Skill[] = skillDefs.map((skill, index) => {
+      // Use skill.id since skill_code field doesn't exist on curriculum_skills table
       const prog = progressMap.get(skill.id)
       let status: Skill['status'] = 'locked'
       if (prog?.completed) { status = 'complete'; completedCount++ }
       else if (prog) status = 'in_progress'
       else if (index === 0 || progressMap.get(skillDefs[index - 1]?.id)?.completed) status = 'available'
-      return { id: skill.id, skill_name: skill.skill_name, skill_description: skill.description || '', status, score: prog?.score || undefined }
+      return { id: skill.id, skill_name: skill.skill_name, skill_description: skill.description || '', status, score: prog?.best_score || undefined }
     })
 
     if (skillList.length > 0 && !skillList.some(s => s.status === 'available' || s.status === 'in_progress')) {

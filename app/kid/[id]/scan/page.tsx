@@ -113,15 +113,14 @@ export default function ScanPage() {
 
       if (selectedCategory === 'calendar') {
         await supabase
-          .from('extracted_calendar_events')
+          .from('kid_school_events')
           .insert({
-            child_id: kidId,
-            document_id: data.id,
-            event_title: 'Upcoming School Event',
+            student_id: kidId,
+            event_name: 'Upcoming School Event',
             event_date: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
             event_type: 'other',
             description: 'Extracted from scanned calendar',
-          });
+          } as any);
       }
 
       toast({

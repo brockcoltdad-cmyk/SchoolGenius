@@ -76,7 +76,7 @@ export default function FamilySelectPage() {
       console.error('Error loading children:', error);
     } else {
       console.log('Loaded children:', data);
-      setChildren(data || []);
+      setChildren((data || []) as unknown as Child[]);
     }
 
     setLoading(false);

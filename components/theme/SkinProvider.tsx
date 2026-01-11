@@ -30,15 +30,16 @@ export function SkinProvider({ children }: SkinProviderProps) {
 
         const supabase = createClient();
         const { data, error } = await supabase
-          .from('children')
-          .select('selected_theme_skin')
-          .eq('id', kidId)
+          .from('student_skins')
+          .select('skin_id')
+          .eq('student_id', kidId)
+          .eq('equipped', true)
           .maybeSingle();
 
         if (error) throw error;
 
-        if (data?.selected_theme_skin) {
-          setSelectedSkinId(data.selected_theme_skin);
+        if (data?.skin_id) {
+          setSelectedSkinId(data.skin_id);
         }
       } catch (error) {
         console.error('Error fetching skin:', error);

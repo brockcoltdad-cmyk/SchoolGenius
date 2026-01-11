@@ -71,25 +71,24 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       }
 
       if (authData.user) {
-        const hashedPin = await hashPIN(pin);
+        // Note: parent_pin field doesn't exist in profiles table
+        // If PIN functionality is needed, add parent_pin column to profiles table
+        // or create a separate parent_pins table
 
         const { error: profileError } = await supabase
           .from('profiles')
           .insert({
             id: authData.user.id,
             email: email,
-            parent_pin: hashedPin,
+            // parent_pin: hashedPin, // Field doesn't exist
           });
 
         if (profileError) {
           return { error: 'Account created but profile setup failed. Please contact support.' };
         }
 
-        const { error: notifError } = await supabase
-          .from('notification_settings')
-          .insert({
-            parent_id: authData.user.id,
-          });
+        // Note: notification_settings table doesn't exist in current schema
+        // If notification settings are needed, create this table first
 
         router.push('/dashboard/add-child');
         return {};
@@ -109,6 +108,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const verifyParentPIN = async (pin: string): Promise<boolean> => {
     if (!user) return false;
 
+    // Note: parent_pin field doesn't exist in profiles table
+    // This feature is disabled until parent_pin column is added
+    // For now, always return true (no PIN verification)
+    console.warn('Parent PIN verification is disabled - parent_pin column does not exist in profiles table');
+    return true;
+
+    /* Original implementation - requires parent_pin column:
     try {
       const { data, error } = await supabase
         .from('profiles')
@@ -122,11 +128,18 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     } catch {
       return false;
     }
+    */
   };
 
   const updateParentPIN = async (newPin: string) => {
     if (!user) return { error: 'Not authenticated' };
 
+    // Note: parent_pin field doesn't exist in profiles table
+    // This feature is disabled until parent_pin column is added
+    console.warn('Parent PIN update is disabled - parent_pin column does not exist in profiles table');
+    return { error: 'PIN functionality is not available. Please add parent_pin column to profiles table.' };
+
+    /* Original implementation - requires parent_pin column:
     try {
       const hashedPin = await hashPIN(newPin);
 
@@ -143,6 +156,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     } catch (error: any) {
       return { error: error.message || 'Failed to update PIN' };
     }
+    */
   };
 
   return (

@@ -53,10 +53,10 @@ export default function StoryReaderPage({
   const storyData = {
     id: story.id,
     title: story.title,
-    cover_emoji: determineGenreEmoji(story.genre),
-    lexile_level: parseLexileLevel(story.lexile_band),
-    word_count: story.word_count,
-    estimated_minutes: story.expected_time_minutes,
+    cover_emoji: determineGenreEmoji(story.genre || 'realistic'),
+    lexile_level: parseLexileLevel(story.reading_level || ''),
+    word_count: story.word_count || 0,
+    estimated_minutes: Math.ceil((story.word_count || 0) / 200), // Estimate: ~200 words per minute
     content: story.content,
     paragraphs: splitIntoParagraphs(story.content),
   };
@@ -66,11 +66,11 @@ export default function StoryReaderPage({
     const supabase = createClient();
 
     try {
-      await supabase.from('story_attempts').insert({
-        child_id: childId,
+      await supabase.from('student_stories_read').insert({
+        student_id: childId,
         story_id: story.id,
-        started_at: new Date(Date.now() - readTime * 1000).toISOString(),
-        reading_time_seconds: readTime,
+        read_at: new Date().toISOString(),
+        completed: false, // Will be marked true after quiz
       });
     } catch (error) {
       console.error('Error saving reading attempt:', error);
@@ -92,6 +92,9 @@ export default function StoryReaderPage({
     );
   }
 
+  // Extract colors from theme's JSON colors field
+  const themeColors = currentTheme?.colors as any || {};
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-purple-50 py-8">
       <StoryReader
@@ -100,8 +103,8 @@ export default function StoryReaderPage({
         onComplete={handleComplete}
         onRequestQuiz={handleRequestQuiz}
         theme={{
-          primaryColor: currentTheme.primaryColor,
-          fontFamily: currentTheme.fontFamily,
+          primaryColor: themeColors.primaryColor || '#3B82F6',
+          fontFamily: themeColors.fontFamily || 'system-ui',
         }}
       />
     </div>

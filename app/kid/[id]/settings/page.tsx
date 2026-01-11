@@ -81,7 +81,7 @@ export default function SettingsPage() {
           .single<Pick<Child, 'grade_level' | 'current_theme' | 'coins'>>();
 
         if (child) {
-          setChildGrade(child.grade_level);
+          setChildGrade(child.grade_level || '');
           setChildCoins(child.coins || 0);
           if (child.current_theme) {
             setTheme(child.current_theme as ThemeId);
@@ -89,19 +89,20 @@ export default function SettingsPage() {
         }
 
         const { data: themes } = await supabase
-          .from('owned_themes')
+          .from('student_themes')
           .select('theme_id')
-          .eq('child_id', kidId)
+          .eq('student_id', kidId)
           .returns<Pick<OwnedTheme, 'theme_id'>[]>();
 
         if (themes) {
-          setOwnedThemes(themes.map(t => t.theme_id as ThemeId));
+          setOwnedThemes(themes.map(t => t.theme_id as ThemeId).filter(Boolean));
         }
 
         const { data: disabled } = await supabase
-          .from('disabled_themes')
+          .from('student_themes')
           .select('theme_id')
-          .eq('child_id', kidId)
+          .eq('student_id', kidId)
+          .eq('is_active', false)
           .returns<Pick<DisabledTheme, 'theme_id'>[]>();
 
         if (disabled) {

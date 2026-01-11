@@ -8,13 +8,13 @@ export async function assignFreeThemesToChild(childId: string, gradeLevel: strin
   const freeThemes = getFreeThemesForGrade(gradeLevel);
 
   const themesToInsert = freeThemes.map(themeId => ({
-    child_id: childId,
+    student_id: childId,
     theme_id: themeId,
-    is_free: true,
+    is_active: true,
   }));
 
   const { error } = await supabase
-    .from('owned_themes')
+    .from('student_themes')
     .insert(themesToInsert);
 
   if (error) throw error;
@@ -24,28 +24,30 @@ export async function getOwnedThemes(childId: string): Promise<ThemeId[]> {
   const supabase = createClient();
 
   const { data, error } = await supabase
-    .from('owned_themes')
+    .from('student_themes')
     .select('theme_id')
-    .eq('child_id', childId)
+    .eq('student_id', childId)
     .returns<Pick<OwnedTheme, 'theme_id'>[]>();
 
   if (error) throw error;
 
-  return (data || []).map(row => row.theme_id as ThemeId);
+  return (data || []).map(row => row.theme_id as ThemeId).filter(Boolean);
 }
 
 export async function getDisabledThemes(childId: string): Promise<ThemeId[]> {
   const supabase = createClient();
 
+  // Note: disabled_themes table doesn't exist. Using is_active=false in student_themes
   const { data, error } = await supabase
-    .from('disabled_themes')
+    .from('student_themes')
     .select('theme_id')
-    .eq('child_id', childId)
-    .returns<Pick<DisabledTheme, 'theme_id'>[]>();
+    .eq('student_id', childId)
+    .eq('is_active', false)
+    .returns<Pick<OwnedTheme, 'theme_id'>[]>();
 
   if (error) throw error;
 
-  return (data || []).map(row => row.theme_id as ThemeId);
+  return (data || []).map(row => row.theme_id as ThemeId).filter(Boolean);
 }
 
 export async function getAvailableThemes(childId: string): Promise<ThemeId[]> {
@@ -68,14 +70,14 @@ export async function purchaseTheme(childId: string, themeId: ThemeId, price: nu
 
   if (childError) throw childError;
   if (!child) throw new Error('Child not found');
-  if (child.coins < price) throw new Error('Not enough coins');
+  if (!child.coins || child.coins < price) throw new Error('Not enough coins');
 
   const { error: themeError } = await supabase
-    .from('owned_themes')
+    .from('student_themes')
     .insert({
-      child_id: childId,
+      student_id: childId,
       theme_id: themeId,
-      is_free: false,
+      is_active: true,
     });
 
   if (themeError) throw themeError;
@@ -93,26 +95,24 @@ export async function purchaseTheme(childId: string, themeId: ThemeId, price: nu
 export async function disableTheme(childId: string, themeId: ThemeId, parentId: string) {
   const supabase = createClient();
 
+  // Update is_active to false instead of using disabled_themes table
   const { error } = await supabase
-    .from('disabled_themes')
-    .insert({
-      child_id: childId,
-      theme_id: themeId,
-      disabled_by: parentId,
-    });
+    .from('student_themes')
+    .update({ is_active: false })
+    .eq('student_id', childId)
+    .eq('theme_id', themeId);
 
-  if (error && error.code !== '23505') {
-    throw error;
-  }
+  if (error) throw error;
 }
 
 export async function enableTheme(childId: string, themeId: ThemeId) {
   const supabase = createClient();
 
+  // Update is_active to true instead of deleting from disabled_themes
   const { error } = await supabase
-    .from('disabled_themes')
-    .delete()
-    .eq('child_id', childId)
+    .from('student_themes')
+    .update({ is_active: true })
+    .eq('student_id', childId)
     .eq('theme_id', themeId);
 
   if (error) throw error;

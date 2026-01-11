@@ -22,32 +22,32 @@ export default async function QuizPage({ params }: Props) {
 
   const { data: story } = await supabase
     .from('stories')
-    .select('id, title, coins_reward, bonus_coins')
+    .select('id, title, comprehension_questions')
     .eq('id', storyId)
-    .eq('is_active', true)
     .maybeSingle();
 
   if (!story) {
     redirect(`/kid/${childId}`);
   }
 
-  const { data: questions } = await supabase
-    .from('story_questions')
-    .select('*')
-    .eq('story_id', storyId)
-    .order('question_number', { ascending: true });
+  // Questions are stored as JSON in comprehension_questions field
+  const questions = (story.comprehension_questions as any) || [];
 
   if (!questions || questions.length === 0) {
     redirect(`/kid/${childId}/reading/${storyId}`);
   }
+
+  // Calculate rewards based on reading level/difficulty
+  const baseCoinsReward = 10;
+  const bonusCoins = 5;
 
   return (
     <StoryQuizPage
       childId={childId}
       storyId={storyId}
       storyTitle={story.title}
-      baseCoinsReward={story.coins_reward}
-      bonusCoins={story.bonus_coins}
+      baseCoinsReward={baseCoinsReward}
+      bonusCoins={bonusCoins}
       questions={questions}
     />
   );

@@ -85,7 +85,7 @@ export default function DocumentsPage() {
         .order('scanned_at', { ascending: false });
 
       if (error) throw error;
-      setDocuments(data || []);
+      setDocuments((data || []) as any);
     } catch (error) {
       console.error('Error fetching documents:', error);
       toast({
@@ -102,15 +102,15 @@ export default function DocumentsPage() {
     try {
       const supabase = createClient();
       const { data, error } = await supabase
-        .from('extracted_calendar_events')
+        .from('kid_school_events')
         .select('*')
-        .eq('child_id', kidId)
+        .eq('student_id', kidId)
         .gte('event_date', new Date().toISOString().split('T')[0])
         .order('event_date', { ascending: true })
         .limit(5);
 
       if (error) throw error;
-      setCalendarEvents(data || []);
+      setCalendarEvents((data || []) as any);
     } catch (error) {
       console.error('Error fetching calendar events:', error);
     }
@@ -120,7 +120,7 @@ export default function DocumentsPage() {
     try {
       const supabase = createClient();
       const { error } = await supabase
-        .from('scanned_homework')
+        .from('kid_scanned_docs')
         .delete()
         .eq('id', documentId);
 

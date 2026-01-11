@@ -75,7 +75,7 @@ export default function ParentDashboard() {
       console.error('Error fetching children:', error);
     } else {
       console.log('Fetched children:', data);
-      setChildren(data || []);
+      setChildren((data || []) as unknown as Child[]);
     }
 
     setIsLoading(false);

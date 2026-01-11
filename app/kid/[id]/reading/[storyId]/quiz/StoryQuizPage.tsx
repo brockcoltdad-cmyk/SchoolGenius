@@ -3,7 +3,18 @@
 import { useRouter } from 'next/navigation';
 import StoryQuiz, { QuizResults, QuizQuestion } from '@/components/StoryQuiz';
 import { createClient } from '@/lib/supabase-client';
-import type { StoryQuestion, ReadingProgress, Child } from '@/types/database';
+import type { Child } from '@/types/database';
+
+// Questions are stored as JSON in stories.comprehension_questions
+interface DBStoryQuestion {
+  id: string;
+  question_text: string;
+  choice_a: string;
+  choice_b: string;
+  choice_c: string;
+  choice_d: string;
+  correct_answer: 'A' | 'B' | 'C' | 'D';
+}
 
 interface StoryQuizPageProps {
   childId: string;
@@ -11,7 +22,7 @@ interface StoryQuizPageProps {
   storyTitle: string;
   baseCoinsReward: number;
   bonusCoins: number;
-  questions: StoryQuestion[];
+  questions: DBStoryQuestion[];
 }
 
 export default function StoryQuizPage({
@@ -24,7 +35,7 @@ export default function StoryQuizPage({
 }: StoryQuizPageProps) {
   const router = useRouter();
 
-  const transformQuestions = (dbQuestions: StoryQuestion[]): QuizQuestion[] => {
+  const transformQuestions = (dbQuestions: DBStoryQuestion[]): QuizQuestion[] => {
     return dbQuestions.map(q => ({
       id: q.id,
       question: q.question_text,
@@ -52,19 +63,33 @@ export default function StoryQuizPage({
         finalCoins = baseCoinsReward;
       }
 
-      const attemptId = crypto.randomUUID();
+      // Mark story as completed in student_stories_read
+      const { data: existingRead } = await supabase
+        .from('student_stories_read')
+        .select('id')
+        .eq('student_id', childId)
+        .eq('story_id', storyId)
+        .maybeSingle();
 
-      await supabase.from('story_attempts').insert({
-        id: attemptId,
-        child_id: childId,
-        story_id: storyId,
-        started_at: new Date().toISOString(),
-        completed_at: new Date().toISOString(),
-        score,
-        result: resultText,
-        coins_earned: finalCoins,
-        answers: answersMap,
-      });
+      if (existingRead) {
+        // Update existing record
+        await supabase
+          .from('student_stories_read')
+          .update({
+            completed: results.passed,
+            rating: results.percentage >= 90 ? 5 : results.percentage >= 70 ? 4 : 3,
+          })
+          .eq('id', existingRead.id);
+      } else {
+        // Create new record
+        await supabase.from('student_stories_read').insert({
+          student_id: childId,
+          story_id: storyId,
+          completed: results.passed,
+          rating: results.percentage >= 90 ? 5 : results.percentage >= 70 ? 4 : 3,
+          read_at: new Date().toISOString(),
+        });
+      }
 
       if (results.passed) {
         await updateReadingProgress(
@@ -89,42 +114,7 @@ export default function StoryQuizPage({
     total: number,
     coinsEarned: number
   ) => {
-    const { data: existingProgress } = await supabase
-      .from('reading_progress')
-      .select('*')
-      .eq('child_id', childId)
-      .maybeSingle<ReadingProgress>();
-
-    if (existingProgress) {
-      const newTotalCorrect = existingProgress.total_questions_correct + correct;
-      const newTotalAnswered = existingProgress.total_questions_answered + total;
-      const newAverageScore = (newTotalCorrect / newTotalAnswered) * 100;
-
-      await supabase
-        .from('reading_progress')
-        .update({
-          stories_completed: existingProgress.stories_completed + 1,
-          total_questions_correct: newTotalCorrect,
-          total_questions_answered: newTotalAnswered,
-          average_score: newAverageScore,
-          last_story_id: storyId,
-          updated_at: new Date().toISOString(),
-        })
-        .eq('child_id', childId);
-    } else {
-      const averageScore = (correct / total) * 100;
-
-      await supabase.from('reading_progress').insert({
-        child_id: childId,
-        current_lexile_band: 'BR-300L',
-        stories_completed: 1,
-        total_questions_correct: correct,
-        total_questions_answered: total,
-        average_score: averageScore,
-        last_story_id: storyId,
-      });
-    }
-
+    // Award coins to the child
     if (coinsEarned > 0) {
       const { data: child } = await supabase
         .from('children')
@@ -132,7 +122,7 @@ export default function StoryQuizPage({
         .eq('id', childId)
         .maybeSingle<Pick<Child, 'coins'>>();
 
-      if (child) {
+      if (child && child.coins !== null) {
         await supabase
           .from('children')
           .update({
@@ -141,6 +131,9 @@ export default function StoryQuizPage({
           .eq('id', childId);
       }
     }
+
+    // Note: Reading progress is now tracked via student_stories_read table
+    // You can query that table to calculate aggregate statistics
   };
 
   const handleRetry = () => {

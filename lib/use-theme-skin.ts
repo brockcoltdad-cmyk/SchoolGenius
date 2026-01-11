@@ -35,19 +35,29 @@ export function useThemeSkin(childId: string, themeId: ThemeId) {
       }
 
       const supabase = createClient();
-      const { data, error } = await supabase
+
+      // Get child's XP and level from children table
+      const { data: child, error: childError } = await supabase
         .from('children')
-        .select('theme_xp, theme_level, selected_theme_skin')
+        .select('xp, level')
         .eq('id', childId)
         .maybeSingle();
 
-      if (error) throw error;
+      if (childError) throw childError;
 
-      if (data) {
+      // Get equipped skin from student_skins table
+      const { data: skinData } = await supabase
+        .from('student_skins')
+        .select('skin_id')
+        .eq('student_id', childId)
+        .eq('equipped', true)
+        .maybeSingle();
+
+      if (child) {
         setProgress({
-          xp: data.theme_xp || 0,
-          level: data.theme_level || 1,
-          selectedSkin: data.selected_theme_skin || 'default',
+          xp: child.xp || 0,
+          level: child.level || 1,
+          selectedSkin: skinData?.skin_id || 'default',
         });
       }
     } catch (error) {
@@ -72,10 +82,23 @@ export function useThemeSkin(childId: string, themeId: ThemeId) {
       }
 
       const supabase = createClient();
+
+      // First, unequip all skins for this child
+      await supabase
+        .from('student_skins')
+        .update({ equipped: false })
+        .eq('student_id', childId);
+
+      // Then equip the selected skin (or insert if it doesn't exist)
       const { error } = await supabase
-        .from('children')
-        .update({ selected_theme_skin: skinId })
-        .eq('id', childId);
+        .from('student_skins')
+        .upsert({
+          student_id: childId,
+          skin_id: skinId,
+          equipped: true,
+        }, {
+          onConflict: 'student_id,skin_id'
+        });
 
       if (error) throw error;
 
@@ -109,8 +132,8 @@ export function useThemeSkin(childId: string, themeId: ThemeId) {
       const { error } = await supabase
         .from('children')
         .update({
-          theme_xp: newXP,
-          theme_level: newLevel,
+          xp: newXP,
+          level: newLevel,
         })
         .eq('id', childId);
 

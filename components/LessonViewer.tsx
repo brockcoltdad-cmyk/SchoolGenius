@@ -145,16 +145,17 @@ export default function LessonViewer({ studentId, subjectCode, skillId }: Lesson
 
   async function completeLesson() {
     const percentage = Math.round((score.correct / score.total) * 100)
-    await supabase.from('lesson_progress').upsert({
-      child_id: studentId,
+    await supabase.from('student_skill_progress').upsert({
+      student_id: studentId,
       subject_code: subjectCode,
-      skill_id: skillId,
-      skill_name: skillName,
+      skill_code: skillId,
       completed: percentage >= 80,
-      score: percentage,
+      best_score: percentage,
       attempts: 1,
-      completed_at: percentage >= 80 ? new Date().toISOString() : null
-    }, { onConflict: 'child_id,skill_id' })
+      questions_correct: score.correct,
+      questions_answered: score.total,
+      last_practiced: new Date().toISOString()
+    }, { onConflict: 'student_id,skill_code' })
     const finalCoins = coinsEarned + (percentage >= 80 ? 50 : 0)
     await supabase.rpc('add_coins', { p_child_id: studentId, p_amount: finalCoins })
   }

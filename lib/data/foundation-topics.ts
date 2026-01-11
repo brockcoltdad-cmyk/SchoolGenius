@@ -30,8 +30,9 @@ export const FOUNDATION_TOPICS = {
 export function getTopicsForGrade(subject: string, grade: number): any[] {
   const subjectData = FOUNDATION_TOPICS[subject as keyof typeof FOUNDATION_TOPICS]
   if (!subjectData) return []
-  if (grade <= 2) return subjectData.grades['K-2'] || []
-  if (grade <= 5) return subjectData.grades['3-5'] || []
+  const grades = subjectData.grades as any
+  if (grade <= 2) return grades['K-2'] || []
+  if (grade <= 5) return grades['3-5'] || []
   return []
 }
 

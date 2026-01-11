@@ -52,27 +52,23 @@ export default function ShopPage() {
           .single();
 
         if (child) {
-          setCoins(child.coins);
-          setChildGrade(child.grade_level);
+          setCoins(child.coins || 0);
+          setChildGrade(child.grade_level || '');
         }
 
         const { data: themesData } = await supabase
-          .from('owned_themes')
+          .from('student_themes')
           .select('theme_id')
-          .eq('child_id', kidId);
+          .eq('student_id', kidId);
 
         if (themesData) {
-          setOwnedThemes(themesData.map(t => t.theme_id as ThemeId));
+          setOwnedThemes(themesData.map(t => t.theme_id as ThemeId).filter(Boolean));
         }
 
-        const { data: disabled } = await supabase
-          .from('disabled_themes')
-          .select('theme_id')
-          .eq('child_id', kidId);
-
-        if (disabled) {
-          setDisabledThemes(disabled.map(t => t.theme_id as ThemeId));
-        }
+        // Note: disabled_themes table doesn't exist in current schema
+        // If you need to track disabled themes, you may need to add this table
+        // or use a different approach (e.g., a column in student_themes)
+        setDisabledThemes([]);
       } catch (error) {
         console.error('Error fetching data:', error);
       } finally {
@@ -101,8 +97,8 @@ export default function ShopPage() {
       const supabase = createClient();
 
       const { error: themeError } = await supabase
-        .from('owned_themes')
-        .insert({ child_id: kidId, theme_id: themeId, is_free: false });
+        .from('student_themes')
+        .insert({ student_id: kidId, theme_id: themeId, is_active: false });
 
       if (themeError) throw themeError;
 

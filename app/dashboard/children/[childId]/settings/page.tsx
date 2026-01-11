@@ -77,30 +77,31 @@ export default function ChildThemeSettingsPage() {
 
       const { data: childData, error: childError } = await supabase
         .from('children')
-        .select('id, name, grade_level, current_theme')
+        .select('*')
         .eq('id', childId)
         .eq('parent_id', user.id)
         .single();
 
       if (childError) throw childError;
-      setChild(childData);
+      setChild(childData as Child);
 
       const { data: themesData, error: themesError } = await supabase
-        .from('owned_themes')
-        .select('theme_id, is_free, purchased_at')
-        .eq('child_id', childId)
+        .from('student_themes')
+        .select('theme_id, is_active, purchased_at')
+        .eq('student_id', childId)
         .order('purchased_at', { ascending: false });
 
       if (themesError) throw themesError;
-      setOwnedThemes(themesData || []);
+      setOwnedThemes((themesData || []) as unknown as OwnedTheme[]);
 
       const { data: disabledData, error: disabledError } = await supabase
-        .from('disabled_themes')
+        .from('student_themes')
         .select('theme_id')
-        .eq('child_id', childId);
+        .eq('student_id', childId)
+        .eq('is_active', false);
 
       if (disabledError) throw disabledError;
-      setDisabledThemes(disabledData?.map((d: any) => d.theme_id as ThemeId) || []);
+      setDisabledThemes(disabledData?.map((d: any) => d.theme_id as ThemeId).filter(Boolean) || []);
     } catch (error) {
       console.error('Error fetching data:', error);
       toast({
@@ -156,9 +157,9 @@ export default function ChildThemeSettingsPage() {
 
       if (isCurrentlyDisabled) {
         const { error } = await supabase
-          .from('disabled_themes')
-          .delete()
-          .eq('child_id', childId)
+          .from('student_themes')
+          .update({ is_active: true })
+          .eq('student_id', childId)
           .eq('theme_id', themeId);
 
         if (error) throw error;
@@ -179,12 +180,10 @@ export default function ChildThemeSettingsPage() {
         }
 
         const { error } = await supabase
-          .from('disabled_themes')
-          .insert({
-            child_id: childId,
-            theme_id: themeId,
-            disabled_by: user.id,
-          } as any);
+          .from('student_themes')
+          .update({ is_active: false })
+          .eq('student_id', childId)
+          .eq('theme_id', themeId);
 
         if (error) throw error;
         setDisabledThemes([...disabledThemes, themeId]);

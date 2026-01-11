@@ -415,10 +415,7 @@ export default function DashboardTemplate({
           <div className="grid grid-cols-2 gap-6">
             {subjects.map((subject, index) => {
               const href = subject.href.replace('{id}', kidId);
-              const CardWrapper = previewMode ? 'div' : Link;
-              const cardProps = previewMode ? {} : { href };
-              return (
-              <CardWrapper key={subject.id} {...cardProps}>
+              const cardContent = (
                 <motion.div
                   initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -490,8 +487,12 @@ export default function DashboardTemplate({
                   </div>
                 </div>
               </motion.div>
-              </CardWrapper>
-            );
+              );
+              return previewMode ? (
+                <div key={subject.id}>{cardContent}</div>
+              ) : (
+                <Link key={subject.id} href={href}>{cardContent}</Link>
+              );
             })}
           </div>
         </motion.div>
@@ -505,10 +506,7 @@ export default function DashboardTemplate({
           {bottomNav.map((item, i) => {
             const Icon = item.icon;
             const href = item.href.replace('{id}', kidId);
-            const NavWrapper = previewMode ? 'div' : Link;
-            const navProps = previewMode ? {} : { href };
-            return (
-              <NavWrapper key={i} {...navProps}>
+            const navContent = (
                 <motion.div
                   whileHover={{ scale: 1.05, y: -5 }}
                   whileTap={{ scale: 0.95 }}
@@ -522,7 +520,11 @@ export default function DashboardTemplate({
                   </motion.div>
                   <div className="text-white font-black text-sm uppercase">{item.label}</div>
                 </motion.div>
-              </NavWrapper>
+            );
+            return previewMode ? (
+              <div key={i}>{navContent}</div>
+            ) : (
+              <Link key={i} href={href}>{navContent}</Link>
             );
           })}
         </motion.div>
