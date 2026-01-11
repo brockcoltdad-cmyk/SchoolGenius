@@ -97,6 +97,7 @@ export default function SubjectPage() {
   }, [kidId, info.code]);
 
   const handleSkillClick = (skillId: string, locked: boolean) => {
+    console.log("CLICK:", skillId, "locked:", locked);
     if (locked) return;
     router.push(`/kid/${kidId}/lesson/${skillId}`);
   };
