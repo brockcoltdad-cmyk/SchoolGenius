@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
-import { ArrowLeft, Play, CheckCircle, Star, ChevronRight, Trophy } from 'lucide-react';
+import { ArrowLeft, Play, CheckCircle, Star, ChevronRight, Trophy, HelpCircle, Lightbulb } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface DemoProblem {
@@ -27,6 +27,9 @@ interface LessonContent {
   rules_text: string;
   demo_problems: DemoProblem[];
   quiz_questions: QuizQuestion[];
+  // New fields for multi-level explanations (will be populated by Grok later)
+  explanation_level_2?: string;
+  explanation_level_3?: string;
 }
 
 export default function LessonPage() {
@@ -52,6 +55,9 @@ export default function LessonPage() {
   const [showExplanation, setShowExplanation] = useState(false);
   const [coinsEarned, setCoinsEarned] = useState(0);
   const [practiceResult, setPracticeResult] = useState<'correct' | 'wrong' | null>(null);
+  
+  // NEW: Track explanation level for "I Don't Get It" feature
+  const [explanationLevel, setExplanationLevel] = useState(1);
 
   useEffect(() => {
     async function fetchLesson() {
@@ -71,6 +77,35 @@ export default function LessonPage() {
     }
     fetchLesson();
   }, [skillId]);
+
+  // Generate simpler explanations if not in database yet
+  const getExplanationForLevel = (level: number): string => {
+    if (!lesson) return '';
+    
+    if (level === 1) {
+      return lesson.rules_text || 'No rules available.';
+    }
+    
+    if (level === 2) {
+      // Use database value if available, otherwise generate a simpler version
+      if (lesson.explanation_level_2) return lesson.explanation_level_2;
+      return `Let me break this down more simply:\n\n${lesson.rules_text}\n\n💡 Key point: Focus on one step at a time. Don't worry about getting it perfect right away!`;
+    }
+    
+    if (level === 3) {
+      // Use database value if available, otherwise generate most basic version
+      if (lesson.explanation_level_3) return lesson.explanation_level_3;
+      return `Let me explain this like we're just starting out:\n\n${lesson.rules_text}\n\n🌟 Think of it this way: Imagine you're teaching this to a friend. What's the ONE most important thing to remember?\n\n✨ You've got this! Take your time and ask for help anytime.`;
+    }
+    
+    return lesson.rules_text || '';
+  };
+
+  const handleIDontGetIt = () => {
+    if (explanationLevel < 3) {
+      setExplanationLevel(prev => prev + 1);
+    }
+  };
 
   const phases = ['rules', 'demo', 'practice', 'quiz', 'complete'];
   const currentPhaseIndex = phases.indexOf(currentPhase);
@@ -220,10 +255,51 @@ export default function LessonPage() {
 
             {currentPhase === 'rules' && (
               <div>
-                <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3"><span className="text-3xl">📚</span>Learn the Rules</h2>
-                <div className="bg-white/5 rounded-xl p-6 mb-6">
-                  <p className="text-white/90 text-lg leading-relaxed whitespace-pre-wrap">{lesson.rules_text || 'No rules available.'}</p>
+                <div className="flex items-center justify-between mb-6">
+                  <h2 className="text-2xl font-bold text-white flex items-center gap-3">
+                    <span className="text-3xl">📚</span>Learn the Rules
+                  </h2>
+                  {/* Explanation Level Indicator */}
+                  {explanationLevel > 1 && (
+                    <div className="flex items-center gap-2 bg-purple-500/20 px-3 py-1 rounded-full">
+                      <Lightbulb className="w-4 h-4 text-purple-400" />
+                      <span className="text-purple-400 text-sm font-bold">Level {explanationLevel} Explanation</span>
+                    </div>
+                  )}
                 </div>
+                
+                <div className="bg-white/5 rounded-xl p-6 mb-6">
+                  <AnimatePresence mode="wait">
+                    <motion.p 
+                      key={explanationLevel}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      className="text-white/90 text-lg leading-relaxed whitespace-pre-wrap"
+                    >
+                      {getExplanationForLevel(explanationLevel)}
+                    </motion.p>
+                  </AnimatePresence>
+                </div>
+
+                {/* I Don't Get It Button */}
+                {explanationLevel < 3 && (
+                  <button 
+                    onClick={handleIDontGetIt}
+                    className="w-full mb-4 bg-orange-500/20 hover:bg-orange-500/30 border border-orange-500/50 text-orange-400 font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-all"
+                  >
+                    <HelpCircle className="w-5 h-5" />
+                    I Don't Get It - Explain Simpler
+                  </button>
+                )}
+                
+                {explanationLevel === 3 && (
+                  <div className="w-full mb-4 bg-green-500/20 border border-green-500/50 text-green-400 font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2">
+                    <CheckCircle className="w-5 h-5" />
+                    This is the simplest explanation - You've got this!
+                  </div>
+                )}
+
                 <button onClick={() => setCurrentPhase('demo')} className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-bold py-4 px-6 rounded-xl flex items-center justify-center gap-2">
                   <Play className="w-5 h-5" />Watch Examples<ChevronRight className="w-5 h-5" />
                 </button>
