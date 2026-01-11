@@ -2,6 +2,77 @@ import { anthropic, AI_MODEL } from '@/lib/ai/client'
 import { GIGI_SYSTEM_PROMPT } from '@/lib/ai/prompts'
 import { createServerSupabaseClient } from '@/lib/supabase/server'
 import { NextResponse } from 'next/server'
+import crypto from 'crypto'
+
+// CLOSED LOOP SYSTEM - Create hash for question lookup
+function hashQuestion(question: string): string {
+  return crypto.createHash('sha256').update(question.toLowerCase().trim()).digest('hex')
+}
+
+// CLOSED LOOP SYSTEM - Check if answer exists in library
+async function checkQALibrary(question: string, childId: string) {
+  const supabase = await createServerSupabaseClient()
+  const questionHash = hashQuestion(question)
+
+  const { data, error } = await supabase
+    .from('qa_library')
+    .select('*')
+    .eq('question_hash', questionHash)
+    .maybeSingle()
+
+  if (error) {
+    console.error('Error checking qa_library:', error)
+    return null
+  }
+
+  if (data) {
+    // Found in library! Increment times_served
+    await supabase
+      .from('qa_library')
+      .update({
+        times_served: (data.times_served || 0) + 1,
+        updated_at: new Date().toISOString()
+      })
+      .eq('id', data.id)
+
+    console.log('✅ Answer found in qa_library (FREE!). Times served:', (data.times_served || 0) + 1)
+  }
+
+  return data
+}
+
+// CLOSED LOOP SYSTEM - Save Claude's answer to library for future use
+async function saveToQALibrary(question: string, answer: string, childId: string, category?: string) {
+  const supabase = await createServerSupabaseClient()
+  const questionHash = hashQuestion(question)
+
+  // Get child's grade level for context
+  const { data: child } = await supabase
+    .from('children')
+    .select('grade_level')
+    .eq('id', childId)
+    .maybeSingle()
+
+  const { error } = await supabase
+    .from('qa_library')
+    .insert({
+      question_text: question,
+      question_hash: questionHash,
+      answer_text: answer,
+      created_by: 'claude',
+      user_type: 'child',
+      category: category || 'general',
+      grade_level: child?.grade_level || null,
+      times_served: 0,
+      created_at: new Date().toISOString()
+    })
+
+  if (error) {
+    console.error('Error saving to qa_library:', error)
+  } else {
+    console.log('💾 Saved to qa_library - next time this question is FREE!')
+  }
+}
 
 async function buildPersonalizedSystemPrompt(childId: string): Promise<string> {
   const supabase = await createServerSupabaseClient()
@@ -123,6 +194,24 @@ export async function POST(request: Request) {
 
     console.log('Found child:', child.name)
 
+    // CLOSED LOOP SYSTEM - Check qa_library FIRST (FREE if exists)
+    const userMessage = messages[messages.length - 1]?.content || ''
+    if (userMessage && typeof userMessage === 'string') {
+      console.log('🔍 Checking qa_library for existing answer...')
+      const cachedAnswer = await checkQALibrary(userMessage, id)
+
+      if (cachedAnswer) {
+        // Found in library - return immediately (FREE!)
+        return NextResponse.json({
+          message: cachedAnswer.answer_text,
+          source: 'library',
+          times_served: cachedAnswer.times_served
+        })
+      }
+
+      console.log('❌ Not in library - calling Claude (costs money)')
+    }
+
     const systemPrompt = await buildPersonalizedSystemPrompt(id)
 
     console.log('Calling Anthropic API...')
@@ -143,6 +232,11 @@ export async function POST(request: Request) {
     const messageText = textContent && textContent.type === 'text'
       ? textContent.text
       : "I'm having trouble responding right now!"
+
+    // CLOSED LOOP SYSTEM - Save Claude's answer to library (FREE next time!)
+    if (userMessage && typeof userMessage === 'string') {
+      await saveToQALibrary(userMessage, messageText, id)
+    }
 
     const today = new Date().toISOString().split('T')[0]
     if (child.last_activity_date !== today) {
