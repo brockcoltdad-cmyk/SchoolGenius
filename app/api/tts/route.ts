@@ -131,7 +131,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'API key not configured' }, { status: 500 })
     }
 
-    const voiceId = 'XB0fDUnXU5powFXDhCwa'
+    const voiceId = 'cgSgspJ2msm6clMCkdW9' // Jessica - Playful, Bright, Warm
 
     const response = await fetch(
       `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`,
