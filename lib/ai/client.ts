@@ -4,4 +4,4 @@ export const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY || '',
 })
 
-export const AI_MODEL = 'claude-3-opus-20240229'
+export const AI_MODEL = 'claude-3-5-sonnet-20241022'

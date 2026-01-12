@@ -215,7 +215,7 @@ Write ONLY the answer. No "Answer:", no headers - just the friendly response Gig
             "Authorization": `Bearer ${grokKey}`
           },
           body: JSON.stringify({
-            model: "grok-beta",
+            model: "grok-3",
             messages: [{ role: "user", content: prompt }],
             temperature: 0.8,
             max_tokens: 300

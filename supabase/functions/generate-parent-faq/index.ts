@@ -181,7 +181,7 @@ Write ONLY the answer text. No headers, no "Answer:", just the helpful response.
             "Authorization": `Bearer ${grokKey}`
           },
           body: JSON.stringify({
-            model: "grok-beta",
+            model: "grok-3",
             messages: [{ role: "user", content: prompt }],
             temperature: 0.7,
             max_tokens: 800
