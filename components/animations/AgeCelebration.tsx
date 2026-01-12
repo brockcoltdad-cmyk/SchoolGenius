@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { Sparkles, Star, Zap, Trophy, Award, Crown } from 'lucide-react';
 import { useTheme } from '@/lib/theme-context';
 import Confetti from './Confetti';
+import { getThemeMessage } from '@/lib/theme-encouragement-messages';
 
 interface AgeCelebrationProps {
   show: boolean;
@@ -13,10 +14,13 @@ interface AgeCelebrationProps {
   onComplete?: () => void;
 }
 
-export default function AgeCelebration({ show, grade, message = 'Amazing!', onComplete }: AgeCelebrationProps) {
+export default function AgeCelebration({ show, grade, message, onComplete }: AgeCelebrationProps) {
   const { currentTheme } = useTheme();
   const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; delay: number }>>([]);
   const [showConfetti, setShowConfetti] = useState(false);
+
+  // Use theme-specific message if no custom message provided
+  const displayMessage = message || getThemeMessage(currentTheme.id, 'correct');
 
   useEffect(() => {
     if (show) {
@@ -102,7 +106,7 @@ export default function AgeCelebration({ show, grade, message = 'Amazing!', onCo
             transition={{ delay: 0.3 }}
             className="mb-2 text-6xl font-black text-white drop-shadow-lg"
           >
-            {message}
+            {displayMessage}
           </motion.h2>
           <motion.p
             initial={{ y: 20, opacity: 0 }}
@@ -110,7 +114,7 @@ export default function AgeCelebration({ show, grade, message = 'Amazing!', onCo
             transition={{ delay: 0.5 }}
             className="text-3xl font-bold text-white/90"
           >
-            You're a superstar!
+            {getThemeMessage(currentTheme.id, 'streak', 0)}
           </motion.p>
           <motion.div
             initial={{ scale: 0 }}
@@ -177,7 +181,7 @@ export default function AgeCelebration({ show, grade, message = 'Amazing!', onCo
             <h2 className="mb-2 text-4xl font-black uppercase text-white drop-shadow-lg">
               ACHIEVEMENT UNLOCKED!
             </h2>
-            <p className="text-2xl font-bold text-white/90">{message}</p>
+            <p className="text-2xl font-bold text-white/90">{displayMessage}</p>
           </motion.div>
 
           <motion.div
@@ -272,9 +276,11 @@ export default function AgeCelebration({ show, grade, message = 'Amazing!', onCo
                 backgroundClip: 'text',
               }}
             >
-              {message}
+              {displayMessage}
             </h2>
-            <p className="text-sm font-medium text-slate-400">Nice work!</p>
+            <p className="text-sm font-medium text-slate-400">
+              {getThemeMessage(currentTheme.id, 'correct')}
+            </p>
           </motion.div>
         </div>
       </motion.div>
@@ -317,8 +323,10 @@ export default function AgeCelebration({ show, grade, message = 'Amazing!', onCo
             transition={{ delay: 0.2 }}
             className="flex-1"
           >
-            <h3 className="text-2xl font-semibold text-slate-900 dark:text-white">{message}</h3>
-            <p className="text-sm text-slate-600 dark:text-slate-400">Task completed</p>
+            <h3 className="text-2xl font-semibold text-slate-900 dark:text-white">{displayMessage}</h3>
+            <p className="text-sm text-slate-600 dark:text-slate-400">
+              {getThemeMessage(currentTheme.id, 'complete')}
+            </p>
             <motion.div
               className="mt-2 h-1 rounded-full"
               style={{ backgroundColor: currentTheme.colors.primary }}

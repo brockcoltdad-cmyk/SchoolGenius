@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play, ChevronRight, Lightbulb, HelpCircle, CheckCircle, XCircle, Trophy } from 'lucide-react';
 import VisualLessonPlayer from './lesson/VisualLessonPlayer';
+import { useTheme } from '@/lib/theme-context';
+import { getSmartThemeMessage } from '@/lib/theme-encouragement-messages';
 
 interface Question {
   id: string;
@@ -72,6 +74,7 @@ export default function ComprehensiveLessonViewer({
   onComplete,
   theme = { primaryColor: 'blue', secondaryColor: 'purple' }
 }: LessonViewerProps) {
+  const { currentTheme } = useTheme();
   const [phase, setPhase] = useState<Phase>('hook');
   const [questionIndex, setQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
@@ -79,6 +82,8 @@ export default function ComprehensiveLessonViewer({
   const [attempts, setAttempts] = useState(0);
   const [feedback, setFeedback] = useState<'correct' | 'incorrect' | null>(null);
   const [startTime] = useState(Date.now());
+  const [consecutiveWrong, setConsecutiveWrong] = useState(0);
+  const [streakCorrect, setStreakCorrect] = useState(0);
 
   const [phaseResults, setPhaseResults] = useState({
     guided: { correct: 0, total: 0 },
@@ -106,6 +111,8 @@ export default function ComprehensiveLessonViewer({
     setAnswers(prev => ({ ...prev, [currentQuestion.id]: answer }));
 
     if (isCorrect) {
+      setStreakCorrect(prev => prev + 1);
+      setConsecutiveWrong(0);
       setPhaseResults(prev => ({
         ...prev,
         [phase]: {
@@ -126,6 +133,8 @@ export default function ComprehensiveLessonViewer({
         }
       }, 1500);
     } else {
+      setConsecutiveWrong(prev => prev + 1);
+      setStreakCorrect(0);
       setAttempts(prev => prev + 1);
       setPhaseResults(prev => ({
         ...prev,
@@ -368,7 +377,14 @@ export default function ComprehensiveLessonViewer({
                   {feedback === 'correct' ? (
                     <>
                       <CheckCircle className="text-green-600" size={24} />
-                      <span className="text-green-700 font-bold">Correct! Great job!</span>
+                      <span className="text-green-700 font-bold">
+                        {getSmartThemeMessage({
+                          themeId: currentTheme.id,
+                          isCorrect: true,
+                          consecutiveWrong,
+                          streakCorrect
+                        })}
+                      </span>
                     </>
                   ) : (
                     <>
@@ -376,7 +392,12 @@ export default function ComprehensiveLessonViewer({
                       <span className="text-red-700 font-bold">
                         {attempts >= 2
                           ? `The answer is: ${currentQuestion.correct_answer}`
-                          : 'Not quite. Try again!'}
+                          : getSmartThemeMessage({
+                              themeId: currentTheme.id,
+                              isCorrect: false,
+                              consecutiveWrong,
+                              streakCorrect
+                            })}
                       </span>
                     </>
                   )}
@@ -422,7 +443,20 @@ export default function ComprehensiveLessonViewer({
             </div>
 
             <h2 className="text-3xl font-bold text-gray-800 mb-2">
-              {calculateResults().starsEarned >= 2 ? 'Great Job!' : 'Keep Practicing!'}
+              {calculateResults().starsEarned >= 2
+                ? getSmartThemeMessage({
+                    themeId: currentTheme.id,
+                    isCorrect: true,
+                    consecutiveWrong: 0,
+                    streakCorrect: 5
+                  })
+                : getSmartThemeMessage({
+                    themeId: currentTheme.id,
+                    isCorrect: false,
+                    consecutiveWrong: 3,
+                    streakCorrect: 0
+                  })
+              }
             </h2>
 
             <p className="text-gray-600 mb-6">You completed {lesson.title}</p>

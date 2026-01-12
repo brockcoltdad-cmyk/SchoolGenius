@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import { CheckCircle, XCircle, ArrowRight, RotateCcw } from 'lucide-react'
+import { useTheme } from '@/lib/theme-context'
+import { getThemeMessage } from '@/lib/theme-encouragement-messages'
 
 interface Question {
   question: string
@@ -18,6 +20,7 @@ interface QuizComponentProps {
 }
 
 export default function QuizComponent({ questions, title = 'Quiz', onComplete, passingScore = 80 }: QuizComponentProps) {
+  const { currentTheme } = useTheme()
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null)
   const [showResult, setShowResult] = useState(false)
@@ -59,12 +62,18 @@ export default function QuizComponent({ questions, title = 'Quiz', onComplete, p
   if (isComplete) {
     const percentage = Math.round((score.correct / questions.length) * 100)
     const passed = percentage >= passingScore
+
+    // Get theme-aware completion message
+    const completionMessage = passed
+      ? getThemeMessage(currentTheme.id, 'complete')
+      : getThemeMessage(currentTheme.id, 'struggling')
+
     return (
       <div className="bg-white rounded-2xl shadow-lg p-6 text-center">
         <div className={`w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4 ${passed ? 'bg-green-100' : 'bg-orange-100'}`}>
           <span className="text-4xl">{passed ? '🎉' : '💪'}</span>
         </div>
-        <h2 className="text-2xl font-bold text-gray-800 mb-2">{passed ? 'Great Job!' : 'Keep Trying!'}</h2>
+        <h2 className="text-2xl font-bold text-gray-800 mb-2">{completionMessage}</h2>
         <div className="text-4xl font-bold text-gray-800 my-4">{percentage}%</div>
         <p className="text-gray-500 mb-6">You got {score.correct} out of {questions.length} correct</p>
         <button onClick={() => { setCurrentIndex(0); setScore({ correct: 0, total: 0 }); setIsComplete(false); shuffleChoices(0); }}

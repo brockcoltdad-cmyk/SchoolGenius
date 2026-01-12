@@ -3,6 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle, XCircle, Trophy, BookOpen, RotateCcw } from 'lucide-react';
+import { useTheme } from '@/lib/theme-context';
+import { getThemeMessage } from '@/lib/theme-encouragement-messages';
 
 interface QuizQuestion {
   id: string;
@@ -41,6 +43,7 @@ export default function StoryQuiz({
   onRetry,
   onBackToReading,
 }: StoryQuizProps) {
+  const { currentTheme } = useTheme();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [showFeedback, setShowFeedback] = useState(false);
@@ -122,7 +125,10 @@ export default function StoryQuiz({
           </motion.div>
 
           <h2 className="text-3xl font-bold text-gray-800 mb-2">
-            {results.passed ? 'Great Job!' : 'Keep Reading!'}
+            {results.passed
+              ? getThemeMessage(currentTheme.id, 'complete')
+              : getThemeMessage(currentTheme.id, 'struggling')
+            }
           </h2>
 
           <p className="text-gray-600 mb-6">{storyTitle}</p>
