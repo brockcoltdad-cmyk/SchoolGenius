@@ -1,11 +1,21 @@
-import { anthropic, AI_MODEL } from '@/lib/ai/client'
 import { PARENT_HELPER_PROMPT } from '@/lib/ai/prompts'
 import { createServerSupabaseClient } from '@/lib/supabase/server'
 import { NextResponse } from 'next/server'
 
+// Use Grok for parent helper (xAI API)
+const GROK_API_KEY = process.env.XAI_API_KEY
+const GROK_API_URL = 'https://api.x.ai/v1/chat/completions'
+
 export async function POST(request: Request) {
   try {
     const { messages, parentId } = await request.json()
+
+    if (!GROK_API_KEY) {
+      return NextResponse.json(
+        { error: 'Grok API key not configured' },
+        { status: 500 }
+      )
+    }
 
     const supabase = await createServerSupabaseClient()
 
@@ -23,21 +33,50 @@ export async function POST(request: Request) {
       .replace('{childrenNames}', childrenNames)
       .replace('{subscriptionStatus}', 'Active')
 
-    // Call Claude
-    const response = await anthropic.messages.create({
-      model: AI_MODEL,
-      max_tokens: 1500,
-      system: systemPrompt,
-      messages: messages.map((m: any) => ({
-        role: m.role,
-        content: m.content
-      }))
+    console.log('Calling Grok for parent help...')
+
+    // Call Grok API
+    const response = await fetch(GROK_API_URL, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${GROK_API_KEY}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        model: 'grok-3',
+        messages: [
+          {
+            role: 'system',
+            content: systemPrompt
+          },
+          ...messages.map((m: any) => ({
+            role: m.role,
+            content: m.content
+          }))
+        ],
+        temperature: 0.7,
+        max_tokens: 2000
+      })
     })
 
-    const textContent = response.content.find(block => block.type === 'text')
-    const messageText = textContent ? textContent.text : "I'm having trouble responding. Please try again!"
+    if (!response.ok) {
+      const errorText = await response.text()
+      console.error('Grok API error:', errorText)
+      return NextResponse.json(
+        {
+          error: 'Failed to get response from Grok',
+          details: errorText
+        },
+        { status: 500 }
+      )
+    }
 
-    return NextResponse.json({ message: messageText })
+    const data = await response.json()
+    const messageText = data.choices?.[0]?.message?.content || "I'm having trouble responding. Please try again!"
+
+    console.log('Grok parent help response received')
+
+    return NextResponse.json({ message: messageText, source: 'grok' })
 
   } catch (error) {
     console.error('Parent Help API error:', error)
@@ -45,7 +84,7 @@ export async function POST(request: Request) {
       {
         error: 'Failed to get response',
         details: error instanceof Error ? error.message : 'Unknown error',
-        hasAnthropicKey: !!process.env.ANTHROPIC_API_KEY
+        hasGrokKey: !!GROK_API_KEY
       },
       { status: 500 }
     )
