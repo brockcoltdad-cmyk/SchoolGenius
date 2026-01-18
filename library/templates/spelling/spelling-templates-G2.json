@@ -1,0 +1,150 @@
+{
+  "grade": 2,
+  "grade_name": "Second Grade",
+  "total_target": 5000,
+  "standards": ["RF.2.3", "L.2.2"],
+  "skills": [
+    {
+      "skill": "vowel teams ai ay",
+      "code": "VTAI",
+      "standard": "RF.2.3",
+      "count": 500,
+      "visual_type": "spelling_rule",
+      "rule": "AI and AY make the long A sound. AI is usually in the middle, AY at the end.",
+      "words": ["rain", "pain", "main", "train", "brain", "chain", "plain", "stain", "drain", "grain", "Spain", "snail", "trail", "mail", "nail", "pail", "rail", "sail", "tail", "wail", "fail", "jail", "bail", "hail", "day", "say", "may", "way", "pay", "lay", "ray", "hay", "bay", "play", "stay", "gray", "pray", "tray", "clay", "sway"]
+    },
+    {
+      "skill": "vowel teams ea ee",
+      "code": "VTEA",
+      "standard": "RF.2.3",
+      "count": 500,
+      "visual_type": "spelling_rule",
+      "rule": "EA and EE make the long E sound.",
+      "words": ["eat", "eat", "beat", "heat", "meat", "neat", "seat", "leaf", "bean", "mean", "lean", "team", "beam", "seam", "read", "bead", "lead", "peak", "beak", "weak", "bee", "see", "fee", "tree", "free", "flee", "knee", "feet", "meet", "beet", "seed", "feed", "need", "weed", "deed", "keep", "deep", "peek", "seek", "week", "beep", "jeep", "creep", "sleep", "sweep", "green", "queen", "teen"]
+    },
+    {
+      "skill": "vowel teams oa ow",
+      "code": "VTOA",
+      "standard": "RF.2.3",
+      "count": 500,
+      "visual_type": "spelling_rule",
+      "rule": "OA and OW make the long O sound. OA is usually in the middle, OW at the end.",
+      "words": ["boat", "coat", "goat", "moat", "float", "toast", "roast", "coast", "load", "road", "toad", "soap", "soak", "oak", "cloak", "croak", "foam", "roam", "groan", "moan", "bow", "low", "mow", "row", "tow", "blow", "flow", "glow", "grow", "know", "show", "slow", "snow", "stow", "throw", "crow", "follow", "hollow", "yellow", "window"]
+    },
+    {
+      "skill": "r-controlled ar",
+      "code": "RCAR",
+      "standard": "RF.2.3",
+      "count": 500,
+      "visual_type": "spelling_rule",
+      "rule": "When R comes after a vowel, it changes the vowel sound. AR says 'ar' like in car.",
+      "words": ["car", "bar", "far", "jar", "star", "scar", "tar", "card", "hard", "yard", "barn", "yarn", "arm", "farm", "harm", "charm", "alarm", "art", "cart", "dart", "part", "smart", "start", "chart", "park", "bark", "dark", "mark", "shark", "spark", "march", "arch", "large", "charge", "sharp", "harp", "scarf", "dwarf"]
+    },
+    {
+      "skill": "r-controlled er ir ur",
+      "code": "RCER",
+      "standard": "RF.2.3",
+      "count": 500,
+      "visual_type": "spelling_rule",
+      "rule": "ER, IR, and UR all make the same sound like in her, bird, and fur.",
+      "words": ["her", "fern", "term", "germ", "verb", "herd", "nerd", "perch", "clerk", "jerk", "perk", "serve", "nerve", "merge", "bird", "dirt", "girl", "firm", "first", "third", "shirt", "skirt", "birth", "chirp", "stir", "swirl", "twirl", "fur", "blur", "burn", "turn", "curl", "hurt", "surf", "turf", "nurse", "purse", "curse", "burst", "church", "purple", "turtle", "burger"]
+    },
+    {
+      "skill": "r-controlled or",
+      "code": "RCOR",
+      "standard": "RF.2.3",
+      "count": 400,
+      "visual_type": "spelling_rule",
+      "rule": "OR makes the 'or' sound like in for and more.",
+      "words": ["or", "for", "nor", "corn", "horn", "born", "worn", "torn", "morn", "fork", "pork", "cork", "stork", "York", "sort", "fort", "port", "sport", "short", "north", "form", "storm", "worm", "order", "border", "corner", "horse", "force", "porch", "torch", "score", "store", "shore", "more", "core", "bore", "wore", "tore", "sore"]
+    },
+    {
+      "skill": "contractions",
+      "code": "CONTR",
+      "standard": "L.2.2",
+      "count": 600,
+      "visual_type": "word_building",
+      "rule": "A contraction combines two words with an apostrophe replacing missing letters.",
+      "contractions": [
+        {"contraction": "I'm", "words": "I am"},
+        {"contraction": "I'll", "words": "I will"},
+        {"contraction": "I've", "words": "I have"},
+        {"contraction": "I'd", "words": "I would"},
+        {"contraction": "you're", "words": "you are"},
+        {"contraction": "you'll", "words": "you will"},
+        {"contraction": "you've", "words": "you have"},
+        {"contraction": "you'd", "words": "you would"},
+        {"contraction": "he's", "words": "he is"},
+        {"contraction": "he'll", "words": "he will"},
+        {"contraction": "he'd", "words": "he would"},
+        {"contraction": "she's", "words": "she is"},
+        {"contraction": "she'll", "words": "she will"},
+        {"contraction": "she'd", "words": "she would"},
+        {"contraction": "it's", "words": "it is"},
+        {"contraction": "it'll", "words": "it will"},
+        {"contraction": "we're", "words": "we are"},
+        {"contraction": "we'll", "words": "we will"},
+        {"contraction": "we've", "words": "we have"},
+        {"contraction": "we'd", "words": "we would"},
+        {"contraction": "they're", "words": "they are"},
+        {"contraction": "they'll", "words": "they will"},
+        {"contraction": "they've", "words": "they have"},
+        {"contraction": "they'd", "words": "they would"},
+        {"contraction": "isn't", "words": "is not"},
+        {"contraction": "aren't", "words": "are not"},
+        {"contraction": "wasn't", "words": "was not"},
+        {"contraction": "weren't", "words": "were not"},
+        {"contraction": "don't", "words": "do not"},
+        {"contraction": "doesn't", "words": "does not"},
+        {"contraction": "didn't", "words": "did not"},
+        {"contraction": "won't", "words": "will not"},
+        {"contraction": "wouldn't", "words": "would not"},
+        {"contraction": "couldn't", "words": "could not"},
+        {"contraction": "shouldn't", "words": "should not"},
+        {"contraction": "can't", "words": "cannot"},
+        {"contraction": "haven't", "words": "have not"},
+        {"contraction": "hasn't", "words": "has not"},
+        {"contraction": "hadn't", "words": "had not"},
+        {"contraction": "let's", "words": "let us"},
+        {"contraction": "that's", "words": "that is"},
+        {"contraction": "there's", "words": "there is"},
+        {"contraction": "here's", "words": "here is"},
+        {"contraction": "what's", "words": "what is"},
+        {"contraction": "who's", "words": "who is"}
+      ]
+    },
+    {
+      "skill": "double consonant endings",
+      "code": "DBLC",
+      "standard": "RF.2.3",
+      "count": 500,
+      "visual_type": "spelling_rule",
+      "rule": "Words with short vowels often end with double consonants: ff, ll, ss, zz.",
+      "words": ["off", "puff", "buff", "cuff", "huff", "muff", "stuff", "bluff", "fluff", "gruff", "scuff", "sniff", "stiff", "cliff", "all", "ball", "call", "fall", "hall", "mall", "tall", "wall", "bell", "cell", "dell", "fell", "sell", "tell", "well", "yell", "bill", "fill", "hill", "kill", "mill", "pill", "will", "doll", "poll", "roll", "toll", "bull", "full", "pull", "dull", "hull", "mull", "null", "boss", "loss", "moss", "toss", "cross", "floss", "gloss", "dress", "press", "bless", "chess", "guess", "less", "mess", "miss", "hiss", "kiss", "bliss", "buzz", "fuzz", "jazz", "fizz"]
+    },
+    {
+      "skill": "silent letters kn wr",
+      "code": "SLNT",
+      "standard": "RF.2.3",
+      "count": 500,
+      "visual_type": "spelling_rule",
+      "rule": "Some letters are silent. K is silent before N, W is silent before R.",
+      "words": ["knee", "kneel", "knife", "knight", "knit", "knob", "knock", "knot", "know", "known", "knew", "knowledge", "write", "wrong", "wrap", "wren", "wreck", "wrench", "wrist", "wrinkle", "wrestle", "wring", "wrote", "written"]
+    }
+  ],
+  "question_templates": [
+    "Listen to the word and spell it: {word}",
+    "Type the word you hear: {word}",
+    "Spell the word: {word}"
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

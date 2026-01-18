@@ -1,0 +1,243 @@
+{
+  "grade": 6,
+  "grade_name": "Sixth Grade",
+  "lexile_range": "950L-1050L",
+  "default_lexile": "1000L",
+  "standards": ["RL.6.1", "RL.6.2", "RL.6.3", "RL.6.4", "RL.6.5", "RI.6.1", "RI.6.2", "RI.6.6"],
+  "total_target": 3000,
+  "skills": [
+    {
+      "skill": "citing textual evidence",
+      "code": "INFER",
+      "standard": "RL.6.1",
+      "count": 500,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "Which quote from the text best supports {claim}?",
+        "Cite evidence from the passage that shows {claim}.",
+        "What textual evidence supports the inference that {inference}?"
+      ],
+      "evidence_passages": [
+        {
+          "title": "The Storm",
+          "text": "Thunder rumbled in the distance as Maya hurried home. The sky had turned an ominous shade of gray, and the wind whipped her hair across her face. She clutched her backpack tightly, remembering the weather report's warning about possible tornadoes. Her heart pounded as she spotted the familiar red door of her house just two blocks away.",
+          "question": "How does Maya feel about the approaching storm?",
+          "answer": "Maya feels scared and anxious",
+          "evidence": "Her heart pounded",
+          "additional_evidence": ["clutched her backpack tightly", "hurried home"]
+        },
+        {
+          "title": "The Competition",
+          "text": "Jordan had trained for this moment for three years. As she approached the starting blocks, she noticed her main rival, Chen, stretching nearby. They exchanged a brief nod—respectful but competitive. Jordan's coach had always said, 'Your biggest competition is yourself.' Today, she would prove him right by beating her personal record.",
+          "question": "What is the relationship between Jordan and Chen?",
+          "answer": "They are respectful rivals",
+          "evidence": "They exchanged a brief nod—respectful but competitive"
+        }
+      ]
+    },
+    {
+      "skill": "theme development",
+      "code": "THEM",
+      "standard": "RL.6.2",
+      "count": 500,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "How does the author develop the theme of {theme} throughout the passage?",
+        "Which events in the story contribute to the theme?",
+        "Trace how the theme of {theme} is developed from beginning to end."
+      ],
+      "theme_passages": [
+        {
+          "title": "The Unexpected Teacher",
+          "text": "Marcus thought he had nothing to learn from his elderly neighbor, Mr. Patterson. But when his phone died and he needed directions, Mr. Patterson taught him to read a paper map. When the power went out, Mr. Patterson showed him how to cook on a camp stove. When Marcus was stressed about exams, Mr. Patterson taught him chess to clear his mind. By summer's end, Marcus realized that wisdom comes in many forms, and age is just a number.",
+          "theme": "Wisdom can come from unexpected sources",
+          "development": [
+            "Marcus initially dismisses Mr. Patterson",
+            "Mr. Patterson teaches practical skills (map reading, cooking)",
+            "Mr. Patterson helps with mental wellbeing (chess)",
+            "Marcus changes his perspective by the end"
+          ]
+        },
+        {
+          "title": "The Group Project",
+          "text": "When Ms. Rivera assigned random groups, Aaliyah groaned. She was paired with three students she'd never talked to: a quiet artist, an outspoken athlete, and a new student from another country. At first, their meetings were awkward and unproductive. But as they listened to each other's ideas, something changed. The artist visualized their concepts. The athlete organized their timeline. The new student brought a fresh perspective. Their final presentation earned the highest grade—and Aaliyah learned that diverse teams create the strongest results.",
+          "theme": "Diversity strengthens teamwork",
+          "development": [
+            "Aaliyah is disappointed with her random group",
+            "Initial meetings are difficult",
+            "Each member contributes unique strengths",
+            "The diverse team succeeds together"
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "plot development",
+      "code": "PLOT",
+      "standard": "RL.6.3",
+      "count": 400,
+      "visual_type": "comprehension_question",
+      "question_templates": [
+        "How does the plot unfold in this passage?",
+        "What event serves as the turning point in the story?",
+        "How does {event} affect the rest of the story?"
+      ],
+      "plot_passages": [
+        {
+          "title": "The Discovery",
+          "exposition": "Twelve-year-old Sam lived in a small coastal town where nothing exciting ever happened.",
+          "rising_action": "While exploring tide pools, Sam discovered an unusual shell that glowed faintly in the dark.",
+          "climax": "That night, the shell revealed a hidden map that led to a shipwreck offshore.",
+          "falling_action": "Sam organized a diving expedition with her marine biologist aunt.",
+          "resolution": "The discovery led to a historical find that put their small town on the map.",
+          "turning_point": "The shell revealing the hidden map"
+        }
+      ]
+    },
+    {
+      "skill": "figurative language",
+      "code": "VOCAB",
+      "standard": "RL.6.4",
+      "count": 500,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "What does the phrase '{phrase}' mean in this context?",
+        "Identify the type of figurative language: '{phrase}'",
+        "How does the author's use of {device} affect the meaning?"
+      ],
+      "figurative_language": [
+        {
+          "sentence": "The classroom was a zoo after the teacher left.",
+          "phrase": "was a zoo",
+          "type": "metaphor",
+          "meaning": "The classroom was chaotic and noisy",
+          "effect": "Creates a vivid image of disorder"
+        },
+        {
+          "sentence": "Her smile was as bright as the summer sun.",
+          "phrase": "as bright as the summer sun",
+          "type": "simile",
+          "meaning": "Her smile was very warm and happy",
+          "effect": "Emphasizes the warmth and positivity of her expression"
+        },
+        {
+          "sentence": "The wind whispered secrets through the trees.",
+          "phrase": "whispered secrets",
+          "type": "personification",
+          "meaning": "The wind made soft, rustling sounds in the trees",
+          "effect": "Creates a mysterious, peaceful atmosphere"
+        },
+        {
+          "sentence": "I've told you a million times to clean your room.",
+          "phrase": "a million times",
+          "type": "hyperbole",
+          "meaning": "Many times (exaggerated for emphasis)",
+          "effect": "Shows frustration and emphasizes repetition"
+        },
+        {
+          "sentence": "The old stairs groaned under his weight.",
+          "phrase": "groaned",
+          "type": "personification",
+          "meaning": "The stairs made creaking sounds",
+          "effect": "Creates atmosphere and suggests the stairs are old"
+        }
+      ]
+    },
+    {
+      "skill": "text structure analysis",
+      "code": "COMP",
+      "standard": "RL.6.5",
+      "count": 400,
+      "visual_type": "comprehension_question",
+      "question_templates": [
+        "How does the structure of this passage contribute to its meaning?",
+        "Why did the author choose to organize the text this way?",
+        "How does the {structure_element} affect the reader's understanding?"
+      ],
+      "structure_passages": [
+        {
+          "text": "The letter was dated 1952. It began: 'My dearest Eleanor...' Sarah's hands trembled as she read her grandmother's first love letter. The faded ink told a story of a summer romance that had shaped her family's history.",
+          "structure": "flashback through an artifact",
+          "effect": "Creates mystery and connects past to present"
+        },
+        {
+          "text": "Chapter 1: The End. Mia stood at the airport, watching the plane disappear into clouds. Chapter 2: Three Months Earlier. The first day of summer, Mia had no idea her life was about to change.",
+          "structure": "non-chronological order (starting at the end)",
+          "effect": "Creates suspense and makes the reader want to know how events led to this moment"
+        }
+      ]
+    },
+    {
+      "skill": "central idea in informational text",
+      "code": "MAIN",
+      "standard": "RI.6.2",
+      "count": 400,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "What is the central idea of this passage?",
+        "How is the central idea developed throughout the text?",
+        "Summarize the passage, focusing on the central idea."
+      ],
+      "informational_passages": [
+        {
+          "title": "The Ocean Cleanup Challenge",
+          "text": "Every year, approximately 8 million metric tons of plastic enter our oceans. This plastic harms marine life, contaminates seafood, and affects human health. However, innovative solutions are emerging. Young inventor Boyan Slat designed a passive cleanup system that uses ocean currents to collect plastic. Communities worldwide are organizing beach cleanups. Scientists are developing bacteria that can break down plastics. While the challenge is immense, the combination of technology, community action, and scientific research offers hope for cleaner oceans.",
+          "central_idea": "The ocean plastic problem is serious, but innovative solutions are emerging",
+          "supporting_details": [
+            "Statistics about plastic pollution",
+            "Boyan Slat's cleanup system",
+            "Community beach cleanups",
+            "Scientific research on plastic-eating bacteria"
+          ]
+        },
+        {
+          "title": "Sleep and the Teenage Brain",
+          "text": "Teenagers need 8-10 hours of sleep per night, yet most get fewer than 7. This isn't just about feeling tired—sleep deprivation affects memory, mood, and academic performance. During sleep, the brain consolidates learning from the day. The teenage brain is still developing, making adequate sleep even more critical. Schools that have shifted to later start times report improved attendance, fewer car accidents, and better grades. Understanding the science of sleep can help teens make healthier choices.",
+          "central_idea": "Sleep is crucial for teenage brain development and academic success",
+          "supporting_details": [
+            "Sleep recommendations for teens",
+            "Effects of sleep deprivation",
+            "Brain consolidation during sleep",
+            "Benefits of later school start times"
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "author's point of view",
+      "code": "POV",
+      "standard": "RI.6.6",
+      "count": 300,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "What is the author's point of view on {topic}?",
+        "How does the author convey their perspective?",
+        "What evidence reveals the author's position on {topic}?"
+      ],
+      "pov_passages": [
+        {
+          "topic": "School Uniforms",
+          "text": "While some argue that school uniforms limit self-expression, the benefits far outweigh this concern. Uniforms reduce morning stress for families, eliminate clothing-based bullying, and help students focus on learning rather than fashion. Schools that have implemented uniform policies report improved behavior and a stronger sense of community. Perhaps most importantly, uniforms level the playing field between students from different economic backgrounds.",
+          "author_pov": "Supportive of school uniforms",
+          "evidence": ["benefits far outweigh", "improved behavior", "level the playing field"]
+        },
+        {
+          "topic": "Video Games",
+          "text": "The stereotype of video games as mindless entertainment is outdated. Research shows that strategic games improve problem-solving skills and hand-eye coordination. Multiplayer games teach teamwork and communication. Some games even inspire interest in history, science, and art. Of course, balance is essential—but dismissing all games as harmful ignores their educational potential.",
+          "author_pov": "Video games have educational value when used in moderation",
+          "evidence": ["improve problem-solving skills", "teach teamwork", "inspire interest"]
+        }
+      ]
+    }
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

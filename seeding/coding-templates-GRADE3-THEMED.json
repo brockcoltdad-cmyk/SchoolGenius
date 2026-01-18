@@ -1,0 +1,508 @@
+{
+  "grade": 3,
+  "theme_bucket": "3-5",
+  "theme_style": "Games, adventures, building things",
+  "description": "Grade 3 Coding - Themed Game Projects (5 Examples)",
+  "lesson_flow_reference": "LESSON-FLOW-ARCHITECTURE.md",
+  "standard": "ISTE 1B-AP-10",
+  "advancement_rule": "Project-based: Complete 5 projects to advance",
+
+  "project_templates": [
+    {
+      "project_id": "G3-SPACE-DODGER",
+      "project_name": "Space Dodger",
+      "tagline": "Build your own spaceship and dodge the asteroids!",
+      "skill_taught": "conditionals if/else",
+      "standard": "1B-AP-10",
+      "what_kids_build": "A playable game where their spaceship avoids obstacles",
+      "why_exciting": "They get a REAL game they can play and show friends",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Your spaceship is about to fly through an asteroid field! But wait... how does the spaceship know when it's been hit? Let's teach it to DETECT collisions!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "Spaceships need to know when they crash! We use IF blocks to check.",
+            "visual": {
+              "type": "conditional",
+              "data": {
+                "condition": "touching asteroid?",
+                "if_true": "BOOM! Game Over!",
+                "if_false": "Keep flying!",
+                "theme": "space"
+              }
+            },
+            "voice_text": "Your spaceship asks: Am I touching an asteroid? If YES, boom! If NO, keep flying!",
+            "duration": 5000
+          },
+          {
+            "step": 2,
+            "gigi_says": "The IF block is like a space sensor. It checks for danger!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "language": "scratch",
+                "blocks": [
+                  "forever",
+                  "  if <touching [asteroid]?> then",
+                  "    say [BOOM!]",
+                  "    stop [all]",
+                  "  end",
+                  "end"
+                ],
+                "sprite": "spaceship",
+                "highlight_lines": [2]
+              }
+            },
+            "voice_text": "This code checks FOREVER. Touching asteroid? BOOM, game over. Not touching? Keep flying!",
+            "duration": 5000
+          },
+          {
+            "step": 3,
+            "gigi_says": "Without IF blocks, your spaceship would fly right through asteroids like a ghost!",
+            "visual": {
+              "type": "loop_animation",
+              "data": {
+                "comparison": [
+                  {"label": "Without IF", "animation": "spaceship passes through asteroid - boring!"},
+                  {"label": "With IF", "animation": "spaceship hits asteroid - BOOM! exciting!"}
+                ]
+              }
+            },
+            "voice_text": "See the difference? IF makes your game REAL! Collisions actually matter!",
+            "duration": 5000
+          }
+        ],
+        "rule_card": {
+          "title": "Collision Detection",
+          "rule": "IF <touching something?> THEN do something! This makes your game react to crashes!",
+          "space_example": "if <touching [asteroid]?> then BOOM!"
+        }
+      },
+
+      "phase_2_demo": {
+        "intro": "Watch me build the collision detection for your spaceship!",
+        "demos": [
+          {
+            "demo_name": "Asteroid Collision",
+            "walkthrough": [
+              {"step": 1, "action": "Drag the forever loop", "voice": "We need to check for collisions ALL the time, so forever loop!"},
+              {"step": 2, "action": "Add if <touching asteroid>", "voice": "Inside forever, add the IF block. Put touching asteroid in the diamond."},
+              {"step": 3, "action": "Add explosion effect", "voice": "When hit, let's make it dramatic! Play explosion sound, say BOOM!"},
+              {"step": 4, "action": "Stop the game", "voice": "Game over means everything stops. Add stop all."},
+              {"step": 5, "action": "Test it!", "voice": "Move the spaceship into the asteroid... BOOM! It works!"}
+            ]
+          },
+          {
+            "demo_name": "Edge Bouncing",
+            "walkthrough": [
+              {"step": 1, "action": "Add if <touching edge>", "voice": "What if the spaceship goes off screen? Let's fix that!"},
+              {"step": 2, "action": "Add bounce or teleport", "voice": "When touching edge, either bounce back or appear on the other side!"}
+            ]
+          },
+          {
+            "demo_name": "Shield Power-up",
+            "walkthrough": [
+              {"step": 1, "action": "if <touching [shield]?> then", "voice": "Now let's add a power-up! Touching the shield = temporary protection!"},
+              {"step": 2, "action": "Change shield variable", "voice": "Set shield to ON, then use another IF to check if shielded before exploding!"}
+            ]
+          }
+        ]
+      },
+
+      "phase_3_guided_practice": {
+        "intro": "Your turn! Let's build your Space Dodger together!",
+        "challenges": [
+          {
+            "challenge_name": "Add Asteroid Detection",
+            "prompt": "Complete the code so your spaceship goes BOOM when it touches an asteroid:\n\nforever\n  if <_______> then\n    say [BOOM!]\n    stop [all]\n  end\nend",
+            "answer": "touching [asteroid]?",
+            "hint": "What should the spaceship check for? Think about what's dangerous in space...",
+            "tier1": {
+              "teach": "The spaceship needs to sense the asteroid. Use 'touching [asteroid]?' in the diamond.",
+              "visual": {"type": "code_block", "data": {"highlight": "touching [asteroid]?"}}
+            },
+            "tier2": {
+              "teach": "Asteroid = danger! Put 'touching asteroid' in the check spot!",
+              "visual": {"emoji": "🚀 + 🪨 = 💥"}
+            }
+          },
+          {
+            "challenge_name": "Add Edge Wrapping",
+            "prompt": "When your spaceship touches the right edge, make it appear on the left!\n\nif <touching [edge]?> then\n  _______\nend",
+            "answer": "set x to (-240)",
+            "hint": "Where is the left side of the screen? Think about negative x coordinates..."
+          },
+          {
+            "challenge_name": "Add Score for Dodging",
+            "prompt": "Every second you survive, add 1 to score! Build the code:",
+            "answer": ["wait (1) seconds", "change [score] by (1)"],
+            "hint": "Use a wait block and a change score block inside a forever loop"
+          }
+        ]
+      },
+
+      "phase_4_independent": {
+        "intro": "Now finish building YOUR Space Dodger! Make it awesome!",
+        "tasks": [
+          "Add 3 more asteroids (hint: duplicate the asteroid sprite)",
+          "Make asteroids move randomly",
+          "Add a high score tracker",
+          "Add sound effects",
+          "BONUS: Add a second life!"
+        ],
+        "coins_per_task": 10
+      },
+
+      "phase_5_quiz": {
+        "intro": "Quick check - do you know your collision code?",
+        "questions": [
+          {"q": "What block detects when sprites touch?", "a": "if <touching [sprite]?>"},
+          {"q": "Why do we put collision detection in a forever loop?", "a": "To check constantly, not just once"},
+          {"q": "What happens if the condition is FALSE?", "a": "The code inside IF doesn't run"}
+        ],
+        "passing": "3/5 correct"
+      },
+
+      "phase_6_complete": {
+        "celebration": "YOUR SPACE DODGER IS COMPLETE! Play it! Share it! You're a game developer!",
+        "badge": "Space Coder",
+        "coins": 75,
+        "unlock": "Virtual Pet project"
+      }
+    },
+
+    {
+      "project_id": "G3-VIRTUAL-PET",
+      "project_name": "Virtual Pet",
+      "tagline": "Create your own pet that responds to YOUR commands!",
+      "skill_taught": "variables and user input",
+      "standard": "1A-AP-12",
+      "what_kids_build": "A virtual pet with hunger, happiness, and responses",
+      "why_exciting": "It's THEIR pet that talks back to them!",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "What if you could create your OWN pet that talks to you, gets hungry, and responds to your name? Let's build one!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "Pets have feelings that CHANGE! In coding, we use VARIABLES to track things that change.",
+            "visual": {
+              "type": "variable_box",
+              "data": {
+                "variables": [
+                  {"name": "hunger", "value": 50, "emoji": "🍕"},
+                  {"name": "happiness", "value": 75, "emoji": "😊"},
+                  {"name": "energy", "value": 100, "emoji": "⚡"}
+                ]
+              }
+            },
+            "voice_text": "Variables are like your pet's mood meters! Hunger, happiness, energy - they go up and down!",
+            "duration": 5000
+          },
+          {
+            "step": 2,
+            "gigi_says": "We can ASK questions and use the ANSWER!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "blocks": [
+                  "ask [What's your name?] and wait",
+                  "say (join [Hi ] (answer)) for (2) seconds"
+                ],
+                "output": "Hi Emma!"
+              }
+            },
+            "voice_text": "Ask gets your name. Answer stores it. Join puts words together. Your pet knows YOUR name!",
+            "duration": 5000
+          }
+        ],
+        "rule_card": {
+          "title": "Variables & Input",
+          "rule": "Variables store things that change. ASK gets input. ANSWER stores what they typed!",
+          "pet_example": "ask [Feed me?] → change hunger by -10"
+        }
+      },
+
+      "phase_2_demo": {
+        "demos": [
+          {
+            "demo_name": "Pet Greets You By Name",
+            "walkthrough": [
+              {"step": 1, "action": "ask [What's your name?] and wait", "voice": "First, let's ask the player their name!"},
+              {"step": 2, "action": "say (join [Hi ] (answer))", "voice": "Now combine 'Hi' with their answer. The pet greets them personally!"},
+              {"step": 3, "action": "Test it!", "voice": "Type your name... Hi Emma! The pet knows you!"}
+            ]
+          },
+          {
+            "demo_name": "Feeding Changes Hunger",
+            "walkthrough": [
+              {"step": 1, "action": "Create hunger variable", "voice": "Make a variable called hunger. Start it at 50."},
+              {"step": 2, "action": "if <key [f] pressed> then change hunger by -10", "voice": "Press F for food! Hunger goes down by 10."},
+              {"step": 3, "action": "say (join [Hunger: ] (hunger))", "voice": "Show the hunger level! Watch it change!"}
+            ]
+          }
+        ]
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Make Pet Say Your Name",
+            "prompt": "Complete the code so your pet greets you:\n\nask [What's your name?] and wait\nsay (join [Hello ] _______)",
+            "answer": "(answer)",
+            "hint": "Where does your typed name get stored?"
+          },
+          {
+            "challenge_name": "Feed the Pet",
+            "prompt": "When F key is pressed, decrease hunger by 10:\n\nwhen [f] key pressed\n_______",
+            "answer": "change [hunger] by (-10)",
+            "hint": "Use change, not set! We want to subtract from current hunger."
+          },
+          {
+            "challenge_name": "Happy or Sad?",
+            "prompt": "If happiness > 50, pet says 'I love you!' else says 'Play with me!'",
+            "answer": "if <(happiness) > (50)> then say [I love you!] else say [Play with me!]"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "YOUR VIRTUAL PET IS ALIVE! It knows your name, gets hungry, and has feelings!",
+        "badge": "Pet Creator",
+        "coins": 75
+      }
+    },
+
+    {
+      "project_id": "G3-BUG-HUNTER",
+      "project_name": "Bug Hunter: Debug Quest",
+      "tagline": "Find the bugs! Fix the code! Save the game!",
+      "skill_taught": "debugging strategies",
+      "standard": "1B-AP-10",
+      "what_kids_build": "They fix 5 broken mini-games",
+      "why_exciting": "Detective mystery - they feel SMART finding bugs",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Oh no! The games are BROKEN! Someone introduced BUGS into the code. Can you find them and save the games?",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "A BUG is when code doesn't do what we want. Every programmer finds bugs - even the pros!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "buggy": "move (10) steps",
+                "expected": "sprite moves forward",
+                "actual": "sprite goes backwards!",
+                "bug": "should be positive, not negative"
+              }
+            },
+            "voice_text": "Expected: move forward. Actual: goes backwards! That's a bug! Something's wrong with the number.",
+            "duration": 5000
+          },
+          {
+            "step": 2,
+            "gigi_says": "DEBUG strategy: 1) Read the code 2) Run it 3) Compare expected vs actual 4) Find the difference!",
+            "visual": {"type": "debug_steps", "data": {"steps": ["READ", "RUN", "COMPARE", "FIX"]}}
+          }
+        ]
+      },
+
+      "phase_3_guided_practice": {
+        "intro": "Time to hunt some bugs! Each mini-game is broken. Find and fix the bug!",
+        "challenges": [
+          {
+            "challenge_name": "Case #1: The Disappearing Cat",
+            "scenario": "The cat should say 'Hello!' when clicked, but nothing happens!",
+            "buggy_code": "when green flag clicked\nsay [Hello!]",
+            "bug": "Wrong event block - should be 'when this sprite clicked'",
+            "fix": "Change 'when green flag clicked' to 'when this sprite clicked'",
+            "tier1": {"teach": "Green flag means start of program. Sprite clicked means click on the cat. Different events!"}
+          },
+          {
+            "challenge_name": "Case #2: The Frozen Score",
+            "scenario": "Score should go UP when collecting coins, but it stays at 1!",
+            "buggy_code": "when this sprite clicked\nset [score] to (1)",
+            "bug": "Using SET instead of CHANGE - it resets to 1 every time!",
+            "fix": "Change 'set score to 1' to 'change score by 1'"
+          },
+          {
+            "challenge_name": "Case #3: The Stuck Spaceship",
+            "scenario": "Spaceship should bounce at edges but just stops!",
+            "buggy_code": "if <touching [edge]?> then\n  stop [all]",
+            "bug": "stop [all] ends the game! Should turn around instead.",
+            "fix": "Change 'stop all' to 'turn 180 degrees'"
+          },
+          {
+            "challenge_name": "Case #4: The Invisible Wall",
+            "scenario": "Should detect wall, but walks right through!",
+            "buggy_code": "if <touching [floor]?> then\n  go to start",
+            "bug": "Checking for 'floor' but wall is called 'wall'!",
+            "fix": "Change 'floor' to 'wall'"
+          },
+          {
+            "challenge_name": "Case #5: The Silent Pet",
+            "scenario": "Pet should say your name, but just says 'Hello !'",
+            "buggy_code": "say (join [Hello ] [answer])",
+            "bug": "Using text 'answer' instead of the answer VARIABLE!",
+            "fix": "Use the round (answer) variable block, not the text"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "ALL BUGS SQUASHED! You're a debugging EXPERT!",
+        "badge": "Bug Hunter",
+        "coins": 100
+      }
+    },
+
+    {
+      "project_id": "G3-COOKIE-RAIN",
+      "project_name": "Cookie Rain Collector",
+      "tagline": "Make cookies rain from the sky and catch them all!",
+      "skill_taught": "clones and broadcasts",
+      "standard": "1B-AP-10",
+      "what_kids_build": "A collecting game with falling objects and scoring",
+      "why_exciting": "Lots of things on screen = visual excitement, instant gratification",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "What if you could make HUNDREDS of cookies fall from the sky? With CLONES, you can make copies of sprites!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "CLONES are copies. One cookie becomes many cookies!",
+            "visual": {
+              "type": "loop_animation",
+              "data": {
+                "frames": [
+                  {"emoji": "🍪", "label": "Original"},
+                  {"emoji": "🍪🍪🍪", "label": "Clones!"},
+                  {"emoji": "🍪🍪🍪🍪🍪🍪🍪", "label": "Cookie rain!"}
+                ]
+              }
+            }
+          },
+          {
+            "step": 2,
+            "gigi_says": "Each clone runs its own code! Original makes clones, clones fall and disappear.",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "blocks": [
+                  "when I start as a clone",
+                  "go to x: (pick random -200 to 200) y: (180)",
+                  "glide (3) secs to y: (-180)",
+                  "delete this clone"
+                ]
+              }
+            }
+          }
+        ]
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Spawn Cookies",
+            "prompt": "Complete the code to create a new cookie every 0.5 seconds:\n\nforever\n  _______\n  wait (0.5) seconds\nend",
+            "answer": "create clone of [myself]"
+          },
+          {
+            "challenge_name": "Make Clones Fall",
+            "prompt": "When clone starts, go to random x at top, then glide down:\n\nwhen I start as a clone\n_______\nglide (2) secs to y: (-180)\ndelete this clone",
+            "answer": "go to x: (pick random (-200) to (200)) y: (180)"
+          },
+          {
+            "challenge_name": "Score When Caught",
+            "prompt": "If clone touches the basket, add 1 to score and delete:\n\nwhen I start as a clone\nforever\n  if <touching [basket]?> then\n    _______\n    delete this clone\n  end\nend",
+            "answer": "change [score] by (1)"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "COOKIE RAIN IS FALLING! You made a real arcade game!",
+        "badge": "Clone Master",
+        "coins": 75
+      }
+    },
+
+    {
+      "project_id": "G3-ADVENTURE-MAZE",
+      "project_name": "Dungeon Escape",
+      "tagline": "Navigate the maze, find the key, escape the dungeon!",
+      "skill_taught": "combining conditionals and variables",
+      "standard": "1B-AP-10",
+      "what_kids_build": "A complete maze adventure with keys, doors, and winning",
+      "why_exciting": "It's a REAL adventure game with multiple objectives",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "You're trapped in a dungeon! Find the key, unlock the door, and ESCAPE! But you'll need to code your way out!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "Adventure games need MULTIPLE conditions! Wall detection + key collection + door unlocking!",
+            "visual": {
+              "type": "conditional",
+              "data": {
+                "conditions": [
+                  "touching wall? → go back",
+                  "touching key? → hasKey = true",
+                  "touching door AND hasKey? → YOU WIN!"
+                ]
+              }
+            }
+          }
+        ]
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Wall Collision",
+            "prompt": "If touching wall, go back to start position (0, 0):",
+            "answer": "if <touching [wall]?> then go to x: (0) y: (0)"
+          },
+          {
+            "challenge_name": "Collect the Key",
+            "prompt": "When touching key, set hasKey to 1 and hide the key:",
+            "answer": ["set [hasKey] to (1)", "hide"]
+          },
+          {
+            "challenge_name": "Open the Door",
+            "prompt": "Only escape if you HAVE the key:\n\nif <<touching [door]?> and <(hasKey) = (1)>> then\n  _______\nend",
+            "answer": "say [You escaped!] and stop [all]"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "YOU ESCAPED THE DUNGEON! You coded a complete adventure game!",
+        "badge": "Adventure Coder",
+        "coins": 100
+      }
+    }
+  ],
+
+  "summary": {
+    "total_projects": 5,
+    "skills_covered": [
+      "conditionals if/else",
+      "variables and user input",
+      "debugging strategies",
+      "clones and broadcasts",
+      "combining multiple concepts"
+    ],
+    "theme_consistency": "All projects are GAMES kids want to build and play",
+    "follows_lesson_flow": "Yes - 6 phases (Rule Teaching → Demo → Guided → Independent → Quiz → Complete)",
+    "interactive_elements": [
+      "Block building/dragging",
+      "Code completion",
+      "Predict and test",
+      "Debug and fix",
+      "Free building"
+    ]
+  }
+}

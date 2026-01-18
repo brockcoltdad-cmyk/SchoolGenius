@@ -1,0 +1,162 @@
+{
+  "grade": 5,
+  "grade_name": "Fifth Grade",
+  "total_target": 1500,
+  "standards": ["W.5.1", "W.5.2", "W.5.3", "L.5.1", "L.5.1.E", "L.5.2", "L.5.3"],
+  "skills": [
+    {
+      "skill": "compound-complex sentences",
+      "code": "CPLX",
+      "standard": "L.5.1",
+      "count": 200,
+      "visual_type": "sentence_builder",
+      "exercises": [
+        {
+          "sentence": "Although it was raining, we went to the park, and we had a great time.",
+          "independent1": "we went to the park",
+          "independent2": "we had a great time",
+          "dependent": "Although it was raining"
+        },
+        {
+          "sentence": "When the bell rang, students rushed out, but the teacher asked them to wait.",
+          "independent1": "students rushed out",
+          "independent2": "the teacher asked them to wait",
+          "dependent": "When the bell rang"
+        }
+      ]
+    },
+    {
+      "skill": "perfect verb tenses",
+      "code": "VERB",
+      "standard": "L.5.1",
+      "count": 200,
+      "visual_type": "grammar_highlight",
+      "tenses": [
+        {"base": "eat", "past_perfect": "had eaten", "present_perfect": "have eaten", "future_perfect": "will have eaten"},
+        {"base": "finish", "past_perfect": "had finished", "present_perfect": "have finished", "future_perfect": "will have finished"},
+        {"base": "see", "past_perfect": "had seen", "present_perfect": "have seen", "future_perfect": "will have seen"},
+        {"base": "write", "past_perfect": "had written", "present_perfect": "have written", "future_perfect": "will have written"}
+      ],
+      "exercises": [
+        {"context": "before another past action", "tense": "past perfect", "example": "I had finished my homework before dinner."},
+        {"context": "action continuing to now", "tense": "present perfect", "example": "She has lived here for ten years."},
+        {"context": "completed before future time", "tense": "future perfect", "example": "By next week, I will have read the whole book."}
+      ]
+    },
+    {
+      "skill": "verb tense consistency",
+      "code": "VERB",
+      "standard": "L.5.1",
+      "count": 200,
+      "visual_type": "grammar_highlight",
+      "exercises": [
+        {"incorrect": "She walks to school and talked to her friend.", "correct": "She walked to school and talked to her friend.", "issue": "mixed past and present"},
+        {"incorrect": "Yesterday, I go to the store and buy milk.", "correct": "Yesterday, I went to the store and bought milk.", "issue": "should be past tense"},
+        {"incorrect": "The dog runs fast and caught the ball.", "correct": "The dog ran fast and caught the ball.", "issue": "inconsistent tense"}
+      ]
+    },
+    {
+      "skill": "correlative conjunctions",
+      "code": "CONJ",
+      "standard": "L.5.1.E",
+      "count": 200,
+      "visual_type": "sentence_builder",
+      "pairs": [
+        {"pair": "either...or", "example": "Either we go to the movies or we stay home."},
+        {"pair": "neither...nor", "example": "Neither the cat nor the dog was in the yard."},
+        {"pair": "both...and", "example": "Both my mom and my dad came to the game."},
+        {"pair": "not only...but also", "example": "She is not only smart but also kind."},
+        {"pair": "whether...or", "example": "I don't know whether to laugh or cry."}
+      ]
+    },
+    {
+      "skill": "commas - all uses",
+      "code": "PUNC",
+      "standard": "L.5.2",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "uses": [
+        {"use": "series", "example": "I bought apples, oranges, and bananas."},
+        {"use": "compound sentence", "example": "I wanted to go, but it was too late."},
+        {"use": "introductory element", "example": "After the movie, we went home."},
+        {"use": "direct address", "example": "Mom, can I go outside?"},
+        {"use": "appositives", "example": "My dog, a golden retriever, loves to swim."},
+        {"use": "dates", "example": "On July 4, 1776, America declared independence."}
+      ]
+    },
+    {
+      "skill": "titles - italics and quotation marks",
+      "code": "PUNC",
+      "standard": "L.5.2",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "rules": [
+        {"type": "book", "format": "italics", "example": "Harry Potter"},
+        {"type": "movie", "format": "italics", "example": "The Lion King"},
+        {"type": "song", "format": "quotation marks", "example": "\"Happy Birthday\""},
+        {"type": "poem", "format": "quotation marks", "example": "\"The Road Not Taken\""},
+        {"type": "article", "format": "quotation marks", "example": "\"How to Train a Dog\""},
+        {"type": "chapter", "format": "quotation marks", "example": "\"Chapter One: The Beginning\""}
+      ]
+    },
+    {
+      "skill": "varying sentence structure",
+      "code": "SENT",
+      "standard": "L.5.3",
+      "count": 150,
+      "visual_type": "sentence_builder",
+      "techniques": [
+        {"original": "The dog barked. The cat ran. The bird flew away.", "improved": "When the dog barked, the cat ran and the bird flew away.", "technique": "combine with subordination"},
+        {"original": "I like pizza. I eat it every Friday.", "improved": "I like pizza, which I eat every Friday.", "technique": "use relative clause"},
+        {"original": "She ran fast. She won the race.", "improved": "Running fast, she won the race.", "technique": "use participial phrase"}
+      ]
+    },
+    {
+      "skill": "thesis statements",
+      "code": "PARA",
+      "standard": "W.5.1",
+      "count": 150,
+      "visual_type": "paragraph_structure",
+      "exercises": [
+        {"topic": "homework", "weak": "Homework is bad.", "strong": "Homework should be limited because it causes stress, reduces family time, and does not improve learning."},
+        {"topic": "school uniforms", "weak": "I don't like uniforms.", "strong": "School uniforms should be required because they reduce bullying, save money, and help students focus on learning."}
+      ]
+    },
+    {
+      "skill": "counterclaims",
+      "code": "ARGU",
+      "standard": "W.5.1",
+      "count": 100,
+      "visual_type": "paragraph_structure",
+      "exercises": [
+        {
+          "claim": "Recess should be longer.",
+          "counterclaim": "Some people think longer recess takes away from learning time.",
+          "response": "However, research shows that physical activity actually helps students focus better in class."
+        }
+      ]
+    },
+    {
+      "skill": "concluding statements",
+      "code": "PARA",
+      "standard": "W.5.1",
+      "count": 100,
+      "visual_type": "paragraph_structure",
+      "techniques": [
+        {"type": "restate thesis", "example": "In conclusion, homework should be limited for the reasons stated above."},
+        {"type": "call to action", "example": "Teachers and parents should work together to reduce homework loads."},
+        {"type": "final thought", "example": "Students deserve time to be kids, not just students."}
+      ]
+    }
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

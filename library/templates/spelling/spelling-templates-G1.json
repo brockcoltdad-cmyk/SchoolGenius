@@ -1,0 +1,116 @@
+{
+  "grade": 1,
+  "grade_name": "First Grade",
+  "total_target": 4000,
+  "standards": ["RF.1.2", "RF.1.3", "L.1.2"],
+  "skills": [
+    {
+      "skill": "word families -at",
+      "code": "WFAT",
+      "standard": "RF.1.2",
+      "count": 300,
+      "visual_type": "word_building",
+      "words": ["bat", "cat", "fat", "hat", "mat", "pat", "rat", "sat", "vat", "flat", "brat", "chat", "that", "splat"]
+    },
+    {
+      "skill": "word families -an",
+      "code": "WFAN",
+      "standard": "RF.1.2",
+      "count": 300,
+      "visual_type": "word_building",
+      "words": ["ban", "can", "dan", "fan", "man", "pan", "ran", "tan", "van", "plan", "scan", "than", "clan", "span"]
+    },
+    {
+      "skill": "word families -op",
+      "code": "WFOP",
+      "standard": "RF.1.2",
+      "count": 300,
+      "visual_type": "word_building",
+      "words": ["bop", "cop", "hop", "mop", "pop", "top", "chop", "drop", "flop", "plop", "prop", "shop", "stop", "crop"]
+    },
+    {
+      "skill": "word families -ig",
+      "code": "WFIG",
+      "standard": "RF.1.2",
+      "count": 300,
+      "visual_type": "word_building",
+      "words": ["big", "dig", "fig", "gig", "jig", "pig", "rig", "wig", "twig", "brig", "swig", "sprig"]
+    },
+    {
+      "skill": "CVCe words - silent e",
+      "code": "CVCE",
+      "standard": "RF.1.3",
+      "count": 500,
+      "visual_type": "spelling_rule",
+      "rule": "When a word ends with e, the vowel says its name",
+      "words": ["bake", "cake", "fake", "lake", "make", "rake", "take", "wake", "bike", "dike", "hike", "like", "mike", "pike", "bone", "cone", "done", "gone", "hone", "lone", "tone", "zone", "cute", "dune", "fume", "huge", "mule", "mute", "rude", "tube", "tune"]
+    },
+    {
+      "skill": "digraphs ch",
+      "code": "DGCH",
+      "standard": "RF.1.3",
+      "count": 400,
+      "visual_type": "phonics",
+      "rule": "Ch makes one sound like in chip",
+      "words": ["chat", "chap", "chip", "chin", "chop", "chug", "much", "such", "rich", "inch", "each", "beach", "teach", "reach", "peach", "lunch", "bunch", "munch", "punch", "bench", "ranch", "branch", "cheese", "chest", "check", "chess", "chick", "child", "chill", "chimp"]
+    },
+    {
+      "skill": "digraphs sh",
+      "code": "DGSH",
+      "standard": "RF.1.3",
+      "count": 400,
+      "visual_type": "phonics",
+      "rule": "Sh makes one sound like in ship",
+      "words": ["she", "shop", "ship", "shot", "shut", "shed", "shell", "shelf", "shift", "shin", "dish", "fish", "wish", "wash", "rush", "push", "bush", "hush", "mush", "gush", "cash", "dash", "gash", "hash", "mash", "rash", "bash", "lash", "sash", "trash"]
+    },
+    {
+      "skill": "digraphs th",
+      "code": "DGTH",
+      "standard": "RF.1.3",
+      "count": 400,
+      "visual_type": "phonics",
+      "rule": "Th makes one sound like in this or thin",
+      "words": ["the", "this", "that", "them", "then", "than", "they", "thin", "thick", "thing", "think", "thank", "thud", "bath", "math", "path", "with", "moth", "both", "cloth", "teeth", "tooth", "booth", "south", "north", "month", "earth", "worth", "birth", "filth"]
+    },
+    {
+      "skill": "digraphs wh",
+      "code": "DGWH",
+      "standard": "RF.1.3",
+      "count": 300,
+      "visual_type": "phonics",
+      "rule": "Wh makes a special sound at the start of words",
+      "words": ["who", "what", "when", "where", "which", "while", "white", "wheel", "wheat", "whale", "whip", "whisk", "whisper", "whistle", "why", "whole"]
+    },
+    {
+      "skill": "sight words level 1",
+      "code": "SIGHT1",
+      "standard": "L.1.2",
+      "count": 500,
+      "visual_type": "word_building",
+      "words": ["the", "of", "and", "a", "to", "in", "is", "you", "that", "it", "he", "was", "for", "on", "are", "as", "with", "his", "they", "I", "at", "be", "this", "have", "from", "or", "one", "had", "by", "but", "not", "what", "all", "were", "we", "when", "your", "can", "said", "there", "use", "an", "each", "which", "she", "do", "how", "their", "if", "will"]
+    },
+    {
+      "skill": "blends bl br cl",
+      "code": "BLND1",
+      "standard": "RF.1.3",
+      "count": 300,
+      "visual_type": "phonics",
+      "words": ["black", "blank", "blast", "blend", "bless", "block", "blood", "bloom", "blow", "blue", "brain", "brake", "brand", "brave", "bread", "break", "brick", "bride", "bring", "clam", "clap", "class", "claw", "clay", "clean", "clear", "click", "cliff", "climb", "clip", "clock", "close", "cloth", "cloud", "clown", "club"]
+    }
+  ],
+  "question_templates": [
+    "Listen to the word and spell it: {word}",
+    "Type the word you hear: {word}",
+    "Spell the word: {word}"
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

@@ -3962,5 +3962,42 @@ export type DisabledTheme = never // This table doesn't exist in schema
 export type StoryQuestion = never // Story questions don't have a separate table
 export type ReadingProgress = Database['public']['Tables']['student_stories_read']['Row']
 export type LessonProgress = Database['public']['Tables']['student_skill_progress']['Row']
-export type AnswerAttempt = never // This table doesn't exist
-export type LearningProfile = never // This table doesn't exist
+// Answer attempts table - tracks every answer for adaptive learning
+export interface AnswerAttempt {
+  id: string;
+  child_id: string;
+  skill_id: string;
+  question_text: string;
+  answer_given: string;
+  is_correct: boolean;
+  time_spent_seconds: number;
+  help_requested: boolean;
+  tutor_intervened: boolean;
+  created_at: string;
+}
+
+// Learning profiles table - AI-powered personalization
+export interface LearningProfile {
+  id: string;
+  child_id: string;
+  primary_learning_style: 'visual' | 'auditory' | 'reading' | 'kinesthetic';
+  secondary_learning_style?: 'visual' | 'auditory' | 'reading' | 'kinesthetic';
+  preferred_pace: 'slow' | 'medium' | 'fast';
+  frustration_threshold: number;
+  needs_more_examples: boolean;
+  responds_to_encouragement: boolean;
+  responds_to_challenges: boolean;
+  strongest_subjects: string[];
+  weakest_subjects: string[];
+  favorite_subjects: string[];
+  preferred_example_types: string[];
+  best_time_of_day?: 'morning' | 'afternoon' | 'evening';
+  average_session_length: number;
+  confidence_level: 'low' | 'medium' | 'high';
+  total_questions_answered: number;
+  total_questions_correct: number;
+  overall_accuracy: number;
+  learning_style_confidence: number;
+  created_at: string;
+  updated_at: string;
+}

@@ -1,0 +1,491 @@
+{
+  "grade": 3,
+  "description": "Grade 3 Coding Templates - Following 6-Phase Lesson Flow",
+  "lesson_flow_reference": "LESSON-FLOW-ARCHITECTURE.md",
+  "adaptive_reference": "ULTIMATE-PLAN-ADAPTIVE-LEARNING.md",
+  "standard": "ISTE 1B-AP-10",
+  "advancement_rule": "Project-based: Complete 5 projects to advance",
+  "source_research": [
+    "Code.org CS Fundamentals Course D",
+    "Scratch community top projects",
+    "MIT CAL Curriculum for elementary",
+    "Tynker K-5 curriculum"
+  ],
+
+  "activity_templates": [
+    {
+      "template_id": "G3-MAZE-BUILDER",
+      "skill": "conditionals if/else",
+      "activity_type": "maze_game",
+      "why_engaging": "Kids love maze games - instant visual feedback, accomplishment",
+      "interaction": "Drag code blocks to make sprite navigate maze",
+      "project_goal": "Build a working maze game with collision detection"
+    },
+    {
+      "template_id": "G3-SCORE-TRACKER",
+      "skill": "variables keeping score",
+      "activity_type": "clicker_game",
+      "why_engaging": "Watching score go up = dopamine, instant reward",
+      "interaction": "Build a game that tracks points when clicking sprites",
+      "project_goal": "Create a collecting game with working score system"
+    },
+    {
+      "template_id": "G3-DEBUG-DETECTIVE",
+      "skill": "debugging strategies",
+      "activity_type": "bug_hunt",
+      "why_engaging": "Kids feel smart finding bugs, detective mystery theme",
+      "interaction": "Find and fix bugs in broken code",
+      "project_goal": "Successfully debug 5 broken programs"
+    },
+    {
+      "template_id": "G3-CHATBOT",
+      "skill": "user input",
+      "activity_type": "interactive_story",
+      "why_engaging": "Character talks BACK using YOUR name - feels magical",
+      "interaction": "Build a character that asks questions and responds",
+      "project_goal": "Create an interactive conversation program"
+    },
+    {
+      "template_id": "G3-CLONE-RAIN",
+      "skill": "broadcast and clones",
+      "activity_type": "animation_maker",
+      "why_engaging": "Making LOTS of things appear is visually exciting",
+      "interaction": "Create animated effects using clones",
+      "project_goal": "Build an animation with spawning objects"
+    }
+  ],
+
+  "full_lesson_example": {
+    "_comment": "This shows ONE complete skill lesson following the 6-Phase Flow",
+    "skill": "conditionals if/else",
+    "standard": "1B-AP-10",
+    "total_duration_minutes": 45,
+
+    "phase_1_rule_teaching": {
+      "phase_name": "RULE TEACHING (I DO - Teacher Models)",
+      "duration_minutes": 5,
+      "what_happens": "Gigi teaches the concept. Kid watches and listens. No interaction yet.",
+      "content": {
+        "rule_id": "CODE-R-COND-IFELSE",
+        "rule_name": "If/Else Conditionals",
+        "intro": "Let me show you how computers make decisions!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "text": "Computers can check if something is TRUE or FALSE",
+            "visual": {
+              "type": "conditional",
+              "data": {
+                "condition": "Is it raining?",
+                "if_true": "Grab umbrella!",
+                "if_false": "Go outside!",
+                "highlight": "question"
+              }
+            },
+            "voice": "Computers ask questions. Is it raining? True or false?",
+            "duration": 4000
+          },
+          {
+            "step": 2,
+            "text": "IF true, do one thing. ELSE (if false), do something different.",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "language": "scratch",
+                "blocks": [
+                  "if <raining?> then",
+                  "  say [Grab umbrella!]",
+                  "else",
+                  "  say [Go outside!]",
+                  "end"
+                ],
+                "highlight_lines": [1, 3]
+              }
+            },
+            "voice": "IF it's raining, grab umbrella. ELSE, go outside. Two different paths!",
+            "duration": 5000
+          },
+          {
+            "step": 3,
+            "text": "In Scratch, we use the IF/ELSE block to make sprites decide!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "language": "scratch",
+                "blocks": [
+                  "if <touching [wall]?> then",
+                  "  go to [start]",
+                  "else",
+                  "  move (10) steps",
+                  "end"
+                ],
+                "highlight_lines": [1],
+                "sprite_demo": true
+              }
+            },
+            "voice": "If touching wall, go back to start. Else, keep moving. The sprite decides!",
+            "duration": 5000
+          }
+        ],
+        "rule_card": {
+          "title": "If/Else Rule",
+          "rule": "IF condition is TRUE → do the first thing. ELSE (if FALSE) → do the second thing.",
+          "examples": [
+            "if <touching color?> then [bounce]",
+            "if <key pressed?> then [move] else [stop]",
+            "if <score > 10> then [you win!]"
+          ]
+        }
+      }
+    },
+
+    "phase_2_demo_problems": {
+      "phase_name": "DEMO PROBLEMS (I DO - Teacher Shows Examples)",
+      "duration_minutes": 8,
+      "what_happens": "Gigi solves 3 problems while kid watches. Step by step.",
+      "demos": [
+        {
+          "demo_id": "CODE-COND-DEMO-001",
+          "problem": "Make the cat bounce when touching the edge",
+          "solution": "if <touching [edge]?> then [turn 180 degrees]",
+          "walkthrough": [
+            {
+              "step": 1,
+              "instruction": "First, we need to CHECK something. What are we checking?",
+              "visual": {"type": "conditional", "data": {"condition": "touching edge?", "highlight": "condition"}},
+              "voice": "We need to check: is the cat touching the edge?",
+              "duration": 3000
+            },
+            {
+              "step": 2,
+              "instruction": "Drag the 'if/then' block from Control",
+              "visual": {"type": "code_block", "data": {"blocks": ["if <> then", "end"], "drag_animation": true}},
+              "voice": "Grab the if-then block. This is where our decision goes!",
+              "duration": 3000
+            },
+            {
+              "step": 3,
+              "instruction": "Put 'touching edge' inside the diamond",
+              "visual": {"type": "code_block", "data": {"blocks": ["if <touching [edge]?> then", "end"], "highlight_lines": [1]}},
+              "voice": "Put touching edge in the diamond. Now Scratch knows what to check!",
+              "duration": 3000
+            },
+            {
+              "step": 4,
+              "instruction": "Add 'turn 180 degrees' inside the if block",
+              "visual": {"type": "code_block", "data": {"blocks": ["if <touching [edge]?> then", "  turn ↻ (180) degrees", "end"], "highlight_lines": [2]}},
+              "voice": "When touching edge is TRUE, turn around! That's bouncing!",
+              "duration": 4000
+            },
+            {
+              "step": 5,
+              "instruction": "Watch it work!",
+              "visual": {"type": "loop_animation", "data": {"sprite": "cat", "action": "bounces at edge", "loop": true}},
+              "voice": "The cat hits the edge, turns around, and keeps going. Perfect!",
+              "duration": 4000
+            }
+          ]
+        },
+        {
+          "demo_id": "CODE-COND-DEMO-002",
+          "problem": "Make sprite say 'Ouch!' when touching red color",
+          "solution": "if <touching color [red]?> then [say Ouch!]",
+          "walkthrough": [
+            {
+              "step": 1,
+              "instruction": "What condition are we checking?",
+              "visual": {"type": "conditional", "data": {"condition": "touching red?"}},
+              "voice": "Our condition is: is the sprite touching the red color?",
+              "duration": 3000
+            },
+            {
+              "step": 2,
+              "instruction": "Build the if block with color sensing",
+              "visual": {"type": "code_block", "data": {"blocks": ["if <touching color [🔴]?> then", "  say [Ouch!] for (1) seconds", "end"]}},
+              "voice": "If touching red, say Ouch! The sprite reacts to color!",
+              "duration": 4000
+            },
+            {
+              "step": 3,
+              "instruction": "Test it!",
+              "visual": {"type": "loop_animation", "data": {"sprite": "moves and touches red", "says": "Ouch!"}},
+              "voice": "Touch the red... Ouch! It works!",
+              "duration": 3000
+            }
+          ]
+        },
+        {
+          "demo_id": "CODE-COND-DEMO-003",
+          "problem": "If score is more than 5, show 'You Win!' otherwise show 'Keep trying!'",
+          "solution": "if <score > 5> then [say You Win!] else [say Keep trying!]",
+          "walkthrough": [
+            {
+              "step": 1,
+              "instruction": "This time we need IF/ELSE - two different outcomes!",
+              "visual": {"type": "conditional", "data": {"condition": "score > 5", "if_true": "You Win!", "if_false": "Keep trying!"}},
+              "voice": "Score above 5? You win! Below 5? Keep trying! Two paths!",
+              "duration": 4000
+            },
+            {
+              "step": 2,
+              "instruction": "Use the if/else block (has two mouths)",
+              "visual": {"type": "code_block", "data": {"blocks": ["if <(score) > (5)> then", "  say [You Win!]", "else", "  say [Keep trying!]", "end"]}},
+              "voice": "The if-else block has TWO mouths - one for true, one for false!",
+              "duration": 4000
+            },
+            {
+              "step": 3,
+              "instruction": "Test with score = 3, then score = 7",
+              "visual": {"type": "variable_box", "data": {"tests": [{"value": 3, "result": "Keep trying!"}, {"value": 7, "result": "You Win!"}]}},
+              "voice": "Score is 3? Keep trying. Score is 7? You win! It chooses the right path!",
+              "duration": 5000
+            }
+          ]
+        }
+      ]
+    },
+
+    "phase_3_guided_practice": {
+      "phase_name": "GUIDED PRACTICE (WE DO - Work Together)",
+      "duration_minutes": 10,
+      "what_happens": "Kid tries 5 problems WITH hints available. Gigi helps if stuck.",
+      "problems": [
+        {
+          "practice_id": "CODE-COND-GUIDED-001",
+          "problem": "Complete the code: When the arrow key is pressed, IF the cat is touching the wall, it should go back to start.\n\nwhen [arrow key] pressed\nmove (10) steps\nif <_______> then\n  go to x: (0) y: (0)\nend",
+          "answer": "touching [wall]?",
+          "hint": "What are we checking? Think about what the cat might bump into...",
+          "interaction": {
+            "type": "fill_in_block",
+            "drop_zone": "condition diamond",
+            "available_options": ["touching [wall]?", "touching [edge]?", "key pressed?", "score > 0"]
+          },
+          "tier1": {
+            "teach": "We need to check if the cat is touching something. The wall! Use 'touching [wall]?' block.",
+            "steps": [
+              {
+                "step": 1,
+                "visual": {"type": "conditional", "data": {"condition": "touching wall?", "highlight": "this is what we check"}},
+                "voice_text": "We check: is the cat touching the wall? That goes in the diamond!",
+                "duration": 4000
+              }
+            ]
+          },
+          "tier2": {
+            "teach": "IF touching wall, go back. We need the 'touching wall' block in the diamond spot.",
+            "steps": [
+              {
+                "step": 1,
+                "visual": {"type": "code_block", "data": {"blocks": ["if <touching [wall]?>", "  go to start"], "arrows": true}},
+                "voice_text": "Put touching wall in the IF. Hit wall? Go to start!",
+                "duration": 4000
+              }
+            ]
+          }
+        },
+        {
+          "practice_id": "CODE-COND-GUIDED-002",
+          "problem": "Build the code: IF the sprite is touching the banana, add 1 to score.\n\nDrag blocks to build:\nif <_______> then\n  _______\nend",
+          "answer": ["touching [banana]?", "change [score] by (1)"],
+          "hint": "First decide what to check, then what to do when it's true",
+          "interaction": {
+            "type": "block_builder",
+            "drop_zones": ["condition", "action"],
+            "available_blocks": [
+              {"block": "touching [banana]?", "for": "condition"},
+              {"block": "change [score] by (1)", "for": "action"},
+              {"block": "touching [wall]?", "for": "condition", "wrong": true},
+              {"block": "say [yay]", "for": "action", "wrong": true}
+            ]
+          },
+          "tier1": {
+            "teach": "Check if touching banana, then change score. Two parts: the check and the action.",
+            "steps": [
+              {
+                "step": 1,
+                "visual": {"type": "code_block", "data": {"blocks": ["if <touching [banana]?> then", "  change [score] by (1)", "end"], "label_parts": true}},
+                "voice_text": "Touching banana goes in condition. Change score goes in action. Done!",
+                "duration": 5000
+              }
+            ]
+          },
+          "tier2": {
+            "teach": "Touch banana → score goes up! Two blocks to drag.",
+            "steps": [
+              {
+                "step": 1,
+                "visual": {"type": "loop_animation", "data": {"frames": ["touch banana", "score +1"]}},
+                "voice_text": "Touch banana, score plus one! Simple!",
+                "duration": 4000
+              }
+            ]
+          }
+        },
+        {
+          "practice_id": "CODE-COND-GUIDED-003",
+          "problem": "What will this code do when the cat touches the edge?\n\nwhen green flag clicked\nforever\n  move (10) steps\n  if <touching [edge]?> then\n    turn ↻ (180) degrees\n  end\nend",
+          "answer": "The cat will bounce back and forth forever",
+          "interaction": {
+            "type": "predict_output",
+            "options": [
+              "The cat will bounce back and forth forever",
+              "The cat will stop at the edge",
+              "The cat will disappear",
+              "Nothing will happen"
+            ],
+            "run_to_verify": true
+          },
+          "tier1": {
+            "teach": "Forever loop keeps moving. When touching edge, turn around. So it bounces forever!",
+            "steps": [
+              {
+                "step": 1,
+                "visual": {"type": "loop_animation", "data": {"sprite": "cat", "action": "bounces", "loop": true}},
+                "voice_text": "Move, check edge, turn if touching, repeat forever. Bounce bounce bounce!",
+                "duration": 5000
+              }
+            ]
+          },
+          "tier2": {
+            "teach": "Cat moves. Hits edge? Turn around. Keep going forever. Bouncy cat!",
+            "steps": [
+              {
+                "step": 1,
+                "visual": {"type": "loop_animation", "data": {"emoji_sequence": ["🐱➡️", "🐱↩️", "🐱⬅️", "🐱↩️", "🔁"]}},
+                "voice_text": "Go, turn, go, turn, forever! Bouncy bouncy!",
+                "duration": 4000
+              }
+            ]
+          }
+        },
+        {
+          "practice_id": "CODE-COND-GUIDED-004",
+          "problem": "DEBUG IT: This code should make the sprite say 'Hot!' when touching red, but it doesn't work. Find and fix the bug!\n\nif <touching color [blue]?> then\n  say [Hot!]\nend",
+          "answer": "Change 'blue' to 'red'",
+          "bug_type": "wrong_value",
+          "interaction": {
+            "type": "debug_and_fix",
+            "highlight_bug": [1],
+            "fix_options": ["Change blue to red", "Change Hot to Cold", "Remove the if block"]
+          },
+          "tier1": {
+            "teach": "We want to check for RED color, but the code checks for BLUE. Wrong color!",
+            "steps": [
+              {
+                "step": 1,
+                "visual": {"type": "code_block", "data": {"blocks": ["if <touching color [🔵]?>"], "crossed_out": true, "correct": ["if <touching color [🔴]?>"]}},
+                "voice_text": "Blue is wrong! We want red. Change the color to red!",
+                "duration": 4000
+              }
+            ]
+          },
+          "tier2": {
+            "teach": "Hot = red, not blue! Fix the color.",
+            "steps": [
+              {
+                "step": 1,
+                "visual": {"type": "conditional", "data": {"wrong": "🔵", "right": "🔴", "arrow": true}},
+                "voice_text": "Blue → Red. Now it says Hot when touching red!",
+                "duration": 4000
+              }
+            ]
+          }
+        },
+        {
+          "practice_id": "CODE-COND-GUIDED-005",
+          "problem": "Complete the IF/ELSE: If lives is 0, say 'Game Over', else say 'Keep playing!'\n\nif <(lives) = (0)> then\n  say [_______]\nelse\n  say [_______]\nend",
+          "answer": ["Game Over", "Keep playing!"],
+          "interaction": {
+            "type": "fill_in_text",
+            "blanks": 2,
+            "hints": ["What happens when you run out of lives?", "What if you still have lives?"]
+          },
+          "tier1": {
+            "teach": "Lives = 0 means game over. Lives not 0 means keep playing. Match the messages!",
+            "steps": [
+              {
+                "step": 1,
+                "visual": {"type": "conditional", "data": {"condition": "lives = 0", "if_true": "Game Over", "if_false": "Keep playing!"}},
+                "voice_text": "Zero lives? Game over. Still have lives? Keep playing! Two paths!",
+                "duration": 5000
+              }
+            ]
+          },
+          "tier2": {
+            "teach": "0 lives = game over. More lives = keep going!",
+            "steps": [
+              {
+                "step": 1,
+                "visual": {"type": "output", "data": {"lines": ["lives=0 → Game Over", "lives>0 → Keep playing!"]}},
+                "voice_text": "No lives left, game over. Got lives, keep playing!",
+                "duration": 4000
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+    "phase_4_independent_practice": {
+      "phase_name": "INDEPENDENT PRACTICE (YOU DO - Solo Practice)",
+      "duration_minutes": 15,
+      "what_happens": "Kid practices alone. No hints. Earns coins.",
+      "total_problems": 15,
+      "sample_problems": [
+        {
+          "id": "CODE-G3-COND-0001",
+          "question": "What block checks if the sprite is at the edge?\n\nA) touching [edge]?\nB) at edge?\nC) edge = true?\nD) check edge",
+          "answer": "A",
+          "coins": 5
+        },
+        {
+          "id": "CODE-G3-COND-0002",
+          "question": "Build: If touching green, hide the sprite.\n\nDrag the correct blocks:",
+          "answer": ["if <touching color [green]?> then", "hide", "end"],
+          "interaction": "block_builder",
+          "coins": 10
+        },
+        {
+          "id": "CODE-G3-COND-0003",
+          "question": "What does this code do?\n\nif <(score) > (10)> then\n  say [Winner!]\nelse\n  say [Try again!]\nend",
+          "answer": "Says Winner if score is above 10, otherwise says Try again",
+          "interaction": "multiple_choice",
+          "coins": 5
+        }
+      ],
+      "format_note": "These are the regular practice_problems items we're seeding (question + answer + tier1/tier2 for wrong answers)"
+    },
+
+    "phase_5_quiz": {
+      "phase_name": "RULE QUIZ (Assessment)",
+      "duration_minutes": 5,
+      "what_happens": "Quick quiz on if/else. Must pass 80% to master the skill.",
+      "passing_score": 0.8,
+      "quiz": {
+        "quiz_id": "CODE-G3-COND-QUIZ",
+        "skill": "conditionals if/else",
+        "questions": [
+          {"q": "What does the IF block check?", "a": "A condition (true or false)", "options": ["A condition (true or false)", "A number", "A sprite name", "Nothing"]},
+          {"q": "If the condition is FALSE, what happens?", "a": "The code inside IF doesn't run (or ELSE runs)", "options": ["The code inside IF doesn't run (or ELSE runs)", "The program crashes", "Everything runs anyway", "The sprite disappears"]},
+          {"q": "Which block means 'if touching wall'?", "a": "if <touching [wall]?> then", "options": ["if <touching [wall]?> then", "when wall touched", "touch wall now", "wall = touching"]},
+          {"q": "What's the difference between IF and IF/ELSE?", "a": "IF/ELSE has two paths, IF has one", "options": ["IF/ELSE has two paths, IF has one", "They're the same", "IF is for numbers only", "ELSE is optional decoration"]},
+          {"q": "Build the code: If score equals 100, say 'Perfect!'", "a": "if <(score) = (100)> then say [Perfect!]", "interaction": "block_builder"}
+        ],
+        "pass_reward": {"coins": 25, "badge": "Conditional Master"},
+        "fail_action": "Review tier1 explanations and retry"
+      }
+    },
+
+    "phase_6_complete": {
+      "phase_name": "COMPLETE",
+      "what_happens": "Celebration! Skill marked as PASSED. Unlock next skill.",
+      "rewards": {
+        "coins": 50,
+        "xp": 100,
+        "badge": "If/Else Expert",
+        "celebration": "confetti_animation"
+      },
+      "next_skill": "variables keeping score"
+    }
+  }
+}

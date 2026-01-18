@@ -1,0 +1,150 @@
+{
+  "grade": 3,
+  "grade_name": "Third Grade",
+  "total_target": 2000,
+  "standards": ["W.3.1", "W.3.2", "W.3.3", "L.3.1", "L.3.1.A", "L.3.1.I", "L.3.2"],
+  "skills": [
+    {
+      "skill": "simple and compound sentences",
+      "code": "COMP",
+      "standard": "L.3.1.I",
+      "count": 250,
+      "visual_type": "sentence_builder",
+      "exercises": [
+        {"type": "identify", "sentence": "The dog barked loudly.", "answer": "simple"},
+        {"type": "identify", "sentence": "The dog barked, and the cat ran away.", "answer": "compound"},
+        {"type": "combine", "s1": "I like to read.", "s2": "I like to write.", "answer": "I like to read and write."},
+        {"type": "combine", "s1": "We wanted to go outside.", "s2": "It was raining.", "conjunction": "but", "answer": "We wanted to go outside, but it was raining."}
+      ]
+    },
+    {
+      "skill": "subject-verb agreement",
+      "code": "VERB",
+      "standard": "L.3.1",
+      "count": 250,
+      "visual_type": "grammar_highlight",
+      "exercises": [
+        {"subject": "The dog", "verb_choices": ["run", "runs"], "correct": "runs", "sentence": "The dog runs fast."},
+        {"subject": "The dogs", "verb_choices": ["run", "runs"], "correct": "run", "sentence": "The dogs run fast."},
+        {"subject": "She", "verb_choices": ["play", "plays"], "correct": "plays", "sentence": "She plays soccer."},
+        {"subject": "They", "verb_choices": ["play", "plays"], "correct": "play", "sentence": "They play soccer."},
+        {"subject": "The bird", "verb_choices": ["fly", "flies"], "correct": "flies", "sentence": "The bird flies high."}
+      ]
+    },
+    {
+      "skill": "pronoun-antecedent agreement",
+      "code": "PRON",
+      "standard": "L.3.1",
+      "count": 200,
+      "visual_type": "grammar_highlight",
+      "exercises": [
+        {"antecedent": "The boy", "pronoun": "he", "sentence": "The boy lost his book. He was sad."},
+        {"antecedent": "The girls", "pronoun": "they", "sentence": "The girls finished their work. They went outside."},
+        {"antecedent": "My sister", "pronoun": "she", "sentence": "My sister loves pizza. She eats it every Friday."},
+        {"antecedent": "The students", "pronoun": "they", "sentence": "The students studied hard. They all passed the test."}
+      ]
+    },
+    {
+      "skill": "comparative and superlative adjectives",
+      "code": "ADJ",
+      "standard": "L.3.1",
+      "count": 200,
+      "visual_type": "grammar_highlight",
+      "adjectives": [
+        {"base": "tall", "comparative": "taller", "superlative": "tallest"},
+        {"base": "fast", "comparative": "faster", "superlative": "fastest"},
+        {"base": "big", "comparative": "bigger", "superlative": "biggest"},
+        {"base": "happy", "comparative": "happier", "superlative": "happiest"},
+        {"base": "good", "comparative": "better", "superlative": "best"},
+        {"base": "bad", "comparative": "worse", "superlative": "worst"},
+        {"base": "beautiful", "comparative": "more beautiful", "superlative": "most beautiful"}
+      ]
+    },
+    {
+      "skill": "coordinating conjunctions",
+      "code": "CONJ",
+      "standard": "L.3.1",
+      "count": 200,
+      "visual_type": "sentence_builder",
+      "fanboys": ["for", "and", "nor", "but", "or", "yet", "so"],
+      "exercises": [
+        {"s1": "I was tired.", "s2": "I finished my homework.", "conjunction": "but"},
+        {"s1": "She studied hard.", "s2": "She got an A on the test.", "conjunction": "so"},
+        {"s1": "We can go to the park.", "s2": "We can stay home.", "conjunction": "or"},
+        {"s1": "I like apples.", "s2": "I like oranges.", "conjunction": "and"}
+      ]
+    },
+    {
+      "skill": "commas in dialogue",
+      "code": "QUOT",
+      "standard": "L.3.2",
+      "count": 200,
+      "visual_type": "grammar_highlight",
+      "dialogues": [
+        {"speaker": "Mom", "said": "said", "dialogue": "Time for dinner!", "formatted": "\"Time for dinner!\" said Mom."},
+        {"speaker": "Tom", "said": "asked", "dialogue": "Can I go outside?", "formatted": "Tom asked, \"Can I go outside?\""},
+        {"speaker": "The teacher", "said": "announced", "dialogue": "The test is tomorrow.", "formatted": "The teacher announced, \"The test is tomorrow.\""}
+      ]
+    },
+    {
+      "skill": "paragraph organization",
+      "code": "PARA",
+      "standard": "W.3.2",
+      "count": 200,
+      "visual_type": "paragraph_structure",
+      "paragraphs": [
+        {
+          "topic": "The Water Cycle",
+          "intro": "Water moves in a cycle that never ends.",
+          "body": ["First, the sun heats water in oceans and lakes.", "Then, water evaporates and rises into the sky.", "Next, water vapor forms clouds.", "Finally, rain falls back to Earth."],
+          "conclusion": "The water cycle keeps our planet healthy."
+        }
+      ]
+    },
+    {
+      "skill": "narrative with dialogue",
+      "code": "NARR",
+      "standard": "W.3.3",
+      "count": 200,
+      "visual_type": "paragraph_structure",
+      "story_starters": [
+        {"setting": "At the park", "character": "Emma", "problem": "lost her dog", "dialogue": "\"Buddy! Where are you?\" Emma called out."},
+        {"setting": "In class", "character": "Jake", "problem": "forgot his homework", "dialogue": "\"I left it on the kitchen table,\" Jake explained."}
+      ]
+    },
+    {
+      "skill": "opinion with organizational structure",
+      "code": "OPIN",
+      "standard": "W.3.1",
+      "count": 150,
+      "visual_type": "paragraph_structure",
+      "structure": ["introduction with opinion", "reason 1 with example", "reason 2 with example", "conclusion"],
+      "prompts": [
+        {"topic": "School uniforms", "opinion": "Students should not wear uniforms.", "reasons": ["Students can express themselves through clothing.", "Families save money by not buying special uniforms."]}
+      ]
+    },
+    {
+      "skill": "linking words and phrases",
+      "code": "PARA",
+      "standard": "W.3.1",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "linking_words": {
+        "addition": ["also", "another", "in addition", "furthermore"],
+        "contrast": ["however", "but", "although", "on the other hand"],
+        "sequence": ["first", "next", "then", "finally"],
+        "conclusion": ["in conclusion", "therefore", "as a result"]
+      }
+    }
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

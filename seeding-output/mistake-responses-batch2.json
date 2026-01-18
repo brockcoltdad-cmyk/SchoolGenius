@@ -1,0 +1,302 @@
+[
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "response": "Mistakes help us learn! Let’s try that again together. I know you’ve got this—let’s find the right way!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "response": "Mistakes are okay! They help us learn. Let’s try that part again together. You’ve got this, and I’m here to help!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "response": "Mistakes happen to everyone! Let’s reread and find the key details together. You’ve got this—every try helps you grow!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "response": "Mistakes are how we learn! Let’s reread and think about the context together. You’ve got this—keep trying!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "response": "Mistakes are part of learning! Let’s review the context together to clarify. Keep pushing—you’ve got this!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "response": "Mistakes are part of learning! Let’s review the context together to find the right approach. Keep pushing—you’ve got this!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "response": "Oops, that’s okay! Mistakes help us learn. Let’s try spelling it together slowly. You’ve got this!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "response": "Oops, that’s okay! Mistakes help us learn. Let’s try spelling it together slowly. You’ve got this!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "response": "Mistakes are okay! They help us learn. Let’s look at the word together and fix it. You’ve got this!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "response": "Mistakes help us learn! Let’s check that word together and sound it out. You’ve got this, keep trying!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "response": "Mistakes are how we learn! Let’s review the spelling together and try again. You’ve got this—keep practicing!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "response": "Mistakes are how we learn! Let’s review the spelling together. You’ve got this—keep trying and you’ll improve!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "response": "Mistakes are part of learning! Let’s review the word together to find the correct spelling. Keep practicing—you’re improving every day!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "response": "Mistakes are part of learning! Let’s review the word together to find the correct spelling. Keep practicing—you’ve got this!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Coding",
+    "age_group": "k2",
+    "response": "Oops, a tiny mix-up! Mistakes help us learn. Let’s try counting the steps again together. You’ve got this!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Coding",
+    "age_group": "k2",
+    "response": "Oops, mistakes happen to everyone! Let’s try counting the steps again together. You’ve got this, keep going!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "response": "Mistakes are okay! They help us learn. Let’s check your code step-by-step together. You’ve got this, and I’m here to help!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "response": "Mistakes are okay! They help us learn. Let’s check your code step-by-step together. You’ve got this, keep trying!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "response": "Mistakes happen to everyone! Let's debug together and find the right solution. You've got this—every error teaches us something new!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "response": "Mistakes happen to everyone! Let’s debug together and find the right logic. You’ve got this—every error teaches us something new!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "response": "Mistakes are part of learning! Let’s review the logic together and find the right path. You’ve got this!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "response": "Mistakes happen to everyone! Let’s debug this together. Check your logic step-by-step to find the error. You’ve got this!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Typing",
+    "age_group": "k2",
+    "response": "Oops, that’s okay! Mistakes help us learn. Let’s try typing slowly and check each letter. You’ve got this!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Typing",
+    "age_group": "k2",
+    "response": "Oops, a little typo! Mistakes help us learn. Let’s try typing slowly and check each letter. You’ve got this!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "response": "Mistakes are okay! They help us learn. Let’s check your typing again and fix it together. You’ve got this! Keep practicing!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "response": "Mistakes happen, and they help us learn! Let’s try that typing again slowly. You’ve got this, keep practicing!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "response": "Mistakes happen to everyone! Let’s slow down and check each step. You’ve got this—keep practicing and you’ll improve!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "response": "Mistakes happen to everyone! Let’s try again with a fresh look. You’ve got this—keep practicing and you’ll get even better!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "response": "Mistakes happen to everyone while learning! Review your typing technique, practice accuracy, and you’ll improve. Keep going—you’ve got this!"
+  },
+  {
+    "mistake_type": "calculation_error",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "response": "Mistakes happen to everyone! Let’s review your typing technique together. Keep practicing—you’re improving every day!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Math",
+    "age_group": "k2",
+    "response": "Oops, that’s okay! Mistakes help us learn. Let’s try spelling it again together. You’ve got this, keep going!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Math",
+    "age_group": "k2",
+    "response": "Oops, that’s okay! Mistakes help us learn. Let’s try spelling it again together. You’ve got this, keep going!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Math",
+    "age_group": "grades35",
+    "response": "Oops, that’s okay! Mistakes help us learn. Let’s check the spelling together and try again. You’ve got this!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Math",
+    "age_group": "grades35",
+    "response": "Mistakes help us learn! Let’s check the spelling together and fix it. You’ve got this, keep trying!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Math",
+    "age_group": "grades68",
+    "response": "Mistakes are how we learn! Let’s check the spelling of that word together. You’ve got this—every step helps you grow!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Math",
+    "age_group": "grades68",
+    "response": "Mistakes happen to everyone! Let’s check the spelling of that word together. Keep trying—you’re learning every day!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Math",
+    "age_group": "grades912",
+    "response": "Mistakes happen to everyone! Let’s focus on the correct spelling together. Keep pushing; learning is a journey!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Math",
+    "age_group": "grades912",
+    "response": "Mistakes are part of learning! Let’s focus on the correct spelling together. Keep pushing—you’re doing great!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Reading",
+    "age_group": "k2",
+    "response": "Oops, that’s okay! Mistakes help us learn. Let’s sound out the word together and try again. You’ve got this!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Reading",
+    "age_group": "k2",
+    "response": "Oops, that’s okay! Mistakes help us learn. Let’s sound out the word together and try again. You’ve got this!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "response": "Mistakes are okay! They help us learn. Let’s sound out the word together and fix the spelling. You’ve got this!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "response": "Oops, that’s okay! Mistakes help us learn. Let’s sound out the word together and find the right spelling. You’ve got this!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "response": "Mistakes happen to everyone! Let’s double-check that word together. Keep practicing, and you’ll get it right next time!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "response": "Mistakes happen to everyone! Let’s work on spelling together. Keep practicing, and you’ll get it. I believe in you!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "response": "Mistakes are part of learning! Let’s review the spelling together to get it right. Keep practicing—you’re improving every day!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "response": "Mistakes are part of learning! Let’s review the spelling together to get it right. Keep practicing—you’re improving every day!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "response": "Oops, that’s okay! Spelling can be tricky. Let’s try sounding it out together. You’re doing great, and mistakes help us learn!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "response": "Oops, that’s okay! Mistakes help us learn. Let’s try spelling it together slowly. You’ve got this!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "response": "Mistakes help us learn! Let’s check the spelling together and fix it. You’re doing great, keep trying!"
+  },
+  {
+    "mistake_type": "spelling_error",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "response": "Mistakes help us learn! Let’s look at the word together and find the right spelling. You’ve got this, keep trying!"
+  }
+]

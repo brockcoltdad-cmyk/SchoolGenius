@@ -1,0 +1,238 @@
+{
+  "grade": 4,
+  "grade_name": "Fourth Grade",
+  "lexile_range": "700L-850L",
+  "default_lexile": "775L",
+  "standards": ["RF.4.3", "RF.4.4", "RL.4.1", "RL.4.2", "RL.4.3", "RL.4.6", "RI.4.2", "RI.4.5"],
+  "total_target": 6000,
+  "skills": [
+    {
+      "skill": "advanced roots",
+      "code": "ROOT",
+      "standard": "RF.4.3",
+      "count": 600,
+      "visual_type": "word_building",
+      "question_templates": [
+        "The root '{root}' means '{meaning}'. What does '{word}' mean?",
+        "Which word contains the root that means '{meaning}'?",
+        "How does knowing the root help you understand '{word}'?"
+      ],
+      "roots": [
+        {"root": "port", "meaning": "carry", "words": ["transport", "import", "export", "portable", "report", "support"]},
+        {"root": "ject", "meaning": "throw", "words": ["reject", "project", "inject", "subject", "object", "eject"]},
+        {"root": "spect", "meaning": "look", "words": ["inspect", "respect", "expect", "spectacle", "suspect", "prospect"]},
+        {"root": "rupt", "meaning": "break", "words": ["erupt", "interrupt", "corrupt", "disrupt", "bankrupt", "rupture"]},
+        {"root": "dict", "meaning": "say or speak", "words": ["predict", "dictionary", "contradict", "verdict", "dictate", "addict"]},
+        {"root": "struct", "meaning": "build", "words": ["construct", "instruct", "structure", "destruct", "obstruct"]},
+        {"root": "tract", "meaning": "pull or drag", "words": ["attract", "subtract", "extract", "distract", "tractor", "contract"]},
+        {"root": "vis/vid", "meaning": "see", "words": ["visible", "vision", "video", "evidence", "invisible", "supervise"]}
+      ]
+    },
+    {
+      "skill": "figurative language",
+      "code": "VOCAB",
+      "standard": "RL.4.4",
+      "count": 800,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "What does the phrase '{phrase}' mean?",
+        "Is this a simile, metaphor, or idiom?",
+        "What is the author comparing in this sentence?"
+      ],
+      "figurative_language": {
+        "similes": [
+          {"sentence": "The snow was as white as cotton.", "comparison": "snow to cotton", "meaning": "The snow was very white"},
+          {"sentence": "He ran like the wind.", "comparison": "running to wind", "meaning": "He ran very fast"},
+          {"sentence": "Her eyes sparkled like diamonds.", "comparison": "eyes to diamonds", "meaning": "Her eyes were bright and shiny"},
+          {"sentence": "The baby's skin was as soft as silk.", "comparison": "skin to silk", "meaning": "The baby's skin was very soft"},
+          {"sentence": "He was as brave as a lion.", "comparison": "person to lion", "meaning": "He was very brave"}
+        ],
+        "metaphors": [
+          {"sentence": "The world is a stage.", "meaning": "Life is like a performance"},
+          {"sentence": "Time is money.", "meaning": "Time is valuable"},
+          {"sentence": "Her heart was ice.", "meaning": "She was cold and unfeeling"},
+          {"sentence": "The classroom was a zoo.", "meaning": "The classroom was wild and chaotic"},
+          {"sentence": "He has a heart of gold.", "meaning": "He is very kind and generous"}
+        ],
+        "idioms": [
+          {"phrase": "break a leg", "meaning": "good luck"},
+          {"phrase": "piece of cake", "meaning": "something easy"},
+          {"phrase": "let the cat out of the bag", "meaning": "reveal a secret"},
+          {"phrase": "hit the books", "meaning": "study hard"},
+          {"phrase": "under the weather", "meaning": "feeling sick"},
+          {"phrase": "costs an arm and a leg", "meaning": "very expensive"},
+          {"phrase": "bite off more than you can chew", "meaning": "take on too much"},
+          {"phrase": "once in a blue moon", "meaning": "very rarely"}
+        ]
+      }
+    },
+    {
+      "skill": "theme",
+      "code": "THEM",
+      "standard": "RL.4.2",
+      "count": 800,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "What is the theme of this passage?",
+        "What lesson does the main character learn?",
+        "How does the author develop the theme?"
+      ],
+      "theme_passages": [
+        {
+          "title": "The Science Fair",
+          "text": "Kayla worked on her science project for weeks. She tested her hypothesis over and over. The night before the fair, her display board fell and broke. Instead of giving up, Kayla stayed up late to fix it. She didn't win first place, but the judges praised her determination. Kayla learned that success isn't always about winning—it's about not giving up.",
+          "theme": "Perseverance is more important than winning",
+          "evidence": ["Instead of giving up", "stayed up late to fix it", "success isn't always about winning"]
+        },
+        {
+          "title": "The New Kid",
+          "text": "Nobody talked to Omar on his first day. He sat alone at lunch feeling invisible. Then he noticed another boy sitting alone too. Omar walked over and introduced himself. Soon they were laughing about their favorite video games. By the end of the week, their lunch table had five kids.",
+          "theme": "Taking initiative can lead to unexpected friendships",
+          "evidence": ["Omar walked over and introduced himself", "their lunch table had five kids"]
+        },
+        {
+          "title": "The Team Captain",
+          "text": "As team captain, Destiny always picked the best players first. Her team won most games, but the same kids always got picked last. One day, she picked them first instead. The team didn't win, but everyone played hard and had fun. Destiny realized being a leader means making sure everyone feels included.",
+          "theme": "True leadership is about inclusion, not just winning",
+          "evidence": ["she picked them first instead", "everyone played hard and had fun"]
+        }
+      ]
+    },
+    {
+      "skill": "summarizing",
+      "code": "COMP",
+      "standard": "RL.4.2",
+      "count": 800,
+      "visual_type": "comprehension_question",
+      "question_templates": [
+        "Summarize this passage in 2-3 sentences.",
+        "What are the most important events in this story?",
+        "Write a summary that includes the main idea and key details."
+      ],
+      "passages_to_summarize": [
+        {
+          "text": "The Amazon rainforest is one of the most important ecosystems on Earth. It produces about 20% of the world's oxygen and is home to millions of species of plants and animals. Many medicines come from plants found only in the Amazon. However, the rainforest is in danger due to deforestation. People cut down trees for farming and building. Scientists warn that we must protect the Amazon to keep our planet healthy.",
+          "key_points": ["Amazon produces 20% of oxygen", "home to millions of species", "source of medicines", "threatened by deforestation"],
+          "sample_summary": "The Amazon rainforest is vital to Earth because it produces oxygen, houses millions of species, and provides medicines. However, it is threatened by deforestation, and scientists say we must protect it."
+        },
+        {
+          "text": "Rosa Parks was an African American woman who helped change history. In 1955, she refused to give up her bus seat to a white passenger in Montgomery, Alabama. At that time, Black people were forced to sit in the back of buses. Rosa was arrested for her brave act. Her arrest led to the Montgomery Bus Boycott, where Black citizens refused to ride buses for over a year. This protest helped end segregation on public buses.",
+          "key_points": ["Rosa Parks refused to give up bus seat", "arrested in 1955", "led to Montgomery Bus Boycott", "helped end bus segregation"],
+          "sample_summary": "In 1955, Rosa Parks refused to give up her bus seat and was arrested. This led to the Montgomery Bus Boycott, which helped end segregation on public buses."
+        }
+      ]
+    },
+    {
+      "skill": "point of view",
+      "code": "POV",
+      "standard": "RL.4.6",
+      "count": 700,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "From whose point of view is this story told?",
+        "How would this story be different from {character}'s point of view?",
+        "Compare the points of view of {character1} and {character2}."
+      ],
+      "pov_examples": [
+        {
+          "title": "The Game",
+          "first_person": "I couldn't believe we lost. I had practiced so hard, and we still didn't win. My stomach hurt as I walked off the field.",
+          "third_person": "Maria couldn't believe they lost. She had practiced so hard, and they still didn't win. Her stomach hurt as she walked off the field.",
+          "different_pov": "From the coach's view: She watched Maria walk off the field with slumped shoulders. The coach knew how hard Maria had worked. Sometimes losing teaches us more than winning."
+        },
+        {
+          "title": "The Test",
+          "character1": "I studied all night and still failed the test. It's not fair.",
+          "character2": "I saw my friend fail the test even though he studied. I wanted to help him feel better.",
+          "comparison": "The first character feels frustrated about their own failure. The second character focuses on supporting their friend."
+        }
+      ]
+    },
+    {
+      "skill": "text structure",
+      "code": "COMP",
+      "standard": "RI.4.5",
+      "count": 700,
+      "visual_type": "comprehension_question",
+      "question_templates": [
+        "What text structure does the author use?",
+        "How does the {structure} structure help you understand the information?",
+        "Identify signal words that show the text structure."
+      ],
+      "structures": {
+        "cause_effect": {
+          "passage": "When temperatures rise, ice caps melt. As a result, sea levels increase. This causes flooding in coastal areas. Consequently, many animals lose their habitats.",
+          "signal_words": ["as a result", "causes", "consequently"],
+          "explanation": "The author shows how one event leads to another"
+        },
+        "problem_solution": {
+          "passage": "Many students struggle with math homework. One solution is to form study groups. Students can help each other understand difficult problems. Another solution is to watch tutorial videos online.",
+          "signal_words": ["struggle", "solution", "another solution"],
+          "explanation": "The author presents a problem and offers ways to solve it"
+        },
+        "compare_contrast": {
+          "passage": "Both dogs and cats make good pets. However, they have different needs. Dogs need daily walks, while cats are more independent. On the other hand, cats need less space than dogs.",
+          "signal_words": ["both", "however", "different", "while", "on the other hand"],
+          "explanation": "The author shows similarities and differences between two things"
+        },
+        "sequence": {
+          "passage": "First, gather all your ingredients. Next, mix the dry ingredients in a bowl. Then, add the wet ingredients. Finally, bake at 350 degrees for 30 minutes.",
+          "signal_words": ["first", "next", "then", "finally"],
+          "explanation": "The author presents steps in order"
+        }
+      }
+    },
+    {
+      "skill": "main idea and details",
+      "code": "MAIN",
+      "standard": "RI.4.2",
+      "count": 800,
+      "visual_type": "comprehension_question",
+      "question_templates": [
+        "What is the main idea of this passage?",
+        "Which details support the main idea?",
+        "How does the author develop the main idea?"
+      ],
+      "passages": [
+        {
+          "text": "Bees are essential to our food supply. They pollinate about 75% of the fruits and vegetables we eat. Without bees, we would lose apples, almonds, blueberries, and many other foods. Sadly, bee populations are declining due to pesticides, habitat loss, and disease. Farmers and scientists are working together to protect bees by planting wildflowers and reducing harmful chemicals.",
+          "main_idea": "Bees are essential to our food supply and need protection",
+          "supporting_details": ["pollinate 75% of fruits and vegetables", "populations declining due to pesticides and habitat loss", "farmers planting wildflowers to help"]
+        },
+        {
+          "text": "Getting enough sleep is crucial for students. Sleep helps the brain store what you learned during the day. Without enough sleep, it's harder to focus and remember things. Studies show that students who sleep 8-10 hours perform better on tests. To improve sleep, experts suggest avoiding screens before bed and keeping a regular sleep schedule.",
+          "main_idea": "Sleep is crucial for student success",
+          "supporting_details": ["helps brain store learning", "affects focus and memory", "8-10 hours improves test performance"]
+        }
+      ]
+    },
+    {
+      "skill": "fluency",
+      "code": "COMP",
+      "standard": "RF.4.4",
+      "count": 800,
+      "visual_type": "text_highlight",
+      "fluency_goal_wpm": 140,
+      "fluency_passages": [
+        {
+          "text": "The old lighthouse stood on the rocky cliff, its beam cutting through the foggy night. Captain Wells had sailed these waters for thirty years, and he knew every rock, every current. Tonight, though, something felt different. The wind whispered warnings, and the waves seemed to push his boat away from shore. He trusted the lighthouse to guide him home, just as it had countless times before.",
+          "word_count": 68
+        },
+        {
+          "text": "Scientists have discovered that octopuses are incredibly intelligent creatures. They can solve puzzles, open jars, and even recognize individual human faces. In one famous experiment, an octopus learned to turn off a light by squirting water at the bulb. These amazing animals have three hearts, blue blood, and can change color in less than a second to camouflage themselves.",
+          "word_count": 62
+        }
+      ]
+    }
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

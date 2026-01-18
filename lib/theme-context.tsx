@@ -1,6 +1,7 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { createClient } from '@/lib/supabase/client';
 
 export type ThemeId = 'default' | 'battle' | 'builder' | 'unicorn' | 'dinosaur' | 'monster' | 'hero' | 'space' | 'dreams' | 'mermaid' | 'princess' | 'rainbow' | 'victory' | 'cube' | 'web' | 'creatures' | 'glam' | 'fashion' | 'ice' | 'pony' | 'neon' | 'anime' | 'sneaker' | 'esports' | 'aesthetic' | 'kpop' | 'softgirl' | 'cottagecore' | 'minimal' | 'cyberpunk' | 'coder' | 'streetwear' | 'pirate' | 'shark' | 'robot' | 'butterfly' | 'kitten' | 'fairy' | 'ballerina' | 'ninja' | 'zombie' | 'racecar' | 'mech' | 'popstar' | 'cupcake' | 'friendship' | 'kawaii' | 'graffiti' | 'hiphop' | 'scifi' | 'darkninja' | 'y2k' | 'zodiac' | 'bookworm' | 'dance' | 'lofi' | 'finance' | 'gym' | 'nightowl' | 'cleangirl' | 'sage' | 'coffee' | 'study' | 'parisian' | 'wellness' | 'vintage' | 'moonlight' | 'safari' | 'farm' | 'candy' | 'construction' | 'firefighter' | 'ocean' | 'jungle' | 'arctic' | 'teddy' | 'puppy' | 'bug' | 'train' | 'beach' | 'camping' | 'volcano' | 'planet' | 'wwe' | 'slime' | 'bracelet' | 'artstudio' | 'spaday' | 'petgroomer' | 'moviestar';
 
@@ -4247,11 +4248,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
         if (childId) {
           try {
-            const { createClient } = await import('@supabase/supabase-js');
-            const supabase = createClient(
-              process.env.NEXT_PUBLIC_SUPABASE_URL!,
-              process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-            );
+            const supabase = createClient();
 
             const { data } = await supabase
               .from('children')
@@ -4290,11 +4287,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       const childId = localStorage.getItem('current_child_id');
       if (childId) {
         try {
-          const { createClient } = await import('@supabase/supabase-js');
-          const supabase = createClient(
-            process.env.NEXT_PUBLIC_SUPABASE_URL!,
-            process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-          );
+          const supabase = createClient();
 
           await supabase
             .from('children')

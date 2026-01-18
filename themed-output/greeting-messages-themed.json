@@ -1,0 +1,450 @@
+[
+  {
+    "time_of_day": "morning",
+    "age_group": "k2",
+    "greeting": "Drop in, little champs! Squad up for a super fun morning. Ready for the dub? Let’s go! 🎉⭐",
+    "energy_level": "upbeat",
+    "theme": "battle"
+  },
+  {
+    "time_of_day": "afternoon",
+    "age_group": "k2",
+    "greeting": "Drop in, little champs! Squad up for an awesome afternoon adventure! Ready for the dub? 🎉",
+    "energy_level": "upbeat",
+    "theme": "battle"
+  },
+  {
+    "time_of_day": "evening",
+    "age_group": "k2",
+    "greeting": "Good evening, champs! Drop in and squad up for a fun night. Ready for the dub? ⭐",
+    "energy_level": "calm",
+    "theme": "battle"
+  },
+  {
+    "time_of_day": "weekend",
+    "age_group": "k2",
+    "greeting": "Drop in, little champs! Squad up for a fun weekend morning. Ready for the dub! 🎉",
+    "energy_level": "chill",
+    "theme": "battle"
+  },
+  {
+    "time_of_day": "morning",
+    "age_group": "grades35",
+    "greeting": "Good morning, champs! Drop in and squad up for an awesome day!",
+    "energy_level": "upbeat",
+    "theme": "battle"
+  },
+  {
+    "time_of_day": "afternoon",
+    "age_group": "grades35",
+    "greeting": "Drop in, little champs! Squad up for an awesome afternoon adventure!",
+    "energy_level": "upbeat",
+    "theme": "battle"
+  },
+  {
+    "time_of_day": "evening",
+    "age_group": "grades35",
+    "greeting": "Drop in, little champs! Squad up for a calm evening adventure. Ready for the dub?",
+    "energy_level": "calm",
+    "theme": "battle"
+  },
+  {
+    "time_of_day": "weekend",
+    "age_group": "grades35",
+    "greeting": "Good morning, little champs! Drop in and squad up for a fun weekend adventure!",
+    "energy_level": "chill",
+    "theme": "battle"
+  },
+  {
+    "time_of_day": "morning",
+    "age_group": "grades68",
+    "greeting": "Morning, champs! Drop in and squad up for an awesome day at SchoolGenius!",
+    "energy_level": "upbeat",
+    "theme": "battle"
+  },
+  {
+    "time_of_day": "afternoon",
+    "age_group": "grades68",
+    "greeting": "Drop in, squad! Ready for the dub this afternoon? Let’s win big together!",
+    "energy_level": "upbeat",
+    "theme": "battle"
+  },
+  {
+    "time_of_day": "evening",
+    "age_group": "grades68",
+    "greeting": "Drop in, squad! Evening battle awaits. Ready for the dub? Let’s chill and win!",
+    "energy_level": "calm",
+    "theme": "battle"
+  },
+  {
+    "time_of_day": "weekend",
+    "age_group": "grades68",
+    "greeting": "Drop in, squad! Ready for the dub this chill weekend morning? Let’s win together!",
+    "energy_level": "chill",
+    "theme": "battle"
+  },
+  {
+    "time_of_day": "morning",
+    "age_group": "grades912",
+    "greeting": "Morning, champs! Drop in and squad up for an epic school day. Ready for the dub?",
+    "energy_level": "upbeat",
+    "theme": "battle"
+  },
+  {
+    "time_of_day": "afternoon",
+    "age_group": "grades912",
+    "greeting": "Drop in, squad! Afternoon’s here—let’s team up and grab that dub together!",
+    "energy_level": "upbeat",
+    "theme": "battle"
+  },
+  {
+    "time_of_day": "evening",
+    "age_group": "grades912",
+    "greeting": "Drop in, squad! Evening’s here, let’s chill and get ready for the dub!",
+    "energy_level": "calm",
+    "theme": "battle"
+  },
+  {
+    "time_of_day": "weekend",
+    "age_group": "grades912",
+    "greeting": "Hey, squad! Drop in this weekend morning and get ready for the dub!",
+    "energy_level": "chill",
+    "theme": "battle"
+  },
+  {
+    "time_of_day": "morning",
+    "age_group": "k2",
+    "greeting": "Good morning, Your Majesty! Welcome to a royal day of fun! 🎉⭐",
+    "energy_level": "upbeat",
+    "theme": "princess"
+  },
+  {
+    "time_of_day": "afternoon",
+    "age_group": "k2",
+    "greeting": "Royal greetings, your majesty! Welcome to an amazing afternoon of fun! 🎉⭐",
+    "energy_level": "upbeat",
+    "theme": "princess"
+  },
+  {
+    "time_of_day": "evening",
+    "age_group": "k2",
+    "greeting": "Royal greetings, your majesty! Wishing you a magical evening! 🌟",
+    "energy_level": "calm",
+    "theme": "princess"
+  },
+  {
+    "time_of_day": "weekend",
+    "age_group": "k2",
+    "greeting": "Good morning, Your Majesty! Royal greetings for a super fun weekend! 🎉⭐",
+    "energy_level": "chill",
+    "theme": "princess"
+  },
+  {
+    "time_of_day": "morning",
+    "age_group": "grades35",
+    "greeting": "Good morning, Your Majesty! Welcome to a magical day full of fun!",
+    "energy_level": "upbeat",
+    "theme": "princess"
+  },
+  {
+    "time_of_day": "afternoon",
+    "age_group": "grades35",
+    "greeting": "Royal greetings, little princess! Let’s have a magical afternoon together!",
+    "energy_level": "upbeat",
+    "theme": "princess"
+  },
+  {
+    "time_of_day": "evening",
+    "age_group": "grades35",
+    "greeting": "Royal greetings, little princess! Have a magical evening full of sweet dreams!",
+    "energy_level": "calm",
+    "theme": "princess"
+  },
+  {
+    "time_of_day": "weekend",
+    "age_group": "grades35",
+    "greeting": "Good morning, your majesty! Welcome to a royal weekend adventure!",
+    "energy_level": "chill",
+    "theme": "princess"
+  },
+  {
+    "time_of_day": "morning",
+    "age_group": "grades68",
+    "greeting": "Good morning, Your Majesty! Ready to rule the school day with awesomeness?",
+    "energy_level": "upbeat",
+    "theme": "princess"
+  },
+  {
+    "time_of_day": "afternoon",
+    "age_group": "grades68",
+    "greeting": "Royal greetings, Your Majesty! Ready to rule this afternoon with epic fun?",
+    "energy_level": "upbeat",
+    "theme": "princess"
+  },
+  {
+    "time_of_day": "evening",
+    "age_group": "grades68",
+    "greeting": "Royal greetings, your majesty! Have a super cool evening in your kingdom!",
+    "energy_level": "calm",
+    "theme": "princess"
+  },
+  {
+    "time_of_day": "weekend",
+    "age_group": "grades68",
+    "greeting": "Good morning, Your Majesty! Ready for a royal weekend adventure? Let’s rule the day!",
+    "energy_level": "chill",
+    "theme": "princess"
+  },
+  {
+    "time_of_day": "morning",
+    "age_group": "grades912",
+    "greeting": "Good morning, Your Majesty! Welcome to a royally awesome day at SchoolGenius!",
+    "energy_level": "upbeat",
+    "theme": "princess"
+  },
+  {
+    "time_of_day": "afternoon",
+    "age_group": "grades912",
+    "greeting": "Royal greetings, Your Majesty! Ready to rule this afternoon with awesome learning adventures?",
+    "energy_level": "upbeat",
+    "theme": "princess"
+  },
+  {
+    "time_of_day": "evening",
+    "age_group": "grades912",
+    "greeting": "Royal greetings, your majesty! Wishing you a peaceful evening in your kingdom!",
+    "energy_level": "calm",
+    "theme": "princess"
+  },
+  {
+    "time_of_day": "weekend",
+    "age_group": "grades912",
+    "greeting": "Good morning, Your Majesty! Royal greetings for a chill weekend ahead!",
+    "energy_level": "chill",
+    "theme": "princess"
+  },
+  {
+    "time_of_day": "morning",
+    "age_group": "k2",
+    "greeting": "Roar good morning, little dinos! Let’s stomp into a super fun day! 🎉⭐",
+    "energy_level": "upbeat",
+    "theme": "dinosaur"
+  },
+  {
+    "time_of_day": "afternoon",
+    "age_group": "k2",
+    "greeting": "Roar good afternoon, little dinos! Let’s stomp into learning with a big, happy roar! 🎉",
+    "energy_level": "upbeat",
+    "theme": "dinosaur"
+  },
+  {
+    "time_of_day": "evening",
+    "age_group": "k2",
+    "greeting": "Roar good evening, little dinos! Let’s wind down with a dino-tastic night! ⭐",
+    "energy_level": "calm",
+    "theme": "dinosaur"
+  },
+  {
+    "time_of_day": "weekend",
+    "age_group": "k2",
+    "greeting": "Roar good morning, little dinos! Have a super chill weekend adventure! 🎉",
+    "energy_level": "chill",
+    "theme": "dinosaur"
+  },
+  {
+    "time_of_day": "morning",
+    "age_group": "grades35",
+    "greeting": "Roar good morning, little dinos! Let’s stomp into a super fun day!",
+    "energy_level": "upbeat",
+    "theme": "dinosaur"
+  },
+  {
+    "time_of_day": "afternoon",
+    "age_group": "grades35",
+    "greeting": "Roar good afternoon, little dinos! Ready for a roaring fun time?",
+    "energy_level": "upbeat",
+    "theme": "dinosaur"
+  },
+  {
+    "time_of_day": "evening",
+    "age_group": "grades35",
+    "greeting": "Roar good evening, little dinos! Time to rest with a big, cozy smile!",
+    "energy_level": "calm",
+    "theme": "dinosaur"
+  },
+  {
+    "time_of_day": "weekend",
+    "age_group": "grades35",
+    "greeting": "Roar good morning, little dinos! Have a chill, fun weekend!",
+    "energy_level": "chill",
+    "theme": "dinosaur"
+  },
+  {
+    "time_of_day": "morning",
+    "age_group": "grades68",
+    "greeting": "Roar good morning, dino pals! Let’s stomp into an awesome day!",
+    "energy_level": "upbeat",
+    "theme": "dinosaur"
+  },
+  {
+    "time_of_day": "afternoon",
+    "age_group": "grades68",
+    "greeting": "Roar good afternoon, dino pals! Ready for an epic adventure today?",
+    "energy_level": "upbeat",
+    "theme": "dinosaur"
+  },
+  {
+    "time_of_day": "evening",
+    "age_group": "grades68",
+    "greeting": "Roar good evening, dino pals! Let’s chill like cool T-Rexes tonight!",
+    "energy_level": "calm",
+    "theme": "dinosaur"
+  },
+  {
+    "time_of_day": "weekend",
+    "age_group": "grades68",
+    "greeting": "Roar good morning, dino pals! Let’s have a chill, awesome weekend!",
+    "energy_level": "chill",
+    "theme": "dinosaur"
+  },
+  {
+    "time_of_day": "morning",
+    "age_group": "grades912",
+    "greeting": "Roar good morning, Dino pals! Let’s stomp into a great day at SchoolGenius!",
+    "energy_level": "upbeat",
+    "theme": "dinosaur"
+  },
+  {
+    "time_of_day": "afternoon",
+    "age_group": "grades912",
+    "greeting": "Dino greetings! Roar into this awesome afternoon with SchoolGenius!",
+    "energy_level": "upbeat",
+    "theme": "dinosaur"
+  },
+  {
+    "time_of_day": "evening",
+    "age_group": "grades912",
+    "greeting": "Dino greetings! Have a roaring good evening, future fossil finders!",
+    "energy_level": "calm",
+    "theme": "dinosaur"
+  },
+  {
+    "time_of_day": "weekend",
+    "age_group": "grades912",
+    "greeting": "Roar good morning, dino pals! Have a chill weekend full of prehistoric fun!",
+    "energy_level": "chill",
+    "theme": "dinosaur"
+  },
+  {
+    "time_of_day": "morning",
+    "age_group": "k2",
+    "greeting": "Mission start! Good morning, Astronauts! Ready to blast off into a super fun day? Let’s go! 🎉⭐",
+    "energy_level": "upbeat",
+    "theme": "space"
+  },
+  {
+    "time_of_day": "afternoon",
+    "age_group": "k2",
+    "greeting": "Mission start! Afternoon, Astronauts! Ready for a stellar adventure? Let’s blast off! 🎉⭐",
+    "energy_level": "upbeat",
+    "theme": "space"
+  },
+  {
+    "time_of_day": "evening",
+    "age_group": "k2",
+    "greeting": "Mission start! Evening astronaut, ready for a calm starry adventure? Let’s explore together! 🎉⭐",
+    "energy_level": "calm",
+    "theme": "space"
+  },
+  {
+    "time_of_day": "weekend",
+    "age_group": "k2",
+    "greeting": "Mission start! Astronaut ready for a chill weekend morning adventure. Welcome aboard, space explorer! 🎉⭐",
+    "energy_level": "chill",
+    "theme": "space"
+  },
+  {
+    "time_of_day": "morning",
+    "age_group": "grades35",
+    "greeting": "Mission start, little astronauts! Ready for a stellar morning adventure?",
+    "energy_level": "upbeat",
+    "theme": "space"
+  },
+  {
+    "time_of_day": "afternoon",
+    "age_group": "grades35",
+    "greeting": "Mission start! Afternoon, little astronauts! Ready to explore space with SchoolGenius? Let’s go!",
+    "energy_level": "upbeat",
+    "theme": "space"
+  },
+  {
+    "time_of_day": "evening",
+    "age_group": "grades35",
+    "greeting": "Mission start! Evening, little astronaut! Ready for a calm space adventure with me?",
+    "energy_level": "calm",
+    "theme": "space"
+  },
+  {
+    "time_of_day": "weekend",
+    "age_group": "grades35",
+    "greeting": "Mission start! Good morning, little astronaut! Ready for a chill space adventure today?",
+    "energy_level": "chill",
+    "theme": "space"
+  },
+  {
+    "time_of_day": "morning",
+    "age_group": "grades68",
+    "greeting": "Mission start! Good morning, Astronaut! Ready to blast off into an awesome day?",
+    "energy_level": "upbeat",
+    "theme": "space"
+  },
+  {
+    "time_of_day": "afternoon",
+    "age_group": "grades68",
+    "greeting": "Mission start! Afternoon, astronaut! Ready for a cool space adventure with SchoolGenius?",
+    "energy_level": "upbeat",
+    "theme": "space"
+  },
+  {
+    "time_of_day": "evening",
+    "age_group": "grades68",
+    "greeting": "Mission start! Evening astronaut, ready for a cool adventure with SchoolGenius?",
+    "energy_level": "calm",
+    "theme": "space"
+  },
+  {
+    "time_of_day": "weekend",
+    "age_group": "grades68",
+    "greeting": "Mission start! Hey, astronaut, ready for a chill weekend morning adventure with SchoolGenius?",
+    "energy_level": "chill",
+    "theme": "space"
+  },
+  {
+    "time_of_day": "morning",
+    "age_group": "grades912",
+    "greeting": "Mission start! Morning, astronauts! Ready to explore learning today?",
+    "energy_level": "upbeat",
+    "theme": "space"
+  },
+  {
+    "time_of_day": "afternoon",
+    "age_group": "grades912",
+    "greeting": "Mission start! Afternoon, astronaut! Ready for a stellar learning adventure with SchoolGenius?",
+    "energy_level": "upbeat",
+    "theme": "space"
+  },
+  {
+    "time_of_day": "evening",
+    "age_group": "grades912",
+    "greeting": "Mission start! Evening, astronaut! Ready for a calm space adventure with SchoolGenius?",
+    "energy_level": "calm",
+    "theme": "space"
+  },
+  {
+    "time_of_day": "weekend",
+    "age_group": "grades912",
+    "greeting": "Mission start, astronauts! Ready for a stellar weekend morning? Let’s explore together!",
+    "energy_level": "chill",
+    "theme": "space"
+  }
+]

@@ -1,0 +1,352 @@
+[
+  {
+    "subject": "Reading",
+    "concept": "metaphor",
+    "age_group": "grades68",
+    "analogy": "A metaphor is like a Snapchat filter. It changes how you see something by comparing it to another, making a boring idea pop with new meaning!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Reading",
+    "concept": "metaphor",
+    "age_group": "grades68",
+    "analogy": "A metaphor is like a Snapchat filter. It changes how you see something, making one thing represent another, like calling a friend 'sunshine' to show their brightness!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Reading",
+    "concept": "metaphor",
+    "age_group": "grades912",
+    "analogy": "A metaphor is like a coder’s shortcut: it replaces literal meaning with a vivid comparison, making ideas pop without extra explanation, like calling time a thief.",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Reading",
+    "concept": "metaphor",
+    "age_group": "grades912",
+    "analogy": "A metaphor is like a coder’s shortcut: it equates one thing to another, revealing hidden connections, like saying 'time is a thief' to show it steals moments.",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Reading",
+    "concept": "symbolism",
+    "age_group": "k2",
+    "analogy": "Symbolism is like a teddy bear meaning love. When you see the bear, you think of hugs and care, even without words!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Reading",
+    "concept": "symbolism",
+    "age_group": "k2",
+    "analogy": "Symbolism is like a teddy bear meaning love. When you see the bear, you think of hugs and care, not just a toy!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Reading",
+    "concept": "symbolism",
+    "age_group": "grades35",
+    "analogy": "Symbolism is like a soccer jersey. The jersey represents your team’s spirit and pride, just like a symbol in a story stands for a bigger idea or feeling.",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Reading",
+    "concept": "symbolism",
+    "age_group": "grades35",
+    "analogy": "Symbolism is like a secret code in a treasure hunt. Objects or colors in stories mean something deeper, just like clues lead to treasure!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Reading",
+    "concept": "symbolism",
+    "age_group": "grades68",
+    "analogy": "Symbolism is like an emoji in a text. A heart emoji isn’t just a picture; it represents love or care, adding deeper meaning to your message.",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Reading",
+    "concept": "symbolism",
+    "age_group": "grades68",
+    "analogy": "Symbolism is like an emoji in a text. A heart emoji isn’t just a heart—it shows love or care, adding deeper meaning to your message!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Reading",
+    "concept": "symbolism",
+    "age_group": "grades912",
+    "analogy": "Symbolism is like a logo in branding: a simple image, like Nike’s swoosh, represents deeper ideas—speed, victory, and aspiration—beyond its surface meaning.",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Reading",
+    "concept": "symbolism",
+    "age_group": "grades912",
+    "analogy": "Symbolism is like a logo in branding—think Nike’s swoosh. It represents deeper ideas, like victory or ambition, beyond just a design.",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Coding",
+    "concept": "variables",
+    "age_group": "k2",
+    "analogy": "Variables are like toy boxes. Each box holds a toy, and you can change the toy inside anytime, just like changing a value in coding!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Coding",
+    "concept": "variables",
+    "age_group": "k2",
+    "analogy": "Variables are like toy boxes. You can put different toys inside, like cars or dolls, and change them anytime!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Coding",
+    "concept": "variables",
+    "age_group": "grades35",
+    "analogy": "Variables are like labeled lockers at school. Each locker holds different stuff, like books or snacks, and you can change what's inside anytime!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Coding",
+    "concept": "variables",
+    "age_group": "grades35",
+    "analogy": "Variables are like labeled lockers at school. You store stuff, like numbers or words, inside and can change what's in them anytime!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Coding",
+    "concept": "variables",
+    "age_group": "grades68",
+    "analogy": "Variables are like labeled folders on your phone. You store stuff like photos or scores inside, and the label helps you find or change it later!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Coding",
+    "concept": "variables",
+    "age_group": "grades68",
+    "analogy": "Variables are like labeled lockers at school. You store different stuff inside, like books or snacks, and swap them out anytime!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Coding",
+    "concept": "variables",
+    "age_group": "grades912",
+    "analogy": "Variables are like storage lockers at school. Each locker holds different stuff—books, gym clothes—and you label them to know what’s inside, just like variables store and label data in code.",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Coding",
+    "concept": "variables",
+    "age_group": "grades912",
+    "analogy": "Variables are like lockers at school. Each locker holds different stuff—books, gym clothes—and you label them to know what’s inside, just like storing data in coding.",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Coding",
+    "concept": "loops",
+    "age_group": "k2",
+    "analogy": "Loops are like singing 'Happy Birthday' over and over until everyone gets cake. You repeat the same song until you're done!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Coding",
+    "concept": "loops",
+    "age_group": "k2",
+    "analogy": "Loops are like spinning a hula hoop! You keep doing the same spin over and over until you stop.",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Coding",
+    "concept": "loops",
+    "age_group": "grades35",
+    "analogy": "Loops in coding are like doing laps in gym class. You keep running the same path until the teacher says stop!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Coding",
+    "concept": "loops",
+    "age_group": "grades35",
+    "analogy": "Loops in coding are like doing laps in gym class. You keep running the same path until the teacher says stop!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Coding",
+    "concept": "loops",
+    "age_group": "grades68",
+    "analogy": "Loops are like repeating a TikTok dance challenge until you get it perfect. You keep doing the same steps over and over!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Coding",
+    "concept": "loops",
+    "age_group": "grades68",
+    "analogy": "Loops in coding are like repeating a TikTok dance challenge until you get it perfect—same steps over and over!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Coding",
+    "concept": "loops",
+    "age_group": "grades912",
+    "analogy": "Loops in coding are like a DJ repeating a beat in a song—replaying a section of code until a condition changes.",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Coding",
+    "concept": "loops",
+    "age_group": "grades912",
+    "analogy": "Loops in coding are like a DJ repeating a beat in a song. The same instructions play over and over until a condition stops it.",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Coding",
+    "concept": "functions",
+    "age_group": "k2",
+    "analogy": "A function is like a toy box! You put in a toy (input), and it always gives you a fun game (output) the same way every time!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "functions",
+    "age_group": "k2",
+    "analogy": "A function is like a toy box. You put in a toy (input), and it does a fun trick (action) every time!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "functions",
+    "age_group": "grades35",
+    "analogy": "Functions are like soccer plays. Each play has a specific job, like passing or scoring, and you call it when needed to help the team win!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "functions",
+    "age_group": "grades35",
+    "analogy": "Functions in coding are like soccer plays. Each play has a specific job, like passing or scoring, and you call it when needed to help win the game!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "functions",
+    "age_group": "grades68",
+    "analogy": "Functions in coding are like saved shortcuts on your gaming console—pre-set moves you can reuse anytime to win!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "functions",
+    "age_group": "grades68",
+    "analogy": "Functions in coding are like saved moves in a video game. You create a move once, name it, and reuse it anytime to save effort!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "functions",
+    "age_group": "grades912",
+    "analogy": "Functions are like a chef’s recipe in a restaurant: a reusable set of instructions to produce a specific dish, saving time and ensuring consistency every order.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "functions",
+    "age_group": "grades912",
+    "analogy": "Functions in coding are like a chef’s recipe: a set of instructions that, when called, produces a specific dish every time, reusable across different meals.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "conditionals",
+    "age_group": "k2",
+    "analogy": "Conditionals are like choosing a toy. If it's sunny, pick a ball to play outside. If it's rainy, pick a puzzle for inside!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "conditionals",
+    "age_group": "k2",
+    "analogy": "Conditionals are like choosing a toy. If it’s rainy, pick a puzzle. If it’s sunny, grab a ball! The weather decides what you play with.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "conditionals",
+    "age_group": "grades35",
+    "analogy": "Conditionals are like soccer rules: IF you score a goal, THEN you get a point. Coding uses IF-THEN to make decisions!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "conditionals",
+    "age_group": "grades35",
+    "analogy": "Conditionals are like soccer rules: IF you score a goal, THEN your team gets a point. Coding uses IF-THEN rules to decide what happens next!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "conditionals",
+    "age_group": "grades68",
+    "analogy": "Conditionals are like choosing a game mode in a video game. If you pick 'easy,' you get fewer challenges; if 'hard,' more obstacles appear!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "conditionals",
+    "age_group": "grades68",
+    "analogy": "Conditionals are like choosing a game mode in a video game. If you pick 'easy,' you get simpler challenges; if 'hard,' it’s tougher!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "conditionals",
+    "age_group": "grades912",
+    "analogy": "Conditionals are like a traffic light system: if green, go; if red, stop; if yellow, slow down. Code decides actions based on conditions!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "conditionals",
+    "age_group": "grades912",
+    "analogy": "Conditionals are like a traffic light system: if green, go; if red, stop; if yellow, slow down. They guide a program's decisions based on conditions.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "arrays",
+    "age_group": "k2",
+    "analogy": "An array is like a toy box with many slots. Each slot holds a toy, and you can find them easily by their spot!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "arrays",
+    "age_group": "k2",
+    "analogy": "An array is like a box of crayons. Each crayon has its own spot, and you can pick any color you need!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "arrays",
+    "age_group": "grades35",
+    "analogy": "An array is like a row of lockers at school. Each locker holds something different, and you can find items by their locker number!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "arrays",
+    "age_group": "grades35",
+    "analogy": "An array is like a row of lockers at school. Each locker holds one item, and they’re numbered to find stuff fast!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "arrays",
+    "age_group": "grades68",
+    "analogy": "Arrays are like a playlist on your music app. Songs are stored in order, and you can pick any song by its number!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "arrays",
+    "age_group": "grades68",
+    "analogy": "Think of arrays like a playlist on Spotify. Each song is stored in order, and you can pick any song by its position number!",
+    "difficulty": "intermediate"
+  }
+]

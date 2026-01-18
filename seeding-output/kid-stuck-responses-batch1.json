@@ -1,0 +1,352 @@
+[
+  {
+    "question_type": "dont_get_it",
+    "subject": "Math",
+    "age_group": "k2",
+    "response": "Hey, it’s okay! Math can be tricky, but you’re a superstar! 🌟 Let’s try counting with fun toys together! 🎉 What do you think?",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Math",
+    "age_group": "grades35",
+    "response": "That's okay! Math can be tricky at first. Let's try breaking it down together. Can you tell me what part feels hard? I'm here to help you figure it out step by step! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Math",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay! Math can be tricky. Let’s break it down together. What part feels confusing? I’m here to help you figure it out step by step!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Math",
+    "age_group": "grades912",
+    "response": "I’m here to help! Math can be tricky, but we’ll break it down together. What part is confusing? Let’s tackle it step by step.",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Reading",
+    "age_group": "k2",
+    "response": "Hey, it's okay! Reading can be tricky, but you're a superstar! 🌟 Let's sound out words together slowly. You'll get it! Yay! 🎉",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "response": "That's okay! Reading can be tricky. Let's try breaking it down together. Look at the words—can you sound them out slowly? I'm here to help every step! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay to feel stuck! Reading can be tricky. Let’s break it down together—maybe focus on the main idea of the text. You’ve got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "response": "I’m glad you spoke up! Let’s break this down together. What part feels confusing? I’m here to help you work through it step by step.",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "response": "Don't worry, we'll figure it out together! Let's sound out the word step by step. You're doing awesome! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "response": "That's okay! Spelling can be tricky. Let's break it down together. Sound out the word slowly—can you hear each part? I'm here to help!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay! Spelling can be tricky. Try breaking words into smaller parts or sounding them out. You’ve got this—keep practicing, and I’m here to help!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "response": "I’m here to help! Spelling can be tricky. Focus on breaking words into smaller parts or finding patterns. Let’s work on a specific word together—what’s giving you trouble?",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Coding",
+    "age_group": "k2",
+    "response": "Hey, it’s okay! Coding is like a fun puzzle! Let’s try it step by step together. You’ve got this! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "response": "Hey, it’s okay! Coding can be tricky at first. Let’s break it down together. Think about what part confuses you—let me know, and we’ll figure it out step by step! You’ve got this! 💡",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay! Coding can be tricky at first. Take a deep breath and try breaking the problem into smaller steps. I’m here to help if you’re stuck!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "response": "I’m glad you spoke up! Coding can be tricky at first. Let’s break it down together—can you tell me which part feels confusing? I’m here to help!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Typing",
+    "age_group": "k2",
+    "response": "Hey, it’s okay! Typing is fun, let’s try together! Put your fingers on the home keys and tap gently. You’ve got this! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "response": "Hey, it's okay! Typing takes practice. Focus on one key at a time and keep your fingers on the home row. You'll get it soon—keep trying! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay! Typing takes practice. Focus on placing your fingers on the home row keys first. Keep at it, and you’ll get faster. I’m here to help!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "response": "I’m glad you spoke up! Typing can be tricky at first. Focus on hand placement and practice a little each day. You’ve got this—progress comes with time!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Math",
+    "age_group": "k2",
+    "response": "Hey, it’s okay! Math can be tricky, but we’ll figure it out together! Let’s try counting with fun stuff like toys! You’ve got this! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Math",
+    "age_group": "grades35",
+    "response": "That's okay! Math can be tricky, but I'm here to help. Let's try breaking it down together. Can you tell me what part feels hard? We'll figure it out step by step! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Math",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay to feel stuck! Math can be tricky. Let’s break it down together—can you tell me what part confuses you? I’m here to help!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Math",
+    "age_group": "grades912",
+    "response": "I’m here to help! Let’s break it down together. Can you tell me which part feels tricky? We’ll tackle it step by step.",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Reading",
+    "age_group": "k2",
+    "response": "Hey, it’s okay! Reading can be tricky, but you’re a superstar! 🌟 Let’s sound out words together slowly. You’ve got this! 🎉",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "response": "That's okay! Reading can be tricky. Let's slow down and look at the words together. Can you point to a part that feels hard? I'm here to help you figure it out! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay! Reading can be tricky sometimes. Let’s break it down together. What part feels confusing? I’m here to help you figure it out step by step!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "response": "I’m glad you spoke up! Let’s break this down together. What part feels confusing? I’m here to help clarify with examples or a different approach.",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "response": "Hey, it's okay! Spelling can be fun! Let's sound out the word together slowly. You’ve got this, superstar! 🌟🎉",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "response": "That's okay! Spelling can be tricky. Let's break it down together. Sound out the word slowly—what letters do you hear? I'm here to help!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay! Spelling can be tricky. Let’s break it down together. Focus on the sounds in the word—say it slowly. You’ve got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "response": "I’m here to help! Spelling can be tricky. Let’s break it down together—focus on patterns or sounds. Which word is stumping you? We’ll figure it out step by step!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Coding",
+    "age_group": "k2",
+    "response": "Hey, it’s okay! Coding is like a fun puzzle! Let’s try again together—think of it as giving commands to a robot! You’ve got this! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "response": "That's okay! Coding can be tricky at first. Let's break it down together. Think about what part feels hard—I'm here to help you figure it out step by step! You've got this! 💡",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay! Coding can be tricky at first. Take a deep breath and try breaking it down into smaller steps. I’m here to help if you’re stuck!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "response": "I’m here to help! Coding can be tricky at first. Let’s break it down together—can you tell me which part is confusing? We’ll tackle it step by step!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Typing",
+    "age_group": "k2",
+    "response": "Hey, it’s okay! Typing is fun, let’s try together! Put your fingers on the keys and press gently. You’ve got this, superstar! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "response": "That's okay! Typing takes practice. Start with finding the home keys for your fingers. Keep trying, and you'll get faster! I'm here to help! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay! Typing takes practice. Focus on placing your fingers on the home row keys and go slow at first. You’ve got this—keep trying!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "response": "I’m glad you spoke up! Typing can be tricky at first. Focus on hand placement and practice a little each day. You’ve got this—let’s keep working together!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Math",
+    "age_group": "k2",
+    "response": "Hey, it's okay! Math can be tricky, but you're a superstar! 🌟 Let's try again together—count with me! 🎉 You're doing great!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Math",
+    "age_group": "grades35",
+    "response": "That's okay! Math can be tricky at first. Let's try breaking it down together. Can you tell me what part feels confusing? I'm here to help you figure it out! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Math",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay! Math can be tricky. Let’s break it down together. What part feels confusing? I’m here to help you figure it out step by step!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Math",
+    "age_group": "grades912",
+    "response": "That's okay! Math can be tricky. Let's break it down together. Can you tell me which part is confusing? I'm here to help you through it step by step.",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Reading",
+    "age_group": "k2",
+    "response": "Hey, it’s okay! Reading can be tricky, but you’re a star! 🌟 Let’s look at the pictures for clues. What do you see? I’m here to help! 🎉",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "response": "That’s okay! Reading can be tricky sometimes. Let’s slow down and look at the words together. Can you find a word or picture that stands out? I’m here to help! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay to feel stuck! Reading can be tricky. Let’s break it down together—maybe focus on the main idea of the story. What part’s confusing you?",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "response": "I’m glad you spoke up! Let’s break this down together. What part feels tricky? I’m here to help you work through it step by step.",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "response": "Hey, it’s okay! Spelling can be tricky, but you’re a superstar! 🌟 Let’s sound out the word together slowly. You’ve got this! 🎉",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "dont_get_it",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "response": "That's okay! Spelling can be tricky. Let's break it down together. Sound out the word slowly with me—can you hear each part? We'll get it!",
+    "response_tone": "encouraging"
+  }
+]

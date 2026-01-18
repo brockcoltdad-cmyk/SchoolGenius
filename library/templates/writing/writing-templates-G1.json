@@ -1,0 +1,131 @@
+{
+  "grade": 1,
+  "grade_name": "First Grade",
+  "total_target": 1500,
+  "standards": ["W.1.1", "W.1.2", "W.1.3", "L.1.1", "L.1.1.J", "L.1.2", "L.1.2.B"],
+  "skills": [
+    {
+      "skill": "complete sentences",
+      "code": "SENT",
+      "standard": "L.1.1.J",
+      "count": 200,
+      "visual_type": "sentence_builder",
+      "exercises": [
+        {"fragment": "The big dog", "complete": "The big dog runs fast.", "missing": "predicate"},
+        {"fragment": "Runs to school", "complete": "The boy runs to school.", "missing": "subject"},
+        {"fragment": "My little sister", "complete": "My little sister plays outside.", "missing": "predicate"},
+        {"fragment": "Eats an apple", "complete": "She eats an apple.", "missing": "subject"},
+        {"fragment": "The red ball", "complete": "The red ball bounces high.", "missing": "predicate"}
+      ]
+    },
+    {
+      "skill": "end punctuation - all types",
+      "code": "PUNC",
+      "standard": "L.1.2.B",
+      "count": 200,
+      "visual_type": "grammar_highlight",
+      "sentences": [
+        {"sentence": "I see a bird", "type": "statement", "punctuation": "."},
+        {"sentence": "Do you like ice cream", "type": "question", "punctuation": "?"},
+        {"sentence": "Wow, that is amazing", "type": "exclamation", "punctuation": "!"},
+        {"sentence": "The cat is sleeping", "type": "statement", "punctuation": "."},
+        {"sentence": "Where is my book", "type": "question", "punctuation": "?"},
+        {"sentence": "Help me", "type": "exclamation", "punctuation": "!"},
+        {"sentence": "She plays soccer", "type": "statement", "punctuation": "."},
+        {"sentence": "Can I go outside", "type": "question", "punctuation": "?"},
+        {"sentence": "That was so fun", "type": "exclamation", "punctuation": "!"},
+        {"sentence": "We went to the park", "type": "statement", "punctuation": "."}
+      ]
+    },
+    {
+      "skill": "common nouns",
+      "code": "NOUN",
+      "standard": "L.1.1",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "categories": [
+        {"category": "animals", "nouns": ["dog", "cat", "bird", "fish", "horse", "cow", "pig", "duck", "frog", "rabbit"]},
+        {"category": "places", "nouns": ["school", "park", "home", "store", "library", "zoo", "beach", "farm", "city", "forest"]},
+        {"category": "things", "nouns": ["book", "ball", "toy", "car", "bed", "chair", "table", "cup", "pencil", "phone"]}
+      ]
+    },
+    {
+      "skill": "proper nouns",
+      "code": "NOUN",
+      "standard": "L.1.1",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "categories": [
+        {"category": "names", "nouns": ["Sam", "Emma", "Jack", "Lily", "Max", "Mia", "Ben", "Ava", "Leo", "Zoe"]},
+        {"category": "days", "nouns": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]},
+        {"category": "months", "nouns": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]}
+      ]
+    },
+    {
+      "skill": "action verbs",
+      "code": "VERB",
+      "standard": "L.1.1",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "verbs": ["run", "jump", "walk", "talk", "eat", "drink", "sleep", "play", "read", "write", "draw", "sing", "dance", "swim", "climb", "throw", "catch", "kick", "push", "pull"]
+    },
+    {
+      "skill": "adjectives",
+      "code": "ADJ",
+      "standard": "L.1.1",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "adjective_sets": [
+        {"noun": "dog", "adjectives": ["big", "small", "happy", "brown", "fluffy"]},
+        {"noun": "apple", "adjectives": ["red", "green", "sweet", "round", "crunchy"]},
+        {"noun": "house", "adjectives": ["tall", "old", "new", "white", "pretty"]}
+      ]
+    },
+    {
+      "skill": "opinion with reasons",
+      "code": "OPIN",
+      "standard": "W.1.1",
+      "count": 150,
+      "visual_type": "paragraph_structure",
+      "prompts": [
+        {"topic": "Best pet", "opinion": "Dogs are the best pets.", "reasons": ["They play with you.", "They are loyal."]},
+        {"topic": "Favorite season", "opinion": "Summer is the best season.", "reasons": ["We can swim.", "There is no school."]},
+        {"topic": "Best game", "opinion": "Tag is the best game.", "reasons": ["You run around.", "Everyone can play."]}
+      ]
+    },
+    {
+      "skill": "informative writing",
+      "code": "INFO",
+      "standard": "W.1.2",
+      "count": 150,
+      "visual_type": "paragraph_structure",
+      "topics": [
+        {"topic": "Cats", "facts": ["Cats have fur.", "Cats say meow.", "Cats like to sleep."]},
+        {"topic": "The Sun", "facts": ["The sun is a star.", "The sun gives us light.", "The sun is very hot."]},
+        {"topic": "Apples", "facts": ["Apples grow on trees.", "Apples can be red or green.", "Apples are healthy to eat."]}
+      ]
+    },
+    {
+      "skill": "narrative sequence",
+      "code": "NARR",
+      "standard": "W.1.3",
+      "count": 200,
+      "visual_type": "paragraph_structure",
+      "sequences": [
+        {"event": "Going to school", "steps": ["First, I wake up.", "Next, I eat breakfast.", "Then, I go to school."]},
+        {"event": "Making a sandwich", "steps": ["First, get the bread.", "Next, add peanut butter.", "Then, put the bread together."]},
+        {"event": "Playing at the park", "steps": ["First, we walked to the park.", "Next, I played on the swings.", "Then, we went home."]}
+      ]
+    }
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

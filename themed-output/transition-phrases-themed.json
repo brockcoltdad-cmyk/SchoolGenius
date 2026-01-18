@@ -1,0 +1,2162 @@
+[
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Math",
+    "age_group": "k2",
+    "phrase": "Time to drop in! Let’s see Math magic happen!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Reading",
+    "age_group": "k2",
+    "phrase": "Time to drop in! Let’s see Reading in action!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "phrase": "Time to drop in! Let’s see some awesome spelling moves!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Coding",
+    "age_group": "k2",
+    "phrase": "Time to drop in! Let’s see coding in action!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Typing",
+    "age_group": "k2",
+    "phrase": "Time to drop in! Let’s see typing in action!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Math",
+    "age_group": "k2",
+    "phrase": "Time to drop in! Let’s solve these math challenges together!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Reading",
+    "age_group": "k2",
+    "phrase": "Time to drop in, readers! Let’s push and read together!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "phrase": "Time to drop in and spell some words, team!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Coding",
+    "age_group": "k2",
+    "phrase": "Time to drop in, coders! Let’s build awesome projects!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Typing",
+    "age_group": "k2",
+    "phrase": "Time to drop in! Show off your typing skills now!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Math",
+    "age_group": "k2",
+    "phrase": "Time to drop in! Let’s crush this Math quiz together!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Reading",
+    "age_group": "k2",
+    "phrase": "Time to drop in! Show your reading skills in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "phrase": "Time to drop in! Show off your spelling skills!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Coding",
+    "age_group": "k2",
+    "phrase": "Time to drop in! Show off your coding skills in the quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Typing",
+    "age_group": "k2",
+    "phrase": "Time to drop in! Show off your typing skills in the quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Math",
+    "age_group": "grades35",
+    "phrase": "Time to drop in! Let’s see Math magic happen!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "phrase": "Time to drop in! Let’s see Reading action now!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "phrase": "Time to drop in! Let’s watch spelling magic happen!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "phrase": "Time to drop in! Let’s see coding in action!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "phrase": "Time to drop in! Let’s see typing in action!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Math",
+    "age_group": "grades35",
+    "phrase": "Time to drop in, team! Let’s push and solve these math challenges together!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "phrase": "Time to drop in! Let’s read and win together!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "phrase": "Time to drop in, team! Let’s spell and win!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "phrase": "Time to drop in, coders! Let’s push and build awesome stuff!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "phrase": "Time to drop in! Let’s type and win together!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Math",
+    "age_group": "grades35",
+    "phrase": "Time to drop in! Show your math skills in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "phrase": "Time to drop in! Let’s read and win this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "phrase": "Time to drop in! Show off your spelling skills!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "phrase": "Time to drop in! Show your coding skills in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "phrase": "Time to drop in! Show off your typing skills in the quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Math",
+    "age_group": "grades68",
+    "phrase": "Time to drop in! Let’s see Math in action!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "phrase": "Time to drop in! Let’s see Reading in action!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "phrase": "Time to drop in! Let’s see some awesome spelling action!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "phrase": "Time to drop in! Let’s see coding in action!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "phrase": "Time to drop in! Watch typing skills in action now!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Math",
+    "age_group": "grades68",
+    "phrase": "Time to drop in! Let’s solve these math challenges together!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "phrase": "Time to drop in! Let’s read and win this battle!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "phrase": "Time to drop in! Show off your spelling skills now!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "phrase": "Time to drop in! Let’s code and win this battle!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "phrase": "Time to drop in! Show off your typing skills now!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Math",
+    "age_group": "grades68",
+    "phrase": "Time to drop in! Show your Math skills in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "phrase": "Time to drop in! Show off your reading skills in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "phrase": "Time to drop in! Show off your spelling skills in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "phrase": "Time to drop in! Show off your coding skills in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "phrase": "Time to drop in! Show off your typing skills in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Math",
+    "age_group": "grades912",
+    "phrase": "Time to drop in! Let’s see Math in action now!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "phrase": "Time to drop in! Let’s see Reading in action!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "phrase": "Time to drop in! Watch this spelling demo and dominate!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "phrase": "Time to drop in! Watch coding come alive now!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "phrase": "Time to drop in! Watch this typing demo and dominate!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Math",
+    "age_group": "grades912",
+    "phrase": "Time to drop in! Tackle these math challenges now!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "phrase": "Time to drop in! Let’s push your reading skills with some action!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "phrase": "Time to drop in! Show off your spelling skills now!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "phrase": "Time to drop in! Start coding and conquer this challenge!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "phrase": "Time to drop in! Start typing and win this battle!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Math",
+    "age_group": "grades912",
+    "phrase": "Time to drop in! Show your Math skills in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "phrase": "Time to drop in! Show your reading skills in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "phrase": "Time to drop in! Show off your spelling skills in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "phrase": "Time to drop in! Show your coding skills in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "phrase": "Time to drop in! Show off your typing skills in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Math",
+    "age_group": "k2",
+    "phrase": "Royal decree! Let’s see Math magic happen now!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Reading",
+    "age_group": "k2",
+    "phrase": "Royal decree! Let’s see reading magic happen now!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "phrase": "Royal decree! Let’s watch spelling magic happen now!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Coding",
+    "age_group": "k2",
+    "phrase": "Royal decree! Let’s see coding magic in action!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Typing",
+    "age_group": "k2",
+    "phrase": "Royal decree! Let’s see typing magic in action!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Math",
+    "age_group": "k2",
+    "phrase": "Royal decree! Time to count like princesses with magic math!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Reading",
+    "age_group": "k2",
+    "phrase": "Royal decree! Let’s read together in our castle time!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "phrase": "Royal decree! Let’s spell like princesses with magic wands now!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Coding",
+    "age_group": "k2",
+    "phrase": "Royal decree! Time to code like princesses and princes!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Typing",
+    "age_group": "k2",
+    "phrase": "Royal decree! Time to type like princesses and princes!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Math",
+    "age_group": "k2",
+    "phrase": "Royal decree! Show your math magic in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Reading",
+    "age_group": "k2",
+    "phrase": "Royal decree! Show your reading magic in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "phrase": "Royal decree! Show your spelling magic in the quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Coding",
+    "age_group": "k2",
+    "phrase": "Royal decree! Show your coding magic in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Typing",
+    "age_group": "k2",
+    "phrase": "Royal decree! Show your typing magic in the quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Math",
+    "age_group": "grades35",
+    "phrase": "Royal decree! Let’s see Math magic happen now!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "phrase": "Royal decree! Let’s see reading magic in action!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "phrase": "Royal decree! Let’s watch spelling magic happen now!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "phrase": "Royal decree! Let’s watch coding magic happen now!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "phrase": "Royal decree! Let’s watch typing magic happen now!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Math",
+    "age_group": "grades35",
+    "phrase": "Royal decree! Time to count like princesses and princes!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "phrase": "Royal decree! Time to read like princesses and princes!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "phrase": "Royal decree! Time to spell magic words, little princesses!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "phrase": "Royal decree! Time to code like princesses and princes!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "phrase": "Royal decree! Time to type like princesses and princes!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Math",
+    "age_group": "grades35",
+    "phrase": "Royal decree! Show your math magic in the quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "phrase": "Royal decree! Show your reading magic in the quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "phrase": "Royal decree! Show your spelling magic in the quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "phrase": "Royal decree! Show your coding magic in the quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "phrase": "Royal decree! Show your typing magic in the quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Math",
+    "age_group": "grades68",
+    "phrase": "Royal decree! Let’s see Math magic in action now!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "phrase": "Royal decree! Time to see reading magic in action!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "phrase": "Royal decree! Let’s see Spelling magic in action now!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "phrase": "Royal decree! Coding rules conquered, now witness the magic moment of our demo!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "phrase": "Royal decree! Typing rules learned, now watch the magic moment of demo!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Math",
+    "age_group": "grades68",
+    "phrase": "Royal decree! Time to rule Math with your own magic moves!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "phrase": "Royal decree! Time to read like a princess, let’s try it!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "phrase": "Royal decree! Time to rule Spelling with your own magic!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "phrase": "Royal decree! Time to code your own magic, brave knights!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "phrase": "Royal decree! Time to rule the keyboard with your typing skills!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Math",
+    "age_group": "grades68",
+    "phrase": "Royal decree! Show your math magic in this cool quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "phrase": "Royal decree! Show your reading magic in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "phrase": "Royal decree! Show your spelling power in this epic quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "phrase": "Royal decree! Show your coding skills in this epic quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "phrase": "Royal decree! Show your typing skills in this epic quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Math",
+    "age_group": "grades912",
+    "phrase": "Royal decree! Witness the magic of Math in action now!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "phrase": "Royal decree! Witness the magic of reading in action now!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "phrase": "Royal decree! Witness the magic of spelling in action now!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "phrase": "Royal decree! Mastered the rules? Witness coding magic now!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "phrase": "Royal decree! Mastered the rules, now witness the typing magic!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Math",
+    "age_group": "grades912",
+    "phrase": "Royal decree! Solve these math challenges now!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "phrase": "Royal decree! Grab your books and practice reading now!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "phrase": "Royal decree! Time to practice spelling like true castle champions!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "phrase": "Royal decree! Code like a princess, start your magic now!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "phrase": "Royal decree! Show your typing skills now!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Math",
+    "age_group": "grades912",
+    "phrase": "Royal decree! Show your math might in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "phrase": "Royal decree! Show your reading magic in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "phrase": "Royal decree! Show your spelling magic in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "phrase": "Royal decree! Show your coding skills in this epic quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "phrase": "Royal decree! Show off your typing skills in this magic moment quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Math",
+    "age_group": "k2",
+    "phrase": "Time to stomp from rules to a roaring Math demo!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Reading",
+    "age_group": "k2",
+    "phrase": "Time to stomp into reading fun with an awesome demo!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "phrase": "Time to stomp! Let’s see some dino-sized spelling magic!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Coding",
+    "age_group": "k2",
+    "phrase": "Time to stomp into coding fun! Let’s see an awesome demo!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Typing",
+    "age_group": "k2",
+    "phrase": "Time to stomp! Let’s see some dino-typing action!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Math",
+    "age_group": "k2",
+    "phrase": "Time to stomp into math practice, dino pals!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Reading",
+    "age_group": "k2",
+    "phrase": "Time to stomp into reading practice, dino pals!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "phrase": "Time to stomp into spelling practice, dino friends!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Coding",
+    "age_group": "k2",
+    "phrase": "Time to stomp into coding action, dino coders!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Typing",
+    "age_group": "k2",
+    "phrase": "Time to stomp! Let’s roar into typing practice now!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Math",
+    "age_group": "k2",
+    "phrase": "Time to stomp into the Math quiz, dino pals!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Reading",
+    "age_group": "k2",
+    "phrase": "Time to stomp into the Reading quiz, dino pals!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "phrase": "Time to stomp into the Spelling quiz, dino pals!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Coding",
+    "age_group": "k2",
+    "phrase": "Time to stomp into the coding quiz, dino coders!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Typing",
+    "age_group": "k2",
+    "phrase": "Time to stomp into the typing quiz, dino pals!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Math",
+    "age_group": "grades35",
+    "phrase": "Time to stomp into action and see some dino-math magic!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "phrase": "Time to stomp! Let’s roar into a super fun reading demo!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "phrase": "Time to stomp! Let’s see Spelling magic happen!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "phrase": "Time to stomp! Let’s roar into coding with an awesome demo!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "phrase": "Time to stomp! Let’s see dino typing in action!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Math",
+    "age_group": "grades35",
+    "phrase": "Time to stomp into Math fun! Let’s count like dinos!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "phrase": "Time to stomp into reading practice, dino pals!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "phrase": "Time to stomp! Let’s spell some dino words together!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "phrase": "Time to stomp! Let’s code like dinosaurs and build something awesome!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "phrase": "Time to stomp! Let’s roar into typing practice now!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Math",
+    "age_group": "grades35",
+    "phrase": "Time to stomp into the Math quiz, dino pals!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "phrase": "Time to stomp into the Reading quiz, dino pals!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "phrase": "Time to stomp into the Spelling quiz, dino pals!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "phrase": "Time to stomp! Show your coding skills in this dino quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "phrase": "Time to stomp! Show off your typing skills in the dino quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Math",
+    "age_group": "grades68",
+    "phrase": "Time to stomp from rules to an awesome Math demo!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "phrase": "Time to stomp! Let’s roar into an awesome reading demo!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "phrase": "Time to stomp! Watch spelling tricks roar to life!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "phrase": "Time to stomp! Let’s see coding in action!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "phrase": "Time to stomp! Let’s roar into action and see typing in action!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Math",
+    "age_group": "grades68",
+    "phrase": "Time to stomp! Let’s solve these math problems together!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "phrase": "Time to stomp! Let’s roar into reading practice now!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "phrase": "Time to stomp! Let’s spell some dino words now!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "phrase": "Time to stomp! Let’s code like dinos and build something awesome!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "phrase": "Time to stomp! Let’s roar into action and type like dinos!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Math",
+    "age_group": "grades68",
+    "phrase": "Time to stomp into the Math quiz, dino champs!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "phrase": "Time to stomp! Show your dino skills in this Reading quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "phrase": "Time to stomp! Show off your spelling skills in this dino quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "phrase": "Time to stomp! Show your coding skills in this dino quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "phrase": "Time to stomp! Show off your dino typing skills in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Math",
+    "age_group": "grades912",
+    "phrase": "Time to stomp from rules to a roaring Math demo!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "phrase": "Time to stomp from rules to an awesome reading demo!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "phrase": "Time to stomp! Watch Spelling come alive in action!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "phrase": "Time to stomp! Watch coding come alive in this epic demo!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "phrase": "Time to stomp! Watch this typing demo roar to life!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Math",
+    "age_group": "grades912",
+    "phrase": "Time to stomp! Let’s solve these math problems together!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "phrase": "Time to stomp! Let’s dive into reading practice now!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "phrase": "Time to stomp! Let’s spell some dino-sized words now!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "phrase": "Time to stomp! Let’s code like dinosaurs and build something epic!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "phrase": "Time to stomp! Let’s roar into typing practice now!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Math",
+    "age_group": "grades912",
+    "phrase": "Time to stomp! Show your dino skills in this Math quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "phrase": "Time to stomp! Show your dino power in this reading quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "phrase": "Time to stomp! Show off your spelling skills in this dino quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "phrase": "Time to stomp! Show off your coding skills in this dino quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "phrase": "Time to stomp! Show off your dino-typing skills in this quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Math",
+    "age_group": "k2",
+    "phrase": "Launch sequence! Let’s blast off to see Math magic!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Reading",
+    "age_group": "k2",
+    "phrase": "Launch sequence! Ready to see reading magic happen?",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "phrase": "Launch sequence! Let’s blast off to see spelling in action!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Coding",
+    "age_group": "k2",
+    "phrase": "Launch sequence! Let’s blast off to see coding in action!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Typing",
+    "age_group": "k2",
+    "phrase": "Launch sequence! Get ready to see awesome typing tricks!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Math",
+    "age_group": "k2",
+    "phrase": "Launch sequence! Let’s blast off into math practice now!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Reading",
+    "age_group": "k2",
+    "phrase": "Launch sequence! Let’s blast off into reading practice!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "phrase": "Launch sequence! Time to spell like space heroes!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Coding",
+    "age_group": "k2",
+    "phrase": "Launch sequence! Let’s code and blast off to fun!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Typing",
+    "age_group": "k2",
+    "phrase": "Launch sequence! Let’s type and blast off together!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Math",
+    "age_group": "k2",
+    "phrase": "Launch sequence! Blast off to your Math quiz now!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Reading",
+    "age_group": "k2",
+    "phrase": "Launch sequence! Ready to blast off to the Reading quiz?",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "phrase": "Launch sequence! Let’s blast off to the Spelling quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Coding",
+    "age_group": "k2",
+    "phrase": "Launch sequence! Time to blast off to the coding quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Typing",
+    "age_group": "k2",
+    "phrase": "Launch sequence! Time to blast off to the typing quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Math",
+    "age_group": "grades35",
+    "phrase": "Launch sequence! Let’s blast off to see cool Math tricks!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "phrase": "Launch sequence! Let’s blast off to see Reading in action!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "phrase": "Launch sequence! Let’s blast off to see spelling magic!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "phrase": "Launch sequence! Let’s blast off to see coding in action!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "phrase": "Launch sequence! Let’s see typing in action!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Math",
+    "age_group": "grades35",
+    "phrase": "Launch sequence! Let’s blast off to solve math puzzles now!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "phrase": "Launch sequence! Let’s blast off into reading practice now!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "phrase": "Launch sequence! Time to spell some words on your own!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "phrase": "Launch sequence! Let’s code and blast off together!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "phrase": "Launch sequence! Time to type like space explorers!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Math",
+    "age_group": "grades35",
+    "phrase": "Launch sequence! Let’s blast off to the Math quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "phrase": "Launch sequence! Let’s blast off to the reading quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "phrase": "Launch sequence! Let’s spell our way to the stars!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "phrase": "Launch sequence! Time to test your coding skills!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "phrase": "Launch sequence! Time to blast off to the typing quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Math",
+    "age_group": "grades68",
+    "phrase": "Launch sequence! Let’s blast off from rules to an awesome Math demo!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "phrase": "Launch sequence! Let’s blast off from rules to an awesome reading demo!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "phrase": "Launch sequence! Spelling rules done, now watch this cool demo!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "phrase": "Launch sequence! Rules done, now watch coding blast off!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "phrase": "Launch sequence! Typing rules down, now watch this cool demo!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Math",
+    "age_group": "grades68",
+    "phrase": "Launch sequence! Time to blast off with Math practice!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "phrase": "Launch sequence! Time to blast off into reading practice!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "phrase": "Launch sequence! Time to spell like a star!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "phrase": "Launch sequence! Time to code your own space mission!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "phrase": "Launch sequence! Time to blast off with typing practice!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Math",
+    "age_group": "grades68",
+    "phrase": "Launch sequence! Ready to blast off to the Math quiz?",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "phrase": "Launch sequence! Time to blast off to the Reading quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "phrase": "Launch sequence! Time to ace this Spelling quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "phrase": "Launch sequence! Your coding skills are ready for the quiz blast-off!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "phrase": "Launch sequence! Blast off to the Typing quiz now!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Math",
+    "age_group": "grades912",
+    "phrase": "Launch sequence! Let’s see Math in action now!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "phrase": "Launch sequence! Let’s see Reading rules in action now!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "phrase": "Launch sequence! Let’s see spelling in action now!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "phrase": "Launch sequence! Coding rules set, now watch this awesome demo!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "rules",
+    "to_phase": "demo",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "phrase": "Launch sequence! Let’s see typing in action now!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Math",
+    "age_group": "grades912",
+    "phrase": "Launch sequence! Time to solve these math problems yourself!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "phrase": "Launch sequence! Time to blast off into reading practice!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "phrase": "Launch sequence! Time to spell out your skills!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "phrase": "Launch sequence! Time to code your own mission!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "demo",
+    "to_phase": "practice",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "phrase": "Launch sequence! Time to type like a rocket!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Math",
+    "age_group": "grades912",
+    "phrase": "Launch sequence! Time to ace this Math quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "phrase": "Launch sequence! Time to ace this Reading quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "phrase": "Launch sequence! Time to ace this Spelling quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "phrase": "Launch sequence! Time to test your coding skills!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  },
+  {
+    "from_phase": "practice",
+    "to_phase": "quiz",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "phrase": "Launch sequence! Time to blast off to the typing quiz!",
+    "enthusiasm_level": "medium",
+    "theme": "space"
+  }
+]

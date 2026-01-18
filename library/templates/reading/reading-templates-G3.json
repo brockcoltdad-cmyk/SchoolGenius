@@ -1,0 +1,227 @@
+{
+  "grade": 3,
+  "grade_name": "Third Grade",
+  "lexile_range": "500L-700L",
+  "default_lexile": "600L",
+  "standards": ["RF.3.3", "RF.3.4", "RL.3.1", "RL.3.2", "RL.3.3", "RL.3.5", "RI.3.2", "RI.3.8"],
+  "total_target": 8000,
+  "skills": [
+    {
+      "skill": "root words",
+      "code": "ROOT",
+      "standard": "RF.3.3",
+      "count": 800,
+      "visual_type": "word_building",
+      "question_templates": [
+        "What is the root word in '{word}'?",
+        "The root word '{root}' means '{meaning}'. What does '{word}' mean?",
+        "Add a prefix or suffix to '{root}' to make a new word."
+      ],
+      "roots": [
+        {"root": "play", "words": ["playing", "played", "player", "playful", "replay"]},
+        {"root": "help", "words": ["helping", "helped", "helper", "helpful", "unhelpful"]},
+        {"root": "read", "words": ["reading", "reader", "reread", "readable", "unread"]},
+        {"root": "write", "words": ["writing", "writer", "rewrite", "written"]},
+        {"root": "teach", "words": ["teaching", "teacher", "reteach", "teachable"]},
+        {"root": "friend", "words": ["friendly", "unfriendly", "friendship", "befriend"]},
+        {"root": "kind", "words": ["kindly", "unkind", "kindness", "kinder"]},
+        {"root": "care", "words": ["caring", "careful", "careless", "carefree"]},
+        {"root": "happy", "words": ["happily", "unhappy", "happiness", "happier"]},
+        {"root": "use", "words": ["using", "useful", "useless", "reuse", "unused"]}
+      ]
+    },
+    {
+      "skill": "theme and central message",
+      "code": "THEM",
+      "standard": "RL.3.2",
+      "count": 1200,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "What is the theme of this story?",
+        "What lesson does this story teach?",
+        "What is the central message?"
+      ],
+      "themed_passages": [
+        {
+          "title": "The Tortoise and the Hare",
+          "text": "A hare made fun of a tortoise for being slow. The tortoise challenged the hare to a race. The hare ran fast but stopped to nap, thinking he had plenty of time. The tortoise kept going slowly but surely. When the hare woke up, the tortoise had already crossed the finish line.",
+          "theme": "Slow and steady wins the race",
+          "evidence": ["The tortoise kept going slowly but surely", "the tortoise had already crossed the finish line"]
+        },
+        {
+          "title": "The Boy Who Cried Wolf",
+          "text": "A shepherd boy got bored watching sheep. He cried 'Wolf!' to get attention. The villagers came running but found no wolf. He did this again and again. One day, a real wolf came. The boy cried for help, but no one believed him. The wolf took many sheep.",
+          "theme": "Honesty is important because liars are not believed",
+          "evidence": ["The boy cried for help, but no one believed him"]
+        },
+        {
+          "title": "The Giving Tree",
+          "text": "Maya found a stray kitten in the rain. She shared her lunch and made a shelter from boxes. Her friends saw this and helped too. Soon the whole neighborhood was taking care of animals in need. Maya's small act of kindness had grown into something big.",
+          "theme": "Small acts of kindness can inspire others",
+          "evidence": ["Her friends saw this and helped too", "Maya's small act of kindness had grown into something big"]
+        },
+        {
+          "title": "Practice Makes Perfect",
+          "text": "Aiden wanted to play basketball, but he couldn't make a basket. Every day after school, he practiced shooting. Some days he missed every shot. But he kept trying. After three months, he made the school team. His coach said he was one of the hardest workers.",
+          "theme": "Hard work and persistence lead to success",
+          "evidence": ["Every day after school, he practiced shooting", "he kept trying"]
+        },
+        {
+          "title": "The New Student",
+          "text": "When Rosa moved to a new school, she felt alone. Nobody talked to her at lunch. Then Marcus sat next to her and asked about her favorite books. They discovered they both loved mysteries. By the end of the week, Rosa had made several new friends.",
+          "theme": "Being kind to others can make a big difference",
+          "evidence": ["Marcus sat next to her and asked about her favorite books", "Rosa had made several new friends"]
+        }
+      ]
+    },
+    {
+      "skill": "character development",
+      "code": "CHAR",
+      "standard": "RL.3.3",
+      "count": 1000,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "How did {character} change from the beginning to the end?",
+        "Why did {character} act that way?",
+        "What words describe {character}?"
+      ],
+      "character_passages": [
+        {
+          "title": "Emma's Project",
+          "text": "Emma was scared to present her science project. Her hands shook and her voice trembled. But she remembered what her dad said: 'Be brave, even when you're scared.' She took a deep breath and started talking. By the end, she was smiling. Her classmates clapped.",
+          "character": "Emma",
+          "trait_beginning": "scared and nervous",
+          "trait_end": "brave and confident",
+          "why_changed": "She faced her fear and succeeded"
+        },
+        {
+          "title": "Jake Learns to Share",
+          "text": "Jake never shared his toys. 'They're mine!' he would say. But when his cousin visited and had no toys, Jake saw how sad she looked. He gave her his favorite car to play with. Seeing her smile made Jake feel good. Now he shares all the time.",
+          "character": "Jake",
+          "trait_beginning": "selfish",
+          "trait_end": "generous",
+          "why_changed": "He saw how sharing made others happy"
+        }
+      ]
+    },
+    {
+      "skill": "text evidence",
+      "code": "INFER",
+      "standard": "RL.3.1",
+      "count": 1500,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "Which sentence from the passage supports your answer?",
+        "What evidence shows that {claim}?",
+        "Go back to the text. Which words prove {claim}?"
+      ],
+      "evidence_passages": [
+        {
+          "text": "The leaves were orange and red. Children wore jackets to school. Pumpkins sat on doorsteps. Farmers were busy harvesting crops.",
+          "question": "What season is it?",
+          "answer": "Fall/Autumn",
+          "evidence": "The leaves were orange and red"
+        },
+        {
+          "text": "Maria practiced piano every day for two hours. She gave up playing video games to have more time. When the recital came, she played perfectly without any mistakes.",
+          "question": "Was Maria dedicated to piano?",
+          "answer": "Yes",
+          "evidence": "Maria practiced piano every day for two hours"
+        },
+        {
+          "text": "The dog's tail wagged fast. It jumped up and down. When its owner came in, the dog ran in circles and licked his face.",
+          "question": "How did the dog feel?",
+          "answer": "Happy and excited",
+          "evidence": "The dog's tail wagged fast"
+        }
+      ]
+    },
+    {
+      "skill": "main idea and details",
+      "code": "MAIN",
+      "standard": "RI.3.2",
+      "count": 1500,
+      "visual_type": "comprehension_question",
+      "question_templates": [
+        "What is the main idea of this passage?",
+        "Which detail supports the main idea?",
+        "What is this passage mostly about?"
+      ],
+      "main_idea_passages": [
+        {
+          "text": "Honeybees are amazing insects. They make honey that we eat. They help flowers grow by spreading pollen. Without bees, many plants could not make seeds. Bees are very important to our world.",
+          "main_idea": "Honeybees are important to our world",
+          "details": ["They make honey", "They help flowers grow", "They spread pollen"]
+        },
+        {
+          "text": "Recycling helps protect our planet. When we recycle paper, fewer trees are cut down. Recycling plastic keeps it out of the ocean. Recycling cans saves energy. Everyone can help by recycling at home.",
+          "main_idea": "Recycling helps protect our planet",
+          "details": ["fewer trees are cut down", "keeps plastic out of the ocean", "saves energy"]
+        },
+        {
+          "text": "Exercise is good for your body. It makes your heart stronger. It helps you sleep better at night. Exercise also makes you feel happy. Try to exercise every day!",
+          "main_idea": "Exercise is good for your body",
+          "details": ["makes your heart stronger", "helps you sleep better", "makes you feel happy"]
+        }
+      ]
+    },
+    {
+      "skill": "story structure",
+      "code": "PLOT",
+      "standard": "RL.3.5",
+      "count": 1000,
+      "visual_type": "comprehension_question",
+      "question_templates": [
+        "What is the problem in this story?",
+        "How was the problem solved?",
+        "What happened in the beginning, middle, and end?"
+      ],
+      "structure_stories": [
+        {
+          "title": "The Missing Lunch",
+          "beginning": "Lily brought her favorite sandwich to school. She put it in her cubby.",
+          "middle": "At lunchtime, her sandwich was gone! Lily looked everywhere. She asked her friends if they had seen it.",
+          "end": "Her teacher found it had fallen behind the cubbies. Lily was so happy to eat her lunch.",
+          "problem": "Lily's sandwich was missing",
+          "solution": "The teacher found it behind the cubbies"
+        },
+        {
+          "title": "The Science Fair",
+          "beginning": "Carlos wanted to win the science fair. He decided to make a volcano.",
+          "middle": "The night before, his volcano wouldn't erupt. He tried everything but it didn't work. Carlos felt like giving up.",
+          "end": "His mom helped him fix the mixture. At the fair, the volcano erupted perfectly. Carlos won second place!",
+          "problem": "The volcano wouldn't erupt",
+          "solution": "His mom helped him fix the mixture"
+        }
+      ]
+    },
+    {
+      "skill": "fluency",
+      "code": "COMP",
+      "standard": "RF.3.4",
+      "count": 1000,
+      "visual_type": "text_highlight",
+      "fluency_goal_wpm": 120,
+      "fluency_passages": [
+        {
+          "text": "The sun was setting behind the mountains. Colors of orange, pink, and purple filled the sky. Birds flew home to their nests. A gentle breeze made the leaves dance. It was the perfect end to a summer day.",
+          "word_count": 42
+        },
+        {
+          "text": "My grandfather tells the best stories. He talks about when he was young. He walked five miles to school every day. He had no TV or computers. But he had lots of adventures with his friends. I love listening to his stories.",
+          "word_count": 47
+        }
+      ]
+    }
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

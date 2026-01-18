@@ -1,0 +1,302 @@
+[
+  {
+    "trigger": "good_progress",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Wow, your reading is getting better every day! Keep up the awesome effort—I’m so proud of you!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Wow, your reading is getting better every day! Keep up the awesome effort—I’m so proud of you!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, I’ve noticed you’re getting better at reading every day! Keep it up, that’s awesome!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, I’ve noticed how much your reading has improved! Keep up the awesome effort—it’s really paying off!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "Your steady progress in reading is impressive! Keep challenging yourself with diverse texts—your dedication is paying off."
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "Your steady progress in reading is impressive! Keep challenging yourself with new texts—your dedication is paying off."
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Wow, you're getting better at spelling every day! Keep up the awesome work! 🌟📚"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Wow, you're getting so good at spelling! Keep practicing, superstar! I'm so proud! 🌟😊"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Awesome job! Your spelling is getting better every day. Keep practicing, and you’ll be a spelling superstar soon!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Awesome job on your spelling! Your steady progress is amazing—keep practicing, and you’ll be a spelling star!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Hey, your spelling is getting better every day! Keep up the awesome effort—it’s really paying off!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Hey, your spelling is getting so much better! Keep up the awesome effort—I can see the progress!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "I'm impressed by your steady progress in spelling. Your dedication is paying off—keep up the great work!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "I'm impressed with your steady progress in spelling. Your dedication is paying off—keep up the great work!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, you're getting so good at coding! Keep practicing, superstar! You're amazing! 🌟💻"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, you're getting so good at coding! Keep practicing, superstar! You're amazing! 🌟💻"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Awesome job! Your coding skills are growing every day. Keep up the amazing effort—you’re crushing it!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Awesome job! Your coding skills are growing every day. Keep up the fantastic effort—you’re crushing it!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Hey, your coding skills are getting better every day! Keep up the awesome effort, you're doing great!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Hey, your coding skills are getting better every day! Keep up the awesome effort, you’ve got this!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "Great job on your steady progress in coding! Your consistent effort and growing skills are impressive. Keep it up!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "Great work on your steady progress in coding! Your dedication and consistent effort are truly paying off. Keep it up!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, you're getting so fast at typing! Keep practicing, you're doing awesome! 🌟💻"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, you're getting so good at typing! Keep pressing those keys! You're amazing! 🌟💻"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Wow, your typing is getting faster every day! Keep practicing, and you’ll be a typing superstar in no time!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Awesome job! Your typing is getting faster every day. Keep practicing, and you’ll be a typing superstar soon!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Hey, your typing is getting so much faster! Keep practicing like this, and you’ll be unstoppable!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Hey, your typing is getting so much faster! Keep practicing like this—you’re doing awesome!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "Great job on your steady progress in typing! Your consistent effort is paying off—keep it up!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "Great job on your steady progress in typing! Your consistent effort is paying off—keep it up!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Wow, you're working so hard on Math! Keep counting and solving! You're amazing! 🌟👍"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Wow, you're working so hard in Math! Keep counting and solving! You're amazing! 🌟👍"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Awesome job working so hard in Math! Keep solving those tricky problems—you’re getting better every day!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Wow, you're working so hard in Math! Keep solving those problems—I'm super proud of your effort!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Hey, I see how hard you’re working on math! Keep it up, your effort is awesome!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Hey, I see how hard you’re working on Math! Keep it up, your effort is awesome!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "Your dedication to mastering Math is impressive. Keep pushing through those challenges—your hard work is paying off!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "I'm impressed by your dedication to mastering Math. Your consistent effort is truly paying off—keep it up!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, you're working so hard at reading! Keep going, superstar! 📚✨ I'm so proud!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, you're working so hard at reading! I'm super proud of you! Keep going! 📚😊"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Wow, I’m so proud of how hard you’re working on your reading! Keep it up, you’re doing awesome!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Wow, I’m so proud of how hard you’re working on reading! Keep it up, you’re doing awesome!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, I’ve noticed how hard you’re working on reading! Keep it up, your effort is awesome!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, I’ve noticed how hard you’re working on your reading. That’s awesome—keep it up!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "I’m impressed by your dedication to reading. Your consistent effort is building strong skills—keep it up!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "I'm impressed by your dedication to reading. Your consistent effort is building strong skills—keep it up!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Wow, you're working so hard on spelling! I'm super proud of you! Keep going! 🌟👍"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Wow, you're working so hard on spelling! Keep it up, superstar! 🌟📝"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Awesome job working hard on your spelling! Your effort is shining through—keep it up, champ!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Wow, I’m so proud of how hard you’re working on spelling! Keep practicing—you’re getting better every day!"
+  }
+]

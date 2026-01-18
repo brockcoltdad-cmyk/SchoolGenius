@@ -1,0 +1,220 @@
+{
+  "grade": 2,
+  "grade_name": "Second Grade",
+  "lexile_range": "400L-500L",
+  "default_lexile": "450L",
+  "standards": ["RF.2.3", "RF.2.4", "RL.2.1", "RL.2.2", "RL.2.3", "RL.2.5", "RI.2.1"],
+  "total_target": 10000,
+  "skills": [
+    {
+      "skill": "prefixes",
+      "code": "PREF",
+      "standard": "RF.2.3",
+      "count": 1200,
+      "visual_type": "word_building",
+      "question_templates": [
+        "What does the prefix '{prefix}' mean?",
+        "Add the prefix '{prefix}' to '{word}'. What new word do you make?",
+        "What is the meaning of '{word}' with the prefix '{prefix}'?"
+      ],
+      "prefixes": {
+        "un": {"meaning": "not", "words": ["happy/unhappy", "kind/unkind", "safe/unsafe", "fair/unfair", "lock/unlock", "tie/untie", "do/undo", "pack/unpack", "wrap/unwrap", "zip/unzip"]},
+        "re": {"meaning": "again", "words": ["read/reread", "write/rewrite", "do/redo", "play/replay", "start/restart", "build/rebuild", "fill/refill", "tell/retell", "paint/repaint", "use/reuse"]},
+        "pre": {"meaning": "before", "words": ["heat/preheat", "pay/prepay", "view/preview", "test/pretest", "wash/prewash", "cook/precook", "school/preschool", "game/pregame"]},
+        "dis": {"meaning": "not or opposite", "words": ["like/dislike", "agree/disagree", "appear/disappear", "obey/disobey", "honest/dishonest", "connect/disconnect", "trust/distrust"]}
+      }
+    },
+    {
+      "skill": "suffixes",
+      "code": "SUFF",
+      "standard": "RF.2.3",
+      "count": 1200,
+      "visual_type": "word_building",
+      "question_templates": [
+        "What does the suffix '{suffix}' mean?",
+        "Add '{suffix}' to '{word}'. What new word do you make?",
+        "If '{word}' means '{meaning}', what does '{new_word}' mean?"
+      ],
+      "suffixes": {
+        "ful": {"meaning": "full of", "words": ["care/careful", "help/helpful", "hope/hopeful", "joy/joyful", "pain/painful", "peace/peaceful", "play/playful", "thank/thankful", "wonder/wonderful", "color/colorful"]},
+        "less": {"meaning": "without", "words": ["care/careless", "help/helpless", "hope/hopeless", "end/endless", "fear/fearless", "home/homeless", "sleep/sleepless", "use/useless", "wire/wireless", "harm/harmless"]},
+        "ly": {"meaning": "in a way", "words": ["quick/quickly", "slow/slowly", "quiet/quietly", "loud/loudly", "soft/softly", "safe/safely", "nice/nicely", "brave/bravely", "kind/kindly", "happy/happily"]},
+        "er": {"meaning": "one who", "words": ["teach/teacher", "read/reader", "play/player", "work/worker", "sing/singer", "farm/farmer", "paint/painter", "help/helper", "build/builder", "run/runner"]},
+        "est": {"meaning": "most", "words": ["fast/fastest", "slow/slowest", "tall/tallest", "small/smallest", "old/oldest", "young/youngest", "big/biggest", "long/longest", "short/shortest", "kind/kindest"]}
+      }
+    },
+    {
+      "skill": "compound words",
+      "code": "VOCAB",
+      "standard": "RF.2.3",
+      "count": 800,
+      "visual_type": "word_building",
+      "question_templates": [
+        "What two words make up '{compound}'?",
+        "Put '{word1}' and '{word2}' together. What word do you get?",
+        "What does '{compound}' mean?"
+      ],
+      "compound_words": [
+        {"compound": "sunflower", "word1": "sun", "word2": "flower", "meaning": "a flower that faces the sun"},
+        {"compound": "rainbow", "word1": "rain", "word2": "bow", "meaning": "colorful arc in the sky after rain"},
+        {"compound": "birthday", "word1": "birth", "word2": "day", "meaning": "the day you were born"},
+        {"compound": "playground", "word1": "play", "word2": "ground", "meaning": "a place to play"},
+        {"compound": "bedroom", "word1": "bed", "word2": "room", "meaning": "a room with a bed"},
+        {"compound": "toothbrush", "word1": "tooth", "word2": "brush", "meaning": "a brush for your teeth"},
+        {"compound": "butterfly", "word1": "butter", "word2": "fly", "meaning": "an insect with colorful wings"},
+        {"compound": "snowman", "word1": "snow", "word2": "man", "meaning": "a figure made of snow"},
+        {"compound": "cupcake", "word1": "cup", "word2": "cake", "meaning": "a small cake"},
+        {"compound": "football", "word1": "foot", "word2": "ball", "meaning": "a sport with a ball"},
+        {"compound": "airplane", "word1": "air", "word2": "plane", "meaning": "a flying vehicle"},
+        {"compound": "bookshelf", "word1": "book", "word2": "shelf", "meaning": "a shelf for books"},
+        {"compound": "pancake", "word1": "pan", "word2": "cake", "meaning": "a flat cake cooked in a pan"},
+        {"compound": "starfish", "word1": "star", "word2": "fish", "meaning": "a sea animal shaped like a star"},
+        {"compound": "homework", "word1": "home", "word2": "work", "meaning": "school work done at home"}
+      ]
+    },
+    {
+      "skill": "context clues",
+      "code": "VOCAB",
+      "standard": "RF.2.3",
+      "count": 1000,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "What does '{word}' mean in this sentence?",
+        "Use context clues to figure out what '{word}' means.",
+        "Which word could replace '{word}' in this sentence?"
+      ],
+      "context_sentences": [
+        {"sentence": "The gigantic elephant was the biggest animal at the zoo.", "word": "gigantic", "meaning": "very big", "clue": "biggest animal"},
+        {"sentence": "She was famished after not eating all day, so she ate a huge dinner.", "word": "famished", "meaning": "very hungry", "clue": "not eating all day"},
+        {"sentence": "The swift rabbit ran so fast that the fox could not catch it.", "word": "swift", "meaning": "fast", "clue": "ran so fast"},
+        {"sentence": "The timid mouse was too scared to come out of its hole.", "word": "timid", "meaning": "shy or scared", "clue": "too scared"},
+        {"sentence": "The gloomy sky was dark and gray, like it might rain.", "word": "gloomy", "meaning": "dark and sad", "clue": "dark and gray"},
+        {"sentence": "She was elated when she won the prize and jumped up and down with joy.", "word": "elated", "meaning": "very happy", "clue": "jumped up and down with joy"},
+        {"sentence": "The ancient tree was hundreds of years old.", "word": "ancient", "meaning": "very old", "clue": "hundreds of years old"},
+        {"sentence": "The peculiar sound was strange and unlike anything I had heard before.", "word": "peculiar", "meaning": "strange or unusual", "clue": "unlike anything I had heard"}
+      ]
+    },
+    {
+      "skill": "synonyms and antonyms",
+      "code": "VOCAB",
+      "standard": "RF.2.3",
+      "count": 1000,
+      "visual_type": "word_building",
+      "question_templates": [
+        "What is a synonym for '{word}'?",
+        "What is an antonym for '{word}'?",
+        "Which word means the same as '{word}'?",
+        "Which word means the opposite of '{word}'?"
+      ],
+      "word_pairs": [
+        {"word": "happy", "synonyms": ["glad", "joyful", "cheerful"], "antonyms": ["sad", "unhappy", "gloomy"]},
+        {"word": "big", "synonyms": ["large", "huge", "giant"], "antonyms": ["small", "tiny", "little"]},
+        {"word": "fast", "synonyms": ["quick", "speedy", "swift"], "antonyms": ["slow", "sluggish"]},
+        {"word": "hot", "synonyms": ["warm", "burning"], "antonyms": ["cold", "cool", "freezing"]},
+        {"word": "loud", "synonyms": ["noisy", "booming"], "antonyms": ["quiet", "silent", "soft"]},
+        {"word": "brave", "synonyms": ["courageous", "bold", "fearless"], "antonyms": ["scared", "afraid", "timid"]},
+        {"word": "start", "synonyms": ["begin", "commence"], "antonyms": ["end", "stop", "finish"]},
+        {"word": "easy", "synonyms": ["simple", "effortless"], "antonyms": ["hard", "difficult", "tough"]}
+      ]
+    },
+    {
+      "skill": "asking and answering questions",
+      "code": "COMP",
+      "standard": "RL.2.1",
+      "count": 1500,
+      "visual_type": "comprehension_question",
+      "question_templates": [
+        "Who {action}?",
+        "What did {character} do?",
+        "Where did the story happen?",
+        "When did {event} happen?",
+        "Why did {character} {action}?"
+      ],
+      "passages": [
+        {
+          "title": "The Garden Helper",
+          "text": "Every Saturday, Marcus helps his grandmother in her garden. They pull weeds and water the plants together. Grandma teaches Marcus the names of all the flowers. His favorite is the sunflower because it is so tall. At the end of the day, Grandma always makes lemonade.",
+          "questions": {
+            "who": "Marcus and his grandmother",
+            "what": "They work in the garden together",
+            "where": "In Grandma's garden",
+            "when": "Every Saturday",
+            "why": "To help Grandma and learn about plants"
+          }
+        },
+        {
+          "title": "The Rainy Day",
+          "text": "Sophie woke up to the sound of rain on her window. She had planned to go to the park, but now she was stuck inside. Instead, she decided to build a fort with blankets and pillows. Her little brother helped her. They pretended the fort was a castle, and they were brave knights.",
+          "questions": {
+            "who": "Sophie and her little brother",
+            "what": "They built a blanket fort",
+            "where": "Inside their house",
+            "when": "On a rainy day",
+            "why": "Because they couldn't go to the park"
+          }
+        }
+      ]
+    },
+    {
+      "skill": "story structure",
+      "code": "PLOT",
+      "standard": "RL.2.5",
+      "count": 1500,
+      "visual_type": "comprehension_question",
+      "question_templates": [
+        "What happened at the beginning of the story?",
+        "What happened in the middle?",
+        "How did the story end?",
+        "What was the problem? How was it solved?"
+      ],
+      "structure_stories": [
+        {
+          "title": "The Missing Toy",
+          "beginning": "Ben could not find his favorite toy truck. He looked under his bed and in his closet.",
+          "middle": "Ben asked his mom for help. They looked in the living room and kitchen. Then Ben remembered he played outside yesterday.",
+          "end": "They went to the backyard and found the truck by the swing. Ben was so happy!",
+          "problem": "Ben lost his toy truck",
+          "solution": "He remembered where he last played and found it"
+        },
+        {
+          "title": "The Class Pet",
+          "beginning": "Mrs. Lopez brought a hamster to class. Everyone wanted to hold it.",
+          "middle": "The class had to learn how to be gentle and quiet around the hamster. They took turns feeding it and cleaning its cage.",
+          "end": "By the end of the year, everyone loved taking care of the hamster. They named it Fuzzy.",
+          "problem": "The class needed to learn responsibility",
+          "solution": "They learned by taking care of the hamster together"
+        }
+      ]
+    },
+    {
+      "skill": "fiction vs nonfiction",
+      "code": "COMP",
+      "standard": "RI.2.1",
+      "count": 800,
+      "visual_type": "comprehension_question",
+      "question_templates": [
+        "Is this story fiction or nonfiction?",
+        "How do you know this is {type}?",
+        "What clues tell you this is {type}?"
+      ],
+      "examples": [
+        {"text": "Dragons flew over the castle, breathing fire at the knights below.", "type": "fiction", "clue": "Dragons are not real"},
+        {"text": "The sun is a star. It gives Earth light and heat.", "type": "nonfiction", "clue": "It gives facts about the sun"},
+        {"text": "The dog talked to the cat about their plan to get treats.", "type": "fiction", "clue": "Animals cannot really talk"},
+        {"text": "Polar bears live in the Arctic. They have thick white fur to stay warm.", "type": "nonfiction", "clue": "It gives true facts about polar bears"},
+        {"text": "A wizard waved his wand and made the frog turn into a prince.", "type": "fiction", "clue": "Magic is not real"},
+        {"text": "George Washington was the first president of the United States.", "type": "nonfiction", "clue": "It is a true fact about history"}
+      ]
+    }
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

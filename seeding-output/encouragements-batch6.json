@@ -1,0 +1,302 @@
+[
+  {
+    "trigger": "completes_task",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Awesome job finishing your reading assignment! You’re a reading rockstar, and I’m so proud of your hard work!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Awesome job finishing your reading assignment! You’re a reading rockstar, and I’m so proud of your hard work!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, awesome job finishing your reading assignment! I’m impressed by your dedication—keep it up!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, awesome job finishing your reading assignment! Your hard work totally paid off. Keep it up!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "Great job finishing your reading assignment! Your dedication to understanding the material is impressive. Keep up the excellent work!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "Excellent work on completing your reading assignment! Your dedication to understanding the material is impressive. Keep it up!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Wow, you finished your spelling assignment! Super job! You’re a spelling star! 🌟🎉"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Wow, you finished your spelling assignment! Amazing job! You’re a spelling star! 🌟🎉"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Awesome job finishing your spelling assignment! Your hard work is paying off—keep it up!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Awesome job finishing your spelling assignment! You’ve worked hard, and it shows—keep it up!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Great job finishing your spelling assignment! Your hard work paid off, and I’m proud of you!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Awesome job finishing your spelling assignment! Your hard work really paid off—keep it up!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "Great job completing your spelling assignment! Your dedication to mastering these words is impressive. Keep up the excellent work!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "Great work on completing your spelling assignment! Your dedication to mastering these skills is impressive. Keep it up!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, you finished your coding assignment! You're a super coder! Great job! 🌟💻"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, you finished your coding assignment! Super job, coder! You're amazing! 🌟💻"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Awesome job finishing your coding assignment! You’re a coding star—keep up the fantastic work!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Awesome job finishing your coding assignment! You’re a coding star—keep up the amazing work!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Hey, awesome job finishing that coding assignment! Your hard work paid off, and it’s so cool to see your skills shine!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Hey, awesome job finishing your coding assignment! Your hard work really paid off. Keep it up!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "Great job completing your coding assignment! Your dedication and problem-solving skills are impressive. Keep up the excellent work!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "Great job finishing your coding assignment! Your dedication and problem-solving skills are impressive. Keep up the excellent work!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, you finished your typing! You're a typing star! Great job! 🌟🎉"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, you finished your typing! You're a super typer! Great job! 🌟💻🎉"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Awesome job finishing your typing assignment! Your hard work is paying off—keep those fingers flying!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Awesome job finishing your typing assignment! Your hard work is paying off—keep those fingers flying!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Hey, awesome job finishing your typing assignment! Your hard work really shows, keep it up!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Hey, awesome job finishing your typing assignment! Your hard work really shows, keep it up!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "Great job completing your typing assignment! Your dedication and focus are impressive. Keep up the excellent work!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "Excellent work on finishing your typing assignment! Your dedication and skill are impressive. Keep it up!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Wow, you're rocking Math now! Your counting is super awesome! Keep it up! 🎉✨"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Wow, you're getting so good at Math! I'm super proud of your hard work! Keep it up! 🎉✨"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Wow, you're rocking Math now! I'm so proud of your awesome progress. Keep it up, superstar!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Wow, you’re rocking Math now! I’m so proud of your awesome progress—keep up the great work!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Hey, I’ve noticed you’re doing way better in Math! Keep up the awesome effort—it’s really paying off!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Hey, I’ve noticed you’re crushing it in Math lately! Your hard work is really paying off—keep it up!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "I’m impressed by your progress in Math! Your hard work is clearly paying off. Keep it up!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "I'm impressed by your progress in Math! Your hard work is clearly paying off. Keep it up!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, you're reading so much better! I'm super proud of you! Keep it up! 📚😊"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, you're reading so much better now! I'm super proud of you! Keep it up! 📚😊"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Wow, your reading has improved so much! I’m super proud of how hard you’re working—keep it up!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Wow, your reading has gotten so much better! I’m super proud of how hard you’re working—keep it up!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, I’ve noticed you’re getting so much better at reading! Keep it up, that’s awesome progress!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, I’ve noticed you’re getting so much better at reading! Keep it up, that’s awesome progress!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "I'm impressed by your progress in reading! Your dedication is paying off—keep up the great work!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "I’m impressed by your progress in reading! Your dedication is paying off—keep up the great work!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Wow, your spelling is getting so good! I’m super proud of you! Keep it up! 🌟🎉"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Wow, your spelling is getting so good! I’m super proud of you! Keep it up! 🌟📚"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Wow, your spelling is getting awesome! I’m so proud of how hard you’re working. Keep it up!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Wow, your spelling is getting awesome! I’m so proud of how hard you’re working—keep it up!"
+  }
+]

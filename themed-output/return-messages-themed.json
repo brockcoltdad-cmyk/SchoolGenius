@@ -1,0 +1,902 @@
+[
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "k2",
+    "message": "Welcome back, soldier! 🎉 Your squad missed you! Ready to drop in and have fun learning together?",
+    "action_suggestion": "Let’s win today’s challenge!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "k2",
+    "message": "Welcome back, soldier! 🎉 Your squad missed you! Ready to drop in and have fun learning?",
+    "action_suggestion": "Let’s win some learning battles today!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "k2",
+    "message": "Welcome back, soldier! 🎉 Your squad missed you! Ready to drop in and have fun learning?",
+    "action_suggestion": "Let’s jump into a cool activity!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "k2",
+    "message": "Welcome back, soldier! 🎉 Your squad missed you! Ready to drop in and have fun learning together?",
+    "action_suggestion": "Let’s jump into a new adventure!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "k2",
+    "message": "Welcome back, soldier! 🎉 Your squad missed you! Ready to drop in and have fun learning?",
+    "action_suggestion": "Join your team today!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "grades35",
+    "message": "Welcome back, soldier! Your squad missed you! Ready to drop in and have fun learning?",
+    "action_suggestion": "Let’s jump into a story!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "grades35",
+    "message": "Welcome back, soldier! We missed you in our squad. Ready to drop in and play?",
+    "action_suggestion": "Let’s learn something new today!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "grades35",
+    "message": "Welcome back, soldier! We missed you this week. Ready to drop in and play? Let’s have fun together! 😊",
+    "action_suggestion": "Join your squad for a fun game!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "grades35",
+    "message": "Welcome back, soldier! Your squad missed you! Ready to drop in and have fun learning together?",
+    "action_suggestion": "Let’s jump into a new adventure!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "grades35",
+    "message": "Welcome back, soldier! Your squad missed you! Ready to drop in and have fun learning?",
+    "action_suggestion": "Join a fun game today!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "grades68",
+    "message": "Welcome back, soldier! Your squad missed you! Ready to drop in and win?",
+    "action_suggestion": "Gear up for today’s challenge!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "grades68",
+    "message": "Welcome back, soldier! Your squad missed you. Ready to drop in and win big?",
+    "action_suggestion": "Join a mission now!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "grades68",
+    "message": "Welcome back, soldier! Your squad missed you! Ready to drop in and win some learning battles?",
+    "action_suggestion": "Gear up for a fun challenge!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "grades68",
+    "message": "Welcome back, soldier! Your squad missed you! Ready to drop in and win some learning battles?",
+    "action_suggestion": "Gear up for a fun challenge!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "grades68",
+    "message": "Welcome back, soldier! Your squad missed you! Ready to drop in and win some learning battles?",
+    "action_suggestion": "Jump into a quick quiz!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "grades912",
+    "message": "Welcome back, soldier! Your squad missed you. Ready to drop in and win this learning battle?",
+    "action_suggestion": "Gear up for today’s mission!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "grades912",
+    "message": "Welcome back, soldier! The squad missed you. Ready to drop in and win this learning battle?",
+    "action_suggestion": "Check out your latest mission!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "grades912",
+    "message": "Welcome back, soldier! The squad missed you. Ready to drop in and win this learning battle?",
+    "action_suggestion": "Check out your missions!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "grades912",
+    "message": "Welcome back, soldier! Your squad missed you. Ready to drop in and win this learning battle?",
+    "action_suggestion": "Check out your new missions!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "grades912",
+    "message": "Welcome back, soldier! Your squad missed you. Ready to drop in and conquer learning together?",
+    "action_suggestion": "Jump into a quick challenge!",
+    "tone": "welcoming",
+    "theme": "battle"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "k2",
+    "message": "Welcome back, your majesty! The kingdom missed you! We're so happy you're here to rule with us again! 🎉",
+    "action_suggestion": "Let's explore the castle together!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "k2",
+    "message": "Welcome back, Your Majesty! The kingdom missed you so much! We're thrilled you're here to rule again! 🎉",
+    "action_suggestion": "Let's explore the castle together!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "k2",
+    "message": "Welcome back, your majesty! The kingdom missed you so much! We're thrilled you're here to rule learning again! 🎉",
+    "action_suggestion": "Let's explore a fun story together!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "k2",
+    "message": "Welcome back, your majesty! The kingdom missed you so much! 🎉 Let’s have fun learning together again!",
+    "action_suggestion": "Let’s explore a new story!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "k2",
+    "message": "Welcome back, Your Majesty! The kingdom missed you so much! We're thrilled to see you. Keep ruling with your amazing ideas! 🎉",
+    "action_suggestion": "Let's explore a new story together!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "grades35",
+    "message": "Welcome back, your majesty! The kingdom missed you! We're so happy you're here to learn and play again! 😊",
+    "action_suggestion": "Let's explore the castle together!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "grades35",
+    "message": "Welcome back, Your Majesty! The kingdom missed you! We're so happy you're here to learn and play again! 😊",
+    "action_suggestion": "Let's explore the castle together!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "grades35",
+    "message": "Welcome back, your majesty! The kingdom missed you so much! We're excited to have fun learning together again!",
+    "action_suggestion": "Let's explore the castle of knowledge!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "grades35",
+    "message": "Welcome back, your majesty! The kingdom missed you so much! We're thrilled you're here to continue our magical journey!",
+    "action_suggestion": "Let's explore the castle together!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "grades35",
+    "message": "Welcome back, your majesty! The kingdom missed you so much! Let’s have fun learning together again! 😊",
+    "action_suggestion": "Explore a new story!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "grades68",
+    "message": "Welcome back, your majesty! The kingdom missed you! We're so glad you're here to rule again!",
+    "action_suggestion": "Let's conquer some fun learning today!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "grades68",
+    "message": "Welcome back, your majesty! The kingdom missed you. Let’s rule with fun learning today! 👍",
+    "action_suggestion": "Try a new quest!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "grades68",
+    "message": "Welcome back, Your Majesty! The kingdom missed you this week. We're so glad you're here to rule again!",
+    "action_suggestion": "Let's explore a new quest today!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "grades68",
+    "message": "Welcome back, your majesty! The kingdom missed you! We're thrilled you're here—let's rule the school together!",
+    "action_suggestion": "Share a fun story from your break!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "grades68",
+    "message": "Welcome back, Your Majesty! The kingdom missed you! We're thrilled you're here. Keep ruling with your awesome skills!",
+    "action_suggestion": "Check out a new quest!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "grades912",
+    "message": "Welcome back, Your Majesty! The kingdom missed you. We're thrilled you're here to continue your royal journey!",
+    "action_suggestion": "Explore a new quest today!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "grades912",
+    "message": "Welcome back, Your Majesty! The kingdom missed you. Let's continue ruling with wisdom and fun!",
+    "action_suggestion": "Explore a new learning quest today!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "grades912",
+    "message": "Welcome back, Your Majesty! The kingdom missed you. We're thrilled you're here to continue your royal journey!",
+    "action_suggestion": "Explore a new quest today!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "grades912",
+    "message": "Welcome back, Your Majesty! The kingdom missed you. We're thrilled you're here to continue your royal journey!",
+    "action_suggestion": "Explore a new quest today!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "grades912",
+    "message": "Welcome back, Your Majesty! The kingdom missed you. We're thrilled you're here to continue your royal journey!",
+    "action_suggestion": "Explore a new quest today!",
+    "tone": "welcoming",
+    "theme": "princess"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "k2",
+    "message": "Welcome back, dino friend! Roar! We missed you and can’t wait to explore more fun together!",
+    "action_suggestion": "Let’s stomp into learning today!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "k2",
+    "message": "Welcome back, dino friend! Roar! We missed you! Let's have fun learning together again!",
+    "action_suggestion": "Share a dino story with us!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "k2",
+    "message": "Welcome back, dino friend! Roar! We missed you this week. Let’s have fun learning together again!",
+    "action_suggestion": "Draw your favorite dinosaur!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "k2",
+    "message": "Welcome back, dino friend! Roar! We missed you! Let’s stomp into learning together again!",
+    "action_suggestion": "Draw your favorite dinosaur!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "k2",
+    "message": "Welcome back, dino friend! Roar! We missed you! Let’s have fun learning together again!",
+    "action_suggestion": "Try a quick dino quiz!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "grades35",
+    "message": "Welcome back, dino friend! Roar! We missed you. Let's have fun learning together again!",
+    "action_suggestion": "Let's stomp into a new story!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "grades35",
+    "message": "Welcome back, dino friend! Roar! We missed you! Let’s have fun learning together again!",
+    "action_suggestion": "Let’s stomp into a new story!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "grades35",
+    "message": "Welcome back, dino friend! Roar! We missed you. Let’s have fun learning together again!",
+    "action_suggestion": "Stomp like a dino today!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "grades35",
+    "message": "Welcome back, dino friend! Roar! We missed you and are so happy you're here to learn and play!",
+    "action_suggestion": "Let's stomp into a fun story!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "grades35",
+    "message": "Welcome back, dino friend! Roar! We missed you and are so happy you're here to learn again!",
+    "action_suggestion": "Let's stomp through some fun activities!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "grades68",
+    "message": "Welcome back, dino friend! Roar! We missed you. Let’s stomp through some fun learning together!",
+    "action_suggestion": "Check out a new dino quiz!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "grades68",
+    "message": "Welcome back, dino friend! Roar! We missed you. Let’s stomp through learning together again!",
+    "action_suggestion": "Check out a fun quiz!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "grades68",
+    "message": "Welcome back, dino friend! Roar! We're so glad you're here. Let's stomp through learning together!",
+    "action_suggestion": "Check out a new dino game!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "grades68",
+    "message": "Welcome back, dino friend! Roar! We missed you. Let’s stomp into learning together again!",
+    "action_suggestion": "Check out a fun dino quiz!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "grades68",
+    "message": "Welcome back, dino friend! Roar! We're so glad you're here. Let's keep exploring together!",
+    "action_suggestion": "Check out a fun quiz!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "grades912",
+    "message": "Welcome back, dino friend! Roar! We’re thrilled you’re here. Let’s stomp through learning together!",
+    "action_suggestion": "Check out today’s fun challenge!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "grades912",
+    "message": "Welcome back, dino friend! Roar! We missed you. Let’s stomp through learning together again!",
+    "action_suggestion": "Check out today’s fun quiz!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "grades912",
+    "message": "Welcome back, dino friend! Roar! You're back after a week. We're thrilled to see you continue your amazing journey!",
+    "action_suggestion": "Check out a new challenge!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "grades912",
+    "message": "Welcome back, dino friend! Roar! We're thrilled you're here. Let's continue our awesome learning adventure together!",
+    "action_suggestion": "Check out a new dino challenge!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "grades912",
+    "message": "Welcome back, dino friend! Roar! We're thrilled to see you. Let's continue exploring together!",
+    "action_suggestion": "Check out a new lesson!",
+    "tone": "welcoming",
+    "theme": "dinosaur"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "k2",
+    "message": "Welcome back, astronaut! Mission control missed you! Let’s blast off to learning fun together again! 🚀",
+    "action_suggestion": "Share a space story!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "k2",
+    "message": "Welcome back, astronaut! Mission control missed you! Let's blast off on new learning adventures together! 🎉",
+    "action_suggestion": "Share a space story!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "k2",
+    "message": "Welcome back, astronaut! Mission control missed you so much! We're thrilled you're here to explore with us again! 🚀",
+    "action_suggestion": "Let's blast off with a fun story!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "k2",
+    "message": "Welcome back, astronaut! Mission control missed you so much! Let’s blast off to learning again! 🎉",
+    "action_suggestion": "Draw your space adventure!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "k2",
+    "message": "Welcome back, astronaut! Mission control missed you! We're so excited to explore space with you again! 🚀",
+    "action_suggestion": "Let's blast off with a fun quiz!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "grades35",
+    "message": "Welcome back, astronaut! Mission control missed you! We're so happy you're here to explore more space adventures with us!",
+    "action_suggestion": "Let's blast off together!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "grades35",
+    "message": "Welcome back, astronaut! Mission control missed you! We're so happy you're here to explore more space adventures with us! 😊",
+    "action_suggestion": "Blast off with a fun game!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "grades35",
+    "message": "Welcome back, astronaut! Mission control missed you! We’re so happy you’re here to explore with us again!",
+    "action_suggestion": "Let’s blast off to new adventures!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "grades35",
+    "message": "Welcome back, astronaut! Mission control missed you! We're so happy you're here to explore with us again! 🚀",
+    "action_suggestion": "Let's blast off with a fun story!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "grades35",
+    "message": "Welcome back, astronaut! Mission control missed you! We're so happy you're here to explore again! 😊",
+    "action_suggestion": "Let's blast off with a fun game!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "grades68",
+    "message": "Welcome back, astronaut! Mission control missed you. Let’s blast off into learning again! 🚀",
+    "action_suggestion": "Check out today’s fun quiz!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "grades68",
+    "message": "Welcome back, astronaut! Mission control missed you! Ready to blast off with learning again?",
+    "action_suggestion": "Check out a new space quiz!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "grades68",
+    "message": "Welcome back, astronaut! Mission control missed you after a week away. Let’s blast off again!",
+    "action_suggestion": "Check out your next mission!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "grades68",
+    "message": "Welcome back, astronaut! Mission control missed you! We're super glad you're here to explore with us again!",
+    "action_suggestion": "Blast off with a fun project!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "grades68",
+    "message": "Welcome back, astronaut! Mission control missed you! We're so glad you're here to explore learning again!",
+    "action_suggestion": "Blast off with a fun quiz!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "grades912",
+    "message": "Welcome back, astronaut! Mission control missed you. We're thrilled to have you on board again for exciting learning adventures!",
+    "action_suggestion": "Blast off with a new lesson!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "grades912",
+    "message": "Welcome back, astronaut! Mission control missed you. Let’s continue exploring learning together!",
+    "action_suggestion": "Blast off with a new lesson!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "grades912",
+    "message": "Welcome back, astronaut! Mission control missed you. We're thrilled you're here to continue exploring with us!",
+    "action_suggestion": "Blast off with a new lesson!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "grades912",
+    "message": "Welcome back, astronaut! Mission control missed you. We're thrilled to have you aboard again. Keep exploring!",
+    "action_suggestion": "Check out your latest mission tasks!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "grades912",
+    "message": "Welcome back, astronaut! Mission control missed you. We’re thrilled you’re here to continue your learning journey!",
+    "action_suggestion": "Blast off with a new lesson!",
+    "tone": "welcoming",
+    "theme": "space"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "k2",
+    "message": "Welcome back, ninja! 🎉 The dojo missed you! Ready to jump into fun learning again?",
+    "action_suggestion": "Let’s train with a new game!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "k2",
+    "message": "Welcome back, ninja! The dojo missed you! Let’s keep training together. 🎉",
+    "action_suggestion": "Try a fun ninja challenge today!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "k2",
+    "message": "Welcome back, ninja! The dojo missed you! Let’s jump into fun learning adventures together again! 🎉",
+    "action_suggestion": "Try a quick ninja challenge today!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "k2",
+    "message": "Welcome back, ninja! The dojo missed you! Let’s keep training together. 🎉",
+    "action_suggestion": "Try a fun ninja challenge today!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "k2",
+    "message": "Welcome back, ninja! The dojo missed you! We're so excited to train with you again! 🎉",
+    "action_suggestion": "Try a fun challenge today!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "grades35",
+    "message": "Welcome back, ninja! The dojo missed you! Let’s have fun learning together again! 😊",
+    "action_suggestion": "Try a quick ninja challenge today!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "grades35",
+    "message": "Welcome back, ninja! The dojo missed you. Let’s have fun learning together again! 😊",
+    "action_suggestion": "Try a new ninja challenge today!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "grades35",
+    "message": "Welcome back, ninja! The dojo missed you! Let’s have fun learning together again! 😊",
+    "action_suggestion": "Try a new ninja challenge today!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "grades35",
+    "message": "Welcome back, ninja! The dojo missed you! Let’s have fun learning together again! 😊",
+    "action_suggestion": "Try a new ninja challenge today!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "grades35",
+    "message": "Welcome back, ninja! The dojo missed you! Let’s jump in and have fun learning together again! 😊",
+    "action_suggestion": "Try a quick ninja challenge today!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "grades68",
+    "message": "Welcome back, ninja! The dojo missed you. Let’s keep training together!",
+    "action_suggestion": "Try a quick challenge today!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "grades68",
+    "message": "Welcome back, ninja! The dojo missed you. Ready to train again? Let's keep going!",
+    "action_suggestion": "Try a quick challenge today!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "grades68",
+    "message": "Welcome back, ninja! The dojo missed you! Ready to train again? Let's keep going!",
+    "action_suggestion": "Try a quick challenge today!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "grades68",
+    "message": "Welcome back, ninja! The dojo missed you! Ready to slice through some learning? Let’s go!",
+    "action_suggestion": "Check out a new challenge!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "grades68",
+    "message": "Welcome back, ninja! The dojo missed you! Ready to train again? Let’s keep going!",
+    "action_suggestion": "Try a quick challenge today!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 1,
+    "days_away_max": 2,
+    "age_group": "grades912",
+    "message": "Welcome back, ninja! The dojo missed you. Let’s keep mastering new skills together!",
+    "action_suggestion": "Jump into a quick challenge today!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 3,
+    "days_away_max": 6,
+    "age_group": "grades912",
+    "message": "Welcome back, ninja! The dojo missed you. Let’s keep mastering new skills together!",
+    "action_suggestion": "Check out a new lesson!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 7,
+    "days_away_max": 13,
+    "age_group": "grades912",
+    "message": "Welcome back, ninja! The dojo missed you. Let’s sharpen those skills together again!",
+    "action_suggestion": "Try a quick challenge today!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 14,
+    "days_away_max": 29,
+    "age_group": "grades912",
+    "message": "Welcome back, ninja! The dojo missed you. Let’s sharpen your skills together again!",
+    "action_suggestion": "Try a new challenge today!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  },
+  {
+    "days_away_min": 30,
+    "days_away_max": null,
+    "age_group": "grades912",
+    "message": "Welcome back, ninja! The dojo missed you. Let's sharpen your skills and continue your journey!",
+    "action_suggestion": "Check out a new challenge!",
+    "tone": "welcoming",
+    "theme": "ninja"
+  }
+]

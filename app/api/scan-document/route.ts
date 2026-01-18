@@ -6,11 +6,6 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY!
 export async function POST(req: NextRequest) {
   try {
     const supabase = await createServerSupabaseClient()
-    const { data: { user } } = await supabase.auth.getUser()
-
-    if (!user) {
-      return NextResponse.json({ error: 'Not logged in' }, { status: 401 })
-    }
 
     const formData = await req.formData()
     const image = formData.get('image') as File
@@ -39,16 +34,23 @@ export async function POST(req: NextRequest) {
     const base64 = Buffer.from(bytes).toString('base64')
     const mimeType = image.type || 'image/jpeg'
 
-    const geminiResponse = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro-preview-06-05:generateContent?key=${GEMINI_API_KEY}`,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{
-            parts: [
-              {
-                text: `You are a helpful assistant that extracts information from school documents.
+    // Retry logic for Gemini API (handles 503 overload errors)
+    let geminiResponse
+    let lastError
+    const maxRetries = 3
+
+    for (let attempt = 1; attempt <= maxRetries; attempt++) {
+      try {
+        geminiResponse = await fetch(
+          `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`,
+          {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              contents: [{
+                parts: [
+                  {
+                    text: `You are a helpful assistant that extracts information from school documents.
 
 This is a ${docType}. Please extract ALL text and information from this image.
 
@@ -69,22 +71,50 @@ Format your response as JSON:
 }
 
 IMPORTANT: Return ONLY valid JSON, no markdown or extra text.`
-              },
-              {
-                inline_data: {
-                  mime_type: mimeType,
-                  data: base64
-                }
-              }
-            ]
-          }]
-        })
-      }
-    )
+                  },
+                  {
+                    inline_data: {
+                      mime_type: mimeType,
+                      data: base64
+                    }
+                  }
+                ]
+              }]
+            })
+          }
+        )
 
-    if (!geminiResponse.ok) {
-      const err = await geminiResponse.text()
-      throw new Error(`Gemini API error: ${err}`)
+        if (geminiResponse.ok) {
+          break // Success, exit retry loop
+        }
+
+        const errorText = await geminiResponse.text()
+        lastError = errorText
+
+        // If 503 (overloaded) and not last attempt, wait and retry
+        if (geminiResponse.status === 503 && attempt < maxRetries) {
+          const waitTime = Math.pow(2, attempt) * 1000 // Exponential backoff: 2s, 4s
+          console.log(`Gemini overloaded, retrying in ${waitTime}ms (attempt ${attempt}/${maxRetries})`)
+          await new Promise(resolve => setTimeout(resolve, waitTime))
+          continue
+        }
+
+        // Other error or last attempt failed
+        throw new Error(`Gemini API error: ${errorText}`)
+      } catch (fetchError: any) {
+        lastError = fetchError.message
+        if (attempt < maxRetries) {
+          const waitTime = Math.pow(2, attempt) * 1000
+          console.log(`Gemini request failed, retrying in ${waitTime}ms (attempt ${attempt}/${maxRetries})`)
+          await new Promise(resolve => setTimeout(resolve, waitTime))
+          continue
+        }
+        throw fetchError
+      }
+    }
+
+    if (!geminiResponse || !geminiResponse.ok) {
+      throw new Error(`Gemini API error after ${maxRetries} attempts: ${lastError}`)
     }
 
     const geminiData = await geminiResponse.json()
@@ -99,14 +129,16 @@ IMPORTANT: Return ONLY valid JSON, no markdown or extra text.`
     }
 
     const { data: savedDoc, error: saveError } = await supabase
-      .from('kid_scanned_docs')
+      .from('scanned_homework')
       .insert({
-        student_id: studentId,
-        doc_type: docType,
+        child_id: studentId,
+        category: docType,
         image_url: publicUrl,
-        extracted_text: parsed.extracted_text,
-        ai_summary: parsed.summary,
-        subject: parsed.subject || subject
+        file_name: fileName,
+        file_size: image.size,
+        subject: parsed.subject || subject,
+        notes: parsed.extracted_text,
+        ai_analysis: parsed.summary
       })
       .select()
       .single()
@@ -115,28 +147,52 @@ IMPORTANT: Return ONLY valid JSON, no markdown or extra text.`
       throw new Error(`Save failed: ${saveError.message}`)
     }
 
-    if (parsed.items && parsed.items.length > 0) {
-      for (const item of parsed.items) {
-        if (docType === 'homework' || item.type === 'assignment') {
-          await supabase.from('kid_homework').insert({
-            student_id: studentId,
+    // Handle syllabus: Call Grok to analyze and generate daily schedule
+    if (docType === 'syllabus') {
+      console.log('📋 Syllabus detected - calling Grok to generate prep schedule...')
+
+      try {
+        const { data: supabaseUrl } = supabase.storage.from('scanned-docs').getPublicUrl('dummy')
+        const baseUrl = supabaseUrl.publicUrl.split('/storage/')[0]
+
+        const grokResponse = await fetch(`${baseUrl}/functions/v1/analyze-syllabus`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${process.env.SUPABASE_SERVICE_ROLE_KEY}`
+          },
+          body: JSON.stringify({
+            studentId: studentId,
+            extractedText: parsed.extracted_text,
+            items: parsed.items || [],
             subject: parsed.subject || subject,
-            title: item.title,
-            description: item.details,
-            due_date: item.date || null,
-            source_doc_id: savedDoc.id
+            docId: savedDoc.id
           })
-        } else if (docType === 'calendar' || item.type === 'event') {
-          await supabase.from('kid_school_events').insert({
-            student_id: studentId,
-            event_type: item.type === 'test' ? 'test' : 'event',
-            title: item.title,
-            subject: parsed.subject || subject,
-            event_date: item.date || null,
-            notes: item.details,
-            source_doc_id: savedDoc.id
-          })
+        })
+
+        if (grokResponse.ok) {
+          const grokResult = await grokResponse.json()
+          console.log(`✅ Generated ${grokResult.lessons_created || 0} prep lessons`)
+        } else {
+          console.error('Grok syllabus analysis failed:', await grokResponse.text())
         }
+      } catch (grokError: any) {
+        console.error('Error calling Grok for syllabus:', grokError.message)
+        // Don't fail the whole scan if Grok fails
+      }
+    }
+
+    // Handle calendar items (extract to separate table)
+    if (docType === 'calendar' && parsed.items && parsed.items.length > 0) {
+      for (const item of parsed.items) {
+        await supabase.from('extracted_calendar_events').insert({
+          child_id: studentId,
+          document_id: savedDoc.id,
+          event_title: item.title || 'Untitled Event',
+          event_date: item.date || null,
+          event_type: item.type || 'other',
+          description: item.details
+        })
       }
     }
 

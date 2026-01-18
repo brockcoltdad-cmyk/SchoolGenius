@@ -1,0 +1,352 @@
+[
+  {
+    "question_type": "this_is_hard",
+    "subject": "Math",
+    "age_group": "k2",
+    "response": "I know it’s tricky, but you’re a math star! 🌟 Keep trying, and let’s count together! You’ve got this! 🎉",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Math",
+    "age_group": "grades35",
+    "response": "I know it feels tricky, but you're doing great! Let's break it down together. Think about one small step at a time. You've got this! 💡",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Math",
+    "age_group": "grades68",
+    "response": "I get it, Math can be tough! Keep pushing—you’ve got this. Break it down into smaller steps, and it’ll start making sense. I’m here to help!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Math",
+    "age_group": "grades912",
+    "response": "I know math can be challenging, but you're doing great by sticking with it! Break it down into smaller steps, and I'm here to help with any part.",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Reading",
+    "age_group": "k2",
+    "response": "I know it’s tough, but you’re doing great! 🌟 Let’s sound out words together slowly. You’ve got this! 🎉",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "response": "I know reading can feel tough, but you're doing great! Take it slow, sound out tricky words, and picture the story in your mind. You've got this! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "response": "I get it, reading can be tough! Keep going—you’ve got this. Try breaking it into smaller chunks and focus on one part at a time. I’m here to help!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "response": "I know reading can be challenging, but you're doing great! Break texts into smaller sections and focus on main ideas. Keep pushing—you’ve got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "response": "I know it’s tricky, but you’re doing awesome! 🌟 Keep trying, and sound out each letter. You’ve got this! 🎉",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "response": "I know spelling can be tricky, but you're doing great! Break words into smaller parts and sound them out. Keep trying, and you'll get it! I'm proud of you! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "response": "I get it, spelling can be tricky! Keep practicing—try breaking words into smaller parts or saying them out loud. You’ve got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "response": "I know spelling can be challenging, but you're doing great! Focus on breaking words into smaller parts and practice regularly. You've got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Coding",
+    "age_group": "k2",
+    "response": "Hey, coding can be tricky, but you're a superstar! 🌟 Keep trying little steps, and you'll get it! I'm cheering for you! 🎉",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "response": "I know coding can feel tricky, but you're doing great! Keep trying, and remember, every coder started just like you. Let's break it down together—small steps make big wins! 💡",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "response": "Hey, coding can be tough, but you’ve got this! Break it into small steps and tackle one at a time. Keep going, I’m rooting for you!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "response": "I know coding can be challenging, but you're doing great! Break it down into smaller steps and tackle one at a time. You've got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Typing",
+    "age_group": "k2",
+    "response": "I know it’s tricky, but you’re doing awesome! Keep practicing, and it’ll get easier. Tap those keys with a big smile! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "response": "I know typing can feel tricky at first! Keep practicing, and it’ll get easier. Focus on one key at a time, and soon your fingers will know just where to go. You’ve got this! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "response": "I get it, typing can be tricky at first! Keep practicing, and your fingers will get faster. Focus on one key at a time. You’ve got this! 💪",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "response": "I know typing can be challenging, but you're doing great! Focus on small, consistent practice sessions. Keep at it, and you'll improve over time!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Math",
+    "age_group": "k2",
+    "response": "I know it’s tricky, but you’re doing awesome! Let’s try together—count with your fingers! You’ve got this! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Math",
+    "age_group": "grades35",
+    "response": "I know it feels tough, but you’ve got this! Let’s break it down together. Think about the steps we’ve learned—start small and build up. I’m here to help!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Math",
+    "age_group": "grades68",
+    "response": "I get it, Math can be tough! Keep pushing—you’ve got this. Break it down into smaller steps, and don’t be afraid to ask for help. You’re stronger than you think!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Math",
+    "age_group": "grades912",
+    "response": "I know math can feel tough, but you're doing great by sticking with it! Break it down into smaller steps, and I'm here to help with any part.",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Reading",
+    "age_group": "k2",
+    "response": "I know it’s tricky, but you’re doing awesome! Keep trying, and let’s sound out words together! You’ve got this! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "response": "I know reading can feel tricky, but you're doing great! Let's take it slow and sound out words together. You've got this! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "response": "I get it, reading can be tough! Keep going—you’ve got this. Try breaking it into smaller chunks and focus on the main ideas. We’re in this together!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "response": "I know reading can be challenging, but you're doing great! Break it into smaller sections and focus on the main ideas. Keep pushing—you’ve got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "response": "I know it’s tricky, but you’re doing awesome! Keep trying, and let’s sound out the words together! You’ve got this! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "response": "I know spelling can be tricky, but you’ve got this! Break words into smaller parts and sound them out. Keep trying, and I’m here to help! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "response": "I get it, spelling can be tough! Keep practicing—try breaking words into smaller parts or using fun tricks like rhymes. You’ve got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "response": "I know spelling can be challenging, but you're doing great! Focus on patterns and practice regularly. You've got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Coding",
+    "age_group": "k2",
+    "response": "Coding can be tricky, but you’re doing awesome! 🌟 Keep trying little steps, and you’ll get it! I’m cheering for you! 🎉",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "response": "I know coding can feel tricky, but you're doing great! Keep trying, and remember, every coder started just like you. Let's break it down together—small steps make big wins! 💡",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "response": "Hey, I get it, coding can be tough! Keep pushing through, and break it into small steps. You’ve got this! 💪",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "response": "I know coding can feel tough, but you're doing great! Break it down into smaller steps and tackle one at a time. You've got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Typing",
+    "age_group": "k2",
+    "response": "You're doing awesome! Typing gets easier with practice. Keep tapping those keys, and you'll be super fast soon! Yay! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "response": "I know typing can feel tricky, but you're doing great! Keep practicing, and it'll get easier. Focus on one key at a time. You've got this! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "response": "I get it, typing can be tough at first! Keep practicing, and your fingers will get the hang of it. Focus on small steps—speed comes with time. You’ve got this! 💪",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "response": "I know typing can be challenging, but you're doing great! Focus on small, consistent practice daily. Keep at it, and you'll improve with time!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Math",
+    "age_group": "k2",
+    "response": "Hey, math can be tricky, but you're a superstar! 🌟 Keep trying, and you'll get it! Let's count together—ready? 🎉",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Math",
+    "age_group": "grades35",
+    "response": "I know it feels tough, but you’re doing great! Let’s break it down together. Think about the steps we’ve learned—can you try the first one? I’m here to help! 🎯",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Math",
+    "age_group": "grades68",
+    "response": "I get it, Math can be tough! Keep pushing—you’ve got this. Break it into smaller steps and try again. I’m here if you need a hand!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Math",
+    "age_group": "grades912",
+    "response": "I know math can feel tough, but you're doing great by sticking with it! Break it down into smaller steps and focus on one part at a time. You've got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Reading",
+    "age_group": "k2",
+    "response": "I know it’s tricky, but you’re doing awesome! 🌟 Let’s sound out words together. You’ve got this! 🎉",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "response": "I know reading can feel tricky, but you're doing great! Let's take it one step at a time. Try sounding out tough words slowly. You've got this! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "response": "I get it, reading can be tough! Keep going, you’ve got this. Try breaking it into smaller parts—focus on one paragraph at a time. You’re stronger than you think!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "response": "I know reading can be challenging, but you’ve got this! Break it into smaller sections, and focus on the main ideas. Keep pushing—you’re building important skills!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "response": "I know it’s tricky, but you’re doing awesome! 🌟 Let’s sound out the words together. You’ve got this! 🎉",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "this_is_hard",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "response": "I know spelling can be tricky, but you’ve got this! Break words into smaller parts and sound them out. I’m here to help, and every step gets easier!",
+    "response_tone": "encouraging"
+  }
+]

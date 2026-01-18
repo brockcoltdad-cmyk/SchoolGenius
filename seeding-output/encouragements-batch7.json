@@ -1,0 +1,302 @@
+[
+  {
+    "trigger": "shows_improvement",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Hey, your spelling has really improved! I can see the hard work you’re putting in. Keep it up!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Hey, I’ve noticed your spelling has really improved! That’s awesome—keep up the great work!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "I’m impressed by your progress in spelling! Your hard work is clearly paying off. Keep it up!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "I'm impressed by your spelling progress! Your hard work is clearly paying off. Keep it up!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, you're getting so good at coding! I'm super proud of you! Keep it up! 🎉💻"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, you're getting so good at coding! I'm super proud of your awesome progress! Keep it up! 🌟💻"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Wow, your coding skills are getting awesome! Keep solving those tricky problems—you’re doing amazing!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Wow, your coding skills are soaring! I’m so proud of how hard you’re working—keep it up!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Hey, your coding skills are getting awesome! I can see how hard you’re working—keep it up!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Hey, your coding skills are getting awesome! I can see how hard you’re working—keep it up!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "I'm impressed by your progress in coding! Your hard work is clearly paying off. Keep it up!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "I'm impressed by your coding progress! Your hard work and improved skills are truly paying off. Keep it up!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, your typing is super speedy now! You're doing amazing! Keep it up! 🚀💻"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, you're typing so much faster now! Great job, keep it up! 🎉💻"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Wow, your typing is getting so fast and accurate! Keep practicing, you're doing amazing!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Wow, your typing is getting so fast and accurate! Keep practicing, you're doing amazing!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Hey, your typing speed is awesome now! I can tell you’ve been practicing. Keep it up!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Hey, your typing speed is awesome now! I can see how much you've improved—keep it up!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "I'm impressed by your typing progress! Your speed and accuracy have noticeably improved—great work!"
+  },
+  {
+    "trigger": "shows_improvement",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "I'm impressed by your typing progress! Your speed and accuracy have noticeably improved—keep up the great work!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Wow, your unique math idea is awesome! I'm so proud of your creativity! Keep thinking big! 🌟💡"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Wow, your unique idea in Math is amazing! I love how you think differently! Keep it up! 🌟😊"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Wow, I love how you tried a unique way to solve that math problem! Keep thinking creatively, you’re awesome!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Wow, I love how you tried a unique way to solve that math problem! Keep thinking outside the box!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Hey, that was a super cool way to solve the problem! I’m impressed by your unique thinking!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Hey, that unique solution in Math was awesome! Thinking outside the box is super cool and smart!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "I'm impressed by your unique approach to solving this problem. Your creativity in math is inspiring—keep thinking outside the box!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "I’m impressed by your unique approach to solving this problem. Thinking outside the box is a valuable skill!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, your unique idea for reading is amazing! I’m so proud of you! Keep being creative! 🌟📚"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, your unique idea for reading is super cool! I’m so proud of you! Keep thinking big! 🌟📚"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Wow, I love how you tried a unique way to understand the story! Your creativity makes reading so exciting!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Wow, I love how you tried a unique way to understand the story! Your creativity rocks!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, I love how you tried a unique way to understand the story! That’s super creative and cool!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, I love how you tried a unique way to understand the story! That’s super creative and awesome!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "I’m impressed by your unique approach to this reading challenge. Your creativity stands out and brings fresh insight!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "I'm impressed by your unique approach to this reading challenge. Your creativity truly stands out and enriches our discussions!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Wow, your unique spelling idea is super cool! I’m so proud of you for trying something new! Keep it up! 🌟👍"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Wow, your unique spelling idea is super cool! I love how you think differently! Keep it up! 🌟😊"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Wow, I love how you tried a unique way to tackle spelling! That’s super creative—keep thinking outside the box!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Wow, I love how you tried a unique way to spell that word! Your creativity rocks—keep thinking outside the box!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Hey, I love how you tried a unique way to tackle spelling! That’s super creative and awesome to see!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Hey, I love how you tried a unique way to tackle spelling! That’s super creative and cool of you!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "I’m impressed by your unique approach to spelling challenges! Your creativity in problem-solving is remarkable and inspiring. Keep thinking outside the box!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "I'm impressed by your unique approach to spelling challenges. Your creativity stands out and shows real problem-solving skill!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, your unique idea in coding is amazing! I’m so proud of you! Keep being creative! 🌟💻"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, your unique coding idea is amazing! I’m so proud of your creativity! Keep thinking big! 🌟💻"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Wow, I love how you tried a unique solution in coding! That’s super creative and brave—keep thinking outside the box!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Wow, I love how you tried a unique solution in coding! That’s super creative and awesome!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Hey, I love how you tried a unique solution in coding! That’s super creative and brave. Keep experimenting!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Hey, that unique solution you tried in coding was awesome! Thinking outside the box is super cool!"
+  }
+]

@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { useParams, useRouter } from 'next/navigation';
-import { ArrowLeft, Check, Volume2, VolumeX, Mic, MicOff, ShoppingBag } from 'lucide-react';
+import { ArrowLeft, Check, Volume2, VolumeX, Mic, MicOff, ShoppingBag, TrendingUp, Trophy, Users, Target } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import PremiumCard from '@/components/ui/premium-card';
 import SkeletonLoader from '@/components/ui/skeleton-loader';
@@ -65,9 +65,14 @@ export default function SettingsPage() {
             'scifi', 'darkninja', 'y2k', 'zodiac', 'bookworm', 'dance', 'lofi', 'finance', 'gym', 'nightowl',
             'cleangirl', 'sage', 'coffee', 'study', 'parisian', 'wellness', 'vintage', 'moonlight', 'safari', 'farm',
             'candy', 'construction', 'firefighter', 'ocean', 'jungle', 'arctic', 'teddy', 'puppy', 'bug', 'train',
-            'beach', 'camping', 'volcano', 'planet', 'slime', 'bracelet', 'artstudio', 'spaday', 'petgroomer', 'moviestar'
+            'beach', 'camping', 'volcano', 'planet', 'wwe', 'slime', 'bracelet', 'artstudio', 'spaday', 'petgroomer', 'moviestar'
           ]);
           setDisabledThemes([]);
+          // Load saved demo theme
+          const savedTheme = localStorage.getItem(`demo_theme_${kidId}`);
+          if (savedTheme) {
+            setTheme(savedTheme as ThemeId);
+          }
           setIsLoading(false);
           return;
         }
@@ -126,7 +131,10 @@ export default function SettingsPage() {
       const isDemoMode = typeof window !== 'undefined' && localStorage.getItem('demo_mode') === 'true';
       const isSimpleId = !kidId.match(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i);
 
-      if (!isDemoMode && !isSimpleId) {
+      if (isDemoMode || isSimpleId) {
+        // Demo mode: save theme to localStorage
+        localStorage.setItem(`demo_theme_${kidId}`, themeId);
+      } else {
         const supabase = createClient();
         const { error } = await supabase
           .from('children')
@@ -271,11 +279,83 @@ export default function SettingsPage() {
             </p>
           </div>
 
+          {/* Quick Links Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+          >
+            <Card className="border-2 bg-white/10 backdrop-blur-xl" style={{ borderColor: currentTheme.colors.primary + '40' }}>
+              <div className="p-6">
+                <h3 className="mb-4 text-xl font-bold" style={{ color: currentTheme.colors.primary }}>
+                  Quick Links
+                </h3>
+                <div className="grid gap-3 sm:grid-cols-4">
+                  <Link
+                    href={`/kid/${kidId}/progress`}
+                    className="group relative overflow-hidden rounded-xl border-2 bg-gradient-to-br from-blue-500/20 to-purple-500/20 p-4 transition-all hover:scale-105"
+                    style={{ borderColor: currentTheme.colors.primary + '40' }}
+                  >
+                    <div className="relative z-10 flex flex-col items-center gap-2">
+                      <TrendingUp className="h-8 w-8" style={{ color: currentTheme.colors.primary }} />
+                      <span className="font-semibold" style={{ color: currentTheme.colors.text }}>
+                        My Progress
+                      </span>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 opacity-0 transition-opacity group-hover:opacity-100" />
+                  </Link>
+
+                  <Link
+                    href={`/kid/${kidId}/achievements`}
+                    className="group relative overflow-hidden rounded-xl border-2 bg-gradient-to-br from-yellow-500/20 to-orange-500/20 p-4 transition-all hover:scale-105"
+                    style={{ borderColor: currentTheme.colors.primary + '40' }}
+                  >
+                    <div className="relative z-10 flex flex-col items-center gap-2">
+                      <Trophy className="h-8 w-8" style={{ color: currentTheme.colors.primary }} />
+                      <span className="font-semibold" style={{ color: currentTheme.colors.text }}>
+                        Achievements
+                      </span>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/10 to-orange-500/10 opacity-0 transition-opacity group-hover:opacity-100" />
+                  </Link>
+
+                  <Link
+                    href={`/kid/${kidId}/leaderboard`}
+                    className="group relative overflow-hidden rounded-xl border-2 bg-gradient-to-br from-green-500/20 to-emerald-500/20 p-4 transition-all hover:scale-105"
+                    style={{ borderColor: currentTheme.colors.primary + '40' }}
+                  >
+                    <div className="relative z-10 flex flex-col items-center gap-2">
+                      <Users className="h-8 w-8" style={{ color: currentTheme.colors.primary }} />
+                      <span className="font-semibold" style={{ color: currentTheme.colors.text }}>
+                        Leaderboard
+                      </span>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-green-500/10 to-emerald-500/10 opacity-0 transition-opacity group-hover:opacity-100" />
+                  </Link>
+
+                  <Link
+                    href={`/kid/${kidId}/placement-test`}
+                    className="group relative overflow-hidden rounded-xl border-2 bg-gradient-to-br from-indigo-500/20 to-pink-500/20 p-4 transition-all hover:scale-105"
+                    style={{ borderColor: currentTheme.colors.primary + '40' }}
+                  >
+                    <div className="relative z-10 flex flex-col items-center gap-2">
+                      <Target className="h-8 w-8" style={{ color: currentTheme.colors.primary }} />
+                      <span className="font-semibold text-center" style={{ color: currentTheme.colors.text }}>
+                        Placement Test
+                      </span>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/10 to-pink-500/10 opacity-0 transition-opacity group-hover:opacity-100" />
+                  </Link>
+                </div>
+              </div>
+            </Card>
+          </motion.div>
+
           <div>
             <motion.h2
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.3 }}
+              transition={{ delay: 0.4 }}
               className="mb-4 text-2xl font-bold"
               style={{ color: currentTheme.colors.primary }}
             >
@@ -530,9 +610,15 @@ export default function SettingsPage() {
               </div>
             </div>
 
-            <div className="mt-6 rounded-xl bg-blue-50 p-4">
-              <p className="text-sm text-blue-900">
-                💡 <strong>Tip:</strong> Sounds and voice help you learn! Ask a parent before turning these off.
+            <div
+              className="mt-6 rounded-xl p-4"
+              style={{
+                background: `${currentTheme.colors.primary}15`,
+                border: `1px solid ${currentTheme.colors.primary}30`
+              }}
+            >
+              <p className="text-sm" style={{ color: currentTheme.colors.text }}>
+                💡 <strong style={{ color: currentTheme.colors.primary }}>Tip:</strong> Sounds and voice help you learn! Ask a parent before turning these off.
               </p>
             </div>
           </Card>

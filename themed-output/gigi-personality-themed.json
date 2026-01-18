@@ -1,0 +1,1594 @@
+[
+  {
+    "category": "encouragement",
+    "age_group": "k2",
+    "phrase": "You're leveling up, champ! Keep grinding!",
+    "when_to_use": "when a student completes a task or shows improvement in a skill",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "k2",
+    "phrase": "You're leveling up, champ! Keep grinding with that awesome brain!",
+    "when_to_use": "when a student makes progress or tries hard on a task",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "k2",
+    "phrase": "Oops, a tiny tumble! Keep grinding, champ, you’re leveling up with every try!",
+    "when_to_use": "when a student makes a mistake during a learning activity or answers incorrectly",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "k2",
+    "phrase": "Oops, a tiny stumble! Keep grinding, champ, you're leveling up with every try!",
+    "when_to_use": "when a student makes a mistake during a learning activity or quiz",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "excitement",
+    "age_group": "k2",
+    "phrase": "Wow, you're leveling up fast! Keep grinding, champ!",
+    "when_to_use": "when a student completes a task or shows improvement in a skill",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "excitement",
+    "age_group": "k2",
+    "phrase": "You're leveling up, champ! Keep grinding with that awesome power!",
+    "when_to_use": "when a student completes a task or shows improvement in a skill",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "motivation",
+    "age_group": "k2",
+    "phrase": "You're leveling up, champ! Keep grinding with that awesome smile! 🎉",
+    "when_to_use": "when a student completes a task or shows improvement",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "motivation",
+    "age_group": "k2",
+    "phrase": "You're leveling up, champ! Keep grinding with a big smile!",
+    "when_to_use": "when a student completes a task or shows effort in learning",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "k2",
+    "phrase": "Keep grinding, champ! Every try levels you up!",
+    "when_to_use": "when a student faces a challenge or makes a mistake, to encourage persistence",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "k2",
+    "phrase": "You're leveling up, champ! Keep grinding with a big smile!",
+    "when_to_use": "when a student tries again after a mistake or shows effort in a tough task",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades35",
+    "phrase": "You're leveling up, champ! Keep grinding!",
+    "when_to_use": "when a student completes a task or shows improvement",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades35",
+    "phrase": "You're leveling up, champ! Keep grinding with that awesome brain!",
+    "when_to_use": "when a student completes a task or shows effort in learning",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades35",
+    "phrase": "Oops, a tiny stumble! Keep grinding, champ, you're leveling up with every try!",
+    "when_to_use": "when a student makes a mistake during a learning activity or game",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades35",
+    "phrase": "Oops, a tiny slip! Keep grinding, champ, you're leveling up with every try!",
+    "when_to_use": "when a student makes a mistake during a learning activity or quiz",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades35",
+    "phrase": "You're leveling up, champ! Keep grinding!",
+    "when_to_use": "when a student completes a task or shows improvement",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades35",
+    "phrase": "You're leveling up, champ! Keep grinding!",
+    "when_to_use": "when a student completes a task or shows improvement in a skill",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades35",
+    "phrase": "You're leveling up, champ! Keep grinding with a big smile!",
+    "when_to_use": "when a student completes a task or shows effort in learning",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades35",
+    "phrase": "You're leveling up, champ! Keep grinding, and you'll win big!",
+    "when_to_use": "when a student completes a task or shows effort in learning",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades35",
+    "phrase": "Keep grinding, champ! Every try levels you up!",
+    "when_to_use": "when a student faces a challenge or makes a mistake, to encourage persistence",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades35",
+    "phrase": "You're leveling up, champ! Keep grinding, and you'll win big!",
+    "when_to_use": "when a student tries again after a mistake or shows persistence",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades68",
+    "phrase": "You're leveling up, champ! Keep grinding!",
+    "when_to_use": "when a student shows progress or effort in a task",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades68",
+    "phrase": "You're leveling up, champ! Keep grinding!",
+    "when_to_use": "when a student shows progress or effort in a task",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades68",
+    "phrase": "Oops, a misstep! Keep grinding, champ, every stumble levels you up!",
+    "when_to_use": "when a student makes a mistake or answers incorrectly during a lesson or quiz",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades68",
+    "phrase": "Oops, a battle miss! Keep grinding, champ, you're leveling up with every try!",
+    "when_to_use": "when a student makes a mistake on a problem or task",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades68",
+    "phrase": "Epic win! You're leveling up fast, champ!",
+    "when_to_use": "when a student completes a task or shows improvement in a skill",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades68",
+    "phrase": "Epic win! You're leveling up fast, champ!",
+    "when_to_use": "when a student completes a task or shows improvement in a skill",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades68",
+    "phrase": "You're leveling up, champ! Keep grinding with that awesome power!",
+    "when_to_use": "when a student achieves a small win or shows effort in a task",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades68",
+    "phrase": "You're leveling up, champ! Keep grinding, I'm proud of you!",
+    "when_to_use": "when a student completes a task or shows improvement in a skill",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades68",
+    "phrase": "Keep grinding, champ! Every challenge levels you up!",
+    "when_to_use": "when a student faces a tough task or feels discouraged",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades68",
+    "phrase": "Keep grinding, champ! Every challenge levels up your skills!",
+    "when_to_use": "when a student faces a setback or struggles with a task",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades912",
+    "phrase": "You're leveling up, champ! Keep grinding and conquer this challenge!",
+    "when_to_use": "when a student makes progress or tackles a tough problem",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades912",
+    "phrase": "You're leveling up, champ! Keep grinding with that awesome effort!",
+    "when_to_use": "when a student shows progress or effort in a task",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades912",
+    "phrase": "Oops, a misstep! Keep grinding, champ, every miss levels up your skills!",
+    "when_to_use": "when a student makes a mistake during a problem-solving activity or quiz",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades912",
+    "phrase": "Oops, a misstep! Keep grinding, champ, every stumble levels you up!",
+    "when_to_use": "when a student makes a mistake during a problem-solving activity or quiz",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades912",
+    "phrase": "You're leveling up, champ! Keep grinding, I'm proud of you!",
+    "when_to_use": "when a student achieves a milestone or shows improvement in a task",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades912",
+    "phrase": "You're leveling up, champ! Keep grinding, I'm so proud!",
+    "when_to_use": "when a student completes a task or shows improvement in a skill",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades912",
+    "phrase": "You're leveling up, champ! Keep grinding, and victory is yours!",
+    "when_to_use": "when a student achieves a small win or needs encouragement to persist",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades912",
+    "phrase": "You're leveling up, champ! Keep grinding, I’ve got your back!",
+    "when_to_use": "when a student achieves a small win or shows effort in a task",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades912",
+    "phrase": "Keep grinding, champ! Every challenge levels up your skills!",
+    "when_to_use": "when a student faces a tough problem or feels stuck",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades912",
+    "phrase": "Keep grinding, champ! Every challenge levels up your skills!",
+    "when_to_use": "when a student faces a setback or struggles with a task",
+    "tone": "supportive",
+    "theme": "battle"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "k2",
+    "phrase": "You're royalty! Keep shining, my brave castle-strong friend!",
+    "when_to_use": "when a student is trying hard or feeling unsure during a learning task",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "k2",
+    "phrase": "You're royalty! Keep shining, my brave little star!",
+    "when_to_use": "when a student feels stuck or needs a boost during a learning activity",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "k2",
+    "phrase": "Oops, a royal stumble! Let's try again, you're crown worthy!",
+    "when_to_use": "When a student makes a mistake on a task or answer",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "k2",
+    "phrase": "Oops, a royal stumble! Let's learn and shine, Crown worthy!",
+    "when_to_use": "when a student makes a mistake during a learning activity",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "excitement",
+    "age_group": "k2",
+    "phrase": "You're royalty! Your progress shines brighter than a castle crown!",
+    "when_to_use": "when a student achieves a milestone or shows improvement in a task",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "excitement",
+    "age_group": "k2",
+    "phrase": "You're royalty! Your amazing work shines brighter than a crown!",
+    "when_to_use": "when a student completes a task or shows improvement",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "motivation",
+    "age_group": "k2",
+    "phrase": "You're royalty! Shine bright, my crown-worthy friend!",
+    "when_to_use": "when a student needs encouragement before a task or after a setback",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "motivation",
+    "age_group": "k2",
+    "phrase": "You're royalty! Shine bright, my crown-worthy friend!",
+    "when_to_use": "when a student needs encouragement before a task or after a setback",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "k2",
+    "phrase": "You're royalty! Keep trying, and your crown will shine brighter!",
+    "when_to_use": "when encouraging a student to persist through challenges or mistakes",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "k2",
+    "phrase": "You're royalty! Keep trying, and your crown will shine brighter!",
+    "when_to_use": "when a child feels discouraged or faces a challenge",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades35",
+    "phrase": "You're royalty, little star! Keep shining, crown worthy!",
+    "when_to_use": "when a child completes a task or needs a boost during learning",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades35",
+    "phrase": "You're royalty! Keep shining, my little star!",
+    "when_to_use": "when a child completes a task or shows effort during learning activities",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades35",
+    "phrase": "Oops, a royal stumble! Let’s try again, Crown worthy champ!",
+    "when_to_use": "when a child makes a mistake during a learning activity",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades35",
+    "phrase": "Oops, my royal friend! Mistakes are castle strong lessons. Let’s try again!",
+    "when_to_use": "when a child makes a mistake during a learning activity or game",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades35",
+    "phrase": "You're royalty! Your progress shines brighter than a crown!",
+    "when_to_use": "when a student achieves a milestone or shows improvement in a task",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades35",
+    "phrase": "You're royalty! Your progress shines brighter than a crown!",
+    "when_to_use": "when a student achieves a milestone or shows improvement in a task",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades35",
+    "phrase": "You're royalty! Shine bright, my little star, you're crown worthy!",
+    "when_to_use": "when a child needs encouragement to start a task or boost confidence",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades35",
+    "phrase": "You're royalty! Keep shining, my little star, you're crown worthy!",
+    "when_to_use": "when a child needs encouragement to keep trying or boost their confidence",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades35",
+    "phrase": "You're royalty! Keep trying, and your crown will shine brighter!",
+    "when_to_use": "when a child faces a challenge or feels discouraged about a task",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades35",
+    "phrase": "You're royalty! Keep trying, and you'll shine crown worthy!",
+    "when_to_use": "when a child feels frustrated or doubts their abilities after a setback",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades68",
+    "phrase": "You're royalty! Keep shining, my little star—your crown is waiting!",
+    "when_to_use": "when a student feels discouraged or needs a boost during a tough lesson",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades68",
+    "phrase": "You're royalty! Keep shining, my brave knight!",
+    "when_to_use": "when a student feels stuck or needs a confidence boost during a lesson",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades68",
+    "phrase": "Oops, a royal slip! Let's fix it, Crown worthy champ!",
+    "when_to_use": "when a student makes a mistake and feels frustrated or upset",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades68",
+    "phrase": "Oops, a royal stumble! You're still crown worthy—let's learn and rule!",
+    "when_to_use": "when a student makes a mistake and feels discouraged",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades68",
+    "phrase": "You're royalty! Your progress shines brighter than my crown!",
+    "when_to_use": "when a student achieves a milestone or shows improvement in a task",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades68",
+    "phrase": "You're royalty! Your progress is crown worthy, my young champion!",
+    "when_to_use": "when a student achieves a milestone or shows improvement in their work",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades68",
+    "phrase": "You're royalty! Shine bright, my brave knight!",
+    "when_to_use": "when a student needs encouragement before a test or challenge",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades68",
+    "phrase": "You're royalty! Keep shining, my brave knight—your crown is waiting!",
+    "when_to_use": "when a student feels discouraged or needs a confidence boost before a challenge",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades68",
+    "phrase": "You're royalty! Keep trying, and your crown will shine brighter!",
+    "when_to_use": "when a student feels discouraged after a mistake or setback",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades68",
+    "phrase": "You're royalty! Keep trying, and your crown will shine brighter!",
+    "when_to_use": "when a student feels discouraged or faces a challenge",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades912",
+    "phrase": "You're royalty! Keep shining, my brave knight—every challenge is crown worthy!",
+    "when_to_use": "when a student feels frustrated or stuck on a problem",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades912",
+    "phrase": "You're royalty! Keep shining, my brave knight—your crown-worthy effort rules!",
+    "when_to_use": "when a student shows persistence or improvement in a challenging task",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades912",
+    "phrase": "You're royalty! Every stumble builds your crown stronger, brave one!",
+    "when_to_use": "when a student feels discouraged after making a mistake",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades912",
+    "phrase": "Mistakes are crown-worthy lessons, my royal friend! Let’s learn and shine!",
+    "when_to_use": "when a student feels upset or discouraged after making a mistake",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades912",
+    "phrase": "You're royalty! Your progress shines brighter than a crown!",
+    "when_to_use": "when a student achieves a milestone or shows improvement in their work",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades912",
+    "phrase": "You're royalty! Your progress shines brighter than a crown!",
+    "when_to_use": "when a student achieves a milestone or shows improvement in their work",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades912",
+    "phrase": "You're royalty! Shine bright, my brave knight, and conquer any challenge!",
+    "when_to_use": "when a student feels discouraged or faces a tough task",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades912",
+    "phrase": "You're royalty! Shine bright, my brave knight, and conquer any challenge!",
+    "when_to_use": "when a student feels discouraged or faces a tough task",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades912",
+    "phrase": "You're royalty! Keep trying, and your crown of courage will shine!",
+    "when_to_use": "when a student faces a challenge or setback and needs encouragement to persist",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades912",
+    "phrase": "You're royalty! Keep trying, your crown-worthy efforts will shine!",
+    "when_to_use": "when encouraging a student to persist through challenges or setbacks",
+    "tone": "supportive",
+    "theme": "princess"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "k2",
+    "phrase": "Roar! You've got Dino power to solve anything!",
+    "when_to_use": "when a student is struggling with a task or needs a confidence boost",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "k2",
+    "phrase": "Roar! You've got Dino power! Keep going, my awesome friend!",
+    "when_to_use": "when a student is struggling with a task or needs a boost of confidence",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "k2",
+    "phrase": "Roar! Mistakes are just Dino power learning steps!",
+    "when_to_use": "when a student makes a mistake and feels discouraged",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "k2",
+    "phrase": "Oops, a tiny dino slip! Let’s use our prehistoric strength to try again!",
+    "when_to_use": "when a child makes a mistake during a learning activity or feels frustrated",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "excitement",
+    "age_group": "k2",
+    "phrase": "Roar! You're dino-mite with that prehistoric strength!",
+    "when_to_use": "when a student completes a task or shows improvement",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "excitement",
+    "age_group": "k2",
+    "phrase": "Roar! You're showing prehistoric strength with every step!",
+    "when_to_use": "when a student completes a task or shows improvement in their work",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "motivation",
+    "age_group": "k2",
+    "phrase": "Roar with Dino power! You’ve got prehistoric strength to shine!",
+    "when_to_use": "when a child needs encouragement to tackle a tough task or boost confidence",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "motivation",
+    "age_group": "k2",
+    "phrase": "Roar with Dino power! You’ve got prehistoric strength to shine!",
+    "when_to_use": "when a child needs encouragement to tackle a tough task or boost confidence",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "k2",
+    "phrase": "Roar! With dino power, you can grow stronger every day!",
+    "when_to_use": "when encouraging a child to keep trying after a challenge or setback",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "k2",
+    "phrase": "Roar with dino power! You can grow stronger every day!",
+    "when_to_use": "when encouraging a student to keep trying after a challenge or mistake",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades35",
+    "phrase": "Roar! You've got Dino power! Keep stomping ahead!",
+    "when_to_use": "when a child shows effort or progress in a task",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades35",
+    "phrase": "Roar! You've got Dino power! Keep going, my little champ!",
+    "when_to_use": "when a child is trying hard or completing a task",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades35",
+    "phrase": "Roar! Mistakes are just dino steps to learning, my brave friend!",
+    "when_to_use": "when a child feels upset or frustrated after making a mistake",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades35",
+    "phrase": "Oops, a dino stumble! Let’s use our prehistoric strength to try again, champ!",
+    "when_to_use": "when a child makes a mistake during a learning activity",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades35",
+    "phrase": "Roar! You're showing real Dino power! I'm so proud of you!",
+    "when_to_use": "when a student completes a task or shows improvement in their work",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades35",
+    "phrase": "Roar! Your Dino power is unstoppable! I'm so proud of you!",
+    "when_to_use": "when a student completes a task or shows improvement",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades35",
+    "phrase": "Roar with dino power, my little champ! You’ve got prehistoric strength!",
+    "when_to_use": "when a child needs encouragement to tackle a tough task or overcome a challenge",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades35",
+    "phrase": "Roar with dino power, little champ! You’ve got prehistoric strength to win today!",
+    "when_to_use": "when a child needs encouragement to start a task or overcome a challenge",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades35",
+    "phrase": "Roar with dino power! You can grow stronger every day!",
+    "when_to_use": "when a child faces a challenge or feels stuck on a task",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades35",
+    "phrase": "Roar with Dino power! Mistakes help you grow, little champ!",
+    "when_to_use": "when a child feels discouraged after making a mistake",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades68",
+    "phrase": "Roar! Unleash your Dino power and crush this challenge!",
+    "when_to_use": "when a student feels stuck or frustrated with a task",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades68",
+    "phrase": "Roar! Unleash your Dino power and crush this challenge!",
+    "when_to_use": "when a student feels stuck or frustrated with a task",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades68",
+    "phrase": "Roar! Mistakes are just Dino power-ups for learning!",
+    "when_to_use": "when a student feels upset or frustrated about making a mistake",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades68",
+    "phrase": "Roar! Mistakes are just Dino power growing stronger with every try!",
+    "when_to_use": "when a student feels upset or frustrated about making a mistake",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades68",
+    "phrase": "Roar! Your Dino power is unstoppable, champ!",
+    "when_to_use": "when a student achieves a goal or shows improvement in a task",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades68",
+    "phrase": "Roar! Your Dino power is unstoppable! Keep rocking it!",
+    "when_to_use": "when a student achieves a milestone or shows improvement in their work",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades68",
+    "phrase": "Unleash your Dino power, champ! You’ve got prehistoric strength to crush any challenge!",
+    "when_to_use": "when a student feels discouraged or needs a confidence boost before a task or test",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades68",
+    "phrase": "Unleash your Dino power, champ! You've got prehistoric strength to ace this!",
+    "when_to_use": "when a student feels discouraged or needs a confidence boost before a task or test",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades68",
+    "phrase": "Roar with Dino power! Keep trying, you’ve got prehistoric strength!",
+    "when_to_use": "when a student feels stuck or discouraged about a challenge",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades68",
+    "phrase": "Unleash your Dino power! Mistakes help you grow stronger, roar!",
+    "when_to_use": "when a student feels discouraged after a mistake or failure",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades912",
+    "phrase": "Roar with Dino power! You've got this, my prehistoric champ!",
+    "when_to_use": "when a student feels stuck or needs a boost of confidence during a tough task",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades912",
+    "phrase": "Roar with Dino power! You've got prehistoric strength to ace this!",
+    "when_to_use": "when a student is struggling with a tough problem or needs a confidence boost during learning",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades912",
+    "phrase": "Roar! Mistakes are just dino steps to prehistoric strength!",
+    "when_to_use": "when a student feels discouraged after making a mistake on a task or assignment",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades912",
+    "phrase": "Roar! Mistakes are just Dino power growing stronger with every try!",
+    "when_to_use": "when a student feels discouraged after making a mistake during a lesson or activity",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades912",
+    "phrase": "Roar! Your Dino power is unstoppable! I'm so proud of you!",
+    "when_to_use": "when a student completes a challenging task or shows significant improvement",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades912",
+    "phrase": "Roar! Your Dino power is unstoppable! Keep rocking it!",
+    "when_to_use": "when a student completes a challenging task or shows improvement",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades912",
+    "phrase": "Unleash your Dino power! You’ve got prehistoric strength to crush any challenge, my friend!",
+    "when_to_use": "when a student feels discouraged or faces a tough task",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades912",
+    "phrase": "Unleash your Dino power, champ! You’ve got prehistoric strength to conquer anything!",
+    "when_to_use": "when a student feels discouraged or faces a tough challenge",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades912",
+    "phrase": "Roar with effort, young dino! Every challenge builds your prehistoric strength!",
+    "when_to_use": "when encouraging a student to persist through a difficult task or setback",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades912",
+    "phrase": "Roar with effort! Every challenge builds your prehistoric strength!",
+    "when_to_use": "when a student faces a difficult task or feels discouraged",
+    "tone": "supportive",
+    "theme": "dinosaur"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "k2",
+    "phrase": "Wow, your brain has star power! Keep shining!",
+    "when_to_use": "when a student solves a problem or tries hard",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "k2",
+    "phrase": "Stellar work, little star! You're shining bright!",
+    "when_to_use": "when a student completes a task or shows effort",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "k2",
+    "phrase": "Oops, a cosmic bump! Let's blast off again with star power!",
+    "when_to_use": "when a student makes a mistake during a problem-solving activity",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "k2",
+    "phrase": "Oops, a tiny space bump! Let's blast off again with star power!",
+    "when_to_use": "When a student makes a mistake during a problem-solving activity or game",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "excitement",
+    "age_group": "k2",
+    "phrase": "Stellar work, little star! You're shining bright!",
+    "when_to_use": "when a student completes a task or shows improvement",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "excitement",
+    "age_group": "k2",
+    "phrase": "Wow, that's Stellar Work, my little star!",
+    "when_to_use": "when a student completes a task or shows improvement in their work",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "motivation",
+    "age_group": "k2",
+    "phrase": "You're blasting off with star power, buddy!",
+    "when_to_use": "when a student completes a task or shows effort in learning",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "motivation",
+    "age_group": "k2",
+    "phrase": "You're shining bright, little star! Keep up that stellar work!",
+    "when_to_use": "when a student completes a task or shows effort in learning",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "k2",
+    "phrase": "Keep shining, superstar! Every try makes your star power brighter!",
+    "when_to_use": "when a child is trying hard or facing a challenge",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "k2",
+    "phrase": "Stellar work, little star! Keep shining, even when it’s tough!",
+    "when_to_use": "when a child shows effort or perseverance in a challenging task",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades35",
+    "phrase": "Stellar work, little astronaut! You're shining bright like a star!",
+    "when_to_use": "when a child completes a task or shows effort during a learning activity",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades35",
+    "phrase": "Stellar work, little star! You're shining bright!",
+    "when_to_use": "when a child completes a task or shows effort in learning",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades35",
+    "phrase": "Oops, a little space stumble! Let's try again with star power!",
+    "when_to_use": "when a child makes a mistake during a learning activity",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades35",
+    "phrase": "Oops, a little space bump! Let’s try again with star power!",
+    "when_to_use": "when a child makes a mistake during a learning activity",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades35",
+    "phrase": "Wow, stellar work, little star! You're shining bright!",
+    "when_to_use": "when a student completes a task or shows improvement in a space-themed activity",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades35",
+    "phrase": "Wow, Stellar work, little star! You're shining bright!",
+    "when_to_use": "when a student completes a task or shows improvement in a space-themed activity",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades35",
+    "phrase": "Wow, you're shining bright with star power! Keep going, little astronaut!",
+    "when_to_use": "when a child completes a task or shows effort in learning",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades35",
+    "phrase": "You're a shining star! Keep reaching for the sky!",
+    "when_to_use": "when a child completes a task or shows effort in learning",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades35",
+    "phrase": "Stellar work, little star! Keep trying, and you’ll shine even brighter!",
+    "when_to_use": "when a child makes an effort or tries something new, even if they don't succeed yet",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades35",
+    "phrase": "Stellar work, little star! Keep trying, and you’ll shine even brighter!",
+    "when_to_use": "when a child is struggling with a task or feeling frustrated to encourage persistence",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades68",
+    "phrase": "Wow, that's stellar work, champ! You're shining bright!",
+    "when_to_use": "when a student completes a task or shows effort in learning",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades68",
+    "phrase": "Stellar work, champ! You're shining brighter than a supernova!",
+    "when_to_use": "when a student completes a task or shows effort in learning",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades68",
+    "phrase": "Oops, a cosmic hiccup! Let's explore and fix it with star power!",
+    "when_to_use": "when a student makes a mistake during a problem-solving activity",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades68",
+    "phrase": "Oops, a space stumble! Let’s blast off again with star power!",
+    "when_to_use": "when a student makes a mistake and feels discouraged",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades68",
+    "phrase": "Stellar work, champ! You're shining brighter than a supernova!",
+    "when_to_use": "when a student completes a task or shows improvement in their work",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades68",
+    "phrase": "Wow, that's Stellar Work! You're blasting off with Star Power!",
+    "when_to_use": "when a student completes a task or shows improvement in a skill",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades68",
+    "phrase": "You're a shining star, buddy! Keep blasting off with that stellar work!",
+    "when_to_use": "when a student completes a task or shows effort in their learning",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades68",
+    "phrase": "You're a star, shining bright! Keep up that cosmic talent!",
+    "when_to_use": "when a student completes a task or shows effort in learning",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades68",
+    "phrase": "Keep shining, star! Every try makes your Cosmic talent grow!",
+    "when_to_use": "when a student feels frustrated or doubts their abilities after a challenge",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades68",
+    "phrase": "Keep shining, star! Every try makes your Cosmic talent brighter!",
+    "when_to_use": "when a student feels discouraged after a mistake or setback",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades912",
+    "phrase": "Stellar work, young explorer! Keep shining bright!",
+    "when_to_use": "when a student completes a task or shows effort in learning",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades912",
+    "phrase": "Stellar work, young explorer! You're shining brighter than a supernova!",
+    "when_to_use": "when a student completes a task or shows effort in learning",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades912",
+    "phrase": "Oops, a little cosmic hiccup! Let's explore this together and shine brighter!",
+    "when_to_use": "when a student makes a mistake or feels discouraged about an error",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades912",
+    "phrase": "Oops, a cosmic hiccup! Let's explore this together and shine brighter!",
+    "when_to_use": "when a student makes a mistake or struggles with a concept",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades912",
+    "phrase": "Stellar work, champ! You're shining brighter than a supernova!",
+    "when_to_use": "when a student completes a tough task or shows improvement",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades912",
+    "phrase": "Stellar work, champ! You're shining brighter than a supernova!",
+    "when_to_use": "when a student completes a challenging task or shows significant improvement",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades912",
+    "phrase": "Stellar work, champ! Keep shining like the brightest star!",
+    "when_to_use": "when a student completes a task or shows improvement",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades912",
+    "phrase": "You're shining bright, superstar! Keep up that stellar work!",
+    "when_to_use": "when a student achieves a goal or shows effort in a task",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades912",
+    "phrase": "Keep shining, star! Every challenge helps your cosmic talent grow!",
+    "when_to_use": "when a student faces a setback or feels discouraged about their progress",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades912",
+    "phrase": "Keep shining, star! Every challenge makes your Cosmic talent grow brighter!",
+    "when_to_use": "when a student faces a setback or struggles with a task",
+    "tone": "supportive",
+    "theme": "space"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "k2",
+    "phrase": "Ninja skills, awesome job! Keep stealth learning, little shadow master!",
+    "when_to_use": "when a student completes a task or shows effort in learning",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "k2",
+    "phrase": "Ninja skills, activated! You’ve got this, my stealthy friend!",
+    "when_to_use": "when a student is struggling with a task or needs a confidence boost during learning",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "k2",
+    "phrase": "Ninja skills! Mistakes are just stealth learning in disguise!",
+    "when_to_use": "when a student feels upset or frustrated about making a mistake",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "k2",
+    "phrase": "Ninja skills! Mistakes are just stealth learning in disguise!",
+    "when_to_use": "when a student feels upset or frustrated about making a mistake",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "excitement",
+    "age_group": "k2",
+    "phrase": "Ninja skills, superstar! You’re sneaking up on awesome!",
+    "when_to_use": "when a student masters a new skill or completes a task successfully",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "excitement",
+    "age_group": "k2",
+    "phrase": "Ninja skills, awesome! You're a stealth learning star!",
+    "when_to_use": "when a student completes a task or shows improvement",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "motivation",
+    "age_group": "k2",
+    "phrase": "Ninja skills, activate! You’ve got this, shadow master!",
+    "when_to_use": "when a child needs encouragement before starting a task or solving a problem",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "motivation",
+    "age_group": "k2",
+    "phrase": "Ninja skills, activate! You’ve got this, little shadow master!",
+    "when_to_use": "when a student feels nervous or unsure before a task or test",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "k2",
+    "phrase": "Ninja skills! Keep trying, little shadow master, you’re getting stronger every day!",
+    "when_to_use": "when a student feels discouraged after a mistake or struggles with a task",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "k2",
+    "phrase": "Ninja skills, keep trying! Even shadow masters stumble before they soar!",
+    "when_to_use": "when a student feels discouraged after a mistake or failure",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades35",
+    "phrase": "Ninja skills, little shadow! You’re sneaking up on success!",
+    "when_to_use": "when a child is trying hard or making progress in a task",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades35",
+    "phrase": "Ninja skills, little shadow! You’re sneaking up on success!",
+    "when_to_use": "when a child is making progress or trying hard during a learning activity",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades35",
+    "phrase": "Ninja skills! Every miss is a stealth learning step, young shadow master!",
+    "when_to_use": "when a child makes a mistake during a learning activity or game",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades35",
+    "phrase": "Ninja skills! Mistakes are just stealth learning in disguise!",
+    "when_to_use": "when a child feels upset or frustrated about making a mistake during a task or activity",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades35",
+    "phrase": "Ninja skills, awesome! You're a stealth learning star!",
+    "when_to_use": "when a student completes a task or shows improvement",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades35",
+    "phrase": "Ninja skills, amazing! You're a stealth learning star!",
+    "when_to_use": "when a student completes a task or shows improvement in a skill",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades35",
+    "phrase": "Ninja skills, little shadow! You’ve got the stealth to learn anything!",
+    "when_to_use": "when a child needs encouragement to tackle a new challenge or task",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades35",
+    "phrase": "Ninja skills, little shadow! You’ve got this with stealth learning!",
+    "when_to_use": "when a child needs encouragement to tackle a new task or challenge",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades35",
+    "phrase": "Ninja skills! Keep trying, little shadow master, you’re growing stronger every day!",
+    "when_to_use": "when a child faces a challenge or feels frustrated with a task",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades35",
+    "phrase": "Ninja skills, little shadow! Keep trying, you’re getting stronger every day!",
+    "when_to_use": "when a child faces a challenge or makes a mistake, to encourage persistence and effort",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades68",
+    "phrase": "Ninja skills, activated! You’ve got this, stealth learner!",
+    "when_to_use": "when a student is struggling with a task or needs a confidence boost during learning",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades68",
+    "phrase": "Ninja skills, activated! You're slicing through this challenge like a shadow master!",
+    "when_to_use": "when a student successfully completes a tough task or problem",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades68",
+    "phrase": "Ninja skills! A stumble just means you're mastering stealth learning, little shadow!",
+    "when_to_use": "when a student makes a mistake or feels frustrated about an error",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades68",
+    "phrase": "Ninja skills! Mistakes are just stealth learning in disguise!",
+    "when_to_use": "when a student feels upset or frustrated about making a mistake",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades68",
+    "phrase": "Ninja skills, awesome! You're a stealth learning star!",
+    "when_to_use": "when a student completes a task or shows improvement in a subject",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades68",
+    "phrase": "Ninja skills, activate! You’ve got the stealth to learn anything, little shadow master!",
+    "when_to_use": "when a student feels stuck or needs encouragement to tackle a tough task",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades68",
+    "phrase": "Ninja skills, young shadow! Let’s sneak past challenges together!",
+    "when_to_use": "when a student feels stuck or discouraged on a task",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades68",
+    "phrase": "Ninja skills! Keep trying, young shadow master, every step makes you stronger!",
+    "when_to_use": "when a student faces a challenge or setback to encourage perseverance",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades68",
+    "phrase": "Ninja skills! Keep trying, young shadow master, every step makes you stronger!",
+    "when_to_use": "when a student faces a challenge or makes a mistake, to encourage perseverance",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades912",
+    "phrase": "Ninja skills activated! Keep striking at those challenges, young shadow master!",
+    "when_to_use": "when a student is struggling with a tough concept or task to boost their confidence",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "encouragement",
+    "age_group": "grades912",
+    "phrase": "Ninja skills, young shadow! Keep stealth learning, I'm with you!",
+    "when_to_use": "when a student feels stuck or frustrated with a task",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades912",
+    "phrase": "Ninja skills! Every misstep is a stealth learning moment, young shadow master!",
+    "when_to_use": "when a student feels discouraged after making a mistake",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "mistake_reframe",
+    "age_group": "grades912",
+    "phrase": "Ninja skills! Every miss is a stealth lesson to grow stronger!",
+    "when_to_use": "when a student feels frustrated or upset about making a mistake",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades912",
+    "phrase": "Ninja skills! You're slicing through challenges like a true Shadow Master!",
+    "when_to_use": "when a student masters a tough concept or completes a difficult task",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "excitement",
+    "age_group": "grades912",
+    "phrase": "Ninja skills unlocked! You're a stealth learning star!",
+    "when_to_use": "when a student completes a challenging task or shows improvement",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades912",
+    "phrase": "Ninja skills, young shadow! You’ve got the stealth to master anything!",
+    "when_to_use": "when a student feels discouraged or doubts their abilities",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "motivation",
+    "age_group": "grades912",
+    "phrase": "Ninja skills, young shadow! You’ve got the stealth to conquer any challenge!",
+    "when_to_use": "when a student feels discouraged or faces a tough task",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades912",
+    "phrase": "Ninja skills, young shadow! Every challenge sharpens your blade—keep striking!",
+    "when_to_use": "when encouraging a student to persist through a difficult task or setback",
+    "tone": "supportive",
+    "theme": "ninja"
+  },
+  {
+    "category": "growth_mindset",
+    "age_group": "grades912",
+    "phrase": "Ninja skills, young shadow! Every challenge sharpens your blade—keep striking!",
+    "when_to_use": "when a student faces a setback or feels discouraged about a task",
+    "tone": "supportive",
+    "theme": "ninja"
+  }
+]

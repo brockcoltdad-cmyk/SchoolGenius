@@ -1,0 +1,352 @@
+[
+  {
+    "subject": "Coding",
+    "concept": "arrays",
+    "age_group": "grades912",
+    "analogy": "Arrays are like a locker row at school—each locker holds specific data, accessed by its number, organizing info efficiently for quick retrieval.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "arrays",
+    "age_group": "grades912",
+    "analogy": "Arrays are like a row of lockers in school—each locker holds specific data, accessed by its number, organizing info efficiently.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Coding",
+    "concept": "objects",
+    "age_group": "k2",
+    "analogy": "Objects in coding are like toy boxes. Each box holds different toys, like cars or dolls, and can do special things, like open or close!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Coding",
+    "concept": "objects",
+    "age_group": "k2",
+    "analogy": "Objects in coding are like toy boxes. Each box holds different toys, like cars or dolls, and can do special things, like open or close!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Coding",
+    "concept": "objects",
+    "age_group": "grades35",
+    "analogy": "Objects in coding are like soccer players. Each player has a role, skills, and actions they can do, just like objects have properties and functions!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Coding",
+    "concept": "objects",
+    "age_group": "grades35",
+    "analogy": "Objects in coding are like soccer players. Each player has a role, skills, and actions they can do, just like objects have properties and functions!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Coding",
+    "concept": "objects",
+    "age_group": "grades68",
+    "analogy": "Objects in coding are like custom gaming characters. Each has unique traits and actions, like strength or speed, that you can control and reuse in your game!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Coding",
+    "concept": "objects",
+    "age_group": "grades68",
+    "analogy": "Objects in coding are like customizable gaming characters. Each has unique traits and actions, like speed or special moves, that you can control and change!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Coding",
+    "concept": "objects",
+    "age_group": "grades912",
+    "analogy": "Think of objects in coding as smartphones. Each has unique features (data) and functions (methods), customizable for different users, like apps for diverse needs.",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Coding",
+    "concept": "objects",
+    "age_group": "grades912",
+    "analogy": "Think of objects in coding as blueprints for a car. Each car (object) has unique traits but follows the same design structure, like in automotive engineering.",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "phonics",
+    "age_group": "k2",
+    "analogy": "Phonics is like building with blocks. Each block is a sound. Put them together, like 'c-a-t,' and you make a word!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "phonics",
+    "age_group": "k2",
+    "analogy": "Phonics is like a toy puzzle. Each sound is a piece. When you put the sounds together, you make a word!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "phonics",
+    "age_group": "grades35",
+    "analogy": "Phonics is like soccer. Each sound is a player, and blending them together scores a goal—making a word!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "phonics",
+    "age_group": "grades35",
+    "analogy": "Phonics is like decoding a secret code in a treasure hunt game. Each letter sound is a clue that helps you figure out the word!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "phonics",
+    "age_group": "grades68",
+    "analogy": "Phonics is like decoding a secret chat message. Each sound is a clue that helps you figure out the word, just like solving a puzzle with friends!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "phonics",
+    "age_group": "grades68",
+    "analogy": "Phonics is like decoding a secret chat app. Each sound links to a letter or group, helping you crack words by sounding them out!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "phonics",
+    "age_group": "grades912",
+    "analogy": "Phonics is like decoding a language app. Each sound maps to a letter or group, helping you read unfamiliar words by breaking them into recognizable parts.",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "phonics",
+    "age_group": "grades912",
+    "analogy": "Phonics is like decoding a secret language in gaming—each sound maps to a symbol, helping you read and spell words accurately.",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "silent letters",
+    "age_group": "k2",
+    "analogy": "Silent letters are like a shy teddy bear in a game. It’s there, but it doesn’t make a sound. You still keep it, just like we keep silent letters in words!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "silent letters",
+    "age_group": "k2",
+    "analogy": "Silent letters are like shy teddy bears in a toy box. They’re there, but they don’t make a sound when you play!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "silent letters",
+    "age_group": "grades35",
+    "analogy": "Silent letters are like bench players in a soccer game. They're on the team but don't play—still part of the word, just not heard!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "silent letters",
+    "age_group": "grades35",
+    "analogy": "Silent letters are like bench players in a soccer game. They’re on the team but don’t play, just like 'k' in 'knee' is there but not heard!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "silent letters",
+    "age_group": "grades68",
+    "analogy": "Silent letters are like ghost followers on social media. They're there in the word, like 'k' in 'knight,' but they don't make a sound or show up!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "silent letters",
+    "age_group": "grades68",
+    "analogy": "Silent letters are like inactive group chat members. They’re there in the word, but don’t speak up, just like some friends who lurk without typing!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "silent letters",
+    "age_group": "grades912",
+    "analogy": "Silent letters are like inactive code in software—present in the word, but not executed when spoken, yet essential for the structure.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "silent letters",
+    "age_group": "grades912",
+    "analogy": "Silent letters are like inactive code in software—present in the word, but not executed when spoken, yet still crucial for the structure.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "homophones",
+    "age_group": "k2",
+    "analogy": "Homophones are like twin teddy bears! They look different, like 'see' and 'sea,' but sound the same when you say them out loud!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "homophones",
+    "age_group": "k2",
+    "analogy": "Homophones are like twin teddy bears! They sound the same, like 'bear' and 'bare,' but look different and mean different things!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "homophones",
+    "age_group": "grades35",
+    "analogy": "Homophones are like twin soccer players. They look different but sound the same, like 'pair' and 'pear,' confusing us during the game!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "homophones",
+    "age_group": "grades35",
+    "analogy": "Homophones are like twin soccer players. They look different but sound the same when called—like 'pair' and 'pear'—tricking your ears on the field!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "homophones",
+    "age_group": "grades68",
+    "analogy": "Homophones are like Snapchat filters with the same sound but different looks—'write' and 'right' sound alike but mean different things!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "homophones",
+    "age_group": "grades68",
+    "analogy": "Homophones are like identical twins in a video game—same sound, different looks! 'There' and 'their' sound alike but mean different things, just like twins with unique styles.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "homophones",
+    "age_group": "grades912",
+    "analogy": "Homophones are like identical twins in a crowd—different identities, same appearance. 'Their' and 'there' sound alike but mean different things, just like twins have unique personalities.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "homophones",
+    "age_group": "grades912",
+    "analogy": "Homophones are like identical twins in a tech network—same sound, different identities. 'Their' and 'there' look and act different, despite sounding alike.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "prefixes",
+    "age_group": "k2",
+    "analogy": "Prefixes are like superhero capes! They go in front of words to give them new powers or meanings, just like a cape makes a hero stronger!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "prefixes",
+    "age_group": "k2",
+    "analogy": "Prefixes are like stickers you put on toy blocks. They stick to the front of a word and change its meaning, just like a sticker changes how a block looks!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "prefixes",
+    "age_group": "grades35",
+    "analogy": "Prefixes are like team jerseys in a soccer game. They go in front of a word, changing its meaning, just like a jersey shows which team you’re on!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "prefixes",
+    "age_group": "grades35",
+    "analogy": "Prefixes are like team jerseys in soccer. They go in front of a word, changing its meaning, just like a jersey shows which team you’re on!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "prefixes",
+    "age_group": "grades68",
+    "analogy": "Prefixes are like Snapchat filters; they add something extra to the front of a word, changing its vibe or meaning, just like a filter changes your selfie!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "prefixes",
+    "age_group": "grades68",
+    "analogy": "Prefixes are like Snapchat filters. They attach to a word’s front, changing its vibe or meaning, just like a filter alters your selfie before sharing!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "prefixes",
+    "age_group": "grades912",
+    "analogy": "Prefixes are like app updates; they add new features or meanings to base words, enhancing or changing their function, just as updates improve software.",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "prefixes",
+    "age_group": "grades912",
+    "analogy": "Prefixes are like software updates; they attach to base words, modifying their meaning or function, just as updates enhance or change an app’s features.",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "suffixes",
+    "age_group": "k2",
+    "analogy": "Suffixes are like little hats for words! They go on the end, like -ing or -ed, and change how the word looks or acts.",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "suffixes",
+    "age_group": "k2",
+    "analogy": "Suffixes are like little hats for words! They stick on the end, like '-ed' or '-ing,' and change how the word looks or acts!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "suffixes",
+    "age_group": "grades35",
+    "analogy": "Suffixes are like adding a cool jersey number to a player’s name in a soccer game. They change or add meaning, like -er makes 'teach' into 'teacher'!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "suffixes",
+    "age_group": "grades35",
+    "analogy": "Suffixes are like bonus points in a game. Added to the end of a word, they change its power or meaning, just like extra points boost your score!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "suffixes",
+    "age_group": "grades68",
+    "analogy": "Suffixes are like Snapchat filters. They add extra meaning or style to a word, changing how it looks or works, just like filters transform your selfie!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "suffixes",
+    "age_group": "grades68",
+    "analogy": "Suffixes are like Snapchat filters. They snap onto a word’s end, changing its vibe or meaning, just like a filter transforms your selfie!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "suffixes",
+    "age_group": "grades912",
+    "analogy": "Suffixes are like software updates for words, adding new functions or meanings, just as updates enhance apps with new features.",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Spelling",
+    "concept": "suffixes",
+    "age_group": "grades912",
+    "analogy": "Suffixes are like job titles in a company—added to a base word, they change its role or meaning, just as 'manager' transforms an employee’s identity.",
+    "difficulty": "advanced"
+  }
+]

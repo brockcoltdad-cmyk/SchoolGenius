@@ -1,0 +1,302 @@
+[
+  {
+    "trigger": "creative_approach",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "Impressive work on trying a unique solution! Your creative approach to coding stands out and shows real problem-solving talent."
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "I'm impressed by your unique approach to this coding challenge! Your creativity in problem-solving is remarkable and worth celebrating."
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, your unique typing idea is amazing! I’m so proud of you for trying something new! Keep it up! 🌟💻"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, your unique typing idea is awesome! I’m so proud of you for trying something new! Keep it up! 🌟💻"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Wow, I love how you tried a unique way to type! Your creativity is awesome—keep experimenting!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Wow, I love how you tried a unique way to type! That’s super creative and awesome!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Hey, I love how you tried a unique way to type! That’s super creative and cool of you!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Hey, I love how you tried a unique way to type! That’s super creative and cool to see!"
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "Impressive work on finding a unique typing solution! Your creativity in tackling challenges stands out and is truly commendable."
+  },
+  {
+    "trigger": "creative_approach",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "Impressive work! Your unique approach to typing shows creativity and problem-solving. Keep exploring innovative solutions!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Wow, you're a super helper in Math! Great job helping your friend! You're amazing! 🌟👍"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Wow, you're amazing at helping with math! Great job, friend! Keep sharing! 🌟👍"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Wow, helping your classmate with math is awesome! You're a super friend and a math star!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Awesome job helping your classmate with math! You’re a super friend and a math star!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Hey, it’s awesome how you helped with math today! Your patience totally made a difference. Keep it up!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Hey, it’s awesome how you helped with math today! You made it so much easier to understand. Thanks for being so kind!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "Great job helping your classmate with Math! Your support makes a real difference in their learning."
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "Great job helping your classmate with Math! Your support makes a real difference in their learning."
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, you're amazing at helping your friend read! Great job, superstar! 📚✨"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, you're amazing at helping your friend read! Great job, superstar! 🌟📚 Keep being so kind!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Awesome job helping your classmate with reading! Your kindness and patience make learning fun for everyone!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Awesome job helping your classmate with reading! Your kindness makes learning fun for everyone!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, it’s awesome how you helped with reading today! Your support really made a difference. Keep it up!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, thanks for helping with reading! It’s awesome how you explain stuff so clearly. You’re making a real difference!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "Great job supporting your classmate with reading! Your patience and guidance make a real difference."
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "Great job supporting your classmate with reading! Your patience and guidance make a real difference. Keep it up!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Wow, you're amazing at helping with spelling! Great job, friend! Keep being awesome! 🌟✏️"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Wow, you're amazing at helping with spelling! Great job, friend! Keep it up! 🌟👍"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Awesome job helping your classmate with spelling! Your kindness and smarts make our class shine. Keep it up!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Awesome job helping your classmate with spelling! Your kindness and support make our class so much brighter!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Hey, thanks for helping with spelling! It’s awesome how you explain things so clearly. You’re a great friend!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Hey, thanks for helping with spelling! It’s awesome how you explain things so clearly. You’re a great friend!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "Great job helping your classmate with spelling! Your patience and support make a real difference in their learning."
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "Great job helping your classmate with spelling! Your patience and support make a real difference. Keep it up!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, you're amazing at helping with coding! You're a super friend! Keep it up! 🌟💻"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, you're amazing at helping with coding! Great job, friend! Keep sharing your super skills! 🌟💻"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Awesome job helping your classmate with coding! You're a super friend and a coding star!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Awesome job helping your classmate with coding! You're a super friend and a coding star!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Hey, it’s awesome how you helped with coding! Thanks for explaining it so clearly. You’re a great friend!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Hey, it’s awesome how you helped with coding! Your patience and tips really made a difference. Keep being amazing!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "Great job helping your classmate with coding! Your patience and skills make a real difference. Keep it up!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "Great job helping your classmate with coding! Your patience and skills make a real difference. Keep it up!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, you're amazing at helping your friend with typing! Great job, superstar! 🌟👍"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, you're amazing at helping your friend type! Great job, superstar! 🌟👍"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Awesome job helping your classmate with typing! Your kindness and patience make learning fun for everyone!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Awesome job helping your classmate with typing! You're a super friend and a great teacher!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Hey, it’s awesome how you helped with typing! Your patience totally made a difference. Keep being amazing!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Hey, it’s awesome how you helped with typing! Your patience made a big difference. Keep being so supportive!"
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "Great job helping your classmate with typing! Your patience and support make a real difference in their learning."
+  },
+  {
+    "trigger": "helps_others",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "Great job helping your classmate with typing! Your patience and support make a real difference in their learning."
+  }
+]

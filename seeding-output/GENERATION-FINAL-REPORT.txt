@@ -1,0 +1,18 @@
+Final Generation Complete
+
+Started: 1130 items
+Generated: 15660 new items
+Final: 1073 items
+Target: 2,280 items
+Progress: 47.1%
+
+Breakdown:
+  Kid stuck: 273
+  Analogies: 200
+  Encouragements: 400
+  Mistakes: 200
+
+Batches run: 361
+Duration: 1262.4 minutes
+Cost: $15.66
+Completed: 2026-01-13T10:34:39.502Z

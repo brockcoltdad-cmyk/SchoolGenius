@@ -1,3 +1,13 @@
+/**
+ * =========================================
+ * TO BE REPLACED WITH RIVE
+ * =========================================
+ * This is SVG + Framer Motion - NOT real Rive.
+ * Replace with actual .riv file: /public/rive/gigi-expressions.riv
+ * See: library/RIVE-INSTRUCTIONS.md
+ * =========================================
+ */
+
 "use client";
 
 import React, { useEffect, useState } from 'react';

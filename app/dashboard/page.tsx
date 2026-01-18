@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 import {
   PlusCircle, LogOut, Brain, Clock, BookOpen, Flame,
   Crown, Settings, ChevronRight, Star, ArrowUp, Sparkles,
-  Trophy, Target, Heart
+  Trophy, Target, Heart, Calendar, Activity, Mic
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -25,6 +25,76 @@ interface Child {
   theme_level: number;
   level: number;
 }
+
+// Parent Dashboard Themes - Fun themes for parents!
+const parentThemes = [
+  {
+    id: 'coffee',
+    name: 'Coffee Break',
+    emoji: '☕',
+    gradient: 'from-amber-600 via-orange-600 to-amber-600',
+    bgGradient: 'from-amber-50 via-orange-50 to-yellow-50',
+    accent: '#D97706',
+    border: 'border-amber-200',
+    text: 'text-amber-700',
+    bgGlow: 'rgba(217,119,6,0.3)',
+  },
+  {
+    id: 'garden',
+    name: 'Garden Fresh',
+    emoji: '🌿',
+    gradient: 'from-emerald-600 via-green-600 to-teal-600',
+    bgGradient: 'from-emerald-50 via-green-50 to-teal-50',
+    accent: '#059669',
+    border: 'border-emerald-200',
+    text: 'text-emerald-700',
+    bgGlow: 'rgba(5,150,105,0.3)',
+  },
+  {
+    id: 'ocean',
+    name: 'Ocean Calm',
+    emoji: '🌊',
+    gradient: 'from-blue-600 via-cyan-600 to-blue-600',
+    bgGradient: 'from-blue-50 via-cyan-50 to-sky-50',
+    accent: '#0891B2',
+    border: 'border-cyan-200',
+    text: 'text-cyan-700',
+    bgGlow: 'rgba(8,145,178,0.3)',
+  },
+  {
+    id: 'creative',
+    name: 'Creative Studio',
+    emoji: '🎨',
+    gradient: 'from-purple-600 via-pink-600 to-purple-600',
+    bgGradient: 'from-purple-50 via-pink-50 to-fuchsia-50',
+    accent: '#9333EA',
+    border: 'border-purple-200',
+    text: 'text-purple-700',
+    bgGlow: 'rgba(147,51,234,0.3)',
+  },
+  {
+    id: 'sports',
+    name: 'Sports Fan',
+    emoji: '🏆',
+    gradient: 'from-yellow-500 via-red-500 to-yellow-500',
+    bgGradient: 'from-yellow-50 via-red-50 to-orange-50',
+    accent: '#DC2626',
+    border: 'border-red-200',
+    text: 'text-red-700',
+    bgGlow: 'rgba(220,38,38,0.3)',
+  },
+  {
+    id: 'sunset',
+    name: 'Sunset Vibes',
+    emoji: '🌅',
+    gradient: 'from-orange-500 via-pink-500 to-purple-500',
+    bgGradient: 'from-orange-50 via-pink-50 to-purple-50',
+    accent: '#EC4899',
+    border: 'border-pink-200',
+    text: 'text-pink-700',
+    bgGlow: 'rgba(236,72,153,0.3)',
+  },
+];
 
 const gradeEmojis: Record<string, string> = {
   'K': '🎨', '1': '📚', '2': '✏️', '3': '🎯', '4': '🚀', '5': '🏆',
@@ -46,7 +116,27 @@ export default function ParentDashboard() {
   const { user, signOut } = useAuth();
   const [children, setChildren] = useState<Child[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [selectedTheme, setSelectedTheme] = useState(0);
   const supabase = createClient();
+
+  const currentTheme = parentThemes[selectedTheme];
+
+  // Load parent theme from localStorage on mount
+  useEffect(() => {
+    const saved = localStorage.getItem('schoolgenius-parent-theme');
+    if (saved !== null) {
+      const index = parseInt(saved, 10);
+      if (index >= 0 && index < parentThemes.length) {
+        setSelectedTheme(index);
+      }
+    }
+  }, []);
+
+  const handleThemeChange = (index: number) => {
+    if (index === selectedTheme) return;
+    localStorage.setItem('schoolgenius-parent-theme', index.toString());
+    setSelectedTheme(index);
+  };
 
   useEffect(() => {
     if (!user) {
@@ -90,32 +180,86 @@ export default function ParentDashboard() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-cyan-50">
-      <nav className="sticky top-0 z-50 border-b-4 border-orange-200 bg-white/90 backdrop-blur-xl shadow-xl">
+    <div className={`min-h-screen bg-gradient-to-br ${currentTheme.bgGradient} transition-all duration-300`}>
+      {/* Animated background glow */}
+      <div
+        className="fixed inset-0 pointer-events-none transition-all duration-500"
+        style={{
+          background: `radial-gradient(circle at 50% 30%, ${currentTheme.bgGlow} 0%, transparent 50%)`,
+        }}
+      />
+
+      <nav className={`sticky top-0 z-50 border-b-4 ${currentTheme.border} bg-white/90 backdrop-blur-xl shadow-xl`}>
         <div className="mx-auto max-w-7xl px-6 py-5">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3 group">
               <motion.div
-                className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 via-red-500 to-yellow-500 shadow-xl"
+                className={`flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br ${currentTheme.gradient} shadow-xl`}
                 whileHover={{ rotate: [0, -10, 10, 0], scale: 1.1 }}
               >
                 <Brain className="h-7 w-7 text-white" />
               </motion.div>
               <span className="text-2xl font-black text-gray-900 group-hover:text-orange-600 transition-colors">School Genius</span>
             </Link>
-            <Button
-              variant="outline"
-              onClick={signOut}
-              className="flex items-center gap-2 border-2 border-orange-300 hover:bg-orange-50 font-bold"
-            >
-              <LogOut className="h-4 w-4" />
-              Sign Out
-            </Button>
+
+            {/* Parent Theme Picker */}
+            <div className="flex items-center gap-2">
+              {parentThemes.map((theme, index) => (
+                <motion.button
+                  key={theme.id}
+                  onClick={() => handleThemeChange(index)}
+                  className={`
+                    relative w-10 h-10 rounded-xl flex items-center justify-center text-lg
+                    transition-all duration-200 border-2
+                    ${selectedTheme === index
+                      ? 'border-gray-900 shadow-lg scale-110'
+                      : 'border-transparent hover:border-gray-300 hover:scale-105'}
+                  `}
+                  style={{
+                    background: selectedTheme === index
+                      ? `linear-gradient(135deg, ${theme.accent}20, ${theme.accent}40)`
+                      : 'transparent'
+                  }}
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  title={theme.name}
+                >
+                  <span className="text-xl">{theme.emoji}</span>
+                  {selectedTheme === index && (
+                    <motion.div
+                      layoutId="parentThemeIndicator"
+                      className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 rounded-full"
+                      style={{ backgroundColor: theme.accent }}
+                    />
+                  )}
+                </motion.button>
+              ))}
+            </div>
+
+            <div className="flex items-center gap-3">
+              <Link href="/dashboard/monitoring">
+                <Button
+                  variant="outline"
+                  className="flex items-center gap-2 border-2 border-purple-300 hover:bg-purple-50 font-bold text-purple-700"
+                >
+                  <Activity className="h-4 w-4" />
+                  AI Monitor
+                </Button>
+              </Link>
+              <Button
+                variant="outline"
+                onClick={signOut}
+                className={`flex items-center gap-2 border-2 ${currentTheme.border} hover:bg-white/50 font-bold`}
+              >
+                <LogOut className="h-4 w-4" />
+                Sign Out
+              </Button>
+            </div>
           </div>
         </div>
       </nav>
 
-      <main className="mx-auto max-w-7xl px-6 py-12">
+      <main className="relative z-10 mx-auto max-w-7xl px-6 py-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -126,10 +270,12 @@ export default function ParentDashboard() {
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
             className="mb-4 inline-block text-6xl"
           >
-            ✨
+            {currentTheme.emoji}
           </motion.div>
           <h1 className="mb-3 text-5xl font-black tracking-tight text-gray-900 lg:text-6xl">
-            Family Dashboard
+            <span className={`bg-gradient-to-r ${currentTheme.gradient} bg-clip-text text-transparent`}>
+              Family Dashboard
+            </span>
           </h1>
           <p className="text-2xl font-bold text-gray-600">
             See your kids' awesome learning adventures!
@@ -143,7 +289,7 @@ export default function ParentDashboard() {
           className="mb-12"
         >
           <div className="mb-8 flex items-center justify-center gap-3">
-            <Trophy className="h-8 w-8 text-yellow-500" />
+            <Trophy className="h-8 w-8" style={{ color: currentTheme.accent }} />
             <h2 className="text-3xl font-black text-gray-900">This Week's Wins</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -155,7 +301,7 @@ export default function ParentDashboard() {
                 transition={{ delay: 0.1 + index * 0.05 }}
                 whileHover={{ y: -10, scale: 1.05 }}
               >
-                <Card className="relative border-4 border-orange-200 bg-white p-6 shadow-xl overflow-hidden group">
+                <Card className={`relative border-4 ${currentTheme.border} bg-white p-6 shadow-xl overflow-hidden group`}>
                   <div className="relative z-10">
                     <div className="mb-4 flex items-center justify-between">
                       <div className="text-5xl">{stat.emoji}</div>
@@ -183,7 +329,7 @@ export default function ParentDashboard() {
           className="mb-12"
         >
           <div className="mb-8 flex items-center justify-center gap-3">
-            <Sparkles className="h-8 w-8 text-orange-500" />
+            <Sparkles className="h-8 w-8" style={{ color: currentTheme.accent }} />
             <h2 className="text-3xl font-black text-gray-900">Smart Insights</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
@@ -211,7 +357,7 @@ export default function ParentDashboard() {
                 transition={{ delay: 0.2 + index * 0.1 }}
                 whileHover={{ y: -8, scale: 1.03 }}
               >
-                <Card className="h-full border-4 border-orange-200 bg-white p-6 shadow-xl group hover:shadow-2xl transition-all">
+                <Card className={`h-full border-4 ${currentTheme.border} bg-white p-6 shadow-xl group hover:shadow-2xl transition-all`}>
                   <div className="mb-4 text-6xl group-hover:scale-110 transition-transform">{insight.emoji}</div>
                   <h3 className="mb-3 text-xl font-black text-gray-900">{insight.title}</h3>
                   <p className="text-base font-semibold text-gray-600">{insight.description}</p>
@@ -228,12 +374,12 @@ export default function ParentDashboard() {
         >
           <div className="mb-8 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <Heart className="h-8 w-8 text-red-500" />
+              <Heart className="h-8 w-8" style={{ color: currentTheme.accent }} />
               <h2 className="text-3xl font-black text-gray-900">Your Amazing Kids</h2>
             </div>
             <Link href="/dashboard/add-child">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button className="bg-gradient-to-r from-orange-500 via-red-500 to-yellow-500 hover:from-orange-600 hover:via-red-600 hover:to-yellow-600 font-black border-4 border-orange-200 shadow-xl">
+                <Button className={`bg-gradient-to-r ${currentTheme.gradient} font-black border-4 ${currentTheme.border} shadow-xl text-white`}>
                   <PlusCircle className="mr-2 h-5 w-5" />
                   Add Child
                 </Button>
@@ -242,16 +388,17 @@ export default function ParentDashboard() {
           </div>
 
           {isLoading ? (
-            <Card className="p-12 text-center border-4 border-orange-200 bg-white">
+            <Card className={`p-12 text-center border-4 ${currentTheme.border} bg-white`}>
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-                className="mx-auto mb-4 h-16 w-16 rounded-full border-8 border-orange-200 border-t-orange-600"
+                className="mx-auto mb-4 h-16 w-16 rounded-full border-8"
+                style={{ borderColor: `${currentTheme.accent}30`, borderTopColor: currentTheme.accent }}
               />
               <p className="text-xl font-bold text-gray-600">Loading your dashboard...</p>
             </Card>
           ) : children.length === 0 ? (
-            <Card className="border-4 border-dashed border-orange-300 bg-white p-12 text-center shadow-xl">
+            <Card className={`border-4 border-dashed ${currentTheme.border} bg-white p-12 text-center shadow-xl`}>
               <div className="mb-6 text-8xl">👶</div>
               <h3 className="mb-3 text-3xl font-black text-gray-900">
                 Add Your First Superstar!
@@ -261,7 +408,7 @@ export default function ParentDashboard() {
               </p>
               <Link href="/dashboard/add-child">
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button className="bg-gradient-to-r from-orange-500 via-red-500 to-yellow-500 font-black text-lg px-8 py-6 rounded-2xl shadow-2xl">
+                  <Button className={`bg-gradient-to-r ${currentTheme.gradient} font-black text-lg px-8 py-6 rounded-2xl shadow-2xl text-white`}>
                     <PlusCircle className="mr-2 h-6 w-6" />
                     Get Started
                   </Button>
@@ -283,7 +430,7 @@ export default function ParentDashboard() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.3 + index * 0.1 }}
                   >
-                    <Card className="group relative overflow-hidden border-4 border-orange-200 bg-white shadow-2xl hover:shadow-3xl transition-all">
+                    <Card className={`group relative overflow-hidden border-4 ${currentTheme.border} bg-white shadow-2xl hover:shadow-3xl transition-all`}>
                       <div
                         className="absolute top-4 right-4 z-20 rounded-full px-4 py-2 font-black text-white shadow-xl border-3 border-white"
                         style={{ backgroundColor: themeColor }}
@@ -342,7 +489,7 @@ export default function ParentDashboard() {
                           </div>
 
                           <motion.div
-                            className="mt-6 flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-orange-500 to-red-500 py-4 text-base font-black text-white opacity-0 transition-opacity group-hover:opacity-100 shadow-xl"
+                            className={`mt-6 flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r ${currentTheme.gradient} py-4 text-base font-black text-white opacity-0 transition-opacity group-hover:opacity-100 shadow-xl`}
                             whileHover={{ scale: 1.02 }}
                           >
                             <span>View Their Dashboard</span>
@@ -351,12 +498,32 @@ export default function ParentDashboard() {
                         </div>
                       </Link>
 
-                      <div className="border-t-4 border-orange-100 bg-gradient-to-r from-orange-50 to-yellow-50 p-4">
+                      <div className={`border-t-4 ${currentTheme.border} bg-gradient-to-r ${currentTheme.bgGradient} p-4 space-y-2`}>
+                        <Link href={`/dashboard/syllabus/${child.id}`}>
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            className="w-full justify-start font-bold text-gray-700 hover:bg-white"
+                          >
+                            <Calendar className="mr-2 h-5 w-5" />
+                            Manage Syllabus
+                          </Button>
+                        </Link>
+                        <Link href={`/dashboard/child/${child.id}/voice-clone`}>
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            className="w-full justify-start font-bold text-gray-700 hover:text-pink-600 hover:bg-white"
+                          >
+                            <Mic className="mr-2 h-5 w-5" />
+                            Clone Your Voice
+                          </Button>
+                        </Link>
                         <Link href={`/dashboard/children/${child.id}/settings`}>
                           <Button
                             variant="ghost"
                             size="sm"
-                            className="w-full justify-start font-bold text-gray-700 hover:text-orange-600 hover:bg-white"
+                            className="w-full justify-start font-bold text-gray-700 hover:bg-white"
                           >
                             <Settings className="mr-2 h-5 w-5" />
                             Change Theme & Settings
@@ -389,12 +556,12 @@ export default function ParentDashboard() {
                   whileHover={{ y: -8, scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <Card className="group border-4 border-orange-200 bg-white p-8 shadow-xl hover:shadow-2xl transition-all">
+                  <Card className={`group border-4 ${currentTheme.border} bg-white p-8 shadow-xl hover:shadow-2xl transition-all`}>
                     <div className="mb-4 text-6xl group-hover:scale-110 transition-transform">{action.emoji}</div>
                     <h3 className="mb-2 text-xl font-black text-gray-900">{action.title}</h3>
                     <p className="text-base font-semibold text-gray-600">{action.subtitle}</p>
                     <motion.div
-                      className="mt-4 flex items-center gap-2 font-bold text-orange-600"
+                      className={`mt-4 flex items-center gap-2 font-bold ${currentTheme.text}`}
                       whileHover={{ x: 5 }}
                     >
                       <span>Go</span>

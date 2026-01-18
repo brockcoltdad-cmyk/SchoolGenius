@@ -1,0 +1,119 @@
+{
+  "grade": 6,
+  "grade_name": "Sixth Grade",
+  "total_target": 2000,
+  "standards": ["L.6.2", "L.6.4"],
+  "skills": [
+    {
+      "skill": "Greek root hydr",
+      "code": "GRHY",
+      "standard": "L.6.4",
+      "count": 150,
+      "visual_type": "word_building",
+      "root": "hydr",
+      "meaning": "water",
+      "words": ["hydrant", "hydrate", "dehydrate", "hydrogen", "hydraulic", "hydroelectric", "hydroplane", "hydrology", "hydroponics"]
+    },
+    {
+      "skill": "Greek root therm",
+      "code": "GRTH",
+      "standard": "L.6.4",
+      "count": 150,
+      "visual_type": "word_building",
+      "root": "therm",
+      "meaning": "heat",
+      "words": ["thermometer", "thermal", "thermos", "thermostat", "geothermal", "hypothermia", "exothermic", "endothermic"]
+    },
+    {
+      "skill": "Greek root meter metr",
+      "code": "GRME",
+      "standard": "L.6.4",
+      "count": 150,
+      "visual_type": "word_building",
+      "root": "meter/metr",
+      "meaning": "measure",
+      "words": ["meter", "metric", "thermometer", "barometer", "diameter", "perimeter", "centimeter", "kilometer", "speedometer", "geometry", "symmetric", "parameter"]
+    },
+    {
+      "skill": "Greek root log logy",
+      "code": "GRLG",
+      "standard": "L.6.4",
+      "count": 150,
+      "visual_type": "word_building",
+      "root": "log/logy",
+      "meaning": "study of or word",
+      "words": ["biology", "geology", "technology", "ecology", "mythology", "psychology", "sociology", "archaeology", "zoology", "meteorology", "dialogue", "monologue", "prologue", "epilogue", "logic", "logical"]
+    },
+    {
+      "skill": "Latin root bene",
+      "code": "LTBE",
+      "standard": "L.6.4",
+      "count": 150,
+      "visual_type": "word_building",
+      "root": "bene",
+      "meaning": "good or well",
+      "words": ["benefit", "beneficial", "benefactor", "benevolent", "benediction", "beneficiary"]
+    },
+    {
+      "skill": "Latin root mal",
+      "code": "LTMA",
+      "standard": "L.6.4",
+      "count": 150,
+      "visual_type": "word_building",
+      "root": "mal",
+      "meaning": "bad or evil",
+      "words": ["malfunction", "malice", "malicious", "malnourished", "malnutrition", "malpractice", "malignant", "malware", "malcontent", "maladaptive"]
+    },
+    {
+      "skill": "Latin root ject",
+      "code": "LTJE",
+      "standard": "L.6.4",
+      "count": 150,
+      "visual_type": "word_building",
+      "root": "ject",
+      "meaning": "throw",
+      "words": ["reject", "project", "inject", "eject", "subject", "object", "trajectory", "projection", "rejection", "objection", "dejected", "interjection"]
+    },
+    {
+      "skill": "Latin root spect",
+      "code": "LTSP",
+      "standard": "L.6.4",
+      "count": 150,
+      "visual_type": "word_building",
+      "root": "spect",
+      "meaning": "look or see",
+      "words": ["inspect", "respect", "aspect", "expect", "suspect", "prospect", "spectator", "spectacle", "spectrum", "perspective", "retrospect", "introspect", "circumspect"]
+    },
+    {
+      "skill": "science vocabulary",
+      "code": "SCIV",
+      "standard": "L.6.2",
+      "count": 400,
+      "visual_type": "word_building",
+      "words": ["acceleration", "adaptation", "atmosphere", "bacteria", "biodegradable", "carnivore", "chromosome", "circulation", "classification", "climate", "condensation", "conservation", "constellation", "consumer", "decomposer", "density", "ecosystem", "electricity", "element", "endangered", "energy", "environment", "erosion", "evaporation", "evolution", "experiment", "extinction", "fossil", "frequency", "friction", "gravity", "habitat", "herbivore", "hypothesis", "inheritance", "invertebrate", "latitude", "longitude", "magnitude", "mammal", "metabolism", "microscope", "molecule", "nutrient", "omnivore", "organism", "photosynthesis", "population", "precipitation", "predator", "producer", "property", "radiation", "renewable", "reproduction", "respiration", "satellite", "species", "temperature", "variable", "velocity", "vertebrate", "wavelength"]
+    },
+    {
+      "skill": "social studies vocabulary",
+      "code": "SOCV",
+      "standard": "L.6.2",
+      "count": 350,
+      "visual_type": "word_building",
+      "words": ["abolish", "agriculture", "amendment", "ancestor", "ancient", "archaeology", "artifact", "assembly", "authority", "boundary", "capitalism", "civilization", "colony", "commerce", "communism", "compromise", "confederate", "constitution", "continent", "contribution", "democracy", "descendant", "economy", "emigrate", "emperor", "empire", "excavate", "executive", "export", "federation", "hemisphere", "heritage", "immigrant", "independence", "industrial", "judicial", "landmark", "legislative", "liberty", "merchant", "metropolitan", "migration", "monarchy", "monopoly", "nationality", "parliament", "patriot", "peninsula", "pioneer", "plantation", "political", "population", "prejudice", "rebellion", "reform", "refugee", "religion", "republic", "revolution", "sacrifice", "segregation", "settlement", "slavery", "socialism", "sovereignty", "territory", "tradition", "treaty", "tyranny", "veto"]
+    }
+  ],
+  "question_templates": [
+    "Listen to the word and spell it: {word}",
+    "Type the word you hear: {word}",
+    "Spell the word: {word}"
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

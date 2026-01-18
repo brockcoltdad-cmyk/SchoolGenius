@@ -1,0 +1,262 @@
+{
+  "grade": 7,
+  "grade_name": "Seventh Grade",
+  "lexile_range": "1050L-1150L",
+  "default_lexile": "1100L",
+  "standards": ["RL.7.1", "RL.7.2", "RL.7.3", "RL.7.4", "RL.7.6", "RI.7.2", "RI.7.5", "RI.7.8"],
+  "total_target": 2000,
+  "skills": [
+    {
+      "skill": "citing multiple evidence",
+      "code": "INFER",
+      "standard": "RL.7.1",
+      "count": 300,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "Cite several pieces of evidence that support {claim}.",
+        "Which quotes from the text best support the inference that {inference}?",
+        "Find at least two pieces of evidence to support your answer."
+      ],
+      "evidence_passages": [
+        {
+          "title": "The Competition",
+          "text": "Elena's hands trembled as she gripped her violin bow. She had practiced this piece for six months, sacrificing weekends and missing her best friend's birthday party. Now, standing on stage, she could see her parents in the front row—her father who had driven her to every lesson, her mother who had worked extra shifts to pay for the instrument. When she began to play, the notes flowed like water. For those three minutes, nothing else existed.",
+          "question": "What evidence shows that Elena is dedicated to violin?",
+          "evidence_pieces": [
+            "practiced this piece for six months",
+            "sacrificing weekends",
+            "missing her best friend's birthday party",
+            "the notes flowed like water"
+          ]
+        },
+        {
+          "title": "The Storm Shelter",
+          "text": "The tornado warning came at 2 PM. By 2:05, the Ortiz family was in their basement shelter—supplies stocked, radio ready, flashlights working. They had practiced this drill dozens of times since moving to Oklahoma. When the power went out and the roar grew louder, no one panicked. Mrs. Ortiz counted heads, Mr. Ortiz monitored the radio, and the kids played cards by flashlight, just as they had rehearsed.",
+          "question": "How do you know the Ortiz family was well-prepared?",
+          "evidence_pieces": [
+            "By 2:05, the family was in their basement shelter",
+            "supplies stocked, radio ready, flashlights working",
+            "practiced this drill dozens of times",
+            "no one panicked"
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "analyzing theme development",
+      "code": "THEM",
+      "standard": "RL.7.2",
+      "count": 350,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "How does the author develop the theme of {theme} over the course of the text?",
+        "Trace the development of the theme from beginning to end.",
+        "What events, dialogue, or character changes reveal the theme?"
+      ],
+      "theme_analysis": [
+        {
+          "title": "The Weight of Words",
+          "text": "When Marcus first heard the rumor about himself, he laughed it off. But the whispers grew louder. Friends stopped sitting with him. His jokes fell flat in silent rooms. By week two, Marcus understood how words—even untrue ones—could isolate a person completely. When the truth finally came out, the apologizes felt hollow. Some damage, Marcus learned, couldn't be undone with 'sorry.'",
+          "theme": "Words have lasting power and consequences",
+          "development_stages": [
+            "Beginning: Marcus dismisses the rumor as unimportant",
+            "Middle: He experiences the real effects—isolation, silence",
+            "Climax: He realizes the full impact of others' words",
+            "End: Even after truth emerges, the damage remains"
+          ]
+        },
+        {
+          "title": "The Long Walk",
+          "text": "Day one of the charity walk, Priya focused on her blistered feet. Day two, she focused on the heat. Day three, she focused on her exhaustion. But by day four, she noticed the families cheering them on—families who would receive clean water because of this walk. Day five, her feet still hurt, but she barely noticed. She was too busy thinking about the wells her steps would build.",
+          "theme": "Perspective changes when we focus on purpose over discomfort",
+          "development_stages": [
+            "Days 1-3: Focus on personal discomfort (physical)",
+            "Day 4: Shift to awareness of impact on others",
+            "Day 5: Personal pain becomes insignificant compared to purpose"
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "character and story development",
+      "code": "CHAR",
+      "standard": "RL.7.3",
+      "count": 300,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "How do the interactions between {character1} and {character2} advance the plot?",
+        "How does {character}'s response to {event} reveal their character?",
+        "Analyze how {element} contributes to the story's development."
+      ],
+      "development_passages": [
+        {
+          "title": "The Project Partners",
+          "text": "At first, Aisha resented being paired with Derek, the class clown who never took anything seriously. But when she saw his sketchbook—filled with detailed scientific drawings—she realized she had misjudged him. His humor, she learned, was armor. Underneath was someone as anxious about grades as she was. Together, they created a project that was both brilliantly researched and creatively presented. Neither could have done it alone.",
+          "character_interaction": "Aisha and Derek",
+          "plot_advancement": "Their collaboration leads to a better outcome than either could achieve alone",
+          "character_revelation": "Derek's humor masks anxiety; Aisha learns not to judge by appearances"
+        }
+      ]
+    },
+    {
+      "skill": "word choice impact",
+      "code": "VOCAB",
+      "standard": "RL.7.4",
+      "count": 300,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "What is the impact of the word '{word}' in this context?",
+        "How does the author's word choice affect the tone?",
+        "What would change if the author used '{alt_word}' instead of '{word}'?"
+      ],
+      "word_choice_examples": [
+        {
+          "sentence": "The soldier marched home.",
+          "word": "marched",
+          "impact": "Suggests discipline, pride, strength—a triumphant return",
+          "alternatives": [
+            {"word": "stumbled", "impact": "Suggests exhaustion, defeat, struggle"},
+            {"word": "rushed", "impact": "Suggests urgency, eagerness"},
+            {"word": "wandered", "impact": "Suggests aimlessness, confusion"}
+          ]
+        },
+        {
+          "sentence": "She glared at the letter.",
+          "word": "glared",
+          "impact": "Shows anger, hostility toward the letter's contents",
+          "alternatives": [
+            {"word": "glanced", "impact": "Neutral, casual look"},
+            {"word": "stared", "impact": "Shows focus, possibly shock or disbelief"},
+            {"word": "studied", "impact": "Shows careful analysis, less emotional"}
+          ]
+        },
+        {
+          "sentence": "The house loomed over the street.",
+          "word": "loomed",
+          "impact": "Makes the house seem threatening, ominous",
+          "alternatives": [
+            {"word": "stood", "impact": "Neutral description"},
+            {"word": "towered", "impact": "Emphasizes height, could be majestic"},
+            {"word": "crouched", "impact": "Makes it seem hidden or waiting"}
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "point of view development",
+      "code": "POV",
+      "standard": "RL.7.6",
+      "count": 250,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "How does the author develop the contrasting points of view of {character1} and {character2}?",
+        "What techniques does the author use to distinguish between perspectives?",
+        "How does the shift in point of view affect the reader's understanding?"
+      ],
+      "pov_development": [
+        {
+          "title": "The Debate",
+          "character1_pov": {
+            "name": "Sofia",
+            "view": "The old community garden should become a parking lot. The garden is used by only a dozen families, but hundreds need parking for the new transit station. It's simple math—serve more people.",
+            "techniques": ["Uses statistics", "appeals to logic", "focuses on efficiency"]
+          },
+          "character2_pov": {
+            "name": "Mr. Chen",
+            "view": "That garden was planted by my grandmother fifty years ago. It's where children learn where food comes from. Numbers can't measure what this space means to our community's soul.",
+            "techniques": ["Uses personal history", "appeals to emotion", "focuses on intangible value"]
+          },
+          "author_technique": "Gives each character valid reasoning to show complexity of the issue"
+        }
+      ]
+    },
+    {
+      "skill": "central idea analysis",
+      "code": "MAIN",
+      "standard": "RI.7.2",
+      "count": 300,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "What is the central idea, and how is it developed?",
+        "Analyze how the central idea emerges and is refined by specific details.",
+        "Provide an objective summary of the text."
+      ],
+      "central_idea_passages": [
+        {
+          "title": "The Teenage Brain",
+          "text": "The teenage brain is not a broken adult brain—it's a brain optimized for learning and adaptation. The prefrontal cortex, responsible for decision-making, isn't fully developed until age 25. This explains why teens take risks: their brains are wired to explore and experiment. Meanwhile, the limbic system, which processes emotions, is highly active. This combination of underdeveloped judgment and heightened emotions creates the stereotypical teenage experience. Understanding this biology helps adults support teens rather than simply punish them for 'poor decisions.'",
+          "central_idea": "The teenage brain is uniquely structured for learning, not flawed",
+          "development": [
+            "Introduces reframing: not broken, but optimized",
+            "Explains biological basis: prefrontal cortex development",
+            "Connects to behavior: risk-taking has a purpose",
+            "Adds complexity: emotion processing",
+            "Concludes with implication: changes how we should treat teens"
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "text structure analysis",
+      "code": "COMP",
+      "standard": "RI.7.5",
+      "count": 250,
+      "visual_type": "comprehension_question",
+      "question_templates": [
+        "Analyze how the author structures the text.",
+        "How do the major sections contribute to the whole?",
+        "Why did the author choose this particular structure?"
+      ],
+      "structure_analysis": [
+        {
+          "title": "Article on Climate Change",
+          "structure": "Problem-Cause-Effect-Solution",
+          "sections": [
+            {"name": "Problem", "content": "Rising global temperatures", "purpose": "Establishes urgency"},
+            {"name": "Cause", "content": "Greenhouse gas emissions", "purpose": "Explains the source"},
+            {"name": "Effect", "content": "Extreme weather, rising seas", "purpose": "Shows consequences"},
+            {"name": "Solution", "content": "Renewable energy, policy changes", "purpose": "Offers hope and action"}
+          ],
+          "effectiveness": "This structure moves readers from understanding the problem to feeling empowered to act"
+        }
+      ]
+    },
+    {
+      "skill": "evaluating arguments",
+      "code": "INFER",
+      "standard": "RI.7.8",
+      "count": 250,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "Trace and evaluate the argument and specific claims in the text.",
+        "Is the reasoning sound? Is the evidence relevant and sufficient?",
+        "Identify any logical fallacies in the argument."
+      ],
+      "argument_evaluation": [
+        {
+          "title": "Homework Debate",
+          "argument": "Homework should be banned because students are stressed and studies show that excessive homework doesn't improve learning. In countries like Finland, students have minimal homework yet outperform American students on international tests. If homework worked, we would see better results from the hours students currently spend.",
+          "claims": [
+            "Students are stressed (supported by widespread reports)",
+            "Excessive homework doesn't improve learning (needs citation)",
+            "Finland example (relevant, but may have other factors)",
+            "If homework worked, we'd see results (logical, but oversimplified)"
+          ],
+          "evaluation": "The argument makes valid points but relies partly on correlation without proving causation. Finland's success may involve other factors like teacher training and class size.",
+          "strength": "Uses international comparison and acknowledges research",
+          "weakness": "Doesn't address what amount of homework might be beneficial; generalizes from one country"
+        }
+      ]
+    }
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

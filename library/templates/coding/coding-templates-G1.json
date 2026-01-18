@@ -1,0 +1,282 @@
+{
+  "grade": 1,
+  "theme_bucket": "K-2",
+  "theme_style": "Animals, colors, simple characters",
+  "description": "Grade 1 Coding - Introduction to Scratch Jr",
+  "lesson_flow_reference": "LESSON-FLOW-ARCHITECTURE.md",
+  "standard": "ISTE 1A-AP-10",
+  "tool": "Scratch Jr",
+  "advancement_rule": "Project-based: Complete 5 projects to advance",
+
+  "project_templates": [
+    {
+      "project_id": "G1-ANIMAL-PARADE",
+      "project_name": "Animal Parade",
+      "tagline": "Make a parade of animals march across the screen!",
+      "skill_taught": "simple loops (repeat)",
+      "standard": "1A-AP-10",
+      "what_kids_build": "Animals that repeat movements",
+      "why_exciting": "Watching animals march in a parade is fun!",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "The animals are having a parade! But marching is TIRING. Instead of saying 'step step step step', let's use a LOOP!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "A LOOP does something over and over. Instead of 'move move move move', we say 'repeat 4 times: move'!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "without_loop": ["move", "move", "move", "move"],
+                "with_loop": ["repeat 4", "  move", "end"],
+                "comparison": "Same result, less work!"
+              }
+            },
+            "voice_text": "Instead of writing move four times, we put it in a loop! Repeat 4 times: move. Done!",
+            "duration": 5000
+          }
+        ],
+        "rule_card": {
+          "title": "Loops (Repeat)",
+          "rule": "A loop repeats code. REPEAT [number] does something that many times!",
+          "example": "repeat 3: jump → jump jump jump!"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "March 5 Steps",
+            "prompt": "Make the elephant march 5 steps using a loop",
+            "answer": "repeat 5: move right",
+            "tier1": {"teach": "Put 'move right' inside 'repeat 5'. The elephant will move 5 times!"}
+          },
+          {
+            "challenge_name": "Hop Hop Hop",
+            "prompt": "Make the bunny hop 3 times",
+            "answer": "repeat 3: hop"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your animal parade is marching! Loops are awesome!",
+        "badge": "Loop Leader",
+        "coins": 60
+      }
+    },
+    {
+      "project_id": "G1-MAGIC-TOUCH",
+      "project_name": "Magic Touch",
+      "tagline": "Tap the animals and watch magic happen!",
+      "skill_taught": "events (when tapped)",
+      "standard": "1A-AP-10",
+      "what_kids_build": "Characters that respond to taps",
+      "why_exciting": "Tapping and seeing instant reaction is magical",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "What if you could tap a cat and make it MEOW? Or tap a frog and make it JUMP? That's the power of EVENTS!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "An EVENT is when something happens. 'When tapped' means when you touch it!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "blocks": ["when this character tapped", "say [Meow!]"],
+                "demo": "tap_cat_meows"
+              }
+            },
+            "voice_text": "When I tap the cat - MEOW! The 'when tapped' block waits for your tap, then runs the code!",
+            "duration": 5000
+          }
+        ],
+        "rule_card": {
+          "title": "Events",
+          "rule": "'When tapped' waits for you to touch something, THEN runs the code",
+          "example": "When tapped → say Hello!"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Tap to Jump",
+            "prompt": "When the frog is tapped, make it jump",
+            "answer": ["when tapped", "jump"]
+          },
+          {
+            "challenge_name": "Tap to Spin",
+            "prompt": "When the star is tapped, make it spin around",
+            "answer": ["when tapped", "turn 360 degrees"]
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Everything responds to your touch! You understand events!",
+        "badge": "Event Expert",
+        "coins": 60
+      }
+    },
+    {
+      "project_id": "G1-PET-DRESS",
+      "project_name": "Pet Dress-Up",
+      "tagline": "Design your perfect pet with different looks!",
+      "skill_taught": "sprites and backgrounds",
+      "standard": "1A-AP-10",
+      "what_kids_build": "Custom characters with different costumes",
+      "why_exciting": "Customization and creativity",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Let's create your own pet! You can choose how it looks, what it wears, and where it lives!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "SPRITES are the characters in your project. BACKGROUNDS are where they live!",
+            "visual": {
+              "type": "variable_box",
+              "data": {
+                "sprite": {"examples": ["🐱", "🐶", "🐰", "🦄"]},
+                "background": {"examples": ["🏠 House", "🌳 Park", "🏖️ Beach", "🌙 Night"]}
+              }
+            },
+            "voice_text": "Pick your sprite - that's your pet! Pick your background - that's where it lives!",
+            "duration": 5000
+          }
+        ]
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Choose Your Pet",
+            "prompt": "Add a sprite and choose what animal you want",
+            "interaction": "sprite_selector"
+          },
+          {
+            "challenge_name": "Pick a Home",
+            "prompt": "Where does your pet live? Choose a background!",
+            "interaction": "background_selector"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your pet looks amazing in their new home!",
+        "badge": "Pet Designer",
+        "coins": 60
+      }
+    },
+    {
+      "project_id": "G1-RACING-BUNNY",
+      "project_name": "Racing Bunny",
+      "tagline": "Help the bunny win the race!",
+      "skill_taught": "algorithms (step-by-step plans)",
+      "standard": "1A-AP-10",
+      "what_kids_build": "A bunny that follows a path to finish line",
+      "why_exciting": "Racing and winning!",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "The bunny wants to win the race! But it needs YOUR plan to get there. That plan is called an ALGORITHM!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "An ALGORITHM is a step-by-step plan to solve a problem!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "problem": "Get bunny to carrot",
+                "algorithm": ["Start", "Move right 3", "Move up 2", "Move right 1", "Got the carrot!"]
+              }
+            },
+            "voice_text": "Our algorithm: move right 3, up 2, right 1. That's the plan to reach the carrot!",
+            "duration": 5000
+          }
+        ],
+        "rule_card": {
+          "title": "Algorithms",
+          "rule": "An algorithm is a step-by-step plan to solve a problem",
+          "example": "Problem: Get to school. Algorithm: Wake up → Get dressed → Eat → Walk to school"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Plan the Race",
+            "prompt": "Bunny needs to go: right 2, down 1, right 3. Put the steps in order!",
+            "answer": ["move right 2", "move down 1", "move right 3"],
+            "interaction": "sequence_builder"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "The bunny won the race thanks to your algorithm!",
+        "badge": "Algorithm Ace",
+        "coins": 60
+      }
+    },
+    {
+      "project_id": "G1-FIX-GAME",
+      "project_name": "Fix the Game",
+      "tagline": "The game is broken! Can you debug it?",
+      "skill_taught": "debugging simple programs",
+      "standard": "1A-AP-10",
+      "what_kids_build": "Find and fix bugs in simple Scratch Jr projects",
+      "why_exciting": "Being the expert who fixes things",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Oh no! This game doesn't work right! The cat is supposed to meow when tapped, but it's spinning instead! Let's find the BUG!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "DEBUGGING means finding what's wrong and fixing it!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "buggy": ["when tapped", "turn around"],
+                "expected": "Cat should meow",
+                "actual": "Cat spins",
+                "fix": ["when tapped", "say Meow!"]
+              }
+            },
+            "voice_text": "The code says turn around, but we want it to meow! Wrong block! Let's fix it!",
+            "duration": 5000
+          }
+        ]
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Wrong Sound",
+            "prompt": "Dog should bark but it's meowing! Find the wrong block.",
+            "buggy": ["when tapped", "play meow sound"],
+            "fix": ["when tapped", "play bark sound"]
+          },
+          {
+            "challenge_name": "Wrong Direction",
+            "prompt": "Bird should fly UP but it's going DOWN! Fix it.",
+            "buggy": ["when start", "move down 5"],
+            "fix": ["when start", "move up 5"]
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "You debugged all the games! You're a bug-squashing hero!",
+        "badge": "Debug Hero",
+        "coins": 60
+      }
+    }
+  ],
+
+  "summary": {
+    "total_projects": 5,
+    "skills_covered": ["simple loops", "events", "sprites/backgrounds", "algorithms", "debugging"],
+    "tool": "Scratch Jr",
+    "theme_consistency": "Animals and simple characters appropriate for 6-year-olds"
+  }
+}

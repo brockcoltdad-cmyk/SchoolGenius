@@ -1,0 +1,302 @@
+{
+  "grade": 0,
+  "theme_bucket": "K-2",
+  "theme_style": "Animals, colors, simple characters",
+  "description": "Kindergarten Coding - Fun with Sequences and Patterns",
+  "lesson_flow_reference": "LESSON-FLOW-ARCHITECTURE.md",
+  "standard": "ISTE 1A-AP-08",
+  "tool": "Scratch Jr concepts (unplugged + simple drag-drop)",
+  "advancement_rule": "Project-based: Complete 5 projects to advance",
+
+  "project_templates": [
+    {
+      "project_id": "K-ANIMAL-DANCE",
+      "project_name": "Animal Dance Party",
+      "tagline": "Make the animals dance in order!",
+      "skill_taught": "sequences",
+      "standard": "1A-AP-08",
+      "what_kids_build": "Animals that dance in a specific order",
+      "why_exciting": "Dancing animals + music = pure joy for 5-year-olds",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "The animals want to have a dance party! But they need to know WHAT ORDER to dance in. Can you tell them?",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "A SEQUENCE is steps in order. First, then, next, last!",
+            "visual": {
+              "type": "loop_animation",
+              "data": {
+                "frames": [
+                  {"emoji": "🐱", "label": "First: Cat jumps"},
+                  {"emoji": "🐶", "label": "Then: Dog spins"},
+                  {"emoji": "🐰", "label": "Next: Bunny hops"},
+                  {"emoji": "🎉", "label": "Last: Party time!"}
+                ]
+              }
+            },
+            "voice_text": "First the cat jumps! Then the dog spins! Next the bunny hops! That's a sequence - steps in ORDER!",
+            "duration": 6000
+          }
+        ],
+        "rule_card": {
+          "title": "Sequences",
+          "rule": "A sequence is steps in order: First → Then → Next → Last",
+          "example": "First wake up, then brush teeth, next eat breakfast!"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Put the Dance in Order",
+            "prompt": "Drag the animals into the RIGHT order:\n\n1. Cat jumps\n2. ___\n3. ___\n4. Everyone dances!",
+            "answer": ["Dog spins", "Bunny hops"],
+            "interaction": "drag_and_drop",
+            "tier1": {"teach": "Look at the numbers! 1, 2, 3, 4 - put them in counting order!"}
+          },
+          {
+            "challenge_name": "What Comes Next?",
+            "prompt": "Cat jumped. Dog spun. What comes NEXT?",
+            "answer": "Bunny hops",
+            "interaction": "multiple_choice_pictures"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "The animals had an AMAZING dance party! You're a sequence superstar!",
+        "badge": "Dance Director",
+        "coins": 50
+      }
+    },
+    {
+      "project_id": "K-PATTERN-MAKER",
+      "project_name": "Color Pattern Maker",
+      "tagline": "Create beautiful patterns with colors!",
+      "skill_taught": "patterns",
+      "standard": "1A-AP-08",
+      "what_kids_build": "Repeating color patterns",
+      "why_exciting": "Making pretty patterns feels like art + coding",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Let's make a beautiful necklace for the princess! We need a PATTERN - colors that repeat!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "A PATTERN repeats! Red, Blue, Red, Blue... what comes next?",
+            "visual": {
+              "type": "loop_animation",
+              "data": {
+                "pattern": ["🔴", "🔵", "🔴", "🔵", "❓"],
+                "answer": "🔴"
+              }
+            },
+            "voice_text": "Red, blue, red, blue... the pattern REPEATS! So next is RED!",
+            "duration": 5000
+          }
+        ],
+        "rule_card": {
+          "title": "Patterns",
+          "rule": "A pattern is something that REPEATS in the same order",
+          "examples": ["AB: 🔴🔵🔴🔵", "ABC: 🔴🔵🟢🔴🔵🟢", "AAB: 🔴🔴🔵🔴🔴🔵"]
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Complete the Pattern",
+            "prompt": "🔴🔵🔴🔵🔴___",
+            "answer": "🔵",
+            "tier1": {"teach": "Red, blue, red, blue, red... the pattern goes back to BLUE!"}
+          },
+          {
+            "challenge_name": "Find the Pattern",
+            "prompt": "What pattern is this? 🟢🟡🟢🟡🟢🟡",
+            "answer": "Green Yellow repeating (AB pattern)",
+            "interaction": "identify_pattern"
+          },
+          {
+            "challenge_name": "Make Your Own",
+            "prompt": "Create an ABC pattern using animals!",
+            "answer": "Any three different animals repeating",
+            "interaction": "drag_and_create"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "You made beautiful patterns! The princess loves her necklace!",
+        "badge": "Pattern Artist",
+        "coins": 50
+      }
+    },
+    {
+      "project_id": "K-ROBOT-COMMANDS",
+      "project_name": "Robot Helper",
+      "tagline": "Tell the robot exactly what to do!",
+      "skill_taught": "giving instructions",
+      "standard": "1A-AP-08",
+      "what_kids_build": "Step-by-step commands for a robot",
+      "why_exciting": "Being the boss of a robot is empowering",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "This robot wants to help you, but it only does EXACTLY what you tell it! Can you give good instructions?",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "Robots need CLEAR instructions. Not 'go there' - say 'move forward 3 steps'!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "bad": "Go to the cookie",
+                "good": ["Move forward 2", "Turn right", "Move forward 1", "Pick up cookie"]
+              }
+            },
+            "voice_text": "Robots can't think! You must tell them EXACTLY what to do, step by step!",
+            "duration": 5000
+          }
+        ],
+        "rule_card": {
+          "title": "Clear Instructions",
+          "rule": "Good instructions are: 1) Specific 2) In order 3) One step at a time",
+          "example": "Move 2 steps, turn left, move 1 step"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Get the Cookie",
+            "prompt": "Robot is 3 squares from cookie. What commands?\n🤖 ⬜ ⬜ 🍪",
+            "answer": ["Move forward", "Move forward", "Move forward", "Pick up"],
+            "interaction": "drag_commands"
+          },
+          {
+            "challenge_name": "Around the Corner",
+            "prompt": "Robot needs to turn! Write the steps.",
+            "answer": ["Move forward 2", "Turn right", "Move forward 1"],
+            "interaction": "sequence_builder"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your robot followed every instruction! You're a great robot commander!",
+        "badge": "Robot Commander",
+        "coins": 50
+      }
+    },
+    {
+      "project_id": "K-FOLLOW-CAT",
+      "project_name": "Follow the Cat",
+      "tagline": "Can you follow the cat's instructions?",
+      "skill_taught": "following instructions",
+      "standard": "1A-AP-08",
+      "what_kids_build": "Execute instructions to reach a goal",
+      "why_exciting": "Following a cute cat on an adventure",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "The cat knows where the treasure is! But you have to follow its instructions EXACTLY. Ready?",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "Following instructions means doing EXACTLY what it says, in ORDER!",
+            "visual": {
+              "type": "loop_animation",
+              "data": {
+                "instructions": ["Jump 2 times", "Spin around", "Touch your nose"],
+                "demo": "character_follows"
+              }
+            },
+            "voice_text": "Jump two times - one, two! Spin around - wheee! Touch your nose - boop! You followed the instructions!",
+            "duration": 6000
+          }
+        ]
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Follow the Path",
+            "prompt": "Cat says: Go right 2, Go up 1, Go right 1. Where do you end up?",
+            "answer": "At the treasure chest",
+            "interaction": "grid_movement"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "You found the treasure by following instructions perfectly!",
+        "badge": "Treasure Finder",
+        "coins": 50
+      }
+    },
+    {
+      "project_id": "K-FIX-STORY",
+      "project_name": "Fix the Silly Story",
+      "tagline": "Something's wrong! Can you fix it?",
+      "skill_taught": "basic debugging",
+      "standard": "1A-AP-08",
+      "what_kids_build": "Find and fix mistakes in sequences",
+      "why_exciting": "Finding mistakes makes kids feel clever",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Oh no! The story is all mixed up! The dog is eating BEFORE he wakes up! Can you find what's wrong?",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "A BUG is when something is wrong or in the wrong place. Let's find it!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "buggy": ["Eat breakfast 🥣", "Wake up ☀️", "Go to school 🏫"],
+                "fixed": ["Wake up ☀️", "Eat breakfast 🥣", "Go to school 🏫"],
+                "bug_highlight": 0
+              }
+            },
+            "voice_text": "Wait! You can't eat breakfast BEFORE waking up! That's the bug! Let's fix it!",
+            "duration": 5000
+          }
+        ],
+        "rule_card": {
+          "title": "Finding Bugs",
+          "rule": "A bug is something wrong. To fix it: 1) Look carefully 2) Find what's wrong 3) Fix it!",
+          "example": "Wrong order? Move the step to the right place!"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Fix the Morning",
+            "prompt": "What's wrong? Put on shoes → Put on socks → Go outside",
+            "answer": "Socks go BEFORE shoes!",
+            "fix": ["Put on socks", "Put on shoes", "Go outside"]
+          },
+          {
+            "challenge_name": "Fix the Recipe",
+            "prompt": "What's wrong? Eat the cookie → Mix ingredients → Bake in oven",
+            "answer": "You can't eat it before making it!",
+            "fix": ["Mix ingredients", "Bake in oven", "Eat the cookie"]
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "You fixed all the bugs! You're a debugging detective!",
+        "badge": "Bug Fixer",
+        "coins": 50
+      }
+    }
+  ],
+
+  "summary": {
+    "total_projects": 5,
+    "skills_covered": ["sequences", "patterns", "giving instructions", "following instructions", "basic debugging"],
+    "theme_consistency": "All projects use animals, colors, simple characters - perfect for 5-year-olds",
+    "no_reading_required": "All activities use pictures, drag-drop, and voice instructions",
+    "unplugged_friendly": "Can be done with cards, toys, or on screen"
+  }
+}

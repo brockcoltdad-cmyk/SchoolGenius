@@ -1,0 +1,351 @@
+{
+  "grade": 7,
+  "theme_bucket": "6-7",
+  "theme_style": "Real projects, apps, challenges",
+  "description": "Grade 7 Coding - Python Intermediate",
+  "lesson_flow_reference": "LESSON-FLOW-ARCHITECTURE.md",
+  "standard": "ISTE 1B-AP-15",
+  "tool": "Python",
+  "advancement_rule": "Project-based: Complete 5 projects to advance",
+
+  "project_templates": [
+    {
+      "project_id": "G7-CONTACT-BOOK",
+      "project_name": "Contact Book",
+      "tagline": "Build an address book with dictionaries!",
+      "skill_taught": "dictionaries",
+      "standard": "1B-AP-15",
+      "what_kids_build": "A contact manager storing names, phones, emails",
+      "why_exciting": "Building a real data management app",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Lists are great, but what if you want to store a name WITH a phone number? DICTIONARIES to the rescue!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "A DICTIONARY stores key-value pairs. Like a real dictionary: word → definition. Contact: name → phone!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "language": "python",
+                "code": "contacts = {\n    'Alice': '555-1234',\n    'Bob': '555-5678',\n    'Charlie': '555-9999'\n}\n\nprint(contacts['Alice'])  # Get Alice's number\ncontacts['David'] = '555-4321'  # Add new contact\ndel contacts['Bob']  # Remove Bob",
+                "output": "555-1234"
+              }
+            },
+            "voice_text": "Curly braces, key colon value. Access with square brackets. Add by assigning. Delete with del!",
+            "duration": 6000
+          }
+        ],
+        "rule_card": {
+          "title": "Dictionaries",
+          "rule": "{key: value} stores pairs. dict['key'] gets value. dict['new'] = value adds. del dict['key'] removes.",
+          "example": "person = {'name': 'Emma', 'age': 12}\nprint(person['name'])"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Create Contact",
+            "prompt": "Create a dictionary for one contact with name, phone, and email",
+            "answer": "contact = {'name': 'Alice', 'phone': '555-1234', 'email': 'alice@email.com'}"
+          },
+          {
+            "challenge_name": "Lookup Contact",
+            "prompt": "Get the phone number from contacts dictionary by name",
+            "answer": "name = input('Name to look up: ')\nif name in contacts:\n    print(contacts[name])\nelse:\n    print('Not found')"
+          },
+          {
+            "challenge_name": "Add Contact",
+            "prompt": "Ask for name and phone, add to contacts dictionary",
+            "answer": "name = input('Name: ')\nphone = input('Phone: ')\ncontacts[name] = phone"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your contact book works! Dictionaries are powerful!",
+        "badge": "Dictionary Master",
+        "coins": 95
+      }
+    },
+    {
+      "project_id": "G7-SCORE-SAVER",
+      "project_name": "High Score Saver",
+      "tagline": "Save high scores to a file that persists!",
+      "skill_taught": "file handling",
+      "standard": "1B-AP-15",
+      "what_kids_build": "A game that saves and loads high scores from file",
+      "why_exciting": "Data that survives closing the program!",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "What if your high scores SAVED even after closing the program? Files make data PERMANENT!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "open() opens a file. 'w' writes, 'r' reads. write() saves text. read() gets it back!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "language": "python",
+                "code": "# Save high score\nwith open('highscore.txt', 'w') as file:\n    file.write('500')\n\n# Load high score\nwith open('highscore.txt', 'r') as file:\n    score = file.read()\n    print('High score: ' + score)",
+                "output": "High score: 500"
+              }
+            },
+            "voice_text": "With open creates safe file access. W for write, R for read. Write saves, read loads!",
+            "duration": 6000
+          }
+        ],
+        "rule_card": {
+          "title": "File Handling",
+          "rule": "with open('file', 'w') as f: writes. with open('file', 'r') as f: reads. Always use 'with' for safety!",
+          "example": "with open('data.txt', 'w') as f:\n    f.write('Hello')"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Save Score",
+            "prompt": "Save the variable 'score' to a file called scores.txt",
+            "answer": "with open('scores.txt', 'w') as file:\n    file.write(str(score))"
+          },
+          {
+            "challenge_name": "Load Score",
+            "prompt": "Load the score from scores.txt into a variable",
+            "answer": "with open('scores.txt', 'r') as file:\n    loaded_score = int(file.read())"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your scores save and load! Data persistence mastered!",
+        "badge": "File Handler",
+        "coins": 95
+      }
+    },
+    {
+      "project_id": "G7-SAFE-CALC",
+      "project_name": "Crash-Proof Calculator",
+      "tagline": "Build a calculator that handles errors gracefully!",
+      "skill_taught": "error handling (try/except)",
+      "standard": "1B-AP-15",
+      "what_kids_build": "A calculator that doesn't crash on bad input",
+      "why_exciting": "Professional-quality code that handles mistakes",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "What if someone types 'abc' instead of a number? Without error handling, your program CRASHES. Let's fix that!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "try/except catches errors before they crash your program!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "language": "python",
+                "code": "try:\n    num = int(input('Enter a number: '))\n    result = 10 / num\n    print('Result: ' + str(result))\nexcept ValueError:\n    print('That is not a number!')\nexcept ZeroDivisionError:\n    print('Cannot divide by zero!')",
+                "scenarios": [
+                  {"input": "5", "output": "Result: 2.0"},
+                  {"input": "abc", "output": "That is not a number!"},
+                  {"input": "0", "output": "Cannot divide by zero!"}
+                ]
+              }
+            },
+            "voice_text": "Try runs the risky code. Except catches specific errors. Program keeps running instead of crashing!",
+            "duration": 6000
+          }
+        ],
+        "rule_card": {
+          "title": "Try/Except",
+          "rule": "try: risky code. except ErrorType: handle that error. Multiple excepts for different errors.",
+          "example": "try:\n    x = int(input())\nexcept ValueError:\n    print('Invalid!')"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Handle Bad Number",
+            "prompt": "Wrap input conversion in try/except to catch ValueError",
+            "answer": "try:\n    num = int(input('Number: '))\nexcept ValueError:\n    print('Please enter a valid number!')"
+          },
+          {
+            "challenge_name": "Handle Division by Zero",
+            "prompt": "Add except for ZeroDivisionError",
+            "answer": "try:\n    result = num1 / num2\nexcept ZeroDivisionError:\n    print('Cannot divide by zero!')"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your calculator is crash-proof! Professional error handling!",
+        "badge": "Error Handler",
+        "coins": 95
+      }
+    },
+    {
+      "project_id": "G7-MODULAR-GAME",
+      "project_name": "Multi-File Game",
+      "tagline": "Organize code like a pro with modules!",
+      "skill_taught": "modular code (imports)",
+      "standard": "1B-AP-15",
+      "what_kids_build": "A game split across multiple Python files",
+      "why_exciting": "Coding like professional software developers",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Real programs aren't one giant file! They're split into MODULES - separate files that work together!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "Put related functions in separate .py files. Import them into main.py!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "language": "python",
+                "files": {
+                  "player.py": "def create_player(name):\n    return {'name': name, 'health': 100}\n\ndef damage(player, amount):\n    player['health'] -= amount",
+                  "main.py": "from player import create_player, damage\n\nhero = create_player('Knight')\ndamage(hero, 20)\nprint(hero['health'])  # 80"
+                }
+              }
+            },
+            "voice_text": "Player.py has player functions. Main.py imports them. Clean, organized, professional!",
+            "duration": 6000
+          }
+        ],
+        "rule_card": {
+          "title": "Modules",
+          "rule": "Create filename.py with functions. In main: from filename import function_name",
+          "example": "# math_helpers.py\ndef add(a,b): return a+b\n\n# main.py\nfrom math_helpers import add"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Create Module",
+            "prompt": "Create a module called helpers.py with a greet(name) function",
+            "answer": "# helpers.py\ndef greet(name):\n    return 'Hello, ' + name + '!'"
+          },
+          {
+            "challenge_name": "Import and Use",
+            "prompt": "In main.py, import greet from helpers and use it",
+            "answer": "# main.py\nfrom helpers import greet\nprint(greet('Player'))"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your code is organized like a pro! Modular programming mastered!",
+        "badge": "Code Architect",
+        "coins": 95
+      }
+    },
+    {
+      "project_id": "G7-CAPSTONE",
+      "project_name": "Personal Project",
+      "tagline": "Design and build YOUR dream project!",
+      "skill_taught": "project planning and execution",
+      "standard": "1B-AP-15",
+      "what_kids_build": "A project of their choice using all skills",
+      "why_exciting": "Complete creative freedom to build anything",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "You've learned SO much! Now it's time to plan and build YOUR OWN project from scratch!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "Good projects start with PLANNING! What will it do? What features? What code needed?",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "planning": {
+                  "step1": "IDEA: What problem does it solve?",
+                  "step2": "FEATURES: List 3-5 things it does",
+                  "step3": "BREAKDOWN: What code for each feature?",
+                  "step4": "BUILD: Start with simplest feature",
+                  "step5": "TEST: Try it, fix bugs, improve"
+                },
+                "example_project": {
+                  "idea": "Flashcard Study App",
+                  "features": ["Add flashcards", "Quiz mode", "Track score", "Save to file"],
+                  "code_needed": ["dictionaries", "loops", "file handling", "functions"]
+                }
+              }
+            },
+            "voice_text": "Plan first! Idea, features, code breakdown, build simple first, test and improve!",
+            "duration": 6000
+          }
+        ],
+        "rule_card": {
+          "title": "Project Planning",
+          "rule": "1) Define idea 2) List features 3) Break into code tasks 4) Build smallest first 5) Test & iterate",
+          "example": "Start simple, add features one at a time, test after each addition!"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "intro": "Choose YOUR project from these ideas or create your own!",
+        "project_ideas": [
+          {
+            "name": "Flashcard App",
+            "features": ["Add cards", "Quiz", "Score", "Save/Load"],
+            "skills_used": ["dictionaries", "files", "loops"]
+          },
+          {
+            "name": "Expense Tracker",
+            "features": ["Add expense", "Show total", "Categories", "Save history"],
+            "skills_used": ["dictionaries", "files", "functions"]
+          },
+          {
+            "name": "Text Adventure Game",
+            "features": ["Multiple rooms", "Inventory", "Puzzles", "Save game"],
+            "skills_used": ["dictionaries", "files", "functions", "modules"]
+          },
+          {
+            "name": "Recipe Book",
+            "features": ["Add recipes", "Search", "Ingredients list", "Save to file"],
+            "skills_used": ["dictionaries", "files", "lists"]
+          },
+          {
+            "name": "Your Own Idea!",
+            "features": ["You decide!"],
+            "skills_used": ["Everything you've learned!"]
+          }
+        ],
+        "challenges": [
+          {
+            "challenge_name": "Plan Your Project",
+            "prompt": "Write down: 1) Project name 2) What it does 3) Three main features"
+          },
+          {
+            "challenge_name": "Build Feature 1",
+            "prompt": "Code the simplest feature of your project"
+          },
+          {
+            "challenge_name": "Add Feature 2",
+            "prompt": "Add the next feature, test that both work together"
+          },
+          {
+            "challenge_name": "Complete Project",
+            "prompt": "Add remaining features, test everything, fix bugs"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "YOU BUILT YOUR OWN PROJECT FROM SCRATCH! You're a real programmer now!",
+        "badge": "Python Developer",
+        "coins": 150,
+        "special": "CAPSTONE COMPLETE - All K-7 coding skills mastered!"
+      }
+    }
+  ],
+
+  "summary": {
+    "total_projects": 5,
+    "skills_covered": ["dictionaries", "file handling", "error handling", "modular code", "project planning"],
+    "tool": "Python",
+    "theme_consistency": "Real-world applications and independent projects for 12-year-olds",
+    "capstone_note": "Grade 7 ends with independent project showcasing all skills learned K-7"
+  }
+}

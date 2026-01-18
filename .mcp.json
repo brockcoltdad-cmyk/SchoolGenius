@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "rive-animation-assistant": {
+      "command": "npx",
+      "args": ["@rive-mcp/server-core"],
+      "env": {}
+    }
+  }
+}

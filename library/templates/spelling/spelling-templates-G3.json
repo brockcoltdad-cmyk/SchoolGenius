@@ -1,0 +1,153 @@
+{
+  "grade": 3,
+  "grade_name": "Third Grade",
+  "total_target": 5000,
+  "standards": ["RF.3.3", "L.3.2"],
+  "skills": [
+    {
+      "skill": "prefix un-",
+      "code": "PRUN",
+      "standard": "RF.3.3",
+      "count": 400,
+      "visual_type": "word_building",
+      "rule": "The prefix UN- means NOT or OPPOSITE OF.",
+      "base_words": ["happy", "kind", "safe", "fair", "lock", "tie", "do", "pack", "wrap", "zip", "able", "even", "cover", "fold", "load", "lucky", "usual", "likely", "clear", "true", "real", "sure", "common", "known", "seen", "told", "done", "finished", "opened", "plugged"]
+    },
+    {
+      "skill": "prefix re-",
+      "code": "PRRE",
+      "standard": "RF.3.3",
+      "count": 400,
+      "visual_type": "word_building",
+      "rule": "The prefix RE- means AGAIN or BACK.",
+      "base_words": ["read", "write", "do", "play", "start", "build", "fill", "tell", "paint", "use", "make", "turn", "open", "move", "place", "new", "fresh", "born", "heat", "run", "take", "pay", "connect", "cycle", "view", "act", "call", "check", "count", "load"]
+    },
+    {
+      "skill": "prefix pre-",
+      "code": "PRPR",
+      "standard": "RF.3.3",
+      "count": 350,
+      "visual_type": "word_building",
+      "rule": "The prefix PRE- means BEFORE.",
+      "base_words": ["heat", "pay", "view", "test", "wash", "cook", "set", "mix", "cut", "plan", "game", "school", "teen", "order", "made", "paid", "fix", "dawn", "historic", "caution"]
+    },
+    {
+      "skill": "prefix dis-",
+      "code": "PRDS",
+      "standard": "RF.3.3",
+      "count": 350,
+      "visual_type": "word_building",
+      "rule": "The prefix DIS- means NOT or OPPOSITE OF.",
+      "base_words": ["like", "agree", "appear", "obey", "honest", "connect", "trust", "count", "own", "arm", "able", "approve", "cover", "order", "please", "respect", "comfort", "continue", "grace", "loyal"]
+    },
+    {
+      "skill": "suffix -ful",
+      "code": "SFUL",
+      "standard": "RF.3.3",
+      "count": 400,
+      "visual_type": "word_building",
+      "rule": "The suffix -FUL means FULL OF.",
+      "base_words": ["care", "help", "hope", "joy", "pain", "peace", "play", "thank", "wonder", "color", "grace", "truth", "power", "skill", "fear", "harm", "thought", "meaning", "rest", "taste", "use", "beauty", "bounty", "cheer", "delight", "doubt", "faith", "fruit", "glee", "grate"]
+    },
+    {
+      "skill": "suffix -less",
+      "code": "SLES",
+      "standard": "RF.3.3",
+      "count": 400,
+      "visual_type": "word_building",
+      "rule": "The suffix -LESS means WITHOUT.",
+      "base_words": ["care", "help", "hope", "end", "fear", "home", "sleep", "use", "wire", "harm", "rest", "name", "taste", "price", "worth", "breath", "cloud", "count", "effort", "flaw", "guilt", "heart", "job", "life", "limit", "luck", "mind", "motion", "need", "noise"]
+    },
+    {
+      "skill": "suffix -ly",
+      "code": "SLY",
+      "standard": "RF.3.3",
+      "count": 400,
+      "visual_type": "word_building",
+      "rule": "The suffix -LY means IN A WAY or MANNER.",
+      "base_words": ["quick", "slow", "quiet", "loud", "soft", "safe", "nice", "brave", "kind", "happy", "sad", "bad", "mad", "glad", "sweet", "near", "dear", "clear", "fair", "final", "sudden", "usual", "real", "true", "sure", "actual", "careful", "hopeful", "peaceful", "cheerful"]
+    },
+    {
+      "skill": "suffix -er -est",
+      "code": "SERE",
+      "standard": "RF.3.3",
+      "count": 400,
+      "visual_type": "word_building",
+      "rule": "Add -ER to compare two things. Add -EST to compare three or more.",
+      "base_words": ["tall", "small", "fast", "slow", "big", "hot", "cold", "old", "young", "long", "short", "high", "low", "hard", "soft", "loud", "quiet", "near", "far", "light", "dark", "clean", "kind", "mean", "smart", "sweet", "weak", "strong", "rich", "poor"]
+    },
+    {
+      "skill": "syllable patterns VCCV",
+      "code": "SYLV",
+      "standard": "RF.3.3",
+      "count": 500,
+      "visual_type": "syllable",
+      "rule": "In VCCV words, divide between the two consonants: nap-kin, pic-nic.",
+      "words": ["napkin", "picnic", "basket", "rabbit", "puppet", "mitten", "kitten", "button", "cotton", "muffin", "sudden", "hidden", "hammer", "ladder", "letter", "better", "butter", "manner", "dinner", "winner", "summer", "supper", "copper", "pepper", "happen", "traffic", "classic", "gossip", "problem", "distant"]
+    },
+    {
+      "skill": "syllable patterns VCV",
+      "code": "SYLVC",
+      "standard": "RF.3.3",
+      "count": 500,
+      "visual_type": "syllable",
+      "rule": "In VCV words, try dividing before the consonant first: pi-lot, ro-bot.",
+      "words": ["pilot", "robot", "music", "basic", "human", "super", "silent", "spider", "tiger", "paper", "water", "later", "meter", "fever", "never", "seven", "even", "open", "over", "item", "moment", "spoken", "frozen", "broken", "chosen", "hotel", "motel", "total", "final", "local"]
+    },
+    {
+      "skill": "homophones",
+      "code": "HOMO",
+      "standard": "L.3.2",
+      "count": 500,
+      "visual_type": "word_building",
+      "rule": "Homophones sound the same but have different spellings and meanings.",
+      "pairs": [
+        {"word1": "there", "word2": "their", "word3": "they're"},
+        {"word1": "to", "word2": "too", "word3": "two"},
+        {"word1": "your", "word2": "you're"},
+        {"word1": "its", "word2": "it's"},
+        {"word1": "hear", "word2": "here"},
+        {"word1": "where", "word2": "wear"},
+        {"word1": "know", "word2": "no"},
+        {"word1": "knew", "word2": "new"},
+        {"word1": "night", "word2": "knight"},
+        {"word1": "write", "word2": "right"},
+        {"word1": "see", "word2": "sea"},
+        {"word1": "be", "word2": "bee"},
+        {"word1": "for", "word2": "four"},
+        {"word1": "one", "word2": "won"},
+        {"word1": "sun", "word2": "son"},
+        {"word1": "ate", "word2": "eight"},
+        {"word1": "blue", "word2": "blew"},
+        {"word1": "buy", "word2": "by", "word3": "bye"},
+        {"word1": "dear", "word2": "deer"},
+        {"word1": "flour", "word2": "flower"},
+        {"word1": "hair", "word2": "hare"},
+        {"word1": "heel", "word2": "heal"},
+        {"word1": "hole", "word2": "whole"},
+        {"word1": "hour", "word2": "our"},
+        {"word1": "made", "word2": "maid"},
+        {"word1": "mail", "word2": "male"},
+        {"word1": "meat", "word2": "meet"},
+        {"word1": "pair", "word2": "pear"},
+        {"word1": "peace", "word2": "piece"},
+        {"word1": "plain", "word2": "plane"}
+      ]
+    }
+  ],
+  "question_templates": [
+    "Listen to the word and spell it: {word}",
+    "Type the word you hear: {word}",
+    "Spell the word: {word}"
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

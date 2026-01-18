@@ -1,0 +1,475 @@
+{
+  "grade": 3,
+  "description": "Grade 3 Coding Templates - Interactive Scratch Activities",
+  "source_research": [
+    "Code.org CS Fundamentals Course D",
+    "Scratch community most popular projects",
+    "MIT CAL Curriculum",
+    "Tynker K-5 curriculum"
+  ],
+  "templates": [
+    {
+      "template_id": "G3-MAZE-GAME",
+      "name": "Maze Runner Game",
+      "skill": "conditionals if/else",
+      "standard": "1B-AP-10",
+      "activity_type": "BUILD",
+      "description": "Kid builds a maze game where sprite must reach goal without hitting walls",
+      "why_engaging": "Kids LOVE maze games - immediate visual feedback, sense of accomplishment",
+      "interaction_type": "drag_blocks_then_test",
+      "example_item": {
+        "id": "CODE-G3-COND-0001",
+        "subject": "coding",
+        "grade": 3,
+        "skill": "conditionals if/else",
+        "standard": "1B-AP-10",
+        "question": "BUILD IT: Make the cat escape the maze!\n\nDrag the blocks to complete the code:\n\nwhen [arrow key] pressed\nmove (10) steps\nif <touching [wall]?> then\n  [YOUR CODE HERE]\nend",
+        "answer": "go to x: (start) y: (start)",
+        "correct_blocks": ["go to x: (-200) y: (0)", "play sound [bump]"],
+        "distractor_blocks": ["move (10) steps", "hide", "delete this clone"],
+        "interactive": {
+          "type": "block_builder",
+          "workspace": {
+            "available_blocks": [
+              {"block": "go to x: (-200) y: (0)", "category": "motion", "correct": true},
+              {"block": "play sound [bump]", "category": "sound", "correct": true},
+              {"block": "move (10) steps", "category": "motion", "correct": false},
+              {"block": "hide", "category": "looks", "correct": false},
+              {"block": "say [Oops!] for (1) seconds", "category": "looks", "correct": false}
+            ],
+            "drop_zone": "inside if-then block",
+            "test_button": true,
+            "preview_sprite": "cat",
+            "preview_backdrop": "maze"
+          }
+        },
+        "tier1": {
+          "teach": "If touching wall, go back to start. The IF block checks a condition and runs code when true.",
+          "steps": [
+            {
+              "step": 1,
+              "visual": {
+                "type": "conditional",
+                "data": {
+                  "condition": "touching wall?",
+                  "if_true": "go to start",
+                  "if_false": "keep moving",
+                  "highlight": "condition"
+                }
+              },
+              "voice_text": "The IF block asks a question. Is the cat touching the wall?",
+              "duration": 4000
+            },
+            {
+              "step": 2,
+              "visual": {
+                "type": "code_block",
+                "data": {
+                  "language": "scratch",
+                  "blocks": ["if <touching [wall]?> then", "  go to x: (-200) y: (0)", "end"],
+                  "highlight_lines": [2],
+                  "animation": "sprite_teleports_to_start"
+                }
+              },
+              "voice_text": "When touching wall is TRUE, run this code. The cat goes back to start!",
+              "duration": 5000
+            }
+          ]
+        },
+        "tier2": {
+          "teach": "IF means 'when this happens, do this.' Touch wall? Go back to start!",
+          "steps": [
+            {
+              "step": 1,
+              "visual": {
+                "type": "loop_animation",
+                "data": {
+                  "frames": [
+                    {"sprite": "cat", "position": "middle", "touching": false},
+                    {"sprite": "cat", "position": "wall", "touching": true},
+                    {"sprite": "cat", "position": "start", "touching": false, "label": "Back to start!"}
+                  ]
+                }
+              },
+              "voice_text": "Cat hits wall... BONK! Cat goes back to start. That's what IF does!",
+              "duration": 5000
+            }
+          ]
+        }
+      }
+    },
+    {
+      "template_id": "G3-SCORE-KEEPER",
+      "name": "Candy Collector Score Game",
+      "skill": "variables keeping score",
+      "standard": "1B-AP-10",
+      "activity_type": "BUILD",
+      "description": "Kid creates a game that tracks and displays score when collecting items",
+      "why_engaging": "Collecting things + seeing score go up = instant dopamine hit for kids",
+      "interaction_type": "build_and_test",
+      "example_item": {
+        "id": "CODE-G3-VAR-0001",
+        "subject": "coding",
+        "grade": 3,
+        "skill": "variables keeping score",
+        "standard": "1B-AP-10",
+        "question": "BUILD IT: Make the score go up when you catch candy!\n\nComplete the code:\n\nwhen green flag clicked\nset [score] to (0)\n\nwhen this sprite clicked\n[YOUR CODE HERE]\nplay sound [chomp]\nhide",
+        "answer": "change [score] by (1)",
+        "correct_blocks": ["change [score] by (1)"],
+        "distractor_blocks": ["set [score] to (1)", "score", "change [lives] by (1)"],
+        "interactive": {
+          "type": "block_builder",
+          "workspace": {
+            "available_blocks": [
+              {"block": "change [score] by (1)", "category": "variables", "correct": true},
+              {"block": "set [score] to (1)", "category": "variables", "correct": false, "why_wrong": "This SETS score to 1, doesn't ADD 1"},
+              {"block": "score", "category": "variables", "correct": false},
+              {"block": "change [lives] by (1)", "category": "variables", "correct": false}
+            ],
+            "drop_zone": "after when clicked",
+            "test_button": true,
+            "show_variable_monitor": true,
+            "preview_sprite": "candy",
+            "click_to_test": true
+          }
+        },
+        "tier1": {
+          "teach": "Variables store information. CHANGE adds to what's already there. SET replaces it completely.",
+          "steps": [
+            {
+              "step": 1,
+              "visual": {
+                "type": "variable_box",
+                "data": {
+                  "name": "score",
+                  "value": 0,
+                  "type": "number",
+                  "show_update": false,
+                  "label": "Score starts at 0"
+                }
+              },
+              "voice_text": "Score is a variable. It starts at zero. Watch what happens when we click candy!",
+              "duration": 4000
+            },
+            {
+              "step": 2,
+              "visual": {
+                "type": "variable_box",
+                "data": {
+                  "name": "score",
+                  "value": 0,
+                  "type": "number",
+                  "show_update": true,
+                  "new_value": 1,
+                  "animation": "+1"
+                }
+              },
+              "voice_text": "CHANGE adds one to score. Zero plus one equals one! Click more candy, score goes higher!",
+              "duration": 5000
+            }
+          ]
+        },
+        "tier2": {
+          "teach": "Score is like a piggy bank. CHANGE adds coins. SET dumps it all out and puts new coins in.",
+          "steps": [
+            {
+              "step": 1,
+              "visual": {
+                "type": "variable_box",
+                "data": {
+                  "name": "score",
+                  "emoji": "🍬",
+                  "value": 3,
+                  "show_update": true,
+                  "new_value": 4,
+                  "animation": "candy_drops_in"
+                }
+              },
+              "voice_text": "You had 3 candies. Got one more. Now you have 4! That's CHANGE - it ADDS!",
+              "duration": 5000
+            }
+          ]
+        }
+      }
+    },
+    {
+      "template_id": "G3-DEBUG-DETECTIVE",
+      "name": "Debug Detective - Fix the Bug!",
+      "skill": "debugging strategies",
+      "standard": "1B-AP-10",
+      "activity_type": "FIX",
+      "description": "Kid finds and fixes bugs in broken code - detective style investigation",
+      "why_engaging": "Kids feel SMART when they find bugs. Detective theme adds mystery/excitement",
+      "interaction_type": "find_and_fix",
+      "example_item": {
+        "id": "CODE-G3-DBUG-0001",
+        "subject": "coding",
+        "grade": 3,
+        "skill": "debugging strategies",
+        "standard": "1B-AP-10",
+        "question": "DETECTIVE CASE #1: The code is broken! Find the bug!\n\nThis code should make the cat say 'Hello!' when clicked.\nBut nothing happens. What's wrong?\n\n🔍 THE BUGGY CODE:\nwhen green flag clicked\nsay [Hello!] for (2) seconds",
+        "answer": "Wrong event block - should be 'when this sprite clicked' not 'when green flag clicked'",
+        "bug_type": "wrong_event_block",
+        "interactive": {
+          "type": "bug_finder",
+          "workspace": {
+            "buggy_code": [
+              {"block": "when green flag clicked", "is_bug": true, "bug_hint": "When does this run?"},
+              {"block": "say [Hello!] for (2) seconds", "is_bug": false}
+            ],
+            "click_to_highlight": true,
+            "replacement_options": [
+              {"block": "when this sprite clicked", "correct": true},
+              {"block": "when space key pressed", "correct": false},
+              {"block": "when backdrop switches to [backdrop1]", "correct": false}
+            ],
+            "test_before_fix": true,
+            "test_after_fix": true
+          }
+        },
+        "tier1": {
+          "teach": "Different 'when' blocks trigger at different times. Clicked vs Green Flag are NOT the same!",
+          "steps": [
+            {
+              "step": 1,
+              "visual": {
+                "type": "code_block",
+                "data": {
+                  "language": "scratch",
+                  "blocks": ["when green flag clicked", "say [Hello!]"],
+                  "highlight_lines": [1],
+                  "annotation": "This runs when you click the GREEN FLAG",
+                  "crossed_out": true
+                }
+              },
+              "voice_text": "Look at the first block. When green flag clicked runs when you press the green flag, NOT when you click the cat!",
+              "duration": 5000
+            },
+            {
+              "step": 2,
+              "visual": {
+                "type": "code_block",
+                "data": {
+                  "language": "scratch",
+                  "blocks": ["when this sprite clicked", "say [Hello!]"],
+                  "highlight_lines": [1],
+                  "annotation": "NOW it runs when you click the cat!",
+                  "checkmark": true
+                }
+              },
+              "voice_text": "When this sprite clicked means click on the cat. Bug fixed! Now it works!",
+              "duration": 5000
+            }
+          ]
+        },
+        "tier2": {
+          "teach": "Green flag = start button. Click sprite = click on the character. Different things!",
+          "steps": [
+            {
+              "step": 1,
+              "visual": {
+                "type": "loop_animation",
+                "data": {
+                  "frames": [
+                    {"icon": "🟢", "label": "Green Flag", "action": "Starts the WHOLE program"},
+                    {"icon": "🐱👆", "label": "Click Sprite", "action": "Runs when you click THIS character"}
+                  ]
+                }
+              },
+              "voice_text": "Green flag starts everything. Click sprite only works when you click THAT character!",
+              "duration": 5000
+            }
+          ]
+        }
+      }
+    },
+    {
+      "template_id": "G3-ANIMATION-STORY",
+      "name": "Make Your Character Talk",
+      "skill": "user input",
+      "standard": "1A-AP-12",
+      "activity_type": "BUILD",
+      "description": "Kid builds an interactive conversation where character responds to user input",
+      "why_engaging": "Kids love making characters 'talk back' - personalized responses are magical",
+      "interaction_type": "build_and_test",
+      "example_item": {
+        "id": "CODE-G3-INPT-0001",
+        "subject": "coding",
+        "grade": 3,
+        "skill": "user input",
+        "standard": "1A-AP-12",
+        "question": "BUILD IT: Make the cat ask your name, then say hi to YOU!\n\nComplete the code:\n\nwhen green flag clicked\nask [What is your name?] and wait\nsay [YOUR CODE HERE] for (2) seconds",
+        "answer": "join [Hello ] (answer)",
+        "correct_blocks": ["join [Hello ] (answer)"],
+        "distractor_blocks": ["[Hello]", "answer", "join [Hello] [answer]"],
+        "interactive": {
+          "type": "block_builder",
+          "workspace": {
+            "available_blocks": [
+              {"block": "join [Hello ] (answer)", "category": "operators", "correct": true},
+              {"block": "[Hello]", "category": "operators", "correct": false, "why_wrong": "Just says Hello, doesn't use your name"},
+              {"block": "answer", "category": "sensing", "correct": false, "why_wrong": "Just your name, no Hello"},
+              {"block": "join [Hello] [answer]", "category": "operators", "correct": false, "why_wrong": "Missing the space!"}
+            ],
+            "drop_zone": "inside say block",
+            "test_button": true,
+            "input_popup": true,
+            "preview_sprite": "cat"
+          }
+        },
+        "tier1": {
+          "teach": "ASK gets input from the user. ANSWER stores what they typed. JOIN glues words together!",
+          "steps": [
+            {
+              "step": 1,
+              "visual": {
+                "type": "variable_box",
+                "data": {
+                  "name": "answer",
+                  "value": "Emma",
+                  "type": "string",
+                  "label": "User typed: Emma",
+                  "show_input_box": true
+                }
+              },
+              "voice_text": "When you type your name, it goes into a special variable called ANSWER.",
+              "duration": 4000
+            },
+            {
+              "step": 2,
+              "visual": {
+                "type": "output",
+                "data": {
+                  "lines": ["Hello ", "+", "Emma", "=", "Hello Emma"],
+                  "animation": "join_words"
+                }
+              },
+              "voice_text": "JOIN glues words together. Hello plus Emma equals Hello Emma!",
+              "duration": 4000
+            }
+          ]
+        },
+        "tier2": {
+          "teach": "ASK is like asking a question. ANSWER is what they said. JOIN sticks words together like glue!",
+          "steps": [
+            {
+              "step": 1,
+              "visual": {
+                "type": "output",
+                "data": {
+                  "emoji_sequence": ["🐱❓", "👧💬Emma", "🐱💬Hello Emma!"],
+                  "labels": ["Cat asks", "You answer", "Cat says your name!"]
+                }
+              },
+              "voice_text": "Cat asks. You answer. Cat says hello with YOUR name. Cool right?",
+              "duration": 5000
+            }
+          ]
+        }
+      }
+    },
+    {
+      "template_id": "G3-CLONE-RAIN",
+      "name": "Make It Rain! (Clone Creator)",
+      "skill": "broadcast messages",
+      "standard": "1B-AP-10",
+      "activity_type": "BUILD",
+      "description": "Kid creates multiple copies of sprite using clones - makes it 'rain' objects",
+      "why_engaging": "Making LOTS of things appear is visually exciting, feels like real coding power",
+      "interaction_type": "build_and_test",
+      "example_item": {
+        "id": "CODE-G3-BRDC-0001",
+        "subject": "coding",
+        "grade": 3,
+        "skill": "broadcast messages",
+        "standard": "1B-AP-10",
+        "question": "BUILD IT: Make it rain stars!\n\nComplete the code to create star clones:\n\nwhen green flag clicked\nforever\n  [YOUR CODE HERE]\n  wait (0.5) seconds\nend",
+        "answer": "create clone of [myself]",
+        "correct_blocks": ["create clone of [myself]"],
+        "distractor_blocks": ["stamp", "show", "go to [random position]"],
+        "interactive": {
+          "type": "block_builder",
+          "workspace": {
+            "available_blocks": [
+              {"block": "create clone of [myself]", "category": "control", "correct": true},
+              {"block": "stamp", "category": "pen", "correct": false, "why_wrong": "Stamp makes a picture, not a real sprite"},
+              {"block": "show", "category": "looks", "correct": false},
+              {"block": "go to [random position]", "category": "motion", "correct": false}
+            ],
+            "drop_zone": "inside forever loop",
+            "test_button": true,
+            "preview_sprite": "star",
+            "clone_preview": true
+          }
+        },
+        "tier1": {
+          "teach": "CREATE CLONE makes a copy of the sprite. Each clone can do its own thing!",
+          "steps": [
+            {
+              "step": 1,
+              "visual": {
+                "type": "loop_animation",
+                "data": {
+                  "iterations": 5,
+                  "action": "create star clone",
+                  "emoji": "⭐",
+                  "animation": "multiply"
+                }
+              },
+              "voice_text": "Create clone makes a copy. The forever loop keeps making copies. Star rain!",
+              "duration": 4000
+            },
+            {
+              "step": 2,
+              "visual": {
+                "type": "code_block",
+                "data": {
+                  "language": "scratch",
+                  "blocks": ["when I start as a clone", "go to [random position]", "glide (2) secs to y: (-180)", "delete this clone"],
+                  "highlight_lines": [1],
+                  "annotation": "Each clone runs THIS code"
+                }
+              },
+              "voice_text": "Each new clone runs its own code. It appears random, falls down, then disappears!",
+              "duration": 5000
+            }
+          ]
+        },
+        "tier2": {
+          "teach": "CLONE means copy. Like a copy machine for sprites! Each copy can move on its own.",
+          "steps": [
+            {
+              "step": 1,
+              "visual": {
+                "type": "loop_animation",
+                "data": {
+                  "frames": [
+                    {"emoji": "⭐", "count": 1, "label": "Original star"},
+                    {"emoji": "⭐⭐", "count": 2, "label": "Clone! Now 2 stars"},
+                    {"emoji": "⭐⭐⭐⭐⭐", "count": 5, "label": "More clones! Star rain!"}
+                  ]
+                }
+              },
+              "voice_text": "One star becomes two, then three, then lots! That's clones! Star rain!",
+              "duration": 5000
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "activity_types": {
+    "BUILD": "Kid drags/places blocks to complete working code, then tests it",
+    "FIX": "Kid finds and fixes bugs in broken code",
+    "PREDICT": "Kid predicts what code will do, then runs it to check",
+    "REMIX": "Kid modifies working code to change behavior",
+    "CREATE": "Kid builds something from scratch with guidance"
+  },
+  "interaction_types": {
+    "drag_blocks_then_test": "Drag correct blocks into place, then click RUN to test",
+    "build_and_test": "Complete the code, test immediately, see results",
+    "find_and_fix": "Find the bug, click to fix, test before/after",
+    "fill_in_blank": "Type the missing code (text input)",
+    "multiple_choice_predict": "Predict output before running"
+  }
+}

@@ -1,0 +1,267 @@
+{
+  "grade": 2,
+  "theme_bucket": "K-2",
+  "theme_style": "Animals, colors, simple characters",
+  "description": "Grade 2 Coding - Scratch Basics with Loops and Events",
+  "lesson_flow_reference": "LESSON-FLOW-ARCHITECTURE.md",
+  "standard": "ISTE 1A-AP-11",
+  "tool": "Scratch",
+  "advancement_rule": "Project-based: Complete 5 projects to advance",
+
+  "project_templates": [
+    {
+      "project_id": "G2-BOUNCING-BALL",
+      "project_name": "Bouncing Ball",
+      "tagline": "Make a ball that bounces forever!",
+      "skill_taught": "loops with numbers",
+      "standard": "1A-AP-11",
+      "what_kids_build": "A ball that bounces with repeat blocks",
+      "why_exciting": "Mesmerizing bouncing animation they control",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Watch this ball bounce! But I don't want to write 'bounce' 100 times. Let's use a loop with a NUMBER!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "REPEAT with a number does something that exact number of times!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "language": "scratch",
+                "blocks": ["repeat (10)", "  move (10) steps", "  if on edge, bounce", "end"]
+              }
+            },
+            "voice_text": "Repeat 10 means do this 10 times. Change the number to bounce more or less!",
+            "duration": 5000
+          }
+        ],
+        "rule_card": {
+          "title": "Repeat with Numbers",
+          "rule": "repeat (5) does something 5 times. Change the number to change how many!",
+          "example": "repeat (3): say Hi! → Hi! Hi! Hi!"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Bounce 20 Times",
+            "prompt": "Make the ball bounce exactly 20 times then stop",
+            "answer": "repeat (20): move, if on edge bounce"
+          },
+          {
+            "challenge_name": "Speed It Up",
+            "prompt": "Change the move steps to make it faster",
+            "answer": "Change move (10) to move (20)"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your ball is bouncing perfectly! You control the loops!",
+        "badge": "Loop Master",
+        "coins": 65
+      }
+    },
+    {
+      "project_id": "G2-MUSIC-MAKER",
+      "project_name": "Musical Instruments",
+      "tagline": "Create your own band with clickable instruments!",
+      "skill_taught": "events with multiple triggers",
+      "standard": "1A-AP-11",
+      "what_kids_build": "Multiple instruments that play when clicked",
+      "why_exciting": "Making music and sounds is engaging",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Let's build a band! Click the drum - BOOM! Click the piano - ding! Each instrument has its OWN event!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "Each sprite can have its own 'when clicked' event with different code!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "drum": ["when this sprite clicked", "play drum sound"],
+                "piano": ["when this sprite clicked", "play piano sound"],
+                "note": "Same event block, different sprites, different sounds!"
+              }
+            }
+          }
+        ]
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Add the Drum",
+            "prompt": "When drum is clicked, play the drum sound",
+            "answer": ["when this sprite clicked", "play sound [drum]"]
+          },
+          {
+            "challenge_name": "Add the Guitar",
+            "prompt": "Add a guitar that plays when clicked",
+            "answer": ["when this sprite clicked", "play sound [guitar]"]
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your band is playing! Click to make music!",
+        "badge": "Music Maker",
+        "coins": 65
+      }
+    },
+    {
+      "project_id": "G2-MAGIC-WAND",
+      "project_name": "Magic Wand",
+      "tagline": "Wave the wand and make things appear!",
+      "skill_taught": "simple conditionals",
+      "standard": "1A-AP-11",
+      "what_kids_build": "A wand that triggers magic effects",
+      "why_exciting": "Feeling like a wizard with magical powers",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "This magic wand can make things appear and disappear! But it only works IF you touch the right thing!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "IF means 'when this is true, do something'. IF touching wand, appear!",
+            "visual": {
+              "type": "conditional",
+              "data": {
+                "condition": "touching wand?",
+                "if_true": "Appear with sparkles!",
+                "if_false": "Stay hidden"
+              }
+            },
+            "voice_text": "IF the star is touching the wand, it appears! Magic!",
+            "duration": 5000
+          }
+        ],
+        "rule_card": {
+          "title": "Simple IF",
+          "rule": "IF [something is true] THEN [do something]",
+          "example": "IF touching wand THEN appear!"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Magic Appear",
+            "prompt": "If the rabbit touches the wand, make it show",
+            "answer": "if <touching [wand]?> then show"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "You're a coding wizard! Your magic wand works!",
+        "badge": "Code Wizard",
+        "coins": 65
+      }
+    },
+    {
+      "project_id": "G2-DANCE-PARTY",
+      "project_name": "Dancing Animals",
+      "tagline": "Make all the animals dance together!",
+      "skill_taught": "animation basics",
+      "standard": "1A-AP-11",
+      "what_kids_build": "Animated characters with costume changes",
+      "why_exciting": "Creating their own animated show",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Let's make the animals DANCE! Animation means changing how they look really fast!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "Animation is switching costumes fast! Cat pose 1, cat pose 2, cat pose 1, cat pose 2...",
+            "visual": {
+              "type": "loop_animation",
+              "data": {
+                "frames": ["🐱 pose1", "🐱 pose2", "🐱 pose1", "🐱 pose2"],
+                "speed": "fast"
+              }
+            },
+            "voice_text": "Switch costumes in a loop! It looks like the cat is dancing!",
+            "duration": 5000
+          }
+        ]
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Dance Loop",
+            "prompt": "Make the cat switch costumes in a forever loop",
+            "answer": ["forever", "  next costume", "  wait (0.2) seconds", "end"]
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your animals are dancing! Amazing animation!",
+        "badge": "Animator",
+        "coins": 65
+      }
+    },
+    {
+      "project_id": "G2-STORY-MAKER",
+      "project_name": "Story Creator",
+      "tagline": "Create your own interactive story!",
+      "skill_taught": "creating interactive stories",
+      "standard": "1A-AP-11",
+      "what_kids_build": "A clickable story with characters talking",
+      "why_exciting": "Being an author of their own digital book",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Let's write a story where YOU control what happens! Click to make characters talk!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "Stories have a beginning, middle, and end. We can code each part!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "blocks": [
+                  "when green flag clicked",
+                  "say [Once upon a time...] for (3) seconds",
+                  "wait (1) second",
+                  "say [A cat went on an adventure!] for (3) seconds"
+                ]
+              }
+            }
+          }
+        ]
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Add Dialogue",
+            "prompt": "Make the cat say 'Hello! I'm going on an adventure!'",
+            "answer": "say [Hello! I'm going on an adventure!] for (3) seconds"
+          },
+          {
+            "challenge_name": "Add a Second Character",
+            "prompt": "Add a dog that responds to the cat",
+            "answer": "Dog sprite: when green flag clicked, wait (4) seconds, say [Can I come too?]"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your interactive story is complete! You're a digital author!",
+        "badge": "Story Coder",
+        "coins": 65
+      }
+    }
+  ],
+
+  "summary": {
+    "total_projects": 5,
+    "skills_covered": ["loops with numbers", "multiple events", "simple conditionals", "animation", "interactive stories"],
+    "tool": "Scratch",
+    "theme_consistency": "Animals and simple characters for 7-year-olds"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "grade": 0,
+  "grade_name": "Kindergarten",
+  "total_target": 2000,
+  "standards": ["RF.K.2", "RF.K.3", "L.K.2"],
+  "skills": [
+    {
+      "skill": "letter sounds",
+      "code": "LTRSND",
+      "standard": "RF.K.2",
+      "count": 400,
+      "visual_type": "phonics",
+      "words": [
+        {"word": "a", "sound": "short a as in apple"},
+        {"word": "b", "sound": "buh as in ball"},
+        {"word": "c", "sound": "kuh as in cat"},
+        {"word": "d", "sound": "duh as in dog"},
+        {"word": "e", "sound": "short e as in egg"},
+        {"word": "f", "sound": "fuh as in fish"},
+        {"word": "g", "sound": "guh as in go"},
+        {"word": "h", "sound": "huh as in hat"},
+        {"word": "i", "sound": "short i as in igloo"},
+        {"word": "j", "sound": "juh as in jump"},
+        {"word": "k", "sound": "kuh as in kite"},
+        {"word": "l", "sound": "luh as in lamp"},
+        {"word": "m", "sound": "muh as in mom"},
+        {"word": "n", "sound": "nuh as in nest"},
+        {"word": "o", "sound": "short o as in octopus"},
+        {"word": "p", "sound": "puh as in pig"},
+        {"word": "q", "sound": "kwuh as in queen"},
+        {"word": "r", "sound": "ruh as in run"},
+        {"word": "s", "sound": "sss as in sun"},
+        {"word": "t", "sound": "tuh as in top"},
+        {"word": "u", "sound": "short u as in up"},
+        {"word": "v", "sound": "vuh as in van"},
+        {"word": "w", "sound": "wuh as in water"},
+        {"word": "x", "sound": "ks as in box"},
+        {"word": "y", "sound": "yuh as in yes"},
+        {"word": "z", "sound": "zzz as in zebra"}
+      ]
+    },
+    {
+      "skill": "CVC words - short a",
+      "code": "CVCA",
+      "standard": "RF.K.3",
+      "count": 300,
+      "visual_type": "word_building",
+      "words": ["cat", "bat", "hat", "mat", "sat", "rat", "pat", "fat", "can", "fan", "man", "pan", "ran", "tan", "van", "cap", "gap", "lap", "map", "nap", "tap", "zap", "bad", "dad", "had", "mad", "sad", "bag", "rag", "tag", "wag"]
+    },
+    {
+      "skill": "CVC words - short e",
+      "code": "CVCE",
+      "standard": "RF.K.3",
+      "count": 250,
+      "visual_type": "word_building",
+      "words": ["bed", "fed", "led", "red", "wed", "beg", "leg", "peg", "ben", "den", "hen", "men", "pen", "ten", "bet", "get", "jet", "let", "met", "net", "pet", "set", "wet", "yet"]
+    },
+    {
+      "skill": "CVC words - short i",
+      "code": "CVCI",
+      "standard": "RF.K.3",
+      "count": 250,
+      "visual_type": "word_building",
+      "words": ["big", "dig", "fig", "jig", "pig", "rig", "wig", "bit", "fit", "hit", "kit", "lit", "pit", "sit", "wit", "bib", "rib", "bin", "fin", "pin", "tin", "win", "dip", "hip", "lip", "rip", "sip", "tip", "zip"]
+    },
+    {
+      "skill": "CVC words - short o",
+      "code": "CVCO",
+      "standard": "RF.K.3",
+      "count": 250,
+      "visual_type": "word_building",
+      "words": ["cob", "gob", "job", "mob", "rob", "sob", "cog", "dog", "fog", "hog", "jog", "log", "cop", "hop", "mop", "pop", "top", "cot", "dot", "got", "hot", "lot", "not", "pot", "rot", "tot", "box", "fox"]
+    },
+    {
+      "skill": "CVC words - short u",
+      "code": "CVCU",
+      "standard": "RF.K.3",
+      "count": 250,
+      "visual_type": "word_building",
+      "words": ["bud", "cud", "dud", "mud", "bug", "dug", "hug", "jug", "mug", "pug", "rug", "tug", "bun", "fun", "gun", "nun", "pun", "run", "sun", "bus", "but", "cut", "gut", "hut", "jut", "nut", "put", "rut", "tub", "cub", "hub", "rub", "sub"]
+    },
+    {
+      "skill": "name spelling",
+      "code": "NAME",
+      "standard": "L.K.2",
+      "count": 300,
+      "visual_type": "word_building",
+      "names": ["Sam", "Tom", "Ben", "Max", "Dan", "Tim", "Bob", "Jim", "Ron", "Jon", "Kim", "Pam", "Jen", "Ann", "Meg", "Sue", "Amy", "Eva", "Mia", "Ava", "Leo", "Ian", "Eli", "Kai", "Ivy", "Zoe", "Joy", "Ray", "Jay", "May"]
+    }
+  ],
+  "question_templates": [
+    "Listen to the word and spell it: {word}",
+    "Type the word you hear: {word}",
+    "Spell the word: {word}"
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

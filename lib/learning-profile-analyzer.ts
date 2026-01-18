@@ -1,13 +1,10 @@
-// @ts-nocheck
-// This file is disabled because it uses tables that don't exist in the current schema:
-// - answer_attempts table
-// - learning_profiles table
-// If you need this functionality, create these tables first or refactor to use existing tables
+// ADAPTIVE LEARNING SYSTEM - NOW ENABLED!
+// This analyzes student answer patterns to build a personalized learning profile.
+// Tables used: answer_attempts, learning_profiles (both exist in Supabase)
+// Auto-updates after every 20 questions answered.
 
-import { createClient } from '@/lib/supabase-client';
-import type { AnswerAttempt as DBAnswerAttempt, LessonProgress as DBLessonProgress } from '@/types/database';
-
-type AnswerAttempt = DBAnswerAttempt;
+import { createClient } from '@/lib/supabase/client';
+import type { AnswerAttempt, LessonProgress as DBLessonProgress } from '@/types/database';
 
 interface LearningProfile {
   child_id: string;
@@ -91,7 +88,7 @@ export async function analyzeAndUpdateLearningProfile(childId: string) {
     if (!subjectScores[progress.subject_code]) {
       subjectScores[progress.subject_code] = { total: 0, count: 0 };
     }
-    subjectScores[progress.subject_code].total += progress.score || 0;
+    subjectScores[progress.subject_code].total += Number(progress.score) || 0;
     subjectScores[progress.subject_code].count += 1;
   });
 

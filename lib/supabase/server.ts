@@ -4,9 +4,10 @@ import { cookies } from 'next/headers'
 export async function createServerSupabaseClient() {
   const cookieStore = await cookies()
 
+  // Use SERVICE_ROLE key for server-side operations to bypass RLS
   return createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     {
       auth: {
         persistSession: false,

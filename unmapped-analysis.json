@@ -1,0 +1,1653 @@
+{
+  "fixable": [
+    {
+      "grade": 0,
+      "skill": "addition within 5",
+      "count": 60,
+      "ids": [
+        "MATH-G0-ADD-1271",
+        "MATH-G0-ADD-1281",
+        "MATH-G0-ADD2-1281",
+        "MATH-G0-ADD-5-1291",
+        "MATH-G0-ADD-1301",
+        "MATH-G0-ADD-1311",
+        "MATH-G0-ADD-1321",
+        "MATH-G0-ADD-1331",
+        "MATH-G0-ADD-1341",
+        "MATH-G0-ADD5-1341",
+        "MATH-G0-ADD-1351",
+        "MATH-G0-ADDITION-WITHIN-5-1361",
+        "MATH-G0-ADD-2871",
+        "MATH-G0-ADD-1371",
+        "MATH-G0-ADD-1381",
+        "MATH-G0-ADDITION-1391",
+        "MATH-G0-ADD-1403",
+        "MATH-G0-ADD-1410",
+        "MATH-G0-ADD-1411",
+        "MATH-G0-ADD-1421",
+        "MATH-G0-ADD5-1421",
+        "MATH-G0-ADD-1431",
+        "MATH-G0-ADD5-1441",
+        "MATH-G0-ADDITION-1451",
+        "MATH-G0-ADDITION2-1451",
+        "MATH-G0-ADDWITH5-1461",
+        "MATH-G0-BALANCE-1461",
+        "MATH-G0-EQUATION-1461",
+        "MATH-G0-ADD-1471",
+        "MATH-G0-ADD-1481",
+        "MATH-G0-ADD-1491",
+        "MATH-G0-ADD-WITHIN-5-1501",
+        "MATH-G0-ADD-1514",
+        "MATH-G0-ADD2-1520",
+        "MATH-G0-ADD-1521",
+        "MATH-G0-BALANCE-1521",
+        "MATH-G0-ADDWITH5-1531",
+        "MATH-G0-ADDWITH5-2-1531",
+        "MATH-G0-ADD-1543",
+        "MATH-G0-ADDWITHIN5-1551",
+        "MATH-G0-ADD-WITHIN-5-7871",
+        "MATH-G0-EARLY-ADD-7871",
+        "MATH-G0-ADDITION-WITHIN-5-7881",
+        "MATH-G0-ADDITION-STRATEGY-7881",
+        "MATH-G0-ADD-WITHIN-5-7891",
+        "MATH-G0-ADD5-7911",
+        "MATH-G0-ADD5B-7911",
+        "MATH-G0-ADD-7921",
+        "MATH-G0-COMPLEX-ADD-7921",
+        "MATH-G0-ADD-7931",
+        "MATH-G0-ADD-WORD-7931",
+        "MATH-G0-ADD-7941",
+        "MATH-G0-ADDITION-7951",
+        "MATH-G0-ADDITION-2-7951",
+        "MATH-G0-ADDITION-7961",
+        "MATH-G0-BASIC-ADDITION-7961",
+        "MATH-G0-ADD-5-7971",
+        "MATH-G0-ADD-4-7971",
+        "MATH-G0-ADD-7981",
+        "MATH-G0-ADDWITH5-7991"
+      ],
+      "code": "K.OA.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "number recognition",
+      "count": 52,
+      "ids": [
+        "MATH-G0-NUMB-1281",
+        "MATH-G0-NUM-REC-1291",
+        "MATH-G0-NUMREC-1301",
+        "MATH-G0-NUMREC-1311",
+        "MATH-G0-NUMRECOG-1321",
+        "MATH-G0-NUMREC-1331",
+        "MATH-G0-NUMBER-1341",
+        "MATH-G0-NUMBER-1351",
+        "MATH-G0-NUMBER-RECOGNITION-1361",
+        "MATH-G0-RECOG-1371",
+        "MATH-G0-NREC-1381",
+        "MATH-G0-NUMBER-RECOGNITION-1391",
+        "MATH-G0-NUMBER-1402",
+        "MATH-G0-NUMBER-1411",
+        "MATH-G0-RECOG-1421",
+        "MATH-G0-NUMRECOG-1431",
+        "MATH-G0-NUMREC-1441",
+        "MATH-G0-NUMBER-1451",
+        "MATH-G0-NUMREC-1461",
+        "MATH-G0-NUMREC-1471",
+        "MATH-G0-RECOG-1471",
+        "MATH-G0-NUMB-1481",
+        "MATH-G0-NUMB2-1481",
+        "MATH-G0-NUMB-2871",
+        "MATH-G0-NUMBER-1491",
+        "MATH-G0-NUMBER-REC-1501",
+        "MATH-G0-PLACE-VALUE-1501",
+        "MATH-G0-NUMREC-1512",
+        "MATH-G0-NUMREC2-1519",
+        "MATH-G0-NUMREC-1521",
+        "MATH-G0-PLACEVALUE-1521",
+        "MATH-G0-NUMREC-1531",
+        "MATH-G0-NUMB-1542",
+        "MATH-G0-RANK-1549",
+        "MATH-G0-NUMREC-1551",
+        "MATH-G0-NUM-RECOG-7871",
+        "MATH-G0-NUMBER-RECOGNITION-7881",
+        "MATH-G0-PLACE-VALUE-7881",
+        "MATH-G0-NUM-REC-7891",
+        "MATH-G0-NUM-REC-RANGE-7891",
+        "MATH-G0-NUM-RECOG-7901",
+        "MATH-G0-NUMREC-7911",
+        "MATH-G0-NUMBER-7921",
+        "MATH-G0-ORDER-7921",
+        "MATH-G0-RECOG-7931",
+        "MATH-G0-NOLINE-7941",
+        "MATH-G0-NUMBER-RECOGNITION-7951",
+        "MATH-G0-NUMBER-RECOGNITION-7961",
+        "MATH-G0-NUM-REC-7971",
+        "MATH-G0-NUMBER-7981",
+        "MATH-G0-VISUAL-7981",
+        "MATH-G0-NUMREC-7991"
+      ],
+      "code": "K.CC.A.3"
+    },
+    {
+      "grade": 0,
+      "skill": "subtraction within 5",
+      "count": 50,
+      "ids": [
+        "MATH-G0-SUB-1271",
+        "MATH-G0-SUB-1281",
+        "MATH-G0-SUB-5-1291",
+        "MATH-G0-SUBTRACT-1301",
+        "MATH-G0-SUB2-1301",
+        "MATH-G0-SUB-1311",
+        "MATH-G0-SUB-1321",
+        "MATH-G0-SUB-1331",
+        "MATH-G0-SUBTRACT-1341",
+        "MATH-G0-SUBTRACT3-1341",
+        "MATH-G0-SUBTRACT-1351",
+        "MATH-G0-SUBTRACTION-WITHIN-5-1361",
+        "MATH-G0-SUB-1371",
+        "MATH-G0-SUB-1381",
+        "MATH-G0-SUBTRACTION-1391",
+        "MATH-G0-SUB-1404",
+        "MATH-G0-SUB-1411",
+        "MATH-G0-SUB-1421",
+        "MATH-G0-SUB-1431",
+        "MATH-G0-SUB5-1441",
+        "MATH-G0-SUBTRACTION-1451",
+        "MATH-G0-SUBTRACTION2-1451",
+        "MATH-G0-SUBWITH5-1461",
+        "MATH-G0-SUB-1471",
+        "MATH-G0-SUB-2871",
+        "MATH-G0-SUBSMALL-1471",
+        "MATH-G0-SUB-1481",
+        "MATH-G0-SUB-1491",
+        "MATH-G0-SUB-WITHIN-5-1501",
+        "MATH-G0-SUB-1515",
+        "MATH-G0-SUB-1521",
+        "MATH-G0-SUBWITH5-1531",
+        "MATH-G0-SUBWITH5-2-1531",
+        "MATH-G0-SUB-1544",
+        "MATH-G0-SUBTWITHIN5-1551",
+        "MATH-G0-SUB-7861",
+        "MATH-G0-SUB-WITHIN-5-7871",
+        "MATH-G0-EARLY-SUB-7871",
+        "MATH-G0-SUBTRACTION-WITHIN-5-7881",
+        "MATH-G0-SUB-WITHIN-5-7891",
+        "MATH-G0-SUB5-7911",
+        "MATH-G0-SUB5B-7911",
+        "MATH-G0-SUB-7941",
+        "MATH-G0-SUB-7921",
+        "MATH-G0-SUB-7931",
+        "MATH-G0-SUBTRACTION-7951",
+        "MATH-G0-SUB-5-7971",
+        "MATH-G0-SUB-4-7971",
+        "MATH-G0-SUB-7981",
+        "MATH-G0-SUBTRACT5-7991"
+      ],
+      "code": "K.OA.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "comparing numbers",
+      "count": 50,
+      "ids": [
+        "MATH-G0-COMPARE-1271",
+        "MATH-G0-COMP-1281",
+        "MATH-G0-COMP2-1281",
+        "MATH-G0-COMP-NUM-1291",
+        "MATH-G0-COMPARE-1301",
+        "MATH-G0-COMPARE-1311",
+        "MATH-G0-COMPARE-1321",
+        "MATH-G0-COMPARE-1331",
+        "MATH-G0-COMPARE-1341",
+        "MATH-G0-COMPARE-1351",
+        "MATH-G0-NUMBER-COMPARISON-1361",
+        "MATH-G0-COMPARE-1371",
+        "MATH-G0-COMP-1381",
+        "MATH-G0-COMPARE-1407",
+        "MATH-G0-COMPARE-1411",
+        "MATH-G0-COMP-1421",
+        "MATH-G0-COMP20-1421",
+        "MATH-G0-COMPARE-1431",
+        "MATH-G0-COMPARE-1441",
+        "MATH-G0-COMPARE-1451",
+        "MATH-G0-COMPARE-1461",
+        "MATH-G0-COMP-1471",
+        "MATH-G0-COMP-1481",
+        "MATH-G0-COMPARE-1491",
+        "MATH-G0-COMP-2871",
+        "MATH-G0-COMPARE20-1491",
+        "MATH-G0-COMPARE-1501",
+        "MATH-G0-ORDER-1501",
+        "MATH-G0-COMPARE-1513",
+        "MATH-G0-COMP-1521",
+        "MATH-G0-COMPNUM-1531",
+        "MATH-G0-COMP-1545",
+        "MATH-G0-COMPARE-7861",
+        "MATH-G0-COMPARE-NUM-7871",
+        "MATH-G0-COMPARING-NUMBERS-7881",
+        "MATH-G0-NUM-COMP-7891",
+        "MATH-G0-COMP-WITHIN-10-7891",
+        "MATH-G0-COMP-7911",
+        "MATH-G0-COMPARE-7921",
+        "MATH-G0-COMP-7931",
+        "MATH-G0-NUM-COMP-7931",
+        "MATH-G0-COMP-7941",
+        "MATH-G0-COMP2-7941",
+        "MATH-G0-COMPARE-NUMBERS-7951",
+        "MATH-G0-COMPARING-7961",
+        "MATH-G0-SORTING-7961",
+        "MATH-G0-COMP-NUM-7971",
+        "MATH-G0-COMPARE-7981",
+        "MATH-G0-COMPARE2-7981",
+        "MATH-G0-COMPARE-7991"
+      ],
+      "code": "K.CC.A.3"
+    },
+    {
+      "grade": 0,
+      "skill": "shapes identification",
+      "count": 38,
+      "ids": [
+        "MATH-G0-SHAPE-1281",
+        "MATH-G0-SHAPE-1301",
+        "MATH-G0-SHAPE2-1301",
+        "MATH-G0-SHAPE-1311",
+        "MATH-G0-SHAPE-1321",
+        "MATH-G0-SHAPE-1331",
+        "MATH-G0-SHAPE-1341",
+        "MATH-G0-SHAPE-RECOGNITION-1361",
+        "MATH-G0-SHAPE-1371",
+        "MATH-G0-SHAPE-1381",
+        "MATH-G0-SHAPE-1405",
+        "MATH-G0-SHAPE-1411",
+        "MATH-G0-SHAPE2-1411",
+        "MATH-G0-SHAPE-1421",
+        "MATH-G0-SHAPES-1431",
+        "MATH-G0-SHAPES-1451",
+        "MATH-G0-SHAPE-1461",
+        "MATH-G0-SHAPE-1471",
+        "MATH-G0-SHAP-1481",
+        "MATH-G0-SHAPE-1491",
+        "MATH-G0-SHAPES-1501",
+        "MATH-G0-SHAPE-1516",
+        "MATH-G0-SHAPE-1521",
+        "MATH-G0-SHAPE-1531",
+        "MATH-G0-SHAP-1546",
+        "MATH-G0-SPAT-1550",
+        "MATH-G0-SHAPES-1551",
+        "MATH-G0-SHAPE-7861",
+        "MATH-G0-SHAPE-ID-7871",
+        "MATH-G0-SHAPES-7881",
+        "MATH-G0-SHAPE-7891",
+        "MATH-G0-SHAPE-7911",
+        "MATH-G0-SHAPE-7921",
+        "MATH-G0-SHAPE-7941",
+        "MATH-G0-SHAPE-7931",
+        "MATH-G0-SHAPES-2-7951",
+        "MATH-G0-SHAPE-7981",
+        "MATH-G0-SHAPE-7991"
+      ],
+      "code": "K.G.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "counting 1-10",
+      "count": 35,
+      "ids": [
+        "MATH-G0-COUNT-1281",
+        "MATH-G0-COUNT-1301",
+        "MATH-G0-COUNT-1331",
+        "MATH-G0-COUNT-1341",
+        "MATH-G0-COUNTING-1361",
+        "MATH-G0-COUNT-1371",
+        "MATH-G0-COUNT10-1381",
+        "MATH-G0-COUNT-1401",
+        "MATH-G0-COUNT-1409",
+        "MATH-G0-COUNT-1411",
+        "MATH-G0-COUNT10-1411",
+        "MATH-G0-COUNT-1421",
+        "MATH-G0-COUNT-1451",
+        "MATH-G0-COUNT-1461",
+        "MATH-G0-COUNT-1471",
+        "MATH-G0-COUNT-1481",
+        "MATH-G0-COUNT-1491",
+        "MATH-G0-COUNT-1501",
+        "MATH-G0-COUNT-1511",
+        "MATH-G0-COUNT-1521",
+        "MATH-G0-COUNT-1531",
+        "MATH-G0-COUNT-1541",
+        "MATH-G0-COUNT-1551",
+        "MATH-G0-COUNT-7871",
+        "MATH-G0-COUNTING-7881",
+        "MATH-G0-COUNT-7891",
+        "MATH-G0-COUNT1-7911",
+        "MATH-G0-COUNT-7921",
+        "MATH-G0-COUNT-7931",
+        "MATH-G0-COUNT-7941",
+        "MATH-G0-COUNTING-7951",
+        "MATH-G0-COUNTING-7961",
+        "MATH-G0-COUNT1-7971",
+        "MATH-G0-COUNT-7981",
+        "MATH-G0-COUNTING10-7991"
+      ],
+      "code": "K.CC.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "counting 1-20",
+      "count": 33,
+      "ids": [
+        "MATH-G0-COUNT20-1281",
+        "MATH-G0-COUNT20-1301",
+        "MATH-G0-COUNT20-1321",
+        "MATH-G0-COUNT20-1331",
+        "MATH-G0-COUNT20-1341",
+        "MATH-G0-COUNTING-20-1361",
+        "MATH-G0-COUNT20-1371",
+        "MATH-G0-COUNT20-1381",
+        "MATH-G0-COUNT20-1406",
+        "MATH-G0-COUNT20-1411",
+        "MATH-G0-COUNT20-1421",
+        "MATH-G0-COUNT20-1451",
+        "MATH-G0-COUNT20-1461",
+        "MATH-G0-COUNT20-1471",
+        "MATH-G0-COUNT20-1481",
+        "MATH-G0-COUNT20-1491",
+        "MATH-G0-COUNT-20-1501",
+        "MATH-G0-COUNT20-1518",
+        "MATH-G0-COUNT20-1521",
+        "MATH-G0-COUNT2-2871",
+        "MATH-G0-COUNT20-1531",
+        "MATH-G0-COUNT20-1548",
+        "MATH-G0-COUNT20-1551",
+        "MATH-G0-COUNT20-7861",
+        "MATH-G0-COUNTING-20-7881",
+        "MATH-G0-COUNT-20-7891",
+        "MATH-G0-COUNT20-7921",
+        "MATH-G0-COUNT20-7911",
+        "MATH-G0-COUNT20-7931",
+        "MATH-G0-COUNTING-20-7951",
+        "MATH-G0-COUNTING-20-7961",
+        "MATH-G0-COUNT20-7981",
+        "MATH-G0-COUNTING20-7991"
+      ],
+      "code": "K.CC.A.1"
+    },
+    {
+      "grade": 1,
+      "skill": "subtraction within 20",
+      "count": 33,
+      "ids": [
+        "MATH-G1-SUB-3088",
+        "MATH-G1-SUB-0002",
+        "MATH-G1-SUB-0008",
+        "MATH-G1-SUB-0011",
+        "MATH-G1-SUB-0012",
+        "MATH-G1-SUB-0022",
+        "MATH-G1-SUB-0032",
+        "MATH-G1-SUB-0038",
+        "MATH-G1-SUB-0041",
+        "MATH-G1-SUB-0042",
+        "MATH-G1-SUB-0052",
+        "MATH-G1-SUB-0058",
+        "MATH-G1-SUB-10458",
+        "MATH-G1-SUB-10461",
+        "MATH-G1-SUB-10472",
+        "MATH-G1-SUB-10478",
+        "MATH-G1-SUB-10482",
+        "MATH-G1-SUB-10488",
+        "MATH-G1-SUB-10491",
+        "MATH-G1-SUB-10492",
+        "MATH-G1-SUB-10502",
+        "MATH-G1-SUB-10508",
+        "MATH-G1-SUB-10511",
+        "MATH-G1-SUB-10531",
+        "MATH-G1-SUB-10541",
+        "MATH-G1-SUB-10542",
+        "MATH-G1-SUBTRACTION-10551",
+        "MATH-G1-SUB-10562",
+        "MATH-G1-SUB-10568",
+        "MATH-G1-SUB-10571",
+        "MATH-G1-ORGSUB-10571",
+        "MATH-G1-SUBTRACTION-10581",
+        "MATH-G1-SUBTRACTION-STRATEGY-10581"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "addition within 20",
+      "count": 32,
+      "ids": [
+        "MATH-G1-ADD-0001",
+        "MATH-G1-ADD-0007",
+        "MATH-G1-ADD-0011",
+        "MATH-G1-ADD-0012",
+        "MATH-G1-ADD-0022",
+        "MATH-G1-ADD-0031",
+        "MATH-G1-ADD-0037",
+        "MATH-G1-ADD-0041",
+        "MATH-G1-ADD-0042",
+        "MATH-G1-ADD-0051",
+        "MATH-G1-ADD-0061",
+        "MATH-G1-ADD-10457",
+        "MATH-G1-ADD-10461",
+        "MATH-G1-ADD-10471",
+        "MATH-G1-ADD-10477",
+        "MATH-G1-ADD-10481",
+        "MATH-G1-ADD-10487",
+        "MATH-G1-ADD-10491",
+        "MATH-G1-ADD-10492",
+        "MATH-G1-ADD-10501",
+        "MATH-G1-ADD-10507",
+        "MATH-G1-ADD-10511",
+        "MATH-G1-ADD-10531",
+        "MATH-G1-ADD-10541",
+        "MATH-G1-ADD-10542",
+        "MATH-G1-ADDITION-10551",
+        "MATH-G1-ADD-10561",
+        "MATH-G1-ADD-10567",
+        "MATH-G1-ADD-10571",
+        "MATH-G1-ORGADD-10571",
+        "MATH-G1-ADDITION-10581",
+        "MATH-G1-ADDITION-STRATEGY-10581"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "comparing lengths",
+      "count": 21,
+      "ids": [
+        "MATH-G1-LENGTH-0005",
+        "MATH-G1-LENGTH-0011",
+        "MATH-G1-LENGTH-0021",
+        "MATH-G1-LENGTH-0035",
+        "MATH-G1-LENGTH-0041",
+        "MATH-G1-LENGTH-0042",
+        "MATH-G1-LENGTH-0055",
+        "MATH-G1-LENGTH-10455",
+        "MATH-G1-LENGTH-10461",
+        "MATH-G1-LENGTH-10475",
+        "MATH-G1-LENGTH-10485",
+        "MATH-G1-LENGTH-10491",
+        "MATH-G1-LENGTH-10505",
+        "MATH-G1-LENGTH-10511",
+        "MATH-G1-LENGTH-10531",
+        "MATH-G1-LENGTH-10541",
+        "MATH-G1-LENGTH-10542",
+        "MATH-G1-LENGTH-10551",
+        "MATH-G1-LENGTH-10565",
+        "MATH-G1-LENGTH-10571",
+        "MATH-G1-LENGTH-10581"
+      ],
+      "code": "1.MD.A.1"
+    },
+    {
+      "grade": 1,
+      "skill": "fact families",
+      "count": 20,
+      "ids": [
+        "MATH-G1-FACT-0006",
+        "MATH-G1-FACTFAM-0011",
+        "MATH-G1-FACTFAMILY-0021",
+        "MATH-G1-FACT-0036",
+        "MATH-G1-FACTFAM-0041",
+        "MATH-G1-FACTFAMILY-0056",
+        "MATH-G1-FACTFAMILY-0060",
+        "MATH-G1-FACTFAMILY-10456",
+        "MATH-G1-FACTFAM-10461",
+        "MATH-G1-FAMILY-10476",
+        "MATH-G1-FACTFAMILY-10486",
+        "MATH-G1-FACTFAMILY-10491",
+        "MATH-G1-FACTFAMILY-10506",
+        "MATH-G1-FACTFAMILY-10511",
+        "MATH-G1-FACT-FAMILY-10531",
+        "MATH-G1-FACTFAMILY-10541",
+        "MATH-G1-FACT-FAMILIES-10551",
+        "MATH-G1-FACT-10566",
+        "MATH-G1-FACTFAMILY-10571",
+        "MATH-G1-FACT-FAMILY-10581"
+      ],
+      "code": "1.OA.B.4"
+    },
+    {
+      "grade": 1,
+      "skill": "telling time hour/half",
+      "count": 18,
+      "ids": [
+        "MATH-G1-TIME-10581",
+        "MATH-G1-TIME-0010",
+        "MATH-G1-TIME-0004",
+        "MATH-G1-TIME-0011",
+        "MATH-G1-TIME-0034",
+        "MATH-G1-TIME-0041",
+        "MATH-G1-TIME-9872",
+        "MATH-G1-TIME-10454",
+        "MATH-G1-TIME-10460",
+        "MATH-G1-TIME-10461",
+        "MATH-G1-TIME-10474",
+        "MATH-G1-TIME-10480",
+        "MATH-G1-TIME-10511",
+        "MATH-G1-TIME-10531",
+        "MATH-G1-TIME-10551",
+        "MATH-G1-TIME-10564",
+        "MATH-G1-TIME-10570",
+        "MATH-G1-TIME-READING-10581"
+      ],
+      "code": "1.MD.B.3"
+    },
+    {
+      "grade": 1,
+      "skill": "place value tens/ones",
+      "count": 16,
+      "ids": [
+        "MATH-G1-PV-0003",
+        "MATH-G1-PV-0009",
+        "MATH-G1-PLCVAL-0011",
+        "MATH-G1-PV-0033",
+        "MATH-G1-PLVAL-0041",
+        "MATH-G1-PLACEVALUE-10459",
+        "MATH-G1-PLACEVALUE-10461",
+        "MATH-G1-PLACE-10473",
+        "MATH-G1-PLACE-10479",
+        "MATH-G1-PLACEVALUE-10511",
+        "MATH-G1-PLACE-10531",
+        "MATH-G1-PLACE-VALUE-10551",
+        "MATH-G1-PLACE-10563",
+        "MATH-G1-PLACE-10569",
+        "MATH-G1-PLACE-VALUE-10581",
+        "MATH-G1-TENS-ONES-10581"
+      ],
+      "code": "1.NBT.B.2"
+    },
+    {
+      "grade": 1,
+      "skill": "place value tens and ones",
+      "count": 13,
+      "ids": [
+        "MATH-G1-PLACEVALUE-0021",
+        "MATH-G1-PLACEVALUE-0022",
+        "MATH-G1-PLACEVALUE-0053",
+        "MATH-G1-PLACEVALUE-0059",
+        "MATH-G1-PLACEVALUE-10483",
+        "MATH-G1-PLACEVALUE-10489",
+        "MATH-G1-PLACEVALUE-10491",
+        "MATH-G1-PLACEVALUE-10492",
+        "MATH-G1-PLACEVALUE-10503",
+        "MATH-G1-PLACEVALUE-10509",
+        "MATH-G1-PLACEVALUE-10541",
+        "MATH-G1-PLACEVALUE-10542",
+        "MATH-G1-PLACEVALUE-10571"
+      ],
+      "code": "1.NBT.B.2"
+    },
+    {
+      "grade": 0,
+      "skill": "counting to 20",
+      "count": 8,
+      "ids": [
+        "MATH-G0-COUNT20-1271",
+        "MATH-G0-COUNT-20-1291",
+        "MATH-G0-COUNT20-1311",
+        "MATH-G0-COUNT20-1351",
+        "MATH-G0-COUNTING20-1391",
+        "MATH-G0-COUNT20-1431",
+        "MATH-G0-COUNT20-1441",
+        "MATH-G0-COUNT-20-7901"
+      ],
+      "code": "K.CC.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "counting",
+      "count": 6,
+      "ids": [
+        "MATH-G0-COUNT-1311",
+        "MATH-G0-COUNT-1321",
+        "MATH-G0-COUNT-1381",
+        "MATH-G0-COUNT-1431",
+        "MATH-G0-COUNT-1441",
+        "MATH-G0-COUNTING-7991"
+      ],
+      "code": "K.CC.A.1"
+    },
+    {
+      "grade": 1,
+      "skill": "telling time hour and half hour",
+      "count": 6,
+      "ids": [
+        "MATH-G1-TIME-10160",
+        "MATH-G1-TIME-10484",
+        "MATH-G1-TIME-10490",
+        "MATH-G1-TIME-10504",
+        "MATH-G1-TIME-10510",
+        "MATH-G1-TIME-10541"
+      ],
+      "code": "1.MD.B.3"
+    },
+    {
+      "grade": 0,
+      "skill": "counting to 10",
+      "count": 5,
+      "ids": [
+        "MATH-G0-COUNT-1271",
+        "MATH-G0-COUNT-1291",
+        "MATH-G0-COUNT-1351",
+        "MATH-G0-COUNTING-1391",
+        "MATH-G0-COUNT-7901"
+      ],
+      "code": "K.CC.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "counting 1-5",
+      "count": 4,
+      "ids": [
+        "MATH-G0-COUNT5-0051",
+        "MATH-G0-COUNT5-0261",
+        "MATH-G0-COUNT5-0551",
+        "MATH-G0-COUNT-5-5071"
+      ],
+      "code": "K.CC.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "shape identification",
+      "count": 4,
+      "ids": [
+        "MATH-G0-SHAPE-1271",
+        "MATH-G0-SHAPE-1291",
+        "MATH-G0-SHAPE-1351",
+        "MATH-G0-SHAPE-1391"
+      ],
+      "code": "K.G.A.1"
+    },
+    {
+      "grade": 1,
+      "skill": "telling time to the hour and half hour",
+      "count": 4,
+      "ids": [
+        "MATH-G1-TIME-0021",
+        "MATH-G1-TIME-0022",
+        "MATH-G1-TIME-0054",
+        "MATH-G1-TIME-10571"
+      ],
+      "code": "1.MD.B.3"
+    },
+    {
+      "grade": 0,
+      "skill": "equal groups",
+      "count": 3,
+      "ids": [
+        "MATH-G0-BALANCE-1361",
+        "MATH-G0-BALANCE-1391",
+        "MATH-G0-COUNTEQ-7861"
+      ],
+      "code": "K.OA.A.3"
+    },
+    {
+      "grade": 1,
+      "skill": "advanced time telling",
+      "count": 3,
+      "ids": [
+        "MATH-G1-TIME-ADVANCED-1422",
+        "MATH-G1-TIME2-10600",
+        "MATH-G1-TIME-ADV-10641"
+      ],
+      "code": "1.MD.B.3"
+    },
+    {
+      "grade": 0,
+      "skill": "place value",
+      "count": 2,
+      "ids": [
+        "MATH-G0-PLAC-1481",
+        "MATH-G0-PLACEVALUE-7991"
+      ],
+      "code": "K.NBT.A.1"
+    },
+    {
+      "grade": 1,
+      "skill": "understanding equals sign",
+      "count": 2,
+      "ids": [
+        "MATH-G1-BALANCE-2021",
+        "MATH-G1-BALANCED-EQUATIONS-5721"
+      ],
+      "code": "1.OA.D.7"
+    },
+    {
+      "grade": 1,
+      "skill": "understanding equals",
+      "count": 2,
+      "ids": [
+        "MATH-G1-EQUAL-2561",
+        "MATH-G1-EQUAL-5071"
+      ],
+      "code": "1.OA.D.7"
+    },
+    {
+      "grade": 1,
+      "skill": "number comparison",
+      "count": 2,
+      "ids": [
+        "MATH-G1-COMPARE-10461",
+        "MATH-G1-COMPARE-10511"
+      ],
+      "code": "1.NBT.B.2"
+    },
+    {
+      "grade": 1,
+      "skill": "subtraction within 10",
+      "count": 2,
+      "ids": [
+        "MATH-G1-SUB-WITHIN-10-10531",
+        "MATH-G1-SUBTRACTION-WITHIN-10-10551"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 0,
+      "skill": "comparing small numbers",
+      "count": 2,
+      "ids": [
+        "MATH-G0-COMP5-4871",
+        "MATH-G0-COMP-LOW-5231"
+      ],
+      "code": "K.CC.A.3"
+    },
+    {
+      "grade": 0,
+      "skill": "measurement introduction",
+      "count": 1,
+      "ids": [
+        "MATH-G0-UNIT-2761"
+      ],
+      "code": "1.MD.A.1"
+    },
+    {
+      "grade": 1,
+      "skill": "time understanding",
+      "count": 1,
+      "ids": [
+        "MATH-G1-TIME-STRATEGY-7081"
+      ],
+      "code": "1.MD.B.3"
+    },
+    {
+      "grade": 0,
+      "skill": "one-to-one counting",
+      "count": 1,
+      "ids": [
+        "MATH-G0-COUNTING-0881"
+      ],
+      "code": "K.CC.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "counting 1 to 10",
+      "count": 1,
+      "ids": [
+        "MATH-G0-COUNT1TO10-1081"
+      ],
+      "code": "K.CC.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "Counting to Add",
+      "count": 1,
+      "ids": [
+        "MATH-G0-ADD-OBJECTS-1209"
+      ],
+      "code": "K.CC.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "Counting to Subtract",
+      "count": 1,
+      "ids": [
+        "MATH-G0-SUB-OBJECTS-1210"
+      ],
+      "code": "K.CC.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "number recognition 1-10",
+      "count": 1,
+      "ids": [
+        "MATH-G0-NUMREC-1271"
+      ],
+      "code": "K.CC.A.3"
+    },
+    {
+      "grade": 0,
+      "skill": "counting objects",
+      "count": 1,
+      "ids": [
+        "MATH-G0-COUNTOBJ-1271"
+      ],
+      "code": "K.CC.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "less than/more than",
+      "count": 1,
+      "ids": [
+        "MATH-G0-COMP-5-1291"
+      ],
+      "code": "K.CC.C.6"
+    },
+    {
+      "grade": 0,
+      "skill": "number line addition",
+      "count": 1,
+      "ids": [
+        "MATH-G0-ADD-LINE-1291"
+      ],
+      "code": "K.OA.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "simple addition",
+      "count": 1,
+      "ids": [
+        "MATH-G0-SIMPLEADD-1311"
+      ],
+      "code": "K.OA.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "addition sequence",
+      "count": 1,
+      "ids": [
+        "MATH-G0-ADDSEQ-1321"
+      ],
+      "code": "K.OA.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "subtraction sequence",
+      "count": 1,
+      "ids": [
+        "MATH-G0-SUBSEQ-1321"
+      ],
+      "code": "K.OA.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "number line",
+      "count": 1,
+      "ids": [
+        "MATH-G0-NLINE-1331"
+      ],
+      "code": "K.CC.A.3"
+    },
+    {
+      "grade": 0,
+      "skill": "advanced number comparison",
+      "count": 1,
+      "ids": [
+        "MATH-G0-CMPX-1331"
+      ],
+      "code": "K.CC.A.3"
+    },
+    {
+      "grade": 0,
+      "skill": "equal quantities",
+      "count": 1,
+      "ids": [
+        "MATH-G0-BALANCE-1351"
+      ],
+      "code": "K.OA.A.3"
+    },
+    {
+      "grade": 0,
+      "skill": "shape patterns",
+      "count": 1,
+      "ids": [
+        "MATH-G0-PATTERN-2351"
+      ],
+      "code": "K.G.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "addition and subtraction",
+      "count": 1,
+      "ids": [
+        "MATH-G0-ADVSUB-1371"
+      ],
+      "code": "K.OA.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "number comparison",
+      "count": 1,
+      "ids": [
+        "MATH-G0-COMPARE-1391"
+      ],
+      "code": "K.CC.A.3"
+    },
+    {
+      "grade": 0,
+      "skill": "shapes",
+      "count": 1,
+      "ids": [
+        "MATH-G0-SHAPE-1441"
+      ],
+      "code": "K.G.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "addition",
+      "count": 1,
+      "ids": [
+        "MATH-G0-ADD-1441"
+      ],
+      "code": "K.OA.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "subtraction",
+      "count": 1,
+      "ids": [
+        "MATH-G0-SUB-1441"
+      ],
+      "code": "K.OA.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "addition within 10",
+      "count": 1,
+      "ids": [
+        "MATH-G0-ADD10-1491"
+      ],
+      "code": "K.OA.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "ordering numbers",
+      "count": 1,
+      "ids": [
+        "MATH-G0-ORDERNUM-7861"
+      ],
+      "code": "K.CC.A.3"
+    },
+    {
+      "grade": 0,
+      "skill": "number ordering",
+      "count": 1,
+      "ids": [
+        "MATH-G0-NUM-ORDER-7901"
+      ],
+      "code": "K.CC.A.3"
+    },
+    {
+      "grade": 1,
+      "skill": "counting sequence",
+      "count": 1,
+      "ids": [
+        "MATH-G1-COUNTING-1861"
+      ],
+      "code": "1.NBT.A.1"
+    },
+    {
+      "grade": 1,
+      "skill": "subtraction facts",
+      "count": 1,
+      "ids": [
+        "MATH-G1-SUBN-1907"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "equal sets",
+      "count": 1,
+      "ids": [
+        "MATH-G1-EQST-1910"
+      ],
+      "code": "1.OA.D.7"
+    },
+    {
+      "grade": 1,
+      "skill": "time to quarter hour",
+      "count": 1,
+      "ids": [
+        "MATH-G1-TIME2-2041"
+      ],
+      "code": "1.MD.B.3"
+    },
+    {
+      "grade": 1,
+      "skill": "addition combinations",
+      "count": 1,
+      "ids": [
+        "MATH-G1-ADD-COMBO-2321"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "subtracting within 10",
+      "count": 1,
+      "ids": [
+        "MATH-G1-SUB10-2521"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "mixed subtraction",
+      "count": 1,
+      "ids": [
+        "MATH-G1-SUBMIXED-2631"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "addition near 10",
+      "count": 1,
+      "ids": [
+        "MATH-G1-ADD10-2671"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "subtraction near 10",
+      "count": 1,
+      "ids": [
+        "MATH-G1-SUB10-2671"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "subtraction counting back",
+      "count": 1,
+      "ids": [
+        "MATH-G1-SUB-2862"
+      ],
+      "code": "1.NBT.A.1"
+    },
+    {
+      "grade": 1,
+      "skill": "adding two-digit numbers",
+      "count": 1,
+      "ids": [
+        "MATH-G1-ADD2DIGIT-4811"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "subtracting two-digit numbers",
+      "count": 1,
+      "ids": [
+        "MATH-G1-SUB2DIGIT-4811"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "addition mixed strategy",
+      "count": 1,
+      "ids": [
+        "MATH-G1-ADDMIXED-4851"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "subtraction mixed strategy",
+      "count": 1,
+      "ids": [
+        "MATH-G1-SUBMIXED-4851"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "addition using ten frame",
+      "count": 1,
+      "ids": [
+        "MATH-G1-ADDTENFRAME-4851"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "telling half hour",
+      "count": 1,
+      "ids": [
+        "MATH-G1-HALFTIME-4941"
+      ],
+      "code": "1.MD.B.3"
+    },
+    {
+      "grade": 1,
+      "skill": "subtracting teen numbers",
+      "count": 1,
+      "ids": [
+        "MATH-G1-SUB-TEENS-5081"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "adding by making tens",
+      "count": 1,
+      "ids": [
+        "MATH-G1-ADD-STRATEGY-5081"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "adding groups of objects",
+      "count": 1,
+      "ids": [
+        "MATH-G1-ADDITION-GROUPS-5141"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "Subtracting within 10",
+      "count": 1,
+      "ids": [
+        "MATH-G1-SUB-WITHIN10-5251"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "Half Past Time",
+      "count": 1,
+      "ids": [
+        "MATH-G1-HALF-TIME-5251"
+      ],
+      "code": "1.MD.B.3"
+    },
+    {
+      "grade": 1,
+      "skill": "number relationships",
+      "count": 1,
+      "ids": [
+        "MATH-G1-NUMBER-SENSE-5721"
+      ],
+      "code": "1.NBT.B.2"
+    },
+    {
+      "grade": 1,
+      "skill": "equal quantities",
+      "count": 1,
+      "ids": [
+        "MATH-G1-BALANCE-6191"
+      ],
+      "code": "1.OA.D.7"
+    },
+    {
+      "grade": 1,
+      "skill": "reading half hour times",
+      "count": 1,
+      "ids": [
+        "MATH-G1-TIME-HALF-8031"
+      ],
+      "code": "1.MD.B.3"
+    },
+    {
+      "grade": 1,
+      "skill": "two-digit numbers",
+      "count": 1,
+      "ids": [
+        "MATH-G1-PLACEVALUE2-9079"
+      ],
+      "code": "1.NBT.B.2"
+    },
+    {
+      "grade": 1,
+      "skill": "time to the hour",
+      "count": 1,
+      "ids": [
+        "MATH-G1-TIME2-9080"
+      ],
+      "code": "1.MD.B.3"
+    },
+    {
+      "grade": 1,
+      "skill": "equals understanding",
+      "count": 1,
+      "ids": [
+        "MATH-G1-BALANCE-9171"
+      ],
+      "code": "1.OA.D.7"
+    },
+    {
+      "grade": 1,
+      "skill": "advanced time reading",
+      "count": 1,
+      "ids": [
+        "MATH-G1-TIME-ADV-9261"
+      ],
+      "code": "1.MD.B.3"
+    },
+    {
+      "grade": 1,
+      "skill": "reading whole hours",
+      "count": 1,
+      "ids": [
+        "MATH-G1-TIME-HOUR-9921"
+      ],
+      "code": "1.MD.B.3"
+    },
+    {
+      "grade": 1,
+      "skill": "number balance",
+      "count": 1,
+      "ids": [
+        "MATH-G1-BALANCE-10441"
+      ],
+      "code": "1.OA.D.7"
+    },
+    {
+      "grade": 1,
+      "skill": "addition strategies",
+      "count": 1,
+      "ids": [
+        "MATH-G1-ADD-10462"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "subtraction strategies",
+      "count": 1,
+      "ids": [
+        "MATH-G1-SUB-10462"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "number composition",
+      "count": 1,
+      "ids": [
+        "MATH-G1-PLACEVALUE-10462"
+      ],
+      "code": "1.NBT.B.2"
+    },
+    {
+      "grade": 1,
+      "skill": "telling time to hour and half hour",
+      "count": 1,
+      "ids": [
+        "MATH-G1-TIME-10492"
+      ],
+      "code": "1.MD.B.3"
+    },
+    {
+      "grade": 1,
+      "skill": "addition with regrouping",
+      "count": 1,
+      "ids": [
+        "MATH-G1-ADD-20511"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "subtraction with borrowing",
+      "count": 1,
+      "ids": [
+        "MATH-G1-SUB-20511"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "number ordering",
+      "count": 1,
+      "ids": [
+        "MATH-G1-ORDERING-10511"
+      ],
+      "code": "1.NBT.B.2"
+    },
+    {
+      "grade": 1,
+      "skill": "addition within 10",
+      "count": 1,
+      "ids": [
+        "MATH-G1-ADD-WITHIN-10-10531"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "place value to 10",
+      "count": 1,
+      "ids": [
+        "MATH-G1-PLACE-VALUE-10-10531"
+      ],
+      "code": "1.NBT.B.2"
+    },
+    {
+      "grade": 1,
+      "skill": "telling time to hour",
+      "count": 1,
+      "ids": [
+        "MATH-G1-TIME-HOUR-10531"
+      ],
+      "code": "1.MD.B.3"
+    },
+    {
+      "grade": 1,
+      "skill": "adding with regrouping",
+      "count": 1,
+      "ids": [
+        "MATH-G1-ADDITION-WITH-REGROUPING-10551"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "addition pairs to 10",
+      "count": 1,
+      "ids": [
+        "MATH-G1-ADDITION-PAIRS-10551"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "grouping and counting",
+      "count": 1,
+      "ids": [
+        "MATH-G1-EQUAL-GROUPS-10551"
+      ],
+      "code": "1.NBT.A.1"
+    },
+    {
+      "grade": 1,
+      "skill": "equality and addition",
+      "count": 1,
+      "ids": [
+        "MATH-G1-BALANCE-10571"
+      ],
+      "code": "1.OA.C.6"
+    },
+    {
+      "grade": 1,
+      "skill": "number patterns",
+      "count": 1,
+      "ids": [
+        "MATH-G1-PATTERN-10571"
+      ],
+      "code": "1.NBT.B.2"
+    },
+    {
+      "grade": 0,
+      "skill": "number understanding",
+      "count": 1,
+      "ids": [
+        "MATH-G0-NUMLINE-5711"
+      ],
+      "code": "K.CC.A.3"
+    },
+    {
+      "grade": 0,
+      "skill": "visual addition",
+      "count": 1,
+      "ids": [
+        "MATH-G0-ADDARRAY-5151"
+      ],
+      "code": "K.OA.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "visual counting",
+      "count": 1,
+      "ids": [
+        "MATH-G0-VISU-5231"
+      ],
+      "code": "K.CC.A.1"
+    },
+    {
+      "grade": 0,
+      "skill": "equal/not equal",
+      "count": 1,
+      "ids": [
+        "MATH-G0-EQU-5441"
+      ],
+      "code": "K.OA.A.3"
+    }
+  ],
+  "toDelete": [
+    {
+      "grade": 0,
+      "skill": "patterns",
+      "count": 36,
+      "ids": [
+        "MATH-G0-PATT-1281",
+        "MATH-G0-PATTERN-1301",
+        "MATH-G0-PATTERN-1311",
+        "MATH-G0-PATTERN-1321",
+        "MATH-G0-PATTERN-1331",
+        "MATH-G0-PATTERN-1341",
+        "MATH-G0-PATTERN-RECOGNITION-1361",
+        "MATH-G0-PATTERN-1371",
+        "MATH-G0-PATTERN-1381",
+        "MATH-G0-PATTERN-1408",
+        "MATH-G0-PATTERN-1411",
+        "MATH-G0-PATTERN-1421",
+        "MATH-G0-PATTERN-1431",
+        "MATH-G0-PATTERN-1441",
+        "MATH-G0-PATTERN-1451",
+        "MATH-G0-PATTERN-1461",
+        "MATH-G0-PATTERN-1471",
+        "MATH-G0-PATT-1481",
+        "MATH-G0-PATTERN-1491",
+        "MATH-G0-PATTERN-1501",
+        "MATH-G0-PATTERN-1517",
+        "MATH-G0-PATTERN-1521",
+        "MATH-G0-PATTERN-1531",
+        "MATH-G0-PATT-1547",
+        "MATH-G0-PATTERNS-1551",
+        "MATH-G0-PATTERN-7861",
+        "MATH-G0-PATTERNS-7881",
+        "MATH-G0-PATTERN-7891",
+        "MATH-G0-PATTERN-7911",
+        "MATH-G0-PATTERN-7921",
+        "MATH-G0-PATTERN-7931",
+        "MATH-G0-PATTERN-7941",
+        "MATH-G0-PATTERNS-7951",
+        "MATH-G0-PATTERN-7971",
+        "MATH-G0-PATTERN-7981",
+        "MATH-G0-PATTERN-7991"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "simple patterns",
+      "count": 3,
+      "ids": [
+        "MATH-G0-PATTERN-1271",
+        "MATH-G0-PATTERN-1291",
+        "MATH-G0-SIMPLE-PATTERN-7901"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "comparing weights",
+      "count": 2,
+      "ids": [
+        "MATH-G0-WEIGHT-1011",
+        "MATH-G0-BALANCE-1431"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "basic fractions",
+      "count": 2,
+      "ids": [
+        "MATH-G0-BASIC-FRACTION-1361",
+        "MATH-G0-FRAC-1381"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "visual math representation",
+      "count": 1,
+      "ids": [
+        "MATH-G0-VISUAL-MATH-0961"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "comparing objects",
+      "count": 1,
+      "ids": [
+        "MATH-G0-COMP-OBJ-1110"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "basic multiplication",
+      "count": 1,
+      "ids": [
+        "MATH-G0-ARRAY-1251"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "object patterns",
+      "count": 1,
+      "ids": [
+        "MATH-G0-PATTERN2-1271"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "ordering objects",
+      "count": 1,
+      "ids": [
+        "MATH-G0-ORDEROBJ-1311"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "basic patterns",
+      "count": 1,
+      "ids": [
+        "MATH-G0-PATTERN-1351"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "mixed operations",
+      "count": 1,
+      "ids": [
+        "MATH-G0-COMPLEX-1371"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "pattern recognition",
+      "count": 1,
+      "ids": [
+        "MATH-G0-PATTERN-1391"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "basic fraction",
+      "count": 1,
+      "ids": [
+        "MATH-G0-FRACTION-1391"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "simple fractions",
+      "count": 1,
+      "ids": [
+        "MATH-G0-FRACTION-1431"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "comparing to 5",
+      "count": 1,
+      "ids": [
+        "MATH-G0-COMPARE-5-7521"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "simple graphing",
+      "count": 1,
+      "ids": [
+        "MATH-G0-SIMPLE-GRAPH-7901"
+      ]
+    },
+    {
+      "grade": 1,
+      "skill": "order of simple operations",
+      "count": 1,
+      "ids": [
+        "MATH-G1-ORDEROPS-5511"
+      ]
+    },
+    {
+      "grade": 1,
+      "skill": "comparing values",
+      "count": 1,
+      "ids": [
+        "MATH-G1-BALANCESCALE-5821"
+      ]
+    },
+    {
+      "grade": 1,
+      "skill": "symmetry",
+      "count": 1,
+      "ids": [
+        "MATH-G1-SYMM-9041"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "comparison",
+      "count": 1,
+      "ids": [
+        "MATH-G0-UNIT-4601"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "basic geometric understanding",
+      "count": 1,
+      "ids": [
+        "MATH-G0-UNITCIRCLE-4781"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "unit circles",
+      "count": 1,
+      "ids": [
+        "MATH-G0-UNIT-5061"
+      ]
+    },
+    {
+      "grade": 0,
+      "skill": "data visualization",
+      "count": 1,
+      "ids": [
+        "MATH-G0-GRAPH-5271"
+      ]
+    }
+  ]
+}

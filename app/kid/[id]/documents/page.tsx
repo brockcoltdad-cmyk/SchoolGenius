@@ -348,10 +348,16 @@ export default function DocumentsPage() {
                     </div>
 
                     {doc.needs_help && (
-                      <div className="mb-3 rounded-lg bg-yellow-100 p-2 text-xs">
-                        <p className="font-semibold text-yellow-900">Help requested</p>
+                      <div
+                        className="mb-3 rounded-lg p-2 text-xs"
+                        style={{
+                          background: `${currentTheme.colors.primary}15`,
+                          border: `1px solid ${currentTheme.colors.primary}30`
+                        }}
+                      >
+                        <p className="font-semibold" style={{ color: currentTheme.colors.primary }}>Help requested</p>
                         {doc.help_request && (
-                          <p className="text-yellow-800">{doc.help_request}</p>
+                          <p style={{ color: currentTheme.colors.text }}>{doc.help_request}</p>
                         )}
                       </div>
                     )}
@@ -373,9 +379,15 @@ export default function DocumentsPage() {
                               <p className="text-slate-500">Document: {doc.file_name}</p>
                             </div>
                             {doc.ai_analysis && (
-                              <div className="rounded-lg bg-blue-50 p-4">
-                                <p className="mb-1 font-semibold text-blue-900">AI Analysis</p>
-                                <p className="text-sm text-blue-800">{doc.ai_analysis}</p>
+                              <div
+                                className="rounded-lg p-4"
+                                style={{
+                                  background: `${currentTheme.colors.primary}15`,
+                                  border: `1px solid ${currentTheme.colors.primary}30`
+                                }}
+                              >
+                                <p className="mb-1 font-semibold" style={{ color: currentTheme.colors.primary }}>AI Analysis</p>
+                                <p className="text-sm" style={{ color: currentTheme.colors.text }}>{doc.ai_analysis}</p>
                               </div>
                             )}
                             {doc.notes && (

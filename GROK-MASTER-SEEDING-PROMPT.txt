@@ -1,0 +1,303 @@
+🤖 GROK: COMPLETE SEEDING PACKAGE GENERATOR
+
+MISSION: Create 7 batch seeding scripts to generate ALL SchoolGenius content
+
+REFERENCE FILES:
+- GROK-SEEDING-REQUEST.md (technical specifications)
+- COMPLETE-QUESTIONS-LIST.md (all 1,145 questions to answer)
+- generate-explanations-direct.mjs (working pattern to follow)
+
+YOUR DELIVERABLE:
+Create a folder called "seeding/" with these files:
+
+1. seed-kid-qa.mjs
+   - Generate responses for ALL 1,000 kid questions from COMPLETE-QUESTIONS-LIST.md
+   - 10 "I'm stuck" variations × 14 sample skills = 140
+   - 7 skill-specific questions × 120 skills = 840
+   - Total: ~1,000 responses
+
+2. seed-parent-faq.mjs
+   - Generate responses for ALL 200 parent questions from COMPLETE-QUESTIONS-LIST.md
+   - 60 "struggling with X" questions
+   - 25 "help at home" guides
+   - 30 progress explanation FAQs
+   - 50 platform questions
+   - Total: ~200 responses
+
+3. seed-subject-analogies.mjs
+   - 500+ real-world analogies
+   - 5 analogies per skill × 100 skills
+   - Math: pizza slices, groups, sharing
+   - Reading: movies in head, detective clues
+   - Spelling: chunks, patterns, rules
+   - Coding: recipes, boxes, instructions
+   - Typing: home base, piano playing
+
+4. seed-transition-phrases.mjs
+   - 200+ smooth transitions
+   - Rules → Demo: 50 variations
+   - Demo → Guided: 50 variations
+   - Guided → Independent: 50 variations
+   - Independent → Quiz: 50 variations
+
+5. seed-achievement-celebrations.mjs
+   - 100+ celebration messages
+   - First lesson: 10 variations
+   - Streaks (2, 3, 7, 14, 30, 60, 100 days): 20 variations
+   - Coin milestones: 15 variations
+   - XP milestones: 15 variations
+   - Skill mastery: 15 variations
+   - Theme unlocked: 10 variations
+   - Badge earned: 15 variations
+
+6. seed-time-greetings.mjs
+   - 50+ time-based greetings
+   - Morning: 15 variations
+   - Afternoon: 15 variations
+   - Evening: 10 variations
+   - Weekend: 10 variations
+
+7. seed-return-messages.mjs
+   - 50+ welcome back messages
+   - 1 day away: 10 variations
+   - 3 days away: 10 variations
+   - 1 week away: 10 variations
+   - 1 month+ away: 10 variations
+   - First time: 10 variations
+
+8. seed-gigi-personality.mjs
+   - 100+ catchphrases
+   - General encouragement: 20
+   - Mistake reframes: 20
+   - Excitement: 20
+   - Celebration: 20
+   - Motivation: 20
+
+9. run-all-seeding.mjs
+   - Master script that runs all 8 seeders in sequence
+   - Progress tracking across all scripts
+   - Total items generated counter
+   - Total cost estimate
+   - Total time elapsed
+
+10. create-seeding-tables.sql
+    - Database migrations for all tables:
+      * kid_qa_library
+      * parent_help_articles
+      * subject_analogies
+      * transition_phrases
+      * achievement_celebrations
+      * greeting_messages
+      * return_messages
+      * gigi_personality
+
+11. README.md
+    - How to run the seeders
+    - Prerequisites (env variables)
+    - Expected output
+    - Cost estimates
+    - Time estimates
+    - Troubleshooting
+
+PATTERN TO FOLLOW (from generate-explanations-direct.mjs):
+
+```javascript
+import { createClient } from '@supabase/supabase-js'
+
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL,
+  process.env.SUPABASE_SERVICE_ROLE_KEY
+)
+
+const GROK_API_KEY = process.env.GROK_API_KEY
+const BATCH_SIZE = 50
+const DELAY_MS = 5000
+
+async function callGrok(prompt) {
+  const response = await fetch('https://api.x.ai/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${GROK_API_KEY}`
+    },
+    body: JSON.stringify({
+      messages: [{ role: 'user', content: prompt }],
+      model: 'grok-beta',
+      temperature: 0.7
+    })
+  })
+
+  if (!response.ok) {
+    throw new Error(`Grok API error: ${response.status}`)
+  }
+
+  const data = await response.json()
+  return data.choices[0].message.content
+}
+
+async function seedContent() {
+  console.log('🚀 SEEDING [CONTENT TYPE]')
+  console.log('='.repeat(80))
+
+  // Get items that need content
+  const items = [/* your list */]
+
+  let success = 0
+  let errors = 0
+
+  for (let i = 0; i < items.length; i++) {
+    try {
+      console.log(`[${i+1}/${items.length}] Processing ${items[i]}`)
+
+      // Generate with Grok
+      const prompt = `Your detailed prompt here for ${items[i]}`
+      const response = await callGrok(prompt)
+
+      // Parse and save
+      const parsed = JSON.parse(response)
+      await supabase.from('table_name').insert(parsed)
+
+      console.log(`  ✅ Saved`)
+      success++
+
+      // Progress checkpoints
+      if ((i + 1) % 10 === 0) {
+        console.log(`\n📊 Checkpoint: ${success} success, ${errors} errors`)
+      }
+
+      // Delay between calls
+      await new Promise(resolve => setTimeout(resolve, DELAY_MS))
+
+    } catch (error) {
+      console.error(`  ❌ Error: ${error.message}`)
+      errors++
+    }
+  }
+
+  console.log('\n📊 SEEDING COMPLETE!')
+  console.log(`✅ Success: ${success}/${items.length}`)
+  console.log(`❌ Errors: ${errors}`)
+}
+
+seedContent()
+```
+
+REQUIREMENTS:
+- Follow this pattern EXACTLY
+- Use 5-second delays between API calls
+- Show progress with checkpoints every 10 items
+- Continue on error (don't stop batch)
+- Track success/error counts
+- Show time elapsed/remaining estimates
+- Check for existing content before generating
+- Use proper error handling
+- Parse JSON responses carefully
+- Validate data before inserting
+
+GROK PROMPT TEMPLATES:
+
+For Kid Q&A:
+```
+A {grade_level} grader studying {subject} - {skill_name} says: "{question}"
+
+Generate a helpful, encouraging response from Gigi that:
+1. Acknowledges their feeling
+2. Offers a quick hint or reframe
+3. Encourages them to try
+4. Under 50 words
+5. Age-appropriate
+
+Return as JSON: {"question": "...", "response": "...", "response_type": "hint"}
+```
+
+For Parent FAQ:
+```
+A parent asks: "{question}"
+Context: {subject}, {grade_level}
+
+Provide a comprehensive, supportive answer that:
+1. Acknowledges their concern
+2. Explains what's normal
+3. Gives 3-5 specific actionable tips
+4. Sets realistic expectations
+5. Suggests when to seek help
+6. 150-300 words
+
+Return as JSON: {"question": "...", "answer": "...", "tips": [...], "category": "..."}
+```
+
+For Analogies:
+```
+Create a relatable analogy for {skill_name} ({subject}, grade {grade_level})
+
+Make it:
+1. Something kids experience daily
+2. Easy to visualize
+3. Memorable
+4. Age-appropriate
+
+Return as JSON: {"skill_id": "...", "analogy": "...", "explanation": "...", "when_to_use": "..."}
+```
+
+(Similar templates for other content types...)
+
+COST BREAKDOWN:
+- Kid Q&A: 1,000 responses × $0.001 = $1.00
+- Parent FAQ: 200 responses × $0.001 = $0.20
+- Analogies: 500 × $0.001 = $0.50
+- Transitions: 200 × $0.001 = $0.20
+- Achievements: 100 × $0.001 = $0.10
+- Greetings: 50 × $0.001 = $0.05
+- Return messages: 50 × $0.001 = $0.05
+- Gigi personality: 100 × $0.001 = $0.10
+TOTAL: ~$2.20
+
+TIME ESTIMATE:
+- 2,200 items × 5 second delay = 11,000 seconds = ~3 hours
+- Plus generation time = ~4 hours total
+
+DATABASE SCHEMA (include in create-seeding-tables.sql):
+
+CREATE TABLE kid_qa_library (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  question_variation TEXT NOT NULL,
+  skill_id UUID REFERENCES skills(id),
+  subject TEXT NOT NULL,
+  grade_level INT NOT NULL,
+  response TEXT NOT NULL,
+  response_type TEXT NOT NULL,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE parent_help_articles (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  question TEXT NOT NULL,
+  category TEXT NOT NULL,
+  subject TEXT,
+  grade_range TEXT,
+  answer TEXT NOT NULL,
+  tips TEXT[],
+  keywords TEXT[],
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+(Include all other table schemas...)
+
+YOUR MISSION:
+1. Create all 11 files in seeding/ folder
+2. Use the COMPLETE-QUESTIONS-LIST.md for all questions
+3. Follow the pattern from generate-explanations-direct.mjs
+4. Make them production-ready and well-commented
+5. Include error handling and progress tracking
+6. Estimate total cost: ~$2-3
+7. Estimate total time: ~4 hours
+
+When you're done, we'll have:
+- 2,200+ pieces of content generated
+- Every question answered
+- Everything cached and ready
+- Blazing fast response times
+- Professional, polished experience
+- All for under $3!
+
+GO CREATE THE SEEDING PACKAGE! 🚀

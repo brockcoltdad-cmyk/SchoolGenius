@@ -1,0 +1,133 @@
+{
+  "grade": 7,
+  "grade_name": "Seventh Grade",
+  "total_target": 1000,
+  "standards": ["W.7.1", "W.7.2", "W.7.3", "L.7.1", "L.7.2", "L.7.3"],
+  "skills": [
+    {
+      "skill": "phrases and clauses",
+      "code": "SENT",
+      "standard": "L.7.1",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "types": [
+        {"type": "independent clause", "definition": "can stand alone as a sentence", "example": "The sun set behind the mountains."},
+        {"type": "dependent clause", "definition": "cannot stand alone", "example": "when the sun set behind the mountains"},
+        {"type": "noun phrase", "definition": "noun with modifiers", "example": "the large gray elephant"},
+        {"type": "verb phrase", "definition": "verb with helpers/modifiers", "example": "has been running quickly"},
+        {"type": "prepositional phrase", "definition": "preposition + object", "example": "under the old bridge"},
+        {"type": "participial phrase", "definition": "participle + modifiers", "example": "running through the field"}
+      ]
+    },
+    {
+      "skill": "sentence types and purposes",
+      "code": "SENT",
+      "standard": "L.7.1",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "types": [
+        {"type": "simple", "structure": "one independent clause", "example": "The cat slept."},
+        {"type": "compound", "structure": "two independent clauses", "example": "The cat slept, and the dog played."},
+        {"type": "complex", "structure": "independent + dependent clause", "example": "When it rained, the cat slept."},
+        {"type": "compound-complex", "structure": "two independent + one dependent", "example": "When it rained, the cat slept, and the dog played inside."}
+      ]
+    },
+    {
+      "skill": "concise language",
+      "code": "SENT",
+      "standard": "L.7.3",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "revisions": [
+        {"wordy": "Due to the fact that it was raining", "concise": "Because it was raining"},
+        {"wordy": "In the event that you need help", "concise": "If you need help"},
+        {"wordy": "At this point in time", "concise": "Now"},
+        {"wordy": "The book that is on the table", "concise": "The book on the table"},
+        {"wordy": "He is a person who likes to read", "concise": "He likes to read"},
+        {"wordy": "She made the decision to leave", "concise": "She decided to leave"}
+      ]
+    },
+    {
+      "skill": "precise vocabulary",
+      "code": "SENT",
+      "standard": "L.7.3",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "replacements": [
+        {"vague": "good", "precise": ["excellent", "beneficial", "virtuous", "skilled"]},
+        {"vague": "bad", "precise": ["harmful", "deficient", "inferior", "detrimental"]},
+        {"vague": "said", "precise": ["declared", "whispered", "exclaimed", "muttered", "announced"]},
+        {"vague": "walked", "precise": ["strolled", "marched", "trudged", "wandered", "sauntered"]},
+        {"vague": "big", "precise": ["enormous", "massive", "substantial", "immense", "vast"]}
+      ]
+    },
+    {
+      "skill": "advanced argument - acknowledged counterclaims",
+      "code": "ARGU",
+      "standard": "W.7.1",
+      "count": 150,
+      "visual_type": "paragraph_structure",
+      "structure": {
+        "introduction": "Hook, background, thesis with claim",
+        "body1": "First reason with evidence",
+        "body2": "Second reason with evidence",
+        "counterclaim": "Acknowledge opposing view, then refute",
+        "conclusion": "Restate thesis, call to action"
+      },
+      "exercises": [
+        {
+          "topic": "Year-round schooling",
+          "claim": "Year-round schooling would benefit students academically.",
+          "counterclaim": "Critics argue that year-round school eliminates valuable summer experiences.",
+          "refutation": "However, shorter, more frequent breaks throughout the year can provide similar opportunities while preventing the significant learning loss that occurs during long summer vacations."
+        }
+      ]
+    },
+    {
+      "skill": "literary analysis writing",
+      "code": "PARA",
+      "standard": "W.7.2",
+      "count": 100,
+      "visual_type": "paragraph_structure",
+      "elements": [
+        {"element": "thesis", "purpose": "central argument about the text", "example": "In 'The Outsiders,' Hinton uses the conflict between Greasers and Socs to explore themes of class division and identity."},
+        {"element": "textual evidence", "purpose": "quotes from the text", "example": "Ponyboy states, 'I lie to myself all the time. But I never believe me.' (Hinton 18)"},
+        {"element": "analysis", "purpose": "explain how evidence supports thesis", "example": "This quote reveals Ponyboy's internal struggle with his identity and his desire to see beyond social labels."}
+      ]
+    },
+    {
+      "skill": "research writing basics",
+      "code": "PARA",
+      "standard": "W.7.2",
+      "count": 100,
+      "visual_type": "paragraph_structure",
+      "elements": [
+        {"element": "source integration", "techniques": ["direct quote", "paraphrase", "summary"]},
+        {"element": "in-text citation", "example": "According to Smith, 'climate change affects every continent' (45)."},
+        {"element": "credibility", "considerations": ["author expertise", "publication date", "source type"]}
+      ]
+    },
+    {
+      "skill": "narrative techniques",
+      "code": "NARR",
+      "standard": "W.7.3",
+      "count": 50,
+      "visual_type": "paragraph_structure",
+      "techniques": [
+        {"technique": "pacing", "slow": "She reached for the door handle. Her fingers trembled. The cold metal sent a chill through her hand.", "fast": "She grabbed the handle, threw open the door, and ran."},
+        {"technique": "dialogue", "purpose": "reveal character", "example": "\"I don't need anyone's help,\" Jake muttered, though his shaking hands said otherwise."},
+        {"technique": "description", "sensory": "The attic smelled of dust and forgotten memories. Cobwebs draped the corners like tattered curtains."}
+      ]
+    }
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

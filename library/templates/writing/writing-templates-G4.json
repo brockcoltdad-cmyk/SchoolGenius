@@ -1,0 +1,151 @@
+{
+  "grade": 4,
+  "grade_name": "Fourth Grade",
+  "total_target": 1500,
+  "standards": ["W.4.1", "W.4.2", "W.4.3", "L.4.1", "L.4.1.F", "L.4.2", "L.4.3"],
+  "skills": [
+    {
+      "skill": "complex sentences",
+      "code": "CPLX",
+      "standard": "L.4.1",
+      "count": 200,
+      "visual_type": "sentence_builder",
+      "subordinating_conjunctions": ["because", "although", "when", "if", "since", "while", "after", "before", "until", "unless"],
+      "exercises": [
+        {"independent": "I stayed home", "dependent": "because I was sick", "combined": "I stayed home because I was sick."},
+        {"independent": "We will go to the beach", "dependent": "if it stops raining", "combined": "We will go to the beach if it stops raining."},
+        {"independent": "She studied hard", "dependent": "although she was tired", "combined": "Although she was tired, she studied hard."},
+        {"independent": "I finished my homework", "dependent": "before dinner started", "combined": "I finished my homework before dinner started."}
+      ]
+    },
+    {
+      "skill": "run-on sentences",
+      "code": "FRAG",
+      "standard": "L.4.1.F",
+      "count": 200,
+      "visual_type": "grammar_highlight",
+      "exercises": [
+        {"runon": "I like pizza it is my favorite food.", "fixed": "I like pizza. It is my favorite food.", "fix_type": "period"},
+        {"runon": "The dog ran fast he caught the ball.", "fixed": "The dog ran fast, and he caught the ball.", "fix_type": "comma + conjunction"},
+        {"runon": "We went to the park we played on the swings.", "fixed": "We went to the park, where we played on the swings.", "fix_type": "comma + where"},
+        {"runon": "She loves to read she goes to the library every week.", "fixed": "She loves to read; she goes to the library every week.", "fix_type": "semicolon"}
+      ]
+    },
+    {
+      "skill": "sentence fragments",
+      "code": "FRAG",
+      "standard": "L.4.1.F",
+      "count": 200,
+      "visual_type": "grammar_highlight",
+      "exercises": [
+        {"fragment": "Running through the park.", "complete": "The dog was running through the park.", "missing": "subject"},
+        {"fragment": "Because I was late.", "complete": "I missed the bus because I was late.", "missing": "independent clause"},
+        {"fragment": "The big brown dog.", "complete": "The big brown dog barked loudly.", "missing": "predicate"},
+        {"fragment": "When the bell rang.", "complete": "Everyone lined up when the bell rang.", "missing": "independent clause"}
+      ]
+    },
+    {
+      "skill": "relative pronouns",
+      "code": "PRON",
+      "standard": "L.4.1",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "relative_pronouns": ["who", "whom", "whose", "which", "that"],
+      "exercises": [
+        {"sentence": "The girl ___ won the race is my friend.", "answer": "who", "explanation": "who refers to people as subject"},
+        {"sentence": "The book ___ I read was exciting.", "answer": "that", "explanation": "that refers to things"},
+        {"sentence": "The dog ___ tail is wagging is happy.", "answer": "whose", "explanation": "whose shows possession"},
+        {"sentence": "The car, ___ is red, belongs to my dad.", "answer": "which", "explanation": "which refers to things in non-essential clauses"}
+      ]
+    },
+    {
+      "skill": "progressive verb tenses",
+      "code": "VERB",
+      "standard": "L.4.1",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "tenses": [
+        {"base": "walk", "past_progressive": "was walking", "present_progressive": "is walking", "future_progressive": "will be walking"},
+        {"base": "eat", "past_progressive": "was eating", "present_progressive": "is eating", "future_progressive": "will be eating"},
+        {"base": "play", "past_progressive": "was playing", "present_progressive": "is playing", "future_progressive": "will be playing"}
+      ]
+    },
+    {
+      "skill": "modal auxiliaries",
+      "code": "VERB",
+      "standard": "L.4.1",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "modals": [
+        {"modal": "can", "use": "ability", "example": "I can swim."},
+        {"modal": "may", "use": "permission", "example": "You may go outside."},
+        {"modal": "must", "use": "necessity", "example": "You must wear a seatbelt."},
+        {"modal": "should", "use": "advice", "example": "You should study for the test."},
+        {"modal": "could", "use": "possibility", "example": "It could rain tomorrow."}
+      ]
+    },
+    {
+      "skill": "prepositional phrases",
+      "code": "PREP",
+      "standard": "L.4.1",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "prepositions": ["in", "on", "at", "by", "with", "under", "over", "through", "between", "around"],
+      "exercises": [
+        {"sentence": "The cat is under the table.", "prep_phrase": "under the table"},
+        {"sentence": "We walked through the park.", "prep_phrase": "through the park"},
+        {"sentence": "The book is on the shelf.", "prep_phrase": "on the shelf"}
+      ]
+    },
+    {
+      "skill": "commas with introductory elements",
+      "code": "PUNC",
+      "standard": "L.4.2",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "exercises": [
+        {"intro": "After the game", "sentence": "After the game, we went for pizza.", "type": "prepositional phrase"},
+        {"intro": "However", "sentence": "However, I disagree with that idea.", "type": "transition word"},
+        {"intro": "Running quickly", "sentence": "Running quickly, she caught the bus.", "type": "participial phrase"},
+        {"intro": "Yes", "sentence": "Yes, I would like some water.", "type": "interjection"}
+      ]
+    },
+    {
+      "skill": "formal vs informal language",
+      "code": "SENT",
+      "standard": "L.4.3",
+      "count": 100,
+      "visual_type": "grammar_highlight",
+      "comparisons": [
+        {"informal": "Hey, what's up?", "formal": "Hello, how are you?"},
+        {"informal": "Gonna go to the store.", "formal": "I am going to go to the store."},
+        {"informal": "That movie was awesome!", "formal": "That movie was excellent."},
+        {"informal": "Can I borrow your stuff?", "formal": "May I borrow your materials?"}
+      ]
+    },
+    {
+      "skill": "evidence and examples",
+      "code": "PARA",
+      "standard": "W.4.1",
+      "count": 150,
+      "visual_type": "paragraph_structure",
+      "exercises": [
+        {
+          "claim": "Exercise is important for kids.",
+          "evidence": ["Studies show active kids do better in school.", "Exercise helps build strong bones.", "Physical activity reduces stress."],
+          "example": "For example, kids who play sports often have more energy and focus better in class."
+        }
+      ]
+    }
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

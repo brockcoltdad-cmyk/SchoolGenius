@@ -1,4 +1,4 @@
-import { Camera, MessageSquare, FileText, Settings, ShoppingBag } from 'lucide-react';
+import { Camera, MessageSquare, FileText, Settings, ShoppingBag, Calendar, ClipboardCheck } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 export interface ThemeColors {
@@ -39,6 +39,7 @@ export interface ThemeSubject {
 export interface ThemeBottomNav {
   icon: LucideIcon;
   label: string;
+  description?: string;
   colorGradient: string;
   href: string;
 }
@@ -177,13 +178,33 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         glowShadow: 'shadow-[0_0_40px_rgba(59,130,246,0.6)]',
         href: '/kid/{id}/coding'
       },
+      {
+        id: 'spelling',
+        name: 'Spelling',
+        emoji: '🔤',
+        label: 'CRUISERWEIGHT CHAMPION',
+        colorGradient: 'from-purple-500 to-purple-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(168,85,247,0.6)]',
+        href: '/kid/{id}/spelling'
+      },
+      {
+        id: 'typing',
+        name: 'Typing',
+        emoji: '⌨️',
+        label: 'HARDCORE CHAMPION',
+        colorGradient: 'from-pink-500 to-pink-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(236,72,153,0.6)]',
+        href: '/kid/{id}/typing'
+      },
     ],
     bottomNav: [
-      { icon: Camera, label: 'SCOUTING', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
-      { icon: MessageSquare, label: 'MANAGER', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
-      { icon: FileText, label: 'CONTRACTS', colorGradient: 'from-purple-500 to-purple-600', href: '/kid/{id}/documents' },
-      { icon: Settings, label: 'LOCKER ROOM', colorGradient: 'from-orange-500 to-orange-600', href: '/kid/{id}/settings' },
-      { icon: ShoppingBag, label: 'TITLE SHOP', colorGradient: 'from-pink-500 to-pink-600', href: '/kid/{id}/shop' },
+      { icon: ClipboardCheck, label: 'WEEKLY TEST', description: 'Prove your skills! Pass with 80% to earn 50 coins', colorGradient: 'from-yellow-500 to-red-600', href: '/kid/{id}/weekly-test' },
+      { icon: Calendar, label: 'SCHEDULE', description: 'Plan your training sessions and upcoming championship matches', colorGradient: 'from-indigo-500 to-indigo-600', href: '/kid/{id}/syllabus' },
+      { icon: Camera, label: 'SCOUTING', description: 'Scan documents and capture your opponent intel', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
+      { icon: MessageSquare, label: 'MANAGER', description: 'Talk to Gigi, your personal wrestling manager', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
+      { icon: FileText, label: 'CONTRACTS', description: 'View your saved documents and championship records', colorGradient: 'from-purple-500 to-purple-600', href: '/kid/{id}/documents' },
+      { icon: Settings, label: 'LOCKER ROOM', description: 'Customize your gear and superstar settings', colorGradient: 'from-orange-500 to-orange-600', href: '/kid/{id}/settings' },
+      { icon: ShoppingBag, label: 'TITLE SHOP', description: 'Spend your championship points on awesome rewards', colorGradient: 'from-pink-500 to-pink-600', href: '/kid/{id}/shop' },
     ],
   },
 
@@ -282,13 +303,33 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         glowShadow: 'shadow-[0_0_40px_rgba(249,115,22,0.6)]',
         href: '/kid/{id}/coding'
       },
+      {
+        id: 'spelling',
+        name: 'Spelling',
+        emoji: '🔤',
+        label: 'ENCHANTING TABLE',
+        colorGradient: 'from-pink-500 to-pink-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(236,72,153,0.6)]',
+        href: '/kid/{id}/spelling'
+      },
+      {
+        id: 'typing',
+        name: 'Typing',
+        emoji: '⌨️',
+        label: 'REDSTONE CIRCUIT',
+        colorGradient: 'from-red-500 to-red-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(239,68,68,0.6)]',
+        href: '/kid/{id}/typing'
+      },
     ],
     bottomNav: [
-      { icon: Camera, label: 'EXPLORE', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
-      { icon: MessageSquare, label: 'CHAT', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
-      { icon: FileText, label: 'RECIPES', colorGradient: 'from-purple-500 to-purple-600', href: '/kid/{id}/documents' },
-      { icon: Settings, label: 'INVENTORY', colorGradient: 'from-orange-500 to-orange-600', href: '/kid/{id}/settings' },
-      { icon: ShoppingBag, label: 'SHOP', colorGradient: 'from-pink-500 to-pink-600', href: '/kid/{id}/shop' },
+      { icon: ClipboardCheck, label: 'WEEKLY TEST', description: 'Prove your skills! Pass with 80% to earn 50 diamonds', colorGradient: 'from-cyan-500 to-emerald-600', href: '/kid/{id}/weekly-test' },
+      { icon: Calendar, label: 'CALENDAR', description: 'Plan your mining expeditions and building schedules', colorGradient: 'from-indigo-500 to-indigo-600', href: '/kid/{id}/syllabus' },
+      { icon: Camera, label: 'EXPLORE', description: 'Scan the world and discover new biomes', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
+      { icon: MessageSquare, label: 'CHAT', description: 'Talk to Gigi, your crafting companion', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
+      { icon: FileText, label: 'RECIPES', description: 'View your crafting recipes and build notes', colorGradient: 'from-purple-500 to-purple-600', href: '/kid/{id}/documents' },
+      { icon: Settings, label: 'INVENTORY', description: 'Manage your items and settings', colorGradient: 'from-orange-500 to-orange-600', href: '/kid/{id}/settings' },
+      { icon: ShoppingBag, label: 'SHOP', description: 'Trade your emeralds for awesome gear', colorGradient: 'from-pink-500 to-pink-600', href: '/kid/{id}/shop' },
     ],
   },
 
@@ -387,13 +428,33 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         glowShadow: 'shadow-[0_0_40px_rgba(59,130,246,0.6)]',
         href: '/kid/{id}/coding'
       },
+      {
+        id: 'spelling',
+        name: 'Spelling',
+        emoji: '🔤',
+        label: 'MISTY MEADOWS',
+        colorGradient: 'from-yellow-500 to-yellow-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(234,179,8,0.6)]',
+        href: '/kid/{id}/spelling'
+      },
+      {
+        id: 'typing',
+        name: 'Typing',
+        emoji: '⌨️',
+        label: 'SWEATY SANDS',
+        colorGradient: 'from-orange-500 to-orange-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(249,115,22,0.6)]',
+        href: '/kid/{id}/typing'
+      },
     ],
     bottomNav: [
-      { icon: Camera, label: 'LOCKER', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
-      { icon: MessageSquare, label: 'SQUAD', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
-      { icon: FileText, label: 'CHALLENGES', colorGradient: 'from-purple-500 to-purple-600', href: '/kid/{id}/documents' },
-      { icon: Settings, label: 'SETTINGS', colorGradient: 'from-orange-500 to-orange-600', href: '/kid/{id}/settings' },
-      { icon: ShoppingBag, label: 'ITEM SHOP', colorGradient: 'from-pink-500 to-pink-600', href: '/kid/{id}/shop' },
+      { icon: ClipboardCheck, label: 'WEEKLY TEST', description: 'Complete the challenge! Pass with 80% for 50 V-Bucks', colorGradient: 'from-purple-500 to-blue-600', href: '/kid/{id}/weekly-test' },
+      { icon: Calendar, label: 'BATTLE PASS', description: 'Track your daily and weekly missions', colorGradient: 'from-indigo-500 to-indigo-600', href: '/kid/{id}/syllabus' },
+      { icon: Camera, label: 'LOCKER', description: 'Scan and capture your Victory Royales', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
+      { icon: MessageSquare, label: 'SQUAD', description: 'Chat with Gigi, your squad leader', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
+      { icon: FileText, label: 'CHALLENGES', description: 'View your quests and challenge progress', colorGradient: 'from-purple-500 to-purple-600', href: '/kid/{id}/documents' },
+      { icon: Settings, label: 'SETTINGS', description: 'Customize your loadout and controls', colorGradient: 'from-orange-500 to-orange-600', href: '/kid/{id}/settings' },
+      { icon: ShoppingBag, label: 'ITEM SHOP', description: 'Spend V-Bucks on epic skins and gear', colorGradient: 'from-pink-500 to-pink-600', href: '/kid/{id}/shop' },
     ],
   },
 
@@ -492,13 +553,33 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         glowShadow: 'shadow-[0_0_40px_rgba(59,130,246,0.6)]',
         href: '/kid/{id}/coding'
       },
+      {
+        id: 'spelling',
+        name: 'Spelling',
+        emoji: '🔤',
+        label: 'COMMS TRAINING',
+        colorGradient: 'from-purple-500 to-purple-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(168,85,247,0.6)]',
+        href: '/kid/{id}/spelling'
+      },
+      {
+        id: 'typing',
+        name: 'Typing',
+        emoji: '⌨️',
+        label: 'RADIO OPERATOR',
+        colorGradient: 'from-pink-500 to-pink-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(236,72,153,0.6)]',
+        href: '/kid/{id}/typing'
+      },
     ],
     bottomNav: [
-      { icon: Camera, label: 'RECON', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
-      { icon: MessageSquare, label: 'RADIO', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
-      { icon: FileText, label: 'MISSIONS', colorGradient: 'from-purple-500 to-purple-600', href: '/kid/{id}/documents' },
-      { icon: Settings, label: 'BUNKER', colorGradient: 'from-orange-500 to-orange-600', href: '/kid/{id}/settings' },
-      { icon: ShoppingBag, label: 'ARMORY', colorGradient: 'from-pink-500 to-pink-600', href: '/kid/{id}/shop' },
+      { icon: ClipboardCheck, label: 'WEEKLY TEST', description: 'Survive the test! Pass with 80% for 50 supplies', colorGradient: 'from-green-500 to-lime-600', href: '/kid/{id}/weekly-test' },
+      { icon: Calendar, label: 'OPS CALENDAR', description: 'Plan your survival missions and supply runs', colorGradient: 'from-indigo-500 to-indigo-600', href: '/kid/{id}/syllabus' },
+      { icon: Camera, label: 'RECON', description: 'Scout the area and scan for survivors', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
+      { icon: MessageSquare, label: 'RADIO', description: 'Contact Gigi at base camp for backup', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
+      { icon: FileText, label: 'MISSIONS', description: 'View your survival logs and mission briefings', colorGradient: 'from-purple-500 to-purple-600', href: '/kid/{id}/documents' },
+      { icon: Settings, label: 'BUNKER', description: 'Customize your gear and safe house', colorGradient: 'from-orange-500 to-orange-600', href: '/kid/{id}/settings' },
+      { icon: ShoppingBag, label: 'ARMORY', description: 'Trade supplies for survival equipment', colorGradient: 'from-pink-500 to-pink-600', href: '/kid/{id}/shop' },
     ],
   },
 
@@ -597,13 +678,33 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         glowShadow: 'shadow-[0_0_40px_rgba(168,85,247,0.6)]',
         href: '/kid/{id}/coding'
       },
+      {
+        id: 'spelling',
+        name: 'Spelling',
+        emoji: '🔤',
+        label: 'CODE BREAKER',
+        colorGradient: 'from-green-500 to-green-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(34,197,94,0.6)]',
+        href: '/kid/{id}/spelling'
+      },
+      {
+        id: 'typing',
+        name: 'Typing',
+        emoji: '⌨️',
+        label: 'SIGNAL FLAGS',
+        colorGradient: 'from-orange-500 to-orange-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(249,115,22,0.6)]',
+        href: '/kid/{id}/typing'
+      },
     ],
     bottomNav: [
-      { icon: Camera, label: 'SPYGLASS', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
-      { icon: MessageSquare, label: 'CREW', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
-      { icon: FileText, label: 'QUESTS', colorGradient: 'from-purple-500 to-purple-600', href: '/kid/{id}/documents' },
-      { icon: Settings, label: 'SHIP', colorGradient: 'from-orange-500 to-orange-600', href: '/kid/{id}/settings' },
-      { icon: ShoppingBag, label: 'PORT SHOP', colorGradient: 'from-pink-500 to-pink-600', href: '/kid/{id}/shop' },
+      { icon: ClipboardCheck, label: 'WEEKLY TEST', description: 'Prove yer worth! Pass with 80% for 50 doubloons', colorGradient: 'from-yellow-500 to-blue-600', href: '/kid/{id}/weekly-test' },
+      { icon: Calendar, label: 'VOYAGE LOG', description: 'Chart your course and plan treasure hunts', colorGradient: 'from-indigo-500 to-indigo-600', href: '/kid/{id}/syllabus' },
+      { icon: Camera, label: 'SPYGLASS', description: 'Scan the horizon and capture treasure maps', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
+      { icon: MessageSquare, label: 'CREW', description: 'Talk to Gigi, your first mate', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
+      { icon: FileText, label: 'QUESTS', description: 'View your bounties and adventure logs', colorGradient: 'from-purple-500 to-purple-600', href: '/kid/{id}/documents' },
+      { icon: Settings, label: 'SHIP', description: 'Customize your vessel and pirate gear', colorGradient: 'from-orange-500 to-orange-600', href: '/kid/{id}/settings' },
+      { icon: ShoppingBag, label: 'PORT SHOP', description: 'Trade your doubloons for ship upgrades', colorGradient: 'from-pink-500 to-pink-600', href: '/kid/{id}/shop' },
     ],
   },
 
@@ -702,13 +803,33 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         glowShadow: 'shadow-[0_0_40px_rgba(59,130,246,0.6)]',
         href: '/kid/{id}/coding'
       },
+      {
+        id: 'spelling',
+        name: 'Spelling',
+        emoji: '🔤',
+        label: 'SPELL MASTERY',
+        colorGradient: 'from-cyan-500 to-cyan-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(6,182,212,0.6)]',
+        href: '/kid/{id}/spelling'
+      },
+      {
+        id: 'typing',
+        name: 'Typing',
+        emoji: '⌨️',
+        label: 'JUTSU SIGNS',
+        colorGradient: 'from-orange-500 to-orange-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(249,115,22,0.6)]',
+        href: '/kid/{id}/typing'
+      },
     ],
     bottomNav: [
-      { icon: Camera, label: 'GALLERY', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
-      { icon: MessageSquare, label: 'TEAM', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
-      { icon: FileText, label: 'MISSIONS', colorGradient: 'from-purple-500 to-purple-600', href: '/kid/{id}/documents' },
-      { icon: Settings, label: 'DOJO', colorGradient: 'from-orange-500 to-orange-600', href: '/kid/{id}/settings' },
-      { icon: ShoppingBag, label: 'HERO SHOP', colorGradient: 'from-pink-500 to-pink-600', href: '/kid/{id}/shop' },
+      { icon: ClipboardCheck, label: 'WEEKLY TEST', description: 'Power up! Pass with 80% for 50 crystals', colorGradient: 'from-pink-500 to-purple-600', href: '/kid/{id}/weekly-test' },
+      { icon: Calendar, label: 'TRAINING', description: 'Schedule your training arcs and power-ups', colorGradient: 'from-indigo-500 to-indigo-600', href: '/kid/{id}/syllabus' },
+      { icon: Camera, label: 'GALLERY', description: 'Capture epic moments and transformation scenes', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
+      { icon: MessageSquare, label: 'TEAM', description: 'Talk to Gigi, your anime sensei', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
+      { icon: FileText, label: 'MISSIONS', description: 'View your quest log and hero assignments', colorGradient: 'from-purple-500 to-purple-600', href: '/kid/{id}/documents' },
+      { icon: Settings, label: 'DOJO', description: 'Customize your hero outfit and abilities', colorGradient: 'from-orange-500 to-orange-600', href: '/kid/{id}/settings' },
+      { icon: ShoppingBag, label: 'HERO SHOP', description: 'Trade power crystals for legendary items', colorGradient: 'from-pink-500 to-pink-600', href: '/kid/{id}/shop' },
     ],
   },
 
@@ -807,13 +928,283 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
         glowShadow: 'shadow-[0_0_40px_rgba(16,185,129,0.6)]',
         href: '/kid/{id}/coding'
       },
+      {
+        id: 'spelling',
+        name: 'Spelling',
+        emoji: '🔤',
+        label: 'SLIME DICTIONARY',
+        colorGradient: 'from-purple-500 to-purple-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(168,85,247,0.6)]',
+        href: '/kid/{id}/spelling'
+      },
+      {
+        id: 'typing',
+        name: 'Typing',
+        emoji: '⌨️',
+        label: 'SLIME KEYBOARD',
+        colorGradient: 'from-pink-500 to-pink-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(236,72,153,0.6)]',
+        href: '/kid/{id}/typing'
+      },
     ],
     bottomNav: [
-      { icon: Camera, label: 'COLLECT', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
-      { icon: MessageSquare, label: 'SLIME CHAT', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
-      { icon: FileText, label: 'RECIPES', colorGradient: 'from-purple-500 to-purple-600', href: '/kid/{id}/documents' },
-      { icon: Settings, label: 'LAB', colorGradient: 'from-orange-500 to-orange-600', href: '/kid/{id}/settings' },
-      { icon: ShoppingBag, label: 'SLIME SHOP', colorGradient: 'from-pink-500 to-pink-600', href: '/kid/{id}/shop' },
+      { icon: ClipboardCheck, label: 'WEEKLY TEST', description: 'Squish the test! Pass with 80% for 50 glitter', colorGradient: 'from-lime-500 to-green-600', href: '/kid/{id}/weekly-test' },
+      { icon: Calendar, label: 'SCHEDULE', description: 'Plan your slime experiments and activities', colorGradient: 'from-indigo-500 to-indigo-600', href: '/kid/{id}/syllabus' },
+      { icon: Camera, label: 'COLLECT', description: 'Scan and collect new slime specimens', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
+      { icon: MessageSquare, label: 'SLIME CHAT', description: 'Talk to Gigi, your slimy best friend', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
+      { icon: FileText, label: 'RECIPES', description: 'View your slime recipes and lab notes', colorGradient: 'from-purple-500 to-purple-600', href: '/kid/{id}/documents' },
+      { icon: Settings, label: 'LAB', description: 'Customize your laboratory and equipment', colorGradient: 'from-orange-500 to-orange-600', href: '/kid/{id}/settings' },
+      { icon: ShoppingBag, label: 'SLIME SHOP', description: 'Trade glitter for new slime ingredients', colorGradient: 'from-pink-500 to-pink-600', href: '/kid/{id}/shop' },
+    ],
+  },
+
+  default: {
+    colors: {
+      background: 'bg-slate-900',
+      backgroundGradient: 'bg-gradient-to-b from-cyan-950/40 via-slate-900 to-slate-950',
+      radialGradient: `
+        radial-gradient(circle at 20% 50%, rgba(6, 182, 212, 0.25) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(148, 163, 184, 0.2) 0%, transparent 50%)
+      `,
+      primary: 'bg-gradient-to-r from-cyan-400 to-slate-400',
+      primaryLight: 'text-cyan-400',
+      secondary: 'border-slate-400',
+      accent: 'from-slate-700',
+      cardBg: 'bg-gradient-to-br from-slate-800/90 via-slate-900/70 to-slate-800/90',
+      cardBorder: 'border-cyan-500',
+      glowPrimary: 'shadow-[0_0_50px_rgba(6,182,212,0.4)]',
+      glowSecondary: 'shadow-[0_0_30px_rgba(148,163,184,0.3)]',
+      textPrimary: 'text-cyan-400',
+      textSecondary: 'text-slate-300',
+      textAccent: 'text-emerald-400',
+      buttonGradient: 'bg-gradient-to-r from-cyan-500 to-cyan-600',
+      buttonText: 'text-slate-900',
+      buttonBorder: 'border-cyan-400',
+      buttonShadow: 'shadow-[0_0_30px_rgba(6,182,212,0.6)]',
+      buttonHoverShadow: 'hover:shadow-[0_0_40px_rgba(6,182,212,0.8)]',
+      progressBarGradient: 'from-cyan-400 to-slate-400',
+      badge1: 'bg-cyan-500',
+      badge2: 'bg-slate-500',
+    },
+    content: {
+      welcomeTitle: 'SYSTEMS ONLINE!',
+      streakText: 'UPTIME STREAK',
+      playerTitle: 'TECH OPERATOR',
+      playerSubtitle: 'UNIT ACTIVE',
+      rankLabel: 'PROCESSING RANK',
+      characterTitle: 'YOUR ROBOT',
+      characterSubtitle: 'AI Learning Unit',
+      nextLevelText: 'NEXT UPGRADE',
+      xpUntilText: 'DATA UNTIL UPGRADE',
+      stat1Label: 'PROGRAMS RUN',
+      stat2Label: 'UPGRADES',
+      stat3Label: 'DATA COLLECTED',
+      managerName: 'AI ASSISTANT: GIGI 🤖',
+      managerMessage: "BEEP BOOP! Systems check complete. You have learning modules ready to execute. Let's process some knowledge together! 🔧",
+      managerBadge1: 'ONLINE',
+      managerBadge2: 'READY',
+      rankUpText: 'Processing...',
+      liveCountText: '🤖 Units learning right now',
+      liveMatchesText: '⚡ Programs executed today',
+      liveTopPercentText: "🔧 Systems running optimally!",
+      subjectsTitle: 'LEARNING MODULES',
+      subjectsSubtitle: 'Select Program',
+      titleProgressLabel: 'PROCESSING',
+      defendButtonText: 'RUN PROGRAM',
+      lastDefenseText: 'Last executed',
+      bonusXPText: '+50 DATA BONUS',
+      currencyLabel: 'CREDITS',
+      streakLabel: 'UPTIME',
+    },
+    subjects: [
+      {
+        id: 'math',
+        name: 'Math',
+        emoji: '🔢',
+        label: 'CALCULATION MODULE',
+        colorGradient: 'from-cyan-500 to-cyan-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(6,182,212,0.6)]',
+        href: '/kid/{id}/math'
+      },
+      {
+        id: 'reading',
+        name: 'Reading',
+        emoji: '📡',
+        label: 'DATA INPUT',
+        colorGradient: 'from-emerald-500 to-emerald-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(16,185,129,0.6)]',
+        href: '/kid/{id}/reading'
+      },
+      {
+        id: 'writing',
+        name: 'Writing',
+        emoji: '💾',
+        label: 'DATA OUTPUT',
+        colorGradient: 'from-slate-400 to-slate-500',
+        glowShadow: 'shadow-[0_0_40px_rgba(148,163,184,0.6)]',
+        href: '/kid/{id}/writing'
+      },
+      {
+        id: 'coding',
+        name: 'Coding',
+        emoji: '🖥️',
+        label: 'PROGRAMMING',
+        colorGradient: 'from-violet-500 to-violet-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(139,92,246,0.6)]',
+        href: '/kid/{id}/coding'
+      },
+      {
+        id: 'spelling',
+        name: 'Spelling',
+        emoji: '🔤',
+        label: 'LANGUAGE PROCESSOR',
+        colorGradient: 'from-amber-500 to-amber-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(245,158,11,0.6)]',
+        href: '/kid/{id}/spelling'
+      },
+      {
+        id: 'typing',
+        name: 'Typing',
+        emoji: '⌨️',
+        label: 'INPUT TRAINING',
+        colorGradient: 'from-teal-500 to-teal-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(20,184,166,0.6)]',
+        href: '/kid/{id}/typing'
+      },
+    ],
+    bottomNav: [
+      { icon: ClipboardCheck, label: 'DIAGNOSTIC', description: 'Run system test! Pass with 80% for 50 credits', colorGradient: 'from-cyan-500 to-teal-600', href: '/kid/{id}/weekly-test' },
+      { icon: Calendar, label: 'SCHEDULER', description: 'Plan your learning programs and sessions', colorGradient: 'from-slate-500 to-slate-600', href: '/kid/{id}/syllabus' },
+      { icon: Camera, label: 'SCANNER', description: 'Scan and digitize documents', colorGradient: 'from-emerald-500 to-emerald-600', href: '/kid/{id}/scan' },
+      { icon: MessageSquare, label: 'COMMS', description: 'Chat with Gigi, your AI assistant', colorGradient: 'from-cyan-500 to-cyan-600', href: '/kid/{id}/chat' },
+      { icon: FileText, label: 'DATABASE', description: 'Access your stored files and records', colorGradient: 'from-violet-500 to-violet-600', href: '/kid/{id}/documents' },
+      { icon: Settings, label: 'CONFIG', description: 'Adjust your system settings and preferences', colorGradient: 'from-slate-400 to-slate-500', href: '/kid/{id}/settings' },
+      { icon: ShoppingBag, label: 'UPGRADE SHOP', description: 'Spend credits on system upgrades', colorGradient: 'from-amber-500 to-amber-600', href: '/kid/{id}/shop' },
+    ],
+  },
+
+  robot: {
+    colors: {
+      background: 'bg-slate-900',
+      backgroundGradient: 'bg-gradient-to-b from-cyan-950/40 via-slate-900 to-slate-950',
+      radialGradient: `
+        radial-gradient(circle at 20% 50%, rgba(6, 182, 212, 0.25) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(148, 163, 184, 0.2) 0%, transparent 50%)
+      `,
+      primary: 'bg-gradient-to-r from-cyan-400 to-slate-400',
+      primaryLight: 'text-cyan-400',
+      secondary: 'border-slate-400',
+      accent: 'from-slate-700',
+      cardBg: 'bg-gradient-to-br from-slate-800/90 via-slate-900/70 to-slate-800/90',
+      cardBorder: 'border-cyan-500',
+      glowPrimary: 'shadow-[0_0_50px_rgba(6,182,212,0.4)]',
+      glowSecondary: 'shadow-[0_0_30px_rgba(148,163,184,0.3)]',
+      textPrimary: 'text-cyan-400',
+      textSecondary: 'text-slate-300',
+      textAccent: 'text-emerald-400',
+      buttonGradient: 'bg-gradient-to-r from-cyan-500 to-cyan-600',
+      buttonText: 'text-slate-900',
+      buttonBorder: 'border-cyan-400',
+      buttonShadow: 'shadow-[0_0_30px_rgba(6,182,212,0.6)]',
+      buttonHoverShadow: 'hover:shadow-[0_0_40px_rgba(6,182,212,0.8)]',
+      progressBarGradient: 'from-cyan-400 to-slate-400',
+      badge1: 'bg-cyan-500',
+      badge2: 'bg-slate-500',
+    },
+    content: {
+      welcomeTitle: 'SYSTEMS ONLINE!',
+      streakText: 'UPTIME STREAK',
+      playerTitle: 'ROBO OPERATOR',
+      playerSubtitle: 'UNIT ACTIVE',
+      rankLabel: 'PROCESSING RANK',
+      characterTitle: 'YOUR MECH',
+      characterSubtitle: 'Learning Robot',
+      nextLevelText: 'NEXT UPGRADE',
+      xpUntilText: 'DATA UNTIL UPGRADE',
+      stat1Label: 'PROGRAMS RUN',
+      stat2Label: 'UPGRADES',
+      stat3Label: 'DATA COLLECTED',
+      managerName: 'ROBO GIGI 🤖',
+      managerMessage: "BEEP BOOP! All systems operational. Ready to compute some knowledge? Let's optimize your learning circuits! 🔧",
+      managerBadge1: 'ONLINE',
+      managerBadge2: 'ACTIVE',
+      rankUpText: 'Computing...',
+      liveCountText: '🤖 Robots learning right now',
+      liveMatchesText: '⚡ Programs executed today',
+      liveTopPercentText: "🔧 Systems at peak efficiency!",
+      subjectsTitle: 'LEARNING MODULES',
+      subjectsSubtitle: 'Select Program',
+      titleProgressLabel: 'PROCESSING',
+      defendButtonText: 'EXECUTE',
+      lastDefenseText: 'Last computed',
+      bonusXPText: '+50 DATA BONUS',
+      currencyLabel: 'CREDITS',
+      streakLabel: 'UPTIME',
+    },
+    subjects: [
+      {
+        id: 'math',
+        name: 'Math',
+        emoji: '🔢',
+        label: 'CALCULATION UNIT',
+        colorGradient: 'from-cyan-500 to-cyan-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(6,182,212,0.6)]',
+        href: '/kid/{id}/math'
+      },
+      {
+        id: 'reading',
+        name: 'Reading',
+        emoji: '📡',
+        label: 'DATA INPUT',
+        colorGradient: 'from-emerald-500 to-emerald-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(16,185,129,0.6)]',
+        href: '/kid/{id}/reading'
+      },
+      {
+        id: 'writing',
+        name: 'Writing',
+        emoji: '💾',
+        label: 'DATA OUTPUT',
+        colorGradient: 'from-slate-400 to-slate-500',
+        glowShadow: 'shadow-[0_0_40px_rgba(148,163,184,0.6)]',
+        href: '/kid/{id}/writing'
+      },
+      {
+        id: 'coding',
+        name: 'Coding',
+        emoji: '🖥️',
+        label: 'PROGRAMMING',
+        colorGradient: 'from-violet-500 to-violet-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(139,92,246,0.6)]',
+        href: '/kid/{id}/coding'
+      },
+      {
+        id: 'spelling',
+        name: 'Spelling',
+        emoji: '🔤',
+        label: 'LANGUAGE PROCESSOR',
+        colorGradient: 'from-amber-500 to-amber-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(245,158,11,0.6)]',
+        href: '/kid/{id}/spelling'
+      },
+      {
+        id: 'typing',
+        name: 'Typing',
+        emoji: '⌨️',
+        label: 'INPUT TRAINING',
+        colorGradient: 'from-teal-500 to-teal-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(20,184,166,0.6)]',
+        href: '/kid/{id}/typing'
+      },
+    ],
+    bottomNav: [
+      { icon: ClipboardCheck, label: 'DIAGNOSTIC', description: 'Run system test! Pass with 80% for 50 credits', colorGradient: 'from-cyan-500 to-teal-600', href: '/kid/{id}/weekly-test' },
+      { icon: Calendar, label: 'SCHEDULER', description: 'Plan your learning programs and sessions', colorGradient: 'from-slate-500 to-slate-600', href: '/kid/{id}/syllabus' },
+      { icon: Camera, label: 'SCANNER', description: 'Scan and digitize documents', colorGradient: 'from-emerald-500 to-emerald-600', href: '/kid/{id}/scan' },
+      { icon: MessageSquare, label: 'COMMS', description: 'Chat with Robo Gigi, your AI assistant', colorGradient: 'from-cyan-500 to-cyan-600', href: '/kid/{id}/chat' },
+      { icon: FileText, label: 'DATABASE', description: 'Access your stored files and records', colorGradient: 'from-violet-500 to-violet-600', href: '/kid/{id}/documents' },
+      { icon: Settings, label: 'CONFIG', description: 'Adjust your system settings and preferences', colorGradient: 'from-slate-400 to-slate-500', href: '/kid/{id}/settings' },
+      { icon: ShoppingBag, label: 'UPGRADE SHOP', description: 'Spend credits on system upgrades', colorGradient: 'from-amber-500 to-amber-600', href: '/kid/{id}/shop' },
     ],
   },
 };

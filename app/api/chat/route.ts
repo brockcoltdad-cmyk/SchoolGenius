@@ -3,6 +3,7 @@ import { GIGI_SYSTEM_PROMPT } from '@/lib/ai/prompts'
 import { createServerSupabaseClient } from '@/lib/supabase/server'
 import { NextResponse } from 'next/server'
 import crypto from 'crypto'
+import { COPPA_SYSTEM_PROMPT } from '@/lib/coppa-chat-helper'
 
 // CLOSED LOOP SYSTEM - Create hash for question lookup
 function hashQuestion(question: string): string {
@@ -74,87 +75,136 @@ async function saveToQALibrary(question: string, answer: string, childId: string
   }
 }
 
-async function buildPersonalizedSystemPrompt(childId: string): Promise<string> {
+async function buildPersonalizedSystemPrompt(childId: string, subject?: string): Promise<string> {
   const supabase = await createServerSupabaseClient()
 
+  // Get child info
   const { data: child } = await supabase
     .from('children')
     .select('name, grade_level, interests')
     .eq('id', childId)
     .maybeSingle()
 
+  if (!child) {
+    return `You are Gigi, a learning coach. Keep answers SHORT (1-2 sentences). Never give answers - guide only!`
+  }
+
+  // Get learning profile (weaknesses, strengths)
   const { data: profile } = await supabase
     .from('learning_profiles')
-    .select('*')
+    .select('weakest_subjects, strongest_subjects, overall_accuracy, total_questions_answered')
     .eq('child_id', childId)
     .maybeSingle()
 
-  if (!child) {
-    return `You are Gigi, a friendly and encouraging AI tutor.`
+  // Get recent lesson performance
+  const { data: recentLessons } = await supabase
+    .from('lesson_progress')
+    .select('subject_code, skill_name, score, completed')
+    .eq('child_id', childId)
+    .order('last_attempt_at', { ascending: false })
+    .limit(5)
+
+  // Build performance insights
+  let performanceInsights = ''
+
+  if (profile) {
+    const accuracy = Math.round((profile.overall_accuracy || 0) * 100)
+    performanceInsights += `\n- Overall accuracy: ${accuracy}%`
+    performanceInsights += `\n- Questions answered: ${profile.total_questions_answered || 0}`
+
+    if (profile.weakest_subjects?.length > 0) {
+      performanceInsights += `\n- STRUGGLING WITH: ${profile.weakest_subjects.join(', ')} (recommend these!)`
+    }
+    if (profile.strongest_subjects?.length > 0) {
+      performanceInsights += `\n- STRONG AT: ${profile.strongest_subjects.join(', ')}`
+    }
   }
 
-  if (!profile) {
-    return GIGI_SYSTEM_PROMPT
-      .replace('{studentName}', child.name)
-      .replace('{age}', 'unknown')
-      .replace('{gradeLevel}', child.grade_level?.toString() || 'unknown')
-      .replace('{interests}', child.interests?.join(', ') || 'various things')
+  if (recentLessons && recentLessons.length > 0) {
+    const lowScores = recentLessons.filter(l => l.score && l.score < 70)
+    if (lowScores.length > 0) {
+      performanceInsights += `\n- NEEDS PRACTICE: ${lowScores.map(l => l.skill_name).join(', ')}`
+    }
   }
 
-  const learningStyleMap: Record<string, string> = {
-    visual: 'visual examples, diagrams, and pictures',
-    auditory: 'verbal explanations and talking through problems',
-    reading: 'written instructions and text-based explanations',
-    kinesthetic: 'hands-on examples and real-world applications'
+  return `You are Gigi, ${child.name}'s learning buddy (grade ${child.grade_level || 'K'}).
+
+RULES - FOLLOW EXACTLY:
+1. MAX 1-2 SHORT sentences per response
+2. NEVER give answers to questions
+3. NEVER teach or explain concepts
+4. Just guide them to lessons
+
+${performanceInsights ? `${child.name}'s stats:${performanceInsights}` : ''}
+
+EXAMPLES OF GOOD RESPONSES:
+- "Hey! I'm Gigi. What subject - Math, Reading, or Spelling?"
+- "Math? Say 'yes' to go!"
+- "Nice job on spelling!"
+- "I don't give answers. Want to practice?"
+
+ALWAYS BE BRIEF. Kids have short attention spans.`
+}
+
+// Store pending navigation (waiting for "yes" confirmation)
+let pendingNavigation: { url: string, subject: string } | null = null
+
+// Detect navigation intent - returns suggestion, doesn't auto-navigate
+function detectNavigationIntent(message: string, childId: string): { suggestion?: string, url?: string, subject?: string } | null {
+  const msg = message.toLowerCase().trim()
+
+  // Check for "yes" confirmation FIRST - if pending navigation exists
+  if ((msg === 'yes' || msg === 'yeah' || msg === 'yep' || msg === 'ok' || msg === 'sure') && pendingNavigation) {
+    const nav = pendingNavigation
+    pendingNavigation = null // Clear it
+    return { suggestion: `Let's go!`, url: nav.url, subject: nav.subject }
   }
 
-  const paceMap: Record<string, string> = {
-    slow: 'a slower pace with extra examples and patience',
-    medium: 'a balanced pace',
-    fast: 'a faster pace with more challenging content'
+  // Navigation phrases
+  const mathPhrases = ['math', 'addition', 'subtraction', 'multiply', 'divide', 'fractions', 'numbers']
+  const readingPhrases = ['reading', 'read', 'comprehension']
+  const spellingPhrases = ['spelling', 'spell', 'words']
+  const typingPhrases = ['typing', 'type', 'keyboard']
+  const shopPhrases = ['shop', 'store', 'buy', 'coins', 'rewards', 'themes']
+  const leaderboardPhrases = ['leaderboard', 'rankings', 'score', 'points']
+  const storyPhrases = ['story', 'stories']
+  const placementPhrases = ['where do i start', 'where should i start', 'placement', 'test me', 'what level', 'i\'m new']
+
+  // Detect subject and store as pending (ask for confirmation)
+  if (placementPhrases.some(p => msg.includes(p))) {
+    pendingNavigation = { url: `/kid/${childId}/start-day`, subject: 'Placement Quiz' }
+    return { suggestion: `I can take you to the Placement Quiz! Say "yes" to go.` }
+  }
+  if (mathPhrases.some(p => msg.includes(p))) {
+    pendingNavigation = { url: `/kid/${childId}/math`, subject: 'Math' }
+    return { suggestion: `Math? Say "yes" and I'll take you there!` }
+  }
+  if (readingPhrases.some(p => msg.includes(p))) {
+    pendingNavigation = { url: `/kid/${childId}/reading`, subject: 'Reading' }
+    return { suggestion: `Reading? Say "yes" to go!` }
+  }
+  if (spellingPhrases.some(p => msg.includes(p))) {
+    pendingNavigation = { url: `/kid/${childId}/spelling`, subject: 'Spelling' }
+    return { suggestion: `Spelling? Say "yes" to start!` }
+  }
+  if (typingPhrases.some(p => msg.includes(p))) {
+    pendingNavigation = { url: `/kid/${childId}/typing`, subject: 'Typing' }
+    return { suggestion: `Typing practice? Say "yes" to begin!` }
+  }
+  if (storyPhrases.some(p => msg.includes(p))) {
+    pendingNavigation = { url: `/kid/${childId}/reading`, subject: 'Stories' }
+    return { suggestion: `Stories? Say "yes" to read!` }
+  }
+  if (shopPhrases.some(p => msg.includes(p))) {
+    pendingNavigation = { url: `/kid/${childId}/shop`, subject: 'Shop' }
+    return { suggestion: `The Shop? Say "yes" to browse!` }
+  }
+  if (leaderboardPhrases.some(p => msg.includes(p))) {
+    pendingNavigation = { url: `/kid/${childId}/leaderboard`, subject: 'Leaderboard' }
+    return { suggestion: `Leaderboard? Say "yes" to see rankings!` }
   }
 
-  const confidenceMap: Record<string, string> = {
-    low: 'extra encouragement and support',
-    medium: 'steady guidance',
-    high: 'more challenging problems and independence'
-  }
-
-  const learningStyle = learningStyleMap[profile.primary_learning_style] || 'visual examples'
-  const pace = paceMap[profile.preferred_pace] || 'a balanced pace'
-  const confidence = confidenceMap[profile.confidence_level] || 'steady guidance'
-
-  const strugglingSubjects = profile.weakest_subjects?.length > 0
-    ? `${child.name} is working on ${profile.weakest_subjects.join(' and ')} - be patient and provide extra support in these areas.`
-    : ''
-
-  const exampleTopics = [
-    ...(child.interests || []),
-    ...(profile.preferred_example_types || [])
-  ].filter(Boolean)
-
-  const interestExamples = exampleTopics.length > 0
-    ? `Use examples related to ${exampleTopics.join(', ')} - ${child.name} loves these topics!`
-    : ''
-
-  const accuracy = Math.round((profile.overall_accuracy || 0) * 100)
-  const stats = `${child.name} has answered ${profile.total_questions_answered || 0} questions with ${accuracy}% accuracy.`
-
-  return `You are Gigi, a friendly and encouraging AI tutor helping ${child.name}, a ${child.grade_level} grade student.
-
-LEARNING PROFILE:
-- Learning Style: ${child.name} learns best with ${learningStyle}
-- Pace: Prefers ${pace}
-- Confidence: ${child.name} needs ${confidence}
-${strugglingSubjects ? `- ${strugglingSubjects}` : ''}
-${interestExamples ? `- ${interestExamples}` : ''}
-- Performance: ${stats}
-- Frustration Point: If ${child.name} gets ${profile.frustration_threshold || 3}+ questions wrong in a row, offer a different explanation or take a break
-${profile.needs_more_examples ? `- Extra Examples: ${child.name} often needs more examples - be generous with them` : ''}
-${profile.responds_to_encouragement ? `- Motivation: ${child.name} responds well to encouragement and praise` : ''}
-${profile.responds_to_challenges ? `- Challenges: ${child.name} enjoys being challenged - don't be afraid to push a bit` : ''}
-
-Adapt your teaching style to match this profile while staying encouraging and supportive.`
+  return null
 }
 
 export async function POST(request: Request) {
@@ -166,22 +216,51 @@ export async function POST(request: Request) {
     }
 
     const body = await request.json()
-    const { messages, studentId, childId } = body
+    const { messages, studentId, childId, subject, pageContext, isUnder13 } = body
 
     const id = childId || studentId
+    const currentSubject = subject || pageContext || 'dashboard'
+
     if (!id) {
       return NextResponse.json({ error: 'Child ID is required' }, { status: 400 })
     }
 
-    console.log('Chat API called for child:', id)
+    console.log('Chat API called for child:', id, 'subject:', currentSubject)
 
+    // Check for navigation intent FIRST (no API call needed!)
+    const userMessage = messages[messages.length - 1]?.content || ''
+    const navIntent = detectNavigationIntent(userMessage, id)
+
+    if (navIntent) {
+      // If there's a URL, they confirmed with "yes" - navigate now
+      if (navIntent.url) {
+        console.log('🚀 Navigation confirmed:', navIntent.subject)
+        return NextResponse.json({
+          message: navIntent.suggestion,
+          action: { url: navIntent.url },
+          source: 'navigation'
+        })
+      }
+      // Otherwise just show the suggestion (waiting for "yes")
+      console.log('💬 Navigation suggested:', navIntent.suggestion)
+      return NextResponse.json({
+        message: navIntent.suggestion,
+        source: 'suggestion'
+      })
+    }
+
+    console.log('Creating Supabase client...')
     const supabase = await createServerSupabaseClient()
+    console.log('Supabase client created')
 
+    console.log('Querying children table...')
     const { data: child, error: childError } = await supabase
       .from('children')
       .select('*')
       .eq('id', id)
       .maybeSingle()
+
+    console.log('Query result - child:', child ? 'found' : 'null', 'error:', childError)
 
     if (childError) {
       console.error('Supabase error:', childError)
@@ -189,13 +268,14 @@ export async function POST(request: Request) {
     }
 
     if (!child) {
+      console.error('Child not found with ID:', id)
       return NextResponse.json({ error: 'Child not found' }, { status: 404 })
     }
 
     console.log('Found child:', child.name)
 
     // CLOSED LOOP SYSTEM - Check qa_library FIRST (FREE if exists)
-    const userMessage = messages[messages.length - 1]?.content || ''
+    // userMessage already defined above for navigation check
     if (userMessage && typeof userMessage === 'string') {
       console.log('🔍 Checking qa_library for existing answer...')
       const cachedAnswer = await checkQALibrary(userMessage, id)
@@ -212,13 +292,19 @@ export async function POST(request: Request) {
       console.log('❌ Not in library - calling Claude (costs money)')
     }
 
-    const systemPrompt = await buildPersonalizedSystemPrompt(id)
+    let systemPrompt = await buildPersonalizedSystemPrompt(id, currentSubject)
+
+    // COPPA: Add child safety rules for under-13 users
+    if (isUnder13) {
+      systemPrompt += '\n\n' + COPPA_SYSTEM_PROMPT
+      console.log('🛡️ COPPA mode enabled - child safety rules added to prompt')
+    }
 
     console.log('Calling Anthropic API...')
 
     const response = await anthropic.messages.create({
       model: AI_MODEL,
-      max_tokens: 1024,
+      max_tokens: 50,  // VERY short answers - 1-2 sentences max
       system: systemPrompt,
       messages: messages.map((m: any) => ({
         role: m.role,

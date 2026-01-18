@@ -91,51 +91,47 @@ export default function ScanPage() {
     setStep('processing');
 
     try {
-      const supabase = createClient();
-
-      const { data, error } = await supabase
-        .from('kid_scanned_docs')
-        .insert({
-          child_id: kidId,
-          image_url: `placeholder_${Date.now()}.jpg`,
-          file_name: selectedFile.name,
-          file_size: selectedFile.size,
-          category: selectedCategory,
-          subject: subject || null,
-          needs_help: needsHelp,
-          help_request: needsHelp ? helpRequest : null,
-          ai_analysis: `AI analysis: This appears to be ${selectedCategory}. ${needsHelp ? 'Help requested.' : ''}`,
-        })
-        .select()
-        .single();
-
-      if (error) throw error;
-
-      if (selectedCategory === 'calendar') {
-        await supabase
-          .from('kid_school_events')
-          .insert({
-            student_id: kidId,
-            event_name: 'Upcoming School Event',
-            event_date: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
-            event_type: 'other',
-            description: 'Extracted from scanned calendar',
-          } as any);
+      // Create FormData to send file to API
+      const formData = new FormData();
+      formData.append('image', selectedFile);
+      formData.append('docType', selectedCategory);
+      formData.append('studentId', kidId);
+      if (subject) {
+        formData.append('subject', subject);
       }
+
+      // Call the real scan API (uses Gemini + Grok)
+      const response = await fetch('/api/scan-document', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Scan failed');
+      }
+
+      const result = await response.json();
 
       toast({
         title: 'Success!',
-        description: 'Your document has been saved',
+        description: selectedCategory === 'syllabus'
+          ? 'Syllabus scanned! Grok is generating your prep schedule...'
+          : 'Your document has been scanned and saved',
       });
 
       setTimeout(() => {
-        router.push(`/kid/${kidId}/documents`);
-      }, 1000);
-    } catch (error) {
+        if (selectedCategory === 'syllabus') {
+          router.push(`/kid/${kidId}/syllabus`);
+        } else {
+          router.push(`/kid/${kidId}/documents`);
+        }
+      }, 2000);
+    } catch (error: any) {
       console.error('Upload error:', error);
       toast({
         title: 'Upload failed',
-        description: 'Please try again',
+        description: error.message || 'Please try again',
         variant: 'destructive',
       });
       setStep('upload');
@@ -321,10 +317,16 @@ export default function ScanPage() {
                     </div>
                   )}
 
-                  <div className="mb-6 rounded-lg bg-blue-50 p-4">
+                  <div
+                    className="mb-6 rounded-lg p-4"
+                    style={{
+                      background: `${currentTheme.colors.primary}15`,
+                      border: `1px solid ${currentTheme.colors.primary}30`
+                    }}
+                  >
                     <div className="mb-2 flex items-center gap-2">
-                      <HelpCircle className="h-5 w-5 text-blue-600" />
-                      <span className="font-semibold text-blue-900">Need help with this?</span>
+                      <HelpCircle className="h-5 w-5" style={{ color: currentTheme.colors.primary }} />
+                      <span className="font-semibold" style={{ color: currentTheme.colors.primary }}>Need help with this?</span>
                     </div>
                     <label className="flex cursor-pointer items-center gap-2">
                       <input
@@ -332,8 +334,9 @@ export default function ScanPage() {
                         checked={needsHelp}
                         onChange={(e) => setNeedsHelp(e.target.checked)}
                         className="h-5 w-5 rounded"
+                        style={{ accentColor: currentTheme.colors.primary }}
                       />
-                      <span className="text-sm text-blue-800">
+                      <span className="text-sm" style={{ color: currentTheme.colors.text }}>
                         Yes, I need help understanding or solving this
                       </span>
                     </label>
@@ -347,7 +350,8 @@ export default function ScanPage() {
                           value={helpRequest}
                           onChange={(e) => setHelpRequest(e.target.value)}
                           placeholder="What do you need help with? (e.g., 'Explain problem 5' or 'Check my answers')"
-                          className="resize-none border-blue-300"
+                          className="resize-none"
+                          style={{ borderColor: `${currentTheme.colors.primary}50` }}
                           rows={3}
                         />
                       </motion.div>

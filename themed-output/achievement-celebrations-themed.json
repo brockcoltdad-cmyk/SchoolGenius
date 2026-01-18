@@ -1,0 +1,1298 @@
+[
+  {
+    "achievement_type": "first_lesson",
+    "milestone_value": null,
+    "age_group": "k2",
+    "main_message": "Victory Royale! You’re a Champion for finishing your first lesson! GG! 🎉⭐✨",
+    "secondary_message": "Epic win, superstar! Keep going! 🚀",
+    "excitement_level": "high",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 3,
+    "age_group": "k2",
+    "main_message": "Victory Royale! You’ve won a 3-day streak! Amazing, Champion! 🎉⭐",
+    "secondary_message": "Keep it up, superstar! ✨",
+    "excitement_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 7,
+    "age_group": "k2",
+    "main_message": "Victory Royale! 7-day streak, you're a Champion! GG! 🎉⭐✨",
+    "secondary_message": "Keep winning, superstar! 🌟",
+    "excitement_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 14,
+    "age_group": "k2",
+    "main_message": "Victory Royale! 14-day streak, Champion! You're unstoppable! 🎉⭐✨",
+    "secondary_message": "GG, keep winning! 🏆",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 30,
+    "age_group": "k2",
+    "main_message": "Victory Royale! You’ve hit a 30-day streak! You’re a Champion! 🎉⭐✨",
+    "secondary_message": "GG! Keep winning! 🏆",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 50,
+    "age_group": "k2",
+    "main_message": "Victory Royale! You earned 50 coins! You're a Champion! 🎉⭐✨",
+    "secondary_message": "GG! Keep winning! 🏆",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 100,
+    "age_group": "k2",
+    "main_message": "Victory Royale! You earned 100 coins! You're a Champion! 🎉⭐✨",
+    "secondary_message": "GG, superstar! Keep winning! 🏆",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 500,
+    "age_group": "k2",
+    "main_message": "Victory Royale! You earned 500 coins! You're a Champion! 🎉⭐✨",
+    "secondary_message": "GG! Keep winning! 🏆",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "mastery",
+    "milestone_value": null,
+    "age_group": "k2",
+    "main_message": "Victory Royale! You mastered this skill! You're a Champion! 🎉⭐",
+    "secondary_message": "GG, super star! Keep winning! ✨",
+    "excitement_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "first_lesson",
+    "milestone_value": null,
+    "age_group": "grades35",
+    "main_message": "Victory Royale! You’ve won your first lesson, champ! Amazing job! 🎉",
+    "secondary_message": "Keep going, little legend!",
+    "excitement_level": "high",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 3,
+    "age_group": "grades35",
+    "main_message": "Victory Royale! You've won a 3-day streak! You're a Champion!",
+    "secondary_message": "Keep playing to win more!",
+    "excitement_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 7,
+    "age_group": "grades35",
+    "main_message": "Victory Royale! You've won a 7-day streak! You're a Champion!",
+    "secondary_message": "Keep up the great work!",
+    "excitement_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 14,
+    "age_group": "grades35",
+    "main_message": "Victory Royale! You're a Champion with a 14-day streak! Amazing job!",
+    "secondary_message": "Keep winning, superstar!",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 30,
+    "age_group": "grades35",
+    "main_message": "Victory Royale! You’ve won a 30-day streak! You’re a Champion!",
+    "secondary_message": "GG, super star!",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 50,
+    "age_group": "grades35",
+    "main_message": "Victory Royale! You earned 50 coins, Champion! What an Epic Win! 🎉",
+    "secondary_message": "Keep shining, superstar! GG!",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 100,
+    "age_group": "grades35",
+    "main_message": "Victory Royale! You earned 100 coins, Champion! What an Epic win!",
+    "secondary_message": "GG, little star!",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 500,
+    "age_group": "grades35",
+    "main_message": "Victory Royale! You’ve earned 500 coins, Champion! What an Epic Win! 🎉",
+    "secondary_message": "Keep shining, superstar! GG!",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "mastery",
+    "milestone_value": null,
+    "age_group": "grades35",
+    "main_message": "Victory Royale! You’ve mastered this skill, champ! What an Epic Win! 🎉",
+    "secondary_message": "Keep being a Champion!",
+    "excitement_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "first_lesson",
+    "milestone_value": null,
+    "age_group": "grades68",
+    "main_message": "Victory Royale! You’ve crushed your first lesson like a true Champion!",
+    "secondary_message": "GG, keep winning!",
+    "excitement_level": "high",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 3,
+    "age_group": "grades68",
+    "main_message": "Victory Royale! You've conquered a 3-day streak, champ! Keep ruling the game!",
+    "secondary_message": "GG, you're unstoppable!",
+    "excitement_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 7,
+    "age_group": "grades68",
+    "main_message": "Victory Royale! You’ve hit a 7-day streak, Champion! Keep dominating!",
+    "secondary_message": "GG, you’re unstoppable!",
+    "excitement_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 14,
+    "age_group": "grades68",
+    "main_message": "Victory Royale! You've crushed a 14-day streak, Champion!",
+    "secondary_message": "Keep dominating, Legend!",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 30,
+    "age_group": "grades68",
+    "main_message": "Victory Royale! You've crushed a 30-day streak, Champion! Keep dominating!",
+    "secondary_message": "GG, you're unstoppable!",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 50,
+    "age_group": "grades68",
+    "main_message": "Victory Royale! You’ve earned 50 coins, Champion! What an Epic Win!",
+    "secondary_message": "Keep dominating, legend!",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 100,
+    "age_group": "grades68",
+    "main_message": "Victory Royale! You’ve earned 100 coins, Champion! What an Epic Win! 💪",
+    "secondary_message": "Keep dominating, legend! GG!",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 500,
+    "age_group": "grades68",
+    "main_message": "Victory Royale! You’ve earned 500 coins, Champion! What an Epic Win!",
+    "secondary_message": "Keep dominating, legend!",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "mastery",
+    "milestone_value": null,
+    "age_group": "grades68",
+    "main_message": "Victory Royale! You've mastered this skill, Champion! Show everyone who's boss!",
+    "secondary_message": "GG, you're unstoppable now!",
+    "excitement_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "first_lesson",
+    "milestone_value": null,
+    "age_group": "grades912",
+    "main_message": "Victory Royale! You've conquered your first lesson ever. You're a Champion!",
+    "secondary_message": "Keep battling for more wins!",
+    "excitement_level": "high",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 3,
+    "age_group": "grades912",
+    "main_message": "Victory Royale! You've hit a 3-day streak. Keep dominating the game!",
+    "secondary_message": "You're a true Champion!",
+    "excitement_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 7,
+    "age_group": "grades912",
+    "main_message": "Victory Royale! You've hit a 7-day streak, Champion! Keep battling!",
+    "secondary_message": "GG! You're unstoppable!",
+    "excitement_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 14,
+    "age_group": "grades912",
+    "main_message": "Victory Royale! You've crushed a 14-day streak! You're a true Champion!",
+    "secondary_message": "Keep dominating, Legend!",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 30,
+    "age_group": "grades912",
+    "main_message": "Victory Royale! Your 30-day streak is Legendary, Champion!",
+    "secondary_message": "Keep dominating the game!",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 50,
+    "age_group": "grades912",
+    "main_message": "Victory Royale! You've earned 50 coins, Champion! What an Epic Win!",
+    "secondary_message": "Keep dominating the game!",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 100,
+    "age_group": "grades912",
+    "main_message": "Victory Royale! You've earned 100 coins, Champion! What an Epic Win!",
+    "secondary_message": "Keep dominating the game!",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 500,
+    "age_group": "grades912",
+    "main_message": "Victory Royale! You've earned 500 coins, Champion! What an Epic Win!",
+    "secondary_message": "Keep dominating the game!",
+    "excitement_level": "epic",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "mastery",
+    "milestone_value": null,
+    "age_group": "grades912",
+    "main_message": "Victory Royale! You've mastered this skill like a true Champion!",
+    "secondary_message": "Keep winning, superstar!",
+    "excitement_level": "medium",
+    "theme": "battle"
+  },
+  {
+    "achievement_type": "first_lesson",
+    "milestone_value": null,
+    "age_group": "k2",
+    "main_message": "Crown earned, Your Majesty! You’ve conquered your first lesson! Amazing! 🎉⭐✨",
+    "secondary_message": "Keep shining, royal star! 🌟",
+    "excitement_level": "high",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 3,
+    "age_group": "k2",
+    "main_message": "Crown earned, Your Majesty! A 3-day streak is royal success! 🎉✨",
+    "secondary_message": "Keep ruling your learning castle! ⭐",
+    "excitement_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 7,
+    "age_group": "k2",
+    "main_message": "Crown earned, Your Majesty! A 7-day streak is royal success! 🎉⭐✨",
+    "secondary_message": "Keep the castle magic going!",
+    "excitement_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 14,
+    "age_group": "k2",
+    "main_message": "Crown earned, Your Majesty! A magical 14-day streak! You're castle royalty! 🎉⭐✨",
+    "secondary_message": "Keep ruling, little star! 🌟",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 30,
+    "age_group": "k2",
+    "main_message": "Crown earned, Your Majesty! A magical 30-day streak! Castle magic shines! 🎉⭐✨",
+    "secondary_message": "You're a royal superstar! Keep ruling! 👑✨",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 50,
+    "age_group": "k2",
+    "main_message": "Crown earned! You're a royal star with 50 coins! Amazing, Your Majesty! 🎉⭐✨",
+    "secondary_message": "Keep shining, royal champ! 🌟",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 100,
+    "age_group": "k2",
+    "main_message": "Crown earned! You're a royal star with 100 coins, Your Majesty! Amazing! 🎉⭐✨",
+    "secondary_message": "Keep shining, little royal! 🌟",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 500,
+    "age_group": "k2",
+    "main_message": "Crown earned! You're a royal champ with 500 coins, Your Majesty! 🎉👑✨",
+    "secondary_message": "Castle magic shines bright! ⭐",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "mastery",
+    "milestone_value": null,
+    "age_group": "k2",
+    "main_message": "Crown earned, Your Majesty! You’ve mastered this skill! Amazing! 🎉⭐✨",
+    "secondary_message": "Royal success is yours! 👑",
+    "excitement_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "first_lesson",
+    "milestone_value": null,
+    "age_group": "grades35",
+    "main_message": "Crown earned, little royal! Your first lesson is complete—hooray!",
+    "secondary_message": "You're castle magic!",
+    "excitement_level": "high",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 3,
+    "age_group": "grades35",
+    "main_message": "Crown earned! Amazing 3-day streak, Your Majesty! You're ruling with brilliance!",
+    "secondary_message": "Keep the castle magic going!",
+    "excitement_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 7,
+    "age_group": "grades35",
+    "main_message": "Crown earned, little royal! 7 days of amazing work—Castle magic!",
+    "secondary_message": "Keep shining, Your Majesty!",
+    "excitement_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 14,
+    "age_group": "grades35",
+    "main_message": "Crown earned! Your 14-day streak is royal magic, Your Majesty! Keep shining!",
+    "secondary_message": "You're castle-tastic, little star!",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 30,
+    "age_group": "grades35",
+    "main_message": "Crown earned! Amazing, Your Majesty! A 30-day streak is pure Castle Magic!",
+    "secondary_message": "Keep shining, royal star!",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 50,
+    "age_group": "grades35",
+    "main_message": "Crown earned! Wow, 50 coins! You're a royal star, Your Majesty!",
+    "secondary_message": "Keep shining, little princess!",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 100,
+    "age_group": "grades35",
+    "main_message": "Crown earned! You've collected 100 coins, little royalty! Amazing work!",
+    "secondary_message": "You're castle magic!",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 500,
+    "age_group": "grades35",
+    "main_message": "Crown earned, little royal! You've got 500 coins! Amazing castle magic!",
+    "secondary_message": "Keep shining, Your Majesty!",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "mastery",
+    "milestone_value": null,
+    "age_group": "grades35",
+    "main_message": "Crown earned, Your Majesty! You've mastered a skill with royal success! 🎉",
+    "secondary_message": "Keep shining, little princess!",
+    "excitement_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "first_lesson",
+    "milestone_value": null,
+    "age_group": "grades68",
+    "main_message": "Crown earned, Your Majesty! You've conquered your first lesson with royal success!",
+    "secondary_message": "Keep ruling your learning kingdom!",
+    "excitement_level": "high",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 3,
+    "age_group": "grades68",
+    "main_message": "Crown earned! You've ruled with a 3-day streak, Your Majesty!",
+    "secondary_message": "Keep the castle magic alive!",
+    "excitement_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 7,
+    "age_group": "grades68",
+    "main_message": "Crown earned! Your 7-day streak shines bright, Your Majesty!",
+    "secondary_message": "Keep ruling your learning kingdom!",
+    "excitement_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 14,
+    "age_group": "grades68",
+    "main_message": "Crown earned! Your 14-day streak is pure Castle magic, Your Majesty!",
+    "secondary_message": "Keep ruling your learning kingdom!",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 30,
+    "age_group": "grades68",
+    "main_message": "Crown earned, Your Majesty! A 30-day streak is pure castle magic!",
+    "secondary_message": "Rule the realm with pride!",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 50,
+    "age_group": "grades68",
+    "main_message": "Crown earned! You've claimed 50 coins, Your Majesty. Rule your kingdom with epic power!",
+    "secondary_message": "Keep shining, royal champ!",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 100,
+    "age_group": "grades68",
+    "main_message": "Crown earned! You've gathered 100 coins, Your Majesty. Rule the kingdom with epic power!",
+    "secondary_message": "Keep shining, royal champ!",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 500,
+    "age_group": "grades68",
+    "main_message": "Crown earned! You’ve claimed 500 coins, Your Majesty! Rule your kingdom with epic power!",
+    "secondary_message": "Royal success awaits!",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "mastery",
+    "milestone_value": null,
+    "age_group": "grades68",
+    "main_message": "Crown earned, Your Majesty! You've mastered this skill like a true ruler!",
+    "secondary_message": "Keep shining, royal champ!",
+    "excitement_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "first_lesson",
+    "milestone_value": null,
+    "age_group": "grades912",
+    "main_message": "Crown earned, Your Majesty! You've conquered your first lesson with royal success!",
+    "secondary_message": "Keep ruling your learning kingdom!",
+    "excitement_level": "high",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 3,
+    "age_group": "grades912",
+    "main_message": "Crown earned! You've achieved a 3-day streak, Your Majesty!",
+    "secondary_message": "Keep ruling your learning kingdom!",
+    "excitement_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 7,
+    "age_group": "grades912",
+    "main_message": "Crown earned, Your Majesty! A 7-day streak is royal success!",
+    "secondary_message": "Keep ruling your learning kingdom!",
+    "excitement_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 14,
+    "age_group": "grades912",
+    "main_message": "Crown earned, Your Majesty! A 14-day streak is pure Castle Magic!",
+    "secondary_message": "Keep ruling your learning kingdom!",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 30,
+    "age_group": "grades912",
+    "main_message": "Crown earned! Your 30-day streak is pure Castle Magic, Your Majesty!",
+    "secondary_message": "Keep ruling your learning kingdom!",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 50,
+    "age_group": "grades912",
+    "main_message": "Crown earned! You've collected 50 coins, Your Majesty! Rule your learning kingdom with pride!",
+    "secondary_message": "Keep shining, royal star!",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 100,
+    "age_group": "grades912",
+    "main_message": "Crown earned, Your Majesty! You've collected 100 coins with royal success!",
+    "secondary_message": "Keep ruling your learning kingdom!",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 500,
+    "age_group": "grades912",
+    "main_message": "Crown earned, Your Majesty! You've collected 500 coins with royal success!",
+    "secondary_message": "Rule your learning kingdom!",
+    "excitement_level": "epic",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "mastery",
+    "milestone_value": null,
+    "age_group": "grades912",
+    "main_message": "Crown earned, Your Majesty! You've mastered this skill with royal success!",
+    "secondary_message": "Keep ruling your learning kingdom!",
+    "excitement_level": "medium",
+    "theme": "princess"
+  },
+  {
+    "achievement_type": "first_lesson",
+    "milestone_value": null,
+    "age_group": "k2",
+    "main_message": "Roar! You’re a Dino champion! Your first lesson is done! Amazing! 🎉⭐✨",
+    "secondary_message": "T-Rex power! Keep going! 🦖",
+    "excitement_level": "high",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 3,
+    "age_group": "k2",
+    "main_message": "Roar! 3-day streak! You're a Dino champion! Keep it up! 🎉⭐✨",
+    "secondary_message": "T-Rex power rocks! 🦖",
+    "excitement_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 7,
+    "age_group": "k2",
+    "main_message": "Roar! 7-day streak! You're a Dino champion! Keep the T-Rex power going! 🎉⭐",
+    "secondary_message": "Amazing prehistoric win! Keep roaring! ✨",
+    "excitement_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 14,
+    "age_group": "k2",
+    "main_message": "Roar! 14-day streak! You’re a Dino champion! T-Rex power! 🎉⭐✨",
+    "secondary_message": "Keep roaring, superstar! 🦖💥",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 30,
+    "age_group": "k2",
+    "main_message": "Roar! 30-day streak! You're a Dino champion with T-Rex power! 🎉⭐✨",
+    "secondary_message": "Keep stomping to greatness! 🦖",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 50,
+    "age_group": "k2",
+    "main_message": "Roar! You’ve earned 50 coins with T-Rex power! Prehistoric win! 🎉⭐✨",
+    "secondary_message": "You’re a Dino champion! Keep roaring! 🦖",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 100,
+    "age_group": "k2",
+    "main_message": "Roar! You’ve earned 100 coins! T-Rex power! You’re a Dino champion! 🎉⭐✨",
+    "secondary_message": "Keep roaring to greatness! 🦖💥",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 500,
+    "age_group": "k2",
+    "main_message": "Roar! You’ve earned 500 coins, Dino champion! T-Rex power! 🎉⭐✨",
+    "secondary_message": "You’re a prehistoric win! 🦖",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "mastery",
+    "milestone_value": null,
+    "age_group": "k2",
+    "main_message": "Roar! You’ve mastered this skill with T-Rex power! Amazing job! 🎉⭐✨",
+    "secondary_message": "You’re a Dino champion! Keep it up! 🦖",
+    "excitement_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "first_lesson",
+    "milestone_value": null,
+    "age_group": "grades35",
+    "main_message": "Roar! You’re a Dino champion for finishing your first lesson!",
+    "secondary_message": "Keep up the T-Rex power!",
+    "excitement_level": "high",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 3,
+    "age_group": "grades35",
+    "main_message": "Roar! Amazing 3-day streak, Dino Champion! Keep that T-Rex power going!",
+    "secondary_message": "You're a prehistoric win!",
+    "excitement_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 7,
+    "age_group": "grades35",
+    "main_message": "Roar! You've hit a 7-day streak, Dino Champion! Keep that T-Rex power going!",
+    "secondary_message": "You're a prehistoric win!",
+    "excitement_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 14,
+    "age_group": "grades35",
+    "main_message": "Roar! 14 days of T-Rex power! You're a Dino champion!",
+    "secondary_message": "Keep stomping to victory!",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 30,
+    "age_group": "grades35",
+    "main_message": "Roar! You've hit a 30-day streak, Dino Champion! Your T-Rex power is unstoppable!",
+    "secondary_message": "Keep roaring with pride!",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 50,
+    "age_group": "grades35",
+    "main_message": "Roar! You’ve earned 50 coins, Dino Champion! What a Prehistoric Win!",
+    "secondary_message": "Keep showing that T-Rex power!",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 100,
+    "age_group": "grades35",
+    "main_message": "Roar! You’ve earned 100 coins, Dino Champion! Your T-Rex power is unstoppable!",
+    "secondary_message": "Keep roaring to victory!",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 500,
+    "age_group": "grades35",
+    "main_message": "Roar! You’ve earned 500 coins, Dino Champion! What a Prehistoric Win!",
+    "secondary_message": "Keep that T-Rex power roaring!",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "mastery",
+    "milestone_value": null,
+    "age_group": "grades35",
+    "main_message": "Roar! You're a Dino Champion for mastering this skill! Amazing job!",
+    "secondary_message": "Keep up the T-Rex power!",
+    "excitement_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "first_lesson",
+    "milestone_value": null,
+    "age_group": "grades68",
+    "main_message": "Roar! You’ve smashed your first lesson with T-Rex power! What a prehistoric win!",
+    "secondary_message": "Keep ruling like a Dino champion!",
+    "excitement_level": "high",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 3,
+    "age_group": "grades68",
+    "main_message": "Roar! You've hit a 3-day streak with T-Rex power! Keep ruling!",
+    "secondary_message": "You're a Dino champion!",
+    "excitement_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 7,
+    "age_group": "grades68",
+    "main_message": "Roar! You've hit a 7-day streak with T-Rex power! You're unstoppable!",
+    "secondary_message": "Keep ruling the prehistoric land!",
+    "excitement_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 14,
+    "age_group": "grades68",
+    "main_message": "Roar! 14-day streak smashed with T-Rex power! You're a Dino champion!",
+    "secondary_message": "Keep ruling the prehistoric land!",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 30,
+    "age_group": "grades68",
+    "main_message": "Roar! You've hit a 30-day streak with T-Rex power! You're a Dino champion!",
+    "secondary_message": "Keep ruling the prehistoric world!",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 50,
+    "age_group": "grades68",
+    "main_message": "Roar! You’ve earned 50 coins with T-Rex power! You’re a prehistoric win!",
+    "secondary_message": "Keep ruling the dino world!",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 100,
+    "age_group": "grades68",
+    "main_message": "Roar! You’ve earned 100 coins with T-Rex power! You’re a Dino champion!",
+    "secondary_message": "Keep ruling the prehistoric world!",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 500,
+    "age_group": "grades68",
+    "main_message": "Roar! You’ve earned 500 coins with T-Rex power! You’re a Dino champion!",
+    "secondary_message": "Keep ruling the prehistoric world!",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "mastery",
+    "milestone_value": null,
+    "age_group": "grades68",
+    "main_message": "Roar! You’ve mastered this skill with T-Rex power! You’re a true Dino champion!",
+    "secondary_message": "Keep ruling the prehistoric land!",
+    "excitement_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "first_lesson",
+    "milestone_value": null,
+    "age_group": "grades912",
+    "main_message": "Roar! You've conquered your first lesson with T-Rex power! What a prehistoric win!",
+    "secondary_message": "Keep stomping ahead, Dino champion!",
+    "excitement_level": "high",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 3,
+    "age_group": "grades912",
+    "main_message": "Roar! You've hit a 3-day streak with T-Rex power! Keep ruling the prehistoric world!",
+    "secondary_message": "You're a Dino champion!",
+    "excitement_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 7,
+    "age_group": "grades912",
+    "main_message": "Roar! You've hit a 7-day streak with T-Rex power! Keep ruling the prehistoric world!",
+    "secondary_message": "You're a Dino champion!",
+    "excitement_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 14,
+    "age_group": "grades912",
+    "main_message": "Roar! You've hit a 14-day streak with T-Rex power! You're a Dino champion!",
+    "secondary_message": "Keep ruling the prehistoric win!",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 30,
+    "age_group": "grades912",
+    "main_message": "Roar! You've hit a 30-day streak with T-Rex power! You're a Dino champion!",
+    "secondary_message": "Keep ruling the prehistoric world!",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 50,
+    "age_group": "grades912",
+    "main_message": "Roar! You’ve earned 50 coins with T-Rex power! You’re a Dino champion!",
+    "secondary_message": "Keep ruling the prehistoric world!",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 100,
+    "age_group": "grades912",
+    "main_message": "Roar! You've earned 100 coins with T-Rex power! You're a Dino champion!",
+    "secondary_message": "Keep ruling the prehistoric world!",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 500,
+    "age_group": "grades912",
+    "main_message": "Roar! You’ve earned 500 coins with T-Rex power! You’re a Dino champion!",
+    "secondary_message": "Keep ruling the prehistoric world!",
+    "excitement_level": "epic",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "mastery",
+    "milestone_value": null,
+    "age_group": "grades912",
+    "main_message": "Roar! You've mastered this skill with T-Rex power! You're a Dino champion!",
+    "secondary_message": "Keep up the prehistoric win!",
+    "excitement_level": "medium",
+    "theme": "dinosaur"
+  },
+  {
+    "achievement_type": "first_lesson",
+    "milestone_value": null,
+    "age_group": "k2",
+    "main_message": "Mission accomplished! You’ve completed your first lesson! Stellar job, space explorer! 🚀⭐🎉",
+    "secondary_message": "Blast off to more fun! ✨",
+    "excitement_level": "high",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 3,
+    "age_group": "k2",
+    "main_message": "Mission accomplished! You're a 3-day streak star! Stellar job! 🎉⭐✨",
+    "secondary_message": "Keep shining bright! 🚀",
+    "excitement_level": "medium",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 7,
+    "age_group": "k2",
+    "main_message": "Mission accomplished! 7 days of stellar work! You're an astronaut star! 🎉⭐✨",
+    "secondary_message": "Keep blasting off! 🚀",
+    "excitement_level": "medium",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 14,
+    "age_group": "k2",
+    "main_message": "Mission accomplished! 14-day streak! You're at astronaut level! Blast off! 🚀🎉⭐",
+    "secondary_message": "You're a space superstar! ✨",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 30,
+    "age_group": "k2",
+    "main_message": "Mission accomplished! 30-day streak! You're at Astronaut level! 🚀🎉⭐",
+    "secondary_message": "Blast off to more wins! ✨",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 50,
+    "age_group": "k2",
+    "main_message": "Mission accomplished! You’ve earned 50 coins! Stellar job, astronaut! 🚀🎉⭐",
+    "secondary_message": "Blast off to more fun! ✨",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 100,
+    "age_group": "k2",
+    "main_message": "Mission accomplished! You earned 100 coins! Stellar job, space champ! 🚀🎉⭐",
+    "secondary_message": "Blast off to more wins! ✨",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 500,
+    "age_group": "k2",
+    "main_message": "Mission accomplished! You’ve earned 500 coins! Stellar job, astronaut! 🚀🎉⭐",
+    "secondary_message": "Blast off to more fun! ✨",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "mastery",
+    "milestone_value": null,
+    "age_group": "k2",
+    "main_message": "Mission accomplished! You're a skill master, superstar! 🚀🎉⭐",
+    "secondary_message": "Keep shining bright! ✨",
+    "excitement_level": "medium",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "first_lesson",
+    "milestone_value": null,
+    "age_group": "grades35",
+    "main_message": "Mission accomplished! You’ve completed your first lesson, little astronaut! Stellar job!",
+    "secondary_message": "Blast off to more fun!",
+    "excitement_level": "high",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 3,
+    "age_group": "grades35",
+    "main_message": "Mission accomplished! You've hit a 3-day streak, little astronaut!",
+    "secondary_message": "Keep shining like a star!",
+    "excitement_level": "medium",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 7,
+    "age_group": "grades35",
+    "main_message": "Mission accomplished! You've reached a 7-day streak, little astronaut!",
+    "secondary_message": "Keep shining, stellar star!",
+    "excitement_level": "medium",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 14,
+    "age_group": "grades35",
+    "main_message": "Mission accomplished! You've hit a 14-day streak, little astronaut! Stellar work!",
+    "secondary_message": "Keep blasting off!",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 30,
+    "age_group": "grades35",
+    "main_message": "Mission accomplished! You've rocketed to a 30-day streak, little astronaut! Stellar work!",
+    "secondary_message": "Keep blasting off every day!",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 50,
+    "age_group": "grades35",
+    "main_message": "Mission accomplished! You've earned 50 coins, little astronaut! Stellar job!",
+    "secondary_message": "Blast off to more fun!",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 100,
+    "age_group": "grades35",
+    "main_message": "Mission accomplished! You've earned 100 coins, little astronaut! Stellar job!",
+    "secondary_message": "Blast off to more fun!",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 500,
+    "age_group": "grades35",
+    "main_message": "Mission accomplished! You've earned 500 coins, little astronaut! Stellar job!",
+    "secondary_message": "Blast off to more fun!",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "mastery",
+    "milestone_value": null,
+    "age_group": "grades35",
+    "main_message": "Mission accomplished! You're a star for mastering this skill!",
+    "secondary_message": "Keep shining bright!",
+    "excitement_level": "medium",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "first_lesson",
+    "milestone_value": null,
+    "age_group": "grades68",
+    "main_message": "Mission accomplished! Your first lesson is complete, space explorer. You're stellar!",
+    "secondary_message": "Blast off to more adventures!",
+    "excitement_level": "high",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 3,
+    "age_group": "grades68",
+    "main_message": "Mission accomplished! You've hit a stellar 3-day streak!",
+    "secondary_message": "Keep blasting off!",
+    "excitement_level": "medium",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 7,
+    "age_group": "grades68",
+    "main_message": "Mission accomplished! Your 7-day streak is stellar, space champ!",
+    "secondary_message": "Keep blasting off daily!",
+    "excitement_level": "medium",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 14,
+    "age_group": "grades68",
+    "main_message": "Mission accomplished! A 14-day streak? You're at astronaut level, champ!",
+    "secondary_message": "Keep blasting off!",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 30,
+    "age_group": "grades68",
+    "main_message": "Mission accomplished! You've hit a stellar 30-day streak, astronaut!",
+    "secondary_message": "Keep blasting off!",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 50,
+    "age_group": "grades68",
+    "main_message": "Mission accomplished! You’ve earned 50 coins, space champ. That’s Stellar!",
+    "secondary_message": "Blast off to more wins!",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 100,
+    "age_group": "grades68",
+    "main_message": "Mission accomplished! You’ve earned 100 coins, space champ. That’s Stellar!",
+    "secondary_message": "Blast off to greatness!",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 500,
+    "age_group": "grades68",
+    "main_message": "Mission accomplished! You've earned 500 coins, space champ. That's Astronaut level awesome!",
+    "secondary_message": "Blast off to greatness!",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "mastery",
+    "milestone_value": null,
+    "age_group": "grades68",
+    "main_message": "Mission accomplished! You've mastered this skill like a true astronaut!",
+    "secondary_message": "Keep reaching for the stars!",
+    "excitement_level": "medium",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "first_lesson",
+    "milestone_value": null,
+    "age_group": "grades912",
+    "main_message": "Mission accomplished! You've completed your first lesson with stellar success!",
+    "secondary_message": "Blast off to more learning!",
+    "excitement_level": "high",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 3,
+    "age_group": "grades912",
+    "main_message": "Mission accomplished! You've hit a stellar 3-day streak!",
+    "secondary_message": "Keep blasting off!",
+    "excitement_level": "medium",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 7,
+    "age_group": "grades912",
+    "main_message": "Mission accomplished! Your 7-day streak is stellar, young astronaut!",
+    "secondary_message": "Keep soaring to new heights!",
+    "excitement_level": "medium",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 14,
+    "age_group": "grades912",
+    "main_message": "Mission accomplished! Your 14-day streak is stellar, Astronaut! Keep soaring!",
+    "secondary_message": "Blast off to new heights!",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "streak",
+    "milestone_value": 30,
+    "age_group": "grades912",
+    "main_message": "Mission accomplished! Your 30-day streak is Stellar, Astronaut level!",
+    "secondary_message": "Keep blasting off!",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 50,
+    "age_group": "grades912",
+    "main_message": "Mission accomplished! You've earned 50 coins, Astronaut! Stellar work!",
+    "secondary_message": "Blast off to more rewards!",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 100,
+    "age_group": "grades912",
+    "main_message": "Mission accomplished! You've earned 100 coins, space explorer! Stellar work!",
+    "secondary_message": "Blast off to new heights!",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "coins",
+    "milestone_value": 500,
+    "age_group": "grades912",
+    "main_message": "Mission accomplished! Earning 500 coins is stellar, young astronaut!",
+    "secondary_message": "Blast off to new heights!",
+    "excitement_level": "epic",
+    "theme": "space"
+  },
+  {
+    "achievement_type": "mastery",
+    "milestone_value": null,
+    "age_group": "grades912",
+    "main_message": "Mission accomplished! You've mastered this skill like a true astronaut!",
+    "secondary_message": "Keep reaching for the stars!",
+    "excitement_level": "medium",
+    "theme": "space"
+  }
+]

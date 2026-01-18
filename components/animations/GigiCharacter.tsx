@@ -1,3 +1,13 @@
+/**
+ * =========================================
+ * TO BE REPLACED WITH RIVE
+ * =========================================
+ * This is SVG + Framer Motion - NOT real Rive.
+ * Replace with actual .riv file: /public/rive/gigi-character.riv
+ * See: library/RIVE-INSTRUCTIONS.md
+ * =========================================
+ */
+
 'use client';
 
 import { motion, AnimatePresence } from 'framer-motion';

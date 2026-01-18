@@ -1,0 +1,111 @@
+{
+  "grade": 7,
+  "grade_name": "Seventh Grade",
+  "total_target": 1000,
+  "standards": ["L.7.2", "L.7.4"],
+  "skills": [
+    {
+      "skill": "Greek root morph",
+      "code": "GRMO",
+      "standard": "L.7.4",
+      "count": 100,
+      "visual_type": "word_building",
+      "root": "morph",
+      "meaning": "form or shape",
+      "words": ["morph", "morphology", "metamorphosis", "amorphous", "polymorphic", "anthropomorphic", "isomorphic"]
+    },
+    {
+      "skill": "Greek root psych",
+      "code": "GRPS",
+      "standard": "L.7.4",
+      "count": 100,
+      "visual_type": "word_building",
+      "root": "psych",
+      "meaning": "mind or soul",
+      "words": ["psychology", "psychologist", "psychiatry", "psyche", "psychic", "psychoanalysis", "psychotherapy", "psychosomatic"]
+    },
+    {
+      "skill": "Greek root phil",
+      "code": "GRPL",
+      "standard": "L.7.4",
+      "count": 100,
+      "visual_type": "word_building",
+      "root": "phil",
+      "meaning": "love",
+      "words": ["philosophy", "philanthropy", "bibliophile", "philharmonic", "Philadelphia"]
+    },
+    {
+      "skill": "Greek root crat cracy",
+      "code": "GRCR",
+      "standard": "L.7.4",
+      "count": 100,
+      "visual_type": "word_building",
+      "root": "crat/cracy",
+      "meaning": "rule or power",
+      "words": ["democracy", "aristocracy", "bureaucracy", "autocracy", "theocracy", "democrat", "aristocrat", "bureaucrat", "autocrat", "plutocracy", "meritocracy"]
+    },
+    {
+      "skill": "Latin root cred",
+      "code": "LTCR",
+      "standard": "L.7.4",
+      "count": 100,
+      "visual_type": "word_building",
+      "root": "cred",
+      "meaning": "believe",
+      "words": ["credit", "credible", "incredible", "credential", "creditor", "discredit", "credulous", "creed", "accredit"]
+    },
+    {
+      "skill": "Latin root duc duct",
+      "code": "LTDU",
+      "standard": "L.7.4",
+      "count": 100,
+      "visual_type": "word_building",
+      "root": "duc/duct",
+      "meaning": "lead",
+      "words": ["conduct", "produce", "reduce", "deduce", "induce", "introduce", "educate", "duct", "conductor", "productive", "reduction", "induction", "abduct", "viaduct", "aqueduct"]
+    },
+    {
+      "skill": "Latin root vert vers",
+      "code": "LTVE",
+      "standard": "L.7.4",
+      "count": 100,
+      "visual_type": "word_building",
+      "root": "vert/vers",
+      "meaning": "turn",
+      "words": ["convert", "revert", "invert", "divert", "avert", "introvert", "extrovert", "versatile", "version", "reverse", "adverse", "universe", "controversy", "conversation", "anniversary"]
+    },
+    {
+      "skill": "Latin root voc vok",
+      "code": "LTVO",
+      "standard": "L.7.4",
+      "count": 100,
+      "visual_type": "word_building",
+      "root": "voc/vok",
+      "meaning": "voice or call",
+      "words": ["vocal", "voice", "vocabulary", "vocation", "advocate", "invoke", "evoke", "provoke", "revoke", "convoke", "equivocal", "vociferous"]
+    },
+    {
+      "skill": "academic vocabulary advanced",
+      "code": "ACDA",
+      "standard": "L.7.2",
+      "count": 200,
+      "visual_type": "word_building",
+      "words": ["abstract", "accommodate", "acknowledge", "acquisition", "adjacent", "advocate", "aggregate", "ambiguous", "analogy", "anomaly", "anticipate", "apparent", "arbitrary", "articulate", "attribute", "authentic", "autonomous", "coherent", "coincide", "collaborate", "commodity", "compensate", "compile", "complement", "comprehensive", "concurrent", "confer", "confine", "consecutive", "consequent", "consolidate", "conspicuous", "contemporary", "contradict", "controversy", "coordinate", "correlation", "criterion", "deviate", "differentiate", "diminish", "discriminate", "displace", "distinct", "distort", "diverse", "domain", "duration", "elaborate", "eliminate", "empirical", "encounter", "enhance", "equivalent", "erode", "ethical", "evaluate", "eventual", "exceed", "explicit", "extract", "facilitate", "fluctuate", "hypothesis", "ideology", "illustrate", "implicit", "imply", "incorporate", "inherent", "initiate", "integrate", "integrity", "interact", "intermediate", "intervene", "intrinsic", "invoke", "isolate", "manipulate", "maximize", "mediate", "minimize", "modify", "monitor", "mutual", "negate", "norm", "notion", "objective", "obscure", "obtain", "offset", "ongoing", "orient", "paradigm", "parameter", "perceive", "persist", "phenomenon", "portion", "potential", "precede", "predominant", "preliminary", "presume", "prevalent", "prior", "prohibit", "project", "promote", "proportion", "protocol", "pursue", "qualitative", "quotient", "radical", "random", "range", "ratio", "rational", "reinforce", "relevant", "reluctant", "restrain", "restrict", "revenue", "rigid", "scenario", "scope", "sequence", "simulate", "solely", "somewhat", "specify", "sphere", "statistic", "status", "straightforward", "strategy", "subsequent", "substitute", "successive", "sufficient", "sustain", "symbolic", "technique", "technology", "temporary", "terminate", "thereby", "thesis", "transform", "transition", "transmit", "trigger", "ultimate", "undergo", "underlie", "undertake", "uniform", "unique", "utilize", "valid", "virtual", "whereby", "widespread"]
+    }
+  ],
+  "question_templates": [
+    "Listen to the word and spell it: {word}",
+    "Type the word you hear: {word}",
+    "Spell the word: {word}"
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "grade": 6,
+  "theme_bucket": "6-7",
+  "theme_style": "Real projects, apps, challenges",
+  "description": "Grade 6 Coding - Python Fundamentals",
+  "lesson_flow_reference": "LESSON-FLOW-ARCHITECTURE.md",
+  "standard": "ISTE 1B-AP-13, 1B-AP-14",
+  "tool": "Python",
+  "advancement_rule": "Project-based: Complete 5 projects to advance",
+
+  "project_templates": [
+    {
+      "project_id": "G6-MAD-LIBS",
+      "project_name": "Mad Libs Generator",
+      "tagline": "Create hilarious stories with Python!",
+      "skill_taught": "variables and input/output",
+      "standard": "1B-AP-13",
+      "what_kids_build": "A Mad Libs game that creates funny stories",
+      "why_exciting": "Making friends laugh with silly stories",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Let's build a Mad Libs game! You input random words, and Python creates a hilarious story!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "Variables store data. We'll store nouns, verbs, adjectives, then put them in a story!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "language": "python",
+                "code": "noun = input('Enter a noun: ')\nverb = input('Enter a verb: ')\nadjective = input('Enter an adjective: ')\n\nstory = 'The ' + adjective + ' ' + noun + ' likes to ' + verb + '.'\nprint(story)",
+                "output": "Enter a noun: elephant\nEnter a verb: dance\nEnter an adjective: purple\nThe purple elephant likes to dance."
+              }
+            },
+            "voice_text": "Each input saves to a variable. Then we join them into a story. Hilarious results!",
+            "duration": 6000
+          }
+        ],
+        "rule_card": {
+          "title": "Variables & Input",
+          "rule": "variable = input('question') asks user and saves answer. Use + to join strings.",
+          "example": "name = input('Name?')\nprint('Hello ' + name)"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Get 3 Words",
+            "prompt": "Ask for a noun, verb, and adjective. Store each in a variable.",
+            "answer": "noun = input('Enter a noun: ')\nverb = input('Enter a verb: ')\nadjective = input('Enter an adjective: ')"
+          },
+          {
+            "challenge_name": "Build the Story",
+            "prompt": "Create a sentence using all three words",
+            "answer": "story = 'The ' + adjective + ' ' + noun + ' loves to ' + verb + '.'\nprint(story)"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your Mad Libs generator works! Share it with friends!",
+        "badge": "Mad Libs Master",
+        "coins": 90
+      }
+    },
+    {
+      "project_id": "G6-GUESS-NUMBER",
+      "project_name": "Number Guessing Game",
+      "tagline": "Can you guess the secret number?",
+      "skill_taught": "conditionals and loops in Python",
+      "standard": "1B-AP-13",
+      "what_kids_build": "A game where computer picks a number and player guesses",
+      "why_exciting": "Classic game that's fun to play and share",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Let's build a guessing game! The computer picks a random number, you have to guess it!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "We need: random number, loop until correct, if-elif-else for too high/low/correct!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "language": "python",
+                "code": "import random\nsecret = random.randint(1, 100)\n\nwhile True:\n    guess = int(input('Guess: '))\n    if guess < secret:\n        print('Too low!')\n    elif guess > secret:\n        print('Too high!')\n    else:\n        print('Correct!')\n        break",
+                "highlight_lines": [4, 6, 8, 10]
+              }
+            },
+            "voice_text": "While True loops forever until break. If checks conditions. Elif means else-if. Else is everything else!",
+            "duration": 6000
+          }
+        ],
+        "rule_card": {
+          "title": "If-Elif-Else & While",
+          "rule": "if/elif/else checks multiple conditions. while True: loops until break.",
+          "example": "while True:\n  if guess == secret:\n    break"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Random Number",
+            "prompt": "Generate a random number between 1 and 50",
+            "answer": "import random\nsecret = random.randint(1, 50)"
+          },
+          {
+            "challenge_name": "Check Too High/Low",
+            "prompt": "Write if-elif-else to check if guess is too high, too low, or correct",
+            "answer": "if guess < secret:\n    print('Too low!')\nelif guess > secret:\n    print('Too high!')\nelse:\n    print('Correct!')"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your guessing game works perfectly! Great use of conditionals!",
+        "badge": "Game Developer",
+        "coins": 90
+      }
+    },
+    {
+      "project_id": "G6-PASSWORD-GEN",
+      "project_name": "Password Generator",
+      "tagline": "Create super secure passwords with code!",
+      "skill_taught": "functions in Python",
+      "standard": "1B-AP-14",
+      "what_kids_build": "A tool that generates random secure passwords",
+      "why_exciting": "Building a USEFUL real-world tool",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Let's build a password generator! It'll create random, secure passwords. We'll use FUNCTIONS!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "A FUNCTION is reusable code with a name. def defines it. Call it with parentheses!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "language": "python",
+                "code": "import random\nimport string\n\ndef generate_password(length):\n    chars = string.ascii_letters + string.digits + '!@#$%'\n    password = ''\n    for i in range(length):\n        password += random.choice(chars)\n    return password\n\nprint(generate_password(12))",
+                "output": "xK9#mP2$vL5q"
+              }
+            },
+            "voice_text": "def creates a function. It takes length as input. return sends the result back!",
+            "duration": 6000
+          }
+        ],
+        "rule_card": {
+          "title": "Functions",
+          "rule": "def function_name(parameters): defines. return sends back a value. Call with name().",
+          "example": "def add(a, b):\n    return a + b\nresult = add(5, 3)"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Basic Function",
+            "prompt": "Create a function called greet that takes a name and returns 'Hello, [name]!'",
+            "answer": "def greet(name):\n    return 'Hello, ' + name + '!'"
+          },
+          {
+            "challenge_name": "Password Function",
+            "prompt": "Create generate_password(length) that returns a random password",
+            "answer": "def generate_password(length):\n    import random, string\n    chars = string.ascii_letters + string.digits\n    password = ''\n    for i in range(length):\n        password += random.choice(chars)\n    return password"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your password generator creates secure passwords! Functions mastered!",
+        "badge": "Function Master",
+        "coins": 90
+      }
+    },
+    {
+      "project_id": "G6-TODO-LIST",
+      "project_name": "To-Do List App",
+      "tagline": "Build your own task manager!",
+      "skill_taught": "lists in Python",
+      "standard": "1B-AP-13",
+      "what_kids_build": "A working to-do list with add/remove/display",
+      "why_exciting": "Building an app they can actually use",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Let's build a to-do list app! Add tasks, mark them done, see your list. We need LISTS!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "A LIST in Python holds multiple items. Use append() to add, remove() to delete!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "language": "python",
+                "code": "tasks = []\n\ntasks.append('Do homework')\ntasks.append('Clean room')\nprint(tasks)\n\ntasks.remove('Do homework')\nprint(tasks)",
+                "output": "['Do homework', 'Clean room']\n['Clean room']"
+              }
+            },
+            "voice_text": "Empty list with brackets. Append adds to end. Remove deletes by value. Print shows all!",
+            "duration": 6000
+          }
+        ],
+        "rule_card": {
+          "title": "Python Lists",
+          "rule": "list = [] creates empty list. .append() adds. .remove() deletes. len() counts items.",
+          "example": "tasks.append('New task')\nprint(tasks[0])  # first item"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Add Tasks",
+            "prompt": "Create a tasks list and add 'Study Python' to it",
+            "answer": "tasks = []\ntasks.append('Study Python')"
+          },
+          {
+            "challenge_name": "Show All Tasks",
+            "prompt": "Loop through and print each task with a number",
+            "answer": "for i, task in enumerate(tasks, 1):\n    print(str(i) + '. ' + task)"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your to-do app works! You can actually use it!",
+        "badge": "App Builder",
+        "coins": 90
+      }
+    },
+    {
+      "project_id": "G6-QUIZ-APP",
+      "project_name": "Quiz App",
+      "tagline": "Build a quiz that tests your friends!",
+      "skill_taught": "combining all Python basics",
+      "standard": "1B-AP-14",
+      "what_kids_build": "A multiple-choice quiz with scoring",
+      "why_exciting": "Creating something to challenge friends",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Let's build a quiz app! Questions, multiple choices, score tracking - it uses EVERYTHING you learned!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "This project combines: lists (questions), loops (go through each), conditionals (check answers), variables (score)!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "language": "python",
+                "code": "questions = ['What is 2+2?', 'Capital of France?']\nanswers = ['4', 'Paris']\nscore = 0\n\nfor i in range(len(questions)):\n    print(questions[i])\n    user_answer = input('Your answer: ')\n    if user_answer == answers[i]:\n        print('Correct!')\n        score += 1\n    else:\n        print('Wrong! Answer: ' + answers[i])\n\nprint('Score: ' + str(score) + '/' + str(len(questions)))"
+              }
+            },
+            "voice_text": "Two lists - questions and answers. Loop through, check each, track score. Full program!",
+            "duration": 7000
+          }
+        ]
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Create Questions",
+            "prompt": "Make a list with 3 questions and a list with 3 answers",
+            "answer": "questions = ['2+2?', '3*3?', '10-5?']\nanswers = ['4', '9', '5']"
+          },
+          {
+            "challenge_name": "Check Answer",
+            "prompt": "Compare user's answer to correct answer and update score",
+            "answer": "if user_answer == answers[i]:\n    score += 1\n    print('Correct!')\nelse:\n    print('Wrong!')"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your quiz app is complete! You combined ALL your Python skills!",
+        "badge": "Python Pro",
+        "coins": 100
+      }
+    }
+  ],
+
+  "summary": {
+    "total_projects": 5,
+    "skills_covered": ["variables/input/output", "conditionals/loops", "functions", "lists", "combining concepts"],
+    "tool": "Python",
+    "theme_consistency": "Real, useful apps and projects for 11-year-olds"
+  }
+}

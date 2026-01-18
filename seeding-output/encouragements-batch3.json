@@ -1,0 +1,302 @@
+[
+  {
+    "trigger": "trying_hard",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Hey, I’ve noticed how hard you’re working on spelling! Keep it up, your effort is really paying off!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Hey, I’ve noticed how hard you’re working on spelling! Keep it up, your effort is really paying off!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "I’m impressed by your dedication to mastering spelling. Your hard work is paying off—keep it up!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "I’m impressed by your dedication to mastering spelling. Your hard work is paying off—keep it up!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, you're working so hard on coding! Keep trying, you're amazing! 💻✨"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, you're working so hard on coding! Keep it up, superstar! 🌟💻"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Awesome job working hard on coding! Your effort is making you a super coder—keep it up!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Wow, your hard work in coding is awesome! Keep solving those tricky problems—you’re doing great!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Hey, I see how hard you’re working on coding! That’s awesome—keep pushing, you’ve got this!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Hey, I see how hard you’re working on coding! Keep it up, your effort is awesome!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "Your dedication to coding is impressive! Keep pushing through challenges; your hard work is building real skills."
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "Your dedication to coding is impressive! Keep pushing through challenges; your hard work is building real skills."
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, you're working so hard on typing! Keep pressing those keys! You're awesome! 🌟💻"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, you're working so hard on typing! Keep pressing those keys! You're amazing! 🌟💻"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Wow, I’m so proud of how hard you’re working on typing! Keep practicing, you’re getting faster every day!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Wow, you're working so hard on your typing! Keep practicing—your speedy fingers are getting better every day!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Hey, I see you working hard on your typing! Keep it up, your effort is really paying off!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Hey, I’ve noticed how hard you’re working on your typing skills! Keep it up, you’re getting faster every day!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "I'm impressed by your dedication to improving your typing skills. Your consistent effort is paying off—keep it up!"
+  },
+  {
+    "trigger": "trying_hard",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "Your dedication to improving your typing skills is impressive. Keep up the great effort—it’s paying off!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Wow, you fixed your math mistake! Super job! I'm so proud of you! 🌟👍"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Wow, you fixed your math mistake! Super job! I'm so proud of you! 🌟😊"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Awesome job fixing that math mistake! I'm so proud of your hard work and determination!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Awesome job fixing that math mistake! I’m so proud of your hard work and determination!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Hey, awesome job fixing that math mistake! It’s cool to see you figure it out and get it right!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Hey, awesome job fixing that math mistake! It’s cool to see you figure it out and get it right!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "Great job recognizing and fixing your math mistake! That shows real dedication and critical thinking. Keep up the strong work!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "Great job correcting your math mistake! Recognizing and fixing errors shows true understanding and dedication. Keep up the excellent work!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, you fixed your reading mistake! I’m so proud of you! Great job! 🌟🎉"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Yay! You fixed your reading mistake! I'm so proud of you! Keep trying! 🌟📚"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Awesome job fixing that reading mistake! I’m so proud of how you worked hard to get it right!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Awesome job fixing that reading mistake! I’m so proud of how you worked hard to get it right!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, awesome job fixing that reading mistake! It’s cool to see you catch it and make it right!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, awesome job fixing that reading mistake! It’s cool to see you catch it and make it right!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "Great job recognizing and correcting your reading mistake! That shows real dedication and growth. Keep up the excellent work!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "Great job recognizing and correcting your reading error. That shows real dedication and critical thinking. Keep up the excellent work!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Wow, you fixed your spelling mistake! Super job! I’m so proud of you! 🌟👍"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Yay! You fixed your spelling mistake! I’m so proud of you! Keep trying! 🌟🎉"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Awesome job fixing that spelling mistake! I’m so proud of how you spotted it and made it right!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Awesome job fixing that spelling mistake! I’m so proud of how you spotted it and made it right!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Hey, awesome job fixing that spelling mistake! It’s cool to see you taking the time to get it right!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Hey, awesome job fixing that spelling mistake! It’s cool to see you catch it and make it right!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "Great job correcting your spelling error! Your attention to detail and willingness to improve are impressive. Keep it up!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "Great job correcting your spelling error! Your attention to detail and willingness to improve are impressive. Keep up the excellent work!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, you fixed your coding mistake! Super job! I'm so proud of you! 🌟💻"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, you fixed your coding mistake! Super job! I’m so proud of you! 🌟💻 Yay!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Awesome job fixing that coding mistake! I'm so proud of how you figured it out. Keep up the great work!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Awesome job fixing that coding mistake! You’re learning so much, and I’m super proud of your hard work!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Hey, awesome job fixing that coding mistake! It’s cool to see you figure it out and make it work!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Hey, awesome job fixing that coding mistake! It’s so cool to see you figure it out and keep going!"
+  }
+]

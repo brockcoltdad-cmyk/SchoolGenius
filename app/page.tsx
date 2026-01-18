@@ -760,12 +760,25 @@ export default function Home() {
   const [isChanging, setIsChanging] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+  // Load theme from localStorage on mount
+  useEffect(() => {
+    const saved = localStorage.getItem('schoolgenius-theme');
+    if (saved !== null) {
+      const index = parseInt(saved, 10);
+      if (index >= 0 && index < themes.length) {
+        setSelectedTheme(index);
+      }
+    }
+  }, []);
+
   const currentTheme = themes[selectedTheme];
   const config = themeDashboardConfigs[currentTheme.id];
 
   const handleThemeChange = (index: number) => {
     if (index === selectedTheme) return;
     setIsChanging(true);
+    // Save to localStorage
+    localStorage.setItem('schoolgenius-theme', index.toString());
     setTimeout(() => {
       setSelectedTheme(index);
       setIsChanging(false);

@@ -1,0 +1,352 @@
+[
+  {
+    "subject": "Math",
+    "concept": "percentages",
+    "age_group": "grades35",
+    "analogy": "Think of a soccer game. If you score 7 out of 10 shots, that’s 70%! Percentages show how many parts out of 100 you’ve got.",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Math",
+    "concept": "percentages",
+    "age_group": "grades35",
+    "analogy": "Think of a soccer game. If you score 7 out of 10 goals, that’s 70%! Percentages show how much you’ve got out of the whole.",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Math",
+    "concept": "percentages",
+    "age_group": "grades68",
+    "analogy": "Think of percentages like your phone’s battery. If it’s at 75%, you’ve used 75 out of 100 parts of its power!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Math",
+    "concept": "percentages",
+    "age_group": "grades68",
+    "analogy": "Percentages are like your phone’s battery life. If it’s at 75%, you’ve used 25%—it shows parts of a whole as a fraction of 100!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Math",
+    "concept": "percentages",
+    "age_group": "grades912",
+    "analogy": "Think of percentages as a music streaming playlist. If 70% of your playlist is hip-hop, 70 out of 100 songs are hip-hop tracks.",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Math",
+    "concept": "percentages",
+    "age_group": "grades912",
+    "analogy": "Think of percentages as a music streaming playlist. If 70% of your playlist is hip-hop, 70 out of 100 songs are hip-hop tracks.",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Math",
+    "concept": "algebra",
+    "age_group": "k2",
+    "analogy": "Algebra is like solving a puzzle with missing pieces. You use clues, like numbers and letters, to find the missing toy in your toy box!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Math",
+    "concept": "algebra",
+    "age_group": "k2",
+    "analogy": "Algebra is like solving a puzzle with missing pieces. You use clues, like numbers and letters, to find the missing toy in your toy box!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Math",
+    "concept": "algebra",
+    "age_group": "grades35",
+    "analogy": "Algebra is like solving a puzzle in a treasure hunt game. You use clues (numbers and letters) to find the missing piece (x) and win!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Math",
+    "concept": "algebra",
+    "age_group": "grades35",
+    "analogy": "Algebra is like a treasure hunt game! You solve puzzles using clues (numbers and letters) to find the hidden treasure (the answer).",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Math",
+    "concept": "algebra",
+    "age_group": "grades68",
+    "analogy": "Algebra is like solving a mystery game on your phone. You use clues (numbers and rules) to find the hidden value (x) and win!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Math",
+    "concept": "algebra",
+    "age_group": "grades68",
+    "analogy": "Algebra is like solving a mystery game on your phone. You use clues (numbers and rules) to find the hidden value (x) and win!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Math",
+    "concept": "algebra",
+    "age_group": "grades912",
+    "analogy": "Algebra is like coding a video game: variables are placeholders for unknown values, and equations set the rules to solve challenges and win.",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Math",
+    "concept": "algebra",
+    "age_group": "grades912",
+    "analogy": "Algebra is like coding a game: variables are placeholders, equations are rules, and solving them designs the gameplay.",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Reading",
+    "concept": "main idea",
+    "age_group": "k2",
+    "analogy": "The main idea is like the biggest toy in your toy box. It’s the most important part of the story that everything else connects to!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Reading",
+    "concept": "main idea",
+    "age_group": "k2",
+    "analogy": "The main idea is like the biggest toy in your toy box. It’s the most important part of the story that everything else plays with!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Reading",
+    "concept": "main idea",
+    "age_group": "grades35",
+    "analogy": "The main idea is like the star player on a soccer team. It’s the biggest, most important part that the whole story focuses on!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Reading",
+    "concept": "main idea",
+    "age_group": "grades35",
+    "analogy": "The main idea is like the star player on a soccer team. It’s the biggest, most important part that the whole story focuses on!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Reading",
+    "concept": "main idea",
+    "age_group": "grades68",
+    "analogy": "The main idea is like the core message of a group chat. It’s the big point everyone’s talking about, even with lots of side comments!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Reading",
+    "concept": "main idea",
+    "age_group": "grades68",
+    "analogy": "The main idea is like the headline of a viral TikTok video—it’s the big point everything else supports!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Reading",
+    "concept": "main idea",
+    "age_group": "grades912",
+    "analogy": "The main idea is like a movie trailer—it captures the core story, highlighting the most important theme or message, no matter the viewer’s background.",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Reading",
+    "concept": "main idea",
+    "age_group": "grades912",
+    "analogy": "The main idea is like the CEO of a company—it’s the central focus that directs all the supporting details and decisions.",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Reading",
+    "concept": "context clues",
+    "age_group": "k2",
+    "analogy": "Context clues are like puzzle pieces. When a word is tricky, look at nearby words. They help you guess, just like fitting pieces together!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Reading",
+    "concept": "context clues",
+    "age_group": "k2",
+    "analogy": "Context clues are like puzzle pieces. When a word is tricky, look at the other words around it. They help you figure out the missing piece!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Reading",
+    "concept": "context clues",
+    "age_group": "grades35",
+    "analogy": "Context clues are like hints in a treasure hunt. The words around a tricky word help you guess its meaning, just like map clues lead to treasure!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Reading",
+    "concept": "context clues",
+    "age_group": "grades35",
+    "analogy": "Context clues are like hints in a treasure hunt. The words around a tricky word help you guess its meaning, just like map clues lead to treasure!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Reading",
+    "concept": "context clues",
+    "age_group": "grades68",
+    "analogy": "Context clues are like hints in a video game. They help you figure out tricky words by using nearby words and ideas, just like game tips guide you!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Reading",
+    "concept": "context clues",
+    "age_group": "grades68",
+    "analogy": "Context clues are like hints in a video game. They’re nearby words or ideas that help you figure out unknown words, just like game tips guide you!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Reading",
+    "concept": "context clues",
+    "age_group": "grades912",
+    "analogy": "Context clues are like detective work. When a word stumps you, surrounding sentences provide hints—like evidence at a crime scene—helping you uncover its meaning.",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Reading",
+    "concept": "context clues",
+    "age_group": "grades912",
+    "analogy": "Context clues are like detective work. When a word stumps you, surrounding sentences provide hints, just as evidence at a crime scene reveals the story.",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Reading",
+    "concept": "inference",
+    "age_group": "k2",
+    "analogy": "Inference is like being a toy detective. You look at clues in a story, like a missing teddy, and guess what happened!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Reading",
+    "concept": "inference",
+    "age_group": "k2",
+    "analogy": "Inference is like being a detective with a toy mystery. You look at clues, like muddy paws, and guess your puppy was outside!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Reading",
+    "concept": "inference",
+    "age_group": "grades35",
+    "analogy": "Inference is like being a detective in a soccer game, guessing the next move by watching players’ actions and clues!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Reading",
+    "concept": "inference",
+    "age_group": "grades35",
+    "analogy": "Inference is like being a detective in a game. You use clues from the story to guess what’s happening, even if it’s not said!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Reading",
+    "concept": "inference",
+    "age_group": "grades68",
+    "analogy": "Inference is like being a detective on social media. You piece together clues from posts and comments to figure out what’s really happening, even if it’s not directly said!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Reading",
+    "concept": "inference",
+    "age_group": "grades68",
+    "analogy": "Inference is like being a detective on social media. You piece together clues from posts and comments to guess what’s really happening in someone’s life!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Reading",
+    "concept": "inference",
+    "age_group": "grades912",
+    "analogy": "Inference is like being a detective, piecing together clues from a crime scene to uncover hidden truths not directly stated in the text.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Reading",
+    "concept": "inference",
+    "age_group": "grades912",
+    "analogy": "Inference is like being a detective, piecing together clues from a crime scene to solve a mystery without all the facts.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Reading",
+    "concept": "theme",
+    "age_group": "k2",
+    "analogy": "A theme is like the heart of a story, just like a teddy bear’s hug tells you it loves you. It’s the big idea or feeling!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Reading",
+    "concept": "theme",
+    "age_group": "k2",
+    "analogy": "A theme is like the heart of a story, just like a teddy bear’s hug shows love. It’s the big idea or feeling the story shares with everyone!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Reading",
+    "concept": "theme",
+    "age_group": "grades35",
+    "analogy": "Theme is like the main goal in a soccer game. Every play and pass works toward that big idea, just like story details support the central message!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Reading",
+    "concept": "theme",
+    "age_group": "grades35",
+    "analogy": "A theme is like the main idea of a soccer game—teamwork! It’s the big message or lesson the story teaches, guiding every play.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Reading",
+    "concept": "theme",
+    "age_group": "grades68",
+    "analogy": "Theme is like the main vibe of a TikTok trend. It’s the big idea or message that ties all the videos together, no matter who’s posting!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Reading",
+    "concept": "theme",
+    "age_group": "grades68",
+    "analogy": "Theme is like the main vibe of a TikTok trend—it’s the big idea or message that connects all the videos, like friendship or courage.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Reading",
+    "concept": "theme",
+    "age_group": "grades912",
+    "analogy": "A theme is like a smartphone's operating system—it’s the underlying idea that drives the story’s purpose, connecting all elements together.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Reading",
+    "concept": "theme",
+    "age_group": "grades912",
+    "analogy": "A theme is like the core mission of a company—it's the central idea or message guiding every story element, just as a mission drives business decisions.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Reading",
+    "concept": "metaphor",
+    "age_group": "k2",
+    "analogy": "A metaphor is like saying a teddy bear is a cuddly cloud. It’s not really a cloud, but it feels soft and cozy like one!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Reading",
+    "concept": "metaphor",
+    "age_group": "k2",
+    "analogy": "A metaphor is like calling your teddy bear a 'soft cloud.' It’s not really a cloud, but it feels cuddly like one!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Reading",
+    "concept": "metaphor",
+    "age_group": "grades35",
+    "analogy": "A metaphor is like calling a soccer player a 'cheetah' on the field. It means they’re super fast, without saying 'fast' directly!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Reading",
+    "concept": "metaphor",
+    "age_group": "grades35",
+    "analogy": "A metaphor is like calling your soccer teammate a 'lion' because they’re fierce and strong, comparing without using 'like' or 'as.'",
+    "difficulty": "advanced"
+  }
+]

@@ -1,0 +1,185 @@
+[
+  {
+    "pattern_type": "user_question",
+    "pattern_text": "Have Grok generate",
+    "context": "Common user request pattern",
+    "frequency": 5
+  },
+  {
+    "pattern_type": "user_question",
+    "pattern_text": "Can you create",
+    "context": "Common user request pattern",
+    "frequency": 5
+  },
+  {
+    "pattern_type": "user_question",
+    "pattern_text": "Run this in background",
+    "context": "Common user request pattern",
+    "frequency": 5
+  },
+  {
+    "pattern_type": "user_question",
+    "pattern_text": "Check the progress",
+    "context": "Common user request pattern",
+    "frequency": 5
+  },
+  {
+    "pattern_type": "user_question",
+    "pattern_text": "Fix the error",
+    "context": "Common user request pattern",
+    "frequency": 5
+  },
+  {
+    "pattern_type": "user_question",
+    "pattern_text": "Generate all",
+    "context": "Common user request pattern",
+    "frequency": 5
+  },
+  {
+    "pattern_type": "user_question",
+    "pattern_text": "Make a script",
+    "context": "Common user request pattern",
+    "frequency": 5
+  },
+  {
+    "pattern_type": "user_question",
+    "pattern_text": "Save to library",
+    "context": "Common user request pattern",
+    "frequency": 5
+  },
+  {
+    "pattern_type": "term",
+    "pattern_text": "age-appropriate",
+    "context": "Frequently used terminology",
+    "frequency": 10
+  },
+  {
+    "pattern_type": "term",
+    "pattern_text": "seeding",
+    "context": "Frequently used terminology",
+    "frequency": 10
+  },
+  {
+    "pattern_type": "term",
+    "pattern_text": "closed-loop",
+    "context": "Frequently used terminology",
+    "frequency": 10
+  },
+  {
+    "pattern_type": "term",
+    "pattern_text": "CodeLibrary",
+    "context": "Frequently used terminology",
+    "frequency": 10
+  },
+  {
+    "pattern_type": "term",
+    "pattern_text": "batches",
+    "context": "Frequently used terminology",
+    "frequency": 10
+  },
+  {
+    "pattern_type": "term",
+    "pattern_text": "Grok API",
+    "context": "Frequently used terminology",
+    "frequency": 10
+  },
+  {
+    "pattern_type": "term",
+    "pattern_text": "Supabase",
+    "context": "Frequently used terminology",
+    "frequency": 10
+  },
+  {
+    "pattern_type": "term",
+    "pattern_text": "SchoolGenius",
+    "context": "Frequently used terminology",
+    "frequency": 10
+  },
+  {
+    "pattern_type": "term",
+    "pattern_text": "generate-explanations-direct",
+    "context": "Frequently used terminology",
+    "frequency": 10
+  },
+  {
+    "pattern_type": "term",
+    "pattern_text": "kid stuck responses",
+    "context": "Frequently used terminology",
+    "frequency": 10
+  },
+  {
+    "pattern_type": "term",
+    "pattern_text": "multi-level explanations",
+    "context": "Frequently used terminology",
+    "frequency": 10
+  },
+  {
+    "pattern_type": "code_pattern",
+    "pattern_text": "await fetch('https://api.x.ai/v1/chat/completions', {\n  method: 'POST',\n  headers: {\n    'Authorization': `Bearer ${GROK_KEY}`,\n    'Content-Type': 'application/json'\n  },\n  body: JSON.stringify({\n    model: 'grok-3',\n    messages: [{ role: 'user', content: prompt }],\n    temperature: 0.7\n  })\n})",
+    "pattern_name": "Grok API Call",
+    "context": "Proven code template",
+    "frequency": 50
+  },
+  {
+    "pattern_type": "code_pattern",
+    "pattern_text": "await supabase.from('table').insert(data)",
+    "pattern_name": "Supabase Insert",
+    "context": "Proven code template",
+    "frequency": 45
+  },
+  {
+    "pattern_type": "code_pattern",
+    "pattern_text": "for (let i = 0; i < BATCH_SIZE; i++) {\n  await processItem()\n  await new Promise(resolve => setTimeout(resolve, DELAY_MS))\n}",
+    "pattern_name": "Batch Processing Loop",
+    "context": "Proven code template",
+    "frequency": 30
+  },
+  {
+    "pattern_type": "instruction",
+    "pattern_text": "Generate in batches of 50",
+    "context": "Best practice guideline",
+    "frequency": 8
+  },
+  {
+    "pattern_type": "instruction",
+    "pattern_text": "Use 5 second delays",
+    "context": "Best practice guideline",
+    "frequency": 8
+  },
+  {
+    "pattern_type": "instruction",
+    "pattern_text": "Save to JSON first",
+    "context": "Best practice guideline",
+    "frequency": 8
+  },
+  {
+    "pattern_type": "instruction",
+    "pattern_text": "Use grok-3 model",
+    "context": "Best practice guideline",
+    "frequency": 8
+  },
+  {
+    "pattern_type": "instruction",
+    "pattern_text": "Follow generate-explanations-direct pattern",
+    "context": "Best practice guideline",
+    "frequency": 8
+  },
+  {
+    "pattern_type": "instruction",
+    "pattern_text": "Run in background",
+    "context": "Best practice guideline",
+    "frequency": 8
+  },
+  {
+    "pattern_type": "instruction",
+    "pattern_text": "Save to CodeLibrary",
+    "context": "Best practice guideline",
+    "frequency": 8
+  },
+  {
+    "pattern_type": "instruction",
+    "pattern_text": "Check progress every 10 items",
+    "context": "Best practice guideline",
+    "frequency": 8
+  }
+]

@@ -1,0 +1,218 @@
+{
+  "grade": 4,
+  "grade_name": "Fourth Grade",
+  "total_target": 4000,
+  "standards": ["RF.4.3", "L.4.2", "L.4.4"],
+  "skills": [
+    {
+      "skill": "Greek root graph",
+      "code": "GRGR",
+      "standard": "L.4.4",
+      "count": 300,
+      "visual_type": "word_building",
+      "root": "graph",
+      "meaning": "write or draw",
+      "words": ["graph", "graphic", "paragraph", "photograph", "autograph", "biography", "geography", "telegraph", "phonograph", "calligraphy", "bibliography", "choreograph", "seismograph", "pictograph", "polygraph"]
+    },
+    {
+      "skill": "Greek root phon",
+      "code": "GRPH",
+      "standard": "L.4.4",
+      "count": 300,
+      "visual_type": "word_building",
+      "root": "phon",
+      "meaning": "sound",
+      "words": ["phone", "phonics", "phoneme", "symphony", "telephone", "microphone", "saxophone", "xylophone", "headphone", "earphone", "homophone", "euphony", "cacophony", "polyphony", "phonograph"]
+    },
+    {
+      "skill": "Greek root scope",
+      "code": "GRSC",
+      "standard": "L.4.4",
+      "count": 300,
+      "visual_type": "word_building",
+      "root": "scope",
+      "meaning": "see or watch",
+      "words": ["scope", "telescope", "microscope", "horoscope", "periscope", "stethoscope", "kaleidoscope", "gyroscope", "endoscope", "oscilloscope"]
+    },
+    {
+      "skill": "Latin root dict",
+      "code": "LTDC",
+      "standard": "L.4.4",
+      "count": 300,
+      "visual_type": "word_building",
+      "root": "dict",
+      "meaning": "say or speak",
+      "words": ["dictate", "diction", "dictionary", "predict", "verdict", "contradict", "addict", "edict", "indict", "benediction", "malediction", "valedictorian", "jurisdiction"]
+    },
+    {
+      "skill": "Latin root port",
+      "code": "LTPT",
+      "standard": "L.4.4",
+      "count": 300,
+      "visual_type": "word_building",
+      "root": "port",
+      "meaning": "carry",
+      "words": ["port", "portal", "porter", "portable", "import", "export", "report", "support", "transport", "airport", "passport", "deport", "portfolio", "important", "opportunity"]
+    },
+    {
+      "skill": "Latin root struct",
+      "code": "LTST",
+      "standard": "L.4.4",
+      "count": 300,
+      "visual_type": "word_building",
+      "root": "struct",
+      "meaning": "build",
+      "words": ["structure", "construct", "instruct", "destruct", "obstruct", "infrastructure", "restructure", "instruction", "construction", "destruction", "instructor", "structural"]
+    },
+    {
+      "skill": "doubling rule",
+      "code": "DBLR",
+      "standard": "RF.4.3",
+      "count": 500,
+      "visual_type": "spelling_rule",
+      "rule": "Double the final consonant before adding -ed or -ing if the word has one syllable with one short vowel and ends in one consonant.",
+      "words": [
+        {"base": "stop", "ed": "stopped", "ing": "stopping"},
+        {"base": "hop", "ed": "hopped", "ing": "hopping"},
+        {"base": "run", "ed": "ran", "ing": "running"},
+        {"base": "sit", "ed": "sat", "ing": "sitting"},
+        {"base": "plan", "ed": "planned", "ing": "planning"},
+        {"base": "swim", "ed": "swam", "ing": "swimming"},
+        {"base": "trip", "ed": "tripped", "ing": "tripping"},
+        {"base": "drop", "ed": "dropped", "ing": "dropping"},
+        {"base": "slip", "ed": "slipped", "ing": "slipping"},
+        {"base": "snap", "ed": "snapped", "ing": "snapping"},
+        {"base": "grab", "ed": "grabbed", "ing": "grabbing"},
+        {"base": "wrap", "ed": "wrapped", "ing": "wrapping"},
+        {"base": "step", "ed": "stepped", "ing": "stepping"},
+        {"base": "skip", "ed": "skipped", "ing": "skipping"},
+        {"base": "spin", "ed": "spun", "ing": "spinning"},
+        {"base": "win", "ed": "won", "ing": "winning"},
+        {"base": "begin", "ed": "began", "ing": "beginning"},
+        {"base": "forget", "ed": "forgot", "ing": "forgetting"},
+        {"base": "permit", "ed": "permitted", "ing": "permitting"},
+        {"base": "submit", "ed": "submitted", "ing": "submitting"}
+      ]
+    },
+    {
+      "skill": "drop e rule",
+      "code": "DRPE",
+      "standard": "RF.4.3",
+      "count": 500,
+      "visual_type": "spelling_rule",
+      "rule": "Drop the silent e before adding a suffix that begins with a vowel (-ing, -ed, -er, -est, -able).",
+      "words": [
+        {"base": "make", "ed": "made", "ing": "making", "er": "maker"},
+        {"base": "bake", "ed": "baked", "ing": "baking", "er": "baker"},
+        {"base": "take", "ing": "taking", "er": "taker"},
+        {"base": "write", "ing": "writing", "er": "writer"},
+        {"base": "ride", "ing": "riding", "er": "rider"},
+        {"base": "drive", "ing": "driving", "er": "driver"},
+        {"base": "hope", "ed": "hoped", "ing": "hoping"},
+        {"base": "love", "ed": "loved", "ing": "loving", "able": "lovable"},
+        {"base": "use", "ed": "used", "ing": "using", "able": "usable"},
+        {"base": "move", "ed": "moved", "ing": "moving", "able": "movable"},
+        {"base": "close", "ed": "closed", "ing": "closing", "er": "closer"},
+        {"base": "save", "ed": "saved", "ing": "saving", "er": "saver"},
+        {"base": "smile", "ed": "smiled", "ing": "smiling"},
+        {"base": "dance", "ed": "danced", "ing": "dancing", "er": "dancer"},
+        {"base": "create", "ed": "created", "ing": "creating"},
+        {"base": "imagine", "ed": "imagined", "ing": "imagining"}
+      ]
+    },
+    {
+      "skill": "change y to i rule",
+      "code": "CHYI",
+      "standard": "RF.4.3",
+      "count": 500,
+      "visual_type": "spelling_rule",
+      "rule": "When a word ends in consonant + y, change y to i before adding a suffix (except -ing).",
+      "words": [
+        {"base": "happy", "er": "happier", "est": "happiest", "ly": "happily", "ness": "happiness"},
+        {"base": "easy", "er": "easier", "est": "easiest", "ly": "easily"},
+        {"base": "busy", "er": "busier", "est": "busiest", "ly": "busily"},
+        {"base": "funny", "er": "funnier", "est": "funniest"},
+        {"base": "pretty", "er": "prettier", "est": "prettiest"},
+        {"base": "lucky", "er": "luckier", "est": "luckiest", "ly": "luckily"},
+        {"base": "carry", "ed": "carried", "er": "carrier", "es": "carries"},
+        {"base": "hurry", "ed": "hurried", "es": "hurries"},
+        {"base": "worry", "ed": "worried", "es": "worries"},
+        {"base": "study", "ed": "studied", "es": "studies"},
+        {"base": "copy", "ed": "copied", "es": "copies"},
+        {"base": "try", "ed": "tried", "es": "tries"},
+        {"base": "cry", "ed": "cried", "es": "cries"},
+        {"base": "dry", "er": "drier", "est": "driest"},
+        {"base": "lazy", "er": "lazier", "est": "laziest", "ly": "lazily"}
+      ]
+    },
+    {
+      "skill": "plural rules",
+      "code": "PLRL",
+      "standard": "L.4.2",
+      "count": 500,
+      "visual_type": "spelling_rule",
+      "rule": "Add -es to words ending in s, x, z, ch, sh. Change f to v and add -es for some words.",
+      "words": [
+        {"singular": "bus", "plural": "buses"},
+        {"singular": "class", "plural": "classes"},
+        {"singular": "box", "plural": "boxes"},
+        {"singular": "fox", "plural": "foxes"},
+        {"singular": "quiz", "plural": "quizzes"},
+        {"singular": "buzz", "plural": "buzzes"},
+        {"singular": "church", "plural": "churches"},
+        {"singular": "beach", "plural": "beaches"},
+        {"singular": "wish", "plural": "wishes"},
+        {"singular": "dish", "plural": "dishes"},
+        {"singular": "leaf", "plural": "leaves"},
+        {"singular": "life", "plural": "lives"},
+        {"singular": "wife", "plural": "wives"},
+        {"singular": "knife", "plural": "knives"},
+        {"singular": "half", "plural": "halves"},
+        {"singular": "shelf", "plural": "shelves"},
+        {"singular": "wolf", "plural": "wolves"},
+        {"singular": "calf", "plural": "calves"},
+        {"singular": "loaf", "plural": "loaves"},
+        {"singular": "thief", "plural": "thieves"}
+      ]
+    },
+    {
+      "skill": "irregular plurals",
+      "code": "IRPL",
+      "standard": "L.4.2",
+      "count": 300,
+      "visual_type": "word_building",
+      "words": [
+        {"singular": "child", "plural": "children"},
+        {"singular": "man", "plural": "men"},
+        {"singular": "woman", "plural": "women"},
+        {"singular": "tooth", "plural": "teeth"},
+        {"singular": "foot", "plural": "feet"},
+        {"singular": "goose", "plural": "geese"},
+        {"singular": "mouse", "plural": "mice"},
+        {"singular": "person", "plural": "people"},
+        {"singular": "ox", "plural": "oxen"},
+        {"singular": "deer", "plural": "deer"},
+        {"singular": "sheep", "plural": "sheep"},
+        {"singular": "fish", "plural": "fish"},
+        {"singular": "moose", "plural": "moose"},
+        {"singular": "aircraft", "plural": "aircraft"},
+        {"singular": "series", "plural": "series"}
+      ]
+    }
+  ],
+  "question_templates": [
+    "Listen to the word and spell it: {word}",
+    "Type the word you hear: {word}",
+    "Spell the word: {word}"
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

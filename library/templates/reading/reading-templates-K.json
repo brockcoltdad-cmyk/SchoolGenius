@@ -1,0 +1,205 @@
+{
+  "grade": 0,
+  "grade_name": "Kindergarten",
+  "lexile_range": "BR-200L",
+  "default_lexile": "BR",
+  "standards": ["RF.K.1", "RF.K.2", "RF.K.3", "RF.K.4", "RL.K.1", "RL.K.2", "RL.K.3"],
+  "total_target": 8000,
+  "skills": [
+    {
+      "skill": "letter recognition",
+      "code": "LETR",
+      "standard": "RF.K.1",
+      "count": 1000,
+      "visual_type": "phonics",
+      "question_templates": [
+        "Which letter is this? {letter}",
+        "Find the letter {letter}.",
+        "What letter comes after {letter}?",
+        "Is this letter {letter} or {wrong_letter}?"
+      ],
+      "letters": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+    },
+    {
+      "skill": "letter sounds",
+      "code": "PHON",
+      "standard": "RF.K.3",
+      "count": 1200,
+      "visual_type": "phonics",
+      "question_templates": [
+        "What sound does the letter {letter} make?",
+        "Which letter makes the /{sound}/ sound?",
+        "What is the beginning sound in {word}?"
+      ],
+      "letter_sounds": {
+        "A": "ah", "B": "buh", "C": "kuh", "D": "duh", "E": "eh",
+        "F": "fff", "G": "guh", "H": "huh", "I": "ih", "J": "juh",
+        "K": "kuh", "L": "lll", "M": "mmm", "N": "nnn", "O": "oh",
+        "P": "puh", "Q": "kwuh", "R": "rrr", "S": "sss", "T": "tuh",
+        "U": "uh", "V": "vvv", "W": "wuh", "X": "ks", "Y": "yuh", "Z": "zzz"
+      }
+    },
+    {
+      "skill": "rhyming words",
+      "code": "PHON",
+      "standard": "RF.K.2",
+      "count": 800,
+      "visual_type": "word_building",
+      "question_templates": [
+        "Which word rhymes with {word}?",
+        "Do {word1} and {word2} rhyme?",
+        "Pick the word that rhymes with {word}."
+      ],
+      "rhyme_families": {
+        "at": ["cat", "bat", "hat", "mat", "rat", "sat", "fat", "pat"],
+        "an": ["can", "man", "pan", "ran", "tan", "fan", "van", "dan"],
+        "ap": ["cap", "map", "nap", "tap", "lap", "gap", "zap", "rap"],
+        "og": ["dog", "log", "fog", "hog", "jog", "frog", "blog"],
+        "op": ["top", "hop", "pop", "mop", "stop", "drop", "shop"],
+        "ot": ["hot", "pot", "dot", "got", "lot", "not", "cot"],
+        "ig": ["pig", "big", "dig", "fig", "wig", "jig", "rig"],
+        "in": ["pin", "win", "tin", "fin", "bin", "din", "sin"],
+        "it": ["sit", "hit", "bit", "fit", "kit", "lit", "pit"],
+        "ug": ["bug", "hug", "mug", "rug", "tug", "dug", "jug"],
+        "un": ["run", "sun", "fun", "bun", "gun", "nun", "pun"],
+        "ut": ["cut", "but", "hut", "nut", "put", "gut", "rut"]
+      }
+    },
+    {
+      "skill": "CVC words",
+      "code": "BLND",
+      "standard": "RF.K.3",
+      "count": 1500,
+      "visual_type": "word_building",
+      "question_templates": [
+        "Blend the sounds: {c}-{v}-{c}. What word is it?",
+        "What word do these letters make? {letters}",
+        "Sound it out: {word}"
+      ],
+      "cvc_words": [
+        "cat", "bat", "hat", "mat", "rat", "sat", "pat", "fat",
+        "can", "man", "pan", "ran", "tan", "fan", "van",
+        "cap", "map", "nap", "tap", "lap", "gap", "zap",
+        "dog", "log", "fog", "hog", "jog",
+        "top", "hop", "pop", "mop", "cop",
+        "hot", "pot", "dot", "got", "lot", "not", "cot",
+        "pig", "big", "dig", "fig", "wig", "jig",
+        "pin", "win", "tin", "fin", "bin",
+        "sit", "hit", "bit", "fit", "kit", "lit", "pit",
+        "bug", "hug", "mug", "rug", "tug", "dug", "jug",
+        "run", "sun", "fun", "bun",
+        "cut", "but", "hut", "nut",
+        "bed", "red", "led", "fed", "wed",
+        "pen", "hen", "ten", "men", "den",
+        "pet", "wet", "set", "get", "let", "met", "net", "bet"
+      ]
+    },
+    {
+      "skill": "sight words",
+      "code": "SGHT",
+      "standard": "RF.K.3",
+      "count": 1500,
+      "visual_type": "sight_word",
+      "question_templates": [
+        "Read this word: {word}",
+        "Which word is '{word}'?",
+        "Find the word '{word}' in the sentence."
+      ],
+      "sight_words": ["a", "and", "away", "big", "blue", "can", "come", "down", "find", "for", "funny", "go", "help", "here", "I", "in", "is", "it", "jump", "little", "look", "make", "me", "my", "not", "one", "play", "red", "run", "said", "see", "the", "three", "to", "two", "up", "we", "where", "yellow", "you", "all", "am", "are", "at", "ate", "be", "black", "brown", "but", "came", "did", "do", "eat", "four", "get", "good", "have", "he", "into", "like", "must", "new", "no", "now", "on", "our", "out", "please", "pretty", "ran", "ride", "saw", "say", "she", "so", "soon", "that", "there", "they", "this", "too", "under", "want", "was", "well", "went", "what", "white", "who", "will", "with", "yes"]
+    },
+    {
+      "skill": "story characters",
+      "code": "CHAR",
+      "standard": "RL.K.3",
+      "count": 1000,
+      "visual_type": "comprehension_question",
+      "question_templates": [
+        "Who is the main character in this story?",
+        "What did {character} do?",
+        "How did {character} feel?"
+      ],
+      "mini_stories": [
+        {
+          "title": "The Happy Dog",
+          "text": "Max is a dog. Max likes to run. Max runs in the park. Max is happy.",
+          "character": "Max",
+          "setting": "the park",
+          "event": "runs in the park"
+        },
+        {
+          "title": "The Red Ball",
+          "text": "Sam has a red ball. Sam throws the ball. The ball goes up. The ball comes down.",
+          "character": "Sam",
+          "setting": "outside",
+          "event": "throws the ball"
+        },
+        {
+          "title": "My Cat",
+          "text": "I have a cat. My cat is soft. My cat likes to nap. I love my cat.",
+          "character": "the cat",
+          "setting": "home",
+          "event": "naps"
+        },
+        {
+          "title": "The Big Tree",
+          "text": "There is a big tree. A bird sits in the tree. The bird sings a song. The song is pretty.",
+          "character": "the bird",
+          "setting": "the tree",
+          "event": "sings a song"
+        },
+        {
+          "title": "Fun at School",
+          "text": "Ben goes to school. Ben sees his friend. They play together. Ben has fun.",
+          "character": "Ben",
+          "setting": "school",
+          "event": "plays with his friend"
+        }
+      ]
+    },
+    {
+      "skill": "sequencing",
+      "code": "COMP",
+      "standard": "RL.K.2",
+      "count": 1000,
+      "visual_type": "comprehension_question",
+      "question_templates": [
+        "What happened first?",
+        "What happened next?",
+        "What happened at the end?"
+      ],
+      "sequence_stories": [
+        {
+          "title": "Making a Sandwich",
+          "steps": ["Get the bread.", "Put peanut butter on the bread.", "Eat the sandwich."],
+          "first": "Get the bread",
+          "middle": "Put peanut butter on the bread",
+          "last": "Eat the sandwich"
+        },
+        {
+          "title": "Getting Ready",
+          "steps": ["Wake up.", "Get dressed.", "Go to school."],
+          "first": "Wake up",
+          "middle": "Get dressed",
+          "last": "Go to school"
+        },
+        {
+          "title": "Planting a Seed",
+          "steps": ["Dig a hole.", "Put the seed in.", "Water the seed."],
+          "first": "Dig a hole",
+          "middle": "Put the seed in",
+          "last": "Water the seed"
+        }
+      ]
+    }
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

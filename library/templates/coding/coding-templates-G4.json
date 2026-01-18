@@ -1,0 +1,304 @@
+{
+  "grade": 4,
+  "theme_bucket": "3-5",
+  "theme_style": "Games, adventures, building things",
+  "description": "Grade 4 Coding - Advanced Scratch Game Development",
+  "lesson_flow_reference": "LESSON-FLOW-ARCHITECTURE.md",
+  "standard": "ISTE 1B-AP-11",
+  "tool": "Scratch",
+  "advancement_rule": "Project-based: Complete 5 projects to advance",
+
+  "project_templates": [
+    {
+      "project_id": "G4-PATTERN-GEN",
+      "project_name": "Pattern Generator",
+      "tagline": "Create amazing art with nested loops!",
+      "skill_taught": "nested loops",
+      "standard": "1B-AP-11",
+      "what_kids_build": "Art generator using loops inside loops",
+      "why_exciting": "Creating complex art with simple code",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Want to draw 100 squares without writing 100 draw commands? Nested loops do loops INSIDE loops!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "A NESTED LOOP is a loop inside another loop. Outer loop runs, inner loop runs ALL its times, repeat!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "language": "scratch",
+                "blocks": [
+                  "repeat (5)  // outer loop - rows",
+                  "  repeat (5)  // inner loop - columns",
+                  "    stamp",
+                  "    move (50) steps",
+                  "  end",
+                  "  next row",
+                  "end"
+                ],
+                "result": "5x5 grid = 25 stamps!"
+              }
+            },
+            "voice_text": "Outer loop does 5 rows. Inner loop stamps 5 times per row. 5 times 5 equals 25 stamps!",
+            "duration": 6000
+          }
+        ],
+        "rule_card": {
+          "title": "Nested Loops",
+          "rule": "Loop inside a loop. Inner loop finishes completely before outer loop continues.",
+          "example": "repeat 3: repeat 4: stamp → 12 stamps total"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Make a 4x4 Grid",
+            "prompt": "Create a 4x4 grid of stars using nested loops",
+            "answer": ["repeat (4)", "  repeat (4)", "    stamp", "    move (40) steps", "  end", "  go to next row", "end"]
+          },
+          {
+            "challenge_name": "Spiral Pattern",
+            "prompt": "Make a spiral: repeat moving and turning with increasing distance",
+            "answer": "Outer loop controls turns, inner modifies step size"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your pattern generator creates amazing art! Nested loops are powerful!",
+        "badge": "Pattern Master",
+        "coins": 80
+      }
+    },
+    {
+      "project_id": "G4-QUEST-GAME",
+      "project_name": "Adventure Quest",
+      "tagline": "Build a game with multiple paths and endings!",
+      "skill_taught": "complex conditionals",
+      "standard": "1B-AP-11",
+      "what_kids_build": "A game with AND/OR conditions and multiple outcomes",
+      "why_exciting": "Creating a game with real choices that matter",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "What if your game checked MULTIPLE things at once? Like: IF you have the sword AND you found the shield, THEN you can fight the dragon!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "AND means BOTH must be true. OR means at least ONE must be true.",
+            "visual": {
+              "type": "conditional",
+              "data": {
+                "and_example": {
+                  "condition": "hasSword AND hasShield",
+                  "result": "Can fight dragon (both needed)"
+                },
+                "or_example": {
+                  "condition": "hasKey OR hasAxe",
+                  "result": "Can open door (either works)"
+                }
+              }
+            },
+            "voice_text": "AND needs both. OR needs just one. Big difference!",
+            "duration": 5000
+          }
+        ],
+        "rule_card": {
+          "title": "AND / OR Conditions",
+          "rule": "AND = both must be true. OR = at least one must be true.",
+          "example": "if <(health > 0) AND (hasWeapon = true)> then fight"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Dragon Fight",
+            "prompt": "Only fight if player has BOTH sword and shield",
+            "answer": "if <<(hasSword) = [true]> and <(hasShield) = [true]>> then"
+          },
+          {
+            "challenge_name": "Secret Door",
+            "prompt": "Open door if player has key OR knows the password",
+            "answer": "if <<(hasKey) = [true]> or <(password) = [open]>> then"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your quest game has multiple paths! You mastered complex conditionals!",
+        "badge": "Quest Designer",
+        "coins": 80
+      }
+    },
+    {
+      "project_id": "G4-CALCULATOR",
+      "project_name": "Math Calculator",
+      "tagline": "Build your own working calculator!",
+      "skill_taught": "operators (math and comparison)",
+      "standard": "1B-AP-11",
+      "what_kids_build": "A calculator that does real math",
+      "why_exciting": "Building a REAL tool that works",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Let's build a calculator that can add, subtract, multiply, and divide! It'll use OPERATORS.",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "OPERATORS do math and comparisons. Plus, minus, times, divide, greater than, less than!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "operators": [
+                  "(5) + (3) = 8",
+                  "(10) - (4) = 6",
+                  "(6) * (7) = 42",
+                  "(20) / (4) = 5",
+                  "(5) > (3) = true",
+                  "(2) < (1) = false"
+                ]
+              }
+            }
+          }
+        ],
+        "rule_card": {
+          "title": "Operators",
+          "rule": "Math operators: + - * /. Comparison operators: > < =",
+          "example": "set answer to ((num1) + (num2))"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Addition",
+            "prompt": "Ask for two numbers and show their sum",
+            "answer": ["ask [First number?]", "set [num1] to (answer)", "ask [Second number?]", "say ((num1) + (answer))"]
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your calculator works! You can do real math with code!",
+        "badge": "Calculator Creator",
+        "coins": 80
+      }
+    },
+    {
+      "project_id": "G4-MONSTER-MAKER",
+      "project_name": "Random Monster Generator",
+      "tagline": "Create unique monsters with random features!",
+      "skill_taught": "random numbers",
+      "standard": "1B-AP-11",
+      "what_kids_build": "A generator that creates random monsters",
+      "why_exciting": "Unpredictable results are exciting",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Every time you click, a NEW random monster appears! Different color, size, and features!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "PICK RANDOM gives a different number each time!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "language": "scratch",
+                "blocks": [
+                  "set [size] to (pick random (50) to (150))",
+                  "set size to (size) %",
+                  "set [color] to (pick random (1) to (200))",
+                  "set color effect to (color)"
+                ]
+              }
+            },
+            "voice_text": "Pick random 50 to 150 gives a different size each time. Random color too!",
+            "duration": 5000
+          }
+        ]
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Random Size",
+            "prompt": "Set monster size to random between 25 and 200",
+            "answer": "set size to (pick random (25) to (200)) %"
+          },
+          {
+            "challenge_name": "Random Position",
+            "prompt": "Place monster at random x and y positions",
+            "answer": "go to x: (pick random (-200) to (200)) y: (pick random (-150) to (150))"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your monster generator creates infinite unique monsters!",
+        "badge": "Monster Maker",
+        "coins": 80
+      }
+    },
+    {
+      "project_id": "G4-FUNCTION-GAME",
+      "project_name": "Custom Block Creator",
+      "tagline": "Make your own coding blocks!",
+      "skill_taught": "functions (custom blocks)",
+      "standard": "1B-AP-11",
+      "what_kids_build": "Reusable custom blocks for game actions",
+      "why_exciting": "Creating their OWN blocks like a pro coder",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "What if you could create your OWN blocks? Like a 'jump' block that does 3 things at once!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "CUSTOM BLOCKS (functions) let you group code and reuse it with one block!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "define": ["define [jump]", "  change y by (50)", "  wait (0.2) seconds", "  change y by (-50)"],
+                "use": ["when space key pressed", "jump"]
+              }
+            },
+            "voice_text": "Define the block once with all the steps. Then just use 'jump' anywhere! So clean!",
+            "duration": 5000
+          }
+        ],
+        "rule_card": {
+          "title": "Custom Blocks (Functions)",
+          "rule": "DEFINE a block with steps. USE it anywhere by name. Write once, use many times!",
+          "example": "define [spin]: turn 360 degrees. Now 'spin' works everywhere!"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Create Jump Block",
+            "prompt": "Make a custom 'jump' block that moves up then down",
+            "answer": ["define [jump]", "change y by (50)", "wait (0.2)", "change y by (-50)"]
+          },
+          {
+            "challenge_name": "Create Attack Block",
+            "prompt": "Make an 'attack' block that plays sound and switches costume",
+            "answer": ["define [attack]", "switch costume to [attack]", "play sound [hit]", "wait (0.3)", "switch costume to [normal]"]
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "You created your own blocks! You code like a professional now!",
+        "badge": "Function Master",
+        "coins": 80
+      }
+    }
+  ],
+
+  "summary": {
+    "total_projects": 5,
+    "skills_covered": ["nested loops", "complex conditionals (AND/OR)", "operators", "random numbers", "custom blocks/functions"],
+    "tool": "Scratch",
+    "theme_consistency": "Game development and building for 9-year-olds"
+  }
+}

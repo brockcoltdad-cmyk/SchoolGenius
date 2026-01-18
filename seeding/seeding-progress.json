@@ -1,0 +1,66 @@
+{
+  "startTime": "2026-01-13T06:36:18.000Z",
+  "completed": [
+    {
+      "name": "Kid Stuck Responses",
+      "items": 340,
+      "cost": 0.34,
+      "duration": 1,
+      "completedAt": "2026-01-13T06:36:54.355Z"
+    },
+    {
+      "name": "Parent Struggle Guides",
+      "items": 28,
+      "cost": 0.03,
+      "duration": 0,
+      "completedAt": "2026-01-13T06:37:08.598Z"
+    },
+    {
+      "name": "Transition Phrases",
+      "items": 300,
+      "cost": 0.3,
+      "duration": 1,
+      "completedAt": "2026-01-13T06:37:45.094Z"
+    },
+    {
+      "name": "Achievement Celebrations",
+      "items": 168,
+      "cost": 0.17,
+      "duration": 0,
+      "completedAt": "2026-01-13T06:38:07.282Z"
+    },
+    {
+      "name": "Time Greetings",
+      "items": 64,
+      "cost": 0.06,
+      "duration": 0,
+      "completedAt": "2026-01-13T06:38:18.838Z"
+    },
+    {
+      "name": "Return Messages",
+      "items": 80,
+      "cost": 0.08,
+      "duration": 0,
+      "completedAt": "2026-01-13T06:38:32.103Z"
+    },
+    {
+      "name": "Gigi Personality",
+      "items": 200,
+      "cost": 0.2,
+      "duration": 0,
+      "completedAt": "2026-01-13T06:38:58.119Z"
+    }
+  ],
+  "failed": [
+    {
+      "name": "Subject Analogies",
+      "error": "Command failed: node seed-subject-analogies.mjs",
+      "failedAt": "2026-01-13T06:37:00.407Z"
+    }
+  ],
+  "current": null,
+  "totalItems": 2280,
+  "totalCost": 2.2800000000000002,
+  "itemsGenerated": 1180,
+  "costSpent": 1.18
+}

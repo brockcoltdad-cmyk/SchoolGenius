@@ -1,0 +1,176 @@
+{
+  "grade": 2,
+  "grade_name": "Second Grade",
+  "total_target": 1500,
+  "standards": ["W.2.1", "W.2.2", "W.2.3", "L.2.1", "L.2.1.F", "L.2.2", "L.2.2.A"],
+  "skills": [
+    {
+      "skill": "sentence types",
+      "code": "SENT",
+      "standard": "L.2.1",
+      "count": 200,
+      "visual_type": "grammar_highlight",
+      "types": [
+        {"type": "statement", "example": "The dog is brown.", "ends_with": "."},
+        {"type": "question", "example": "Is the dog brown?", "ends_with": "?"},
+        {"type": "exclamation", "example": "What a cute dog!", "ends_with": "!"},
+        {"type": "command", "example": "Sit down, dog.", "ends_with": "."}
+      ],
+      "exercises": [
+        {"sentence": "The cat sleeps on the bed", "type": "statement"},
+        {"sentence": "Where is my backpack", "type": "question"},
+        {"sentence": "That was amazing", "type": "exclamation"},
+        {"sentence": "Please close the door", "type": "command"}
+      ]
+    },
+    {
+      "skill": "compound sentences",
+      "code": "COMP",
+      "standard": "L.2.1.F",
+      "count": 250,
+      "visual_type": "sentence_builder",
+      "conjunctions": ["and", "but", "or"],
+      "sentence_pairs": [
+        {"s1": "I like pizza.", "s2": "I like tacos.", "conjunction": "and", "combined": "I like pizza and tacos."},
+        {"s1": "It is raining.", "s2": "We will play inside.", "conjunction": "so", "combined": "It is raining, so we will play inside."},
+        {"s1": "I want to go outside.", "s2": "It is too cold.", "conjunction": "but", "combined": "I want to go outside, but it is too cold."},
+        {"s1": "We can watch a movie.", "s2": "We can play a game.", "conjunction": "or", "combined": "We can watch a movie or play a game."},
+        {"s1": "She studied hard.", "s2": "She got an A.", "conjunction": "and", "combined": "She studied hard and got an A."}
+      ]
+    },
+    {
+      "skill": "collective nouns",
+      "code": "NOUN",
+      "standard": "L.2.1",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "collectives": [
+        {"collective": "flock", "of": "birds"},
+        {"collective": "herd", "of": "cows"},
+        {"collective": "pack", "of": "wolves"},
+        {"collective": "school", "of": "fish"},
+        {"collective": "team", "of": "players"},
+        {"collective": "class", "of": "students"},
+        {"collective": "bunch", "of": "bananas"},
+        {"collective": "pile", "of": "leaves"},
+        {"collective": "group", "of": "friends"},
+        {"collective": "family", "of": "bears"}
+      ]
+    },
+    {
+      "skill": "irregular plural nouns",
+      "code": "NOUN",
+      "standard": "L.2.1",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "irregulars": [
+        {"singular": "child", "plural": "children"},
+        {"singular": "man", "plural": "men"},
+        {"singular": "woman", "plural": "women"},
+        {"singular": "tooth", "plural": "teeth"},
+        {"singular": "foot", "plural": "feet"},
+        {"singular": "mouse", "plural": "mice"},
+        {"singular": "goose", "plural": "geese"},
+        {"singular": "person", "plural": "people"},
+        {"singular": "leaf", "plural": "leaves"},
+        {"singular": "knife", "plural": "knives"}
+      ]
+    },
+    {
+      "skill": "past tense verbs",
+      "code": "VERB",
+      "standard": "L.2.1",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "regular": [
+        {"present": "walk", "past": "walked"},
+        {"present": "jump", "past": "jumped"},
+        {"present": "play", "past": "played"},
+        {"present": "talk", "past": "talked"},
+        {"present": "look", "past": "looked"}
+      ],
+      "irregular": [
+        {"present": "go", "past": "went"},
+        {"present": "see", "past": "saw"},
+        {"present": "eat", "past": "ate"},
+        {"present": "run", "past": "ran"},
+        {"present": "come", "past": "came"}
+      ]
+    },
+    {
+      "skill": "apostrophes - contractions",
+      "code": "APOS",
+      "standard": "L.2.2",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "contractions": [
+        {"full": "do not", "contraction": "don't"},
+        {"full": "can not", "contraction": "can't"},
+        {"full": "I am", "contraction": "I'm"},
+        {"full": "you are", "contraction": "you're"},
+        {"full": "it is", "contraction": "it's"},
+        {"full": "we are", "contraction": "we're"},
+        {"full": "they are", "contraction": "they're"},
+        {"full": "is not", "contraction": "isn't"},
+        {"full": "are not", "contraction": "aren't"},
+        {"full": "will not", "contraction": "won't"}
+      ]
+    },
+    {
+      "skill": "apostrophes - possessives",
+      "code": "APOS",
+      "standard": "L.2.2",
+      "count": 100,
+      "visual_type": "grammar_highlight",
+      "possessives": [
+        {"owner": "the dog", "item": "bone", "possessive": "the dog's bone"},
+        {"owner": "Mom", "item": "car", "possessive": "Mom's car"},
+        {"owner": "the cat", "item": "toy", "possessive": "the cat's toy"},
+        {"owner": "Sam", "item": "book", "possessive": "Sam's book"},
+        {"owner": "the teacher", "item": "desk", "possessive": "the teacher's desk"}
+      ]
+    },
+    {
+      "skill": "paragraph structure",
+      "code": "PARA",
+      "standard": "W.2.2",
+      "count": 150,
+      "visual_type": "paragraph_structure",
+      "paragraphs": [
+        {
+          "topic": "Dogs",
+          "topic_sentence": "Dogs make wonderful pets.",
+          "details": ["Dogs are loyal and friendly.", "They love to play fetch.", "Dogs protect their families."],
+          "conclusion": "Everyone should consider getting a dog."
+        },
+        {
+          "topic": "Summer",
+          "topic_sentence": "Summer is my favorite season.",
+          "details": ["I can swim in the pool.", "We go on vacation.", "I stay up late."],
+          "conclusion": "Summer is the best time of year."
+        }
+      ]
+    },
+    {
+      "skill": "opinion with linking words",
+      "code": "OPIN",
+      "standard": "W.2.1",
+      "count": 100,
+      "visual_type": "paragraph_structure",
+      "linking_words": ["because", "also", "for example", "another reason"],
+      "prompts": [
+        {"topic": "Best season", "opinion": "Fall is the best season.", "reasons": ["The leaves change colors.", "The weather is cool.", "We celebrate Halloween."]}
+      ]
+    }
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

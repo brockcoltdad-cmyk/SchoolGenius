@@ -1,0 +1,300 @@
+{
+  "grade": 5,
+  "theme_bucket": "3-5",
+  "theme_style": "Games, adventures, building things",
+  "description": "Grade 5 Coding - Advanced Scratch & Introduction to Python",
+  "lesson_flow_reference": "LESSON-FLOW-ARCHITECTURE.md",
+  "standard": "ISTE 1B-AP-12",
+  "tool": "Scratch + Python intro",
+  "advancement_rule": "Project-based: Complete 5 projects to advance",
+
+  "project_templates": [
+    {
+      "project_id": "G5-SMART-FUNCTIONS",
+      "project_name": "Smart Block Factory",
+      "tagline": "Create functions that take inputs and return values!",
+      "skill_taught": "functions with inputs",
+      "standard": "1B-AP-12",
+      "what_kids_build": "Custom blocks that accept parameters",
+      "why_exciting": "Making truly reusable, flexible code",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "What if your 'jump' block could jump ANY height you tell it? Functions with INPUTS can do that!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "Functions with INPUTS are like fill-in-the-blank. 'Jump (height)' - you fill in the height!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "language": "scratch",
+                "define": ["define jump (height)", "  change y by (height)", "  wait (0.2) seconds", "  change y by ((height) * (-1))"],
+                "use": ["jump (50)  // small jump", "jump (100) // big jump"]
+              }
+            },
+            "voice_text": "Same function, different inputs! Jump 50 for small, jump 100 for big! Flexible!",
+            "duration": 5000
+          }
+        ],
+        "rule_card": {
+          "title": "Functions with Inputs",
+          "rule": "Add inputs to your function definition. Use them inside. Call with different values!",
+          "example": "define moveAndSay (steps) (message): move (steps) → say (message)"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Flexible Jump",
+            "prompt": "Create a jump block that takes height as input",
+            "answer": ["define jump (height)", "change y by (height)", "wait (0.2)", "change y by ((height) * (-1))"]
+          },
+          {
+            "challenge_name": "Draw Square with Size",
+            "prompt": "Create drawSquare (size) that draws any size square",
+            "answer": ["define drawSquare (size)", "repeat (4)", "  move (size) steps", "  turn 90 degrees"]
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your functions are smart and flexible! Pro-level coding!",
+        "badge": "Function Pro",
+        "coins": 85
+      }
+    },
+    {
+      "project_id": "G5-HIGH-SCORES",
+      "project_name": "High Score Tracker",
+      "tagline": "Track the top 5 scores using lists!",
+      "skill_taught": "lists/arrays",
+      "standard": "1B-AP-12",
+      "what_kids_build": "A game with a working leaderboard",
+      "why_exciting": "Real games have high scores - now theirs will too",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Real games track the TOP 5 scores! We need a LIST to hold multiple values!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "A LIST holds many items! Like a numbered list: #1 score, #2 score, #3 score...",
+            "visual": {
+              "type": "variable_box",
+              "data": {
+                "list_name": "high_scores",
+                "items": ["1. 500", "2. 450", "3. 400", "4. 350", "5. 300"]
+              }
+            },
+            "voice_text": "A list holds many values with numbers! Item 1, item 2, item 3... Add, remove, check!",
+            "duration": 5000
+          }
+        ],
+        "rule_card": {
+          "title": "Lists",
+          "rule": "A list holds multiple items. Add items, delete items, check items by position!",
+          "example": "add [500] to [high_scores]. item (1) of [high_scores] = 500"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Add Score to List",
+            "prompt": "When game ends, add the player's score to high_scores list",
+            "answer": "add (score) to [high_scores]"
+          },
+          {
+            "challenge_name": "Show Top Score",
+            "prompt": "Display the #1 high score",
+            "answer": "say (join [High Score: ] (item (1) of [high_scores]))"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your game has a real leaderboard! Lists are powerful!",
+        "badge": "List Master",
+        "coins": 85
+      }
+    },
+    {
+      "project_id": "G5-TEXT-ADVENTURE",
+      "project_name": "Text Adventure Game",
+      "tagline": "Build a story game using text operations!",
+      "skill_taught": "string operations",
+      "standard": "1B-AP-12",
+      "what_kids_build": "A text-based adventure with name insertion",
+      "why_exciting": "Creating personalized story experiences",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Let's make a story where YOUR name appears in the adventure! We'll use STRING operations!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "STRINGS are text. We can JOIN them, get their LENGTH, or find LETTERS inside!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "operations": [
+                  "join [Hello ] [Emma] = 'Hello Emma'",
+                  "length of [Emma] = 4",
+                  "letter (1) of [Emma] = 'E'"
+                ]
+              }
+            },
+            "voice_text": "Join sticks text together. Length counts letters. Letter gets one character!",
+            "duration": 5000
+          }
+        ]
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Personalized Greeting",
+            "prompt": "Ask name, then say 'Welcome to the adventure, [name]!'",
+            "answer": ["ask [What's your name?]", "say (join [Welcome to the adventure, ] (answer))"]
+          },
+          {
+            "challenge_name": "Secret Initial",
+            "prompt": "Get the first letter of their name for a secret code",
+            "answer": "set [initial] to (letter (1) of (answer))"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your text adventure is personalized! String master!",
+        "badge": "String Master",
+        "coins": 85
+      }
+    },
+    {
+      "project_id": "G5-PONG-GAME",
+      "project_name": "Pong Game",
+      "tagline": "Build the classic Pong with coordinates and physics!",
+      "skill_taught": "coordinate system and basic physics",
+      "standard": "1B-AP-12",
+      "what_kids_build": "A working Pong game with bouncing ball",
+      "why_exciting": "Making a REAL classic arcade game",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "Let's build PONG! The ball moves with x and y speed, bounces off walls and paddles!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "X and Y SPEED variables control movement. Change direction by making speed negative!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "language": "scratch",
+                "blocks": [
+                  "set [xSpeed] to (5)",
+                  "set [ySpeed] to (5)",
+                  "forever",
+                  "  change x by (xSpeed)",
+                  "  change y by (ySpeed)",
+                  "  if <touching [edge]?> then",
+                  "    set [ySpeed] to ((ySpeed) * (-1))  // reverse!",
+                  "  end"
+                ]
+              }
+            },
+            "voice_text": "X speed moves side to side. Y speed moves up and down. Multiply by -1 to reverse!",
+            "duration": 6000
+          }
+        ]
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Ball Movement",
+            "prompt": "Make ball move using xSpeed and ySpeed variables",
+            "answer": ["forever", "change x by (xSpeed)", "change y by (ySpeed)"]
+          },
+          {
+            "challenge_name": "Bounce Off Wall",
+            "prompt": "When touching top or bottom edge, reverse ySpeed",
+            "answer": "if <touching [edge]?> then set [ySpeed] to ((ySpeed) * (-1))"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "Your Pong game works! You understand game physics!",
+        "badge": "Physics Coder",
+        "coins": 85
+      }
+    },
+    {
+      "project_id": "G5-PYTHON-INTRO",
+      "project_name": "Python Hello World",
+      "tagline": "Your first steps into text-based coding!",
+      "skill_taught": "introduction to Python",
+      "standard": "1B-AP-12",
+      "what_kids_build": "Simple Python programs with print and input",
+      "why_exciting": "Coding like 'real' programmers with text",
+
+      "phase_1_rule_teaching": {
+        "intro_hook": "You've mastered Scratch! Now let's try PYTHON - the language real programmers use!",
+        "teaching_script": [
+          {
+            "step": 1,
+            "gigi_says": "Python uses TEXT instead of blocks. print() shows text. input() asks questions!",
+            "visual": {
+              "type": "code_block",
+              "data": {
+                "language": "python",
+                "code": "print('Hello World!')\nname = input('What is your name? ')\nprint('Hello ' + name + '!')",
+                "output": "Hello World!\nWhat is your name? Emma\nHello Emma!"
+              }
+            },
+            "voice_text": "Print shows text on screen. Input asks a question and saves the answer. Plus joins text!",
+            "duration": 6000
+          }
+        ],
+        "rule_card": {
+          "title": "Python Basics",
+          "rule": "print() displays text. input() gets user response. Variables store data. + joins strings.",
+          "example": "name = input('Name?')\nprint('Hi ' + name)"
+        }
+      },
+
+      "phase_3_guided_practice": {
+        "challenges": [
+          {
+            "challenge_name": "Hello World",
+            "prompt": "Write Python code to print 'Hello World!'",
+            "answer": "print('Hello World!')"
+          },
+          {
+            "challenge_name": "Ask Name and Greet",
+            "prompt": "Ask for their name, then print a greeting with it",
+            "answer": "name = input('What is your name? ')\nprint('Hello ' + name + '!')"
+          },
+          {
+            "challenge_name": "Favorite Color",
+            "prompt": "Ask favorite color, then say 'I like [color] too!'",
+            "answer": "color = input('Favorite color? ')\nprint('I like ' + color + ' too!')"
+          }
+        ]
+      },
+
+      "phase_6_complete": {
+        "celebration": "You wrote REAL Python code! Welcome to text-based programming!",
+        "badge": "Python Beginner",
+        "coins": 100
+      }
+    }
+  ],
+
+  "summary": {
+    "total_projects": 5,
+    "skills_covered": ["functions with inputs", "lists/arrays", "string operations", "coordinates/physics", "intro to Python"],
+    "tools": "Scratch + Python",
+    "theme_consistency": "Advanced games and transition to text coding for 10-year-olds",
+    "transition_note": "Grade 5 bridges Scratch and Python - students start learning text-based coding"
+  }
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "trigger": "correct_answer",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Wow, you got it right! Super job solving that math problem! You're a math star! 🌟🎉"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Wow, you got it right! Super smart math skills! Keep it up! 🌟👍"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Awesome job! You nailed that math problem! Keep up the great thinking, math whiz!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Awesome job! You nailed that math problem! Keep up the great thinking—I’m so proud of you!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Nice job on that math problem! You totally nailed it. Keep up the awesome work!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Nice job! You nailed that math problem. Keep up the awesome work!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "Excellent work! Your sharp reasoning in solving that math problem is impressive. Keep it up!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "Excellent work! Your sharp reasoning in solving that math problem is impressive. Keep up the great effort!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, you read that so well! Great job finding the right answer! 🎉📚"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, you got it right! Amazing reading! You're a super star! 🌟📚 Yay!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Awesome job! You nailed that reading answer. Keep up the great thinking—I’m so proud of you!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Awesome job! You nailed that reading question with such smart thinking. Keep it up, champ!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Nice job! You nailed that reading question. Your hard work is totally paying off!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, awesome job on getting that reading question right! Your hard work is totally paying off!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "Excellent work! Your insightful answer shows a deep understanding of the text. Keep up the great thinking!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "Excellent work! Your insightful answer shows a deep understanding of the text. Keep up the great analysis!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Wow, you spelled it right! Amazing job! You're a spelling star! 🌟🎉"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Wow, you spelled it right! Awesome job! You're a spelling star! 🌟🎉"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Awesome job! You nailed that spelling word! Keep up the great work, spelling champ!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Awesome job! You nailed that spelling word—keep up the great work, spelling champ!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Hey, awesome job on that spelling! You nailed it, and it’s cool to see your hard work pay off!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Hey, awesome job on that spelling! You nailed it, and it’s cool to see your hard work pay off!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "Excellent work on that spelling! Your precision and attention to detail really paid off. Keep it up!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "Excellent work on nailing that spelling! Your attention to detail really paid off. Keep it up!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, you got it right! Amazing coding, superstar! Keep it up! 🌟💻"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, you got it right! Amazing coding, superstar! Keep solving those fun puzzles! 🌟💻"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Awesome job! Your coding skills nailed that answer. Keep up the great work, coder!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Awesome job! You nailed that coding problem with such clever thinking. Keep rocking those codes!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Awesome job! You nailed that coding problem. Keep up the great thinking!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Nice job! Your coding solution was spot on. Keep tackling those problems with confidence!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "Excellent work! Your coding solution was spot-on. Keep tackling challenges with that sharp thinking!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "Excellent work! Your coding solution was spot-on, showing great problem-solving skills. Keep it up!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, you typed that perfectly! Great job, typing star! Keep it up! 🌟🎉"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, you typed it right! Amazing job! Keep tapping those keys! 🎉😊"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Awesome job! Your typing is spot on—keep those fingers flying! You’ve got this!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Awesome job! Your typing is spot on! Keep those fingers flying—you’re crushing it!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Nice job! Your typing skills are on point—keep up the great work!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Awesome job! Your typing is spot on. Keep up the great work, you’ve got this!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "Excellent work! Your typing accuracy is impressive, and it shows your dedication. Keep it up!"
+  },
+  {
+    "trigger": "correct_answer",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "Excellent work on that typing exercise! Your accuracy and speed are impressive. Keep it up!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Wow, you're getting so good at Math! Keep counting and solving—you're a star! 🌟👍"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Wow, you're getting better at Math every day! Keep counting and solving! You're amazing! 🌟✏️"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Wow, you're doing awesome in Math! Keep up the great work and steady progress—I'm so proud of you!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Awesome job in Math! Your steady progress shows how hard you’re working. Keep it up, champ!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Hey, your steady progress in Math is awesome! Keep tackling those problems—you’re getting stronger every day!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Hey, I’ve noticed your steady progress in Math! Keep up the great effort—it’s really paying off!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "I'm impressed by your steady progress in Math. Your consistent effort is paying off—keep it up!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "I'm impressed by your steady progress in Math. Your consistent effort is paying off—keep it up!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, you're reading so well every day! Keep going, superstar! 📚✨ Yay!"
+  },
+  {
+    "trigger": "good_progress",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, you're reading so well! Keep going, superstar! I’m so proud! 📚✨"
+  }
+]

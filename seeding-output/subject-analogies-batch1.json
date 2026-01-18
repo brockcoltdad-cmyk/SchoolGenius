@@ -1,0 +1,352 @@
+[
+  {
+    "subject": "Math",
+    "concept": "addition",
+    "age_group": "k2",
+    "analogy": "Addition is like putting toys together! If you have 2 blocks and add 3 more, you now have 5 blocks to play with!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Math",
+    "concept": "addition",
+    "age_group": "k2",
+    "analogy": "Addition is like putting more toy blocks together. If you have 2 blocks and add 3 more, you now have 5 blocks to play with!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Math",
+    "concept": "addition",
+    "age_group": "grades35",
+    "analogy": "Addition is like scoring points in a soccer game. Each goal adds more points to your team’s total, just like adding numbers increases the sum!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Math",
+    "concept": "addition",
+    "age_group": "grades35",
+    "analogy": "Addition is like scoring in soccer. Each goal adds points to your team’s total, just like adding numbers increases your answer!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Math",
+    "concept": "addition",
+    "age_group": "grades68",
+    "analogy": "Addition is like adding friends to your group chat. Each new friend increases the total, just like adding numbers increases the sum!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Math",
+    "concept": "addition",
+    "age_group": "grades68",
+    "analogy": "Addition is like adding friends to your group chat. Each new friend increases the total, just like adding numbers increases the sum!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Math",
+    "concept": "addition",
+    "age_group": "grades912",
+    "analogy": "Addition is like building a playlist. Each song you add combines with the others, creating a longer, richer collection, just like numbers combine to make a bigger total.",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Math",
+    "concept": "addition",
+    "age_group": "grades912",
+    "analogy": "Addition is like combining resources in a video game. Just as you merge coins or points to level up, you combine numbers to get a bigger total.",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Math",
+    "concept": "subtraction",
+    "age_group": "k2",
+    "analogy": "Subtraction is like giving away some of your toy cars. If you have 5 cars and give 2 away, you have 3 left!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Math",
+    "concept": "subtraction",
+    "age_group": "k2",
+    "analogy": "Subtraction is like giving away some of your toy cars. If you have 5 cars and give 2 away, you have 3 left!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Math",
+    "concept": "subtraction",
+    "age_group": "grades35",
+    "analogy": "Subtraction is like losing points in a soccer game. If your team has 5 points and loses 2, you’re left with 3 points!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Math",
+    "concept": "subtraction",
+    "age_group": "grades35",
+    "analogy": "Subtraction is like losing points in a soccer game. If your team has 5 points and loses 2, you’re left with 3 points!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Math",
+    "concept": "subtraction",
+    "age_group": "grades68",
+    "analogy": "Subtraction is like unfollowing friends on social media. You start with a big list, then remove some, and you're left with fewer connections!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Math",
+    "concept": "subtraction",
+    "age_group": "grades68",
+    "analogy": "Subtraction is like unfollowing friends on social media. You start with a big list, then remove some, leaving you with fewer connections!",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Math",
+    "concept": "subtraction",
+    "age_group": "grades912",
+    "analogy": "Subtraction is like budgeting: you start with your income, then take away expenses to see what’s left for savings.",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Math",
+    "concept": "subtraction",
+    "age_group": "grades912",
+    "analogy": "Subtraction is like budgeting: you start with your total income, then take away expenses to see what’s left for savings.",
+    "difficulty": "basic"
+  },
+  {
+    "subject": "Math",
+    "concept": "multiplication",
+    "age_group": "k2",
+    "analogy": "Multiplication is like having toy cars. If you have 3 friends and each gets 2 cars, you count 3 groups of 2. That’s 6 cars!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "multiplication",
+    "age_group": "k2",
+    "analogy": "Multiplication is like having many bags of candies. If you have 3 bags with 2 candies each, you have 6 candies total!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "multiplication",
+    "age_group": "grades35",
+    "analogy": "Multiplication is like scoring in soccer. If you score 3 goals in 4 games, it’s 3 x 4 = 12 goals total!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "multiplication",
+    "age_group": "grades35",
+    "analogy": "Multiplication is like scoring in soccer. If you score 3 goals in 4 games, that’s 3 x 4 = 12 goals total!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "multiplication",
+    "age_group": "grades68",
+    "analogy": "Multiplication is like copying a playlist. One song (number) copied multiple times (another number) gives you a bigger playlist (the product)!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "multiplication",
+    "age_group": "grades68",
+    "analogy": "Multiplication is like copying a cool TikTok dance. One move (number) repeated several times (another number) creates a full routine (product)!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "multiplication",
+    "age_group": "grades912",
+    "analogy": "Multiplication is like scaling a recipe for a larger crowd. Double the servings, double every ingredient—it's a faster way to calculate totals!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "multiplication",
+    "age_group": "grades912",
+    "analogy": "Multiplication is like scaling a recipe. Double the servings, double every ingredient—2 times each amount creates a larger batch efficiently!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "division",
+    "age_group": "k2",
+    "analogy": "Division is like sharing cookies. If you have 6 cookies and 3 friends, each friend gets 2 cookies by splitting them equally!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "division",
+    "age_group": "k2",
+    "analogy": "Division is like sharing cookies equally. If you have 6 cookies and 3 friends, each friend gets 2 cookies. Everyone gets the same amount!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "division",
+    "age_group": "grades35",
+    "analogy": "Division is like sharing pizza at a party. If you have 8 slices and 4 friends, each friend gets 2 slices by splitting equally!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "division",
+    "age_group": "grades35",
+    "analogy": "Division is like sharing pizza at a class party. If you have 12 slices and 3 friends, each gets 4 slices by splitting equally!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "division",
+    "age_group": "grades68",
+    "analogy": "Division is like splitting a pizza equally among friends at a party. Everyone gets a fair slice, just like dividing a number into equal parts!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "division",
+    "age_group": "grades68",
+    "analogy": "Division is like splitting a playlist with friends. If you have 12 songs and 3 friends, each gets 4 songs to enjoy equally!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "division",
+    "age_group": "grades912",
+    "analogy": "Division is like splitting a project budget among team members. Each person gets an equal share of the total funds to complete their tasks.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "division",
+    "age_group": "grades912",
+    "analogy": "Division is like splitting a pizza evenly among friends. Each person gets an equal slice, just as division splits a number into equal parts.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "fractions",
+    "age_group": "k2",
+    "analogy": "Fractions are like sharing a pizza! If you cut it into 4 equal slices and take 1, you have 1/4 of the pizza. Everyone gets a fair piece!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "fractions",
+    "age_group": "k2",
+    "analogy": "Fractions are like sharing a pizza! If you cut it into 4 slices and take 1, you have 1/4. Everyone gets a fair piece!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "fractions",
+    "age_group": "grades35",
+    "analogy": "Fractions are like sharing a pizza at a class party. If you split it into 8 slices and take 2, you have 2/8 of the pizza!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "fractions",
+    "age_group": "grades35",
+    "analogy": "Fractions are like sharing a pizza at a class party. If you split it into 8 slices and take 2, you have 2/8 of the pizza!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "fractions",
+    "age_group": "grades68",
+    "analogy": "Fractions are like sharing a pizza on a group chat. If you split 1 pizza into 4 slices, each friend gets 1/4, just like dividing something equally!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "fractions",
+    "age_group": "grades68",
+    "analogy": "Fractions are like splitting a pizza in a group chat. If 8 friends share 1 pizza, each gets 1/8. It’s dividing something equally!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "fractions",
+    "age_group": "grades912",
+    "analogy": "Fractions are like slicing a pizza for a diverse party—each piece represents a part of the whole, ensuring everyone gets their fair share.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "fractions",
+    "age_group": "grades912",
+    "analogy": "Fractions are like slicing a pizza for a diverse party—each piece represents a part of the whole, ensuring everyone gets a fair share, no matter the group size.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "decimals",
+    "age_group": "k2",
+    "analogy": "Decimals are like sharing a pizza! The whole pizza is 1, and each slice is a tiny part, like 0.1. You can share small pieces with everyone!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "decimals",
+    "age_group": "k2",
+    "analogy": "Decimals are like sharing a pizza. The whole pizza is 1. If you take a small slice, it’s 0.5—a little piece of the whole!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "decimals",
+    "age_group": "grades35",
+    "analogy": "Decimals are like scoring in soccer. A goal is 1, but a near-miss can be 0.5. It’s part of a whole, just like points between numbers!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "decimals",
+    "age_group": "grades35",
+    "analogy": "Decimals are like scoring in soccer. A goal is 1, but a near miss might be 0.5—halfway there! It shows part of a whole.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "decimals",
+    "age_group": "grades68",
+    "analogy": "Decimals are like splitting a pizza in a group chat. 1.5 pizzas means 1 whole pizza plus half of another, shared among friends!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "decimals",
+    "age_group": "grades68",
+    "analogy": "Decimals are like splitting a pizza in a group chat. 1.5 pizzas means 1 whole pie and half of another, shared among friends!",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "decimals",
+    "age_group": "grades912",
+    "analogy": "Decimals are like money in a global economy. Just as $10.99 represents dollars and cents, decimals split numbers into whole and fractional parts for precision.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "decimals",
+    "age_group": "grades912",
+    "analogy": "Decimals are like music streaming sliders—adjusting volume from 0 to 100, with precise control at 0.1 increments, fine-tuning your experience.",
+    "difficulty": "intermediate"
+  },
+  {
+    "subject": "Math",
+    "concept": "percentages",
+    "age_group": "k2",
+    "analogy": "Percentages are like sharing 100 candies. If you give away 25 candies, you shared 25% of them!",
+    "difficulty": "advanced"
+  },
+  {
+    "subject": "Math",
+    "concept": "percentages",
+    "age_group": "k2",
+    "analogy": "Imagine 100 toy blocks. If you take 25 blocks, that’s 25%! Percentages show how many blocks you have out of 100.",
+    "difficulty": "advanced"
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "question_type": "explain_again",
+    "subject": "Math",
+    "age_group": "k2",
+    "response": "Of course! Let’s try it again together! Think about counting your toys. We can add them up step by step! You’ve got this! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Math",
+    "age_group": "grades35",
+    "response": "Of course, I’m happy to help! Let’s try looking at it a different way together. Think about what we’ve learned so far—can you tell me one part you remember? 💡",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Math",
+    "age_group": "grades68",
+    "response": "Of course! Let’s go over it together. I’ll break it down step by step. If anything’s still tricky, just ask—I’ve got your back!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Math",
+    "age_group": "grades912",
+    "response": "Of course! I’m happy to go over it again. Let’s break it down step by step. Which part feels tricky? I’ll clarify with a different approach if needed!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Reading",
+    "age_group": "k2",
+    "response": "Of course, buddy! Let’s read it together again! Look at the words and pictures. What do you see first? I’m so excited to help! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "response": "Of course! Let’s go over it together. Remember to look at the words and pictures for clues. You’ve got this—let’s try again! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "response": "Of course! I’m happy to go over it again. Let’s break it down step by step. Focus on the main idea—can you spot it? I’m here to help!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "response": "Of course! I’m happy to go over it again. Let’s break it down step by step. Focus on the main idea—can you spot it in the text? I’m here to help!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "response": "Of course, buddy! 🎉 Let’s sound out the word together super slow! Listen closely and try again. You’ve got this! ⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "response": "Of course! Let’s go over it together. Remember to sound out each letter slowly. You’ve got this! Let’s try breaking the word into smaller parts. Ready?",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "response": "Of course! Let’s go over it again. Focus on breaking the word into smaller parts and sounding it out. You’ve got this—let’s try together!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "response": "Of course! Let’s go over it again. Focus on breaking the word into smaller parts and sounding it out. You’ve got this—let’s try together!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Coding",
+    "age_group": "k2",
+    "response": "Of course! Let’s try it again with fun steps! Think of coding like telling a story to a computer. What should it do first? Yay, let’s figure it out together! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "response": "Of course! Let’s go over it together. Coding is like giving instructions to a computer. Think of it as a recipe—step by step! Which part feels tricky? I’m here to help! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "response": "Of course! Let’s break it down together. Tell me which part feels tricky, and I’ll explain it step by step. You’ve got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "response": "Of course! I’m happy to go over it again. Let’s break it down step by step. Which part feels tricky? I’ll focus there to make it clearer for you.",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Typing",
+    "age_group": "k2",
+    "response": "Of course! Typing is like dancing with your fingers on the keys! 🎉 Watch how they move to make words. Try finding the letters first! You’ve got this! ⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "response": "Of course! Typing is like a fun puzzle. Place your fingers on the home keys and let’s try again together. You’ve got this! Keep practicing, and it’ll get easier. 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "response": "Of course! Let’s go over it again. Focus on placing your fingers on the home row keys. Practice slowly, and it’ll get easier. You’ve got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "response": "Of course! Let’s go over it again. Focus on hand positioning and key familiarity. Practice slowly to build muscle memory. You’ve got this—let’s try together!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Math",
+    "age_group": "k2",
+    "response": "Of course, buddy! Let’s try it again with fun! Think of numbers as little friends. Want to count them with me? You’ve got this! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Math",
+    "age_group": "grades35",
+    "response": "Of course, I’m happy to help! Let’s go over it step by step together. Think about breaking it into smaller pieces. You’ve got this, and I’m here to cheer you on! 🎯",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Math",
+    "age_group": "grades68",
+    "response": "Of course, I’m happy to help! Let’s go through it step by step. Tell me which part feels tricky, and we’ll tackle it together. You’ve got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Math",
+    "age_group": "grades912",
+    "response": "Of course! I’m happy to go over it again. Let’s break it down step by step. Which part feels tricky? I’ll clarify with a different approach if needed.",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Reading",
+    "age_group": "k2",
+    "response": "Of course, buddy! Let’s read it together again! Look at the pictures and listen to the words. Can you spot something fun? Yay, let’s try! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "response": "Of course! Let’s go over it together. Remember to look at the pictures and think about the story. What do you notice first? I’m here to help!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "response": "Of course! Let’s go over it together. What part felt tricky? I’m happy to break it down step by step until it clicks for you!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "response": "Of course! I’m happy to go over it again. Let’s break it down step by step. Focus on the main idea first—can you spot it in the text?",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "response": "Of course, buddy! 🎉 Let’s sound out the word together slowly. Listen to each part—ready? You’ve got this! ⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "response": "Of course! Let's go over it together. Remember to sound out each letter slowly. You’ve got this! Let’s try a word step by step. Ready?",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "response": "Of course! Let’s go over it again together. Focus on breaking the word into smaller parts and sounding it out. You’ve got this—let’s try it step by step!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "response": "Of course! Let’s go over it again. Focus on breaking words into syllables and sounding them out. I’m here to help with any tricky parts. You’ve got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Coding",
+    "age_group": "k2",
+    "response": "Yay, let’s try again! 🎉 Coding is like telling a computer what to do with fun steps. Think of it as a game! ⭐ Can you guess the first step? I’m here to help!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "response": "Of course! Let’s go over it again together. Coding is like giving instructions to a computer. Think of it as a fun puzzle! What part feels tricky? I’m here to help! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "response": "Of course! Let’s go over it together. Tell me which part felt tricky, and I’ll break it down step by step. You’ve got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "response": "Of course! I’m happy to go over it again. Let’s break it down step by step. Focus on the logic first—how does each part connect? Ask me anything!",
+    "response_tone": "encouraging"
+  }
+]

@@ -1,0 +1,138 @@
+{
+  "grade": 5,
+  "grade_name": "Fifth Grade",
+  "total_target": 3000,
+  "standards": ["RF.5.3", "L.5.2", "L.5.4"],
+  "skills": [
+    {
+      "skill": "Greek root auto",
+      "code": "GRAU",
+      "standard": "L.5.4",
+      "count": 250,
+      "visual_type": "word_building",
+      "root": "auto",
+      "meaning": "self",
+      "words": ["automatic", "automobile", "autograph", "autobiography", "autopilot", "autonomy", "autocrat", "automaton", "automate", "autonomous"]
+    },
+    {
+      "skill": "Greek root bio",
+      "code": "GRBI",
+      "standard": "L.5.4",
+      "count": 250,
+      "visual_type": "word_building",
+      "root": "bio",
+      "meaning": "life",
+      "words": ["biology", "biography", "antibiotic", "biodegradable", "biome", "biopsy", "biosphere", "biochemistry", "biodiversity", "bionic"]
+    },
+    {
+      "skill": "Greek root chron",
+      "code": "GRCH",
+      "standard": "L.5.4",
+      "count": 250,
+      "visual_type": "word_building",
+      "root": "chron",
+      "meaning": "time",
+      "words": ["chronic", "chronicle", "chronological", "synchronize", "anachronism", "chronometer", "chronology"]
+    },
+    {
+      "skill": "Greek root geo",
+      "code": "GRGE",
+      "standard": "L.5.4",
+      "count": 250,
+      "visual_type": "word_building",
+      "root": "geo",
+      "meaning": "earth",
+      "words": ["geography", "geology", "geometry", "geologist", "geothermal", "geocentric", "geode", "geographic"]
+    },
+    {
+      "skill": "Latin root aud",
+      "code": "LTAU",
+      "standard": "L.5.4",
+      "count": 250,
+      "visual_type": "word_building",
+      "root": "aud",
+      "meaning": "hear",
+      "words": ["audio", "audience", "audition", "auditorium", "audible", "auditory", "inaudible", "audiobook", "audit", "audiology"]
+    },
+    {
+      "skill": "Latin root vis vid",
+      "code": "LTVI",
+      "standard": "L.5.4",
+      "count": 250,
+      "visual_type": "word_building",
+      "root": "vis/vid",
+      "meaning": "see",
+      "words": ["vision", "visible", "invisible", "visit", "visual", "video", "evidence", "provide", "revise", "supervise", "television", "visualize"]
+    },
+    {
+      "skill": "Latin root rupt",
+      "code": "LTRU",
+      "standard": "L.5.4",
+      "count": 250,
+      "visual_type": "word_building",
+      "root": "rupt",
+      "meaning": "break",
+      "words": ["rupt", "erupt", "interrupt", "corrupt", "disrupt", "bankrupt", "eruption", "abrupt", "rupture", "disruption", "interruption"]
+    },
+    {
+      "skill": "Latin root scrib script",
+      "code": "LTSC",
+      "standard": "L.5.4",
+      "count": 250,
+      "visual_type": "word_building",
+      "root": "scrib/script",
+      "meaning": "write",
+      "words": ["scribble", "scribe", "script", "scripture", "describe", "prescribe", "subscribe", "inscribe", "transcript", "manuscript", "postscript", "description", "prescription"]
+    },
+    {
+      "skill": "suffix -tion -sion",
+      "code": "STIO",
+      "standard": "RF.5.3",
+      "count": 400,
+      "visual_type": "spelling_rule",
+      "rule": "These suffixes make the 'shun' sound. Use -tion after most letters, -sion after d, s, or l.",
+      "words": ["action", "nation", "station", "vacation", "education", "addition", "subtraction", "fraction", "direction", "collection", "selection", "protection", "construction", "instruction", "attention", "mention", "invention", "convention", "information", "celebration", "imagination", "exploration", "decision", "division", "television", "vision", "mission", "permission", "admission", "expression", "impression", "discussion", "conclusion", "confusion", "explosion", "invasion", "occasion", "collision", "revision", "tension"]
+    },
+    {
+      "skill": "suffix -able -ible",
+      "code": "SABL",
+      "standard": "RF.5.3",
+      "count": 400,
+      "visual_type": "spelling_rule",
+      "rule": "Both mean 'able to be.' Use -able with complete words, -ible with roots.",
+      "words": ["readable", "breakable", "washable", "comfortable", "reasonable", "enjoyable", "valuable", "available", "dependable", "acceptable", "remarkable", "adorable", "favorable", "laughable", "predictable", "visible", "possible", "terrible", "horrible", "incredible", "edible", "flexible", "sensible", "responsible", "reversible", "accessible", "permissible", "compatible", "convertible", "collapsible"]
+    },
+    {
+      "skill": "suffix -ous -ious",
+      "code": "SOUS",
+      "standard": "RF.5.3",
+      "count": 300,
+      "visual_type": "spelling_rule",
+      "rule": "These suffixes mean 'full of' or 'having.' They make adjectives.",
+      "words": ["famous", "nervous", "serious", "curious", "various", "previous", "obvious", "enormous", "dangerous", "generous", "marvelous", "fabulous", "jealous", "joyous", "gorgeous", "religious", "suspicious", "delicious", "precious", "spacious", "gracious", "ambitious", "cautious", "infectious", "nutritious", "victorious", "mysterious", "furious", "glorious", "industrious"]
+    },
+    {
+      "skill": "academic vocabulary",
+      "code": "ACAD",
+      "standard": "L.5.2",
+      "count": 400,
+      "visual_type": "word_building",
+      "words": ["analyze", "approach", "area", "assess", "assume", "authority", "available", "benefit", "concept", "consist", "constitute", "context", "contract", "create", "data", "define", "derive", "distribute", "economy", "environment", "establish", "estimate", "evident", "export", "factor", "finance", "formula", "function", "identify", "income", "indicate", "individual", "interpret", "involve", "issue", "labor", "legal", "legislate", "major", "method", "occur", "percent", "period", "policy", "principle", "proceed", "process", "require", "research", "respond", "role", "section", "sector", "significant", "similar", "source", "specific", "structure", "theory", "vary"]
+    }
+  ],
+  "question_templates": [
+    "Listen to the word and spell it: {word}",
+    "Type the word you hear: {word}",
+    "Spell the word: {word}"
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

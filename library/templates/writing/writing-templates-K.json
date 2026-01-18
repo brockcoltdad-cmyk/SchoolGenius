@@ -1,0 +1,127 @@
+{
+  "grade": 0,
+  "grade_name": "Kindergarten",
+  "total_target": 1000,
+  "standards": ["W.K.1", "W.K.2", "W.K.3", "L.K.1", "L.K.2", "L.K.2.A", "L.K.2.B"],
+  "skills": [
+    {
+      "skill": "capitalization - first word",
+      "code": "CAPS",
+      "standard": "L.K.2.A",
+      "count": 200,
+      "visual_type": "grammar_highlight",
+      "sentences": [
+        {"wrong": "the cat is big.", "right": "The cat is big.", "fix": "The"},
+        {"wrong": "my dog runs fast.", "right": "My dog runs fast.", "fix": "My"},
+        {"wrong": "i like to play.", "right": "I like to play.", "fix": "I"},
+        {"wrong": "we go to school.", "right": "We go to school.", "fix": "We"},
+        {"wrong": "she is my friend.", "right": "She is my friend.", "fix": "She"},
+        {"wrong": "he has a ball.", "right": "He has a ball.", "fix": "He"},
+        {"wrong": "it is sunny today.", "right": "It is sunny today.", "fix": "It"},
+        {"wrong": "they play outside.", "right": "They play outside.", "fix": "They"},
+        {"wrong": "you are nice.", "right": "You are nice.", "fix": "You"},
+        {"wrong": "this is fun.", "right": "This is fun.", "fix": "This"}
+      ]
+    },
+    {
+      "skill": "end punctuation - period",
+      "code": "PUNC",
+      "standard": "L.K.2.B",
+      "count": 200,
+      "visual_type": "sentence_builder",
+      "sentences": [
+        {"sentence": "I see a cat", "punctuation": "."},
+        {"sentence": "The dog is big", "punctuation": "."},
+        {"sentence": "She runs fast", "punctuation": "."},
+        {"sentence": "He can jump", "punctuation": "."},
+        {"sentence": "We like to play", "punctuation": "."},
+        {"sentence": "The sun is out", "punctuation": "."},
+        {"sentence": "I have a book", "punctuation": "."},
+        {"sentence": "Mom is home", "punctuation": "."},
+        {"sentence": "Dad went to work", "punctuation": "."},
+        {"sentence": "The bird can fly", "punctuation": "."}
+      ]
+    },
+    {
+      "skill": "identify nouns",
+      "code": "NOUN",
+      "standard": "L.K.1",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "sentences": [
+        {"sentence": "The cat sleeps.", "noun": "cat"},
+        {"sentence": "A dog runs.", "noun": "dog"},
+        {"sentence": "The ball bounces.", "noun": "ball"},
+        {"sentence": "My mom smiles.", "noun": "mom"},
+        {"sentence": "The book is red.", "noun": "book"},
+        {"sentence": "A bird sings.", "noun": "bird"},
+        {"sentence": "The tree is tall.", "noun": "tree"},
+        {"sentence": "My dad works.", "noun": "dad"},
+        {"sentence": "The car goes fast.", "noun": "car"},
+        {"sentence": "A fish swims.", "noun": "fish"}
+      ]
+    },
+    {
+      "skill": "identify verbs",
+      "code": "VERB",
+      "standard": "L.K.1",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "sentences": [
+        {"sentence": "The cat sleeps.", "verb": "sleeps"},
+        {"sentence": "A dog runs.", "verb": "runs"},
+        {"sentence": "The boy jumps.", "verb": "jumps"},
+        {"sentence": "She eats lunch.", "verb": "eats"},
+        {"sentence": "He reads a book.", "verb": "reads"},
+        {"sentence": "They play games.", "verb": "play"},
+        {"sentence": "I walk to school.", "verb": "walk"},
+        {"sentence": "The bird flies.", "verb": "flies"},
+        {"sentence": "We sing songs.", "verb": "sing"},
+        {"sentence": "Mom cooks dinner.", "verb": "cooks"}
+      ]
+    },
+    {
+      "skill": "complete sentences",
+      "code": "SENT",
+      "standard": "L.K.1",
+      "count": 150,
+      "visual_type": "sentence_builder",
+      "sentence_parts": [
+        {"subject": "The cat", "predicate": "is sleeping"},
+        {"subject": "My dog", "predicate": "likes to run"},
+        {"subject": "The bird", "predicate": "can fly"},
+        {"subject": "I", "predicate": "like pizza"},
+        {"subject": "She", "predicate": "reads books"},
+        {"subject": "He", "predicate": "plays soccer"},
+        {"subject": "We", "predicate": "go to school"},
+        {"subject": "They", "predicate": "are friends"},
+        {"subject": "Mom", "predicate": "makes food"},
+        {"subject": "Dad", "predicate": "drives a car"}
+      ]
+    },
+    {
+      "skill": "opinion writing",
+      "code": "OPIN",
+      "standard": "W.K.1",
+      "count": 150,
+      "visual_type": "paragraph_structure",
+      "prompts": [
+        {"topic": "favorite animal", "opinion": "I like dogs best.", "reason": "They are fun to play with."},
+        {"topic": "favorite food", "opinion": "Pizza is the best food.", "reason": "It tastes yummy."},
+        {"topic": "favorite color", "opinion": "Blue is my favorite color.", "reason": "It is pretty like the sky."},
+        {"topic": "favorite toy", "opinion": "I love my teddy bear.", "reason": "It is soft and cuddly."},
+        {"topic": "favorite place", "opinion": "The park is the best.", "reason": "I can play on the swings."}
+      ]
+    }
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

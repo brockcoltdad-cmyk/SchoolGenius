@@ -1,0 +1,302 @@
+[
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "Great job identifying and fixing that coding error! Your persistence and problem-solving skills are impressive. Keep up the excellent work!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "Great job fixing that coding error! Your determination to troubleshoot and correct it shows real skill and growth."
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, you fixed your typing mistake! Super job! I’m so proud of you! 🌟👍"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, you fixed your typing mistake! Super job! You're a typing star! 🌟🎉"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Awesome job fixing that typing mistake! I’m so proud of how you spotted it and made it right!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Awesome job fixing that typing mistake! I’m so proud of how you spotted it and made it right!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Hey, great job fixing that typing error! It’s awesome to see you catch and correct it so quickly!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Hey, great job fixing that typing error! It’s awesome to see you catch and correct it so quickly!"
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "Great job recognizing and fixing your typing error! Your attention to detail is impressive and shows real growth."
+  },
+  {
+    "trigger": "mistake_recovery",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "Great job recognizing and fixing your typing error! Your attention to detail is impressive and shows real growth."
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Wow, you keep trying in Math! That’s super awesome! Keep going, champ! 🌟👍"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Wow, you keep trying in Math! That’s super awesome! Keep going, champ! 🌟💪"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Hey, superstar! I’m so proud of you for sticking with tough Math problems. Keep pushing—you’ve got this!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Hey, awesome job sticking with tough Math problems! Your hard work is paying off—keep going!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Hey, I see you pushing through tough math problems. That’s awesome! Keep at it, you’ve got this!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Hey, I see you pushing through tough Math problems! That determination is awesome—keep it up!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "Your persistence in tackling tough Math problems is impressive. Keep pushing through—your hard work is paying off!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "Your persistence in tackling tough Math problems is impressive. Keep pushing through—your hard work is paying off!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, you keep trying hard at reading! You're amazing! Keep going! 📚😊"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, you're amazing at not giving up on reading! Keep going, superstar! 📚✨"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Wow, you're amazing at sticking with tough books! Keep reading, and you'll get even better!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Wow, I’m so proud of you for sticking with reading, even when it’s tough! Keep going, you’re getting better every day!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, I see how you keep pushing through tough reading. That’s awesome and inspiring! Keep it up!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, I see how hard you’re working on reading. Keep pushing through—it’s awesome to see your effort!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "Your persistence in tackling tough texts is impressive. Keep pushing through—your growth is evident!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "Your persistence in tackling tough reading material is impressive. Keep pushing through—your dedication is building real strength!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Wow, you're amazing at sticking with spelling! Keep trying, superstar! You're getting better every day! 🌟📚"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Wow, you keep trying hard at spelling! I’m so proud of you! Keep going, champ! 🌟📝"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Awesome job sticking with spelling, even when it’s tough! Your hard work is paying off—keep it up!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Wow, I’m so proud of you for sticking with spelling even when it’s tough! Keep going, you’ve got this!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Hey, I see how hard you’re working on spelling. Keep pushing through—it’s awesome to see your effort!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Hey, I see you pushing through tough spelling challenges. That determination is awesome—keep it up!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "I’m impressed by your persistence with spelling challenges. Keep pushing through—your hard work is paying off!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "Your persistence in mastering spelling is impressive. Keep pushing through the challenges—your hard work is paying off!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, you keep trying coding even when it’s tricky! You’re a super star! 🌟 Keep going! 💻"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, you keep trying coding even when it’s tricky! You’re a superstar! Keep going! 🌟💻"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Wow, you're amazing at sticking with coding, even when it's tough! Keep pushing—you're getting better every day!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Wow, you're sticking with coding even when it's tough! That’s awesome—keep solving those tricky problems!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Hey, I see you pushing through tough coding challenges. That’s awesome! Keep at it, you’re getting better every day!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Hey, I see you pushing through tough coding problems. That’s awesome! Keep it up, you’re getting better every day!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "Your persistence in coding, even when it’s tough, is impressive. Keep pushing through—your hard work is building real skills!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "Your persistence in coding, even when it’s tough, is impressive. Keep pushing through—your hard work is building real skills!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, you're amazing at typing! Keep trying, even when it's tough! You're getting better every day! 🌟💻"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, you keep typing even when it’s hard! You’re amazing! Keep going, champ! 🌟💪"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Wow, you're sticking with typing even when it's tough! Keep those fingers moving—you're getting better every day!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Wow, you keep practicing typing even when it’s tough! That’s awesome—your hard work is making you a typing star!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Hey, I see you sticking with typing even when it’s tough. That’s awesome! Keep pushing, you’re getting better every day!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Hey, I see you sticking with typing even when it’s tough—keep it up, you’re getting better every day!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "Your persistence in mastering typing is impressive. Keep pushing through the challenges; your dedication is paying off!"
+  },
+  {
+    "trigger": "keeps_going",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "Your persistence in mastering typing is impressive. Keep pushing through the challenges—your dedication is paying off!"
+  }
+]

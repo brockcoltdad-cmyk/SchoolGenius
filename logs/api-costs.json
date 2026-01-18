@@ -1,0 +1,27 @@
+{
+  "startDate": "2026-01-13T06:25:17.225Z",
+  "daily": {},
+  "monthly": {},
+  "total": {
+    "claude": {
+      "requests": 0,
+      "cost": 0,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    "grok": {
+      "requests": 0,
+      "cost": 0
+    },
+    "gemini": {
+      "requests": 0,
+      "cost": 0,
+      "chars": {
+        "input": 0,
+        "output": 0
+      }
+    }
+  }
+}

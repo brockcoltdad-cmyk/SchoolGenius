@@ -1,0 +1,137 @@
+{
+  "grade": 6,
+  "grade_name": "Sixth Grade",
+  "total_target": 1500,
+  "standards": ["W.6.1", "W.6.2", "W.6.3", "L.6.1", "L.6.2", "L.6.3"],
+  "skills": [
+    {
+      "skill": "subjective and objective pronouns",
+      "code": "PRON",
+      "standard": "L.6.1",
+      "count": 200,
+      "visual_type": "grammar_highlight",
+      "pronouns": {
+        "subjective": ["I", "you", "he", "she", "it", "we", "they"],
+        "objective": ["me", "you", "him", "her", "it", "us", "them"]
+      },
+      "exercises": [
+        {"sentence": "___ went to the store.", "answer": "She", "type": "subjective", "wrong": "Her"},
+        {"sentence": "Give the book to ___.", "answer": "him", "type": "objective", "wrong": "he"},
+        {"sentence": "Mom took ___ to the park.", "answer": "us", "type": "objective", "wrong": "we"},
+        {"sentence": "___ and I are best friends.", "answer": "She", "type": "subjective", "wrong": "Her"}
+      ]
+    },
+    {
+      "skill": "intensive pronouns",
+      "code": "PRON",
+      "standard": "L.6.1",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "intensives": ["myself", "yourself", "himself", "herself", "itself", "ourselves", "yourselves", "themselves"],
+      "exercises": [
+        {"sentence": "I made the cake myself.", "intensive": "myself", "emphasizes": "I"},
+        {"sentence": "The president himself gave the speech.", "intensive": "himself", "emphasizes": "president"},
+        {"sentence": "We built the treehouse ourselves.", "intensive": "ourselves", "emphasizes": "We"}
+      ]
+    },
+    {
+      "skill": "sentence patterns for meaning",
+      "code": "SENT",
+      "standard": "L.6.3",
+      "count": 200,
+      "visual_type": "sentence_builder",
+      "patterns": [
+        {"purpose": "emphasis", "technique": "short sentence after long", "example": "After running through the rain, climbing over the fence, and dodging the sprinklers, I finally made it home. I was soaked."},
+        {"purpose": "suspense", "technique": "delay main idea", "example": "Slowly, carefully, holding my breath, I opened the door."},
+        {"purpose": "rhythm", "technique": "parallel structure", "example": "She came, she saw, she conquered."}
+      ]
+    },
+    {
+      "skill": "punctuation for effect",
+      "code": "PUNC",
+      "standard": "L.6.2",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "techniques": [
+        {"punctuation": "dash", "effect": "dramatic pause", "example": "I opened the door and saw—nothing."},
+        {"punctuation": "ellipsis", "effect": "trailing off", "example": "I thought I heard something..."},
+        {"punctuation": "colon", "effect": "introduce list or explanation", "example": "I need three things: courage, patience, and luck."},
+        {"punctuation": "semicolon", "effect": "connect related ideas", "example": "I love reading; my brother prefers video games."}
+      ]
+    },
+    {
+      "skill": "style and tone",
+      "code": "SENT",
+      "standard": "L.6.3",
+      "count": 200,
+      "visual_type": "grammar_highlight",
+      "tones": [
+        {"tone": "formal", "example": "The experiment yielded significant results.", "context": "academic writing"},
+        {"tone": "informal", "example": "The experiment worked out great!", "context": "personal blog"},
+        {"tone": "persuasive", "example": "You must consider the overwhelming evidence.", "context": "argument"},
+        {"tone": "objective", "example": "The data shows a 15% increase.", "context": "report"}
+      ]
+    },
+    {
+      "skill": "argument structure - claims",
+      "code": "ARGU",
+      "standard": "W.6.1",
+      "count": 200,
+      "visual_type": "paragraph_structure",
+      "elements": [
+        {"element": "claim", "definition": "your main argument", "example": "Social media has more negative effects than positive ones on teenagers."},
+        {"element": "reasons", "definition": "why your claim is true", "example": "It causes anxiety, disrupts sleep, and leads to cyberbullying."},
+        {"element": "evidence", "definition": "facts that support reasons", "example": "Studies show 70% of teens feel worse about themselves after using social media."}
+      ]
+    },
+    {
+      "skill": "argument structure - counterclaims",
+      "code": "ARGU",
+      "standard": "W.6.1",
+      "count": 150,
+      "visual_type": "paragraph_structure",
+      "exercises": [
+        {
+          "claim": "Zoos should be banned.",
+          "counterclaim": "Opponents argue that zoos protect endangered species.",
+          "rebuttal": "However, animals in captivity often suffer from stress and unnatural living conditions, and conservation efforts would be more effective in the wild."
+        }
+      ]
+    },
+    {
+      "skill": "formal style",
+      "code": "SENT",
+      "standard": "W.6.1",
+      "count": 150,
+      "visual_type": "grammar_highlight",
+      "conversions": [
+        {"informal": "Kids should totally get more recess.", "formal": "Students would benefit from increased recess time."},
+        {"informal": "This stuff is really bad for you.", "formal": "These substances have harmful effects on health."},
+        {"informal": "A lot of people think...", "formal": "Many individuals believe..."}
+      ]
+    },
+    {
+      "skill": "cohesion and clarity",
+      "code": "PARA",
+      "standard": "W.6.2",
+      "count": 100,
+      "visual_type": "paragraph_structure",
+      "transitions": {
+        "addition": ["furthermore", "moreover", "in addition", "additionally"],
+        "contrast": ["however", "nevertheless", "on the contrary", "conversely"],
+        "cause_effect": ["therefore", "consequently", "as a result", "thus"],
+        "example": ["for instance", "specifically", "to illustrate", "namely"]
+      }
+    }
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

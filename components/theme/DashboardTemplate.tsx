@@ -3,7 +3,9 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Trophy, Flame, Crown, Star, Zap, Award, Users, TrendingUp, Camera, MessageSquare, FileText, Settings, ShoppingBag } from 'lucide-react';
+import { Trophy, Flame, Crown, Star, Zap, Award, Users, TrendingUp, Camera, MessageSquare, FileText, Settings, ShoppingBag, Palette } from 'lucide-react';
+import { useTheme, themes, type ThemeId } from '@/lib/theme-context';
+import { createClient } from '@/lib/supabase-client';
 import { MagneticButton } from '@/components/ui/magnetic-button';
 import { AnimatedProgress } from '@/components/ui/animated-progress';
 import AnimatedCounter from '@/components/animations/AnimatedCounter';
@@ -50,6 +52,7 @@ interface Subject {
 interface BottomNavItem {
   icon: LucideIcon;
   label: string;
+  description?: string;
   colorGradient: string;
   href: string;
 }
@@ -129,6 +132,48 @@ export default function DashboardTemplate({
   previewMode = false,
 }: DashboardTemplateProps) {
   const [showCelebration, setShowCelebration] = useState(false);
+  const [showThemePicker, setShowThemePicker] = useState(false);
+  const { setTheme } = useTheme();
+
+  // All kid-appropriate themes (excluding adult themes like finance, coffee, gym, nightowl, lofi, etc.)
+  const quickThemes: ThemeId[] = [
+    // Action/Adventure
+    'wwe', 'battle', 'ninja', 'darkninja', 'hero', 'pirate', 'zombie', 'mech', 'scifi',
+    // Animals
+    'dinosaur', 'shark', 'kitten', 'puppy', 'butterfly', 'bug', 'teddy', 'pony',
+    // Fantasy
+    'unicorn', 'mermaid', 'princess', 'fairy', 'rainbow', 'dreams',
+    // Space/Science
+    'space', 'robot', 'planet', 'volcano',
+    // Nature
+    'ocean', 'jungle', 'safari', 'arctic', 'beach', 'camping', 'farm',
+    // Creative
+    'builder', 'cube', 'slime', 'bracelet', 'artstudio', 'candy', 'cupcake',
+    // Entertainment
+    'popstar', 'moviestar', 'dance', 'ballerina', 'anime', 'kawaii', 'kpop',
+    // Sports/Games
+    'racecar', 'esports', 'sneaker',
+    // Style
+    'glam', 'fashion', 'aesthetic', 'y2k', 'softgirl', 'cottagecore', 'graffiti', 'hiphop', 'streetwear', 'neon',
+    // Other kid-friendly
+    'monster', 'creatures', 'train', 'construction', 'firefighter', 'friendship', 'ice', 'spaday', 'petgroomer',
+    'bookworm', 'zodiac', 'web', 'victory', 'default'
+  ];
+
+  const handleThemeSelect = async (newThemeId: ThemeId) => {
+    setTheme(newThemeId);
+    // Save to database
+    try {
+      const supabase = createClient();
+      await supabase
+        .from('children')
+        .update({ current_theme: newThemeId })
+        .eq('id', kidId);
+    } catch (e) {
+      console.error('Error saving theme:', e);
+    }
+    setShowThemePicker(false);
+  };
 
   useEffect(() => {
     const timer = setTimeout(() => setShowCelebration(true), 500);
@@ -497,28 +542,34 @@ export default function DashboardTemplate({
           </div>
         </motion.div>
 
+        {/* Full-width navigation buttons with descriptions - uses THEME colors */}
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.9 }}
-          className="grid grid-cols-5 gap-4"
+          className="space-y-3"
         >
           {bottomNav.map((item, i) => {
             const Icon = item.icon;
             const href = item.href.replace('{id}', kidId);
             const navContent = (
                 <motion.div
-                  whileHover={{ scale: 1.05, y: -5 }}
-                  whileTap={{ scale: 0.95 }}
-                  className={`relative group ${previewMode ? 'opacity-90' : 'cursor-pointer'} rounded-xl overflow-hidden border-2 border-white/20 ${previewMode ? '' : `hover:border-${colors.primary}`} transition-all p-6 text-center bg-gradient-to-br ${item.colorGradient} shadow-lg ${previewMode ? '' : 'hover:shadow-2xl'}`}
+                  whileHover={{ scale: 1.02, x: 5 }}
+                  whileTap={{ scale: 0.98 }}
+                  className={`relative group w-full ${previewMode ? 'opacity-90' : 'cursor-pointer'} rounded-xl overflow-hidden border-2 ${colors.cardBorder} hover:border-white/60 transition-all p-4 ${colors.cardBg} shadow-lg ${colors.glowSecondary} ${previewMode ? '' : 'hover:shadow-2xl'}`}
                 >
-                  <motion.div
-                    animate={{ rotate: [0, 5, -5, 0] }}
-                    transition={{ duration: 2, repeat: Infinity, delay: i * 0.2 }}
-                  >
-                    <Icon className="h-8 w-8 text-white mx-auto mb-2" />
-                  </motion.div>
-                  <div className="text-white font-black text-sm uppercase">{item.label}</div>
+                  <div className="flex items-center gap-4">
+                    <div className={`flex-shrink-0 w-12 h-12 ${colors.primary} rounded-lg flex items-center justify-center`}>
+                      <Icon className={`h-6 w-6 ${colors.buttonText}`} />
+                    </div>
+                    <div className="flex-1 text-left">
+                      <div className={`${colors.textPrimary} font-black text-lg uppercase tracking-wide`}>{item.label}</div>
+                      {item.description && (
+                        <div className="text-white/70 text-sm mt-0.5">{item.description}</div>
+                      )}
+                    </div>
+                    <div className={`${colors.textPrimary} text-2xl`}>→</div>
+                  </div>
                 </motion.div>
             );
             return previewMode ? (
@@ -527,6 +578,74 @@ export default function DashboardTemplate({
               <Link key={i} href={href}>{navContent}</Link>
             );
           })}
+
+          {/* Pick Your Theme Button */}
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 1.0 }}
+          >
+            <motion.button
+              onClick={() => setShowThemePicker(!showThemePicker)}
+              whileHover={{ scale: 1.02, x: 5 }}
+              whileTap={{ scale: 0.98 }}
+              className={`relative group w-full rounded-xl overflow-hidden border-2 ${colors.cardBorder} hover:border-white/60 transition-all p-4 ${colors.cardBg} shadow-lg ${colors.glowSecondary} hover:shadow-2xl`}
+            >
+              <div className="flex items-center gap-4">
+                <div className={`flex-shrink-0 w-12 h-12 bg-gradient-to-br from-pink-500 via-purple-500 to-cyan-500 rounded-lg flex items-center justify-center`}>
+                  <Palette className="h-6 w-6 text-white" />
+                </div>
+                <div className="flex-1 text-left">
+                  <div className={`${colors.textPrimary} font-black text-lg uppercase tracking-wide`}>Pick Your Theme</div>
+                  <div className="text-white/70 text-sm mt-0.5">Change your look instantly!</div>
+                </div>
+                <div className={`${colors.textPrimary} text-2xl`}>{showThemePicker ? '↑' : '↓'}</div>
+              </div>
+            </motion.button>
+
+            {/* Theme Picker Grid */}
+            <AnimatePresence>
+              {showThemePicker && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: 'auto', opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="overflow-hidden"
+                >
+                  <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2 mt-3 p-3 rounded-xl bg-black/40 backdrop-blur-sm border border-white/20">
+                    {quickThemes.map((tid) => {
+                      const t = themes[tid];
+                      if (!t) return null;
+                      const isActive = themeId === tid;
+                      return (
+                        <motion.button
+                          key={tid}
+                          onClick={() => handleThemeSelect(tid)}
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.95 }}
+                          className={`relative p-3 rounded-xl text-center transition-all ${
+                            isActive ? 'ring-2 ring-white ring-offset-2 ring-offset-black' : ''
+                          }`}
+                          style={{
+                            background: `linear-gradient(135deg, ${t.colors.primary}, ${t.colors.secondary})`
+                          }}
+                        >
+                          <div className="text-2xl mb-1">{t.mascot}</div>
+                          <div className="text-xs font-bold text-white truncate">{t.name}</div>
+                          {isActive && (
+                            <div className="absolute -top-1 -right-1 bg-white rounded-full p-0.5">
+                              <div className="w-3 h-3 bg-green-500 rounded-full" />
+                            </div>
+                          )}
+                        </motion.button>
+                      );
+                    })}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
         </motion.div>
       </div>
     </div>

@@ -1,0 +1,302 @@
+[
+  {
+    "trigger": "asks_question",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Yay! Asking for help in Math is super brave! I'm so proud of you! 🌟👍"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Yay! Asking for help in Math is super brave! You're a star! 🌟 Keep asking! 🧠💪"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Awesome job asking for help with Math! That’s how you grow smarter every day. I’m so proud of you!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Hey, awesome job asking for help with Math! That’s how you learn and grow—keep it up!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Hey, great job asking for help with Math! That’s super smart and shows you’re ready to learn!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Hey, props for asking for help in Math! That’s super smart and shows you’re serious about learning!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "Great job asking for help in Math! Seeking clarity shows maturity and dedication to learning."
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "Great job asking for help in Math! Seeking clarity shows maturity and determination to succeed."
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, asking for help with reading is super brave! You're a star! Keep asking questions! 🌟📚"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, asking for help with reading is super brave! I'm so proud of you! 🌟📚"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Awesome job asking for help with reading! I’m so proud of you for speaking up. Let’s tackle this together!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "message": "Awesome job asking for help with reading! I’m so proud of you for speaking up. Let’s tackle this together!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, awesome job asking for help with reading! It’s cool to see you taking charge of your learning!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "message": "Hey, asking for help with reading is awesome! It shows you’re eager to learn. I’m proud of you!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "I'm proud of you for asking for help with reading. It shows maturity and a commitment to improving!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "message": "Great job asking for help with reading! Seeking support shows maturity and dedication to improving. I'm here to assist!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Yay! I’m so happy you asked for spelling help! You’re super brave! Let’s learn together! 🌟📚"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "message": "Yay! Asking for spelling help is awesome! You're so brave! Let's learn together! 🌟📚"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Awesome job asking for help with spelling! I’m so proud of you for trying hard and learning new words!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "message": "Awesome job asking for help with spelling! I'm so proud of you for speaking up. Let's tackle it together!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Hey, asking for help with spelling is awesome! It shows you care about getting it right. I’m happy to help!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "message": "Hey, it’s awesome that you asked for help with spelling! That shows you really care about getting it right. I’ve got your back!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "Great job seeking help with spelling! Asking questions shows initiative and a commitment to improving your skills."
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "message": "Great job asking for help with spelling! Seeking support shows maturity and dedication to improving your skills."
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Wow, asking for help is super smart! You're a coding star! Keep asking questions! 🌟💻"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Coding",
+    "age_group": "k2",
+    "message": "Yay! Asking for help with coding is super smart! I'm so proud of you! 🌟💻"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Awesome job asking for help with coding! That’s how you learn and grow—keep it up, coding champ!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "message": "Awesome job asking for help with coding! That’s how you learn and grow. I’m so proud of you!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Hey, asking for help with coding is awesome! It shows you’re eager to learn. I’m here to help!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "message": "Hey, awesome job asking for help with coding! It’s the best way to learn and get better!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "Great job asking for help with coding! It shows real initiative and a commitment to learning. Keep it up!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "message": "Great job asking for help with coding! Seeking support shows maturity and determination to grow."
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, asking for help with typing is super smart! I’m so proud of you! Let’s learn together! 🌟👍"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Typing",
+    "age_group": "k2",
+    "message": "Wow, asking for help is super brave! I'm so proud of you! Let's type together! 🌟💻"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Awesome job asking for help with typing! I'm so proud of you for speaking up. Let's learn together!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "message": "Awesome job asking for help with typing! That’s how you learn and grow. I’m so proud of you!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Hey, awesome job asking for help with typing! It’s a smart move to get better, and I’m here to support you!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "message": "Hey, awesome job asking for help with typing! It’s a great step to getting better. I’m here to support you!"
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "Great job seeking help with typing! Asking questions shows initiative and a commitment to improving your skills."
+  },
+  {
+    "trigger": "asks_question",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "message": "Great job asking for help with typing! Seeking support shows maturity and determination to improve."
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Yay! You finished your math work! You're a super star! Keep it up! 🌟🎉"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Math",
+    "age_group": "k2",
+    "message": "Wow, you finished your math work! Amazing job! You're a math star! 🌟✏️ Yay!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Awesome job finishing your Math assignment! You’re a rock star at solving problems! Keep it up!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Math",
+    "age_group": "grades35",
+    "message": "Awesome job finishing your math assignment! You’re crushing those numbers—keep up the great work!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Awesome job finishing your Math assignment! Your hard work paid off, and I’m proud of you!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Math",
+    "age_group": "grades68",
+    "message": "Hey, awesome job finishing your Math assignment! You crushed it, and I’m super proud of your hard work!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "Great job finishing your Math assignment! Your dedication and hard work are impressive. Keep it up!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Math",
+    "age_group": "grades912",
+    "message": "Great job completing your Math assignment! Your dedication and focus are impressive. Keep up the excellent work!"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, you finished your reading! Amazing job! I'm so proud of you! 📚🎉"
+  },
+  {
+    "trigger": "completes_task",
+    "subject": "Reading",
+    "age_group": "k2",
+    "message": "Wow, you finished your reading! Amazing job! You’re a super reader! 📚✨ Yay!"
+  }
+]

@@ -1,0 +1,230 @@
+{
+  "grade": 1,
+  "grade_name": "First Grade",
+  "lexile_range": "200L-400L",
+  "default_lexile": "300L",
+  "standards": ["RF.1.2", "RF.1.3", "RF.1.4", "RL.1.1", "RL.1.2", "RL.1.3", "RL.1.7"],
+  "total_target": 10000,
+  "skills": [
+    {
+      "skill": "short vowel sounds",
+      "code": "VWEL",
+      "standard": "RF.1.2",
+      "count": 1200,
+      "visual_type": "phonics",
+      "question_templates": [
+        "What is the vowel sound in '{word}'?",
+        "Which word has the short {vowel} sound?",
+        "Say the word. Is the vowel short or long?"
+      ],
+      "short_vowel_words": {
+        "a": ["cat", "hat", "bat", "map", "tap", "cap", "van", "fan", "ran", "man", "sad", "bad", "dad", "had", "mad", "bag", "tag", "wag", "rag", "jam"],
+        "e": ["bed", "red", "fed", "led", "pen", "ten", "hen", "men", "den", "pet", "wet", "set", "get", "let", "met", "net", "bet", "leg", "beg", "peg"],
+        "i": ["pig", "big", "dig", "fig", "wig", "pin", "win", "tin", "fin", "bin", "sit", "hit", "bit", "fit", "kit", "lit", "pit", "dip", "hip", "lip"],
+        "o": ["dog", "log", "fog", "hog", "jog", "top", "hop", "pop", "mop", "cop", "hot", "pot", "dot", "got", "lot", "not", "cot", "box", "fox", "sox"],
+        "u": ["bug", "hug", "mug", "rug", "tug", "dug", "jug", "run", "sun", "fun", "bun", "cup", "pup", "up", "cut", "but", "hut", "nut", "bus", "gum"]
+      }
+    },
+    {
+      "skill": "long vowel sounds",
+      "code": "VWEL",
+      "standard": "RF.1.3",
+      "count": 1200,
+      "visual_type": "phonics",
+      "question_templates": [
+        "What is the vowel sound in '{word}'?",
+        "Which word has the long {vowel} sound?",
+        "Does '{word}' have a long or short vowel?"
+      ],
+      "long_vowel_words": {
+        "a": ["cake", "bake", "make", "take", "lake", "wake", "name", "game", "same", "came", "made", "rain", "tail", "mail", "pail", "play", "day", "say", "way", "may"],
+        "e": ["tree", "free", "see", "bee", "knee", "three", "feet", "meet", "keep", "deep", "sleep", "team", "read", "eat", "seat", "beat", "leaf", "mean", "bean", "clean"],
+        "i": ["bike", "like", "hike", "time", "lime", "dime", "fine", "line", "mine", "nine", "ride", "hide", "side", "wide", "kite", "bite", "white", "night", "light", "right"],
+        "o": ["bone", "cone", "home", "hope", "rope", "nose", "rose", "hose", "note", "vote", "boat", "coat", "goat", "road", "toad", "snow", "grow", "know", "show", "blow"],
+        "u": ["cute", "mute", "tube", "cube", "use", "fuse", "huge", "June", "tune", "rule", "mule", "blue", "true", "glue", "clue", "fruit", "suit", "juice"]
+      }
+    },
+    {
+      "skill": "consonant blends",
+      "code": "BLND",
+      "standard": "RF.1.3",
+      "count": 1000,
+      "visual_type": "word_building",
+      "question_templates": [
+        "What blend do you hear at the beginning of '{word}'?",
+        "Which word starts with the blend {blend}?",
+        "Blend these sounds: {blend} + {ending}"
+      ],
+      "blends": {
+        "bl": ["blue", "black", "block", "blow", "blend", "blink", "blank", "blast"],
+        "br": ["brown", "bring", "bread", "brick", "brush", "brain", "brave", "break"],
+        "cl": ["clap", "clean", "climb", "clock", "close", "cloud", "clown", "club"],
+        "cr": ["crab", "crack", "crash", "cream", "crib", "crop", "crow", "cry"],
+        "dr": ["draw", "dream", "dress", "drink", "drive", "drop", "drum", "dry"],
+        "fl": ["flag", "flame", "flat", "flip", "float", "floor", "flower", "fly"],
+        "fr": ["free", "fresh", "friend", "frog", "from", "front", "fruit", "fry"],
+        "gl": ["glad", "glass", "glow", "glue", "glide"],
+        "gr": ["grab", "grape", "grass", "gray", "green", "grin", "grow", "ground"],
+        "pl": ["place", "plan", "plane", "plant", "plate", "play", "please", "plus"],
+        "pr": ["pray", "press", "pretty", "price", "print", "prize", "promise", "proud"],
+        "sc": ["scale", "scare", "scarf", "school", "score", "scoop"],
+        "sk": ["skate", "skeleton", "sketch", "ski", "skill", "skin", "skip", "sky"],
+        "sl": ["slam", "slap", "sled", "sleep", "slide", "slim", "slip", "slow"],
+        "sm": ["small", "smart", "smell", "smile", "smoke", "smooth", "smash"],
+        "sn": ["snack", "snail", "snake", "snap", "snow", "snore", "snug"],
+        "sp": ["space", "speak", "speed", "spell", "spend", "spider", "spin", "spot"],
+        "st": ["stand", "star", "start", "stay", "stem", "step", "stick", "stop", "store", "story"],
+        "sw": ["swam", "swan", "swap", "sweet", "swim", "swing", "switch"],
+        "tr": ["track", "trade", "train", "trap", "tree", "trick", "trip", "truck", "true", "try"],
+        "tw": ["twelve", "twenty", "twice", "twin", "twist"]
+      }
+    },
+    {
+      "skill": "consonant digraphs",
+      "code": "DGPH",
+      "standard": "RF.1.3",
+      "count": 1000,
+      "visual_type": "phonics",
+      "question_templates": [
+        "What sound do you hear at the beginning of '{word}'?",
+        "Which digraph makes the sound in '{word}'?",
+        "Find the word that starts with {digraph}."
+      ],
+      "digraphs": {
+        "sh": ["ship", "shop", "shoe", "shell", "sheep", "shirt", "shake", "share", "sharp", "shine", "short", "show", "shut", "fish", "dish", "wish", "wash", "bush", "push", "rush"],
+        "ch": ["chair", "chalk", "chance", "change", "chase", "cheap", "check", "cheese", "cherry", "chest", "chick", "child", "chin", "chip", "chop", "much", "such", "rich", "each", "beach"],
+        "th": ["thank", "that", "the", "them", "then", "there", "these", "they", "thick", "thin", "thing", "think", "this", "those", "bath", "math", "path", "with", "tooth", "both"],
+        "wh": ["whale", "what", "wheat", "wheel", "when", "where", "which", "while", "whip", "whisper", "whistle", "white", "who", "whole", "why"],
+        "ph": ["phone", "photo", "phrase", "dolphin", "elephant", "alphabet", "trophy", "nephew", "orphan"]
+      }
+    },
+    {
+      "skill": "sight words grade 1",
+      "code": "SGHT",
+      "standard": "RF.1.3",
+      "count": 1500,
+      "visual_type": "sight_word",
+      "question_templates": [
+        "Read this word: {word}",
+        "Which word is '{word}'?",
+        "Find '{word}' in the sentence: {sentence}"
+      ],
+      "sight_words": ["after", "again", "an", "any", "as", "ask", "by", "could", "every", "fly", "from", "give", "going", "had", "has", "her", "him", "his", "how", "just", "know", "let", "live", "may", "of", "old", "once", "open", "over", "put", "round", "some", "stop", "take", "thank", "them", "then", "think", "walk", "were", "when"],
+      "sentences": [
+        "I could {word} if I try.",
+        "Do you {word} how to do it?",
+        "She will {word} to school.",
+        "They {word} playing outside.",
+        "He {word} a good friend."
+      ]
+    },
+    {
+      "skill": "asking questions about text",
+      "code": "COMP",
+      "standard": "RL.1.1",
+      "count": 1500,
+      "visual_type": "comprehension_question",
+      "question_templates": [
+        "Who is in the story?",
+        "What happened in the story?",
+        "Where does the story take place?",
+        "When does the story happen?",
+        "Why did {character} do that?"
+      ],
+      "stories": [
+        {
+          "title": "The Lost Puppy",
+          "text": "Mia found a small puppy in her yard. The puppy was brown and white. It looked lost and hungry. Mia gave the puppy some water. She made signs to find the owner. The next day, a boy came to get his puppy. He was so happy!",
+          "who": "Mia and a boy",
+          "what": "Mia found a lost puppy and helped find its owner",
+          "where": "Mia's yard",
+          "why": "The puppy was lost and hungry"
+        },
+        {
+          "title": "The Big Race",
+          "text": "Tom wanted to win the race. He practiced running every day. On race day, he ran as fast as he could. He did not win first place. But he beat his own best time! Tom was proud of himself.",
+          "who": "Tom",
+          "what": "Tom ran in a race and beat his best time",
+          "where": "at a race",
+          "why": "He wanted to do his best"
+        },
+        {
+          "title": "Making Cookies",
+          "text": "Grandma and Lily made cookies. They mixed flour and sugar. They added eggs and butter. Lily helped stir the dough. They baked the cookies in the oven. The cookies smelled so good! They ate cookies with cold milk.",
+          "who": "Grandma and Lily",
+          "what": "They made cookies together",
+          "where": "in the kitchen",
+          "why": "They wanted to bake together"
+        }
+      ]
+    },
+    {
+      "skill": "retelling stories",
+      "code": "COMP",
+      "standard": "RL.1.2",
+      "count": 1300,
+      "visual_type": "comprehension_question",
+      "question_templates": [
+        "What happened first?",
+        "What happened next?",
+        "What happened at the end?",
+        "Tell the story in order."
+      ],
+      "retell_stories": [
+        {
+          "title": "The Seed",
+          "beginning": "Sam planted a seed in the ground.",
+          "middle": "He watered it every day. The seed grew into a small plant.",
+          "end": "The plant grew big and made beautiful flowers.",
+          "message": "Taking care of things helps them grow"
+        },
+        {
+          "title": "The Bike",
+          "beginning": "Emma got a new bike for her birthday.",
+          "middle": "She tried to ride it but kept falling. Her dad helped her practice.",
+          "end": "After many tries, Emma could ride all by herself!",
+          "message": "Practice helps you learn new things"
+        }
+      ]
+    },
+    {
+      "skill": "using pictures",
+      "code": "COMP",
+      "standard": "RL.1.7",
+      "count": 1300,
+      "visual_type": "comprehension_question",
+      "question_templates": [
+        "Look at the picture. What is happening?",
+        "How does the picture help you understand the story?",
+        "What does the picture tell you about {character}?"
+      ],
+      "picture_descriptions": [
+        {
+          "description": "A boy with a big smile holding a trophy",
+          "inference": "The boy won something and feels proud",
+          "story_connection": "The boy worked hard and won a prize"
+        },
+        {
+          "description": "A girl looking out a rainy window with a sad face",
+          "inference": "The girl is sad because she can't go outside",
+          "story_connection": "The rain ruined her plans to play"
+        },
+        {
+          "description": "Two children sharing a sandwich at lunch",
+          "inference": "The children are friends who share with each other",
+          "story_connection": "Being kind means sharing with others"
+        }
+      ]
+    }
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}

@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { useParams, useRouter } from 'next/navigation';
 import { ArrowLeft, Lock, CheckCircle, Star, Play } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
+import { useTheme } from '@/lib/theme-context';
 
 interface Skill {
   id: string;
@@ -34,6 +35,7 @@ const subjectInfo: Record<string, { name: string; emoji: string; code: string }>
 export default function SubjectPage() {
   const params = useParams();
   const router = useRouter();
+  const { currentTheme } = useTheme();
   const kidId = params.id as string;
   const subject = params.subject as string;
 
@@ -112,9 +114,12 @@ export default function SubjectPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center bg-black">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-white mx-auto mb-4"></div>
+          <div
+            className="animate-spin rounded-full h-16 w-16 border-b-2 mx-auto mb-4"
+            style={{ borderColor: currentTheme.colors.primary }}
+          />
           <p className="text-white font-bold text-xl">Loading {info.name}...</p>
         </div>
       </div>
@@ -122,19 +127,28 @@ export default function SubjectPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
+    <div className="min-h-screen bg-black">
       {/* Header */}
-      <div className="bg-black/20 backdrop-blur-lg border-b border-white/10">
+      <div
+        className="backdrop-blur-lg border-b"
+        style={{
+          background: `${currentTheme.colors.primary}15`,
+          borderColor: `${currentTheme.colors.primary}30`
+        }}
+      >
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center gap-4">
           <button
             onClick={() => router.back()}
-            className="p-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
+            className="p-2 rounded-lg transition-colors"
+            style={{
+              background: `${currentTheme.colors.primary}20`,
+            }}
           >
-            <ArrowLeft className="w-6 h-6 text-white" />
+            <ArrowLeft className="w-6 h-6" style={{ color: currentTheme.colors.primary }} />
           </button>
           <div className="flex items-center gap-3">
             <span className="text-4xl">{info.emoji}</span>
-            <h1 className="text-2xl font-bold text-white">{info.name}</h1>
+            <h1 className="text-2xl font-bold" style={{ color: currentTheme.colors.primary }}>{info.name}</h1>
           </div>
         </div>
       </div>
@@ -165,23 +179,34 @@ export default function SubjectPage() {
                   <button
                     onClick={() => handleSkillClick(skill.id, locked)}
                     disabled={locked}
-                    className={`w-full p-4 rounded-2xl border transition-all text-left ${
-                      locked
-                        ? 'bg-white/5 border-white/10 cursor-not-allowed opacity-50'
+                    className="w-full p-4 rounded-2xl border transition-all text-left hover:scale-[1.02]"
+                    style={{
+                      background: locked
+                        ? 'rgba(255,255,255,0.05)'
                         : completed
-                        ? 'bg-green-500/20 border-green-500/50 hover:bg-green-500/30'
-                        : 'bg-white/10 border-white/20 hover:bg-white/20 hover:scale-[1.02]'
-                    }`}
+                        ? `${currentTheme.colors.secondary}30`
+                        : `${currentTheme.colors.primary}20`,
+                      borderColor: locked
+                        ? 'rgba(255,255,255,0.1)'
+                        : completed
+                        ? `${currentTheme.colors.secondary}60`
+                        : `${currentTheme.colors.primary}40`,
+                      opacity: locked ? 0.5 : 1,
+                      cursor: locked ? 'not-allowed' : 'pointer'
+                    }}
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-4">
-                        <div className={`w-12 h-12 rounded-full flex items-center justify-center ${
-                          locked
-                            ? 'bg-white/10'
-                            : completed
-                            ? 'bg-green-500'
-                            : 'bg-blue-500'
-                        }`}>
+                        <div
+                          className="w-12 h-12 rounded-full flex items-center justify-center"
+                          style={{
+                            background: locked
+                              ? 'rgba(255,255,255,0.1)'
+                              : completed
+                              ? currentTheme.colors.secondary
+                              : currentTheme.colors.primary
+                          }}
+                        >
                           {locked ? (
                             <Lock className="w-5 h-5 text-white/50" />
                           ) : completed ? (
@@ -211,13 +236,17 @@ export default function SubjectPage() {
                             ))}
                           </div>
                         )}
-                        <div className={`px-4 py-2 rounded-xl font-bold ${
-                          locked
-                            ? 'bg-white/10 text-white/40'
-                            : completed
-                            ? 'bg-green-500 text-white'
-                            : 'bg-blue-500 text-white'
-                        }`}>
+                        <div
+                          className="px-4 py-2 rounded-xl font-bold text-white"
+                          style={{
+                            background: locked
+                              ? 'rgba(255,255,255,0.1)'
+                              : completed
+                              ? currentTheme.colors.secondary
+                              : currentTheme.colors.primary,
+                            color: locked ? 'rgba(255,255,255,0.4)' : 'white'
+                          }}
+                        >
                           {locked ? 'Locked' : completed ? 'Review' : 'Start'}
                         </div>
                       </div>
@@ -227,8 +256,8 @@ export default function SubjectPage() {
                     {!locked && !completed && score > 0 && (
                       <div className="mt-3 bg-white/10 rounded-full h-2 overflow-hidden">
                         <div
-                          className="h-full bg-blue-500 rounded-full"
-                          style={{ width: `${score}%` }}
+                          className="h-full rounded-full"
+                          style={{ width: `${score}%`, background: currentTheme.colors.primary }}
                         />
                       </div>
                     )}
@@ -240,7 +269,7 @@ export default function SubjectPage() {
         )}
 
         {/* Unlock message */}
-        <p className="text-center text-white/50 mt-8 text-sm">
+        <p className="text-center mt-8 text-sm" style={{ color: `${currentTheme.colors.primary}80` }}>
           Complete skills to unlock new ones! 🔓
         </p>
       </div>

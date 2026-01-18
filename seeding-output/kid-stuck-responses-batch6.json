@@ -1,0 +1,261 @@
+[
+  {
+    "question_type": "confused",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay to feel confused! Spelling can be tricky. Focus on breaking words into smaller parts or sounding them out. You’ve got this—keep trying!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "response": "I’m glad you spoke up! Spelling can be tricky. Let’s break it down together—focus on patterns or rules that might help. You’ve got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Coding",
+    "age_group": "k2",
+    "response": "Hey, it's okay to be confused! Coding is like a fun puzzle! Let's try together—look at the blocks and see which fits! You're a star! 🌟🎉",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "response": "Hey, it’s okay to feel confused! Coding can be tricky at first. Let’s break it down together. Can you tell me what part is puzzling you? I’m here to help! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay to feel confused! Coding can be tricky at first. Take a deep breath and try breaking the problem into smaller steps. I’m here to help if you’re stuck!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "response": "It's okay to feel confused! Coding can be tricky at first. Take a deep breath, break the problem into smaller parts, and ask specific questions. I'm here to help you through it!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Typing",
+    "age_group": "k2",
+    "response": "Hey, it’s okay to feel confused! Typing gets easier with practice. Try finding the letters slowly on the keyboard. You’ve got this! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "response": "Hey, it’s okay to feel confused! Typing takes practice. Focus on placing your fingers on the home row keys first. You’ve got this—let’s keep trying together! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay to feel confused! Typing takes practice. Focus on one key at a time and keep your fingers on the home row. You’ve got this—keep trying!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "response": "I’m glad you spoke up! Typing can be tricky at first. Focus on small steps, like hand placement, and practice regularly. You’ve got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Math",
+    "age_group": "k2",
+    "response": "Hey, it’s okay to feel confused! Let’s figure it out together! Think about counting or shapes. I’m here to help! Yay! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Math",
+    "age_group": "grades35",
+    "response": "Hey, it’s okay to feel confused! Math can be tricky, but I’m here to help. Let’s break it down together step by step. You’ve got this! 💡",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Math",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay to feel confused! Math can be tricky. Let’s break it down together. What part is tough for you? I’m here to help!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Math",
+    "age_group": "grades912",
+    "response": "I’m glad you spoke up! Math can be tricky, but we’ll tackle it together. Let’s break it down step by step. What part is confusing you?",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Reading",
+    "age_group": "k2",
+    "response": "Hey, it’s okay to be confused! Let’s read together and sound out tricky words. You’ve got this! 🌟🎉",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "response": "I’m so glad you spoke up! Let’s take it step by step together. What part feels tricky? I’m here to help you figure it out! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay to feel confused! Reading can be tricky. Let’s break it down together. What part is tough for you? I’m here to help!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Reading",
+    "age_group": "grades912",
+    "response": "I’m glad you spoke up! Let’s break this down together. What part feels unclear? I’m here to help you navigate the text step by step.",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Spelling",
+    "age_group": "k2",
+    "response": "Don't worry! Spelling can be tricky, but you're a superstar! 🌟 Let's sound out the word together slowly. You'll get it! Yay! 🎉",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Spelling",
+    "age_group": "grades35",
+    "response": "Don't worry! Spelling can be tricky, but you're doing great. Let's break it down together—try sounding out the word slowly. You've got this! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Spelling",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay to feel confused! Spelling can be tricky. Focus on breaking words into smaller parts or sounding them out. You’ve got this—keep trying!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Spelling",
+    "age_group": "grades912",
+    "response": "I'm glad you spoke up! Spelling can be tricky. Focus on breaking words into smaller parts or using memory tricks. Let's work on it together!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Coding",
+    "age_group": "k2",
+    "response": "Hey, it’s okay to be confused! Coding is like a fun puzzle. Let’s try breaking it into tiny steps together! You’ve got this! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Coding",
+    "age_group": "grades35",
+    "response": "Hey, it’s okay to feel confused! Coding can be tricky at first. Let’s break it down together. What part is puzzling you? I’m here to help! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Coding",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay to feel confused! Coding can be tricky at first. Take a deep breath, and let’s break it down together. What part is confusing you? I’m here to help!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Coding",
+    "age_group": "grades912",
+    "response": "It's okay to feel confused! Coding can be tricky at first. Break it down into smaller steps, and ask specific questions about what’s unclear. You’ve got this—keep trying!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Typing",
+    "age_group": "k2",
+    "response": "Hey, it's okay to be confused! Typing is fun, and you'll get it! Keep practicing with your fingers on the keys. You're a star! 🌟🎉",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Typing",
+    "age_group": "grades35",
+    "response": "Hey, it’s okay to feel confused! Typing takes practice. Focus on one key at a time and keep your fingers on the home row. You’ve got this! Let’s try together! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Typing",
+    "age_group": "grades68",
+    "response": "Hey, it’s okay to feel confused! Typing gets easier with practice. Focus on one key at a time and keep your fingers on the home row. You’ve got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "confused",
+    "subject": "Typing",
+    "age_group": "grades912",
+    "response": "I’m glad you spoke up! Typing can be tricky at first. Focus on small steps, like hand placement. Keep practicing, and it’ll get easier. You’ve got this!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Math",
+    "age_group": "k2",
+    "response": "Of course! Let’s try it again with super fun steps! Think of numbers as tiny friends. Can you count them with me? Yay! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Math",
+    "age_group": "grades35",
+    "response": "Of course, I’m happy to help! Let’s go through it step by step together. Think about breaking it down like a puzzle. Which part feels tricky? I’m here to guide you! 🌟",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Math",
+    "age_group": "grades68",
+    "response": "Of course, I’m happy to help! Let’s break it down together. What part feels tricky? I’ll go step by step to make it clearer for you.",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Math",
+    "age_group": "grades912",
+    "response": "Of course! I’m happy to go over it again. Let’s break it down step by step. Which part feels tricky? I’ll clarify with a different approach if needed.",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Reading",
+    "age_group": "k2",
+    "response": "Of course, buddy! Let’s read it together again! Sound out each word slowly with me. You’ve got this! 🎉⭐",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Reading",
+    "age_group": "grades35",
+    "response": "Of course, I’m happy to help! Let’s go over it together. Think about the main idea of the story. What do you notice first? I’m here to guide you!",
+    "response_tone": "encouraging"
+  },
+  {
+    "question_type": "explain_again",
+    "subject": "Reading",
+    "age_group": "grades68",
+    "response": "Of course! I’m happy to go over it again. Let’s break it down step by step. What part felt tricky? I’m here to help you get it!",
+    "response_tone": "encouraging"
+  }
+]

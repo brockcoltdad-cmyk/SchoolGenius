@@ -1,0 +1,253 @@
+{
+  "grade": 5,
+  "grade_name": "Fifth Grade",
+  "lexile_range": "850L-950L",
+  "default_lexile": "900L",
+  "standards": ["RF.5.3", "RF.5.4", "RL.5.1", "RL.5.2", "RL.5.3", "RL.5.6", "RI.5.2", "RI.5.8"],
+  "total_target": 5000,
+  "skills": [
+    {
+      "skill": "word relationships",
+      "code": "VOCAB",
+      "standard": "RF.5.3",
+      "count": 600,
+      "visual_type": "word_building",
+      "question_templates": [
+        "Complete the analogy: {word1} is to {word2} as {word3} is to ___.",
+        "What is the relationship between these words?",
+        "Which word completes the pattern?"
+      ],
+      "analogies": [
+        {"pattern": "hot is to cold as big is to small", "relationship": "opposites"},
+        {"pattern": "dog is to puppy as cat is to kitten", "relationship": "adult to baby"},
+        {"pattern": "book is to read as song is to sing", "relationship": "object to action"},
+        {"pattern": "chef is to kitchen as teacher is to classroom", "relationship": "person to place"},
+        {"pattern": "pen is to write as brush is to paint", "relationship": "tool to action"},
+        {"pattern": "fish is to water as bird is to air", "relationship": "animal to habitat"},
+        {"pattern": "happy is to sad as fast is to slow", "relationship": "opposites"},
+        {"pattern": "finger is to hand as toe is to foot", "relationship": "part to whole"},
+        {"pattern": "morning is to breakfast as evening is to dinner", "relationship": "time to meal"},
+        {"pattern": "doctor is to hospital as pilot is to airplane", "relationship": "worker to workplace"}
+      ]
+    },
+    {
+      "skill": "connotation and denotation",
+      "code": "VOCAB",
+      "standard": "RF.5.3",
+      "count": 500,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "What is the connotation of '{word}' in this sentence?",
+        "Does '{word}' have a positive or negative connotation?",
+        "How would the meaning change if the author used '{alt_word}' instead?"
+      ],
+      "word_connotations": [
+        {"word": "stubborn", "denotation": "unwilling to change", "connotation": "negative", "alternative": "determined", "alt_connotation": "positive"},
+        {"word": "childish", "denotation": "like a child", "connotation": "negative", "alternative": "childlike", "alt_connotation": "positive"},
+        {"word": "cheap", "denotation": "low cost", "connotation": "negative", "alternative": "affordable", "alt_connotation": "positive"},
+        {"word": "nosy", "denotation": "curious about others", "connotation": "negative", "alternative": "curious", "alt_connotation": "neutral/positive"},
+        {"word": "pushy", "denotation": "assertive", "connotation": "negative", "alternative": "ambitious", "alt_connotation": "positive"},
+        {"word": "scrawny", "denotation": "thin", "connotation": "negative", "alternative": "slender", "alt_connotation": "positive"},
+        {"word": "stench", "denotation": "smell", "connotation": "negative", "alternative": "aroma", "alt_connotation": "positive"},
+        {"word": "youthful", "denotation": "young", "connotation": "positive", "alternative": "immature", "alt_connotation": "negative"}
+      ]
+    },
+    {
+      "skill": "figurative language advanced",
+      "code": "VOCAB",
+      "standard": "RL.5.4",
+      "count": 600,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "Identify the type of figurative language: '{phrase}'",
+        "What effect does the {device} have on the reader?",
+        "What is the author trying to convey with this figurative language?"
+      ],
+      "figurative_types": {
+        "hyperbole": [
+          {"sentence": "I've told you a million times to clean your room!", "meaning": "I've told you many times", "effect": "emphasizes frustration"},
+          {"sentence": "This backpack weighs a ton.", "meaning": "The backpack is very heavy", "effect": "exaggerates the weight"},
+          {"sentence": "I'm so hungry I could eat a horse.", "meaning": "I'm very hungry", "effect": "emphasizes extreme hunger"}
+        ],
+        "personification": [
+          {"sentence": "The sun smiled down on the children playing.", "meaning": "The sun shone brightly", "effect": "makes nature feel friendly"},
+          {"sentence": "The wind howled through the trees.", "meaning": "The wind made loud sounds", "effect": "creates a scary mood"},
+          {"sentence": "Time flies when you're having fun.", "meaning": "Time seems to pass quickly", "effect": "makes time relatable"}
+        ],
+        "alliteration": [
+          {"sentence": "Peter Piper picked a peck of pickled peppers.", "sound": "p", "effect": "creates rhythm and makes it memorable"},
+          {"sentence": "She sells seashells by the seashore.", "sound": "s", "effect": "creates a musical quality"}
+        ],
+        "onomatopoeia": [
+          {"words": ["buzz", "hiss", "splash", "bang", "whisper", "crunch", "sizzle"], "effect": "helps readers hear the sounds"}
+        ]
+      }
+    },
+    {
+      "skill": "theme across texts",
+      "code": "THEM",
+      "standard": "RL.5.2",
+      "count": 700,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "What theme do these two passages share?",
+        "How is the theme of {theme} developed differently in each text?",
+        "Compare how each author explores the idea of {theme}."
+      ],
+      "paired_passages": [
+        {
+          "theme": "perseverance",
+          "passage1": {
+            "title": "The Marathon",
+            "text": "At mile 20, Jasmine's legs burned and her lungs ached. She wanted to quit. Then she remembered her grandfather's words: 'The finish line doesn't move—you have to.' She put one foot in front of the other until she crossed that line."
+          },
+          "passage2": {
+            "title": "Learning Piano",
+            "text": "For months, the same song sounded terrible no matter how much Aiden practiced. His fingers wouldn't cooperate. But every day, he sat at the piano again. One morning, something clicked. The music flowed. All those hours finally paid off."
+          },
+          "comparison": "Both show characters struggling but continuing despite difficulty. The marathon shows physical perseverance; the piano shows learning perseverance."
+        },
+        {
+          "theme": "accepting differences",
+          "passage1": {
+            "title": "The Art Project",
+            "text": "When paired with Miguel, Zoe groaned. He always wanted to do things differently. But his unusual ideas made their project unique. They won first place, and Zoe realized that different perspectives create better results."
+          },
+          "passage2": {
+            "title": "The New Neighbor",
+            "text": "The Sharma family's cooking smelled strange to Tyler at first. But when Mrs. Sharma invited him to try her food, he discovered amazing new flavors. Now Friday dinners at the Sharmas' are his favorite tradition."
+          },
+          "comparison": "Both show characters initially resistant to differences who learn to appreciate them. One focuses on ideas; the other on culture."
+        }
+      ]
+    },
+    {
+      "skill": "comparing characters and settings",
+      "code": "CHAR",
+      "standard": "RL.5.3",
+      "count": 600,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "How are {character1} and {character2} similar?",
+        "How are {character1} and {character2} different?",
+        "How does the setting affect the characters?"
+      ],
+      "comparison_passages": [
+        {
+          "title": "Two Leaders",
+          "text": "Maria led with enthusiasm, always the first to volunteer and rally others with her energy. James led quietly, listening more than speaking, but when he did speak, everyone paid attention. Both got results, but in very different ways.",
+          "character1": {"name": "Maria", "traits": ["enthusiastic", "energetic", "outspoken"]},
+          "character2": {"name": "James", "traits": ["quiet", "thoughtful", "respected"]},
+          "similarity": "Both are effective leaders",
+          "difference": "Maria leads loudly; James leads quietly"
+        },
+        {
+          "title": "City and Country",
+          "text": "Mia grew up surrounded by skyscrapers and subway sounds. Noah grew up with open fields and starry nights. When they met at camp, Mia taught Noah about museums and pizza slices. Noah taught Mia about fishing and campfires. Both realized there was so much they had never experienced.",
+          "setting1": "city",
+          "setting2": "country",
+          "effect": "Their different backgrounds gave them different skills and perspectives to share"
+        }
+      ]
+    },
+    {
+      "skill": "narrator point of view",
+      "code": "POV",
+      "standard": "RL.5.6",
+      "count": 500,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "How does the narrator's point of view affect the story?",
+        "What does the narrator know or not know?",
+        "How would the story change with a different narrator?"
+      ],
+      "pov_examples": [
+        {
+          "title": "The Secret",
+          "first_person_limited": "I knew something was wrong the moment Mom came home. Her smile seemed fake, and she kept checking her phone. I asked what was going on, but she just said 'Nothing, honey.' I didn't believe her.",
+          "third_person_omniscient": "Mom came home with a secret she couldn't share yet—a surprise party for Dad's birthday. She hated lying to her curious daughter, but it would be worth it. Meanwhile, her daughter suspected something was terribly wrong.",
+          "analysis": "First person creates suspense because we don't know the truth. Third person omniscient removes the mystery but shows both perspectives."
+        }
+      ]
+    },
+    {
+      "skill": "author's evidence and reasoning",
+      "code": "INFER",
+      "standard": "RI.5.8",
+      "count": 700,
+      "visual_type": "text_highlight",
+      "question_templates": [
+        "What evidence does the author use to support the claim that {claim}?",
+        "Is the author's reasoning logical? Explain.",
+        "What additional evidence could strengthen the author's argument?"
+      ],
+      "argument_passages": [
+        {
+          "title": "School Should Start Later",
+          "text": "Schools should start later for middle and high school students. Research shows that teenagers need 8-10 hours of sleep, but their natural sleep cycle makes them stay up later. Early start times mean students are sleep-deprived, which hurts their grades and health. Schools that shifted to later start times saw test scores improve by 15% and car accidents drop significantly.",
+          "claim": "Schools should start later",
+          "evidence": ["teenagers need 8-10 hours of sleep", "natural sleep cycle", "15% improvement in test scores", "car accidents dropped"],
+          "reasoning": "Sleep deprivation hurts performance; later starts allow more sleep; data shows improvement"
+        },
+        {
+          "title": "Reduce Plastic Use",
+          "text": "We must reduce single-use plastics. Every year, 8 million tons of plastic enter our oceans, harming marine life. Sea turtles mistake plastic bags for jellyfish and eat them. Fish consume tiny plastic particles that end up in our food. Many countries have already banned plastic bags, reducing waste by millions of tons.",
+          "claim": "We must reduce single-use plastics",
+          "evidence": ["8 million tons enter oceans yearly", "harms marine life", "plastic ends up in our food", "bans have reduced waste"],
+          "reasoning": "Plastic harms animals and humans; solutions exist and work"
+        }
+      ]
+    },
+    {
+      "skill": "multiple accounts",
+      "code": "COMP",
+      "standard": "RI.5.6",
+      "count": 500,
+      "visual_type": "comprehension_question",
+      "question_templates": [
+        "How do these two accounts of {event} differ?",
+        "What might explain the differences between these accounts?",
+        "Which account seems more reliable? Why?"
+      ],
+      "multiple_accounts": [
+        {
+          "event": "A Soccer Game",
+          "account1": {
+            "source": "Winning Team's Newspaper",
+            "text": "The Eagles dominated from start to finish, outplaying the Tigers in every quarter. Their superior strategy and teamwork led to a well-deserved 3-1 victory."
+          },
+          "account2": {
+            "source": "Losing Team's Newspaper",
+            "text": "Despite a strong effort, the Tigers fell 3-1 to the Eagles. Two questionable referee calls shifted momentum, and a key player's injury in the second half hurt the team's chances."
+          },
+          "differences": "The winning team's account emphasizes skill; the losing team's account emphasizes bad luck and unfair calls",
+          "reason": "Each source has a bias toward their own team"
+        }
+      ]
+    },
+    {
+      "skill": "fluency",
+      "code": "COMP",
+      "standard": "RF.5.4",
+      "count": 300,
+      "visual_type": "text_highlight",
+      "fluency_goal_wpm": 150,
+      "fluency_passages": [
+        {
+          "text": "The ancient library held secrets that had been forgotten for centuries. Dust motes danced in the streams of light that filtered through stained glass windows. Maya ran her fingers along the leather spines of books older than her great-grandmother. Somewhere in these shelves was the answer she sought—a map to the hidden garden that her family had protected for generations. She just had to find it before the developers did.",
+          "word_count": 75
+        }
+      ]
+    }
+  ],
+  "tier1_template": {
+    "teach_max_words": 25,
+    "voice_max_words": 20,
+    "steps_count": 2
+  },
+  "tier2_template": {
+    "teach_max_words": 20,
+    "voice_max_words": 15,
+    "steps_count": 1
+  }
+}
