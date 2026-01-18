@@ -91,8 +91,8 @@ export default function ModeSwitcher({
 
     try {
       // Update syllabus_settings table
-      const { error } = await (supabase
-        .from('syllabus_settings' as any)
+      const { error } = await supabase
+        .from('syllabus_settings')
         .upsert(
           {
             child_id: childId,
@@ -102,7 +102,7 @@ export default function ModeSwitcher({
           {
             onConflict: 'child_id',
           }
-        ) as any);
+        );
 
       if (error) throw error;
 

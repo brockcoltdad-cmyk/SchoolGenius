@@ -40,30 +40,40 @@ export default function SyllabusPage() {
       console.log('🔍 Loading syllabus for kid:', kidId);
 
       // Check if kid has scanned a syllabus
-      const { data: syllabusDoc, error: syllabusError } = await (supabase
-        .from('scanned_homework' as any)
+      const { data: syllabusDoc, error: syllabusError } = await supabase
+        .from('scanned_homework')
         .select('id')
         .eq('child_id', kidId)
         .eq('category', 'syllabus')
         .order('scanned_at', { ascending: false })
         .limit(1)
-        .maybeSingle() as any);
+        .maybeSingle();
 
       console.log('📋 Syllabus query result:', syllabusDoc, 'Error:', syllabusError?.message);
       setHasSyllabus(!!syllabusDoc);
 
       // Get daily schedule from syllabus
-      const { data: lessons, error } = await (supabase
-        .from('daily_schedule' as any)
+      const { data: lessons, error } = await supabase
+        .from('daily_schedule')
         .select('*')
         .eq('child_id', kidId)
         .eq('from_syllabus', true)
-        .order('date', { ascending: true }) as any);
+        .order('date', { ascending: true });
 
       console.log('📅 Lessons query result:', lessons?.length, 'lessons', 'Error:', error?.message);
 
       if (!error && lessons) {
-        setSchedule(lessons);
+        // Map database fields to interface fields
+        setSchedule(lessons.map(l => ({
+          id: l.id,
+          date: l.date,
+          title: l.lesson_title || '',
+          description: '',
+          subject_code: l.subject_code || '',
+          estimated_minutes: 30,
+          completed: l.completed,
+          from_syllabus: l.from_syllabus
+        })));
       }
 
       setLoading(false);

@@ -45,36 +45,52 @@ export default function ScannedSyllabusViewer({ childId }: ScannedSyllabusViewer
   async function fetchScannedSyllabus() {
     try {
       // Fetch most recent scanned syllabus
-      const { data: doc, error: docError } = await (supabase
-        .from('scanned_homework' as any)
+      const { data: doc, error: docError } = await supabase
+        .from('scanned_homework')
         .select('*')
         .eq('child_id', childId)
         .eq('category', 'syllabus')
         .order('scanned_at', { ascending: false })
         .limit(1)
-        .maybeSingle() as any);
+        .maybeSingle();
 
       if (docError && docError.code !== 'PGRST116') {
         throw docError;
       }
 
-      setScannedDoc(doc);
-
+      // Map database fields to interface
       if (doc) {
+        setScannedDoc({
+          id: doc.id,
+          image_url: doc.image_url || '',
+          file_name: doc.category || 'syllabus',
+          scanned_at: doc.scanned_at || '',
+          ai_analysis: doc.parsed_data
+        });
+
         // Fetch generated prep lessons
-        const { data: lessons, error: lessonsError } = await (supabase
-          .from('daily_schedule' as any)
+        const { data: lessons, error: lessonsError } = await supabase
+          .from('daily_schedule')
           .select('*')
           .eq('child_id', childId)
           .eq('from_syllabus', true)
           .order('date', { ascending: true })
-          .limit(10) as any);
+          .limit(10);
 
         if (lessonsError) {
           console.error('Error fetching prep lessons:', lessonsError);
         } else {
-          setPrepLessons(lessons || []);
+          // Map database fields to interface
+          setPrepLessons((lessons || []).map(l => ({
+            id: l.id,
+            date: l.date,
+            subject_code: l.subject_code || '',
+            title: l.lesson_title || '',
+            topic: ''
+          })));
         }
+      } else {
+        setScannedDoc(null);
       }
     } catch (error: any) {
       console.error('Error fetching scanned syllabus:', error);

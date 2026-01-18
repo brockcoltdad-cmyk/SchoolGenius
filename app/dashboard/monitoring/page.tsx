@@ -122,11 +122,11 @@ export default function MonitoringDashboard() {
           return;
         }
 
-        const { data: family } = await (supabase
-          .from('families' as any)
+        const { data: family } = await supabase
+          .from('families')
           .select('id')
           .eq('user_id', user.id)
-          .single() as any);
+          .single();
 
         if (!family) {
           setLoading(false);
@@ -204,10 +204,10 @@ export default function MonitoringDashboard() {
   // Mark alert as read
   const markAlertRead = async (alertId: string) => {
     try {
-      await (supabase
-        .from('monitoring_alerts' as any)
+      await supabase
+        .from('monitoring_alerts')
         .update({ is_read: true, read_at: new Date().toISOString() })
-        .eq('id', alertId) as any);
+        .eq('id', alertId);
 
       setAlerts(alerts.map(a =>
         a.id === alertId ? { ...a, is_read: true } : a
@@ -221,10 +221,10 @@ export default function MonitoringDashboard() {
   // Dismiss alert
   const dismissAlert = async (alertId: string) => {
     try {
-      await (supabase
-        .from('monitoring_alerts' as any)
+      await supabase
+        .from('monitoring_alerts')
         .update({ is_dismissed: true, dismissed_at: new Date().toISOString() })
-        .eq('id', alertId) as any);
+        .eq('id', alertId);
 
       setAlerts(alerts.filter(a => a.id !== alertId));
     } catch (error) {

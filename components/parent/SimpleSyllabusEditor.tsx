@@ -9,6 +9,7 @@ import { Label } from '@/components/ui/label';
 import { Slider } from '@/components/ui/slider';
 import { createClient } from '@/lib/supabase-client';
 import { useToast } from '@/hooks/use-toast';
+import type { Json } from '@/types/database';
 
 interface SubjectConfig {
   subject_code: string;
@@ -54,18 +55,18 @@ export default function SimpleSyllabusEditor({ childId }: SimpleSyllabusEditorPr
 
   async function fetchCustomSyllabus() {
     try {
-      const { data, error } = await (supabase
-        .from('custom_syllabus' as any)
+      const { data, error } = await supabase
+        .from('custom_syllabus')
         .select('subjects')
         .eq('child_id', childId)
-        .maybeSingle() as any);
+        .maybeSingle();
 
       if (error && error.code !== 'PGRST116') {
         throw error;
       }
 
       if (data?.subjects) {
-        const loadedSubjects = data.subjects as SubjectConfig[];
+        const loadedSubjects = data.subjects as unknown as SubjectConfig[];
         setSubjects(loadedSubjects);
         setOriginalSubjects(loadedSubjects);
       }
@@ -118,13 +119,13 @@ export default function SimpleSyllabusEditor({ childId }: SimpleSyllabusEditorPr
     setIsSaving(true);
 
     try {
-      const { error } = await (supabase
-        .from('custom_syllabus' as any)
+      const { error } = await supabase
+        .from('custom_syllabus')
         .upsert({
           child_id: childId,
-          subjects: subjects,
+          subjects: subjects as unknown as Json,
           updated_at: new Date().toISOString(),
-        }) as any);
+        });
 
       if (error) throw error;
 

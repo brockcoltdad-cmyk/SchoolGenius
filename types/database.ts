@@ -547,6 +547,38 @@ export type Database = {
         }
         Relationships: []
       }
+      custom_syllabus: {
+        Row: {
+          id: string
+          child_id: string
+          subjects: Json
+          created_at: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          id?: string
+          child_id: string
+          subjects: Json
+          created_at?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          id?: string
+          child_id?: string
+          subjects?: Json
+          created_at?: string | null
+          updated_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "custom_syllabus_child_id_fkey"
+            columns: ["child_id"]
+            isOneToOne: false
+            referencedRelation: "children"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       daily_streaks: {
         Row: {
           coins_earned: number | null
@@ -585,6 +617,47 @@ export type Database = {
             columns: ["student_id"]
             isOneToOne: false
             referencedRelation: "students"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      daily_schedule: {
+        Row: {
+          id: string
+          child_id: string
+          date: string
+          subject_code: string | null
+          lesson_title: string | null
+          from_syllabus: boolean
+          completed: boolean
+          created_at: string | null
+        }
+        Insert: {
+          id?: string
+          child_id: string
+          date: string
+          subject_code?: string | null
+          lesson_title?: string | null
+          from_syllabus?: boolean
+          completed?: boolean
+          created_at?: string | null
+        }
+        Update: {
+          id?: string
+          child_id?: string
+          date?: string
+          subject_code?: string | null
+          lesson_title?: string | null
+          from_syllabus?: boolean
+          completed?: boolean
+          created_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "daily_schedule_child_id_fkey"
+            columns: ["child_id"]
+            isOneToOne: false
+            referencedRelation: "children"
             referencedColumns: ["id"]
           },
         ]
@@ -698,6 +771,27 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      families: {
+        Row: {
+          id: string
+          user_id: string
+          name: string | null
+          created_at: string | null
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          name?: string | null
+          created_at?: string | null
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          name?: string | null
+          created_at?: string | null
+        }
+        Relationships: []
       }
       foundation_progress: {
         Row: {
@@ -1843,6 +1937,62 @@ export type Database = {
           },
         ]
       }
+      monitoring_alerts: {
+        Row: {
+          id: string
+          child_id: string
+          alert_type: string
+          severity: string
+          title: string
+          message: string
+          subject_code: string | null
+          is_read: boolean
+          is_dismissed: boolean
+          read_at: string | null
+          dismissed_at: string | null
+          created_at: string | null
+          data: Json | null
+        }
+        Insert: {
+          id?: string
+          child_id: string
+          alert_type: string
+          severity: string
+          title: string
+          message: string
+          subject_code?: string | null
+          is_read?: boolean
+          is_dismissed?: boolean
+          read_at?: string | null
+          dismissed_at?: string | null
+          created_at?: string | null
+          data?: Json | null
+        }
+        Update: {
+          id?: string
+          child_id?: string
+          alert_type?: string
+          severity?: string
+          title?: string
+          message?: string
+          subject_code?: string | null
+          is_read?: boolean
+          is_dismissed?: boolean
+          read_at?: string | null
+          dismissed_at?: string | null
+          created_at?: string | null
+          data?: Json | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "monitoring_alerts_child_id_fkey"
+            columns: ["child_id"]
+            isOneToOne: false
+            referencedRelation: "children"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       parent_prizes: {
         Row: {
           coin_cost: number
@@ -2203,6 +2353,47 @@ export type Database = {
             columns: ["reward_id"]
             isOneToOne: false
             referencedRelation: "custom_rewards"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      scanned_homework: {
+        Row: {
+          id: string
+          child_id: string
+          category: string
+          scanned_at: string | null
+          created_at: string | null
+          image_url: string | null
+          extracted_text: string | null
+          parsed_data: Json | null
+        }
+        Insert: {
+          id?: string
+          child_id: string
+          category: string
+          scanned_at?: string | null
+          created_at?: string | null
+          image_url?: string | null
+          extracted_text?: string | null
+          parsed_data?: Json | null
+        }
+        Update: {
+          id?: string
+          child_id?: string
+          category?: string
+          scanned_at?: string | null
+          created_at?: string | null
+          image_url?: string | null
+          extracted_text?: string | null
+          parsed_data?: Json | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "scanned_homework_child_id_fkey"
+            columns: ["child_id"]
+            isOneToOne: false
+            referencedRelation: "children"
             referencedColumns: ["id"]
           },
         ]
@@ -3558,6 +3749,38 @@ export type Database = {
           sequence_order?: number | null
         }
         Relationships: []
+      }
+      syllabus_settings: {
+        Row: {
+          id: string
+          child_id: string
+          mode: string
+          created_at: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          id?: string
+          child_id: string
+          mode: string
+          created_at?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          id?: string
+          child_id?: string
+          mode?: string
+          created_at?: string | null
+          updated_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "syllabus_settings_child_id_fkey"
+            columns: ["child_id"]
+            isOneToOne: false
+            referencedRelation: "children"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       themes: {
         Row: {

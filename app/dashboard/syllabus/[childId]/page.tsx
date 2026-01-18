@@ -90,35 +90,35 @@ export default function SyllabusManagementPage() {
       setChildProfile(child as ChildProfile);
 
       // Fetch syllabus settings (or use default if not exists)
-      const { data: settings, error: settingsError } = await (supabase
-        .from('syllabus_settings' as any)
+      const { data: settings, error: settingsError } = await supabase
+        .from('syllabus_settings')
         .select('mode, updated_at')
         .eq('child_id', childId)
-        .maybeSingle() as any);
+        .maybeSingle();
 
       if (settingsError && settingsError.code !== 'PGRST116') {
         throw settingsError;
       }
 
       // Default to 'default' mode if no settings exist
-      setSyllabusSettings(settings || { mode: 'default', updated_at: new Date().toISOString() });
+      setSyllabusSettings((settings as SyllabusSettings | null) || { mode: 'default', updated_at: new Date().toISOString() });
 
       // Check if custom syllabus exists
-      const { data: customSyllabus } = await (supabase
-        .from('custom_syllabus' as any)
+      const { data: customSyllabus } = await supabase
+        .from('custom_syllabus')
         .select('id')
         .eq('child_id', childId)
-        .maybeSingle() as any);
+        .maybeSingle();
 
       setHasCustomSyllabus(!!customSyllabus);
 
       // Check if scanned syllabus exists
-      const { data: scannedSyllabus } = await (supabase
-        .from('scanned_homework' as any)
+      const { data: scannedSyllabus } = await supabase
+        .from('scanned_homework')
         .select('id')
         .eq('child_id', childId)
         .eq('category', 'syllabus')
-        .maybeSingle() as any);
+        .maybeSingle();
 
       setHasScannedSyllabus(!!scannedSyllabus);
 
