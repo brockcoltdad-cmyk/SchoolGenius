@@ -16,7 +16,7 @@ interface ThemeMessages {
   complete: string[]
 }
 
-export const THEME_ENCOURAGEMENT: Record<ThemeId, ThemeMessages> = {
+export const THEME_ENCOURAGEMENT: Partial<Record<ThemeId, ThemeMessages>> & { default: ThemeMessages } = {
   // 🎮 BATTLE (Fortnite-style)
   battle: {
     correct: [

@@ -61,11 +61,11 @@ interface DailySummary {
 interface Child {
   id: string;
   name: string;
-  grade_level: string;
-  current_streak: number;
-  coins: number;
-  level: number;
-  last_activity_at?: string;
+  grade_level: string | null;
+  current_streak: number | null;
+  coins: number | null;
+  level: number | null;
+  last_activity_date?: string | null;
 }
 
 const ALERT_ICONS: Record<string, any> = {
@@ -122,11 +122,11 @@ export default function MonitoringDashboard() {
           return;
         }
 
-        const { data: family } = await supabase
-          .from('families')
+        const { data: family } = await (supabase
+          .from('families' as any)
           .select('id')
           .eq('user_id', user.id)
-          .single();
+          .single() as any);
 
         if (!family) {
           setLoading(false);
@@ -136,11 +136,11 @@ export default function MonitoringDashboard() {
         // Get children
         const { data: childrenData } = await supabase
           .from('children')
-          .select('id, name, grade_level, current_streak, coins, level, last_activity_at')
-          .eq('family_id', family.id);
+          .select('id, name, grade_level, current_streak, coins, level, last_activity_date')
+          .eq('parent_id', user.id);
 
         if (childrenData && childrenData.length > 0) {
-          setChildren(childrenData);
+          setChildren(childrenData as Child[]);
           setSelectedChild(childrenData[0].id);
         }
       } catch (error) {
@@ -204,10 +204,10 @@ export default function MonitoringDashboard() {
   // Mark alert as read
   const markAlertRead = async (alertId: string) => {
     try {
-      await supabase
-        .from('monitoring_alerts')
+      await (supabase
+        .from('monitoring_alerts' as any)
         .update({ is_read: true, read_at: new Date().toISOString() })
-        .eq('id', alertId);
+        .eq('id', alertId) as any);
 
       setAlerts(alerts.map(a =>
         a.id === alertId ? { ...a, is_read: true } : a
@@ -221,10 +221,10 @@ export default function MonitoringDashboard() {
   // Dismiss alert
   const dismissAlert = async (alertId: string) => {
     try {
-      await supabase
-        .from('monitoring_alerts')
+      await (supabase
+        .from('monitoring_alerts' as any)
         .update({ is_dismissed: true, dismissed_at: new Date().toISOString() })
-        .eq('id', alertId);
+        .eq('id', alertId) as any);
 
       setAlerts(alerts.filter(a => a.id !== alertId));
     } catch (error) {
@@ -354,8 +354,8 @@ export default function MonitoringDashboard() {
                 <span className="text-sm font-medium">Last Active</span>
               </div>
               <div className="text-lg font-bold text-white">
-                {selectedChildData.last_activity_at
-                  ? new Date(selectedChildData.last_activity_at).toLocaleDateString()
+                {selectedChildData.last_activity_date
+                  ? new Date(selectedChildData.last_activity_date).toLocaleDateString()
                   : 'Never'}
               </div>
             </div>

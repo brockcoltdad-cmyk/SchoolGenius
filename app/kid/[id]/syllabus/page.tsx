@@ -40,25 +40,25 @@ export default function SyllabusPage() {
       console.log('🔍 Loading syllabus for kid:', kidId);
 
       // Check if kid has scanned a syllabus
-      const { data: syllabusDoc, error: syllabusError } = await supabase
-        .from('scanned_homework')
+      const { data: syllabusDoc, error: syllabusError } = await (supabase
+        .from('scanned_homework' as any)
         .select('id')
         .eq('child_id', kidId)
         .eq('category', 'syllabus')
         .order('scanned_at', { ascending: false })
         .limit(1)
-        .maybeSingle();
+        .maybeSingle() as any);
 
       console.log('📋 Syllabus query result:', syllabusDoc, 'Error:', syllabusError?.message);
       setHasSyllabus(!!syllabusDoc);
 
       // Get daily schedule from syllabus
-      const { data: lessons, error } = await supabase
-        .from('daily_schedule')
+      const { data: lessons, error } = await (supabase
+        .from('daily_schedule' as any)
         .select('*')
         .eq('child_id', kidId)
         .eq('from_syllabus', true)
-        .order('date', { ascending: true });
+        .order('date', { ascending: true }) as any);
 
       console.log('📅 Lessons query result:', lessons?.length, 'lessons', 'Error:', error?.message);
 

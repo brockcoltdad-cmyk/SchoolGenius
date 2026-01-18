@@ -45,14 +45,14 @@ export default function ScannedSyllabusViewer({ childId }: ScannedSyllabusViewer
   async function fetchScannedSyllabus() {
     try {
       // Fetch most recent scanned syllabus
-      const { data: doc, error: docError } = await supabase
-        .from('scanned_homework')
+      const { data: doc, error: docError } = await (supabase
+        .from('scanned_homework' as any)
         .select('*')
         .eq('child_id', childId)
         .eq('category', 'syllabus')
         .order('scanned_at', { ascending: false })
         .limit(1)
-        .maybeSingle();
+        .maybeSingle() as any);
 
       if (docError && docError.code !== 'PGRST116') {
         throw docError;
@@ -62,13 +62,13 @@ export default function ScannedSyllabusViewer({ childId }: ScannedSyllabusViewer
 
       if (doc) {
         // Fetch generated prep lessons
-        const { data: lessons, error: lessonsError } = await supabase
-          .from('daily_schedule')
+        const { data: lessons, error: lessonsError } = await (supabase
+          .from('daily_schedule' as any)
           .select('*')
           .eq('child_id', childId)
           .eq('from_syllabus', true)
           .order('date', { ascending: true })
-          .limit(10);
+          .limit(10) as any);
 
         if (lessonsError) {
           console.error('Error fetching prep lessons:', lessonsError);

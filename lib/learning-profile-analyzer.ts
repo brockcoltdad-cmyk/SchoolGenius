@@ -78,17 +78,17 @@ export async function analyzeAndUpdateLearningProfile(childId: string) {
   const learningStyleConfidence = Math.min(totalQuestions / 100, 1.0);
 
   const { data: progressData } = await supabase
-    .from('lesson_progress')
-    .select('subject_code, score')
-    .eq('child_id', childId)
-    .returns<Pick<DBLessonProgress, 'subject_code' | 'score'>[]>();
+    .from('student_skill_progress')
+    .select('subject_code, best_score')
+    .eq('student_id', childId)
+    .returns<Pick<DBLessonProgress, 'subject_code' | 'best_score'>[]>();
 
   const subjectScores: Record<string, { total: number; count: number }> = {};
   progressData?.forEach(progress => {
     if (!subjectScores[progress.subject_code]) {
       subjectScores[progress.subject_code] = { total: 0, count: 0 };
     }
-    subjectScores[progress.subject_code].total += Number(progress.score) || 0;
+    subjectScores[progress.subject_code].total += Number(progress.best_score) || 0;
     subjectScores[progress.subject_code].count += 1;
   });
 

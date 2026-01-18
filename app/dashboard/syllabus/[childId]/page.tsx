@@ -22,7 +22,7 @@ import ScannedSyllabusViewer from '@/components/parent/ScannedSyllabusViewer';
 interface ChildProfile {
   id: string;
   name: string;
-  grade_level: string;
+  grade_level: string | null;
 }
 
 interface SyllabusSettings {
@@ -87,14 +87,14 @@ export default function SyllabusManagementPage() {
         .single();
 
       if (childError) throw childError;
-      setChildProfile(child);
+      setChildProfile(child as ChildProfile);
 
       // Fetch syllabus settings (or use default if not exists)
-      const { data: settings, error: settingsError } = await supabase
-        .from('syllabus_settings')
+      const { data: settings, error: settingsError } = await (supabase
+        .from('syllabus_settings' as any)
         .select('mode, updated_at')
         .eq('child_id', childId)
-        .maybeSingle();
+        .maybeSingle() as any);
 
       if (settingsError && settingsError.code !== 'PGRST116') {
         throw settingsError;
@@ -104,21 +104,21 @@ export default function SyllabusManagementPage() {
       setSyllabusSettings(settings || { mode: 'default', updated_at: new Date().toISOString() });
 
       // Check if custom syllabus exists
-      const { data: customSyllabus } = await supabase
-        .from('custom_syllabus')
+      const { data: customSyllabus } = await (supabase
+        .from('custom_syllabus' as any)
         .select('id')
         .eq('child_id', childId)
-        .maybeSingle();
+        .maybeSingle() as any);
 
       setHasCustomSyllabus(!!customSyllabus);
 
       // Check if scanned syllabus exists
-      const { data: scannedSyllabus } = await supabase
-        .from('scanned_homework')
+      const { data: scannedSyllabus } = await (supabase
+        .from('scanned_homework' as any)
         .select('id')
         .eq('child_id', childId)
         .eq('category', 'syllabus')
-        .maybeSingle();
+        .maybeSingle() as any);
 
       setHasScannedSyllabus(!!scannedSyllabus);
 

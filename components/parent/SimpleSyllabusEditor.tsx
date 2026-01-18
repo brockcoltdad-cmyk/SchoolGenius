@@ -54,17 +54,17 @@ export default function SimpleSyllabusEditor({ childId }: SimpleSyllabusEditorPr
 
   async function fetchCustomSyllabus() {
     try {
-      const { data, error } = await supabase
-        .from('custom_syllabus')
+      const { data, error } = await (supabase
+        .from('custom_syllabus' as any)
         .select('subjects')
         .eq('child_id', childId)
-        .maybeSingle();
+        .maybeSingle() as any);
 
       if (error && error.code !== 'PGRST116') {
         throw error;
       }
 
-      if (data && data.subjects) {
+      if (data?.subjects) {
         const loadedSubjects = data.subjects as SubjectConfig[];
         setSubjects(loadedSubjects);
         setOriginalSubjects(loadedSubjects);
@@ -118,13 +118,13 @@ export default function SimpleSyllabusEditor({ childId }: SimpleSyllabusEditorPr
     setIsSaving(true);
 
     try {
-      const { error } = await supabase
-        .from('custom_syllabus')
+      const { error } = await (supabase
+        .from('custom_syllabus' as any)
         .upsert({
           child_id: childId,
           subjects: subjects,
           updated_at: new Date().toISOString(),
-        });
+        }) as any);
 
       if (error) throw error;
 

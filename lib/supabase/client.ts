@@ -1,7 +1,7 @@
-import { createClient as createSupabaseClient } from '@supabase/supabase-js'
+import { createClient as createSupabaseClient, SupabaseClient } from '@supabase/supabase-js'
 
 // Create singleton instance at module level
-let supabaseInstance: ReturnType<typeof createSupabaseClient> | null = null;
+let supabaseInstance: SupabaseClient | null = null;
 
 export function createClient() {
   // Only create one instance per browser session

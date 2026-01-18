@@ -4,7 +4,7 @@ import { useParams, usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { SkinProvider } from '@/components/theme/SkinProvider';
 import GigiLiveChat from '@/components/GigiLiveChat';
-import { useTheme } from '@/lib/theme-context';
+import { useTheme, ThemeId } from '@/lib/theme-context';
 import { createClient } from '@/lib/supabase-client';
 
 export default function KidLayout({
@@ -61,7 +61,7 @@ export default function KidLayout({
             .maybeSingle();
 
           if (data?.current_theme) {
-            setTheme(data.current_theme);
+            setTheme(data.current_theme as ThemeId);
           }
           if (data?.grade_level) {
             setGradeLevel(data.grade_level);
