@@ -1,4 +1,4 @@
-import { Camera, MessageSquare, FileText, Settings, ShoppingBag, Calendar, ClipboardCheck } from 'lucide-react';
+import { Camera, MessageSquare, FileText, Settings, ShoppingBag, Calendar, ClipboardCheck, TrendingUp, Trophy, Gamepad2, Users } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 export interface ThemeColors {
@@ -199,6 +199,10 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
     ],
     bottomNav: [
       { icon: ClipboardCheck, label: 'WEEKLY TEST', description: 'Prove your skills! Pass with 80% to earn 50 coins', colorGradient: 'from-yellow-500 to-red-600', href: '/kid/{id}/weekly-test' },
+      { icon: TrendingUp, label: 'MY PROGRESS', description: 'Track your championship journey and stats', colorGradient: 'from-emerald-500 to-emerald-600', href: '/kid/{id}/progress' },
+      { icon: Trophy, label: 'ACHIEVEMENTS', description: 'View your titles, belts, and accomplishments', colorGradient: 'from-amber-500 to-amber-600', href: '/kid/{id}/achievements' },
+      { icon: Gamepad2, label: 'ARCADE', description: 'Play fun learning games and earn bonus rewards', colorGradient: 'from-fuchsia-500 to-fuchsia-600', href: '/kid/{id}/games' },
+      { icon: Users, label: 'RANKINGS', description: 'See how you stack up against other superstars', colorGradient: 'from-cyan-500 to-cyan-600', href: '/kid/{id}/leaderboard' },
       { icon: Calendar, label: 'SCHEDULE', description: 'Plan your training sessions and upcoming championship matches', colorGradient: 'from-indigo-500 to-indigo-600', href: '/kid/{id}/syllabus' },
       { icon: Camera, label: 'SCOUTING', description: 'Scan documents and capture your opponent intel', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
       { icon: MessageSquare, label: 'MANAGER', description: 'Talk to Gigi, your personal wrestling manager', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
@@ -324,6 +328,10 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
     ],
     bottomNav: [
       { icon: ClipboardCheck, label: 'WEEKLY TEST', description: 'Prove your skills! Pass with 80% to earn 50 diamonds', colorGradient: 'from-cyan-500 to-emerald-600', href: '/kid/{id}/weekly-test' },
+      { icon: TrendingUp, label: 'MY PROGRESS', description: 'Track your mining levels and XP gained', colorGradient: 'from-emerald-500 to-emerald-600', href: '/kid/{id}/progress' },
+      { icon: Trophy, label: 'ACHIEVEMENTS', description: 'View your badges and completed challenges', colorGradient: 'from-amber-500 to-amber-600', href: '/kid/{id}/achievements' },
+      { icon: Gamepad2, label: 'MINIGAMES', description: 'Play fun learning games in the arcade', colorGradient: 'from-fuchsia-500 to-fuchsia-600', href: '/kid/{id}/games' },
+      { icon: Users, label: 'LEADERBOARD', description: 'See top miners and builders', colorGradient: 'from-cyan-500 to-cyan-600', href: '/kid/{id}/leaderboard' },
       { icon: Calendar, label: 'CALENDAR', description: 'Plan your mining expeditions and building schedules', colorGradient: 'from-indigo-500 to-indigo-600', href: '/kid/{id}/syllabus' },
       { icon: Camera, label: 'EXPLORE', description: 'Scan the world and discover new biomes', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
       { icon: MessageSquare, label: 'CHAT', description: 'Talk to Gigi, your crafting companion', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
@@ -449,6 +457,10 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
     ],
     bottomNav: [
       { icon: ClipboardCheck, label: 'WEEKLY TEST', description: 'Complete the challenge! Pass with 80% for 50 V-Bucks', colorGradient: 'from-purple-500 to-blue-600', href: '/kid/{id}/weekly-test' },
+      { icon: TrendingUp, label: 'CAREER', description: 'Track your stats and level progress', colorGradient: 'from-emerald-500 to-emerald-600', href: '/kid/{id}/progress' },
+      { icon: Trophy, label: 'ACHIEVEMENTS', description: 'View your Victory Royales and badges', colorGradient: 'from-amber-500 to-amber-600', href: '/kid/{id}/achievements' },
+      { icon: Gamepad2, label: 'CREATIVE', description: 'Play fun learning games and challenges', colorGradient: 'from-fuchsia-500 to-fuchsia-600', href: '/kid/{id}/games' },
+      { icon: Users, label: 'LEADERBOARD', description: 'See top players in your lobby', colorGradient: 'from-cyan-500 to-cyan-600', href: '/kid/{id}/leaderboard' },
       { icon: Calendar, label: 'BATTLE PASS', description: 'Track your daily and weekly missions', colorGradient: 'from-indigo-500 to-indigo-600', href: '/kid/{id}/syllabus' },
       { icon: Camera, label: 'LOCKER', description: 'Scan and capture your Victory Royales', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
       { icon: MessageSquare, label: 'SQUAD', description: 'Chat with Gigi, your squad leader', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
@@ -574,6 +586,10 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
     ],
     bottomNav: [
       { icon: ClipboardCheck, label: 'WEEKLY TEST', description: 'Survive the test! Pass with 80% for 50 supplies', colorGradient: 'from-green-500 to-lime-600', href: '/kid/{id}/weekly-test' },
+      { icon: TrendingUp, label: 'SURVIVOR LOG', description: 'Track your survival stats and days alive', colorGradient: 'from-emerald-500 to-emerald-600', href: '/kid/{id}/progress' },
+      { icon: Trophy, label: 'ACHIEVEMENTS', description: 'View your survival badges and milestones', colorGradient: 'from-amber-500 to-amber-600', href: '/kid/{id}/achievements' },
+      { icon: Gamepad2, label: 'SAFE ZONE', description: 'Play fun mini-games while staying safe', colorGradient: 'from-fuchsia-500 to-fuchsia-600', href: '/kid/{id}/games' },
+      { icon: Users, label: 'SURVIVORS', description: 'See other survivors in your area', colorGradient: 'from-cyan-500 to-cyan-600', href: '/kid/{id}/leaderboard' },
       { icon: Calendar, label: 'OPS CALENDAR', description: 'Plan your survival missions and supply runs', colorGradient: 'from-indigo-500 to-indigo-600', href: '/kid/{id}/syllabus' },
       { icon: Camera, label: 'RECON', description: 'Scout the area and scan for survivors', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
       { icon: MessageSquare, label: 'RADIO', description: 'Contact Gigi at base camp for backup', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
@@ -699,6 +715,10 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
     ],
     bottomNav: [
       { icon: ClipboardCheck, label: 'WEEKLY TEST', description: 'Prove yer worth! Pass with 80% for 50 doubloons', colorGradient: 'from-yellow-500 to-blue-600', href: '/kid/{id}/weekly-test' },
+      { icon: TrendingUp, label: 'CAPTAIN LOG', description: 'Track your voyage stats and treasures found', colorGradient: 'from-emerald-500 to-emerald-600', href: '/kid/{id}/progress' },
+      { icon: Trophy, label: 'ACHIEVEMENTS', description: 'View your pirate ranks and bounties claimed', colorGradient: 'from-amber-500 to-amber-600', href: '/kid/{id}/achievements' },
+      { icon: Gamepad2, label: 'TAVERN GAMES', description: 'Play fun games while docked at port', colorGradient: 'from-fuchsia-500 to-fuchsia-600', href: '/kid/{id}/games' },
+      { icon: Users, label: 'LEADERBOARD', description: 'See the most notorious pirates', colorGradient: 'from-cyan-500 to-cyan-600', href: '/kid/{id}/leaderboard' },
       { icon: Calendar, label: 'VOYAGE LOG', description: 'Chart your course and plan treasure hunts', colorGradient: 'from-indigo-500 to-indigo-600', href: '/kid/{id}/syllabus' },
       { icon: Camera, label: 'SPYGLASS', description: 'Scan the horizon and capture treasure maps', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
       { icon: MessageSquare, label: 'CREW', description: 'Talk to Gigi, your first mate', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
@@ -824,6 +844,10 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
     ],
     bottomNav: [
       { icon: ClipboardCheck, label: 'WEEKLY TEST', description: 'Power up! Pass with 80% for 50 crystals', colorGradient: 'from-pink-500 to-purple-600', href: '/kid/{id}/weekly-test' },
+      { icon: TrendingUp, label: 'POWER LEVEL', description: 'Track your training progress and stats', colorGradient: 'from-emerald-500 to-emerald-600', href: '/kid/{id}/progress' },
+      { icon: Trophy, label: 'ACHIEVEMENTS', description: 'View your hero badges and power-ups unlocked', colorGradient: 'from-amber-500 to-amber-600', href: '/kid/{id}/achievements' },
+      { icon: Gamepad2, label: 'ARCADE', description: 'Play fun mini-games between episodes', colorGradient: 'from-fuchsia-500 to-fuchsia-600', href: '/kid/{id}/games' },
+      { icon: Users, label: 'RANKINGS', description: 'See top heroes in the academy', colorGradient: 'from-cyan-500 to-cyan-600', href: '/kid/{id}/leaderboard' },
       { icon: Calendar, label: 'TRAINING', description: 'Schedule your training arcs and power-ups', colorGradient: 'from-indigo-500 to-indigo-600', href: '/kid/{id}/syllabus' },
       { icon: Camera, label: 'GALLERY', description: 'Capture epic moments and transformation scenes', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
       { icon: MessageSquare, label: 'TEAM', description: 'Talk to Gigi, your anime sensei', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
@@ -949,6 +973,10 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
     ],
     bottomNav: [
       { icon: ClipboardCheck, label: 'WEEKLY TEST', description: 'Squish the test! Pass with 80% for 50 glitter', colorGradient: 'from-lime-500 to-green-600', href: '/kid/{id}/weekly-test' },
+      { icon: TrendingUp, label: 'SLIME STATS', description: 'Track your gooey progress and growth', colorGradient: 'from-emerald-500 to-emerald-600', href: '/kid/{id}/progress' },
+      { icon: Trophy, label: 'TROPHIES', description: 'View your slime awards and achievements', colorGradient: 'from-amber-500 to-amber-600', href: '/kid/{id}/achievements' },
+      { icon: Gamepad2, label: 'SLIME GAMES', description: 'Play bouncy games and earn bonus glitter', colorGradient: 'from-fuchsia-500 to-fuchsia-600', href: '/kid/{id}/games' },
+      { icon: Users, label: 'SLIME BOARD', description: 'See who has the stretchiest scores', colorGradient: 'from-cyan-500 to-cyan-600', href: '/kid/{id}/leaderboard' },
       { icon: Calendar, label: 'SCHEDULE', description: 'Plan your slime experiments and activities', colorGradient: 'from-indigo-500 to-indigo-600', href: '/kid/{id}/syllabus' },
       { icon: Camera, label: 'COLLECT', description: 'Scan and collect new slime specimens', colorGradient: 'from-blue-500 to-blue-600', href: '/kid/{id}/scan' },
       { icon: MessageSquare, label: 'SLIME CHAT', description: 'Talk to Gigi, your slimy best friend', colorGradient: 'from-green-500 to-green-600', href: '/kid/{id}/chat' },
@@ -1074,6 +1102,10 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
     ],
     bottomNav: [
       { icon: ClipboardCheck, label: 'DIAGNOSTIC', description: 'Run system test! Pass with 80% for 50 credits', colorGradient: 'from-cyan-500 to-teal-600', href: '/kid/{id}/weekly-test' },
+      { icon: TrendingUp, label: 'ANALYTICS', description: 'View performance data and progress metrics', colorGradient: 'from-emerald-500 to-emerald-600', href: '/kid/{id}/progress' },
+      { icon: Trophy, label: 'ACHIEVEMENTS', description: 'Check your unlocked badges and awards', colorGradient: 'from-amber-500 to-amber-600', href: '/kid/{id}/achievements' },
+      { icon: Gamepad2, label: 'RECREATION', description: 'Play learning games and earn bonus credits', colorGradient: 'from-fuchsia-500 to-fuchsia-600', href: '/kid/{id}/games' },
+      { icon: Users, label: 'RANKINGS', description: 'Compare your stats with other operators', colorGradient: 'from-cyan-500 to-cyan-600', href: '/kid/{id}/leaderboard' },
       { icon: Calendar, label: 'SCHEDULER', description: 'Plan your learning programs and sessions', colorGradient: 'from-slate-500 to-slate-600', href: '/kid/{id}/syllabus' },
       { icon: Camera, label: 'SCANNER', description: 'Scan and digitize documents', colorGradient: 'from-emerald-500 to-emerald-600', href: '/kid/{id}/scan' },
       { icon: MessageSquare, label: 'COMMS', description: 'Chat with Gigi, your AI assistant', colorGradient: 'from-cyan-500 to-cyan-600', href: '/kid/{id}/chat' },
@@ -1199,6 +1231,10 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
     ],
     bottomNav: [
       { icon: ClipboardCheck, label: 'DIAGNOSTIC', description: 'Run system test! Pass with 80% for 50 credits', colorGradient: 'from-cyan-500 to-teal-600', href: '/kid/{id}/weekly-test' },
+      { icon: TrendingUp, label: 'ANALYTICS', description: 'View performance data and progress metrics', colorGradient: 'from-emerald-500 to-emerald-600', href: '/kid/{id}/progress' },
+      { icon: Trophy, label: 'ACHIEVEMENTS', description: 'Check your unlocked badges and awards', colorGradient: 'from-amber-500 to-amber-600', href: '/kid/{id}/achievements' },
+      { icon: Gamepad2, label: 'RECREATION', description: 'Play learning games and earn bonus credits', colorGradient: 'from-fuchsia-500 to-fuchsia-600', href: '/kid/{id}/games' },
+      { icon: Users, label: 'RANKINGS', description: 'Compare your stats with other operators', colorGradient: 'from-cyan-500 to-cyan-600', href: '/kid/{id}/leaderboard' },
       { icon: Calendar, label: 'SCHEDULER', description: 'Plan your learning programs and sessions', colorGradient: 'from-slate-500 to-slate-600', href: '/kid/{id}/syllabus' },
       { icon: Camera, label: 'SCANNER', description: 'Scan and digitize documents', colorGradient: 'from-emerald-500 to-emerald-600', href: '/kid/{id}/scan' },
       { icon: MessageSquare, label: 'COMMS', description: 'Chat with Robo Gigi, your AI assistant', colorGradient: 'from-cyan-500 to-cyan-600', href: '/kid/{id}/chat' },
