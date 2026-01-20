@@ -25,6 +25,10 @@ export interface ThemeColors {
   progressBarGradient: string;
   badge1: string;
   badge2: string;
+  // Raw hex colors for inline styles (used by dynamic themes)
+  rawPrimary?: string;
+  rawSecondary?: string;
+  rawAccent?: string;
 }
 
 export interface ThemeSubject {
@@ -1278,30 +1282,34 @@ export function getThemeDashboardConfig(themeId: ThemeId): ThemeConfig {
   return {
     colors: {
       background: 'bg-black',
-      backgroundGradient: `bg-gradient-to-b from-[${colors.primary}]/20 via-black to-black`,
+      backgroundGradient: 'bg-gradient-to-b from-gray-900/50 via-black to-black',
       radialGradient: `
         radial-gradient(circle at 20% 50%, rgba(${primaryRgb.r}, ${primaryRgb.g}, ${primaryRgb.b}, 0.3) 0%, transparent 50%),
         radial-gradient(circle at 80% 50%, rgba(${secondaryRgb.r}, ${secondaryRgb.g}, ${secondaryRgb.b}, 0.3) 0%, transparent 50%)
       `,
-      primary: `bg-gradient-to-r from-[${colors.primary}] to-[${colors.secondary}]`,
-      primaryLight: `text-[${colors.primary}]`,
-      secondary: `border-[${colors.secondary}]`,
-      accent: `from-[${colors.accent}]`,
-      cardBg: `bg-gradient-to-br from-black/80 via-[${colors.primary}]/10 to-black/80`,
-      cardBorder: `border-[${colors.primary}]`,
+      primary: 'bg-gradient-to-r from-white to-gray-300',
+      primaryLight: 'text-white',
+      secondary: 'border-white/50',
+      accent: 'from-white',
+      cardBg: 'bg-gradient-to-br from-black/80 via-gray-900/50 to-black/80',
+      cardBorder: 'border-white/30',
       glowPrimary: `shadow-[0_0_50px_rgba(${primaryRgb.r},${primaryRgb.g},${primaryRgb.b},0.5)]`,
       glowSecondary: `shadow-[0_0_30px_rgba(${secondaryRgb.r},${secondaryRgb.g},${secondaryRgb.b},0.4)]`,
-      textPrimary: `text-[${colors.primary}]`,
-      textSecondary: `text-[${colors.secondary}]`,
-      textAccent: `text-[${colors.accent}]`,
-      buttonGradient: `bg-gradient-to-r from-[${colors.primary}] to-[${colors.secondary}]`,
-      buttonText: 'text-white',
-      buttonBorder: `border-[${colors.primary}]`,
+      textPrimary: 'text-white',
+      textSecondary: 'text-gray-300',
+      textAccent: 'text-gray-200',
+      buttonGradient: 'bg-gradient-to-r from-white to-gray-300',
+      buttonText: 'text-black',
+      buttonBorder: 'border-white/50',
       buttonShadow: `shadow-[0_0_30px_rgba(${primaryRgb.r},${primaryRgb.g},${primaryRgb.b},0.8)]`,
       buttonHoverShadow: `hover:shadow-[0_0_40px_rgba(${primaryRgb.r},${primaryRgb.g},${primaryRgb.b},0.9)]`,
-      progressBarGradient: `from-[${colors.primary}] to-[${colors.secondary}]`,
-      badge1: `bg-[${colors.primary}]`,
-      badge2: `bg-[${colors.secondary}]`,
+      progressBarGradient: 'from-white to-gray-300',
+      badge1: 'bg-white',
+      badge2: 'bg-gray-300',
+      // Raw hex colors for inline styles
+      rawPrimary: colors.primary,
+      rawSecondary: colors.secondary,
+      rawAccent: colors.accent,
     },
     content: {
       welcomeTitle: `WELCOME BACK, ${theme.name.toUpperCase()} CHAMPION!`,

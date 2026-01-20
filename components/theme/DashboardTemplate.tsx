@@ -190,9 +190,22 @@ export default function DashboardTemplate({
   const xpPercentage = (currentXP / maxXP) * 100;
   const xpRemaining = maxXP - currentXP;
 
+  // Use raw colors for inline styles if available (dynamic themes)
+  const primaryColor = colors.rawPrimary || '#FFD700';
+  const secondaryColor = colors.rawSecondary || '#DC2626';
+  const accentColor = colors.rawAccent || '#3B82F6';
+
   return (
     <div className={`relative min-h-screen overflow-hidden ${colors.background}`}>
-      <div className={`absolute inset-0 ${colors.backgroundGradient}`} />
+      <div
+        className="absolute inset-0"
+        style={{
+          background: colors.rawPrimary
+            ? `linear-gradient(to bottom, ${primaryColor}20, black 30%, black)`
+            : undefined
+        }}
+      />
+      {!colors.rawPrimary && <div className={`absolute inset-0 ${colors.backgroundGradient}`} />}
 
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0" style={{
@@ -216,13 +229,17 @@ export default function DashboardTemplate({
               transition={{ duration: 2, repeat: Infinity }}
               className="text-center"
             >
-              <div className={`text-6xl font-black text-transparent bg-clip-text ${colors.primary} ${colors.glowPrimary}`}>
+              <div
+                className={`text-6xl font-black ${colors.glowPrimary}`}
+                style={{ color: primaryColor }}
+              >
                 {content.welcomeTitle}
               </div>
               <motion.div
                 animate={{ opacity: [0.5, 1, 0.5] }}
                 transition={{ duration: 1.5, repeat: Infinity }}
-                className={`text-2xl font-bold ${colors.textSecondary} mt-2 tracking-widest`}
+                className="text-2xl font-bold mt-2 tracking-widest"
+                style={{ color: secondaryColor }}
               >
                 🔥 {content.streakText} 🔥
               </motion.div>
@@ -249,28 +266,36 @@ export default function DashboardTemplate({
               🏆
             </motion.div>
             <div>
-              <div className={`${colors.textPrimary} text-sm font-bold tracking-widest`}>{content.rankLabel}</div>
+              <div className="text-sm font-bold tracking-widest" style={{ color: primaryColor }}>{content.rankLabel}</div>
               <div className="text-4xl font-black text-white tracking-tight">{playerName}</div>
-              <div className={`${colors.textSecondary} font-bold`}>LEVEL {level} {content.playerSubtitle}</div>
+              <div className="font-bold" style={{ color: secondaryColor }}>LEVEL {level} {content.playerSubtitle}</div>
             </div>
           </div>
           <div className="flex gap-6">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className={`text-center bg-gradient-to-br ${colors.primary}/20 border-2 ${colors.cardBorder} rounded-xl p-4 ${colors.glowPrimary}`}
+              className={`text-center rounded-xl p-4 ${colors.glowPrimary}`}
+              style={{
+                background: `linear-gradient(to bottom right, ${primaryColor}20, transparent)`,
+                border: `2px solid ${primaryColor}`,
+              }}
             >
-              <div className={`${colors.textPrimary} font-black text-3xl`}>
+              <div className="font-black text-3xl" style={{ color: primaryColor }}>
                 <AnimatedCounter value={currency} />
               </div>
-              <div className={`${colors.primaryLight} font-bold text-xs`}>{content.currencyLabel}</div>
+              <div className="font-bold text-xs" style={{ color: primaryColor }}>{content.currencyLabel}</div>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className={`text-center bg-gradient-to-br ${colors.secondary}/20 border-2 ${colors.secondary} rounded-xl p-4 ${colors.glowSecondary}`}
+              className={`text-center rounded-xl p-4 ${colors.glowSecondary}`}
+              style={{
+                background: `linear-gradient(to bottom right, ${secondaryColor}20, transparent)`,
+                border: `2px solid ${secondaryColor}`,
+              }}
             >
-              <Flame className={`h-8 w-8 ${colors.textSecondary} mx-auto mb-1`} />
+              <Flame className="h-8 w-8 mx-auto mb-1" style={{ color: secondaryColor }} />
               <div className="text-white font-black text-2xl">{streak}</div>
-              <div className={`${colors.textSecondary} font-bold text-xs`}>{content.streakLabel}</div>
+              <div className="font-bold text-xs" style={{ color: secondaryColor }}>{content.streakLabel}</div>
             </motion.div>
           </div>
         </motion.div>
@@ -281,14 +306,27 @@ export default function DashboardTemplate({
           transition={{ delay: 0.3 }}
           className="relative mb-12"
         >
-          <div className={`absolute inset-0 ${colors.primary}/20 via-${colors.secondary}/20 to-${colors.primary}/20 rounded-3xl blur-xl`} />
-          <div className={`relative ${colors.cardBg} border-4 ${colors.cardBorder} rounded-3xl p-12 ${colors.glowPrimary}`}>
+          <div
+            className="absolute inset-0 rounded-3xl blur-xl"
+            style={{ background: `linear-gradient(to bottom right, ${primaryColor}20, ${secondaryColor}20, ${primaryColor}20)` }}
+          />
+          <div
+            className="relative rounded-3xl p-12 bg-black/80"
+            style={{
+              border: `4px solid ${primaryColor}`,
+              boxShadow: `0 0 50px ${primaryColor}50`,
+            }}
+          >
             <motion.div
-              className={`absolute -top-6 left-1/2 -translate-x-1/2 ${colors.buttonGradient} px-8 py-2 rounded-full border-4 border-black ${colors.buttonShadow}`}
+              className="absolute -top-6 left-1/2 -translate-x-1/2 px-8 py-2 rounded-full border-4 border-black"
+              style={{
+                background: `linear-gradient(to right, ${primaryColor}, ${secondaryColor})`,
+                boxShadow: `0 0 30px ${primaryColor}80`,
+              }}
               animate={{ y: [-5, 5, -5] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
-              <span className={`${colors.buttonText} font-black text-xl tracking-wider`}>{content.characterTitle}</span>
+              <span className="font-black text-xl tracking-wider text-black">{content.characterTitle}</span>
             </motion.div>
 
             <div className="flex items-center justify-between">
@@ -298,13 +336,17 @@ export default function DashboardTemplate({
                     <motion.div
                       animate={{
                         boxShadow: [
-                          '0 0 20px rgba(255, 215, 0, 0.5)',
-                          '0 0 40px rgba(255, 215, 0, 0.8)',
-                          '0 0 20px rgba(255, 215, 0, 0.5)',
+                          `0 0 20px ${primaryColor}80`,
+                          `0 0 40px ${primaryColor}`,
+                          `0 0 20px ${primaryColor}80`,
                         ],
                       }}
                       transition={{ duration: 2, repeat: Infinity }}
-                      className={`w-32 h-32 rounded-full ${colors.buttonGradient} flex items-center justify-center overflow-hidden border-4 ${colors.buttonBorder}`}
+                      className="w-32 h-32 rounded-full flex items-center justify-center overflow-hidden"
+                      style={{
+                        background: `linear-gradient(to right, ${primaryColor}, ${secondaryColor})`,
+                        border: `4px solid ${primaryColor}`,
+                      }}
                     >
                       <ThemeMascot theme={themeId} size={180} animate />
                     </motion.div>
@@ -313,12 +355,12 @@ export default function DashboardTemplate({
                       transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
                       className="absolute -top-2 -right-2"
                     >
-                      <Crown className={`h-10 w-10 ${colors.textPrimary}`} />
+                      <Crown className="h-10 w-10" style={{ color: primaryColor }} />
                     </motion.div>
                   </div>
                   <div>
-                    <div className={`${colors.textPrimary} font-black text-5xl`}>{content.playerTitle}</div>
-                    <div className={`${colors.textSecondary} font-bold text-xl mt-1`}>{content.characterSubtitle}</div>
+                    <div className="font-black text-5xl" style={{ color: primaryColor }}>{content.playerTitle}</div>
+                    <div className="font-bold text-xl mt-1" style={{ color: secondaryColor }}>{content.characterSubtitle}</div>
                     <div className="flex gap-2 mt-2">
                       {['💪', '⚡', '🔥', '👑'].map((emoji, i) => (
                         <motion.span
@@ -334,43 +376,62 @@ export default function DashboardTemplate({
                   </div>
                 </div>
 
-                <div className={`bg-black/60 rounded-xl p-4 border-2 ${colors.cardBorder}/30`}>
+                <div className="bg-black/60 rounded-xl p-4 border-2 border-white/30">
                   <div className="flex items-center justify-between mb-2">
-                    <span className={`${colors.textPrimary} font-bold`}>{content.nextLevelText}: {level + 1}</span>
+                    <span className="font-bold" style={{ color: primaryColor }}>{content.nextLevelText}: {level + 1}</span>
                     <span className="text-white font-bold">{currentXP} / {maxXP} XP</span>
                   </div>
                   <AnimatedProgress value={xpPercentage} className="h-4" />
-                  <div className={`${colors.textSecondary} text-sm mt-2 font-bold`}>{xpRemaining} XP {content.xpUntilText}!</div>
+                  <div className="text-sm mt-2 font-bold" style={{ color: secondaryColor }}>{xpRemaining} XP {content.xpUntilText}!</div>
                 </div>
 
                 <div className="grid grid-cols-3 gap-3">
-                  <div className={`bg-gradient-to-br ${colors.primary}/20 border-2 ${colors.cardBorder}/50 rounded-lg p-3 text-center`}>
-                    <Trophy className={`h-6 w-6 ${colors.textPrimary} mx-auto mb-1`} />
+                  <div
+                    className="rounded-lg p-3 text-center"
+                    style={{
+                      background: `linear-gradient(to bottom right, ${primaryColor}20, transparent)`,
+                      border: `2px solid ${primaryColor}50`,
+                    }}
+                  >
+                    <Trophy className="h-6 w-6 mx-auto mb-1" style={{ color: primaryColor }} />
                     <div className="text-white font-black text-xl">{stat1Value}</div>
-                    <div className={`${colors.textPrimary} text-xs font-bold`}>{content.stat1Label}</div>
+                    <div className="text-xs font-bold" style={{ color: primaryColor }}>{content.stat1Label}</div>
                   </div>
-                  <div className={`bg-gradient-to-br ${colors.secondary}/20 border-2 ${colors.secondary}/50 rounded-lg p-3 text-center`}>
-                    <Zap className={`h-6 w-6 ${colors.textSecondary} mx-auto mb-1`} />
+                  <div
+                    className="rounded-lg p-3 text-center"
+                    style={{
+                      background: `linear-gradient(to bottom right, ${secondaryColor}20, transparent)`,
+                      border: `2px solid ${secondaryColor}50`,
+                    }}
+                  >
+                    <Zap className="h-6 w-6 mx-auto mb-1" style={{ color: secondaryColor }} />
                     <div className="text-white font-black text-xl">{stat2Value}</div>
-                    <div className={`${colors.textSecondary} text-xs font-bold`}>{content.stat2Label}</div>
+                    <div className="text-xs font-bold" style={{ color: secondaryColor }}>{content.stat2Label}</div>
                   </div>
-                  <div className={`bg-gradient-to-br ${colors.accent}/20 border-2 ${colors.accent}/50 rounded-lg p-3 text-center`}>
-                    <Star className={`h-6 w-6 ${colors.textAccent} mx-auto mb-1`} />
+                  <div
+                    className="rounded-lg p-3 text-center"
+                    style={{
+                      background: `linear-gradient(to bottom right, ${accentColor}20, transparent)`,
+                      border: `2px solid ${accentColor}50`,
+                    }}
+                  >
+                    <Star className="h-6 w-6 mx-auto mb-1" style={{ color: accentColor }} />
                     <div className="text-white font-black text-xl">{stat3Value}</div>
-                    <div className={`${colors.textAccent} text-xs font-bold`}>{content.stat3Label}</div>
+                    <div className="text-xs font-bold" style={{ color: accentColor }}>{content.stat3Label}</div>
                   </div>
                 </div>
               </div>
 
-              <div className={`ml-8 bg-black/60 border-2 ${colors.cardBorder}/30 rounded-xl p-6 w-80`}>
+              <div className="ml-8 bg-black/60 border-2 border-white/30 rounded-xl p-6 w-80">
                 <div className="flex items-center gap-2 mb-4">
-                  <MessageSquare className={`h-5 w-5 ${colors.textPrimary}`} />
-                  <span className={`${colors.textPrimary} font-black text-lg`}>{content.managerName}</span>
+                  <MessageSquare className="h-5 w-5" style={{ color: primaryColor }} />
+                  <span className="font-black text-lg" style={{ color: primaryColor }}>{content.managerName}</span>
                 </div>
                 <motion.div
                   animate={{ scale: [1, 1.02, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
-                  className={`${colors.cardBg} rounded-lg p-4 border-2 ${colors.secondary}/50 relative overflow-hidden`}
+                  className="bg-black/60 rounded-lg p-4 relative overflow-hidden"
+                  style={{ border: `2px solid ${secondaryColor}50` }}
                 >
                   <div className="absolute top-0 right-0 text-6xl opacity-20">🎤</div>
                   <div className="relative z-10">
@@ -379,8 +440,18 @@ export default function DashboardTemplate({
                       {content.managerMessage}
                     </div>
                     <div className="mt-3 flex gap-2">
-                      <div className={`${colors.buttonGradient} ${colors.buttonText} px-3 py-1 rounded-full text-xs font-black`}>{content.managerBadge1}</div>
-                      <div className={`${colors.secondary} text-white px-3 py-1 rounded-full text-xs font-black`}>{content.managerBadge2}</div>
+                      <div
+                        className="px-3 py-1 rounded-full text-xs font-black text-black"
+                        style={{ background: `linear-gradient(to right, ${primaryColor}, ${secondaryColor})` }}
+                      >
+                        {content.managerBadge1}
+                      </div>
+                      <div
+                        className="px-3 py-1 rounded-full text-xs font-black text-white"
+                        style={{ backgroundColor: secondaryColor }}
+                      >
+                        {content.managerBadge2}
+                      </div>
                     </div>
                   </div>
                 </motion.div>
@@ -388,12 +459,16 @@ export default function DashboardTemplate({
                 {previewMode ? (
                   <motion.div
                     whileHover={{ scale: 1.02 }}
-                    className={`mt-4 bg-gradient-to-r ${colors.accent}/80 to-black/80 rounded-lg p-3 border ${colors.accent}/30 opacity-80`}
+                    className="mt-4 rounded-lg p-3 opacity-80"
+                    style={{
+                      background: `linear-gradient(to right, ${accentColor}30, rgba(0,0,0,0.8))`,
+                      border: `1px solid ${accentColor}30`,
+                    }}
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
-                        <Users className={`h-4 w-4 ${colors.textAccent}`} />
-                        <span className={`${colors.textAccent} text-sm font-bold`}>GLOBAL RANK</span>
+                        <Users className="h-4 w-4" style={{ color: accentColor }} />
+                        <span className="text-sm font-bold" style={{ color: accentColor }}>GLOBAL RANK</span>
                       </div>
                       <motion.div
                         animate={{ scale: [1, 1.1, 1] }}
@@ -409,12 +484,16 @@ export default function DashboardTemplate({
                   <Link href={leaderboardLink}>
                     <motion.div
                       whileHover={{ scale: 1.02 }}
-                      className={`mt-4 bg-gradient-to-r ${colors.accent}/80 to-black/80 rounded-lg p-3 border ${colors.accent}/30 cursor-pointer hover:border-${colors.accent} transition-all`}
+                      className="mt-4 rounded-lg p-3 cursor-pointer transition-all"
+                      style={{
+                        background: `linear-gradient(to right, ${accentColor}30, rgba(0,0,0,0.8))`,
+                        border: `1px solid ${accentColor}30`,
+                      }}
                     >
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
-                          <Users className={`h-4 w-4 ${colors.textAccent}`} />
-                          <span className={`${colors.textAccent} text-sm font-bold`}>GLOBAL RANK</span>
+                          <Users className="h-4 w-4" style={{ color: accentColor }} />
+                          <span className="text-sm font-bold" style={{ color: accentColor }}>GLOBAL RANK</span>
                         </div>
                         <motion.div
                           animate={{ scale: [1, 1.1, 1] }}
@@ -452,10 +531,18 @@ export default function DashboardTemplate({
           className="mb-12"
         >
           <div className="flex items-center justify-between mb-6">
-            <h2 className={`text-4xl font-black text-transparent bg-clip-text ${colors.primary}`}>
+            <h2
+              className="text-4xl font-black"
+              style={{
+                background: `linear-gradient(to right, ${primaryColor}, ${secondaryColor})`,
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}
+            >
               {content.subjectsTitle}
             </h2>
-            <div className={`${colors.textPrimary} font-bold`}>{content.subjectsSubtitle} ⚡</div>
+            <div className="font-bold" style={{ color: primaryColor }}>{content.subjectsSubtitle} ⚡</div>
           </div>
 
           <div className="grid grid-cols-2 gap-6">
@@ -468,7 +555,8 @@ export default function DashboardTemplate({
                   transition={{ delay: 0.6 + index * 0.1 }}
                   whileHover={{ scale: 1.02 }}
                   onClick={previewMode ? undefined : (e) => handleSubjectClick(e, subject.name)}
-                  className={`relative group ${previewMode ? 'opacity-90' : 'cursor-pointer'} rounded-2xl overflow-hidden border-4 ${colors.cardBorder}/60 ${subject.glowShadow} ${previewMode ? '' : `hover:border-${colors.primary}`} transition-all`}
+                  className={`relative group ${previewMode ? 'opacity-90' : 'cursor-pointer'} rounded-2xl overflow-hidden ${subject.glowShadow} transition-all`}
+                  style={{ border: `4px solid ${primaryColor}60` }}
                 >
                 <div className={`absolute inset-0 bg-gradient-to-br ${subject.colorGradient} opacity-20 group-hover:opacity-30 transition-opacity`} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
@@ -480,7 +568,7 @@ export default function DashboardTemplate({
                   transition={{ duration: 5, repeat: Infinity }}
                   className="absolute inset-0 opacity-30"
                   style={{
-                    background: 'linear-gradient(90deg, transparent, rgba(255,215,0,0.3), transparent)',
+                    background: `linear-gradient(90deg, transparent, ${primaryColor}30, transparent)`,
                     backgroundSize: '200% 100%',
                   }}
                 />
@@ -495,14 +583,14 @@ export default function DashboardTemplate({
                       {subject.emoji}
                     </motion.div>
                     <div className="text-right">
-                      <div className={`${colors.textPrimary} font-black text-3xl tracking-wider`}>{subject.name}</div>
+                      <div className="font-black text-3xl tracking-wider" style={{ color: primaryColor }}>{subject.name}</div>
                       <div className="text-white font-bold text-sm">{subject.label}</div>
                     </div>
                   </div>
 
-                  <div className={`bg-black/70 rounded-xl p-4 mb-4 border-2 ${colors.cardBorder}/30`}>
+                  <div className="bg-black/70 rounded-xl p-4 mb-4 border-2 border-white/30">
                     <div className="flex items-center justify-between mb-2">
-                      <span className={`${colors.textPrimary} font-bold text-sm`}>{content.titleProgressLabel}</span>
+                      <span className="font-bold text-sm" style={{ color: primaryColor }}>{content.titleProgressLabel}</span>
                       <span className="text-white font-bold text-sm">8 / 10 DEFENSES</span>
                     </div>
                     <AnimatedProgress value={80} className="h-3" />
@@ -513,7 +601,12 @@ export default function DashboardTemplate({
                       shape="squircle"
                       variant="primary"
                       glow
-                      className={`flex-1 ${colors.buttonGradient} ${colors.buttonText} font-black uppercase tracking-wider py-4 border-2 ${colors.buttonBorder} ${colors.buttonShadow} ${colors.buttonHoverShadow}`}
+                      className="flex-1 font-black uppercase tracking-wider py-4 text-black"
+                      style={{
+                        background: `linear-gradient(to right, ${primaryColor}, ${secondaryColor})`,
+                        border: `2px solid ${primaryColor}`,
+                        boxShadow: `0 0 30px ${primaryColor}80`,
+                      }}
                     >
                       <Trophy className="mr-2 h-5 w-5" />
                       {content.defendButtonText}
@@ -521,7 +614,8 @@ export default function DashboardTemplate({
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className={`bg-black/70 ${colors.textPrimary} px-4 rounded-xl border-2 ${colors.cardBorder}/50 font-bold hover:bg-${colors.primary}/20 transition-colors`}
+                      className="bg-black/70 px-4 rounded-xl font-bold transition-colors"
+                      style={{ color: primaryColor, border: `2px solid ${primaryColor}50` }}
                     >
                       <Award className="h-5 w-5" />
                     </motion.button>
@@ -557,19 +651,23 @@ export default function DashboardTemplate({
                 <motion.div
                   whileHover={{ scale: 1.02, x: 5 }}
                   whileTap={{ scale: 0.98 }}
-                  className={`relative group w-full ${previewMode ? 'opacity-90' : 'cursor-pointer'} rounded-xl overflow-hidden border-2 ${colors.cardBorder} hover:border-white/60 transition-all p-4 ${colors.cardBg} shadow-lg ${colors.glowSecondary} ${previewMode ? '' : 'hover:shadow-2xl'}`}
+                  className={`relative group w-full ${previewMode ? 'opacity-90' : 'cursor-pointer'} rounded-xl overflow-hidden hover:border-white/60 transition-all p-4 bg-black/60 shadow-lg ${previewMode ? '' : 'hover:shadow-2xl'}`}
+                  style={{ border: `2px solid ${primaryColor}50` }}
                 >
                   <div className="flex items-center gap-4">
-                    <div className={`flex-shrink-0 w-12 h-12 ${colors.primary} rounded-lg flex items-center justify-center`}>
-                      <Icon className={`h-6 w-6 ${colors.buttonText}`} />
+                    <div
+                      className="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center"
+                      style={{ background: `linear-gradient(to bottom right, ${primaryColor}, ${secondaryColor})` }}
+                    >
+                      <Icon className="h-6 w-6 text-black" />
                     </div>
                     <div className="flex-1 text-left">
-                      <div className={`${colors.textPrimary} font-black text-lg uppercase tracking-wide`}>{item.label}</div>
+                      <div className="font-black text-lg uppercase tracking-wide" style={{ color: primaryColor }}>{item.label}</div>
                       {item.description && (
                         <div className="text-white/70 text-sm mt-0.5">{item.description}</div>
                       )}
                     </div>
-                    <div className={`${colors.textPrimary} text-2xl`}>→</div>
+                    <div className="text-2xl" style={{ color: primaryColor }}>→</div>
                   </div>
                 </motion.div>
             );
@@ -590,17 +688,18 @@ export default function DashboardTemplate({
               onClick={() => setShowThemePicker(!showThemePicker)}
               whileHover={{ scale: 1.02, x: 5 }}
               whileTap={{ scale: 0.98 }}
-              className={`relative group w-full rounded-xl overflow-hidden border-2 ${colors.cardBorder} hover:border-white/60 transition-all p-4 ${colors.cardBg} shadow-lg ${colors.glowSecondary} hover:shadow-2xl`}
+              className="relative group w-full rounded-xl overflow-hidden hover:border-white/60 transition-all p-4 bg-black/60 shadow-lg hover:shadow-2xl"
+              style={{ border: `2px solid ${primaryColor}50` }}
             >
               <div className="flex items-center gap-4">
-                <div className={`flex-shrink-0 w-12 h-12 bg-gradient-to-br from-pink-500 via-purple-500 to-cyan-500 rounded-lg flex items-center justify-center`}>
+                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-pink-500 via-purple-500 to-cyan-500 rounded-lg flex items-center justify-center">
                   <Palette className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex-1 text-left">
-                  <div className={`${colors.textPrimary} font-black text-lg uppercase tracking-wide`}>Pick Your Theme</div>
+                  <div className="font-black text-lg uppercase tracking-wide" style={{ color: primaryColor }}>Pick Your Theme</div>
                   <div className="text-white/70 text-sm mt-0.5">Change your look instantly!</div>
                 </div>
-                <div className={`${colors.textPrimary} text-2xl`}>{showThemePicker ? '↑' : '↓'}</div>
+                <div className="text-2xl" style={{ color: primaryColor }}>{showThemePicker ? '↑' : '↓'}</div>
               </div>
             </motion.button>
 
