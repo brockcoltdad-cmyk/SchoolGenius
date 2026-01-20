@@ -607,7 +607,7 @@ export default function LessonPage() {
   }
 
   // TYPING LESSONS: Use specialized typing interface
-  if (lesson.subject_code === 'TYPING' || lesson.subject_code === 'Typing') {
+  if (lesson.subject_code === 'TYPING' || lesson.subject_code === 'Typing' || lesson.subject_code === 'TYPE') {
     // Extract phase number from skill_id or default to 1
     const phaseMatch = skillId.match(/phase-(\d+)/i) || skillId.match(/(\d+)/);
     const typingPhase = phaseMatch ? parseInt(phaseMatch[1]) : 1;
@@ -664,7 +664,7 @@ export default function LessonPage() {
   }
 
   // SPELLING LESSONS: Use specialized spelling interface with audio
-  if (lesson.subject_code === 'SPELLING' || lesson.subject_code === 'Spelling') {
+  if (lesson.subject_code === 'SPELLING' || lesson.subject_code === 'Spelling' || lesson.subject_code === 'SPELL') {
     // Extract grade level and lesson index from skill_id
     // Format: SPELLING_K_1 (Kindergarten lesson 1) or SPELLING_3_2 (Grade 3 lesson 2)
     const gradeMatch = skillId.match(/SPELLING[_-](\d+|K)[_-](\d+)/i);
@@ -777,7 +777,7 @@ export default function LessonPage() {
   }
 
   // WRITING LESSONS: Use specialized writing interface
-  if (lesson.subject_code === 'WRITING' || lesson.subject_code === 'Writing') {
+  if (lesson.subject_code === 'WRITING' || lesson.subject_code === 'Writing' || lesson.subject_code === 'LANG') {
     const gradeMatch = skillId.match(/WRITING[_-](\d+|K)/i);
     let grade = 0;
     if (gradeMatch) {
@@ -820,7 +820,7 @@ export default function LessonPage() {
   }
 
   // CODING LESSONS: Use specialized coding interface
-  if (lesson.subject_code === 'CODING' || lesson.subject_code === 'Coding') {
+  if (lesson.subject_code === 'CODING' || lesson.subject_code === 'Coding' || lesson.subject_code === 'CODE') {
     const gradeMatch = skillId.match(/CODING[_-](\d+|K)/i);
     let grade = 0;
     if (gradeMatch) {
@@ -865,7 +865,7 @@ export default function LessonPage() {
   }
 
   // READING LESSONS: Use specialized reading interface with Lexile levels
-  if (lesson.subject_code === 'READING' || lesson.subject_code === 'Reading') {
+  if (lesson.subject_code === 'READING' || lesson.subject_code === 'Reading' || lesson.subject_code === 'READ') {
     const gradeMatch = skillId.match(/READING[_-](\d+|K)/i);
     let grade = 0;
     if (gradeMatch) {

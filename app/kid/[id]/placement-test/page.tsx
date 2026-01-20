@@ -597,6 +597,20 @@ export default function PlacementTestPage() {
                 <Play className="h-6 w-6" />
                 START TEST
               </motion.button>
+
+              {/* Skip and Explore button */}
+              <motion.button
+                onClick={() => router.push(`/kid/${kidId}`)}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="mt-6 bg-white/10 hover:bg-white/20 border-2 border-white/30 text-white font-bold text-lg px-8 py-4 rounded-xl flex items-center gap-3 mx-auto transition-all"
+              >
+                <Sparkles className="h-5 w-5" />
+                SKIP AND EXPLORE
+              </motion.button>
+              <p className="text-purple-300/70 text-sm mt-2">
+                Take the test later - jump right into learning!
+              </p>
             </div>
           </motion.div>
         </div>
