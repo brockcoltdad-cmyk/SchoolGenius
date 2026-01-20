@@ -2,9 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { ArrowLeft, UserPlus, Loader2, Lock } from 'lucide-react';
+import { UserPlus, Loader2, Lock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card } from '@/components/ui/card';
@@ -18,6 +17,7 @@ import {
 } from '@/components/ui/select';
 import { createClient } from '@/lib/supabase-client';
 import { useAuth } from '@/lib/auth-context';
+import DashboardShell, { useDashboardTheme } from '@/components/parent/DashboardShell';
 
 const grades = [
   { label: 'Kindergarten', value: 'K' },
@@ -38,6 +38,7 @@ const grades = [
 export default function AddChildPage() {
   const router = useRouter();
   const { user } = useAuth();
+  const { theme, isDark } = useDashboardTheme();
   const [formData, setFormData] = useState({
     name: '',
     grade: '',
@@ -103,178 +104,169 @@ export default function AddChildPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
-      <header className="border-b border-slate-200 bg-white/80 backdrop-blur-xl">
-        <div className="mx-auto max-w-7xl px-4 py-4">
-          <Link href="/dashboard" className="flex items-center gap-2 text-slate-700 transition-colors hover:text-blue-600">
-            <ArrowLeft className="h-5 w-5" />
-            <span className="font-semibold">Back to Dashboard</span>
-          </Link>
+    <DashboardShell
+      showBackButton
+      backHref="/dashboard"
+      title="Add Your Child"
+      subtitle="Create a learning profile to get started"
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="mx-auto max-w-2xl"
+      >
+        <div className="mb-8 text-center">
+          <div className="mb-4 text-6xl">👶</div>
         </div>
-      </header>
 
-      <main className="mx-auto max-w-2xl px-4 py-12">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="mb-8 text-center">
-            <div className="mb-4 text-6xl">👶</div>
-            <h1 className="mb-2 text-4xl font-bold text-slate-800">Add Your Child</h1>
-            <p className="text-lg text-slate-600">
-              Create a learning profile to get started
-            </p>
-          </div>
+        <Card className={`${isDark ? 'bg-slate-800/80 border-slate-700' : 'bg-white/80 border-slate-200'} p-8 shadow-2xl backdrop-blur-xl border-4 ${theme.border}`}>
+          {error && (
+            <div className="mb-6 rounded-lg bg-red-50 border border-red-200 p-4 text-sm text-red-800">
+              {error}
+            </div>
+          )}
 
-          <Card className="bg-white/80 p-8 shadow-2xl backdrop-blur-xl">
-            {error && (
-              <div className="mb-6 rounded-lg bg-red-50 border border-red-200 p-4 text-sm text-red-800">
-                {error}
-              </div>
-            )}
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div>
+              <label htmlFor="name" className={`mb-2 block text-sm font-semibold ${isDark ? 'text-slate-200' : 'text-slate-700'}`}>
+                Child&apos;s Name
+              </label>
+              <Input
+                id="name"
+                type="text"
+                placeholder="Enter name"
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                className="text-base"
+                required
+                disabled={isLoading}
+              />
+            </div>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="mb-2 block text-sm font-semibold text-slate-700">
-                  Child's Name
-                </label>
-                <Input
-                  id="name"
-                  type="text"
-                  placeholder="Enter name"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="text-base"
-                  required
+            <div>
+              <label htmlFor="grade" className={`mb-2 block text-sm font-semibold ${isDark ? 'text-slate-200' : 'text-slate-700'}`}>
+                Grade Level
+              </label>
+              <Select
+                value={formData.grade}
+                onValueChange={(value) => setFormData({ ...formData, grade: value })}
+                disabled={isLoading}
+                required
+              >
+                <SelectTrigger className="text-base">
+                  <SelectValue placeholder="Select grade" />
+                </SelectTrigger>
+                <SelectContent>
+                  {grades.map((grade) => (
+                    <SelectItem key={grade.value} value={grade.value}>
+                      {grade.label}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+
+            <div className={`space-y-4 rounded-lg border-2 ${isDark ? 'border-slate-600 bg-slate-700' : 'border-slate-200 bg-slate-50'} p-4`}>
+              <div className="flex items-start gap-3">
+                <Checkbox
+                  id="pinRequired"
+                  checked={formData.pinRequired}
+                  onCheckedChange={(checked) =>
+                    setFormData({
+                      ...formData,
+                      pinRequired: checked === true,
+                      pin: '',
+                      confirmPin: ''
+                    })
+                  }
                   disabled={isLoading}
                 />
-              </div>
-
-              <div>
-                <label htmlFor="grade" className="mb-2 block text-sm font-semibold text-slate-700">
-                  Grade Level
-                </label>
-                <Select
-                  value={formData.grade}
-                  onValueChange={(value) => setFormData({ ...formData, grade: value })}
-                  disabled={isLoading}
-                  required
-                >
-                  <SelectTrigger className="text-base">
-                    <SelectValue placeholder="Select grade" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {grades.map((grade) => (
-                      <SelectItem key={grade.value} value={grade.value}>
-                        {grade.label}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-
-              <div className="space-y-4 rounded-lg border-2 border-slate-200 bg-slate-50 p-4">
-                <div className="flex items-start gap-3">
-                  <Checkbox
-                    id="pinRequired"
-                    checked={formData.pinRequired}
-                    onCheckedChange={(checked) =>
-                      setFormData({
-                        ...formData,
-                        pinRequired: checked === true,
-                        pin: '',
-                        confirmPin: ''
-                      })
-                    }
-                    disabled={isLoading}
-                  />
-                  <div className="flex-1">
-                    <label
-                      htmlFor="pinRequired"
-                      className="cursor-pointer text-sm font-semibold text-slate-700 flex items-center gap-2"
-                    >
-                      <Lock className="h-4 w-4" />
-                      Require PIN to access dashboard
-                    </label>
-                    <p className="mt-1 text-xs text-slate-500">
-                      Add an extra layer of security by requiring a 4-digit PIN
-                    </p>
-                  </div>
-                </div>
-
-                {formData.pinRequired && (
-                  <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: 'auto' }}
-                    className="space-y-3"
+                <div className="flex-1">
+                  <label
+                    htmlFor="pinRequired"
+                    className={`cursor-pointer text-sm font-semibold ${isDark ? 'text-slate-200' : 'text-slate-700'} flex items-center gap-2`}
                   >
-                    <div>
-                      <label htmlFor="pin" className="mb-2 block text-xs font-semibold text-slate-700">
-                        Create 4-Digit PIN
-                      </label>
-                      <Input
-                        id="pin"
-                        type="password"
-                        inputMode="numeric"
-                        maxLength={4}
-                        placeholder="0000"
-                        value={formData.pin}
-                        onChange={(e) => {
-                          const value = e.target.value.replace(/\D/g, '');
-                          setFormData({ ...formData, pin: value });
-                          setError('');
-                        }}
-                        className="text-center text-2xl tracking-widest"
-                        disabled={isLoading}
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="confirmPin" className="mb-2 block text-xs font-semibold text-slate-700">
-                        Confirm PIN
-                      </label>
-                      <Input
-                        id="confirmPin"
-                        type="password"
-                        inputMode="numeric"
-                        maxLength={4}
-                        placeholder="0000"
-                        value={formData.confirmPin}
-                        onChange={(e) => {
-                          const value = e.target.value.replace(/\D/g, '');
-                          setFormData({ ...formData, confirmPin: value });
-                          setError('');
-                        }}
-                        className="text-center text-2xl tracking-widest"
-                        disabled={isLoading}
-                      />
-                    </div>
-                  </motion.div>
-                )}
+                    <Lock className="h-4 w-4" />
+                    Require PIN to access dashboard
+                  </label>
+                  <p className={`mt-1 text-xs ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
+                    Add an extra layer of security by requiring a 4-digit PIN
+                  </p>
+                </div>
               </div>
 
-              <Button
-                type="submit"
-                disabled={isLoading || !formData.name || !formData.grade}
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 py-6 text-lg font-semibold"
-              >
-                {isLoading ? (
-                  <>
-                    <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                    Adding Child...
-                  </>
-                ) : (
-                  <>
-                    <UserPlus className="mr-2 h-5 w-5" />
-                    Add Child
-                  </>
-                )}
-              </Button>
-            </form>
-          </Card>
-        </motion.div>
-      </main>
-    </div>
+              {formData.pinRequired && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  className="space-y-3"
+                >
+                  <div>
+                    <label htmlFor="pin" className={`mb-2 block text-xs font-semibold ${isDark ? 'text-slate-200' : 'text-slate-700'}`}>
+                      Create 4-Digit PIN
+                    </label>
+                    <Input
+                      id="pin"
+                      type="password"
+                      inputMode="numeric"
+                      maxLength={4}
+                      placeholder="0000"
+                      value={formData.pin}
+                      onChange={(e) => {
+                        const value = e.target.value.replace(/\D/g, '');
+                        setFormData({ ...formData, pin: value });
+                        setError('');
+                      }}
+                      className="text-center text-2xl tracking-widest"
+                      disabled={isLoading}
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="confirmPin" className={`mb-2 block text-xs font-semibold ${isDark ? 'text-slate-200' : 'text-slate-700'}`}>
+                      Confirm PIN
+                    </label>
+                    <Input
+                      id="confirmPin"
+                      type="password"
+                      inputMode="numeric"
+                      maxLength={4}
+                      placeholder="0000"
+                      value={formData.confirmPin}
+                      onChange={(e) => {
+                        const value = e.target.value.replace(/\D/g, '');
+                        setFormData({ ...formData, confirmPin: value });
+                        setError('');
+                      }}
+                      className="text-center text-2xl tracking-widest"
+                      disabled={isLoading}
+                    />
+                  </div>
+                </motion.div>
+              )}
+            </div>
+
+            <Button
+              type="submit"
+              disabled={isLoading || !formData.name || !formData.grade}
+              className={`w-full bg-gradient-to-r ${theme.gradient} py-6 text-lg font-semibold text-white`}
+            >
+              {isLoading ? (
+                <>
+                  <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                  Adding Child...
+                </>
+              ) : (
+                <>
+                  <UserPlus className="mr-2 h-5 w-5" />
+                  Add Child
+                </>
+              )}
+            </Button>
+          </form>
+        </Card>
+      </motion.div>
+    </DashboardShell>
   );
 }

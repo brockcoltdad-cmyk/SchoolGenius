@@ -5,22 +5,15 @@ import { useRouter } from 'next/navigation';
 import { createClient } from '@/lib/supabase-client';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  ArrowLeft, Bell, BellOff, Brain, TrendingUp, TrendingDown,
+  Bell, BellOff, Brain, TrendingUp, TrendingDown,
   AlertTriangle, CheckCircle, Clock, Zap, Target, Award,
   BookOpen, Calculator, PenTool, Sparkles, RefreshCw, Eye,
   BarChart3, Calendar, User, ChevronRight, X
 } from 'lucide-react';
 import Link from 'next/link';
-
-/**
- * SELF-MONITORING AI DASHBOARD
- *
- * Shows parents:
- * - Active alerts (struggling, inactive, achievements)
- * - AI-generated insights about their children
- * - Daily/weekly summaries
- * - Learning patterns and recommendations
- */
+import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import DashboardShell, { useDashboardTheme } from '@/components/parent/DashboardShell';
 
 interface Alert {
   id: string;
@@ -100,6 +93,7 @@ const INSIGHT_ICONS: Record<string, any> = {
 
 export default function MonitoringDashboard() {
   const router = useRouter();
+  const { theme, isDark } = useDashboardTheme();
   const supabase = createClient();
 
   const [children, setChildren] = useState<Child[]>([]);
@@ -236,175 +230,159 @@ export default function MonitoringDashboard() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white mx-auto mb-4" />
-          <p className="text-white">Loading monitoring data...</p>
-        </div>
-      </div>
+      <DashboardShell showBackButton backHref="/dashboard">
+        <Card className={`p-12 text-center border-4 ${theme.border} ${isDark ? 'bg-slate-800' : 'bg-white'}`}>
+          <div className={`animate-spin rounded-full h-12 w-12 border-b-2 ${isDark ? 'border-purple-400' : 'border-purple-600'} mx-auto mb-4`} />
+          <p className={isDark ? 'text-white' : 'text-gray-800'}>Loading monitoring data...</p>
+        </Card>
+      </DashboardShell>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-      {/* Header */}
-      <header className="border-b border-white/10 bg-black/20 backdrop-blur-xl sticky top-0 z-40">
-        <div className="max-w-7xl mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <Link
-                href="/dashboard"
-                className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
-              >
-                <ArrowLeft className="h-5 w-5" />
-                Back
-              </Link>
-              <div className="h-6 w-px bg-white/20" />
-              <div className="flex items-center gap-2">
-                <Brain className="h-6 w-6 text-purple-400" />
-                <h1 className="text-xl font-bold text-white">AI Monitoring</h1>
-              </div>
-            </div>
+    <DashboardShell
+      showBackButton
+      backHref="/dashboard"
+      title="AI Monitoring"
+      subtitle="Track your children's learning progress and get AI-powered insights"
+    >
+      {/* Header actions */}
+      <div className="flex items-center justify-end gap-4 mb-8">
+        {/* Unread badge */}
+        {unreadCount > 0 && (
+          <div className={`flex items-center gap-2 px-3 py-1 rounded-full ${isDark ? 'bg-red-900/30 border border-red-500/50' : 'bg-red-50 border border-red-200'}`}>
+            <Bell className={`h-4 w-4 ${isDark ? 'text-red-400' : 'text-red-600'}`} />
+            <span className={`font-bold text-sm ${isDark ? 'text-red-400' : 'text-red-600'}`}>{unreadCount} new</span>
+          </div>
+        )}
 
-            <div className="flex items-center gap-4">
-              {/* Unread badge */}
-              {unreadCount > 0 && (
-                <div className="flex items-center gap-2 bg-red-500/20 border border-red-500/50 rounded-full px-3 py-1">
-                  <Bell className="h-4 w-4 text-red-400" />
-                  <span className="text-red-400 font-bold text-sm">{unreadCount} new</span>
-                </div>
-              )}
+        {/* Run analysis button */}
+        <Button
+          onClick={runAnalysis}
+          disabled={analyzing}
+          className={`bg-gradient-to-r ${theme.gradient} text-white`}
+        >
+          <RefreshCw className={`h-4 w-4 mr-2 ${analyzing ? 'animate-spin' : ''}`} />
+          {analyzing ? 'Analyzing...' : 'Run Analysis'}
+        </Button>
+      </div>
 
-              {/* Run analysis button */}
+      {/* Child selector */}
+      {children.length > 1 && (
+        <div className="mb-8">
+          <div className="flex gap-3 overflow-x-auto pb-2">
+            {children.map(child => (
               <motion.button
-                onClick={runAnalysis}
-                disabled={analyzing}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 bg-purple-500/20 border border-purple-500/50 rounded-lg px-4 py-2 text-purple-300 hover:bg-purple-500/30 transition-colors disabled:opacity-50"
+                key={child.id}
+                onClick={() => setSelectedChild(child.id)}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className={`flex items-center gap-3 px-4 py-3 rounded-xl border-2 transition-all whitespace-nowrap ${
+                  selectedChild === child.id
+                    ? `border-blue-500 ${isDark ? 'bg-blue-900/30' : 'bg-blue-50'}`
+                    : `${isDark ? 'bg-slate-800 border-slate-700 hover:border-slate-600' : 'bg-white border-gray-200 hover:border-gray-300'}`
+                }`}
               >
-                <RefreshCw className={`h-4 w-4 ${analyzing ? 'animate-spin' : ''}`} />
-                {analyzing ? 'Analyzing...' : 'Run Analysis'}
+                <User className={`h-5 w-5 ${isDark ? 'text-white' : 'text-gray-700'}`} />
+                <span className={`font-medium ${isDark ? 'text-white' : 'text-gray-800'}`}>{child.name}</span>
+                <span className={`text-sm ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>Grade {child.grade_level}</span>
               </motion.button>
-            </div>
+            ))}
           </div>
         </div>
-      </header>
+      )}
 
-      <main className="max-w-7xl mx-auto px-4 py-8">
-        {/* Child selector */}
-        {children.length > 1 && (
-          <div className="mb-8">
-            <div className="flex gap-3 overflow-x-auto pb-2">
-              {children.map(child => (
-                <motion.button
-                  key={child.id}
-                  onClick={() => setSelectedChild(child.id)}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className={`flex items-center gap-3 px-4 py-3 rounded-xl border-2 transition-all whitespace-nowrap ${
-                    selectedChild === child.id
-                      ? 'bg-purple-500/30 border-purple-500 text-white'
-                      : 'bg-white/5 border-white/20 text-white/70 hover:border-white/40'
-                  }`}
-                >
-                  <User className="h-5 w-5" />
-                  <span className="font-medium">{child.name}</span>
-                  <span className="text-sm opacity-70">Grade {child.grade_level}</span>
-                </motion.button>
-              ))}
+      {/* Quick stats */}
+      {selectedChildData && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8"
+        >
+          <Card className={`p-4 border-4 ${theme.border} ${isDark ? 'bg-slate-800' : 'bg-white'}`}>
+            <div className={`flex items-center gap-2 mb-2 ${isDark ? 'text-orange-400' : 'text-orange-600'}`}>
+              <Zap className="h-5 w-5" />
+              <span className="text-sm font-medium">Streak</span>
             </div>
+            <div className={`text-3xl font-black ${isDark ? 'text-white' : 'text-gray-900'}`}>{selectedChildData.current_streak} days</div>
+          </Card>
+
+          <Card className={`p-4 border-4 ${theme.border} ${isDark ? 'bg-slate-800' : 'bg-white'}`}>
+            <div className={`flex items-center gap-2 mb-2 ${isDark ? 'text-yellow-400' : 'text-yellow-600'}`}>
+              <Award className="h-5 w-5" />
+              <span className="text-sm font-medium">Level</span>
+            </div>
+            <div className={`text-3xl font-black ${isDark ? 'text-white' : 'text-gray-900'}`}>{selectedChildData.level}</div>
+          </Card>
+
+          <Card className={`p-4 border-4 ${theme.border} ${isDark ? 'bg-slate-800' : 'bg-white'}`}>
+            <div className={`flex items-center gap-2 mb-2 ${isDark ? 'text-green-400' : 'text-green-600'}`}>
+              <Sparkles className="h-5 w-5" />
+              <span className="text-sm font-medium">Coins</span>
+            </div>
+            <div className={`text-3xl font-black ${isDark ? 'text-white' : 'text-gray-900'}`}>{selectedChildData.coins}</div>
+          </Card>
+
+          <Card className={`p-4 border-4 ${theme.border} ${isDark ? 'bg-slate-800' : 'bg-white'}`}>
+            <div className={`flex items-center gap-2 mb-2 ${isDark ? 'text-blue-400' : 'text-blue-600'}`}>
+              <Clock className="h-5 w-5" />
+              <span className="text-sm font-medium">Last Active</span>
+            </div>
+            <div className={`text-lg font-bold ${isDark ? 'text-white' : 'text-gray-900'}`}>
+              {selectedChildData.last_activity_date
+                ? new Date(selectedChildData.last_activity_date).toLocaleDateString()
+                : 'Never'}
+            </div>
+          </Card>
+        </motion.div>
+      )}
+
+      <div className="grid lg:grid-cols-2 gap-8">
+        {/* Alerts section */}
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.1 }}
+        >
+          <div className="flex items-center justify-between mb-4">
+            <h2 className={`text-xl font-bold flex items-center gap-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
+              <Bell className={isDark ? 'text-purple-400' : 'text-purple-600'} />
+              Alerts
+            </h2>
+            {alerts.length > 0 && (
+              <span className={`text-sm ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>{alerts.length} total</span>
+            )}
           </div>
-        )}
 
-        {/* Quick stats */}
-        {selectedChildData && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8"
-          >
-            <div className="bg-white/5 border border-white/10 rounded-xl p-4">
-              <div className="flex items-center gap-2 text-orange-400 mb-2">
-                <Zap className="h-5 w-5" />
-                <span className="text-sm font-medium">Streak</span>
-              </div>
-              <div className="text-3xl font-black text-white">{selectedChildData.current_streak} days</div>
-            </div>
+          <div className="space-y-3">
+            <AnimatePresence>
+              {alerts.length === 0 ? (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                >
+                  <Card className={`p-8 text-center border-4 ${theme.border} ${isDark ? 'bg-slate-800' : 'bg-white'}`}>
+                    <BellOff className={`h-12 w-12 mx-auto mb-3 ${isDark ? 'text-slate-500' : 'text-gray-400'}`} />
+                    <p className={isDark ? 'text-slate-400' : 'text-gray-500'}>No alerts at this time</p>
+                    <p className={`text-sm mt-1 ${isDark ? 'text-slate-500' : 'text-gray-400'}`}>Everything looks good!</p>
+                  </Card>
+                </motion.div>
+              ) : (
+                alerts.slice(0, 5).map((alert, index) => {
+                  const Icon = ALERT_ICONS[alert.alert_type] || Bell;
+                  const colorClass = ALERT_COLORS[alert.severity] || ALERT_COLORS.info;
 
-            <div className="bg-white/5 border border-white/10 rounded-xl p-4">
-              <div className="flex items-center gap-2 text-yellow-400 mb-2">
-                <Award className="h-5 w-5" />
-                <span className="text-sm font-medium">Level</span>
-              </div>
-              <div className="text-3xl font-black text-white">{selectedChildData.level}</div>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 rounded-xl p-4">
-              <div className="flex items-center gap-2 text-green-400 mb-2">
-                <Sparkles className="h-5 w-5" />
-                <span className="text-sm font-medium">Coins</span>
-              </div>
-              <div className="text-3xl font-black text-white">{selectedChildData.coins}</div>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 rounded-xl p-4">
-              <div className="flex items-center gap-2 text-blue-400 mb-2">
-                <Clock className="h-5 w-5" />
-                <span className="text-sm font-medium">Last Active</span>
-              </div>
-              <div className="text-lg font-bold text-white">
-                {selectedChildData.last_activity_date
-                  ? new Date(selectedChildData.last_activity_date).toLocaleDateString()
-                  : 'Never'}
-              </div>
-            </div>
-          </motion.div>
-        )}
-
-        <div className="grid lg:grid-cols-2 gap-8">
-          {/* Alerts section */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.1 }}
-          >
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-xl font-bold text-white flex items-center gap-2">
-                <Bell className="h-5 w-5 text-purple-400" />
-                Alerts
-              </h2>
-              {alerts.length > 0 && (
-                <span className="text-white/50 text-sm">{alerts.length} total</span>
-              )}
-            </div>
-
-            <div className="space-y-3">
-              <AnimatePresence>
-                {alerts.length === 0 ? (
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    className="bg-white/5 border border-white/10 rounded-xl p-8 text-center"
-                  >
-                    <BellOff className="h-12 w-12 text-white/30 mx-auto mb-3" />
-                    <p className="text-white/50">No alerts at this time</p>
-                    <p className="text-white/30 text-sm mt-1">Everything looks good!</p>
-                  </motion.div>
-                ) : (
-                  alerts.slice(0, 5).map((alert, index) => {
-                    const Icon = ALERT_ICONS[alert.alert_type] || Bell;
-                    const colorClass = ALERT_COLORS[alert.severity] || ALERT_COLORS.info;
-
-                    return (
-                      <motion.div
-                        key={alert.id}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, x: -100 }}
-                        transition={{ delay: index * 0.05 }}
-                        className={`relative bg-gradient-to-r ${colorClass} bg-opacity-10 border border-white/10 rounded-xl p-4 ${
-                          !alert.is_read ? 'ring-2 ring-white/20' : ''
+                  return (
+                    <motion.div
+                      key={alert.id}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, x: -100 }}
+                      transition={{ delay: index * 0.05 }}
+                    >
+                      <Card
+                        className={`p-4 border-4 ${theme.border} ${isDark ? 'bg-slate-800' : 'bg-white'} ${
+                          !alert.is_read ? 'ring-2 ring-blue-500/50' : ''
                         }`}
                         onClick={() => !alert.is_read && markAlertRead(alert.id)}
                       >
@@ -414,13 +392,13 @@ export default function MonitoringDashboard() {
                           </div>
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center gap-2 mb-1">
-                              <h3 className="font-bold text-white truncate">{alert.title}</h3>
+                              <h3 className={`font-bold truncate ${isDark ? 'text-white' : 'text-gray-900'}`}>{alert.title}</h3>
                               {!alert.is_read && (
-                                <span className="px-2 py-0.5 bg-white/20 rounded-full text-xs text-white">New</span>
+                                <span className={`px-2 py-0.5 rounded-full text-xs font-bold ${isDark ? 'bg-blue-900/50 text-blue-300' : 'bg-blue-100 text-blue-700'}`}>New</span>
                               )}
                             </div>
-                            <p className="text-white/70 text-sm">{alert.message}</p>
-                            <div className="flex items-center gap-2 mt-2 text-white/40 text-xs">
+                            <p className={`text-sm ${isDark ? 'text-slate-300' : 'text-gray-600'}`}>{alert.message}</p>
+                            <div className={`flex items-center gap-2 mt-2 text-xs ${isDark ? 'text-slate-500' : 'text-gray-400'}`}>
                               <Clock className="h-3 w-3" />
                               {new Date(alert.created_at).toLocaleString()}
                             </div>
@@ -430,110 +408,112 @@ export default function MonitoringDashboard() {
                               e.stopPropagation();
                               dismissAlert(alert.id);
                             }}
-                            className="text-white/30 hover:text-white/70 transition-colors"
+                            className={`${isDark ? 'text-slate-500 hover:text-slate-300' : 'text-gray-400 hover:text-gray-600'} transition-colors`}
                           >
                             <X className="h-5 w-5" />
                           </button>
                         </div>
-                      </motion.div>
-                    );
-                  })
-                )}
-              </AnimatePresence>
-            </div>
-          </motion.div>
+                      </Card>
+                    </motion.div>
+                  );
+                })
+              )}
+            </AnimatePresence>
+          </div>
+        </motion.div>
 
-          {/* Insights section */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2 }}
-          >
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-xl font-bold text-white flex items-center gap-2">
-                <Brain className="h-5 w-5 text-cyan-400" />
-                AI Insights
-              </h2>
-            </div>
+        {/* Insights section */}
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.2 }}
+        >
+          <div className="flex items-center justify-between mb-4">
+            <h2 className={`text-xl font-bold flex items-center gap-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
+              <Brain className={isDark ? 'text-cyan-400' : 'text-cyan-600'} />
+              AI Insights
+            </h2>
+          </div>
 
-            <div className="space-y-3">
-              {insights.length === 0 ? (
-                <div className="bg-white/5 border border-white/10 rounded-xl p-8 text-center">
-                  <Brain className="h-12 w-12 text-white/30 mx-auto mb-3" />
-                  <p className="text-white/50">No insights yet</p>
-                  <p className="text-white/30 text-sm mt-1">Run analysis to generate insights</p>
-                </div>
-              ) : (
-                insights.map((insight, index) => {
-                  const Icon = INSIGHT_ICONS[insight.insight_type] || Brain;
+          <div className="space-y-3">
+            {insights.length === 0 ? (
+              <Card className={`p-8 text-center border-4 ${theme.border} ${isDark ? 'bg-slate-800' : 'bg-white'}`}>
+                <Brain className={`h-12 w-12 mx-auto mb-3 ${isDark ? 'text-slate-500' : 'text-gray-400'}`} />
+                <p className={isDark ? 'text-slate-400' : 'text-gray-500'}>No insights yet</p>
+                <p className={`text-sm mt-1 ${isDark ? 'text-slate-500' : 'text-gray-400'}`}>Run analysis to generate insights</p>
+              </Card>
+            ) : (
+              insights.map((insight, index) => {
+                const Icon = INSIGHT_ICONS[insight.insight_type] || Brain;
 
-                  return (
-                    <motion.div
-                      key={insight.id}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: index * 0.05 }}
-                      className="bg-white/5 border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-colors"
-                    >
+                return (
+                  <motion.div
+                    key={insight.id}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.05 }}
+                  >
+                    <Card className={`p-4 border-4 ${theme.border} ${isDark ? 'bg-slate-800 hover:bg-slate-700' : 'bg-white hover:bg-gray-50'} transition-colors`}>
                       <div className="flex items-start gap-3">
                         <div className="p-2 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-500">
                           <Icon className="h-5 w-5 text-white" />
                         </div>
                         <div className="flex-1">
-                          <h3 className="font-bold text-white mb-1">{insight.title}</h3>
-                          <p className="text-white/70 text-sm">{insight.description}</p>
+                          <h3 className={`font-bold mb-1 ${isDark ? 'text-white' : 'text-gray-900'}`}>{insight.title}</h3>
+                          <p className={`text-sm ${isDark ? 'text-slate-300' : 'text-gray-600'}`}>{insight.description}</p>
                           {insight.recommendation && (
-                            <div className="mt-2 p-2 bg-white/5 rounded-lg border border-white/10">
-                              <p className="text-cyan-300 text-sm">
+                            <div className={`mt-2 p-2 rounded-lg ${isDark ? 'bg-cyan-900/30 border border-cyan-500/30' : 'bg-cyan-50 border border-cyan-200'}`}>
+                              <p className={`text-sm ${isDark ? 'text-cyan-300' : 'text-cyan-700'}`}>
                                 💡 {insight.recommendation}
                               </p>
                             </div>
                           )}
                           <div className="flex items-center gap-2 mt-2">
-                            <div className="flex-1 h-1.5 bg-white/10 rounded-full overflow-hidden">
+                            <div className={`flex-1 h-1.5 rounded-full overflow-hidden ${isDark ? 'bg-slate-700' : 'bg-gray-200'}`}>
                               <div
                                 className="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"
                                 style={{ width: `${insight.confidence * 100}%` }}
                               />
                             </div>
-                            <span className="text-white/40 text-xs">
+                            <span className={`text-xs ${isDark ? 'text-slate-500' : 'text-gray-400'}`}>
                               {Math.round(insight.confidence * 100)}% confidence
                             </span>
                           </div>
                         </div>
                       </div>
-                    </motion.div>
-                  );
-                })
-              )}
-            </div>
-          </motion.div>
-        </div>
+                    </Card>
+                  </motion.div>
+                );
+              })
+            )}
+          </div>
+        </motion.div>
+      </div>
 
-        {/* Daily summaries */}
-        {summaries.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="mt-8"
-          >
-            <h2 className="text-xl font-bold text-white flex items-center gap-2 mb-4">
-              <BarChart3 className="h-5 w-5 text-green-400" />
-              Recent Activity
-            </h2>
+      {/* Daily summaries */}
+      {summaries.length > 0 && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          className="mt-8"
+        >
+          <h2 className={`text-xl font-bold flex items-center gap-2 mb-4 ${isDark ? 'text-white' : 'text-gray-900'}`}>
+            <BarChart3 className={isDark ? 'text-green-400' : 'text-green-600'} />
+            Recent Activity
+          </h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {summaries.slice(0, 6).map((summary, index) => (
-                <motion.div
-                  key={summary.id}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: index * 0.05 }}
-                  className="bg-white/5 border border-white/10 rounded-xl p-4"
-                >
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {summaries.slice(0, 6).map((summary, index) => (
+              <motion.div
+                key={summary.id}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: index * 0.05 }}
+              >
+                <Card className={`p-4 border-4 ${theme.border} ${isDark ? 'bg-slate-800' : 'bg-white'}`}>
                   <div className="flex items-center justify-between mb-3">
-                    <div className="flex items-center gap-2 text-white/70">
+                    <div className={`flex items-center gap-2 ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>
                       <Calendar className="h-4 w-4" />
                       <span className="text-sm">
                         {new Date(summary.summary_date).toLocaleDateString('en-US', {
@@ -545,9 +525,9 @@ export default function MonitoringDashboard() {
                     </div>
                     {summary.mood_detected && (
                       <span className={`text-xs px-2 py-1 rounded-full ${
-                        summary.mood_detected === 'frustrated' ? 'bg-red-500/20 text-red-300' :
-                        summary.mood_detected === 'excited' ? 'bg-green-500/20 text-green-300' :
-                        'bg-blue-500/20 text-blue-300'
+                        summary.mood_detected === 'frustrated' ? 'bg-red-100 text-red-700' :
+                        summary.mood_detected === 'excited' ? 'bg-green-100 text-green-700' :
+                        'bg-blue-100 text-blue-700'
                       }`}>
                         {summary.mood_detected}
                       </span>
@@ -556,50 +536,49 @@ export default function MonitoringDashboard() {
 
                   <div className="grid grid-cols-2 gap-3">
                     <div>
-                      <div className="text-white/50 text-xs">Lessons</div>
-                      <div className="text-white font-bold">{summary.lessons_completed}</div>
+                      <div className={`text-xs ${isDark ? 'text-slate-500' : 'text-gray-500'}`}>Lessons</div>
+                      <div className={`font-bold ${isDark ? 'text-white' : 'text-gray-900'}`}>{summary.lessons_completed}</div>
                     </div>
                     <div>
-                      <div className="text-white/50 text-xs">Accuracy</div>
+                      <div className={`text-xs ${isDark ? 'text-slate-500' : 'text-gray-500'}`}>Accuracy</div>
                       <div className={`font-bold ${
-                        summary.accuracy >= 0.8 ? 'text-green-400' :
-                        summary.accuracy >= 0.6 ? 'text-yellow-400' :
-                        'text-red-400'
+                        summary.accuracy >= 0.8 ? 'text-green-500' :
+                        summary.accuracy >= 0.6 ? 'text-yellow-500' :
+                        'text-red-500'
                       }`}>
                         {Math.round(summary.accuracy * 100)}%
                       </div>
                     </div>
                     <div>
-                      <div className="text-white/50 text-xs">Questions</div>
-                      <div className="text-white font-bold">{summary.questions_answered}</div>
+                      <div className={`text-xs ${isDark ? 'text-slate-500' : 'text-gray-500'}`}>Questions</div>
+                      <div className={`font-bold ${isDark ? 'text-white' : 'text-gray-900'}`}>{summary.questions_answered}</div>
                     </div>
                     <div>
-                      <div className="text-white/50 text-xs">Coins</div>
-                      <div className="text-yellow-400 font-bold">{summary.coins_earned}</div>
+                      <div className={`text-xs ${isDark ? 'text-slate-500' : 'text-gray-500'}`}>Coins</div>
+                      <div className="font-bold text-yellow-500">{summary.coins_earned}</div>
                     </div>
                   </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        )}
-
-        {/* Empty state */}
-        {children.length === 0 && (
-          <div className="text-center py-16">
-            <Brain className="h-16 w-16 text-white/20 mx-auto mb-4" />
-            <h2 className="text-xl font-bold text-white mb-2">No Children Found</h2>
-            <p className="text-white/50 mb-6">Add a child to your family to start monitoring their progress.</p>
-            <Link
-              href="/dashboard"
-              className="inline-flex items-center gap-2 bg-purple-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-purple-600 transition-colors"
-            >
-              Go to Dashboard
-              <ChevronRight className="h-4 w-4" />
-            </Link>
+                </Card>
+              </motion.div>
+            ))}
           </div>
-        )}
-      </main>
-    </div>
+        </motion.div>
+      )}
+
+      {/* Empty state */}
+      {children.length === 0 && (
+        <Card className={`p-16 text-center border-4 ${theme.border} ${isDark ? 'bg-slate-800' : 'bg-white'}`}>
+          <Brain className={`h-16 w-16 mx-auto mb-4 ${isDark ? 'text-slate-500' : 'text-gray-400'}`} />
+          <h2 className={`text-xl font-bold mb-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>No Children Found</h2>
+          <p className={`mb-6 ${isDark ? 'text-slate-400' : 'text-gray-500'}`}>Add a child to your family to start monitoring their progress.</p>
+          <Link href="/dashboard">
+            <Button className={`bg-gradient-to-r ${theme.gradient} text-white`}>
+              Go to Dashboard
+              <ChevronRight className="h-4 w-4 ml-2" />
+            </Button>
+          </Link>
+        </Card>
+      )}
+    </DashboardShell>
   );
 }

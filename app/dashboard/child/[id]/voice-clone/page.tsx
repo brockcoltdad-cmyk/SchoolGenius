@@ -3,9 +3,10 @@
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Mic, Volume2, CheckCircle, Sparkles } from 'lucide-react';
-import Link from 'next/link';
+import { Mic, Volume2, CheckCircle, Sparkles } from 'lucide-react';
 import VoiceCloneRecorder from '@/components/VoiceCloneRecorder';
+import { Card } from '@/components/ui/card';
+import DashboardShell, { useDashboardTheme } from '@/components/parent/DashboardShell';
 
 interface VoiceClone {
   id: string;
@@ -24,6 +25,7 @@ interface Child {
 export default function VoiceClonePage() {
   const params = useParams();
   const router = useRouter();
+  const { theme, isDark } = useDashboardTheme();
   const childId = params.id as string;
 
   const [child, setChild] = useState<Child | null>(null);
@@ -147,40 +149,22 @@ export default function VoiceClonePage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-white mx-auto mb-4"></div>
-          <p className="text-white font-bold text-xl">Loading...</p>
-        </div>
-      </div>
+      <DashboardShell showBackButton backHref="/dashboard">
+        <Card className={`p-12 text-center border-4 ${theme.border} ${isDark ? 'bg-slate-800' : 'bg-white'}`}>
+          <div className={`animate-spin rounded-full h-16 w-16 border-b-2 ${isDark ? 'border-purple-400' : 'border-purple-600'} mx-auto mb-4`}></div>
+          <p className={`font-bold text-xl ${isDark ? 'text-white' : 'text-gray-800'}`}>Loading...</p>
+        </Card>
+      </DashboardShell>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 p-4">
-      {/* Header */}
-      <div className="max-w-4xl mx-auto mb-8">
-        <Link
-          href={`/dashboard/child/${childId}`}
-          className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors mb-6"
-        >
-          <ArrowLeft className="w-5 h-5" />
-          Back to Dashboard
-        </Link>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center"
-        >
-          <div className="text-6xl mb-4">🎙️</div>
-          <h1 className="text-4xl font-black text-white mb-2">Voice Cloning</h1>
-          <p className="text-white/70 text-lg">
-            Record your voice so Gigi can speak in your voice to {child?.name || 'your child'}!
-          </p>
-        </motion.div>
-      </div>
-
+    <DashboardShell
+      showBackButton
+      backHref="/dashboard"
+      title="Voice Cloning"
+      subtitle={`Record your voice so Gigi can speak to ${child?.name || 'your child'}!`}
+    >
       {/* Info Card */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -188,20 +172,20 @@ export default function VoiceClonePage() {
         transition={{ delay: 0.1 }}
         className="max-w-4xl mx-auto mb-8"
       >
-        <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 rounded-2xl p-6">
+        <Card className={`border-4 ${theme.border} p-6 ${isDark ? 'bg-yellow-900/20' : 'bg-gradient-to-r from-yellow-50 to-orange-50'}`}>
           <div className="flex items-start gap-4">
-            <Sparkles className="w-8 h-8 text-yellow-400 flex-shrink-0 mt-1" />
+            <Sparkles className={`w-8 h-8 flex-shrink-0 mt-1 ${isDark ? 'text-yellow-400' : 'text-yellow-600'}`} />
             <div>
-              <h3 className="text-xl font-bold text-yellow-400 mb-2">How It Works</h3>
-              <ul className="text-white/80 space-y-2">
+              <h3 className={`text-xl font-bold mb-2 ${isDark ? 'text-yellow-300' : 'text-yellow-800'}`}>How It Works</h3>
+              <ul className={`space-y-2 ${isDark ? 'text-slate-300' : 'text-gray-700'}`}>
                 <li>• Record a <strong>10-15 second</strong> voice sample</li>
                 <li>• AI clones your voice instantly - no training needed!</li>
-                <li>• When Gigi reads lessons, she'll use <strong>your voice</strong></li>
-                <li>• Kids love hearing their parents' voices while learning!</li>
+                <li>• When Gigi reads lessons, she&apos;ll use <strong>your voice</strong></li>
+                <li>• Kids love hearing their parents&apos; voices while learning!</li>
               </ul>
             </div>
           </div>
-        </div>
+        </Card>
       </motion.div>
 
       {/* Voice Recorders */}
@@ -240,82 +224,83 @@ export default function VoiceClonePage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20"
           >
-            <div className="flex items-center gap-3 mb-4">
-              <Volume2 className="w-6 h-6 text-blue-400" />
-              <h3 className="text-lg font-bold text-white">Choose Default Voice</h3>
-            </div>
+            <Card className={`p-6 border-4 ${theme.border} ${isDark ? 'bg-slate-800' : 'bg-white'}`}>
+              <div className="flex items-center gap-3 mb-4">
+                <Volume2 className={`w-6 h-6 ${isDark ? 'text-blue-400' : 'text-blue-600'}`} />
+                <h3 className={`text-lg font-bold ${isDark ? 'text-white' : 'text-gray-800'}`}>Choose Default Voice</h3>
+              </div>
 
-            <p className="text-white/60 text-sm mb-4">
-              Select which voice Gigi should use when speaking to {child?.name}
-            </p>
+              <p className={`text-sm mb-4 ${isDark ? 'text-slate-400' : 'text-gray-600'}`}>
+                Select which voice Gigi should use when speaking to {child?.name}
+              </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {/* Default Gigi Voice */}
-              <button
-                onClick={() => handleSetPreferred('default')}
-                className={`p-4 rounded-xl border-2 transition-all ${
-                  preferredVoice === 'default'
-                    ? 'border-blue-500 bg-blue-500/20'
-                    : 'border-white/20 bg-white/5 hover:border-white/40'
-                }`}
-              >
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <span className="text-2xl">🤖</span>
-                    <span className="text-white font-medium">Gigi's Voice</span>
-                  </div>
-                  {preferredVoice === 'default' && (
-                    <CheckCircle className="w-5 h-5 text-blue-400" />
-                  )}
-                </div>
-              </button>
-
-              {/* Mom's Voice */}
-              {getExistingVoice('mom') && (
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                {/* Default Gigi Voice */}
                 <button
-                  onClick={() => handleSetPreferred('mom')}
+                  onClick={() => handleSetPreferred('default')}
                   className={`p-4 rounded-xl border-2 transition-all ${
-                    preferredVoice === 'mom'
-                      ? 'border-pink-500 bg-pink-500/20'
-                      : 'border-white/20 bg-white/5 hover:border-white/40'
+                    preferredVoice === 'default'
+                      ? `border-blue-500 ${isDark ? 'bg-blue-900/30' : 'bg-blue-50'}`
+                      : `${isDark ? 'border-slate-600 bg-slate-700 hover:border-slate-500' : 'border-gray-200 bg-white hover:border-gray-300'}`
                   }`}
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                      <span className="text-2xl">👩</span>
-                      <span className="text-white font-medium">Mom's Voice</span>
+                      <span className="text-2xl">🤖</span>
+                      <span className={`font-medium ${isDark ? 'text-white' : 'text-gray-800'}`}>Gigi&apos;s Voice</span>
                     </div>
-                    {preferredVoice === 'mom' && (
-                      <CheckCircle className="w-5 h-5 text-pink-400" />
+                    {preferredVoice === 'default' && (
+                      <CheckCircle className="w-5 h-5 text-blue-500" />
                     )}
                   </div>
                 </button>
-              )}
 
-              {/* Dad's Voice */}
-              {getExistingVoice('dad') && (
-                <button
-                  onClick={() => handleSetPreferred('dad')}
-                  className={`p-4 rounded-xl border-2 transition-all ${
-                    preferredVoice === 'dad'
-                      ? 'border-blue-500 bg-blue-500/20'
-                      : 'border-white/20 bg-white/5 hover:border-white/40'
-                  }`}
-                >
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <span className="text-2xl">👨</span>
-                      <span className="text-white font-medium">Dad's Voice</span>
+                {/* Mom's Voice */}
+                {getExistingVoice('mom') && (
+                  <button
+                    onClick={() => handleSetPreferred('mom')}
+                    className={`p-4 rounded-xl border-2 transition-all ${
+                      preferredVoice === 'mom'
+                        ? `border-pink-500 ${isDark ? 'bg-pink-900/30' : 'bg-pink-50'}`
+                        : `${isDark ? 'border-slate-600 bg-slate-700 hover:border-slate-500' : 'border-gray-200 bg-white hover:border-gray-300'}`
+                    }`}
+                  >
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <span className="text-2xl">👩</span>
+                        <span className={`font-medium ${isDark ? 'text-white' : 'text-gray-800'}`}>Mom&apos;s Voice</span>
+                      </div>
+                      {preferredVoice === 'mom' && (
+                        <CheckCircle className="w-5 h-5 text-pink-500" />
+                      )}
                     </div>
-                    {preferredVoice === 'dad' && (
-                      <CheckCircle className="w-5 h-5 text-blue-400" />
-                    )}
-                  </div>
-                </button>
-              )}
-            </div>
+                  </button>
+                )}
+
+                {/* Dad's Voice */}
+                {getExistingVoice('dad') && (
+                  <button
+                    onClick={() => handleSetPreferred('dad')}
+                    className={`p-4 rounded-xl border-2 transition-all ${
+                      preferredVoice === 'dad'
+                        ? `border-blue-500 ${isDark ? 'bg-blue-900/30' : 'bg-blue-50'}`
+                        : `${isDark ? 'border-slate-600 bg-slate-700 hover:border-slate-500' : 'border-gray-200 bg-white hover:border-gray-300'}`
+                    }`}
+                  >
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <span className="text-2xl">👨</span>
+                        <span className={`font-medium ${isDark ? 'text-white' : 'text-gray-800'}`}>Dad&apos;s Voice</span>
+                      </div>
+                      {preferredVoice === 'dad' && (
+                        <CheckCircle className="w-5 h-5 text-blue-500" />
+                      )}
+                    </div>
+                  </button>
+                )}
+              </div>
+            </Card>
           </motion.div>
         )}
 
@@ -324,11 +309,13 @@ export default function VoiceClonePage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="text-center text-white/40 text-sm py-4"
+          className="text-center py-4"
         >
-          <p>Powered by Chatterbox TTS - Free, Open Source Voice Cloning</p>
+          <p className={`text-sm ${isDark ? 'text-slate-500' : 'text-gray-400'}`}>
+            Powered by Chatterbox TTS - Free, Open Source Voice Cloning
+          </p>
         </motion.div>
       </div>
-    </div>
+    </DashboardShell>
   );
 }

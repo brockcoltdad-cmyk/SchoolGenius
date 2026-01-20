@@ -14,6 +14,7 @@ import { Card } from '@/components/ui/card';
 import { useAuth } from '@/lib/auth-context';
 import { createClient } from '@/lib/supabase-client';
 import ParentHelpButton from '@/components/ParentHelpButton';
+import WeeklyProgressCard from '@/components/progress/WeeklyProgressCard';
 
 interface Child {
   id: string;
@@ -26,74 +27,14 @@ interface Child {
   level: number;
 }
 
-// Parent Dashboard Themes - Fun themes for parents!
-const parentThemes = [
-  {
-    id: 'coffee',
-    name: 'Coffee Break',
-    emoji: '☕',
-    gradient: 'from-amber-600 via-orange-600 to-amber-600',
-    bgGradient: 'from-amber-50 via-orange-50 to-yellow-50',
-    accent: '#D97706',
-    border: 'border-amber-200',
-    text: 'text-amber-700',
-    bgGlow: 'rgba(217,119,6,0.3)',
-  },
-  {
-    id: 'garden',
-    name: 'Garden Fresh',
-    emoji: '🌿',
-    gradient: 'from-emerald-600 via-green-600 to-teal-600',
-    bgGradient: 'from-emerald-50 via-green-50 to-teal-50',
-    accent: '#059669',
-    border: 'border-emerald-200',
-    text: 'text-emerald-700',
-    bgGlow: 'rgba(5,150,105,0.3)',
-  },
-  {
-    id: 'ocean',
-    name: 'Ocean Calm',
-    emoji: '🌊',
-    gradient: 'from-blue-600 via-cyan-600 to-blue-600',
-    bgGradient: 'from-blue-50 via-cyan-50 to-sky-50',
-    accent: '#0891B2',
-    border: 'border-cyan-200',
-    text: 'text-cyan-700',
-    bgGlow: 'rgba(8,145,178,0.3)',
-  },
-  {
-    id: 'creative',
-    name: 'Creative Studio',
-    emoji: '🎨',
-    gradient: 'from-purple-600 via-pink-600 to-purple-600',
-    bgGradient: 'from-purple-50 via-pink-50 to-fuchsia-50',
-    accent: '#9333EA',
-    border: 'border-purple-200',
-    text: 'text-purple-700',
-    bgGlow: 'rgba(147,51,234,0.3)',
-  },
-  {
-    id: 'sports',
-    name: 'Sports Fan',
-    emoji: '🏆',
-    gradient: 'from-yellow-500 via-red-500 to-yellow-500',
-    bgGradient: 'from-yellow-50 via-red-50 to-orange-50',
-    accent: '#DC2626',
-    border: 'border-red-200',
-    text: 'text-red-700',
-    bgGlow: 'rgba(220,38,38,0.3)',
-  },
-  {
-    id: 'sunset',
-    name: 'Sunset Vibes',
-    emoji: '🌅',
-    gradient: 'from-orange-500 via-pink-500 to-purple-500',
-    bgGradient: 'from-orange-50 via-pink-50 to-purple-50',
-    accent: '#EC4899',
-    border: 'border-pink-200',
-    text: 'text-pink-700',
-    bgGlow: 'rgba(236,72,153,0.3)',
-  },
+// Same 6 themes as Home/Login pages
+const themes = [
+  { id: 'fortnite', name: 'Battle Royale', emoji: '🎮', gradient: 'from-purple-600 via-pink-600 to-purple-600', primary: '#9333ea', border: 'border-purple-500/50' },
+  { id: 'minecraft', name: 'Block Builder', emoji: '⛏️', gradient: 'from-emerald-600 via-green-600 to-emerald-600', primary: '#22c55e', border: 'border-emerald-500/50' },
+  { id: 'zombie', name: 'Zombie Survival', emoji: '🧟', gradient: 'from-green-600 via-lime-600 to-green-600', primary: '#16a34a', border: 'border-green-500/50' },
+  { id: 'pirate', name: 'Pirate Adventure', emoji: '🏴‍☠️', gradient: 'from-amber-500 via-yellow-600 to-amber-700', primary: '#f59e0b', border: 'border-amber-500/50' },
+  { id: 'wwe', name: 'Wrestling Champ', emoji: '💪', gradient: 'from-red-600 via-yellow-500 to-red-600', primary: '#dc2626', border: 'border-red-500/50' },
+  { id: 'anime', name: 'Ninja Training', emoji: '⚡', gradient: 'from-pink-500 via-purple-500 to-pink-500', primary: '#ec4899', border: 'border-pink-500/50' },
 ];
 
 const gradeEmojis: Record<string, string> = {
@@ -116,27 +57,21 @@ export default function ParentDashboard() {
   const { user, signOut } = useAuth();
   const [children, setChildren] = useState<Child[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [selectedTheme, setSelectedTheme] = useState(0);
+  const [themeIndex, setThemeIndex] = useState(0);
   const supabase = createClient();
 
-  const currentTheme = parentThemes[selectedTheme];
-
-  // Load parent theme from localStorage on mount
+  // Read theme from localStorage (same as Home/Login pages)
   useEffect(() => {
-    const saved = localStorage.getItem('schoolgenius-parent-theme');
-    if (saved !== null) {
+    const saved = localStorage.getItem('schoolgenius-theme');
+    if (saved) {
       const index = parseInt(saved, 10);
-      if (index >= 0 && index < parentThemes.length) {
-        setSelectedTheme(index);
+      if (!isNaN(index) && index >= 0 && index < themes.length) {
+        setThemeIndex(index);
       }
     }
   }, []);
 
-  const handleThemeChange = (index: number) => {
-    if (index === selectedTheme) return;
-    localStorage.setItem('schoolgenius-parent-theme', index.toString());
-    setSelectedTheme(index);
-  };
+  const theme = themes[themeIndex];
 
   useEffect(() => {
     if (!user) {
@@ -180,67 +115,32 @@ export default function ParentDashboard() {
   ];
 
   return (
-    <div className={`min-h-screen bg-gradient-to-br ${currentTheme.bgGradient} transition-all duration-300`}>
-      {/* Animated background glow */}
-      <div
-        className="fixed inset-0 pointer-events-none transition-all duration-500"
-        style={{
-          background: `radial-gradient(circle at 50% 30%, ${currentTheme.bgGlow} 0%, transparent 50%)`,
-        }}
-      />
-
-      <nav className={`sticky top-0 z-50 border-b-4 ${currentTheme.border} bg-white/90 backdrop-blur-xl shadow-xl`}>
-        <div className="mx-auto max-w-7xl px-6 py-5">
+    <div className="min-h-screen bg-transparent">
+      {/* Dark themed nav matching Home/Login */}
+      <nav className="sticky top-0 z-50 border-b-2 border-white/10 bg-black/80 backdrop-blur-xl">
+        <div className="mx-auto max-w-7xl px-6 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3 group">
               <motion.div
-                className={`flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br ${currentTheme.gradient} shadow-xl`}
+                className={`flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br ${theme.gradient} shadow-xl`}
                 whileHover={{ rotate: [0, -10, 10, 0], scale: 1.1 }}
               >
                 <Brain className="h-7 w-7 text-white" />
               </motion.div>
-              <span className="text-2xl font-black text-gray-900 group-hover:text-orange-600 transition-colors">School Genius</span>
+              <span className="text-2xl font-black text-white group-hover:text-gray-300 transition-colors">School Genius</span>
             </Link>
 
-            {/* Parent Theme Picker */}
-            <div className="flex items-center gap-2">
-              {parentThemes.map((theme, index) => (
-                <motion.button
-                  key={theme.id}
-                  onClick={() => handleThemeChange(index)}
-                  className={`
-                    relative w-10 h-10 rounded-xl flex items-center justify-center text-lg
-                    transition-all duration-200 border-2
-                    ${selectedTheme === index
-                      ? 'border-gray-900 shadow-lg scale-110'
-                      : 'border-transparent hover:border-gray-300 hover:scale-105'}
-                  `}
-                  style={{
-                    background: selectedTheme === index
-                      ? `linear-gradient(135deg, ${theme.accent}20, ${theme.accent}40)`
-                      : 'transparent'
-                  }}
-                  whileHover={{ y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  title={theme.name}
-                >
-                  <span className="text-xl">{theme.emoji}</span>
-                  {selectedTheme === index && (
-                    <motion.div
-                      layoutId="parentThemeIndicator"
-                      className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 rounded-full"
-                      style={{ backgroundColor: theme.accent }}
-                    />
-                  )}
-                </motion.button>
-              ))}
+            {/* Theme indicator */}
+            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20">
+              <span className="text-2xl">{theme.emoji}</span>
+              <span className="text-white font-bold">{theme.name}</span>
             </div>
 
             <div className="flex items-center gap-3">
               <Link href="/dashboard/monitoring">
                 <Button
                   variant="outline"
-                  className="flex items-center gap-2 border-2 border-purple-300 hover:bg-purple-50 font-bold text-purple-700"
+                  className="flex items-center gap-2 border-2 border-purple-500/50 bg-purple-500/20 hover:bg-purple-500/30 font-bold text-purple-300"
                 >
                   <Activity className="h-4 w-4" />
                   AI Monitor
@@ -249,7 +149,7 @@ export default function ParentDashboard() {
               <Button
                 variant="outline"
                 onClick={signOut}
-                className={`flex items-center gap-2 border-2 ${currentTheme.border} hover:bg-white/50 font-bold`}
+                className="flex items-center gap-2 border-2 border-white/20 bg-white/10 hover:bg-white/20 font-bold text-white"
               >
                 <LogOut className="h-4 w-4" />
                 Sign Out
@@ -266,19 +166,19 @@ export default function ParentDashboard() {
           className="mb-12 text-center"
         >
           <motion.div
-            animate={{ rotate: [0, 360] }}
-            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+            animate={{ rotate: [0, 10, -10, 0] }}
+            transition={{ duration: 2, repeat: Infinity }}
             className="mb-4 inline-block text-6xl"
           >
-            {currentTheme.emoji}
+            {theme.emoji}
           </motion.div>
-          <h1 className="mb-3 text-5xl font-black tracking-tight text-gray-900 lg:text-6xl">
-            <span className={`bg-gradient-to-r ${currentTheme.gradient} bg-clip-text text-transparent`}>
+          <h1 className="mb-3 text-5xl font-black tracking-tight lg:text-6xl">
+            <span className={`bg-gradient-to-r ${theme.gradient} bg-clip-text text-transparent`}>
               Family Dashboard
             </span>
           </h1>
-          <p className="text-2xl font-bold text-gray-600">
-            See your kids' awesome learning adventures!
+          <p className="text-2xl font-bold text-gray-400">
+            See your kids&apos; awesome learning adventures!
           </p>
         </motion.div>
 
@@ -289,8 +189,8 @@ export default function ParentDashboard() {
           className="mb-12"
         >
           <div className="mb-8 flex items-center justify-center gap-3">
-            <Trophy className="h-8 w-8" style={{ color: currentTheme.accent }} />
-            <h2 className="text-3xl font-black text-gray-900">This Week's Wins</h2>
+            <Trophy className="h-8 w-8" style={{ color: theme.primary }} />
+            <h2 className="text-3xl font-black text-white">This Week&apos;s Wins</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {weeklyStats.map((stat, index) => (
@@ -301,17 +201,17 @@ export default function ParentDashboard() {
                 transition={{ delay: 0.1 + index * 0.05 }}
                 whileHover={{ y: -10, scale: 1.05 }}
               >
-                <Card className={`relative border-4 ${currentTheme.border} bg-white p-6 shadow-xl overflow-hidden group`}>
+                <Card className={`relative border-2 ${theme.border} bg-black/60 backdrop-blur-xl p-6 shadow-xl overflow-hidden group`}>
                   <div className="relative z-10">
                     <div className="mb-4 flex items-center justify-between">
                       <div className="text-5xl">{stat.emoji}</div>
-                      <span className="flex items-center gap-1 rounded-full bg-green-100 px-3 py-1.5 text-sm font-black text-green-700 shadow-md">
+                      <span className="flex items-center gap-1 rounded-full bg-green-500/20 border border-green-500/50 px-3 py-1.5 text-sm font-black text-green-400 shadow-md">
                         <ArrowUp className="h-4 w-4" />
                         Great!
                       </span>
                     </div>
-                    <p className="mb-2 text-sm font-bold text-gray-600">{stat.label}</p>
-                    <p className="text-4xl font-black text-gray-900">
+                    <p className="mb-2 text-sm font-bold text-gray-400">{stat.label}</p>
+                    <p className="text-4xl font-black text-white">
                       {stat.value}
                       <span className="text-xl text-gray-500 font-bold"> {stat.unit}</span>
                     </p>
@@ -329,8 +229,8 @@ export default function ParentDashboard() {
           className="mb-12"
         >
           <div className="mb-8 flex items-center justify-center gap-3">
-            <Sparkles className="h-8 w-8" style={{ color: currentTheme.accent }} />
-            <h2 className="text-3xl font-black text-gray-900">Smart Insights</h2>
+            <Sparkles className="h-8 w-8" style={{ color: theme.primary }} />
+            <h2 className="text-3xl font-black text-white">Smart Insights</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {[
@@ -357,10 +257,10 @@ export default function ParentDashboard() {
                 transition={{ delay: 0.2 + index * 0.1 }}
                 whileHover={{ y: -8, scale: 1.03 }}
               >
-                <Card className={`h-full border-4 ${currentTheme.border} bg-white p-6 shadow-xl group hover:shadow-2xl transition-all`}>
+                <Card className={`h-full border-2 ${theme.border} bg-black/60 backdrop-blur-xl p-6 shadow-xl group hover:shadow-2xl transition-all`}>
                   <div className="mb-4 text-6xl group-hover:scale-110 transition-transform">{insight.emoji}</div>
-                  <h3 className="mb-3 text-xl font-black text-gray-900">{insight.title}</h3>
-                  <p className="text-base font-semibold text-gray-600">{insight.description}</p>
+                  <h3 className="mb-3 text-xl font-black text-white">{insight.title}</h3>
+                  <p className="text-base font-semibold text-gray-400">{insight.description}</p>
                 </Card>
               </motion.div>
             ))}
@@ -374,12 +274,12 @@ export default function ParentDashboard() {
         >
           <div className="mb-8 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <Heart className="h-8 w-8" style={{ color: currentTheme.accent }} />
-              <h2 className="text-3xl font-black text-gray-900">Your Amazing Kids</h2>
+              <Heart className="h-8 w-8" style={{ color: theme.primary }} />
+              <h2 className="text-3xl font-black text-white">Your Amazing Kids</h2>
             </div>
             <Link href="/dashboard/add-child">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button className={`bg-gradient-to-r ${currentTheme.gradient} font-black border-4 ${currentTheme.border} shadow-xl text-white`}>
+                <Button className={`bg-gradient-to-r ${theme.gradient} font-black border-2 border-white/20 shadow-xl text-white`}>
                   <PlusCircle className="mr-2 h-5 w-5" />
                   Add Child
                 </Button>
@@ -388,27 +288,27 @@ export default function ParentDashboard() {
           </div>
 
           {isLoading ? (
-            <Card className={`p-12 text-center border-4 ${currentTheme.border} bg-white`}>
+            <Card className={`p-12 text-center border-2 ${theme.border} bg-black/60 backdrop-blur-xl`}>
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
                 className="mx-auto mb-4 h-16 w-16 rounded-full border-8"
-                style={{ borderColor: `${currentTheme.accent}30`, borderTopColor: currentTheme.accent }}
+                style={{ borderColor: `${theme.primary}30`, borderTopColor: theme.primary }}
               />
-              <p className="text-xl font-bold text-gray-600">Loading your dashboard...</p>
+              <p className="text-xl font-bold text-gray-400">Loading your dashboard...</p>
             </Card>
           ) : children.length === 0 ? (
-            <Card className={`border-4 border-dashed ${currentTheme.border} bg-white p-12 text-center shadow-xl`}>
+            <Card className={`border-4 border-dashed ${theme.border} bg-black/60 backdrop-blur-xl p-12 text-center shadow-xl`}>
               <div className="mb-6 text-8xl">👶</div>
-              <h3 className="mb-3 text-3xl font-black text-gray-900">
+              <h3 className="mb-3 text-3xl font-black text-white">
                 Add Your First Superstar!
               </h3>
-              <p className="mb-8 text-xl font-semibold text-gray-600">
-                Let's start their awesome learning adventure
+              <p className="mb-8 text-xl font-semibold text-gray-400">
+                Let&apos;s start their awesome learning adventure
               </p>
               <Link href="/dashboard/add-child">
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button className={`bg-gradient-to-r ${currentTheme.gradient} font-black text-lg px-8 py-6 rounded-2xl shadow-2xl text-white`}>
+                  <Button className={`bg-gradient-to-r ${theme.gradient} font-black text-lg px-8 py-6 rounded-2xl shadow-2xl text-white`}>
                     <PlusCircle className="mr-2 h-6 w-6" />
                     Get Started
                   </Button>
@@ -421,7 +321,7 @@ export default function ParentDashboard() {
                 const initial = child.name.charAt(0).toUpperCase();
                 const gradeDisplay = child.grade_level === 'K' ? 'Kindergarten' : `Grade ${child.grade_level}`;
                 const gradeEmoji = gradeEmojis[child.grade_level] || '📖';
-                const themeColor = themeColors[child.current_theme] || themeColors.default;
+                const childThemeColor = themeColors[child.current_theme] || themeColors.default;
 
                 return (
                   <motion.div
@@ -430,10 +330,10 @@ export default function ParentDashboard() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.3 + index * 0.1 }}
                   >
-                    <Card className={`group relative overflow-hidden border-4 ${currentTheme.border} bg-white shadow-2xl hover:shadow-3xl transition-all`}>
+                    <Card className={`group relative overflow-hidden border-2 ${theme.border} bg-black/60 backdrop-blur-xl shadow-2xl hover:shadow-3xl transition-all`}>
                       <div
-                        className="absolute top-4 right-4 z-20 rounded-full px-4 py-2 font-black text-white shadow-xl border-3 border-white"
-                        style={{ backgroundColor: themeColor }}
+                        className="absolute top-4 right-4 z-20 rounded-full px-4 py-2 font-black text-white shadow-xl border-2 border-white/30"
+                        style={{ backgroundColor: childThemeColor }}
                       >
                         Level {child.theme_level}
                       </div>
@@ -443,53 +343,53 @@ export default function ParentDashboard() {
                           <div className="mb-8 flex items-center gap-5">
                             <motion.div
                               className="relative flex h-20 w-20 items-center justify-center rounded-3xl text-3xl font-black text-white shadow-2xl"
-                              style={{ backgroundColor: themeColor }}
+                              style={{ backgroundColor: childThemeColor }}
                               whileHover={{ rotate: [0, -10, 10, 0], scale: 1.1 }}
                             >
                               {initial}
                               <div className="absolute -top-2 -right-2 text-3xl">{gradeEmoji}</div>
                             </motion.div>
                             <div className="flex-1">
-                              <h3 className="text-3xl font-black text-gray-900">{child.name}</h3>
-                              <p className="text-lg font-bold text-gray-600">{gradeDisplay}</p>
+                              <h3 className="text-3xl font-black text-white">{child.name}</h3>
+                              <p className="text-lg font-bold text-gray-400">{gradeDisplay}</p>
                             </div>
                             <motion.div
                               whileHover={{ x: 5 }}
                               transition={{ duration: 0.2 }}
                             >
-                              <ChevronRight className="h-8 w-8 text-gray-400" />
+                              <ChevronRight className="h-8 w-8 text-gray-500" />
                             </motion.div>
                           </div>
 
                           <div className="mb-8 grid grid-cols-3 gap-4">
                             <motion.div
                               whileHover={{ scale: 1.1, rotate: -5 }}
-                              className="rounded-2xl bg-gradient-to-br from-yellow-100 to-yellow-200 p-5 text-center shadow-lg border-3 border-yellow-300"
+                              className="rounded-2xl bg-yellow-500/20 border-2 border-yellow-500/50 p-5 text-center shadow-lg"
                             >
-                              <Crown className="mx-auto mb-2 h-6 w-6 text-yellow-600" />
-                              <p className="text-3xl font-black text-yellow-900">{child.coins}</p>
-                              <p className="text-xs font-bold text-yellow-700">Coins</p>
+                              <Crown className="mx-auto mb-2 h-6 w-6 text-yellow-400" />
+                              <p className="text-3xl font-black text-yellow-300">{child.coins}</p>
+                              <p className="text-xs font-bold text-yellow-500">Coins</p>
                             </motion.div>
                             <motion.div
                               whileHover={{ scale: 1.1, rotate: 5 }}
-                              className="rounded-2xl bg-gradient-to-br from-orange-100 to-orange-200 p-5 text-center shadow-lg border-3 border-orange-300"
+                              className="rounded-2xl bg-orange-500/20 border-2 border-orange-500/50 p-5 text-center shadow-lg"
                             >
-                              <Flame className="mx-auto mb-2 h-6 w-6 text-orange-600" />
-                              <p className="text-3xl font-black text-orange-900">{child.current_streak}</p>
-                              <p className="text-xs font-bold text-orange-700">Day Streak</p>
+                              <Flame className="mx-auto mb-2 h-6 w-6 text-orange-400" />
+                              <p className="text-3xl font-black text-orange-300">{child.current_streak}</p>
+                              <p className="text-xs font-bold text-orange-500">Day Streak</p>
                             </motion.div>
                             <motion.div
                               whileHover={{ scale: 1.1, rotate: -5 }}
-                              className="rounded-2xl bg-gradient-to-br from-cyan-100 to-cyan-200 p-5 text-center shadow-lg border-3 border-cyan-300"
+                              className="rounded-2xl bg-cyan-500/20 border-2 border-cyan-500/50 p-5 text-center shadow-lg"
                             >
-                              <Star className="mx-auto mb-2 h-6 w-6 text-cyan-600" />
-                              <p className="text-3xl font-black text-cyan-900">{child.level}</p>
-                              <p className="text-xs font-bold text-cyan-700">Level</p>
+                              <Star className="mx-auto mb-2 h-6 w-6 text-cyan-400" />
+                              <p className="text-3xl font-black text-cyan-300">{child.level}</p>
+                              <p className="text-xs font-bold text-cyan-500">Level</p>
                             </motion.div>
                           </div>
 
                           <motion.div
-                            className={`mt-6 flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r ${currentTheme.gradient} py-4 text-base font-black text-white opacity-0 transition-opacity group-hover:opacity-100 shadow-xl`}
+                            className={`mt-6 flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r ${theme.gradient} py-4 text-base font-black text-white opacity-0 transition-opacity group-hover:opacity-100 shadow-xl`}
                             whileHover={{ scale: 1.02 }}
                           >
                             <span>View Their Dashboard</span>
@@ -498,12 +398,12 @@ export default function ParentDashboard() {
                         </div>
                       </Link>
 
-                      <div className={`border-t-4 ${currentTheme.border} bg-gradient-to-r ${currentTheme.bgGradient} p-4 space-y-2`}>
+                      <div className="border-t-2 border-white/10 bg-white/5 p-4 space-y-2">
                         <Link href={`/dashboard/syllabus/${child.id}`}>
                           <Button
                             variant="ghost"
                             size="sm"
-                            className="w-full justify-start font-bold text-gray-700 hover:bg-white"
+                            className="w-full justify-start font-bold text-gray-300 hover:text-white hover:bg-white/10"
                           >
                             <Calendar className="mr-2 h-5 w-5" />
                             Manage Syllabus
@@ -513,7 +413,7 @@ export default function ParentDashboard() {
                           <Button
                             variant="ghost"
                             size="sm"
-                            className="w-full justify-start font-bold text-gray-700 hover:text-pink-600 hover:bg-white"
+                            className="w-full justify-start font-bold text-gray-300 hover:text-pink-400 hover:bg-white/10"
                           >
                             <Mic className="mr-2 h-5 w-5" />
                             Clone Your Voice
@@ -523,7 +423,7 @@ export default function ParentDashboard() {
                           <Button
                             variant="ghost"
                             size="sm"
-                            className="w-full justify-start font-bold text-gray-700 hover:bg-white"
+                            className="w-full justify-start font-bold text-gray-300 hover:text-white hover:bg-white/10"
                           >
                             <Settings className="mr-2 h-5 w-5" />
                             Change Theme & Settings
@@ -538,13 +438,33 @@ export default function ParentDashboard() {
           )}
         </motion.div>
 
+        {/* Weekly Progress Section */}
+        {children.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.35 }}
+            className="mt-12"
+          >
+            <div className="mb-8 flex items-center justify-center gap-3">
+              <Activity className="h-8 w-8" style={{ color: theme.primary }} />
+              <h2 className="text-3xl font-black text-white">Weekly Progress Reports</h2>
+            </div>
+            <div className="grid gap-6 lg:grid-cols-2">
+              {children.map((child) => (
+                <WeeklyProgressCard key={child.id} childId={child.id} variant="parent" />
+              ))}
+            </div>
+          </motion.div>
+        )}
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
           className="mt-16"
         >
-          <h2 className="mb-8 text-3xl font-black text-center text-gray-900">Quick Actions</h2>
+          <h2 className="mb-8 text-3xl font-black text-center text-white">Quick Actions</h2>
           <div className="grid gap-6 md:grid-cols-3">
             {[
               { href: '/dashboard/prizes', title: 'Manage Rewards', subtitle: 'Set up custom prizes', emoji: '🎁' },
@@ -556,12 +476,13 @@ export default function ParentDashboard() {
                   whileHover={{ y: -8, scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <Card className={`group border-4 ${currentTheme.border} bg-white p-8 shadow-xl hover:shadow-2xl transition-all`}>
+                  <Card className={`group border-2 ${theme.border} bg-black/60 backdrop-blur-xl p-8 shadow-xl hover:shadow-2xl transition-all`}>
                     <div className="mb-4 text-6xl group-hover:scale-110 transition-transform">{action.emoji}</div>
-                    <h3 className="mb-2 text-xl font-black text-gray-900">{action.title}</h3>
-                    <p className="text-base font-semibold text-gray-600">{action.subtitle}</p>
+                    <h3 className="mb-2 text-xl font-black text-white">{action.title}</h3>
+                    <p className="text-base font-semibold text-gray-400">{action.subtitle}</p>
                     <motion.div
-                      className={`mt-4 flex items-center gap-2 font-bold ${currentTheme.text}`}
+                      className={`mt-4 flex items-center gap-2 font-bold`}
+                      style={{ color: theme.primary }}
                       whileHover={{ x: 5 }}
                     >
                       <span>Go</span>
