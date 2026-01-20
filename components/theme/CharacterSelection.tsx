@@ -2,7 +2,7 @@
 
 import { motion, useMotionValue, useTransform, useSpring, AnimatePresence } from 'framer-motion';
 import { useState, useRef } from 'react';
-import { Star, Lock, Sparkles } from 'lucide-react';
+import { Star, Sparkles } from 'lucide-react';
 import { ThemeSkin, getRarityColor, getRarityGlow } from '@/lib/theme-skins';
 
 interface CharacterSelectionProps {
@@ -84,18 +84,9 @@ function SkinCard({
     mouseY.set(0);
   };
 
-  const isLocked = currentLevel < skin.requiredLevel || (skin.unlocked === false && skin.coinCost > 0);
-  const canAfford = currentCoins >= skin.coinCost;
-  const needsToPurchase = skin.unlocked === false && skin.coinCost > 0;
-
+  // All skins are unlocked - no restrictions
   const handleClick = () => {
-    if (isLocked) return;
-
-    if (needsToPurchase && canAfford && onPurchase) {
-      onPurchase();
-    } else if (!needsToPurchase) {
-      onSelect();
-    }
+    onSelect();
   };
 
   const rarityColor = getRarityColor(skin.rarity);
@@ -116,7 +107,7 @@ function SkinCard({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={handleMouseLeave}
       onClick={handleClick}
-      className={`cursor-pointer relative group ${isLocked && !canAfford ? 'opacity-50' : ''}`}
+      className="cursor-pointer relative group"
     >
       <motion.div
         animate={isSelected ? {
@@ -147,16 +138,10 @@ function SkinCard({
           {skin.rarity}
         </motion.div>
 
-        {/* Level Requirement Badge */}
-        {skin.requiredLevel > 1 && (
-          <div className="absolute -top-3 -left-3 px-2 py-1 rounded-full text-xs font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-white border-2 border-white/50">
-            Lv. {skin.requiredLevel}
-          </div>
-        )}
 
         {/* Character Icon */}
         <motion.div
-          animate={isHovered && !isLocked ? {
+          animate={isHovered ? {
             scale: 1.1,
             rotateZ: [0, -5, 5, -5, 0],
           } : { scale: 1 }}
@@ -164,18 +149,7 @@ function SkinCard({
           className="text-8xl mb-4 text-center relative"
           style={{ transform: 'translateZ(40px)' }}
         >
-          {isLocked && currentLevel < skin.requiredLevel ? (
-            <div className="text-6xl opacity-30">{skin.icon}</div>
-          ) : (
-            skin.icon
-          )}
-
-          {/* Lock Overlay */}
-          {isLocked && (
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Lock className="w-12 h-12 text-white drop-shadow-lg" />
-            </div>
-          )}
+          {skin.icon}
         </motion.div>
 
         {/* Name */}
@@ -188,25 +162,9 @@ function SkinCard({
           {skin.description}
         </p>
 
-        {/* Purchase Info */}
-        {needsToPurchase && (
-          <div className="text-center">
-            <motion.div
-              whileHover={canAfford ? { scale: 1.05 } : {}}
-              className={`px-4 py-2 rounded-lg font-bold text-sm ${
-                canAfford
-                  ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-white'
-                  : 'bg-gray-500/50 text-gray-300'
-              }`}
-            >
-              {canAfford ? `Unlock: ${skin.coinCost} coins` : `Need ${skin.coinCost - currentCoins} more coins`}
-            </motion.div>
-          </div>
-        )}
-
         {/* Holographic Effect */}
         <motion.div
-          animate={isHovered && !isLocked ? { opacity: [0.3, 0.6, 0.3] } : { opacity: 0 }}
+          animate={isHovered ? { opacity: [0.3, 0.6, 0.3] } : { opacity: 0 }}
           transition={{ duration: 1.5, repeat: Infinity }}
           className="absolute inset-0 rounded-3xl"
           style={{
@@ -234,7 +192,7 @@ function SkinCard({
 
         {/* Particle Burst on Hover */}
         <AnimatePresence>
-          {isHovered && !isLocked && (
+          {isHovered && (
             <>
               {[...Array(8)].map((_, i) => (
                 <motion.div
@@ -261,7 +219,7 @@ function SkinCard({
         {/* Sparkle Effect for Legendary+ */}
         {(skin.rarity === 'legendary' || skin.rarity === 'mythic') && (
           <AnimatePresence>
-            {isHovered && !isLocked && (
+            {isHovered && (
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

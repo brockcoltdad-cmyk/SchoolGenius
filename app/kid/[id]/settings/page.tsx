@@ -192,44 +192,22 @@ export default function SettingsPage() {
   };
 
   const handlePurchaseSkin = async (skinId: string) => {
+    // All skins are FREE - no coin restrictions
     const skin = skins.find(s => s.id === skinId);
     if (!skin) return;
 
-    if (childCoins < skin.coinCost) {
-      toast({
-        title: 'Not enough coins!',
-        description: `You need ${skin.coinCost - childCoins} more coins to unlock this character.`,
-        variant: 'destructive',
-      });
-      return;
-    }
-
     try {
-      const isDemoMode = typeof window !== 'undefined' && localStorage.getItem('demo_mode') === 'true';
-      const isSimpleId = !kidId.match(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i);
-
-      if (!isDemoMode && !isSimpleId) {
-        const supabase = createClient();
-        const { error } = await supabase
-          .from('children')
-          .update({ coins: childCoins - skin.coinCost })
-          .eq('id', kidId);
-
-        if (error) throw error;
-      }
-
-      setChildCoins(prev => prev - skin.coinCost);
       await updateSkin(skinId);
 
       toast({
-        title: 'Character Unlocked!',
-        description: `You unlocked ${skin.name}!`,
+        title: 'Character Selected!',
+        description: `You selected ${skin.name}!`,
       });
     } catch (error) {
-      console.error('Error purchasing skin:', error);
+      console.error('Error selecting skin:', error);
       toast({
         title: 'Error',
-        description: 'Failed to purchase character',
+        description: 'Failed to select character',
         variant: 'destructive',
       });
     }

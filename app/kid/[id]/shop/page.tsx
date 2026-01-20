@@ -80,17 +80,7 @@ export default function ShopPage() {
   }, [kidId]);
 
   const handlePurchase = async (themeId: ThemeId) => {
-    const price = getThemePrice(themeId);
-
-    if (coins < price) {
-      toast({
-        title: `Not enough ${currency.name}`,
-        description: `You need ${price - coins} more ${currency.name.toLowerCase()}`,
-        variant: 'destructive',
-      });
-      return;
-    }
-
+    // All themes are FREE - no coin restrictions
     setPurchasingTheme(themeId);
 
     try {
@@ -102,18 +92,8 @@ export default function ShopPage() {
 
       if (themeError) throw themeError;
 
-      const { error: coinsError } = await supabase
-        .from('children')
-        .update({ coins: coins - price })
-        .eq('id', kidId);
-
-      if (coinsError) throw coinsError;
-
-      setCoins(coins - price);
+      // No coins deducted - themes are free
       setOwnedThemes([...ownedThemes, themeId]);
-
-      setCoinsEarned(price);
-      setShowCoinBurst(true);
 
       setTimeout(() => {
         setCelebrationMessage(`${themes[themeId].name} Theme Unlocked!`);
@@ -129,7 +109,7 @@ export default function ShopPage() {
     } catch (error) {
       console.error('Error purchasing theme:', error);
       toast({
-        title: 'Purchase failed',
+        title: 'Unlock failed',
         description: 'Please try again',
         variant: 'destructive',
       });
@@ -245,9 +225,8 @@ export default function ShopPage() {
                 {allThemes.map((themeId, i) => {
                   const theme = themes[themeId];
                   const isOwned = ownedThemes.includes(themeId);
-                  const price = getThemePrice(themeId);
-                  const canAfford = coins >= price;
                   const isPurchasing = purchasingTheme === themeId;
+                  // All themes are free!
 
                   return (
                     <motion.div
@@ -271,7 +250,7 @@ export default function ShopPage() {
                         hoverable={false}
                         className={`relative overflow-hidden p-6 ${isOwned ? 'ring-2 ring-green-500 ring-offset-2' : ''}`}
                       >
-                        <ShimmerEffect active={!isOwned && canAfford} speed={3} color="rgba(251, 191, 36, 0.3)">
+                        <ShimmerEffect active={!isOwned} speed={3} color="rgba(251, 191, 36, 0.3)">
                           {isOwned && (
                             <motion.div
                               initial={{ scale: 0, rotate: -180 }}
@@ -324,9 +303,9 @@ export default function ShopPage() {
                           {theme.coinName} • {theme.shopName}
                         </p>
                         <div className="mb-4 flex items-center gap-2">
-                          <span className="text-2xl">{currency.icon}</span>
-                          <span className="font-bold text-yellow-700">
-                            {price} {currency.name.toLowerCase()}
+                          <span className="text-2xl">🎁</span>
+                          <span className="font-bold text-green-600">
+                            FREE
                           </span>
                         </div>
 
@@ -348,12 +327,10 @@ export default function ShopPage() {
                         ) : (
                           <PremiumButton
                             onClick={() => handlePurchase(themeId)}
-                            disabled={!canAfford || isPurchasing}
+                            disabled={isPurchasing}
                             className="w-full"
                             style={{
-                              background: canAfford
-                                ? `linear-gradient(to right, ${currentTheme.colors.primary}, ${currentTheme.colors.secondary})`
-                                : '#94a3b8',
+                              background: `linear-gradient(to right, ${currentTheme.colors.primary}, ${currentTheme.colors.secondary})`,
                               color: 'white',
                             }}
                           >
@@ -362,13 +339,11 @@ export default function ShopPage() {
                                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                                 Unlocking...
                               </>
-                            ) : canAfford ? (
+                            ) : (
                               <>
                                 <Sparkles className="mr-2 h-4 w-4" />
-                                Buy Theme
+                                Unlock Theme
                               </>
-                            ) : (
-                              `Need ${price - coins} more`
                             )}
                           </PremiumButton>
                         )}

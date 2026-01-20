@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useParams, useRouter } from 'next/navigation';
-import { ArrowLeft, Lock, CheckCircle, Star, Play } from 'lucide-react';
+import { ArrowLeft, CheckCircle, Star, Play } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
 import { useTheme } from '@/lib/theme-context';
 
@@ -98,18 +98,8 @@ export default function SubjectPage() {
     fetchData();
   }, [kidId, info.code]);
 
-  const handleSkillClick = (skillId: string, locked: boolean) => {
-    console.log("CLICK:", skillId, "locked:", locked);
-    if (locked) return;
+  const handleSkillClick = (skillId: string) => {
     router.push(`/kid/${kidId}/lesson/${skillId}`);
-  };
-
-  // Determine if skill is locked (previous skill must be completed)
-  const isSkillLocked = (index: number): boolean => {
-    if (index === 0) return false;
-    const prevSkill = skills[index - 1];
-    const prevProgress = progress[prevSkill?.id];
-    return !prevProgress?.completed;
   };
 
   if (loading) {
@@ -167,7 +157,6 @@ export default function SubjectPage() {
               const completed = skillProgress?.completed || false;
               const score = skillProgress?.score || 0;
               const stars = skillProgress?.stars || 0;
-              const locked = isSkillLocked(index);
 
               return (
                 <motion.div
@@ -177,22 +166,16 @@ export default function SubjectPage() {
                   transition={{ delay: index * 0.1 }}
                 >
                   <button
-                    onClick={() => handleSkillClick(skill.id, locked)}
-                    disabled={locked}
+                    onClick={() => handleSkillClick(skill.id)}
                     className="w-full p-4 rounded-2xl border transition-all text-left hover:scale-[1.02]"
                     style={{
-                      background: locked
-                        ? 'rgba(255,255,255,0.05)'
-                        : completed
+                      background: completed
                         ? `${currentTheme.colors.secondary}30`
                         : `${currentTheme.colors.primary}20`,
-                      borderColor: locked
-                        ? 'rgba(255,255,255,0.1)'
-                        : completed
+                      borderColor: completed
                         ? `${currentTheme.colors.secondary}60`
                         : `${currentTheme.colors.primary}40`,
-                      opacity: locked ? 0.5 : 1,
-                      cursor: locked ? 'not-allowed' : 'pointer'
+                      cursor: 'pointer'
                     }}
                   >
                     <div className="flex items-center justify-between">
@@ -200,16 +183,12 @@ export default function SubjectPage() {
                         <div
                           className="w-12 h-12 rounded-full flex items-center justify-center"
                           style={{
-                            background: locked
-                              ? 'rgba(255,255,255,0.1)'
-                              : completed
+                            background: completed
                               ? currentTheme.colors.secondary
                               : currentTheme.colors.primary
                           }}
                         >
-                          {locked ? (
-                            <Lock className="w-5 h-5 text-white/50" />
-                          ) : completed ? (
+                          {completed ? (
                             <CheckCircle className="w-6 h-6 text-white" />
                           ) : (
                             <Play className="w-5 h-5 text-white ml-0.5" />
@@ -239,21 +218,18 @@ export default function SubjectPage() {
                         <div
                           className="px-4 py-2 rounded-xl font-bold text-white"
                           style={{
-                            background: locked
-                              ? 'rgba(255,255,255,0.1)'
-                              : completed
+                            background: completed
                               ? currentTheme.colors.secondary
-                              : currentTheme.colors.primary,
-                            color: locked ? 'rgba(255,255,255,0.4)' : 'white'
+                              : currentTheme.colors.primary
                           }}
                         >
-                          {locked ? 'Locked' : completed ? 'Review' : 'Start'}
+                          {completed ? 'Review' : 'Start'}
                         </div>
                       </div>
                     </div>
 
                     {/* Progress bar for incomplete skills */}
-                    {!locked && !completed && score > 0 && (
+                    {!completed && score > 0 && (
                       <div className="mt-3 bg-white/10 rounded-full h-2 overflow-hidden">
                         <div
                           className="h-full rounded-full"
@@ -268,9 +244,9 @@ export default function SubjectPage() {
           </div>
         )}
 
-        {/* Unlock message */}
+        {/* Encouragement message */}
         <p className="text-center mt-8 text-sm" style={{ color: `${currentTheme.colors.primary}80` }}>
-          Complete skills to unlock new ones! 🔓
+          Choose any skill to start learning! 🚀
         </p>
       </div>
     </div>

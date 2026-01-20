@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useState, useEffect, useRef } from 'react';
-import { ArrowLeft, Sparkles, Lock, Trophy } from 'lucide-react';
+import { ArrowLeft, Sparkles, Trophy } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { useTheme } from '@/lib/theme-context';
 import { useThemedCurrency } from '@/lib/themed-currency';
@@ -22,7 +22,7 @@ function BadgeCard({ badge, index }: { badge: any; index: number }) {
   const [rotateY, setRotateY] = useState(0);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!cardRef.current || !badge.unlocked) return;
+    if (!cardRef.current) return;
     const rect = cardRef.current.getBoundingClientRect();
     const centerX = rect.left + rect.width / 2;
     const centerY = rect.top + rect.height / 2;
@@ -54,7 +54,7 @@ function BadgeCard({ badge, index }: { badge: any; index: number }) {
       onMouseLeave={handleMouseLeave}
     >
       <ThemedCard
-        className={`p-6 text-center relative overflow-hidden ${!badge.unlocked ? 'opacity-60' : 'cursor-pointer'}`}
+        className="p-6 text-center relative overflow-hidden cursor-pointer"
       >
         {/* Shimmer effect for unlocked badges */}
         {badge.unlocked && (
@@ -80,28 +80,22 @@ function BadgeCard({ badge, index }: { badge: any; index: number }) {
 
         {/* Badge Icon */}
         <motion.div
-          className={`mb-4 text-7xl relative ${!badge.unlocked ? 'filter grayscale' : ''}`}
-          animate={badge.unlocked && isHovered ? {
+          className="mb-4 text-7xl relative"
+          animate={isHovered ? {
             scale: 1.2,
             rotateZ: [0, -10, 10, 0],
-          } : badge.unlocked ? {
+          } : {
             scale: [1, 1.05, 1],
             rotate: [0, -3, 3, 0],
-          } : {}}
+          }}
           transition={{
-            duration: badge.unlocked && isHovered ? 0.5 : 3,
+            duration: isHovered ? 0.5 : 3,
             repeat: Infinity,
-            repeatDelay: badge.unlocked && !isHovered ? 2 : 0,
+            repeatDelay: !isHovered ? 2 : 0,
           }}
           style={{ transform: 'translateZ(40px)' }}
         >
-          {badge.unlocked ? (
-            badge.emoji
-          ) : (
-            <div className="relative">
-              <Lock className="w-16 h-16 mx-auto text-gray-400" />
-            </div>
-          )}
+          {badge.emoji}
         </motion.div>
 
         {/* Badge Name */}
@@ -110,20 +104,14 @@ function BadgeCard({ badge, index }: { badge: any; index: number }) {
         </h3>
 
         {/* Badge Status */}
-        {badge.unlocked ? (
-          <motion.p
-            className="text-sm font-semibold text-green-600"
-            animate={isHovered ? { scale: [1, 1.1, 1] } : {}}
-            transition={{ duration: 0.5 }}
-            style={{ transform: 'translateZ(20px)' }}
-          >
-            Earned {badge.date}
-          </motion.p>
-        ) : (
-          <p className="text-sm" style={{ color: currentTheme.colors.textSecondary, transform: 'translateZ(20px)' }}>
-            {badge.requirement}
-          </p>
-        )}
+        <motion.p
+          className="text-sm font-semibold text-green-600"
+          animate={isHovered ? { scale: [1, 1.1, 1] } : {}}
+          transition={{ duration: 0.5 }}
+          style={{ transform: 'translateZ(20px)' }}
+        >
+          {badge.date}
+        </motion.p>
 
         {/* Sparkle burst on hover for unlocked badges */}
         <AnimatePresence>
@@ -173,13 +161,14 @@ export default function AchievementsPage() {
   const kidId = params.id as string;
   const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number }>>([]);
 
+  // All achievements are unlocked - explore freely!
   const badges = [
-    { id: '1', name: 'First Lesson', emoji: '🎓', unlocked: true, date: '2 days ago' },
-    { id: '2', name: '7 Day Streak', emoji: '🔥', unlocked: true, date: '1 week ago' },
-    { id: '3', name: `100 ${currency.name}`, emoji: currency.icon, unlocked: true, date: '3 days ago' },
-    { id: '4', name: 'Bookworm', emoji: '📚', unlocked: false, requirement: 'Read 10 stories' },
-    { id: '5', name: 'Math Master', emoji: '🧮', unlocked: false, requirement: 'Complete 20 math lessons' },
-    { id: '6', name: 'Perfect Week', emoji: '⭐', unlocked: false, requirement: 'Learn 7 days in a row' },
+    { id: '1', name: 'First Lesson', emoji: '🎓', unlocked: true, date: 'Ready to earn!' },
+    { id: '2', name: '7 Day Streak', emoji: '🔥', unlocked: true, date: 'Ready to earn!' },
+    { id: '3', name: `100 ${currency.name}`, emoji: currency.icon, unlocked: true, date: 'Ready to earn!' },
+    { id: '4', name: 'Bookworm', emoji: '📚', unlocked: true, date: 'Ready to earn!' },
+    { id: '5', name: 'Math Master', emoji: '🧮', unlocked: true, date: 'Ready to earn!' },
+    { id: '6', name: 'Perfect Week', emoji: '⭐', unlocked: true, date: 'Ready to earn!' },
   ];
 
   const unlockedCount = badges.filter(b => b.unlocked).length;

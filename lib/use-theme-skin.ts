@@ -173,9 +173,10 @@ export function getSkinsWithUnlockStatus(
   currentLevel: number,
   ownedSkins: string[] = []
 ): ThemeSkin[] {
+  // All skins are unlocked - no restrictions
   return skins.map(skin => ({
     ...skin,
-    unlocked: skin.coinCost === 0 || ownedSkins.includes(skin.id) || currentLevel >= skin.requiredLevel,
+    unlocked: true,
   }));
 }
 
