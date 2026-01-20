@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { useTheme } from '@/lib/theme-context';
-import { themeDashboardConfigs } from '@/lib/theme-dashboard-config';
+import { getThemeDashboardConfig } from '@/lib/theme-dashboard-config';
 import DashboardTemplate from '@/components/theme/DashboardTemplate';
 import { PINDialog } from '@/components/dialogs/PINDialog';
 import { createClient } from '@/lib/supabase/client';
@@ -32,7 +32,7 @@ export default function KidDashboard() {
 
   const supabase = createClient();
 
-  const config = themeDashboardConfigs[currentTheme.id] || themeDashboardConfigs['wwe'];
+  const config = getThemeDashboardConfig(currentTheme.id);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {

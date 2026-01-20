@@ -1,5 +1,6 @@
 import { Camera, MessageSquare, FileText, Settings, ShoppingBag, Calendar, ClipboardCheck, TrendingUp, Trophy, Gamepad2, Users } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
+import { themes, type Theme, type ThemeId } from './theme-context';
 
 export interface ThemeColors {
   background: string;
@@ -1244,3 +1245,162 @@ export const themeDashboardConfigs: Record<string, ThemeConfig> = {
     ],
   },
 };
+
+// Generate a dashboard config dynamically from any theme
+export function getThemeDashboardConfig(themeId: ThemeId): ThemeConfig {
+  // If we have a custom config for this theme, use it
+  if (themeDashboardConfigs[themeId]) {
+    return themeDashboardConfigs[themeId];
+  }
+
+  // Otherwise, generate a config from the theme's colors
+  const theme = themes[themeId];
+  if (!theme) {
+    return themeDashboardConfigs['default'];
+  }
+
+  const { colors } = theme;
+
+  // Generate Tailwind-compatible color classes from hex colors
+  const hexToRgb = (hex: string) => {
+    const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+      r: parseInt(result[1], 16),
+      g: parseInt(result[2], 16),
+      b: parseInt(result[3], 16)
+    } : { r: 0, g: 0, b: 0 };
+  };
+
+  const primaryRgb = hexToRgb(colors.primary);
+  const secondaryRgb = hexToRgb(colors.secondary);
+  const accentRgb = hexToRgb(colors.accent);
+
+  return {
+    colors: {
+      background: 'bg-black',
+      backgroundGradient: `bg-gradient-to-b from-[${colors.primary}]/20 via-black to-black`,
+      radialGradient: `
+        radial-gradient(circle at 20% 50%, rgba(${primaryRgb.r}, ${primaryRgb.g}, ${primaryRgb.b}, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(${secondaryRgb.r}, ${secondaryRgb.g}, ${secondaryRgb.b}, 0.3) 0%, transparent 50%)
+      `,
+      primary: `bg-gradient-to-r from-[${colors.primary}] to-[${colors.secondary}]`,
+      primaryLight: `text-[${colors.primary}]`,
+      secondary: `border-[${colors.secondary}]`,
+      accent: `from-[${colors.accent}]`,
+      cardBg: `bg-gradient-to-br from-black/80 via-[${colors.primary}]/10 to-black/80`,
+      cardBorder: `border-[${colors.primary}]`,
+      glowPrimary: `shadow-[0_0_50px_rgba(${primaryRgb.r},${primaryRgb.g},${primaryRgb.b},0.5)]`,
+      glowSecondary: `shadow-[0_0_30px_rgba(${secondaryRgb.r},${secondaryRgb.g},${secondaryRgb.b},0.4)]`,
+      textPrimary: `text-[${colors.primary}]`,
+      textSecondary: `text-[${colors.secondary}]`,
+      textAccent: `text-[${colors.accent}]`,
+      buttonGradient: `bg-gradient-to-r from-[${colors.primary}] to-[${colors.secondary}]`,
+      buttonText: 'text-white',
+      buttonBorder: `border-[${colors.primary}]`,
+      buttonShadow: `shadow-[0_0_30px_rgba(${primaryRgb.r},${primaryRgb.g},${primaryRgb.b},0.8)]`,
+      buttonHoverShadow: `hover:shadow-[0_0_40px_rgba(${primaryRgb.r},${primaryRgb.g},${primaryRgb.b},0.9)]`,
+      progressBarGradient: `from-[${colors.primary}] to-[${colors.secondary}]`,
+      badge1: `bg-[${colors.primary}]`,
+      badge2: `bg-[${colors.secondary}]`,
+    },
+    content: {
+      welcomeTitle: `WELCOME BACK, ${theme.name.toUpperCase()} CHAMPION!`,
+      streakText: 'KEEP THE STREAK GOING!',
+      playerTitle: theme.name.toUpperCase() + ' MASTER',
+      playerSubtitle: 'SUPERSTAR',
+      rankLabel: 'CHAMPION',
+      characterTitle: 'YOUR CHARACTER',
+      characterSubtitle: `Current ${theme.name} Persona`,
+      nextLevelText: 'NEXT LEVEL',
+      xpUntilText: 'UNTIL LEVEL UP',
+      stat1Label: 'WINS',
+      stat2Label: 'STREAK',
+      stat3Label: 'STARS',
+      managerName: 'YOUR COACH: GIGI',
+      managerMessage: `You're doing amazing! Keep learning and earning ${theme.coinName}! Complete your daily challenges to level up! 🔥`,
+      managerBadge1: 'AWESOME',
+      managerBadge2: 'CHAMPION',
+      rankUpText: 'Keep winning to rank up!',
+      liveCountText: '🟢 Learning now',
+      liveMatchesText: '⚡ Daily challenges ready',
+      liveTopPercentText: '🏆 Top learner!',
+      subjectsTitle: 'YOUR SUBJECTS',
+      subjectsSubtitle: 'Choose your challenge',
+      titleProgressLabel: 'PROGRESS',
+      defendButtonText: 'START',
+      lastDefenseText: 'Last practice',
+      bonusXPText: '+50 XP BONUS',
+      currencyLabel: theme.coinName.toUpperCase(),
+      streakLabel: 'DAY STREAK',
+    },
+    subjects: [
+      {
+        id: 'math',
+        name: 'Math',
+        emoji: '🔢',
+        label: 'NUMBER MASTER',
+        colorGradient: `from-[${colors.primary}] to-[${colors.secondary}]`,
+        glowShadow: `shadow-[0_0_40px_rgba(${primaryRgb.r},${primaryRgb.g},${primaryRgb.b},0.6)]`,
+        href: '/kid/{id}/math'
+      },
+      {
+        id: 'reading',
+        name: 'Reading',
+        emoji: '📚',
+        label: 'STORY EXPLORER',
+        colorGradient: `from-[${colors.secondary}] to-[${colors.accent}]`,
+        glowShadow: `shadow-[0_0_40px_rgba(${secondaryRgb.r},${secondaryRgb.g},${secondaryRgb.b},0.6)]`,
+        href: '/kid/{id}/reading'
+      },
+      {
+        id: 'coding',
+        name: 'Coding',
+        emoji: '💻',
+        label: 'CODE CREATOR',
+        colorGradient: 'from-violet-500 to-violet-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(139,92,246,0.6)]',
+        href: '/kid/{id}/coding'
+      },
+      {
+        id: 'spelling',
+        name: 'Spelling',
+        emoji: '✏️',
+        label: 'WORD WIZARD',
+        colorGradient: 'from-amber-500 to-amber-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(245,158,11,0.6)]',
+        href: '/kid/{id}/spelling'
+      },
+      {
+        id: 'typing',
+        name: 'Typing',
+        emoji: '⌨️',
+        label: 'KEYBOARD PRO',
+        colorGradient: 'from-teal-500 to-teal-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(20,184,166,0.6)]',
+        href: '/kid/{id}/typing'
+      },
+      {
+        id: 'writing',
+        name: 'Language Arts',
+        emoji: '📝',
+        label: 'WRITING STAR',
+        colorGradient: 'from-pink-500 to-pink-600',
+        glowShadow: 'shadow-[0_0_40px_rgba(236,72,153,0.6)]',
+        href: '/kid/{id}/writing'
+      },
+    ],
+    bottomNav: [
+      { icon: ClipboardCheck, label: 'WEEKLY TEST', description: 'Take your weekly test! Pass with 80% for 50 coins', colorGradient: `from-[${colors.primary}] to-[${colors.secondary}]`, href: '/kid/{id}/weekly-test' },
+      { icon: TrendingUp, label: 'MY PROGRESS', description: 'See how far you have come!', colorGradient: 'from-emerald-500 to-emerald-600', href: '/kid/{id}/progress' },
+      { icon: Trophy, label: 'ACHIEVEMENTS', description: 'Check your badges and awards', colorGradient: 'from-amber-500 to-amber-600', href: '/kid/{id}/achievements' },
+      { icon: Gamepad2, label: 'GAMES', description: 'Play fun learning games', colorGradient: 'from-fuchsia-500 to-fuchsia-600', href: '/kid/{id}/games' },
+      { icon: Users, label: 'LEADERBOARD', description: 'See how you rank against others', colorGradient: 'from-cyan-500 to-cyan-600', href: '/kid/{id}/leaderboard' },
+      { icon: Calendar, label: 'MY SCHEDULE', description: 'Plan your learning week', colorGradient: 'from-slate-500 to-slate-600', href: '/kid/{id}/syllabus' },
+      { icon: Camera, label: 'SCAN HOMEWORK', description: 'Scan your school work', colorGradient: 'from-emerald-500 to-emerald-600', href: '/kid/{id}/scan' },
+      { icon: MessageSquare, label: 'CHAT WITH GIGI', description: 'Ask Gigi for help!', colorGradient: 'from-cyan-500 to-cyan-600', href: '/kid/{id}/chat' },
+      { icon: FileText, label: 'MY DOCUMENTS', description: 'See your saved work', colorGradient: 'from-violet-500 to-violet-600', href: '/kid/{id}/documents' },
+      { icon: Settings, label: 'SETTINGS', description: 'Change your theme and settings', colorGradient: 'from-slate-400 to-slate-500', href: '/kid/{id}/settings' },
+      { icon: ShoppingBag, label: theme.shopName.toUpperCase(), description: `Spend your ${theme.coinName} on cool stuff!`, colorGradient: 'from-amber-500 to-amber-600', href: '/kid/{id}/shop' },
+    ],
+  };
+}
