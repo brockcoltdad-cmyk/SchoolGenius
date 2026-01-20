@@ -272,7 +272,7 @@ export default function SyllabusPage() {
               {schedule.length > 0 && (
                 <div className="mt-8 text-center">
                   <p className="text-sm" style={{ color: currentTheme.colors.textSecondary }}>
-                    💡 Tip: Do these prep lessons BEFORE your class teaches the topic. You'll walk in already knowing it!
+                    💡 Tip: Do these prep lessons BEFORE your class teaches the topic. You&apos;ll walk in already knowing it!
                   </p>
                 </div>
               )}

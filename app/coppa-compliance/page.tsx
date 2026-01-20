@@ -42,7 +42,7 @@ export default function COPPACompliancePage() {
             <div className="prose prose-slate max-w-none">
               <h2 className="text-2xl font-bold text-slate-800">What is COPPA?</h2>
               <p className="text-slate-700">
-                The Children's Online Privacy Protection Act (COPPA) is a federal law that protects the privacy of
+                The Children&apos;s Online Privacy Protection Act (COPPA) is a federal law that protects the privacy of
                 children under 13 years old. It requires websites and online services to obtain verifiable parental
                 consent before collecting, using, or disclosing personal information from children.
               </p>
@@ -80,7 +80,7 @@ export default function COPPACompliancePage() {
                   <div>
                     <h3 className="font-bold text-slate-800">Parent Controls</h3>
                     <p className="text-slate-700">
-                      Parents can view, download, or delete their child's data at any time through the parent dashboard.
+                      Parents can view, download, or delete their child&apos;s data at any time through the parent dashboard.
                     </p>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ export default function COPPACompliancePage() {
                   <div>
                     <h3 className="font-bold text-slate-800">No Third-Party Advertising</h3>
                     <p className="text-slate-700">
-                      We do not display targeted ads or share children's information with advertisers.
+                      We do not display targeted ads or share children&apos;s information with advertisers.
                     </p>
                   </div>
                 </div>
@@ -126,15 +126,15 @@ export default function COPPACompliancePage() {
               <p className="text-slate-700">As a parent, you have the right to:</p>
               <ul className="text-slate-700 space-y-2">
                 <li>Review the personal information collected from your child</li>
-                <li>Refuse to allow further collection or use of your child's information</li>
-                <li>Delete your child's personal information</li>
+                <li>Refuse to allow further collection or use of your child&apos;s information</li>
+                <li>Delete your child&apos;s personal information</li>
                 <li>Download a copy of all collected data</li>
               </ul>
 
               <div className="mt-8 rounded-lg bg-blue-50 p-6">
                 <h3 className="font-bold text-blue-900 mb-2">Exercise Your Rights</h3>
                 <p className="text-blue-800">
-                  Access all these controls through your parent dashboard's Data Management section.
+                  Access all these controls through your parent dashboard&apos;s Data Management section.
                 </p>
               </div>
 

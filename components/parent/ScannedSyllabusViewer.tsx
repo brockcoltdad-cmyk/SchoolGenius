@@ -120,7 +120,7 @@ export default function ScannedSyllabusViewer({ childId }: ScannedSyllabusViewer
           <div className="mb-4 text-6xl">📸</div>
           <h4 className="mb-2 text-xl font-black text-orange-900">No Syllabus Scanned Yet</h4>
           <p className="mb-4 text-sm font-semibold text-orange-800">
-            Upload your child's school syllabus to get AI-generated prep lessons
+            Upload your child&apos;s school syllabus to get AI-generated prep lessons
           </p>
           <Link href={`/kid/${childId}/scan`}>
             <Button className="bg-gradient-to-r from-orange-500 to-red-500 font-black">
@@ -136,7 +136,7 @@ export default function ScannedSyllabusViewer({ childId }: ScannedSyllabusViewer
             <div>
               <p className="font-bold text-blue-900 mb-1">How Scanned Mode Works:</p>
               <ul className="text-sm text-blue-800 space-y-1 list-disc list-inside">
-                <li>Upload a photo of your child's school syllabus</li>
+                <li>Upload a photo of your child&apos;s school syllabus</li>
                 <li>Our AI reads dates and topics</li>
                 <li>We create prep lessons 1-3 days before each school topic</li>
                 <li>Your child arrives at school already prepared!</li>

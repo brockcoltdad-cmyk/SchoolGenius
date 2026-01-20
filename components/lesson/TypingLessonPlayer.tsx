@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Trophy, Star, Zap, Target, Clock, CheckCircle, XCircle, RotateCcw } from 'lucide-react';
+import { Celebration } from '@/components/RiveAnimation';
 import { createClient } from '@/lib/supabase/client';
 import { useTypingLesson } from '@/hooks/useTypingLesson';
 
@@ -103,6 +104,7 @@ export default function TypingLessonPlayer({
   const [isComplete, setIsComplete] = useState(false);
   const [showResult, setShowResult] = useState(false);
   const [coinsEarned, setCoinsEarned] = useState(0);
+  const [showCelebration, setShowCelebration] = useState(false);
 
   // WPM targets by grade (we'll determine based on phase)
   const getWpmTarget = (phase: number): number => {
@@ -198,6 +200,10 @@ export default function TypingLessonPlayer({
   // Handle text completion
   const handleTextComplete = () => {
     const nextIndex = currentTextIndex + 1;
+
+    // Show celebration on each text completion
+    setShowCelebration(true);
+    setTimeout(() => setShowCelebration(false), 2000);
 
     if (nextIndex < practiceTexts.length) {
       // Move to next text
@@ -658,6 +664,20 @@ export default function TypingLessonPlayer({
             </div>
           </motion.div>
         )}
+
+        {/* CELEBRATION ANIMATION */}
+        <AnimatePresence>
+          {showCelebration && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 pointer-events-none flex items-center justify-center z-50"
+            >
+              <Celebration type="confetti" size={400} />
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         {/* Click overlay to focus input */}
         {(currentPhase === 'practice' || currentPhase === 'test') && !showResult && (

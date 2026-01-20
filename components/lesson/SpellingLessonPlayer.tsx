@@ -3,6 +3,9 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Trophy, Star, Volume2, VolumeX, CheckCircle, XCircle, RotateCcw, Sparkles, Lightbulb, Eye, EyeOff } from 'lucide-react';
+import { Celebration } from '@/components/RiveAnimation';
+import ThemeMascot from '@/components/ThemeMascot';
+import { useTheme } from '@/lib/theme-context';
 import { createClient } from '@/lib/supabase/client';
 import { breakIntoPhonics, getSoundTypeColor, PhonicsChunk } from '@/lib/phonics';
 import { useSpellingLesson } from '@/hooks/useSpellingLesson';
@@ -199,6 +202,8 @@ export default function SpellingLessonPlayer({
   const supabase = createClient();
   const inputRef = useRef<HTMLInputElement>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const { currentTheme } = useTheme();
+  const themeId = currentTheme?.id || 'default';
 
   // NEW: Fetch word lists from database (with fallback to hardcoded)
   const { wordLists: dbWordLists, loading: dbLoading, error: dbError } = useSpellingLesson(grade);
@@ -220,6 +225,7 @@ export default function SpellingLessonPlayer({
   const [showResult, setShowResult] = useState(false);
   const [coinsEarned, setCoinsEarned] = useState(0);
   const [streak, setStreak] = useState(0);
+  const [showCelebration, setShowCelebration] = useState(false);
 
   // Initialize word list - prefer database, fallback to hardcoded
   useEffect(() => {
@@ -313,6 +319,8 @@ export default function SpellingLessonPlayer({
       if (newAttempts >= 3) {
         setWordsCorrect(prev => prev + 1);
         setWordsCompleted(prev => prev + 1);
+        setShowCelebration(true);
+        setTimeout(() => setShowCelebration(false), 2000);
 
         // Move to next word after a delay
         setTimeout(() => {
@@ -458,8 +466,12 @@ export default function SpellingLessonPlayer({
             animate={{ opacity: 1, y: 0 }}
             className="bg-white/10 backdrop-blur-xl rounded-3xl p-8"
           >
+            {/* Theme Mascot */}
+            <div className="flex justify-center mb-4">
+              <ThemeMascot theme={themeId} size={150} animate />
+            </div>
             <div className="text-center mb-8">
-              <Lightbulb className="w-16 h-16 text-yellow-400 mx-auto mb-4" />
+              <Lightbulb className="w-12 h-12 text-yellow-400 mx-auto mb-4" />
               <h1 className="text-3xl font-bold text-white mb-2">
                 {currentRule}
               </h1>
@@ -470,7 +482,7 @@ export default function SpellingLessonPlayer({
 
             {/* Phonics breakdown of first word */}
             <div className="mb-8">
-              <p className="text-center text-white/60 mb-4">Let's look at how to spell:</p>
+              <p className="text-center text-white/60 mb-4">Let&apos;s look at how to spell:</p>
               <div className="flex justify-center gap-3 mb-4">
                 {phonicsBreakdown.map((chunk, i) => (
                   <motion.div
@@ -481,7 +493,7 @@ export default function SpellingLessonPlayer({
                     className={`px-4 py-3 rounded-xl border-2 ${getSoundTypeColor(chunk.type)}`}
                   >
                     <span className="text-3xl font-bold uppercase">{chunk.letters}</span>
-                    <p className="text-sm opacity-80">"{chunk.sound}"</p>
+                    <p className="text-sm opacity-80">&quot;{chunk.sound}&quot;</p>
                   </motion.div>
                 ))}
               </div>
@@ -508,7 +520,7 @@ export default function SpellingLessonPlayer({
 
             {/* Words to learn */}
             <div className="bg-white/5 rounded-2xl p-4 mb-8">
-              <p className="text-center text-white/60 mb-3">Words you'll learn:</p>
+              <p className="text-center text-white/60 mb-3">Words you&apos;ll learn:</p>
               <div className="flex flex-wrap justify-center gap-3">
                 {wordList.map((word, i) => (
                   <span
@@ -781,6 +793,20 @@ export default function SpellingLessonPlayer({
             </div>
           </motion.div>
         )}
+
+        {/* CELEBRATION ANIMATION */}
+        <AnimatePresence>
+          {showCelebration && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 pointer-events-none flex items-center justify-center z-50"
+            >
+              <Celebration type="confetti" size={400} />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );

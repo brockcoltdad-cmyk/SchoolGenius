@@ -9,6 +9,7 @@ import { createClient } from '@/lib/supabase-client';
 import { MagneticButton } from '@/components/ui/magnetic-button';
 import { AnimatedProgress } from '@/components/ui/animated-progress';
 import AnimatedCounter from '@/components/animations/AnimatedCounter';
+import ThemeMascot from '@/components/ThemeMascot';
 import { triggerXPGain } from '@/components/animations/FloatingXP';
 import { triggerParticles } from '@/components/animations/ParticleSystem';
 import { playSound } from '@/hooks/use-sound-effects';
@@ -303,9 +304,9 @@ export default function DashboardTemplate({
                         ],
                       }}
                       transition={{ duration: 2, repeat: Infinity }}
-                      className={`w-32 h-32 rounded-full ${colors.buttonGradient} flex items-center justify-center text-8xl border-4 ${colors.buttonBorder}`}
+                      className={`w-32 h-32 rounded-full ${colors.buttonGradient} flex items-center justify-center overflow-hidden border-4 ${colors.buttonBorder}`}
                     >
-                      {playerEmoji}
+                      <ThemeMascot theme={themeId} size={180} animate />
                     </motion.div>
                     <motion.div
                       animate={{ rotate: 360 }}
@@ -373,7 +374,7 @@ export default function DashboardTemplate({
                 >
                   <div className="absolute top-0 right-0 text-6xl opacity-20">🎤</div>
                   <div className="relative z-10">
-                    <div className="text-white font-bold mb-2">"Listen up!"</div>
+                    <div className="text-white font-bold mb-2">&quot;Listen up!&quot;</div>
                     <div className="text-gray-300 text-sm leading-relaxed">
                       {content.managerMessage}
                     </div>

@@ -320,7 +320,7 @@ export default function TeenSignupPage() {
                 className="text-xl text-gray-300 leading-relaxed mb-8 font-medium"
               >
                 <GraduationCap className="inline h-6 w-6 text-yellow-400 mr-2" />
-                No parent account needed. <span className="text-white font-bold">You're in control</span> of your own learning journey.
+                No parent account needed. <span className="text-white font-bold">You&apos;re in control</span> of your own learning journey.
               </motion.p>
 
               {/* Benefits List */}
@@ -374,7 +374,7 @@ export default function TeenSignupPage() {
                 <h1 className="text-4xl font-black text-white mb-2">
                   <span className={`bg-gradient-to-r ${currentTheme.gradient} bg-clip-text text-transparent`}>Teen Sign Up</span>
                 </h1>
-                <p className="text-gray-400 font-medium">Independent learner? Let's go!</p>
+                <p className="text-gray-400 font-medium">Independent learner? Let&apos;s go!</p>
               </div>
 
               <motion.div
@@ -601,7 +601,7 @@ export default function TeenSignupPage() {
                               </span>
                             ) : (
                               <span className="flex items-center justify-center gap-2">
-                                Let's Learn! <Sparkles className="w-6 h-6" />
+                                Let&apos;s Learn! <Sparkles className="w-6 h-6" />
                               </span>
                             )}
                           </Button>

@@ -10,6 +10,7 @@ import {
   BookA, PenTool, Volume2
 } from 'lucide-react';
 import { useTheme } from '@/lib/theme-context';
+import { trackTestResult } from '@/hooks/useTracking';
 
 /**
  * PLACEMENT TEST
@@ -484,21 +485,41 @@ export default function PlacementTestPage() {
   // Save all results to database
   const saveResults = async () => {
     try {
-      // Update child's grade levels per subject
-      const updates: Record<string, number> = {};
+      // Build update object for children table
+      const childUpdates: Record<string, number | boolean | string> = {
+        placement_completed: true,
+        placement_completed_at: new Date().toISOString()
+      };
+
+      // Add grade levels for each subject
       Object.values(subjectResults).forEach(result => {
-        updates[`${result.subject.toLowerCase()}_grade`] = result.determinedGrade;
+        childUpdates[`${result.subject.toLowerCase()}_grade`] = result.determinedGrade;
       });
 
-      // Save to placement_test_results table
+      // Update children table with grade levels
+      await supabase
+        .from('children')
+        .update(childUpdates)
+        .eq('id', kidId);
+
+      // Save full results to placement_test_results table
       await supabase.from('placement_test_results').insert({
         child_id: kidId,
         results: subjectResults,
         taken_at: new Date().toISOString()
       });
 
-      // Update child's grade levels (if columns exist)
-      // For now, just log success
+      // Track each subject as a test result
+      for (const result of Object.values(subjectResults)) {
+        await trackTestResult({
+          childId: kidId,
+          testType: 'placement',
+          subject: result.subject,
+          score: result.correctAnswers,
+          totalQuestions: result.questionsAnswered
+        });
+      }
+
       console.log('Placement results saved:', subjectResults);
     } catch (error) {
       console.error('Failed to save placement results:', error);
@@ -539,7 +560,7 @@ export default function PlacementTestPage() {
               </h1>
 
               <p className="text-xl text-purple-200 mb-8">
-                Hi {childName || 'there'}! Let's find out where you should start in each subject.
+                Hi {childName || 'there'}! Let&apos;s find out where you should start in each subject.
               </p>
 
               <div className="bg-black/30 rounded-2xl p-6 mb-8 text-left">
@@ -558,7 +579,7 @@ export default function PlacementTestPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-2xl">⭐</span>
-                    <span>We'll find the perfect starting level for you!</span>
+                    <span>We&apos;ll find the perfect starting level for you!</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-2xl">⏱️</span>
@@ -905,7 +926,7 @@ export default function PlacementTestPage() {
               </h1>
 
               <p className="text-xl text-purple-200">
-                Here's where you'll start, {childName}!
+                Here&apos;s where you&apos;ll start, {childName}!
               </p>
             </div>
 

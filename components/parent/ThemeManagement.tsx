@@ -176,7 +176,7 @@ export default function ThemeManagement({ childId, childName }: ThemeManagementP
 
       <div className="mt-6 rounded-lg bg-blue-50 p-4">
         <p className="text-sm text-blue-900">
-          <strong>Note:</strong> {childName} can still earn coins and purchase themes freely. You can disable any theme at any time if you prefer they don't use it.
+          <strong>Note:</strong> {childName} can still earn coins and purchase themes freely. You can disable any theme at any time if you prefer they don&apos;t use it.
         </p>
       </div>
     </Card>

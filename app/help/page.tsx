@@ -62,13 +62,13 @@ export default function HelpPage() {
                 <div className="rounded-lg border border-slate-200 p-4">
                   <h3 className="mb-2 font-semibold text-slate-900">How do I add a child?</h3>
                   <p className="leading-relaxed text-sm">
-                    From your dashboard, click "Add Child" and enter their information including name, age, and grade level. You can add multiple children to one account.
+                    From your dashboard, click &quot;Add Child&quot; and enter their information including name, age, and grade level. You can add multiple children to one account.
                   </p>
                 </div>
                 <div className="rounded-lg border border-slate-200 p-4">
                   <h3 className="mb-2 font-semibold text-slate-900">How does the learning system work?</h3>
                   <p className="leading-relaxed text-sm">
-                    SchoolGenius adapts to your child's learning pace. They complete lessons, earn coins, and unlock rewards. Our AI tracks progress and adjusts difficulty automatically.
+                    SchoolGenius adapts to your child&apos;s learning pace. They complete lessons, earn coins, and unlock rewards. Our AI tracks progress and adjusts difficulty automatically.
                   </p>
                 </div>
                 <div className="rounded-lg border border-slate-200 p-4">
@@ -87,13 +87,13 @@ export default function HelpPage() {
               </div>
               <div className="space-y-4">
                 <div className="rounded-lg border border-slate-200 p-4">
-                  <h3 className="mb-2 font-semibold text-slate-900">How do I track my child's progress?</h3>
+                  <h3 className="mb-2 font-semibold text-slate-900">How do I track my child&apos;s progress?</h3>
                   <p className="leading-relaxed text-sm">
                     View detailed progress reports from your parent dashboard. Track lessons completed, time spent learning, and skill mastery.
                   </p>
                 </div>
                 <div className="rounded-lg border border-slate-200 p-4">
-                  <h3 className="mb-2 font-semibold text-slate-900">Can I change my child's settings?</h3>
+                  <h3 className="mb-2 font-semibold text-slate-900">Can I change my child&apos;s settings?</h3>
                   <p className="leading-relaxed text-sm">
                     Yes, access child settings from the dashboard to adjust difficulty, manage themes, and update profile information.
                   </p>
@@ -118,7 +118,7 @@ export default function HelpPage() {
               </div>
               <div className="space-y-4">
                 <div className="rounded-lg border border-slate-200 p-4">
-                  <h3 className="mb-2 font-semibold text-slate-900">Is my child's data safe?</h3>
+                  <h3 className="mb-2 font-semibold text-slate-900">Is my child&apos;s data safe?</h3>
                   <p className="leading-relaxed text-sm">
                     We take data privacy seriously and are COPPA compliant. Learn more in our{' '}
                     <Link href="/privacy-policy" className="text-blue-600 hover:underline">
@@ -147,7 +147,7 @@ export default function HelpPage() {
             <section className="rounded-lg border border-blue-200 bg-blue-50 p-6">
               <h2 className="mb-3 text-2xl font-semibold text-blue-900">Still Need Help?</h2>
               <p className="leading-relaxed mb-4 text-blue-800">
-                Can't find what you're looking for? Our support team is here to help.
+                Can&apos;t find what you&apos;re looking for? Our support team is here to help.
               </p>
               <Link
                 href="/contact"

@@ -214,7 +214,7 @@ export default function KidLoginPage() {
             transition={{ delay: 0.5 }}
             className="text-2xl text-white mt-4 font-bold"
           >
-            Let's learn something awesome!
+            Let&apos;s learn something awesome!
           </motion.p>
         </motion.div>
       </div>
@@ -336,7 +336,7 @@ export default function KidLoginPage() {
               {/* Name Input */}
               <div>
                 <label className="mb-2 block text-lg font-bold text-gray-300">
-                  What's your name?
+                  What&apos;s your name?
                 </label>
                 <div className="relative">
                   <User className="absolute left-4 top-1/2 h-6 w-6 -translate-y-1/2" style={{ color: currentTheme.bgGlow.replace('0.4', '1') }} />
@@ -413,7 +413,7 @@ export default function KidLoginPage() {
                     </span>
                   ) : (
                     <span className="flex items-center justify-center gap-3">
-                      Let's Go! <Sparkles className="w-7 h-7" />
+                      Let&apos;s Go! <Sparkles className="w-7 h-7" />
                     </span>
                   )}
                 </Button>
@@ -422,7 +422,7 @@ export default function KidLoginPage() {
 
             <div className="mt-8 text-center space-y-3">
               <p className="text-gray-500 font-medium">
-                Don't have a PIN?{' '}
+                Don&apos;t have a PIN?{' '}
                 <span className="text-white">Ask your parent!</span>
               </p>
               <div className="flex items-center justify-center gap-4 text-sm">

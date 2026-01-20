@@ -226,7 +226,7 @@ const subjects = [
         visual: (
           <div className="text-left space-y-2 px-4">
             <p className="text-green-300 leading-relaxed">
-              "The curious fox wandered through the moonlit forest, searching for adventure..."
+              &quot;The curious fox wandered through the moonlit forest, searching for adventure...&quot;
             </p>
             <div className="flex items-center gap-2 text-green-400 font-bold text-sm">
               <CheckCircle2 className="h-4 w-4" /> Lexile Level: 650L
@@ -240,7 +240,7 @@ const subjects = [
         visual: (
           <div className="text-left space-y-2 px-4">
             <p className="text-green-300 italic text-sm">
-              "To be, or not to be, that is the question..."
+              &quot;To be, or not to be, that is the question...&quot;
             </p>
             <div className="text-green-400 font-bold text-xs">Analyze: Theme, Metaphor, Character</div>
           </div>
@@ -324,7 +324,7 @@ const subjects = [
         visual: (
           <div className="space-y-2">
             <div className="text-2xl font-black text-pink-400">accommodate</div>
-            <div className="text-pink-300 text-sm">Two C's, Two M's!</div>
+            <div className="text-pink-300 text-sm">Two C&apos;s, Two M&apos;s!</div>
             <div className="text-pink-400 text-xs italic">verb: to provide lodging or space</div>
           </div>
         ),
@@ -977,7 +977,7 @@ export default function Home() {
 
                 <p className="text-white text-xl leading-relaxed mb-8 font-medium">
                   Our AI <span className="text-cyan-400 font-bold">analyzes learning patterns in real-time</span> and adjusts difficulty automatically.
-                  Every lesson, quiz, and challenge is personalized—while your child thinks they're just playing!
+                  Every lesson, quiz, and challenge is personalized—while your child thinks they&apos;re just playing!
                 </p>
 
                 <div className="space-y-4">
@@ -985,7 +985,7 @@ export default function Home() {
                     <CheckCircle2 className="h-6 w-6 text-green-400 flex-shrink-0 mt-1" />
                     <div>
                       <div className="text-white font-bold text-lg">Scan Your School Syllabus</div>
-                      <div className="text-gray-400">Upload your school's syllabus and we automatically build lessons to match</div>
+                      <div className="text-gray-400">Upload your school&apos;s syllabus and we automatically build lessons to match</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -999,7 +999,7 @@ export default function Home() {
                     <CheckCircle2 className="h-6 w-6 text-green-400 flex-shrink-0 mt-1" />
                     <div>
                       <div className="text-white font-bold text-lg">Real-Time Adaptation</div>
-                      <div className="text-gray-400">Instantly adjusts to your child's skill level and progress</div>
+                      <div className="text-gray-400">Instantly adjusts to your child&apos;s skill level and progress</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -1033,7 +1033,7 @@ export default function Home() {
             <h2 className={`text-4xl font-black bg-gradient-to-r ${currentTheme.gradient} bg-clip-text text-transparent mb-2`}>
               See It In Action
             </h2>
-            <p className="text-gray-400 text-lg mb-8">Interactive preview of your child's dashboard</p>
+            <p className="text-gray-400 text-lg mb-8">Interactive preview of your child&apos;s dashboard</p>
 
             {/* Big Theme Selector */}
             <motion.div
@@ -1158,7 +1158,7 @@ export default function Home() {
                       How It Works
                     </div>
                     <p className="text-gray-300 text-sm leading-relaxed">
-                      Our AI engine continuously monitors your child's progress, identifying strengths and areas for improvement.
+                      Our AI engine continuously monitors your child&apos;s progress, identifying strengths and areas for improvement.
                       It then generates personalized content that challenges them at just the right level.
                     </p>
                   </div>

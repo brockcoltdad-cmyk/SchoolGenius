@@ -210,7 +210,7 @@ export default function SpellingBeeGame() {
                   </h1>
                   <p className="text-white/70 mb-6">
                     Listen to the word and spell it correctly!<br />
-                    You'll have 10 words to spell.
+                    You&apos;ll have 10 words to spell.
                   </p>
 
                   {currentHighScore > 0 && (

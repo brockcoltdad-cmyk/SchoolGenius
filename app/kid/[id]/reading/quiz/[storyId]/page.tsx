@@ -194,7 +194,7 @@ export default function ReadingQuizPage() {
                 No Quiz Available
               </h2>
               <p className="opacity-70 mb-4" style={{ color: currentTheme.colors.text }}>
-                This story doesn't have questions yet.
+                This story doesn&apos;t have questions yet.
               </p>
               <Link href={`/kid/${kidId}/reading`} className="underline" style={{ color: currentTheme.colors.primary }}>
                 Back to Library

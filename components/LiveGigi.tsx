@@ -334,7 +334,7 @@ export default function LiveGigi({
                 color: currentTheme.colors.text,
               }}
             >
-              I'm good for now ✓
+              I&apos;m good for now ✓
             </motion.button>
           </motion.div>
         )}

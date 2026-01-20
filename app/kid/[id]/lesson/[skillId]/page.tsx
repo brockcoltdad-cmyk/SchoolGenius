@@ -1034,14 +1034,14 @@ export default function LessonPage() {
                     className="w-full mb-4 bg-orange-500/20 hover:bg-orange-500/30 border border-orange-500/50 text-orange-400 font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-all"
                   >
                     <HelpCircle className="w-5 h-5" />
-                    I Don't Get It - Explain Simpler
+                    I Don&apos;t Get It - Explain Simpler
                   </button>
                 )}
                 
                 {explanationLevel === 3 && (
                   <div className="w-full mb-4 bg-green-500/20 border border-green-500/50 text-green-400 font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2">
                     <CheckCircle className="w-5 h-5" />
-                    This is the simplest explanation - You've got this!
+                    This is the simplest explanation - You&apos;ve got this!
                   </div>
                 )}
 

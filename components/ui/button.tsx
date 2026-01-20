@@ -45,15 +45,16 @@ export interface ButtonProps
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, disableThemeStyles = false, ...props }, ref) => {
-    let themeStyles = '';
+    const themeContext = useTheme();
+    const currentTheme = themeContext?.currentTheme;
 
-    try {
-      const { currentTheme } = useTheme();
-      if (currentTheme && !disableThemeStyles) {
-        themeStyles = getButtonStyleClasses(currentTheme.style.buttonStyle);
+    let themeStyles = '';
+    if (currentTheme && !disableThemeStyles) {
+      try {
+        themeStyles = getButtonStyleClasses(currentTheme.style?.buttonStyle);
+      } catch {
+        themeStyles = '';
       }
-    } catch (e) {
-      themeStyles = '';
     }
 
     const Comp = asChild ? Slot : 'button';

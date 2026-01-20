@@ -213,7 +213,7 @@ export default function VisualLessonPlayer({
             ) : (
               <div className="text-center text-gray-400 py-12">
                 <div className="text-6xl mb-4">🎨</div>
-                <p>Visual type "{step?.visual?.type}" coming soon!</p>
+                <p>Visual type &quot;{step?.visual?.type}&quot; coming soon!</p>
               </div>
             )}
           </motion.div>

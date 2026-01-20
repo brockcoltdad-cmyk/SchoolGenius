@@ -1,48 +1,48 @@
-const { createClient } = require('@supabase/supabase-js');
+const { Client } = require('pg');
 const fs = require('fs');
-require('dotenv').config(); // Use .env
+const dns = require('dns');
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+// Force IPv4 to avoid timeout issues
+dns.setDefaultResultOrder('ipv4first');
 
-if (!supabaseUrl || !supabaseServiceKey) {
-  console.error('Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY');
-  console.log('Available vars:', Object.keys(process.env).filter(k => k.includes('SUPABASE')));
-  process.exit(1);
-}
-
-const supabase = createClient(supabaseUrl, supabaseServiceKey);
+const client = new Client({
+  host: 'aws-0-us-west-2.pooler.supabase.com',
+  port: 5432,
+  database: 'postgres',
+  user: 'postgres.eczpdbkslqbduiesbqcm',
+  password: '$05Hay05ward',
+  ssl: { rejectUnauthorized: false }
+});
 
 async function runMigration() {
-  const sqlFile = process.argv[2];
-  if (!sqlFile) {
-    console.error('Usage: node run-migration.js <sql-file>');
-    process.exit(1);
-  }
+  const sqlFile = process.argv[2] || 'migrations/001_create_tracking_tables.sql';
 
-  const sql = fs.readFileSync(sqlFile, 'utf8');
-  console.log('Running migration:', sqlFile);
-  console.log('Connected to:', supabaseUrl);
-  
-  // Split by statements and run each one
-  const statements = sql.split(';').filter(s => s.trim().length > 0);
-  
-  for (let i = 0; i < statements.length; i++) {
-    const stmt = statements[i].trim() + ';';
-    if (stmt.startsWith('--') || stmt.startsWith('/*')) continue;
-    
-    try {
-      const { error } = await supabase.from('_migrations_test').select('*').limit(0);
-      // This won't work directly, but the supabase client can run raw SQL via the REST API
-    } catch (e) {
-      // expected
-    }
+  try {
+    await client.connect();
+    console.log('Connected to Supabase PostgreSQL');
+
+    const sql = fs.readFileSync(sqlFile, 'utf8');
+    console.log('Running migration:', sqlFile);
+
+    await client.query(sql);
+    console.log('✅ Migration completed successfully!');
+
+    // Verify tables were created
+    const result = await client.query(`
+      SELECT table_name FROM information_schema.tables
+      WHERE table_schema = 'public'
+      AND table_name IN ('answer_attempts', 'learning_sessions', 'weekly_progress', 'skill_mastery', 'test_results')
+      ORDER BY table_name
+    `);
+
+    console.log('\nTables created:');
+    result.rows.forEach(row => console.log('  -', row.table_name));
+
+  } catch (err) {
+    console.error('❌ Error:', err.message);
+  } finally {
+    await client.end();
   }
-  
-  console.log('Note: Direct SQL execution requires the Supabase dashboard.');
-  console.log('Please copy this SQL to the Supabase SQL Editor:');
-  console.log('');
-  console.log(sql);
 }
 
 runMigration();

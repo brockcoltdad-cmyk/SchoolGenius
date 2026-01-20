@@ -272,7 +272,7 @@ export default function ComprehensiveLessonViewer({
               onClick={advancePhase}
               className="px-8 py-4 bg-blue-500 text-white text-xl font-bold rounded-2xl hover:bg-blue-600 transition-colors shadow-lg"
             >
-              Let's Learn! →
+              Let&apos;s Learn! →
             </button>
           </motion.div>
         )}

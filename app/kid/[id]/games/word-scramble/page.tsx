@@ -256,7 +256,7 @@ export default function WordScrambleGame() {
                   {/* Hint */}
                   {hint && (
                     <div className="text-center mb-4">
-                      <p className="text-white/50 text-sm">Hint: Starts with "{hint}..."</p>
+                      <p className="text-white/50 text-sm">Hint: Starts with &quot;{hint}...&quot;</p>
                     </div>
                   )}
 

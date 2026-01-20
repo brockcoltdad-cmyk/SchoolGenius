@@ -131,7 +131,7 @@ export default function SubjectIntro({
                 </motion.div>
 
                 <h2 className="text-2xl font-bold text-gray-800 mb-4">
-                  Hi {childName}! I'm {tutorName}!
+                  Hi {childName}! I&apos;m {tutorName}!
                 </h2>
 
                 <p className="text-lg text-gray-600 mb-6 max-w-md mx-auto">
@@ -145,7 +145,7 @@ export default function SubjectIntro({
                     transition={{ delay: 0.5 }}
                     className="bg-blue-50 border border-blue-200 rounded-2xl p-4 mb-6 max-w-md mx-auto"
                   >
-                    <p className="text-blue-700 italic">"{data.mascot_message}"</p>
+                    <p className="text-blue-700 italic">&quot;{data.mascot_message}&quot;</p>
                   </motion.div>
                 )}
               </motion.div>
@@ -159,7 +159,7 @@ export default function SubjectIntro({
                 exit={{ opacity: 0, x: -20 }}
               >
                 <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-                  What You'll Learn in {data.subject_name}
+                  What You&apos;ll Learn in {data.subject_name}
                 </h2>
 
                 <div className="space-y-3">
@@ -232,7 +232,7 @@ export default function SubjectIntro({
                 </h2>
 
                 <p className="text-lg text-gray-600 mb-6">
-                  Let's learn some amazing things together!
+                  Let&apos;s learn some amazing things together!
                 </p>
               </motion.div>
             )}

@@ -232,7 +232,7 @@ export default function VoiceCloneRecorder({
       {!audioUrl && !isRecording && (
         <div className="bg-blue-500/20 border border-blue-500/40 rounded-xl p-4 mb-4">
           <p className="text-sm text-blue-300 font-medium mb-1">Read this aloud:</p>
-          <p className="text-white italic">"{sampleSentence}"</p>
+          <p className="text-white italic">&quot;{sampleSentence}&quot;</p>
         </div>
       )}
 

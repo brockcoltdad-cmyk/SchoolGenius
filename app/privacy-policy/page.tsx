@@ -39,13 +39,13 @@ export default function PrivacyPolicyPage() {
             <div className="prose prose-slate max-w-none">
               <h2 className="text-2xl font-bold text-slate-800">Your Privacy Matters</h2>
               <p className="text-slate-700">
-                At SchoolGenius, we take your family's privacy seriously. This policy explains what data we collect,
+                At SchoolGenius, we take your family&apos;s privacy seriously. This policy explains what data we collect,
                 how we use it, and your rights to control it.
               </p>
 
               <h3 className="text-xl font-bold text-slate-800 mt-6">Information We Collect</h3>
               <ul className="text-slate-700 space-y-2">
-                <li><strong>Profile Information:</strong> Child's name, grade level, parent email</li>
+                <li><strong>Profile Information:</strong> Child&apos;s name, grade level, parent email</li>
                 <li><strong>Learning Data:</strong> Completed lessons, scores, progress tracking</li>
                 <li><strong>Uploaded Content:</strong> Scanned homework images, calendar events</li>
                 <li><strong>Chat History:</strong> Conversations with Gigi (our AI tutor)</li>
@@ -54,7 +54,7 @@ export default function PrivacyPolicyPage() {
 
               <h3 className="text-xl font-bold text-slate-800 mt-6">How We Use Your Data</h3>
               <ul className="text-slate-700 space-y-2">
-                <li>Personalize your child's learning experience</li>
+                <li>Personalize your child&apos;s learning experience</li>
                 <li>Track progress and provide insights to parents</li>
                 <li>Improve our educational content and features</li>
                 <li>Provide customer support</li>
@@ -62,7 +62,7 @@ export default function PrivacyPolicyPage() {
 
               <h3 className="text-xl font-bold text-slate-800 mt-6">Data Sharing</h3>
               <p className="text-slate-700">
-                We <strong>never</strong> sell your child's data. We do not share personal information with third parties
+                We <strong>never</strong> sell your child&apos;s data. We do not share personal information with third parties
                 except as required by law or with your explicit consent.
               </p>
 
@@ -70,15 +70,15 @@ export default function PrivacyPolicyPage() {
               <ul className="text-slate-700 space-y-2">
                 <li><strong>Access:</strong> View all data we store about your child</li>
                 <li><strong>Download:</strong> Export a complete copy of your data</li>
-                <li><strong>Delete:</strong> Permanently remove your child's account and all data</li>
+                <li><strong>Delete:</strong> Permanently remove your child&apos;s account and all data</li>
                 <li><strong>Control:</strong> Manage what features your child can access</li>
               </ul>
 
               <h3 className="text-xl font-bold text-slate-800 mt-6">COPPA Compliance</h3>
               <p className="text-slate-700">
-                We comply with the Children's Online Privacy Protection Act (COPPA). We require verifiable parental
+                We comply with the Children&apos;s Online Privacy Protection Act (COPPA). We require verifiable parental
                 consent before collecting personal information from children under 13. Parents have full control over
-                their child's data through our parent dashboard.
+                their child&apos;s data through our parent dashboard.
               </p>
 
               <h3 className="text-xl font-bold text-slate-800 mt-6">Contact Us</h3>
@@ -91,7 +91,7 @@ export default function PrivacyPolicyPage() {
           <div className="mt-8 text-center">
             <Link href="/dashboard/data">
               <Button className="bg-gradient-to-r from-blue-600 to-purple-600">
-                Manage Your Family's Data
+                Manage Your Family&apos;s Data
               </Button>
             </Link>
           </div>

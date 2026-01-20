@@ -632,14 +632,14 @@ export default function WeeklyTestPage() {
                   Weekly Rules Test
                 </h1>
                 <p className="text-white/70 text-lg">
-                  Hey {childName}! Let's see how well you remember the rules you learned!
+                  Hey {childName}! Let&apos;s see how well you remember the rules you learned!
                 </p>
               </div>
 
               <div className="bg-white/5 rounded-xl p-6 mb-8">
                 <h2 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
                   <Target className="w-6 h-6 text-blue-400" />
-                  What You'll Be Tested On
+                  What You&apos;ll Be Tested On
                 </h2>
                 <div className="grid grid-cols-2 gap-3">
                   {Array.from(new Set(testQuestions.map(q => q.subject))).map(subject => (
@@ -677,7 +677,7 @@ export default function WeeklyTestPage() {
                   className="w-full bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-bold py-4 px-6 rounded-xl flex items-center justify-center gap-2 transition-all"
                 >
                   <Play className="w-6 h-6" />
-                  I'm Ready! Start the Test
+                  I&apos;m Ready! Start the Test
                 </button>
 
                 <button

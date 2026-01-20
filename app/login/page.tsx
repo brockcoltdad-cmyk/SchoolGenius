@@ -220,7 +220,7 @@ export default function LoginPage() {
                 className="text-xl text-gray-300 leading-relaxed mb-8 font-medium"
               >
                 <Zap className="inline h-6 w-6 text-yellow-400 mr-2" />
-                Access your child's <span className="text-white font-bold">personalized learning dashboard</span> and track their amazing progress.
+                Access your child&apos;s <span className="text-white font-bold">personalized learning dashboard</span> and track their amazing progress.
               </motion.p>
 
               {/* Feature Pills */}
@@ -256,7 +256,7 @@ export default function LoginPage() {
                   <span className="text-lg font-bold text-white">Parents Love Us!</span>
                 </div>
                 <p className="text-gray-300 italic">
-                  "My kids BEG to do their homework now. The Fortnite theme got my son doing math for 2 hours straight!"
+                  &quot;My kids BEG to do their homework now. The Fortnite theme got my son doing math for 2 hours straight!&quot;
                 </p>
                 <p className="text-gray-500 text-sm mt-2 font-semibold">- Sarah M., Mom of 3</p>
               </motion.div>
@@ -380,7 +380,7 @@ export default function LoginPage() {
                         </span>
                       ) : (
                         <span className="flex items-center justify-center gap-2">
-                          Let's Go! <ArrowRight className="w-6 h-6" />
+                          Let&apos;s Go! <ArrowRight className="w-6 h-6" />
                         </span>
                       )}
                     </Button>

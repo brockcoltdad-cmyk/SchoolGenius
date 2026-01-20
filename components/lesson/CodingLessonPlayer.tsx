@@ -7,8 +7,11 @@ import {
   Lightbulb, ChevronRight, Code, Blocks, SkipForward,
   RefreshCw, Terminal, Puzzle, Rocket
 } from 'lucide-react';
+import { Celebration } from '@/components/RiveAnimation';
 import { createClient } from '@/lib/supabase/client';
 import { useCodingLesson } from '@/hooks/useCodingLesson';
+import ThemeMascot from '@/components/ThemeMascot';
+import { useTheme } from '@/lib/theme-context';
 
 /**
  * CODING LESSON PLAYER
@@ -724,11 +727,13 @@ export default function CodingLessonPlayer({
   childId,
   grade,
   lessonId,
-  theme = 'default',
+  theme: themeProp = 'default',
   onComplete,
   onBack
 }: CodingLessonPlayerProps) {
   const supabase = createClient();
+  const { currentTheme } = useTheme();
+  const theme = themeProp || currentTheme?.id || 'default';
 
   // NEW: Fetch lessons from database (with fallback to hardcoded)
   const { lessons: dbLessons, loading: dbLoading, error: dbError } = useCodingLesson(grade);
@@ -741,6 +746,7 @@ export default function CodingLessonPlayer({
   const [hintLevel, setHintLevel] = useState(0);
   const [showHint, setShowHint] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [showCelebration, setShowCelebration] = useState(false);
 
   // Load lesson - prefer database, fallback to hardcoded
   useEffect(() => {
@@ -784,6 +790,8 @@ export default function CodingLessonPlayer({
   const handleChallengeComplete = (success: boolean) => {
     if (success) {
       setScore(score + 1);
+      setShowCelebration(true);
+      setTimeout(() => setShowCelebration(false), 2000);
     }
 
     // Move to next challenge or complete
@@ -901,17 +909,21 @@ export default function CodingLessonPlayer({
               exit={{ opacity: 0, y: -20 }}
               className="space-y-6"
             >
+              {/* Theme Mascot */}
+              <div className="flex justify-center mb-2">
+                <ThemeMascot theme={theme} size={150} animate />
+              </div>
               <div className="text-center">
-                <div className="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500
+                <div className="w-16 h-16 mx-auto bg-gradient-to-br from-purple-500 to-pink-500
                   rounded-2xl flex items-center justify-center mb-4">
                   {lesson.mode === 'blocks' ? (
-                    <Blocks className="w-10 h-10 text-white" />
+                    <Blocks className="w-8 h-8 text-white" />
                   ) : (
-                    <Code className="w-10 h-10 text-white" />
+                    <Code className="w-8 h-8 text-white" />
                   )}
                 </div>
                 <h1 className="text-3xl font-bold mb-2">{lesson.rule}</h1>
-                <p className="text-gray-400">Let's learn this concept!</p>
+                <p className="text-gray-400">Let&apos;s learn this concept!</p>
               </div>
 
               <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50
@@ -932,7 +944,7 @@ export default function CodingLessonPlayer({
                   whileTap={{ scale: 0.98 }}
                 >
                   <ChevronRight className="w-6 h-6" />
-                  Let's See It!
+                  Let&apos;s See It!
                 </motion.button>
                 <motion.button
                   onClick={skipRules}
@@ -959,7 +971,7 @@ export default function CodingLessonPlayer({
             >
               <div className="text-center">
                 <h1 className="text-2xl font-bold mb-2">Watch How It Works!</h1>
-                <p className="text-gray-400">I'll show you an example</p>
+                <p className="text-gray-400">I&apos;ll show you an example</p>
               </div>
 
               {/* Demo Code Display */}
@@ -1111,6 +1123,20 @@ export default function CodingLessonPlayer({
                   Try Again
                 </motion.button>
               </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* CELEBRATION ANIMATION */}
+        <AnimatePresence>
+          {showCelebration && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 pointer-events-none flex items-center justify-center z-50"
+            >
+              <Celebration type="confetti" size={400} />
             </motion.div>
           )}
         </AnimatePresence>

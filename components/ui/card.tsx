@@ -11,15 +11,16 @@ interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
 
 const Card = React.forwardRef<HTMLDivElement, CardProps>(
   ({ className, disableThemeStyles = false, ...props }, ref) => {
-    let themeStyles = '';
+    const themeContext = useTheme();
+    const currentTheme = themeContext?.currentTheme;
 
-    try {
-      const { currentTheme } = useTheme();
-      if (currentTheme && !disableThemeStyles) {
-        themeStyles = getCardStyleClasses(currentTheme.style.cardStyle);
+    let themeStyles = '';
+    if (currentTheme && !disableThemeStyles) {
+      try {
+        themeStyles = getCardStyleClasses(currentTheme.style?.cardStyle);
+      } catch {
+        themeStyles = '';
       }
-    } catch (e) {
-      themeStyles = '';
     }
 
     return (

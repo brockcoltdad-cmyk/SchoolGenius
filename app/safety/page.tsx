@@ -23,7 +23,7 @@ export default function SafetyPage() {
             <div>
               <h1 className="mb-2 text-4xl font-bold text-slate-900">Child Safety</h1>
               <p className="text-lg text-slate-600">
-                Your child's safety and privacy are our top priorities
+                Your child&apos;s safety and privacy are our top priorities
               </p>
             </div>
           </div>
@@ -35,7 +35,7 @@ export default function SafetyPage() {
                 <h2 className="text-xl font-semibold text-green-900">COPPA Compliant</h2>
               </div>
               <p className="leading-relaxed text-green-800">
-                SchoolGenius is fully compliant with the Children's Online Privacy Protection Act (COPPA).
+                SchoolGenius is fully compliant with the Children&apos;s Online Privacy Protection Act (COPPA).
                 We never collect personal information from children without parental consent.
                 Learn more on our{' '}
                 <Link href="/coppa-compliance" className="font-semibold text-green-900 hover:underline">
@@ -63,7 +63,7 @@ export default function SafetyPage() {
                   <div>
                     <h3 className="mb-2 font-semibold text-slate-900">Parent Dashboard</h3>
                     <p className="leading-relaxed text-sm">
-                      Monitor your child's learning progress, time spent, and activities through your comprehensive parent dashboard. View detailed reports and analytics at any time.
+                      Monitor your child&apos;s learning progress, time spent, and activities through your comprehensive parent dashboard. View detailed reports and analytics at any time.
                     </p>
                   </div>
                 </div>
@@ -73,7 +73,7 @@ export default function SafetyPage() {
                   <div>
                     <h3 className="mb-2 font-semibold text-slate-900">Age-Appropriate Content</h3>
                     <p className="leading-relaxed text-sm">
-                      All content is carefully curated and filtered based on your child's age and grade level. We ensure children only see educational material appropriate for their developmental stage.
+                      All content is carefully curated and filtered based on your child&apos;s age and grade level. We ensure children only see educational material appropriate for their developmental stage.
                     </p>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ export default function SafetyPage() {
                   <div>
                     <h3 className="mb-2 font-semibold text-slate-900">Data Encryption</h3>
                     <p className="leading-relaxed text-sm">
-                      All data is encrypted in transit and at rest. We use industry-standard security measures to protect your family's information.
+                      All data is encrypted in transit and at rest. We use industry-standard security measures to protect your family&apos;s information.
                     </p>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ export default function SafetyPage() {
                 <div className="rounded-lg border border-slate-200 p-4">
                   <h3 className="mb-2 font-semibold text-slate-900">Activity Reports</h3>
                   <p className="leading-relaxed text-sm">
-                    Receive regular reports on your child's activities, progress, and achievements via email or through your dashboard.
+                    Receive regular reports on your child&apos;s activities, progress, and achievements via email or through your dashboard.
                   </p>
                 </div>
               </div>
@@ -127,12 +127,12 @@ export default function SafetyPage() {
             <section>
               <h2 className="mb-4 text-2xl font-semibold text-slate-900">Privacy Protection</h2>
               <p className="leading-relaxed mb-4">
-                We are committed to protecting your child's privacy:
+                We are committed to protecting your child&apos;s privacy:
               </p>
               <ul className="ml-6 list-disc space-y-2 leading-relaxed">
-                <li>We never sell or share children's data with third parties</li>
+                <li>We never sell or share children&apos;s data with third parties</li>
                 <li>We collect only the minimum data necessary for educational purposes</li>
-                <li>Parents can view, download, or delete their child's data at any time</li>
+                <li>Parents can view, download, or delete their child&apos;s data at any time</li>
                 <li>We comply with all applicable privacy laws including COPPA, FERPA, and GDPR</li>
                 <li>Regular security audits ensure ongoing protection</li>
               </ul>
@@ -151,9 +151,9 @@ export default function SafetyPage() {
                 <h2 className="text-xl font-semibold text-amber-900">Safety Tips for Parents</h2>
               </div>
               <ul className="ml-6 list-disc space-y-2 leading-relaxed text-amber-800">
-                <li>Keep your account password secure and don't share it with children</li>
+                <li>Keep your account password secure and don&apos;t share it with children</li>
                 <li>Choose a PIN your child can remember but others cannot guess</li>
-                <li>Regularly review your child's progress and activity reports</li>
+                <li>Regularly review your child&apos;s progress and activity reports</li>
                 <li>Discuss online safety with your child</li>
                 <li>Report any concerns to our support team immediately</li>
               </ul>

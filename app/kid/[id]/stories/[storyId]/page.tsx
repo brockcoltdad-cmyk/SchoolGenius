@@ -408,7 +408,7 @@ export default function StoryReaderPage() {
                     {finalScore >= 90 ? 'Amazing!' : finalScore >= 70 ? 'Great Job!' : 'Good Try!'}
                   </h2>
                   <p className="text-white/70 mb-6">
-                    You finished "{story.title}"
+                    You finished &quot;{story.title}&quot;
                   </p>
 
                   {/* Score */}

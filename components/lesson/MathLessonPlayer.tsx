@@ -3,6 +3,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Trophy, Star, CheckCircle, XCircle, RotateCcw, Sparkles, Lightbulb, ChevronRight, Play } from 'lucide-react';
+import { Celebration } from '@/components/RiveAnimation';
+import ThemeMascot from '@/components/ThemeMascot';
+import { useTheme } from '@/lib/theme-context';
 import { createClient } from '@/lib/supabase/client';
 import { useMathLesson } from '@/hooks/useMathLesson';
 
@@ -450,6 +453,8 @@ export default function MathLessonPlayer({
   onBack
 }: MathLessonPlayerProps) {
   const supabase = createClient();
+  const { currentTheme } = useTheme();
+  const themeId = currentTheme?.id || 'default';
 
   // NEW: Fetch lessons from database (with fallback to hardcoded)
   const { lessons: dbLessons, loading: dbLoading, error: dbError } = useMathLesson(grade);
@@ -475,6 +480,7 @@ export default function MathLessonPlayer({
   const [streak, setStreak] = useState(0);
   const [visualPlaying, setVisualPlaying] = useState(true);
   const [usingDatabase, setUsingDatabase] = useState(false);
+  const [showCelebration, setShowCelebration] = useState(false);
 
   // NEW: Wrong answer tracking for tier1/tier2 system
   const [wrongAnswerCount, setWrongAnswerCount] = useState(0); // Per problem
@@ -521,6 +527,8 @@ export default function MathLessonPlayer({
       setStreak(prev => prev + 1);
       setWrongAnswerCount(0); // Reset for next problem
       setShowTierExplanation(null);
+      setShowCelebration(true);
+      setTimeout(() => setShowCelebration(false), 2000);
 
       // Move to next problem after delay
       setTimeout(() => {
@@ -670,8 +678,12 @@ export default function MathLessonPlayer({
             animate={{ opacity: 1, y: 0 }}
             className="bg-white/10 backdrop-blur-xl rounded-3xl p-8"
           >
+            {/* Theme Mascot */}
+            <div className="flex justify-center mb-4">
+              <ThemeMascot theme={themeId} size={150} animate />
+            </div>
             <div className="text-center mb-6">
-              <Lightbulb className="w-16 h-16 text-yellow-400 mx-auto mb-4" />
+              <Lightbulb className="w-12 h-12 text-yellow-400 mx-auto mb-4" />
               <h1 className="text-3xl font-bold text-white mb-2">
                 {lesson.rule}
               </h1>
@@ -702,7 +714,7 @@ export default function MathLessonPlayer({
                   shadow-lg shadow-green-500/30 hover:shadow-green-500/50 transition-all hover:scale-105 flex items-center gap-3 mx-auto"
               >
                 <Play className="w-6 h-6" />
-                Let's Practice Together!
+                Let&apos;s Practice Together!
               </button>
             </div>
           </motion.div>
@@ -718,7 +730,7 @@ export default function MathLessonPlayer({
             {/* Phase indicator */}
             <div className="text-center">
               <span className="inline-block px-4 py-2 bg-blue-500/30 rounded-full text-blue-300 text-sm font-semibold">
-                WE DO - Let's Practice Together!
+                WE DO - Let&apos;s Practice Together!
               </span>
             </div>
 
@@ -833,7 +845,7 @@ export default function MathLessonPlayer({
                       </div>
                     ) : (
                       <div className="text-yellow-300">
-                        <p className="font-semibold mb-2">Almost! Here's how:</p>
+                        <p className="font-semibold mb-2">Almost! Here&apos;s how:</p>
                         <p className="text-white/80 text-sm">{currentProblem.explanation}</p>
                       </div>
                     )}
@@ -1002,7 +1014,7 @@ export default function MathLessonPlayer({
                           <div className="bg-purple-500/30 rounded-lg p-4 mt-3">
                             <div className="flex items-center justify-center gap-2 text-purple-300 mb-2">
                               <RotateCcw className="w-5 h-5" />
-                              <span className="font-semibold">Let's review the rule together!</span>
+                              <span className="font-semibold">Let&apos;s review the rule together!</span>
                             </div>
                             <p className="text-white/80 text-sm">
                               Going back to learn the rule again...
@@ -1022,6 +1034,20 @@ export default function MathLessonPlayer({
             </div>
           </motion.div>
         )}
+
+        {/* CELEBRATION ANIMATION */}
+        <AnimatePresence>
+          {showCelebration && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 pointer-events-none flex items-center justify-center z-50"
+            >
+              <Celebration type="confetti" size={400} />
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         {/* RESULTS */}
         {showResult && (

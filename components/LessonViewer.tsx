@@ -47,6 +47,13 @@ export default function LessonViewer({ studentId, subjectCode, skillId }: Lesson
     loadLesson()
   }, [subjectCode, skillId])
 
+  // Handle lesson completion when phase changes to 'complete'
+  useEffect(() => {
+    if (phase === 'complete') {
+      completeLesson()
+    }
+  }, [phase])
+
   async function loadLesson() {
     setLoading(true)
 
@@ -285,7 +292,7 @@ export default function LessonViewer({ studentId, subjectCode, skillId }: Lesson
             <BookOpen className="w-8 h-8" />
             <h1 className="text-2xl font-bold">{lesson.skill_name}</h1>
           </div>
-          <p className="text-white/80">Let's learn the rules!</p>
+          <p className="text-white/80">Let&apos;s learn the rules!</p>
         </div>
         <div className="bg-white rounded-2xl shadow-lg p-6 mb-6">
           <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
@@ -480,7 +487,7 @@ export default function LessonViewer({ studentId, subjectCode, skillId }: Lesson
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <Lightbulb className="w-8 h-8" />
-                    <h2 className="text-2xl font-bold">Gigi's Help</h2>
+                    <h2 className="text-2xl font-bold">Gigi&apos;s Help</h2>
                   </div>
                   <button
                     onClick={() => setShowHelp(false)}
@@ -533,8 +540,6 @@ export default function LessonViewer({ studentId, subjectCode, skillId }: Lesson
     const percentage = Math.round((score.correct / score.total) * 100) || 0
     const passed = percentage >= 80
     const finalCoins = coinsEarned + (passed ? 50 : 0)
-
-    useEffect(() => { completeLesson() }, [])
 
     return (
       <div className="max-w-2xl mx-auto p-6 text-center">

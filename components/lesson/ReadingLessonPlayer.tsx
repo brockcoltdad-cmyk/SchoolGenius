@@ -9,6 +9,9 @@ import {
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { useReadingLesson } from '@/hooks/useReadingLesson';
+import { Celebration } from '@/components/RiveAnimation';
+import ThemeMascot from '@/components/ThemeMascot';
+import { useTheme } from '@/lib/theme-context';
 
 /**
  * READING LESSON PLAYER
@@ -874,6 +877,10 @@ export default function ReadingLessonPlayer({
   onComplete,
   onBack
 }: ReadingLessonPlayerProps) {
+  // Theme for ThemedGigi
+  const { currentTheme } = useTheme();
+  const themeId = currentTheme?.id || 'default';
+
   // NEW: Fetch stories from database (with fallback to hardcoded)
   const { stories: dbStories, loading: dbLoading, error: dbError } = useReadingLesson(gradeLevel);
 
@@ -886,6 +893,7 @@ export default function ReadingLessonPlayer({
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
   const [audioEnabled, setAudioEnabled] = useState(gradeLevel <= 5);
   const [currentAudio, setCurrentAudio] = useState<HTMLAudioElement | null>(null);
+  const [showCelebration, setShowCelebration] = useState(false);
 
   // Get story - prefer database, fallback to hardcoded
   const getStory = () => {
@@ -976,6 +984,8 @@ export default function ReadingLessonPlayer({
 
     if (correct) {
       setScore(prev => prev + 1);
+      setShowCelebration(true);
+      setTimeout(() => setShowCelebration(false), 2000);
     }
   };
 
@@ -1071,6 +1081,10 @@ export default function ReadingLessonPlayer({
               exit={{ opacity: 0, y: -20 }}
             >
               <Card className="bg-white/10 backdrop-blur-lg border-white/20 p-6">
+                {/* Theme Mascot */}
+                <div className="flex justify-center mb-4">
+                  <ThemeMascot theme={themeId} size={150} animate />
+                </div>
                 <div className="flex items-center justify-between mb-6">
                   <h1 className="text-2xl font-bold text-white flex items-center gap-3">
                     <BookOpen className="w-8 h-8 text-blue-400" />
@@ -1110,7 +1124,7 @@ export default function ReadingLessonPlayer({
                     onClick={handleStartQuiz}
                     className="bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-bold py-3 px-6"
                   >
-                    I'm Ready for Questions!
+                    I&apos;m Ready for Questions!
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </div>
@@ -1300,6 +1314,20 @@ export default function ReadingLessonPlayer({
                   Back to Lessons
                 </Button>
               </Card>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* CELEBRATION ANIMATION */}
+        <AnimatePresence>
+          {showCelebration && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 pointer-events-none flex items-center justify-center z-50"
+            >
+              <Celebration type="confetti" size={400} />
             </motion.div>
           )}
         </AnimatePresence>

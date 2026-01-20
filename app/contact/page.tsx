@@ -23,7 +23,7 @@ export default function ContactPage() {
             <div>
               <h1 className="mb-2 text-4xl font-bold text-slate-900">Contact Us</h1>
               <p className="text-lg text-slate-600">
-                We're here to help with any questions or concerns
+                We&apos;re here to help with any questions or concerns
               </p>
             </div>
           </div>
@@ -34,7 +34,7 @@ export default function ContactPage() {
               <div>
                 <h3 className="mb-2 font-semibold text-slate-900">Email Support</h3>
                 <p className="text-sm text-slate-600 mb-2">
-                  Send us an email and we'll respond within 24 hours
+                  Send us an email and we&apos;ll respond within 24 hours
                 </p>
                 <a
                   href="mailto:support@schoolgenius.com"
@@ -115,7 +115,7 @@ export default function ContactPage() {
                 <li>Include your account email address</li>
                 <li>Describe the issue in detail</li>
                 <li>Mention any error messages you see</li>
-                <li>Let us know what device and browser you're using</li>
+                <li>Let us know what device and browser you&apos;re using</li>
               </ul>
             </section>
 
@@ -123,7 +123,7 @@ export default function ContactPage() {
               <h2 className="mb-4 text-2xl font-semibold text-slate-900">Response Time</h2>
               <p className="leading-relaxed">
                 Our support team typically responds within 24 hours during business days (Monday-Friday).
-                For urgent issues, please mark your email as "Urgent" in the subject line.
+                For urgent issues, please mark your email as &quot;Urgent&quot; in the subject line.
               </p>
             </section>
 

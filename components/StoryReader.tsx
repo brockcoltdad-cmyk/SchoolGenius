@@ -233,7 +233,7 @@ export default function StoryReader({
             onClick={handleFinish}
             className="px-8 py-4 bg-green-500 text-white rounded-xl font-bold text-lg hover:bg-green-600 transition-colors shadow-lg"
           >
-            I'm Done Reading - Take Quiz →
+            I&apos;m Done Reading - Take Quiz →
           </button>
         </div>
       )}

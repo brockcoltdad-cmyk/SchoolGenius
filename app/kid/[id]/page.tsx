@@ -10,6 +10,7 @@ import { createClient } from '@/lib/supabase/client';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { AlertTriangle, X, ClipboardCheck, Calendar, Clock, Trophy, Sparkles } from 'lucide-react';
+import WeeklyProgressCard from '@/components/progress/WeeklyProgressCard';
 
 export default function KidDashboard() {
   const { currentTheme } = useTheme();
@@ -484,6 +485,11 @@ export default function KidDashboard() {
           leaderboardLink={`/kid/${kidId}/leaderboard`}
           kidId={kidId}
         />
+
+        {/* Weekly Progress Card */}
+        <div className="max-w-4xl mx-auto px-4 py-6">
+          <WeeklyProgressCard childId={kidId} variant="kid" />
+        </div>
       </div>
     </>
   );

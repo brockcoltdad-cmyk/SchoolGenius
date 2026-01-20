@@ -526,7 +526,7 @@ export default function SignupPage() {
                               </span>
                             ) : (
                               <span className="flex items-center justify-center gap-2">
-                                Let's Go! <Sparkles className="w-6 h-6" />
+                                Let&apos;s Go! <Sparkles className="w-6 h-6" />
                               </span>
                             )}
                           </Button>

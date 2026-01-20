@@ -32,7 +32,7 @@ export default function DataRequestPage() {
               <FileText className="h-8 w-8 text-purple-600" />
             </div>
             <h1 className="mb-2 text-4xl font-bold text-slate-800">Data Request</h1>
-            <p className="text-slate-600">Request a copy of your family's data</p>
+            <p className="text-slate-600">Request a copy of your family&apos;s data</p>
           </div>
 
           <Card className="mb-6 border-blue-200 bg-blue-50/50 p-6">
@@ -41,7 +41,7 @@ export default function DataRequestPage() {
               <div>
                 <h2 className="mb-2 font-bold text-blue-900">Instant Data Export Available</h2>
                 <p className="text-sm text-blue-800">
-                  You can download your child's complete data anytime through the Data Management page.
+                  You can download your child&apos;s complete data anytime through the Data Management page.
                   No waiting required!
                 </p>
               </div>
@@ -55,7 +55,7 @@ export default function DataRequestPage() {
               </div>
               <h3 className="mb-2 text-xl font-bold text-slate-800">Self-Service Export</h3>
               <p className="mb-4 text-slate-600">
-                Download all your child's data instantly in JSON format. Includes learning progress, chat history,
+                Download all your child&apos;s data instantly in JSON format. Includes learning progress, chat history,
                 scanned documents, and more.
               </p>
               <Link href="/dashboard/data">
@@ -71,7 +71,7 @@ export default function DataRequestPage() {
               </div>
               <h3 className="mb-2 text-xl font-bold text-slate-800">Request by Email</h3>
               <p className="mb-4 text-slate-600">
-                Need a specific format or have special requirements? Contact our support team and we'll prepare
+                Need a specific format or have special requirements? Contact our support team and we&apos;ll prepare
                 a custom export for you.
               </p>
               <Button
@@ -85,7 +85,7 @@ export default function DataRequestPage() {
           </div>
 
           <Card className="p-8">
-            <h2 className="mb-4 text-2xl font-bold text-slate-800">What's Included in Your Data Export</h2>
+            <h2 className="mb-4 text-2xl font-bold text-slate-800">What&apos;s Included in Your Data Export</h2>
             <div className="grid gap-4 md:grid-cols-2">
               <div className="flex gap-3">
                 <div className="text-2xl">👤</div>
